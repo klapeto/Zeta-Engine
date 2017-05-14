@@ -1,0 +1,57 @@
+.TH "Zeta::ProjectileClass::ObjectHandler" 3 "Wed Feb 10 2016" "Zeta" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Zeta::ProjectileClass::ObjectHandler \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBZeta::Visitor\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBhandle\fP (\fBLifeform\fP &obj)"
+.br
+.ti -1c
+.RI "void \fBhandle\fP (\fBPlayer\fP &obj)"
+.br
+.ti -1c
+.RI "\fBObjectHandler\fP (const \fBProjectileClass\fP *\fBcls\fP, \fBProjectile\fP *\fBproj\fP)"
+.br
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "const \fBProjectileClass\fP * \fBcls\fP"
+.br
+.ti -1c
+.RI "\fBProjectile\fP * \fBproj\fP"
+.br
+.in -1c
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Zeta::ProjectileClass::ObjectHandler::ObjectHandler (const \fBProjectileClass\fP *cls, \fBProjectile\fP *proj)\fC [inline]\fP"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "void Zeta::ProjectileClass::ObjectHandler::handle (\fBLifeform\fP &obj)\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBZeta::Visitor\fP\&.
+.SS "void Zeta::ProjectileClass::ObjectHandler::handle (\fBPlayer\fP &obj)\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBZeta::Visitor\fP\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "const \fBProjectileClass\fP* Zeta::ProjectileClass::ObjectHandler::cls\fC [private]\fP"
+
+.SS "\fBProjectile\fP* Zeta::ProjectileClass::ObjectHandler::proj\fC [private]\fP"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Zeta from the source code\&.

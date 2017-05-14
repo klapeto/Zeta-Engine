@@ -1,0 +1,7 @@
+$#include <Zeta/Core/RPGClasses/OverTimeEffect.hpp>
+
+class OverTimeEffect: public DurableEffect {
+public:
+	Float getTickEvery() const;
+	void setTickEvery(Float tickEvery);
+};

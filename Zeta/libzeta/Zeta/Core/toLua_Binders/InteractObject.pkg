@@ -1,0 +1,11 @@
+
+
+$#include <Zeta/Core/RPGClasses/InteractObject.hpp>
+
+class InteractObject: public Object {
+public:
+	void setOnClick(lua_Object func);
+	void setOnCollide(lua_Object func);
+	void setAnimation(const std::string& name);
+	InteractObject(const std::string& animationClass, Float x, Float y);
+};

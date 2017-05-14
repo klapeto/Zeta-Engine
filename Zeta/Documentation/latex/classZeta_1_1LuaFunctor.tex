@@ -1,0 +1,241 @@
+\hypertarget{classZeta_1_1LuaFunctor}{\section{Zeta\+:\+:Lua\+Functor Class Reference}
+\label{classZeta_1_1LuaFunctor}\index{Zeta\+::\+Lua\+Functor@{Zeta\+::\+Lua\+Functor}}
+}
+
+
+{\ttfamily \#include $<$Lua\+Functor.\+hpp$>$}
+
+
+
+Inheritance diagram for Zeta\+:\+:Lua\+Functor\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=188pt]{classZeta_1_1LuaFunctor__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Zeta\+:\+:Lua\+Functor\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=188pt]{classZeta_1_1LuaFunctor__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classZeta_1_1LuaFunctor_ae55fd17050bf4caa280ba050da6b3fe7}{operator()} (std\+::initializer\+\_\+list$<$ \hyperlink{classZeta_1_1LuaPushable}{Lua\+Pushable} $\ast$ $>$ arg\+List) const 
+\item 
+void \hyperlink{classZeta_1_1LuaFunctor_acf00a4d0775702e50cbd3ea2f8e7a480}{operator()} () const 
+\item 
+void \hyperlink{classZeta_1_1LuaFunctor_a98abacbb6f907e8cd94256ca91d9cafc}{set} (int stack\+Index)
+\item 
+void \hyperlink{classZeta_1_1LuaFunctor_a0c68049e101d7b1d869f701f1a9b5d90}{set} (const std\+::string \&script)
+\item 
+void \hyperlink{classZeta_1_1LuaFunctor_a6b31b753129eaf7a32904842c9a6efc1}{operator=} (const std\+::string \&script)
+\item 
+void \hyperlink{classZeta_1_1LuaFunctor_acff4acd53e83b765f55942c6c9b0d156}{operator=} (int stack\+Index)
+\item 
+void \hyperlink{classZeta_1_1LuaFunctor_a6ec24e778260eec5818278d6bbed01c3}{set\+Lua\+Reference} (int reference)
+\item 
+\hyperlink{classZeta_1_1LuaFunctor_acee7d7515bdc178e27d441984dfdd1b7}{Lua\+Functor} ()
+\item 
+\hyperlink{classZeta_1_1LuaFunctor_a627928b600c176a8366da8c9ea3a4bb2}{Lua\+Functor} (int stack\+Index, const std\+::string \&\hyperlink{classZeta_1_1LuaReferenced_ad6f7a947b37382f9968f4a54bd718119}{name}=\char`\"{}\char`\"{})
+\item 
+\hyperlink{classZeta_1_1LuaFunctor_a2b7dc6b3983b44d18ceb15a3d45d8196}{Lua\+Functor} (const std\+::string \&script)
+\item 
+\hyperlink{classZeta_1_1LuaFunctor_af63f9d94a52a280a8293b7d04713facb}{Lua\+Functor} (\hyperlink{classZeta_1_1LuaFunctor}{Lua\+Functor} \&\&other)=default
+\item 
+\hyperlink{classZeta_1_1LuaFunctor_aa6d2720639d0c9be429404caf0b13983}{Lua\+Functor} (const \hyperlink{classZeta_1_1LuaFunctor}{Lua\+Functor} \&other)=default
+\item 
+\hyperlink{classZeta_1_1LuaFunctor}{Lua\+Functor} \& \hyperlink{classZeta_1_1LuaFunctor_a126209ca362d7593a02fc038a8e0a743}{operator=} (const \hyperlink{classZeta_1_1LuaFunctor}{Lua\+Functor} \&other)=default
+\item 
+\hyperlink{classZeta_1_1LuaFunctor}{Lua\+Functor} \& \hyperlink{classZeta_1_1LuaFunctor_a8a29527d610ea86a5fc79956e0b54cab}{operator=} (\hyperlink{classZeta_1_1LuaFunctor}{Lua\+Functor} \&\&other)=default
+\item 
+\hyperlink{classZeta_1_1LuaFunctor_a02432a039f85d8d460311bbb0f48ec79}{$\sim$\+Lua\+Functor} ()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Lua Function \hyperlink{classZeta_1_1Object}{Object} Used to store Lua Code to C++ Memory to be called fast when needed. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classZeta_1_1LuaFunctor_acee7d7515bdc178e27d441984dfdd1b7}{\index{Zeta\+::\+Lua\+Functor@{Zeta\+::\+Lua\+Functor}!Lua\+Functor@{Lua\+Functor}}
+\index{Lua\+Functor@{Lua\+Functor}!Zeta\+::\+Lua\+Functor@{Zeta\+::\+Lua\+Functor}}
+\subsubsection[{Lua\+Functor}]{\setlength{\rightskip}{0pt plus 5cm}Zeta\+::\+Lua\+Functor\+::\+Lua\+Functor (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classZeta_1_1LuaFunctor_acee7d7515bdc178e27d441984dfdd1b7}
+Default Constructor No reference is stored, so calling this won't do anything. \hypertarget{classZeta_1_1LuaFunctor_a627928b600c176a8366da8c9ea3a4bb2}{\index{Zeta\+::\+Lua\+Functor@{Zeta\+::\+Lua\+Functor}!Lua\+Functor@{Lua\+Functor}}
+\index{Lua\+Functor@{Lua\+Functor}!Zeta\+::\+Lua\+Functor@{Zeta\+::\+Lua\+Functor}}
+\subsubsection[{Lua\+Functor}]{\setlength{\rightskip}{0pt plus 5cm}Zeta\+::\+Lua\+Functor\+::\+Lua\+Functor (
+\begin{DoxyParamCaption}
+\item[{int}]{stack\+Index, }
+\item[{const std\+::string \&}]{name = {\ttfamily \char`\"{}\char`\"{}}}
+\end{DoxyParamCaption}
+)}}\label{classZeta_1_1LuaFunctor_a627928b600c176a8366da8c9ea3a4bb2}
+Constructs a \hyperlink{classZeta_1_1LuaFunctor}{Lua\+Functor} with the function at the provided Index It also assigns a name if provided. 
+\begin{DoxyParams}{Parameters}
+{\em stack\+Index} & the Stack index where the Lua Function is \\
+\hline
+{\em (\+Optional)} & a name for the function \\
+\hline
+\end{DoxyParams}
+\hypertarget{classZeta_1_1LuaFunctor_a2b7dc6b3983b44d18ceb15a3d45d8196}{\index{Zeta\+::\+Lua\+Functor@{Zeta\+::\+Lua\+Functor}!Lua\+Functor@{Lua\+Functor}}
+\index{Lua\+Functor@{Lua\+Functor}!Zeta\+::\+Lua\+Functor@{Zeta\+::\+Lua\+Functor}}
+\subsubsection[{Lua\+Functor}]{\setlength{\rightskip}{0pt plus 5cm}Zeta\+::\+Lua\+Functor\+::\+Lua\+Functor (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{script}
+\end{DoxyParamCaption}
+)}}\label{classZeta_1_1LuaFunctor_a2b7dc6b3983b44d18ceb15a3d45d8196}
+Constructs a \hyperlink{classZeta_1_1LuaFunctor}{Lua\+Functor} with the String as script 
+\begin{DoxyParams}{Parameters}
+{\em script} & the String that has the script \\
+\hline
+\end{DoxyParams}
+\hypertarget{classZeta_1_1LuaFunctor_af63f9d94a52a280a8293b7d04713facb}{\index{Zeta\+::\+Lua\+Functor@{Zeta\+::\+Lua\+Functor}!Lua\+Functor@{Lua\+Functor}}
+\index{Lua\+Functor@{Lua\+Functor}!Zeta\+::\+Lua\+Functor@{Zeta\+::\+Lua\+Functor}}
+\subsubsection[{Lua\+Functor}]{\setlength{\rightskip}{0pt plus 5cm}Zeta\+::\+Lua\+Functor\+::\+Lua\+Functor (
+\begin{DoxyParamCaption}
+\item[{{\bf Lua\+Functor} \&\&}]{other}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [default]}}}\label{classZeta_1_1LuaFunctor_af63f9d94a52a280a8293b7d04713facb}
+Move Constructor \hypertarget{classZeta_1_1LuaFunctor_aa6d2720639d0c9be429404caf0b13983}{\index{Zeta\+::\+Lua\+Functor@{Zeta\+::\+Lua\+Functor}!Lua\+Functor@{Lua\+Functor}}
+\index{Lua\+Functor@{Lua\+Functor}!Zeta\+::\+Lua\+Functor@{Zeta\+::\+Lua\+Functor}}
+\subsubsection[{Lua\+Functor}]{\setlength{\rightskip}{0pt plus 5cm}Zeta\+::\+Lua\+Functor\+::\+Lua\+Functor (
+\begin{DoxyParamCaption}
+\item[{const {\bf Lua\+Functor} \&}]{other}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [default]}}}\label{classZeta_1_1LuaFunctor_aa6d2720639d0c9be429404caf0b13983}
+Copy Constructor \hypertarget{classZeta_1_1LuaFunctor_a02432a039f85d8d460311bbb0f48ec79}{\index{Zeta\+::\+Lua\+Functor@{Zeta\+::\+Lua\+Functor}!````~Lua\+Functor@{$\sim$\+Lua\+Functor}}
+\index{````~Lua\+Functor@{$\sim$\+Lua\+Functor}!Zeta\+::\+Lua\+Functor@{Zeta\+::\+Lua\+Functor}}
+\subsubsection[{$\sim$\+Lua\+Functor}]{\setlength{\rightskip}{0pt plus 5cm}Zeta\+::\+Lua\+Functor\+::$\sim$\+Lua\+Functor (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classZeta_1_1LuaFunctor_a02432a039f85d8d460311bbb0f48ec79}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classZeta_1_1LuaFunctor_ae55fd17050bf4caa280ba050da6b3fe7}{\index{Zeta\+::\+Lua\+Functor@{Zeta\+::\+Lua\+Functor}!operator()@{operator()}}
+\index{operator()@{operator()}!Zeta\+::\+Lua\+Functor@{Zeta\+::\+Lua\+Functor}}
+\subsubsection[{operator()}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+Lua\+Functor\+::operator() (
+\begin{DoxyParamCaption}
+\item[{std\+::initializer\+\_\+list$<$ {\bf Lua\+Pushable} $\ast$ $>$}]{arg\+List}
+\end{DoxyParamCaption}
+) const}}\label{classZeta_1_1LuaFunctor_ae55fd17050bf4caa280ba050da6b3fe7}
+Calls the Lua Function with the arguments provided 
+\begin{DoxyParams}{Parameters}
+{\em arg\+List} & an std\+::initializer\+\_\+list$<$\+Lua\+Pushable$>$ of arguments to pass \\
+\hline
+\end{DoxyParams}
+\hypertarget{classZeta_1_1LuaFunctor_acf00a4d0775702e50cbd3ea2f8e7a480}{\index{Zeta\+::\+Lua\+Functor@{Zeta\+::\+Lua\+Functor}!operator()@{operator()}}
+\index{operator()@{operator()}!Zeta\+::\+Lua\+Functor@{Zeta\+::\+Lua\+Functor}}
+\subsubsection[{operator()}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+Lua\+Functor\+::operator() (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classZeta_1_1LuaFunctor_acf00a4d0775702e50cbd3ea2f8e7a480}
+A more Optimized version of the original operator() This takes no arguments \hypertarget{classZeta_1_1LuaFunctor_a6b31b753129eaf7a32904842c9a6efc1}{\index{Zeta\+::\+Lua\+Functor@{Zeta\+::\+Lua\+Functor}!operator=@{operator=}}
+\index{operator=@{operator=}!Zeta\+::\+Lua\+Functor@{Zeta\+::\+Lua\+Functor}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+Lua\+Functor\+::operator= (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{script}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1LuaFunctor_a6b31b753129eaf7a32904842c9a6efc1}
+/see \hyperlink{classZeta_1_1LuaFunctor_a0c68049e101d7b1d869f701f1a9b5d90}{set(const std\+::string\&)} 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classZeta_1_1LuaFunctor_a6b31b753129eaf7a32904842c9a6efc1_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classZeta_1_1LuaFunctor_acff4acd53e83b765f55942c6c9b0d156}{\index{Zeta\+::\+Lua\+Functor@{Zeta\+::\+Lua\+Functor}!operator=@{operator=}}
+\index{operator=@{operator=}!Zeta\+::\+Lua\+Functor@{Zeta\+::\+Lua\+Functor}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+Lua\+Functor\+::operator= (
+\begin{DoxyParamCaption}
+\item[{int}]{stack\+Index}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1LuaFunctor_acff4acd53e83b765f55942c6c9b0d156}
+/see \hyperlink{classZeta_1_1LuaFunctor_a98abacbb6f907e8cd94256ca91d9cafc}{set(int)} 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classZeta_1_1LuaFunctor_acff4acd53e83b765f55942c6c9b0d156_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classZeta_1_1LuaFunctor_a126209ca362d7593a02fc038a8e0a743}{\index{Zeta\+::\+Lua\+Functor@{Zeta\+::\+Lua\+Functor}!operator=@{operator=}}
+\index{operator=@{operator=}!Zeta\+::\+Lua\+Functor@{Zeta\+::\+Lua\+Functor}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Lua\+Functor}\& Zeta\+::\+Lua\+Functor\+::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Lua\+Functor} \&}]{other}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [default]}}}\label{classZeta_1_1LuaFunctor_a126209ca362d7593a02fc038a8e0a743}
+Copy assignment operator \hypertarget{classZeta_1_1LuaFunctor_a8a29527d610ea86a5fc79956e0b54cab}{\index{Zeta\+::\+Lua\+Functor@{Zeta\+::\+Lua\+Functor}!operator=@{operator=}}
+\index{operator=@{operator=}!Zeta\+::\+Lua\+Functor@{Zeta\+::\+Lua\+Functor}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Lua\+Functor}\& Zeta\+::\+Lua\+Functor\+::operator= (
+\begin{DoxyParamCaption}
+\item[{{\bf Lua\+Functor} \&\&}]{other}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [default]}}}\label{classZeta_1_1LuaFunctor_a8a29527d610ea86a5fc79956e0b54cab}
+Move assignment operator \hypertarget{classZeta_1_1LuaFunctor_a98abacbb6f907e8cd94256ca91d9cafc}{\index{Zeta\+::\+Lua\+Functor@{Zeta\+::\+Lua\+Functor}!set@{set}}
+\index{set@{set}!Zeta\+::\+Lua\+Functor@{Zeta\+::\+Lua\+Functor}}
+\subsubsection[{set}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+Lua\+Functor\+::set (
+\begin{DoxyParamCaption}
+\item[{int}]{stack\+Index}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classZeta_1_1LuaFunctor_a98abacbb6f907e8cd94256ca91d9cafc}
+References the Lua Functor at the Lua Stack Pointer This function can throw Zeta\+::\+Exeption if the object at the Stack is not valid. Notice\+: This does not remove the \hyperlink{classZeta_1_1Object}{Object} from stack. 
+\begin{DoxyParams}{Parameters}
+{\em stack\+Index} & the index at Lua Stack the Function is. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classZeta_1_1LuaReferenced_a9b61c3cb2dde8a50d1c463dfe7df146c}{Zeta\+::\+Lua\+Referenced}.
+
+\hypertarget{classZeta_1_1LuaFunctor_a0c68049e101d7b1d869f701f1a9b5d90}{\index{Zeta\+::\+Lua\+Functor@{Zeta\+::\+Lua\+Functor}!set@{set}}
+\index{set@{set}!Zeta\+::\+Lua\+Functor@{Zeta\+::\+Lua\+Functor}}
+\subsubsection[{set}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+Lua\+Functor\+::set (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{script}
+\end{DoxyParamCaption}
+)}}\label{classZeta_1_1LuaFunctor_a0c68049e101d7b1d869f701f1a9b5d90}
+Loads and stores the script provided in the String 
+\begin{DoxyParams}{Parameters}
+{\em script} & the String with the script to store \\
+\hline
+\end{DoxyParams}
+\hypertarget{classZeta_1_1LuaFunctor_a6ec24e778260eec5818278d6bbed01c3}{\index{Zeta\+::\+Lua\+Functor@{Zeta\+::\+Lua\+Functor}!set\+Lua\+Reference@{set\+Lua\+Reference}}
+\index{set\+Lua\+Reference@{set\+Lua\+Reference}!Zeta\+::\+Lua\+Functor@{Zeta\+::\+Lua\+Functor}}
+\subsubsection[{set\+Lua\+Reference}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+Lua\+Functor\+::set\+Lua\+Reference (
+\begin{DoxyParamCaption}
+\item[{int}]{reference}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classZeta_1_1LuaFunctor_a6ec24e778260eec5818278d6bbed01c3}
+Sets the Lua\+Reference. This is different with \hyperlink{classZeta_1_1LuaFunctor_a98abacbb6f907e8cd94256ca91d9cafc}{set()} The reference should be already taken. 
+\begin{DoxyParams}{Parameters}
+{\em reference} & the Reference to Lua Code \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classZeta_1_1LuaReferenced_a8e487b719107baad17268854b878fc81}{Zeta\+::\+Lua\+Referenced}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Zeta/\+Core/\hyperlink{LuaFunctor_8hpp}{Lua\+Functor.\+hpp}\end{DoxyCompactItemize}

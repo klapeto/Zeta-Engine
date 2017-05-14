@@ -1,0 +1,98 @@
+.TH "Zeta::Visitor" 3 "Wed Feb 10 2016" "Zeta" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Zeta::Visitor \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Visitor\&.hpp>\fP
+.PP
+Inherited by \fBZeta::InteractField::OnClickHandler\fP, \fBZeta::InteractField::OnCollisionHandler\fP, \fBZeta::Player::ClickHandler\fP, \fBZeta::ProjectileClass::ObjectHandler\fP, and \fBZeta::TeleportField::CollisionHandler\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "virtual void \fBhandle\fP (\fBProjectile\fP &obj)"
+.br
+.ti -1c
+.RI "virtual void \fBhandle\fP (\fBDirectionalProjectile\fP &obj)"
+.br
+.ti -1c
+.RI "virtual void \fBhandle\fP (\fBInteractField\fP &obj)"
+.br
+.ti -1c
+.RI "virtual void \fBhandle\fP (\fBLifeform\fP &obj)"
+.br
+.ti -1c
+.RI "virtual void \fBhandle\fP (\fBPlayer\fP &obj)"
+.br
+.ti -1c
+.RI "virtual void \fBhandle\fP (\fBChildObject\fP &obj)"
+.br
+.ti -1c
+.RI "virtual void \fBhandle\fP (\fBActiveAbility\fP &ability)"
+.br
+.ti -1c
+.RI "virtual void \fBhandle\fP (\fBPassiveAbility\fP &ability)"
+.br
+.ti -1c
+.RI "virtual void \fBhandle\fP (Quest &quest)"
+.br
+.ti -1c
+.RI "virtual void \fBhandle\fP (\fBStaticObject\fP &quest)"
+.br
+.ti -1c
+.RI "virtual void \fBhandle\fP (\fBInteractObject\fP &obj)"
+.br
+.ti -1c
+.RI "virtual void \fBhandle\fP (\fBCEGUIObject\fP &obj)"
+.br
+.ti -1c
+.RI "\fBVisitor\fP ()"
+.br
+.ti -1c
+.RI "virtual \fB~Visitor\fP ()"
+.br
+.in -1c
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Zeta::Visitor::Visitor ()\fC [inline]\fP"
+
+.SS "virtual Zeta::Visitor::~Visitor ()\fC [inline]\fP, \fC [virtual]\fP"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "virtual void Zeta::Visitor::handle (\fBProjectile\fP &obj)\fC [inline]\fP, \fC [virtual]\fP"
+
+.SS "virtual void Zeta::Visitor::handle (\fBDirectionalProjectile\fP &obj)\fC [inline]\fP, \fC [virtual]\fP"
+
+.SS "virtual void Zeta::Visitor::handle (\fBInteractField\fP &obj)\fC [inline]\fP, \fC [virtual]\fP"
+
+.SS "virtual void Zeta::Visitor::handle (\fBLifeform\fP &obj)\fC [inline]\fP, \fC [virtual]\fP"
+
+.PP
+Reimplemented in \fBZeta::ProjectileClass::ObjectHandler\fP, \fBZeta::Player::ClickHandler\fP, and \fBZeta::InteractField::OnCollisionHandler\fP\&.
+.SS "virtual void Zeta::Visitor::handle (\fBPlayer\fP &obj)\fC [inline]\fP, \fC [virtual]\fP"
+
+.PP
+Reimplemented in \fBZeta::ProjectileClass::ObjectHandler\fP, \fBZeta::InteractField::OnCollisionHandler\fP, \fBZeta::TeleportField::CollisionHandler\fP, and \fBZeta::InteractField::OnClickHandler\fP\&.
+.SS "virtual void Zeta::Visitor::handle (\fBChildObject\fP &obj)\fC [inline]\fP, \fC [virtual]\fP"
+
+.SS "virtual void Zeta::Visitor::handle (\fBActiveAbility\fP &ability)\fC [inline]\fP, \fC [virtual]\fP"
+
+.SS "virtual void Zeta::Visitor::handle (\fBPassiveAbility\fP &ability)\fC [inline]\fP, \fC [virtual]\fP"
+
+.SS "virtual void Zeta::Visitor::handle (Quest &quest)\fC [inline]\fP, \fC [virtual]\fP"
+
+.SS "virtual void Zeta::Visitor::handle (\fBStaticObject\fP &quest)\fC [inline]\fP, \fC [virtual]\fP"
+
+.SS "virtual void Zeta::Visitor::handle (\fBInteractObject\fP &obj)\fC [inline]\fP, \fC [virtual]\fP"
+
+.SS "virtual void Zeta::Visitor::handle (\fBCEGUIObject\fP &obj)\fC [inline]\fP, \fC [virtual]\fP"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Zeta from the source code\&.

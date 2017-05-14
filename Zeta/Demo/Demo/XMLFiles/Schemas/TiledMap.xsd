@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+
+	<xsd:complexType name="mapType">
+		<xsd:sequence>
+			<xsd:element name="properties" type="propertiesType"
+				minOccurs="0" maxOccurs="unbounded">
+			</xsd:element>
+			<xsd:element name="tileset" type="tilesetType"
+				maxOccurs="unbounded" minOccurs="1">
+			</xsd:element>
+			<xsd:element name="layer" type="layerType"
+				maxOccurs="unbounded" minOccurs="1">
+			</xsd:element>
+			<xsd:element name="objectgroup" type="objectgroupType"
+				maxOccurs="unbounded" minOccurs="0">
+			</xsd:element>
+		</xsd:sequence>
+		<xsd:attribute name="version" type="xsd:string"
+			use="required">
+		</xsd:attribute>
+		<xsd:attribute name="orientation" type="xsd:string"
+			use="required" fixed="orthogonal">
+		</xsd:attribute>
+		<xsd:attribute name="width" type="xsd:int" use="required"></xsd:attribute>
+		<xsd:attribute name="height" type="xsd:int" use="required"></xsd:attribute>
+		<xsd:attribute name="tilewidth" type="xsd:int" use="required">
+		</xsd:attribute>
+		<xsd:attribute name="tileheight" type="xsd:int"
+			use="required">
+		</xsd:attribute>
+		<xsd:attribute name="renderorder" type="xsd:string"
+			use="optional">
+		</xsd:attribute>
+		<xsd:attribute name="nextobjectid" type="xsd:int" use="optional"></xsd:attribute>
+	</xsd:complexType>
+
+	<xsd:complexType name="propertiesType">
+		<xsd:sequence>
+			<xsd:element name="property" type="propertyType"
+				maxOccurs="unbounded" minOccurs="1">
+			</xsd:element>
+		</xsd:sequence>
+
+	</xsd:complexType>
+
+	<xsd:complexType name="propertyType">
+		<xsd:attribute name="name" type="xsd:string" use="required"></xsd:attribute>
+		<xsd:attribute name="value" type="xsd:string" use="required"></xsd:attribute>
+	</xsd:complexType>
+
+	<xsd:complexType name="tilesetType">
+		<xsd:attribute name="firstgid" type="xsd:int" use="required"></xsd:attribute>
+		<xsd:attribute name="source" type="xsd:string" use="required"></xsd:attribute>
+	</xsd:complexType>
+
+
+	<xsd:complexType name="layerType">
+		<xsd:sequence>
+			<xsd:element name="properties" type="propertiesType"
+				maxOccurs="1" minOccurs="0">
+			</xsd:element>
+			<xsd:element name="data" type="dataType" maxOccurs="1"
+				minOccurs="1">
+			</xsd:element>
+		</xsd:sequence>
+		<xsd:attribute name="name" type="xsd:string" use="required"></xsd:attribute>
+		<xsd:attribute name="height" type="xsd:int" use="required"></xsd:attribute>
+		<xsd:attribute name="width" type="xsd:int" use="required"></xsd:attribute>
+		<xsd:attribute name="opacity" type="xsd:float" use="optional"
+			default="1"></xsd:attribute>
+	</xsd:complexType>
+
+	<xsd:complexType name="dataType">
+		<xsd:simpleContent>
+			<xsd:extension base="xsd:string">
+				<xsd:attribute name="compression" type="xsd:string"
+					use="required" fixed="zlib">
+				</xsd:attribute>
+				<xsd:attribute name="encoding" type="xsd:string" use="required"
+					fixed="base64">
+				</xsd:attribute>
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+
+	<xsd:complexType name="objectgroupType">
+		<xsd:sequence>
+			<xsd:element name="properties" type="propertiesType"
+				maxOccurs="1" minOccurs="0">
+			</xsd:element>
+			<xsd:element name="object" type="objectType" maxOccurs="unbounded"
+				minOccurs="0">
+			</xsd:element>
+		</xsd:sequence>
+		<xsd:attribute name="name" type="xsd:string" use="required"></xsd:attribute>
+		<xsd:attribute name="width" type="xsd:int" use="optional"></xsd:attribute>
+		<xsd:attribute name="height" type="xsd:int" use="optional"></xsd:attribute>
+	</xsd:complexType>
+
+	<xsd:complexType name="objectType">
+		<xsd:sequence>
+			<xsd:element name="properties" type="propertiesType"
+				maxOccurs="1" minOccurs="0">
+			</xsd:element>
+		</xsd:sequence>
+		<xsd:attribute name="name" type="xsd:string" use="optional"></xsd:attribute>
+		<xsd:attribute name="x" type="xsd:int" use="required"></xsd:attribute>
+		<xsd:attribute name="y" type="xsd:int" use="required"></xsd:attribute>
+		<xsd:attribute name="width" type="xsd:int" use="optional"
+			default="64">
+		</xsd:attribute>
+		<xsd:attribute name="height" type="xsd:int" use="optional"
+			default="64">
+		</xsd:attribute>
+		<xsd:attribute name="type" type="xsd:string" use="optional"></xsd:attribute>
+		<xsd:attribute name="gid" type="xsd:int" use="optional"></xsd:attribute>
+		<xsd:attribute name="id" type="xsd:int" use="optional"></xsd:attribute>
+	</xsd:complexType>
+
+	<xsd:element name="map" type="mapType"></xsd:element>
+</xsd:schema>

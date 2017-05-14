@@ -1,0 +1,16 @@
+<map id="include/Zeta/Core/AnimationClasses/OffAnimation.hpp" name="include/Zeta/Core/AnimationClasses/OffAnimation.hpp">
+<area shape="rect" id="node2" href="$AnimationHandler_8hpp.html" title="include/Zeta/Core/Animation\lClasses/AnimationHandler.hpp" alt="" coords="468,97,671,138"/>
+<area shape="rect" id="node3" href="$CEGUIObject_8hpp.html" title="include/Zeta/Core/RPGClasses\l/CEGUIObject.hpp" alt="" coords="5,187,211,229"/>
+<area shape="rect" id="node4" href="$ChildObject_8hpp.html" title="include/Zeta/Core/RPGClasses\l/ChildObject.hpp" alt="" coords="235,187,441,229"/>
+<area shape="rect" id="node7" href="$InteractObject_8hpp.html" title="include/Zeta/Core/RPGClasses\l/InteractObject.hpp" alt="" coords="466,187,672,229"/>
+<area shape="rect" id="node8" href="$Lifeform_8hpp.html" title="include/Zeta/Core/RPGClasses\l/Lifeform.hpp" alt="" coords="697,187,903,229"/>
+<area shape="rect" id="node13" href="$Projectile_8hpp.html" title="include/Zeta/Core/RPGClasses\l/Projectile.hpp" alt="" coords="1158,187,1364,229"/>
+<area shape="rect" id="node5" href="$CEGUIChild_8hpp.html" title="include/Zeta/Core/RPGClasses\l/CEGUIChild.hpp" alt="" coords="5,278,211,319"/>
+<area shape="rect" id="node6" href="$StickyObject_8hpp.html" title="include/Zeta/Core/RPGClasses\l/StickyObject.hpp" alt="" coords="235,278,441,319"/>
+<area shape="rect" id="node9" href="$Enemy_8hpp.html" title="include/Zeta/Core/RPGClasses\l/Enemy.hpp" alt="" coords="466,278,672,319"/>
+<area shape="rect" id="node10" href="$Npc_8hpp.html" title="include/Zeta/Core/RPGClasses\l/Npc.hpp" alt="" coords="697,278,903,319"/>
+<area shape="rect" id="node11" href="$Player_8hpp.html" title="include/Zeta/Core/RPGClasses\l/Player.hpp" alt="" coords="927,278,1133,319"/>
+<area shape="rect" id="node12" href="$WorldManager_8hpp.html" title="include/Zeta/Core/RPGClasses\l/WorldManager.hpp" alt="" coords="927,369,1133,410"/>
+<area shape="rect" id="node14" href="$DirectionalProjectile_8hpp.html" title="include/Zeta/Core/RPGClasses\l/DirectionalProjectile.hpp" alt="" coords="1158,278,1364,319"/>
+<area shape="rect" id="node15" href="$SeekingProjectile_8hpp.html" title="include/Zeta/Core/RPGClasses\l/SeekingProjectile.hpp" alt="" coords="1389,278,1595,319"/>
+</map>

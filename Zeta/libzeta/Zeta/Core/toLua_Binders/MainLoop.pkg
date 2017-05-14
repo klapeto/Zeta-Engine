@@ -1,0 +1,8 @@
+$#include <Zeta/Core/MainLoop.hpp>
+
+class MainLoop {
+public:
+	float getCurrentFPS() const;
+	static MainLoop& getInstance();
+
+};

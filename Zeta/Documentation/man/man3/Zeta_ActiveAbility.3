@@ -1,0 +1,299 @@
+.TH "Zeta::ActiveAbility" 3 "Wed Feb 10 2016" "Zeta" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Zeta::ActiveAbility \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <ActiveAbility\&.hpp>\fP
+.PP
+Inherits \fBZeta::ClassifiedAbility< ActiveAbilityClass >\fP, and \fBZeta::Updateable\fP\&.
+.SS "Public Types"
+
+.in +1c
+.ti -1c
+.RI "enum \fBState\fP { \fBState::Ready\fP, \fBState::onCoodown\fP, \fBState::Casting\fP, \fBState::Inactive\fP }"
+.br
+.in -1c
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBResult\fP \fBinvoke\fP ()"
+.br
+.ti -1c
+.RI "void \fBupdate\fP (\fBFloat\fP elapsedTime)"
+.br
+.ti -1c
+.RI "\fBFloat\fP \fBgetRemainingCooldown\fP () const "
+.br
+.ti -1c
+.RI "bool \fBisCasting\fP () const "
+.br
+.ti -1c
+.RI "bool \fBisReady\fP () const "
+.br
+.ti -1c
+.RI "bool \fBisOnCooldown\fP () const "
+.br
+.ti -1c
+.RI "bool \fBisDone\fP () const "
+.br
+.ti -1c
+.RI "bool \fBcanBeInvoked\fP () const "
+.br
+.ti -1c
+.RI "bool \fBisThereEnoughMana\fP () const "
+.br
+.ti -1c
+.RI "\fBFloat\fP \fBgetCastTime\fP () const "
+.br
+.ti -1c
+.RI "void \fBsetCastTime\fP (\fBFloat\fP \fBcastTime\fP)"
+.br
+.ti -1c
+.RI "\fBFloat\fP \fBgetCoolDown\fP () const "
+.br
+.ti -1c
+.RI "void \fBsetCoolDown\fP (\fBFloat\fP \fBcoolDown\fP)"
+.br
+.ti -1c
+.RI "\fBFloat\fP \fBgetManaCost\fP () const "
+.br
+.ti -1c
+.RI "void \fBsetManaCost\fP (\fBFloat\fP \fBmanaCost\fP)"
+.br
+.ti -1c
+.RI "\fBFloat\fP \fBgetRange\fP () const "
+.br
+.ti -1c
+.RI "void \fBsetRange\fP (\fBFloat\fP \fBrange\fP)"
+.br
+.ti -1c
+.RI "void \fBstopCasting\fP ()"
+.br
+.ti -1c
+.RI "void \fBinvokeProjectile\fP (const std::string &name, \fBFloat\fP x, \fBFloat\fP y)"
+.br
+.ti -1c
+.RI "void \fBapplyEffect\fP (const std::string &name, \fBLifeform\fP *\fBtarget\fP, int \fBlevel\fP)"
+.br
+.ti -1c
+.RI "void \fBaccept\fP (\fBVisitor\fP &visitor)"
+.br
+.ti -1c
+.RI "void \fBpushToLua\fP (lua_State *lstate)"
+.br
+.ti -1c
+.RI "\fBActiveAbility\fP (const \fBActiveAbilityClass\fP &\fBabilityClass\fP, \fBLifeform\fP *\fBowner\fP, int \fBlevel\fP)"
+.br
+.ti -1c
+.RI "virtual \fB~ActiveAbility\fP ()"
+.br
+.in -1c
+.SS "Protected Member Functions"
+
+.in +1c
+.ti -1c
+.RI "virtual void \fBrelease\fP ()"
+.br
+.ti -1c
+.RI "virtual \fBResult\fP \fBcheckConditions\fP ()"
+.br
+.ti -1c
+.RI "virtual void \fBcast\fP ()"
+.br
+.ti -1c
+.RI "void \fBonLevelChange\fP ()"
+.br
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBZSmallMap\fP< std::string, 
+.br
+\fBProjectile\fP * > \fBavailableProjectiles\fP"
+.br
+.ti -1c
+.RI "\fBZSmallSet\fP< \fBProjectile\fP * > \fBprojectiles\fP"
+.br
+.ti -1c
+.RI "\fBSoundInstance\fP * \fBcastingSound\fP"
+.br
+.ti -1c
+.RI "\fBSoundInstance\fP * \fBreleaseSound\fP"
+.br
+.ti -1c
+.RI "\fBLifeform\fP * \fBtarget\fP"
+.br
+.ti -1c
+.RI "\fBAttribute\fP & \fBownerMana\fP"
+.br
+.ti -1c
+.RI "\fBFloat\fP \fBmanaCost\fP"
+.br
+.ti -1c
+.RI "\fBFloat\fP \fBcoolDown\fP"
+.br
+.ti -1c
+.RI "\fBFloat\fP \fBcastTime\fP"
+.br
+.ti -1c
+.RI "\fBFloat\fP \fBrange\fP"
+.br
+.ti -1c
+.RI "\fBFloat\fP \fBframeCounter\fP"
+.br
+.ti -1c
+.RI "\fBState\fP \fBstate\fP"
+.br
+.ti -1c
+.RI "bool \fBhasCastingAnimation\fP"
+.br
+.ti -1c
+.RI "bool \fBhasReleaseAnimation\fP"
+.br
+.ti -1c
+.RI "bool \fBhasCastingSound\fP"
+.br
+.ti -1c
+.RI "bool \fBhasReleaseSound\fP"
+.br
+.ti -1c
+.RI "bool \fBanimationChanged\fP"
+.br
+.ti -1c
+.RI "bool \fBisCastingSoundPlaying\fP"
+.br
+.ti -1c
+.RI "bool \fBfinished\fP"
+.br
+.in -1c
+.SH "Member Enumeration Documentation"
+.PP 
+.SS "enum \fBZeta::ActiveAbility::State\fP\fC [strong]\fP"
+
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fIReady \fP\fP
+.TP
+\fB\fIonCoodown \fP\fP
+.TP
+\fB\fICasting \fP\fP
+.TP
+\fB\fIInactive \fP\fP
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Zeta::ActiveAbility::ActiveAbility (const \fBActiveAbilityClass\fP &abilityClass, \fBLifeform\fP *owner, intlevel)"
+
+.SS "virtual Zeta::ActiveAbility::~ActiveAbility ()\fC [virtual]\fP"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "void Zeta::ActiveAbility::accept (\fBVisitor\fP &visitor)"
+
+.SS "void Zeta::ActiveAbility::applyEffect (const std::string &name, \fBLifeform\fP *target, intlevel)"
+
+.SS "bool Zeta::ActiveAbility::canBeInvoked () const"
+
+.SS "virtual void Zeta::ActiveAbility::cast ()\fC [protected]\fP, \fC [virtual]\fP"
+
+.SS "virtual \fBResult\fP Zeta::ActiveAbility::checkConditions ()\fC [protected]\fP, \fC [virtual]\fP"
+
+.SS "\fBFloat\fP Zeta::ActiveAbility::getCastTime () const\fC [inline]\fP"
+
+.SS "\fBFloat\fP Zeta::ActiveAbility::getCoolDown () const\fC [inline]\fP"
+
+.SS "\fBFloat\fP Zeta::ActiveAbility::getManaCost () const\fC [inline]\fP"
+
+.SS "\fBFloat\fP Zeta::ActiveAbility::getRange () const\fC [inline]\fP"
+
+.SS "\fBFloat\fP Zeta::ActiveAbility::getRemainingCooldown () const\fC [inline]\fP"
+
+.SS "\fBResult\fP Zeta::ActiveAbility::invoke ()"
+
+.SS "void Zeta::ActiveAbility::invokeProjectile (const std::string &name, \fBFloat\fPx, \fBFloat\fPy)"
+
+.SS "bool Zeta::ActiveAbility::isCasting () const\fC [inline]\fP"
+
+.SS "bool Zeta::ActiveAbility::isDone () const\fC [inline]\fP"
+
+.SS "bool Zeta::ActiveAbility::isOnCooldown () const\fC [inline]\fP"
+
+.SS "bool Zeta::ActiveAbility::isReady () const\fC [inline]\fP"
+
+.SS "bool Zeta::ActiveAbility::isThereEnoughMana () const"
+
+.SS "void Zeta::ActiveAbility::onLevelChange ()\fC [protected]\fP, \fC [virtual]\fP"
+
+.PP
+Implements \fBZeta::Ability\fP\&.
+.SS "void Zeta::ActiveAbility::pushToLua (lua_State *lstate)\fC [virtual]\fP"
+
+.PP
+Implements \fBZeta::LuaPushable\fP\&.
+.SS "virtual void Zeta::ActiveAbility::release ()\fC [protected]\fP, \fC [virtual]\fP"
+
+.SS "void Zeta::ActiveAbility::setCastTime (\fBFloat\fPcastTime)\fC [inline]\fP"
+
+.SS "void Zeta::ActiveAbility::setCoolDown (\fBFloat\fPcoolDown)\fC [inline]\fP"
+
+.SS "void Zeta::ActiveAbility::setManaCost (\fBFloat\fPmanaCost)\fC [inline]\fP"
+
+.SS "void Zeta::ActiveAbility::setRange (\fBFloat\fPrange)\fC [inline]\fP"
+
+.SS "void Zeta::ActiveAbility::stopCasting ()"
+
+.SS "void Zeta::ActiveAbility::update (\fBFloat\fPelapsedTime)\fC [virtual]\fP"
+
+.PP
+Implements \fBZeta::Updateable\fP\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "bool Zeta::ActiveAbility::animationChanged\fC [protected]\fP"
+
+.SS "\fBZSmallMap\fP<std::string, \fBProjectile\fP*> Zeta::ActiveAbility::availableProjectiles\fC [protected]\fP"
+
+.SS "\fBSoundInstance\fP* Zeta::ActiveAbility::castingSound\fC [protected]\fP"
+
+.SS "\fBFloat\fP Zeta::ActiveAbility::castTime\fC [protected]\fP"
+
+.SS "\fBFloat\fP Zeta::ActiveAbility::coolDown\fC [protected]\fP"
+
+.SS "bool Zeta::ActiveAbility::finished\fC [protected]\fP"
+
+.SS "\fBFloat\fP Zeta::ActiveAbility::frameCounter\fC [protected]\fP"
+
+.SS "bool Zeta::ActiveAbility::hasCastingAnimation\fC [protected]\fP"
+
+.SS "bool Zeta::ActiveAbility::hasCastingSound\fC [protected]\fP"
+
+.SS "bool Zeta::ActiveAbility::hasReleaseAnimation\fC [protected]\fP"
+
+.SS "bool Zeta::ActiveAbility::hasReleaseSound\fC [protected]\fP"
+
+.SS "bool Zeta::ActiveAbility::isCastingSoundPlaying\fC [protected]\fP"
+
+.SS "\fBFloat\fP Zeta::ActiveAbility::manaCost\fC [protected]\fP"
+
+.SS "\fBAttribute\fP& Zeta::ActiveAbility::ownerMana\fC [protected]\fP"
+
+.SS "\fBZSmallSet\fP<\fBProjectile\fP*> Zeta::ActiveAbility::projectiles\fC [protected]\fP"
+
+.SS "\fBFloat\fP Zeta::ActiveAbility::range\fC [protected]\fP"
+
+.SS "\fBSoundInstance\fP* Zeta::ActiveAbility::releaseSound\fC [protected]\fP"
+
+.SS "\fBState\fP Zeta::ActiveAbility::state\fC [protected]\fP"
+
+.SS "\fBLifeform\fP* Zeta::ActiveAbility::target\fC [protected]\fP"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Zeta from the source code\&.

@@ -1,0 +1,76 @@
+\hypertarget{classZeta_1_1Drawable}{\section{Zeta\+:\+:Drawable Class Reference}
+\label{classZeta_1_1Drawable}\index{Zeta\+::\+Drawable@{Zeta\+::\+Drawable}}
+}
+
+
+{\ttfamily \#include $<$Drawable.\+hpp$>$}
+
+
+
+Inheritance diagram for Zeta\+:\+:Drawable\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classZeta_1_1Drawable__inherit__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{classZeta_1_1Drawable_a3f453a7a971b7eeba1768be3eaedc192}{draw} (\hyperlink{namespaceZeta_a1e0a1265f9b3bd3075fb0fabd39088ba}{Float} x, \hyperlink{namespaceZeta_a1e0a1265f9b3bd3075fb0fabd39088ba}{Float} y, \hyperlink{namespaceZeta_a1e0a1265f9b3bd3075fb0fabd39088ba}{Float} rotation=0.\+0f, Float scale=1.\+0f) const =0
+\item 
+\hyperlink{classZeta_1_1Drawable_aaa7960918ffa769dd0dd2c37e9a17574}{Drawable} ()
+\item 
+virtual \hyperlink{classZeta_1_1Drawable_af9738b49ccdedab8591f0652ff559270}{$\sim$\+Drawable} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Abstract Class that ensures that derived classes can be drawn on Screen 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classZeta_1_1Drawable_aaa7960918ffa769dd0dd2c37e9a17574}{\index{Zeta\+::\+Drawable@{Zeta\+::\+Drawable}!Drawable@{Drawable}}
+\index{Drawable@{Drawable}!Zeta\+::\+Drawable@{Zeta\+::\+Drawable}}
+\subsubsection[{Drawable}]{\setlength{\rightskip}{0pt plus 5cm}Zeta\+::\+Drawable\+::\+Drawable (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1Drawable_aaa7960918ffa769dd0dd2c37e9a17574}
+\hypertarget{classZeta_1_1Drawable_af9738b49ccdedab8591f0652ff559270}{\index{Zeta\+::\+Drawable@{Zeta\+::\+Drawable}!````~Drawable@{$\sim$\+Drawable}}
+\index{````~Drawable@{$\sim$\+Drawable}!Zeta\+::\+Drawable@{Zeta\+::\+Drawable}}
+\subsubsection[{$\sim$\+Drawable}]{\setlength{\rightskip}{0pt plus 5cm}virtual Zeta\+::\+Drawable\+::$\sim$\+Drawable (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classZeta_1_1Drawable_af9738b49ccdedab8591f0652ff559270}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classZeta_1_1Drawable_a3f453a7a971b7eeba1768be3eaedc192}{\index{Zeta\+::\+Drawable@{Zeta\+::\+Drawable}!draw@{draw}}
+\index{draw@{draw}!Zeta\+::\+Drawable@{Zeta\+::\+Drawable}}
+\subsubsection[{draw}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Zeta\+::\+Drawable\+::draw (
+\begin{DoxyParamCaption}
+\item[{{\bf Float}}]{x, }
+\item[{{\bf Float}}]{y, }
+\item[{{\bf Float}}]{rotation = {\ttfamily 0.0f}, }
+\item[{{\bf Float}}]{scale = {\ttfamily 1.0f}}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classZeta_1_1Drawable_a3f453a7a971b7eeba1768be3eaedc192}
+Draws the \hyperlink{classZeta_1_1Object}{Object} on screen. Be advised, the x,y, offsets might have different meaning on different implementations. 
+\begin{DoxyParams}{Parameters}
+{\em x} & X offset to be applied on the drawing \\
+\hline
+{\em y} & Y offset to be applied on the drawing \\
+\hline
+{\em rotation} & the rotation to be applied on the drawing \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{classZeta_1_1WorldManager_a695f5b869c76518c338529caa44538db}{Zeta\+::\+World\+Manager}, \hyperlink{classZeta_1_1Tile_a272534e2d1aeca3057cece7fdefece72}{Zeta\+::\+Tile}, \hyperlink{classZeta_1_1CEGUIObject_a7faadfc88dae840a884513af9f84bca5}{Zeta\+::\+C\+E\+G\+U\+I\+Object}, \hyperlink{classZeta_1_1Rectangle_a2ed6e665e3fd875143cf6bdad95277bb}{Zeta\+::\+Rectangle}, \hyperlink{classZeta_1_1CEGUIChild_a46f89f7ef921246d22690d7e1900da35}{Zeta\+::\+C\+E\+G\+U\+I\+Child}, \hyperlink{classZeta_1_1ChildObject_a561389a9afe2cac7363ead7234a79a87}{Zeta\+::\+Child\+Object}, \hyperlink{classZeta_1_1Cell_ad9f006fa7d204493878e288f1ba35b75}{Zeta\+::\+Cell}, \hyperlink{classZeta_1_1GUIManager_ad7015380f8d03224a633b3a644087b29}{Zeta\+::\+G\+U\+I\+Manager}, \hyperlink{classZeta_1_1Lifeform_a12e6dabebc0844eb84a6cb60a226fb5f}{Zeta\+::\+Lifeform}, \hyperlink{classZeta_1_1AnimationHandler_aa39b0ead39df1eb3d677531a1ce582e2}{Zeta\+::\+Animation\+Handler}, \hyperlink{classZeta_1_1AnimationPlayer_af1f79cd641cebc5f2a8522c95d5b51a9}{Zeta\+::\+Animation\+Player}, \hyperlink{classZeta_1_1OffAnimation_a38f8d188be29034bf6016a1c77a3958d}{Zeta\+::\+Off\+Animation}, \hyperlink{classZeta_1_1Crosshair_aec17be6aca9cb0a92c8c9c8f12dae003}{Zeta\+::\+Crosshair}, \hyperlink{classZeta_1_1StaticQuadtree_a24b8d0e8b3ccbfcffc65300e9ff1d860}{Zeta\+::\+Static\+Quadtree}, \hyperlink{classZeta_1_1Projectile_aad582299efafe6e189c593b140f9e59b}{Zeta\+::\+Projectile}, \hyperlink{classZeta_1_1Ellipsis_a210b99ead8474b14bc95f89a4995ba9b}{Zeta\+::\+Ellipsis}, \hyperlink{classZeta_1_1Cell_1_1Sprite_a05a31c5ef9a91d6e92ecc77df3bbf010}{Zeta\+::\+Cell\+::\+Sprite}, \hyperlink{classZeta_1_1StaticObject_a62f25c386ff3b715e30ef5d4f5834805}{Zeta\+::\+Static\+Object}, \hyperlink{classZeta_1_1InteractField_a423e159f4cd90fb7f30ff3a576523b4a}{Zeta\+::\+Interact\+Field}, \hyperlink{classZeta_1_1TeleportField_a8b6962191caa86d2f70093fafe02e174}{Zeta\+::\+Teleport\+Field}, \hyperlink{classZeta_1_1AllegroBitmap_ab3ddef20d1597683a99dcfdc5cfb3c5f}{Zeta\+::\+Allegro\+Bitmap}, and \hyperlink{classZeta_1_1InteractObject_a1a9f0b7c74fb38466bf203896b994dba}{Zeta\+::\+Interact\+Object}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Zeta/\+Core/\hyperlink{Drawable_8hpp}{Drawable.\+hpp}\end{DoxyCompactItemize}

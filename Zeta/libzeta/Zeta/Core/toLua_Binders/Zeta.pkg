@@ -1,0 +1,109 @@
+typedef float Float;
+typedef float AttributeValue;
+
+
+namespace Zeta {
+
+$pfile "Ability.pkg"
+
+$pfile "AbilityClass.pkg"
+
+$pfile "AnimationHandler.pkg"
+
+$pfile "ChildObject.pkg"
+
+$pfile "ConsoleManager.pkg"
+
+$pfile "DirectionalProjectile.pkg"
+
+$pfile "Object.pkg"
+
+$pfile "Lifeform.pkg"
+
+$pfile "Enemy.pkg"
+
+$pfile "Logger.pkg"
+
+$pfile "MainLoop.pkg"
+
+$pfile "Map.pkg"
+
+$pfile "Modifier.pkg"
+
+$pfile "Npc.pkg"
+
+$pfile "PassiveAbility.pkg"
+
+$pfile "Player.pkg"
+
+$pfile "Projectile.pkg"
+
+$pfile "Rectangle.pkg"
+
+$pfile "SaveManager.pkg"
+
+$pfile "SeekingProjectile.pkg"
+
+$pfile "Settings.pkg"
+
+$pfile "Vector2.pkg"
+
+$pfile "View.pkg"
+
+$pfile "WorldEvent.pkg"
+
+$pfile "WorldManager.pkg"
+
+$pfile "System.pkg"
+
+$pfile "ActiveAbility.pkg"
+
+$pfile "AudioContext.pkg"
+
+$pfile "ActiveAbilityClass.pkg"
+
+$pfile "PassiveAbilityClass.pkg"
+
+$pfile "RegenerationAbilityClass.pkg"
+
+$pfile "Regeneration.pkg"
+
+$pfile "InteractObject.pkg"
+
+$pfile "CEGUIChild.pkg"
+
+$pfile "Animation.pkg"
+
+$pfile "AnimationPlayer.pkg"
+
+$pfile "AnimationEffectsManager.pkg"
+
+$pfile "OffAnimation.pkg"
+
+$pfile "LifeformClass.pkg"
+
+$pfile "LifeformClassContainer.pkg"
+
+$pfile "CEGUIObject.pkg"
+
+$pfile "InteractField.pkg"
+
+$pfile "LuaListener.pkg"
+
+$pfile "EffectClass.pkg"
+
+$pfile "Effect.pkg"
+
+$pfile "Timer.pkg"
+
+$pfile "ResourceCache.pkg"
+
+$pfile "LifeformState.pkg"
+
+$pfile "ProjectileClass.pkg"
+
+$pfile "DurableEffect.pkg"
+
+$pfile "OverTimeEffect.pkg"
+
+}

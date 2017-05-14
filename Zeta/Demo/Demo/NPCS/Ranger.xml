@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LifeformClass name="Ομοσπονδιακός Σκοπευτής">
+
+	<AnimationClass filename="AnimationClasses/Ranger.xml" />
+
+	<Stats level="44">
+		<Stat name="Speed" value="3" />
+
+
+		<!-- Stat = random(level + lowBound, level + upBound ) * mul -->
+		<Levelize mul="100" lowBound="-1" upBound="+2">
+			<Stat name="MaxHP" />
+			<Stat name="MaxMana" />
+			<Stat name="Pdef" />
+		</Levelize>
+	</Stats>
+
+	<Abilities>
+		<Ability file="Abilities/DeadlyThrow.lua" level="1" />
+	</Abilities>
+
+
+</LifeformClass>

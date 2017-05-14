@@ -1,0 +1,9 @@
+$#include <Zeta/Core/RPGClasses/DurableEffect.hpp>
+
+class DurableEffect: public Effect {
+public:
+	Float getRemainingTime() const;
+	Float getUpTime() const;
+	void setUpTime(Float upTime);
+	void reset();
+};

@@ -1,0 +1,213 @@
+\hypertarget{classZeta_1_1SharedResource}{\section{Zeta\+:\+:Shared\+Resource$<$ R\+Type $>$ Class Template Reference}
+\label{classZeta_1_1SharedResource}\index{Zeta\+::\+Shared\+Resource$<$ R\+Type $>$@{Zeta\+::\+Shared\+Resource$<$ R\+Type $>$}}
+}
+
+
+{\ttfamily \#include $<$Shared\+Resource.\+hpp$>$}
+
+
+
+Inheritance diagram for Zeta\+:\+:Shared\+Resource$<$ R\+Type $>$\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=194pt]{classZeta_1_1SharedResource__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Zeta\+:\+:Shared\+Resource$<$ R\+Type $>$\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=194pt]{classZeta_1_1SharedResource__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classZeta_1_1SharedResource_a837ee944ca089fcc1f54b9d4e0b530b3}{is\+Valid} () const 
+\item 
+void \hyperlink{classZeta_1_1SharedResource_abbb89843eff487a6f0ecbee8d51b3757}{set\+Valid} (bool \hyperlink{classZeta_1_1SharedResource_aeff02cb931824d567b4f028b733e5ca1}{valid})
+\item 
+int \hyperlink{classZeta_1_1SharedResource_a1fab8bb2ccbc553972f9e49521350e89}{get\+Reference\+Count} () const 
+\item 
+const R\+Type \& \hyperlink{classZeta_1_1SharedResource_aa3d4ba5410d77a977ed73121a42eee70}{get\+Instance} () const 
+\item 
+void \hyperlink{classZeta_1_1SharedResource_a6c45e851cf2be63af170006a465591ff}{set\+Instance} (R\+Type \&\hyperlink{classZeta_1_1SharedResource_ac9580c623e0c67cdcc4dadb34ceebba1}{instance})
+\item 
+void \hyperlink{classZeta_1_1SharedResource_ad1e168b140359bfb79be98f81af9e19e}{load} (const std\+::string \&path)
+\item 
+void \hyperlink{classZeta_1_1SharedResource_a3a507e4daffff077d81ec1af71416f2c}{increase\+Reference} ()
+\item 
+void \hyperlink{classZeta_1_1SharedResource_aaa8146213f4022f067771c8f8f70f6e6}{decrease\+Reference} ()
+\item 
+\hyperlink{classZeta_1_1SharedResource_a13a4823827c762e18f68f8657a42746f}{Shared\+Resource} (\hyperlink{classZeta_1_1SharedResource}{Shared\+Resource} \&\&)=default
+\item 
+\hyperlink{classZeta_1_1SharedResource}{Shared\+Resource} \& \hyperlink{classZeta_1_1SharedResource_a841fab36c8d3b60361638cf4578c5f31}{operator=} (\hyperlink{classZeta_1_1SharedResource}{Shared\+Resource} \&\&)=default
+\item 
+\hyperlink{classZeta_1_1SharedResource_a3bc6e1f0b56cb87f4d34a488837c4a57}{Shared\+Resource} ()
+\item 
+\hyperlink{classZeta_1_1SharedResource_a28156681bc57e72d57cb8018d69bcfbf}{Shared\+Resource} (const std\+::string \&path)
+\item 
+\hyperlink{classZeta_1_1SharedResource_abe5814bd29124d389cfd8e7c908eada0}{Shared\+Resource} (R\+Type \&resource)
+\item 
+\hyperlink{classZeta_1_1SharedResource_ae37184e14dc3a0ea75ea1c1cca2fcbfc}{$\sim$\+Shared\+Resource} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+R\+Type $\ast$ \hyperlink{classZeta_1_1SharedResource_ac9580c623e0c67cdcc4dadb34ceebba1}{instance}
+\item 
+int \hyperlink{classZeta_1_1SharedResource_ac2cba2af1e886b9e371f9055b4f67097}{reference\+Count}
+\item 
+bool \hyperlink{classZeta_1_1SharedResource_aeff02cb931824d567b4f028b733e5ca1}{valid}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename R\+Type$>$class Zeta\+::\+Shared\+Resource$<$ R\+Type $>$}
+
+Shared Resouce Template It defines a \hyperlink{classZeta_1_1Resource}{Resource} Type that will be shared among other Engine parts 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classZeta_1_1SharedResource_a13a4823827c762e18f68f8657a42746f}{\index{Zeta\+::\+Shared\+Resource@{Zeta\+::\+Shared\+Resource}!Shared\+Resource@{Shared\+Resource}}
+\index{Shared\+Resource@{Shared\+Resource}!Zeta\+::\+Shared\+Resource@{Zeta\+::\+Shared\+Resource}}
+\subsubsection[{Shared\+Resource}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename R\+Type$>$ {\bf Zeta\+::\+Shared\+Resource}$<$ R\+Type $>$\+::{\bf Shared\+Resource} (
+\begin{DoxyParamCaption}
+\item[{{\bf Shared\+Resource}$<$ R\+Type $>$ \&\&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [default]}}}\label{classZeta_1_1SharedResource_a13a4823827c762e18f68f8657a42746f}
+\hypertarget{classZeta_1_1SharedResource_a3bc6e1f0b56cb87f4d34a488837c4a57}{\index{Zeta\+::\+Shared\+Resource@{Zeta\+::\+Shared\+Resource}!Shared\+Resource@{Shared\+Resource}}
+\index{Shared\+Resource@{Shared\+Resource}!Zeta\+::\+Shared\+Resource@{Zeta\+::\+Shared\+Resource}}
+\subsubsection[{Shared\+Resource}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename R\+Type$>$ {\bf Zeta\+::\+Shared\+Resource}$<$ R\+Type $>$\+::{\bf Shared\+Resource} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1SharedResource_a3bc6e1f0b56cb87f4d34a488837c4a57}
+\hypertarget{classZeta_1_1SharedResource_a28156681bc57e72d57cb8018d69bcfbf}{\index{Zeta\+::\+Shared\+Resource@{Zeta\+::\+Shared\+Resource}!Shared\+Resource@{Shared\+Resource}}
+\index{Shared\+Resource@{Shared\+Resource}!Zeta\+::\+Shared\+Resource@{Zeta\+::\+Shared\+Resource}}
+\subsubsection[{Shared\+Resource}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename R\+Type$>$ {\bf Zeta\+::\+Shared\+Resource}$<$ R\+Type $>$\+::{\bf Shared\+Resource} (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{path}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1SharedResource_a28156681bc57e72d57cb8018d69bcfbf}
+\hypertarget{classZeta_1_1SharedResource_abe5814bd29124d389cfd8e7c908eada0}{\index{Zeta\+::\+Shared\+Resource@{Zeta\+::\+Shared\+Resource}!Shared\+Resource@{Shared\+Resource}}
+\index{Shared\+Resource@{Shared\+Resource}!Zeta\+::\+Shared\+Resource@{Zeta\+::\+Shared\+Resource}}
+\subsubsection[{Shared\+Resource}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename R\+Type$>$ {\bf Zeta\+::\+Shared\+Resource}$<$ R\+Type $>$\+::{\bf Shared\+Resource} (
+\begin{DoxyParamCaption}
+\item[{R\+Type \&}]{resource}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1SharedResource_abe5814bd29124d389cfd8e7c908eada0}
+\hypertarget{classZeta_1_1SharedResource_ae37184e14dc3a0ea75ea1c1cca2fcbfc}{\index{Zeta\+::\+Shared\+Resource@{Zeta\+::\+Shared\+Resource}!````~Shared\+Resource@{$\sim$\+Shared\+Resource}}
+\index{````~Shared\+Resource@{$\sim$\+Shared\+Resource}!Zeta\+::\+Shared\+Resource@{Zeta\+::\+Shared\+Resource}}
+\subsubsection[{$\sim$\+Shared\+Resource}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename R\+Type$>$ {\bf Zeta\+::\+Shared\+Resource}$<$ R\+Type $>$\+::$\sim${\bf Shared\+Resource} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1SharedResource_ae37184e14dc3a0ea75ea1c1cca2fcbfc}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classZeta_1_1SharedResource_aaa8146213f4022f067771c8f8f70f6e6}{\index{Zeta\+::\+Shared\+Resource@{Zeta\+::\+Shared\+Resource}!decrease\+Reference@{decrease\+Reference}}
+\index{decrease\+Reference@{decrease\+Reference}!Zeta\+::\+Shared\+Resource@{Zeta\+::\+Shared\+Resource}}
+\subsubsection[{decrease\+Reference}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename R\+Type$>$ void {\bf Zeta\+::\+Shared\+Resource}$<$ R\+Type $>$\+::decrease\+Reference (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1SharedResource_aaa8146213f4022f067771c8f8f70f6e6}
+\hypertarget{classZeta_1_1SharedResource_aa3d4ba5410d77a977ed73121a42eee70}{\index{Zeta\+::\+Shared\+Resource@{Zeta\+::\+Shared\+Resource}!get\+Instance@{get\+Instance}}
+\index{get\+Instance@{get\+Instance}!Zeta\+::\+Shared\+Resource@{Zeta\+::\+Shared\+Resource}}
+\subsubsection[{get\+Instance}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename R\+Type$>$ const R\+Type\& {\bf Zeta\+::\+Shared\+Resource}$<$ R\+Type $>$\+::get\+Instance (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1SharedResource_aa3d4ba5410d77a977ed73121a42eee70}
+\hypertarget{classZeta_1_1SharedResource_a1fab8bb2ccbc553972f9e49521350e89}{\index{Zeta\+::\+Shared\+Resource@{Zeta\+::\+Shared\+Resource}!get\+Reference\+Count@{get\+Reference\+Count}}
+\index{get\+Reference\+Count@{get\+Reference\+Count}!Zeta\+::\+Shared\+Resource@{Zeta\+::\+Shared\+Resource}}
+\subsubsection[{get\+Reference\+Count}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename R\+Type$>$ int {\bf Zeta\+::\+Shared\+Resource}$<$ R\+Type $>$\+::get\+Reference\+Count (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1SharedResource_a1fab8bb2ccbc553972f9e49521350e89}
+Gets the Reference Count for this resource The Reference Count is a number of how many objects have a reference to this \hyperlink{classZeta_1_1Resource}{Resource}. \begin{DoxyReturn}{Returns}
+The reference Count number 
+\end{DoxyReturn}
+\hypertarget{classZeta_1_1SharedResource_a3a507e4daffff077d81ec1af71416f2c}{\index{Zeta\+::\+Shared\+Resource@{Zeta\+::\+Shared\+Resource}!increase\+Reference@{increase\+Reference}}
+\index{increase\+Reference@{increase\+Reference}!Zeta\+::\+Shared\+Resource@{Zeta\+::\+Shared\+Resource}}
+\subsubsection[{increase\+Reference}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename R\+Type$>$ void {\bf Zeta\+::\+Shared\+Resource}$<$ R\+Type $>$\+::increase\+Reference (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1SharedResource_a3a507e4daffff077d81ec1af71416f2c}
+\hypertarget{classZeta_1_1SharedResource_a837ee944ca089fcc1f54b9d4e0b530b3}{\index{Zeta\+::\+Shared\+Resource@{Zeta\+::\+Shared\+Resource}!is\+Valid@{is\+Valid}}
+\index{is\+Valid@{is\+Valid}!Zeta\+::\+Shared\+Resource@{Zeta\+::\+Shared\+Resource}}
+\subsubsection[{is\+Valid}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename R\+Type$>$ bool {\bf Zeta\+::\+Shared\+Resource}$<$ R\+Type $>$\+::is\+Valid (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1SharedResource_a837ee944ca089fcc1f54b9d4e0b530b3}
+We must make sure that the Template argument has \hyperlink{classZeta_1_1Resource}{Resource} as Base class Check whether the resource is Valid Valid means that the resource is loaded and can be used \begin{DoxyReturn}{Returns}
+true if the resource is valid for use 
+\end{DoxyReturn}
+\hypertarget{classZeta_1_1SharedResource_ad1e168b140359bfb79be98f81af9e19e}{\index{Zeta\+::\+Shared\+Resource@{Zeta\+::\+Shared\+Resource}!load@{load}}
+\index{load@{load}!Zeta\+::\+Shared\+Resource@{Zeta\+::\+Shared\+Resource}}
+\subsubsection[{load}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename R\+Type$>$ void {\bf Zeta\+::\+Shared\+Resource}$<$ R\+Type $>$\+::load (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{path}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1SharedResource_ad1e168b140359bfb79be98f81af9e19e}
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classZeta_1_1SharedResource_ad1e168b140359bfb79be98f81af9e19e_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classZeta_1_1SharedResource_a841fab36c8d3b60361638cf4578c5f31}{\index{Zeta\+::\+Shared\+Resource@{Zeta\+::\+Shared\+Resource}!operator=@{operator=}}
+\index{operator=@{operator=}!Zeta\+::\+Shared\+Resource@{Zeta\+::\+Shared\+Resource}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename R\+Type$>$ {\bf Shared\+Resource}\& {\bf Zeta\+::\+Shared\+Resource}$<$ R\+Type $>$\+::operator= (
+\begin{DoxyParamCaption}
+\item[{{\bf Shared\+Resource}$<$ R\+Type $>$ \&\&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [default]}}}\label{classZeta_1_1SharedResource_a841fab36c8d3b60361638cf4578c5f31}
+\hypertarget{classZeta_1_1SharedResource_a6c45e851cf2be63af170006a465591ff}{\index{Zeta\+::\+Shared\+Resource@{Zeta\+::\+Shared\+Resource}!set\+Instance@{set\+Instance}}
+\index{set\+Instance@{set\+Instance}!Zeta\+::\+Shared\+Resource@{Zeta\+::\+Shared\+Resource}}
+\subsubsection[{set\+Instance}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename R\+Type$>$ void {\bf Zeta\+::\+Shared\+Resource}$<$ R\+Type $>$\+::set\+Instance (
+\begin{DoxyParamCaption}
+\item[{R\+Type \&}]{instance}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1SharedResource_a6c45e851cf2be63af170006a465591ff}
+\hypertarget{classZeta_1_1SharedResource_abbb89843eff487a6f0ecbee8d51b3757}{\index{Zeta\+::\+Shared\+Resource@{Zeta\+::\+Shared\+Resource}!set\+Valid@{set\+Valid}}
+\index{set\+Valid@{set\+Valid}!Zeta\+::\+Shared\+Resource@{Zeta\+::\+Shared\+Resource}}
+\subsubsection[{set\+Valid}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename R\+Type$>$ void {\bf Zeta\+::\+Shared\+Resource}$<$ R\+Type $>$\+::set\+Valid (
+\begin{DoxyParamCaption}
+\item[{bool}]{valid}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1SharedResource_abbb89843eff487a6f0ecbee8d51b3757}
+Set whether the resource is Valid Valid means that the resource is loaded and can be used 
+\begin{DoxyParams}{Parameters}
+{\em valid} & The value to assign to the valid falg \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classZeta_1_1SharedResource_ac9580c623e0c67cdcc4dadb34ceebba1}{\index{Zeta\+::\+Shared\+Resource@{Zeta\+::\+Shared\+Resource}!instance@{instance}}
+\index{instance@{instance}!Zeta\+::\+Shared\+Resource@{Zeta\+::\+Shared\+Resource}}
+\subsubsection[{instance}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename R\+Type$>$ R\+Type$\ast$ {\bf Zeta\+::\+Shared\+Resource}$<$ R\+Type $>$\+::instance\hspace{0.3cm}{\ttfamily [private]}}}\label{classZeta_1_1SharedResource_ac9580c623e0c67cdcc4dadb34ceebba1}
+\hypertarget{classZeta_1_1SharedResource_ac2cba2af1e886b9e371f9055b4f67097}{\index{Zeta\+::\+Shared\+Resource@{Zeta\+::\+Shared\+Resource}!reference\+Count@{reference\+Count}}
+\index{reference\+Count@{reference\+Count}!Zeta\+::\+Shared\+Resource@{Zeta\+::\+Shared\+Resource}}
+\subsubsection[{reference\+Count}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename R\+Type$>$ int {\bf Zeta\+::\+Shared\+Resource}$<$ R\+Type $>$\+::reference\+Count\hspace{0.3cm}{\ttfamily [private]}}}\label{classZeta_1_1SharedResource_ac2cba2af1e886b9e371f9055b4f67097}
+\hypertarget{classZeta_1_1SharedResource_aeff02cb931824d567b4f028b733e5ca1}{\index{Zeta\+::\+Shared\+Resource@{Zeta\+::\+Shared\+Resource}!valid@{valid}}
+\index{valid@{valid}!Zeta\+::\+Shared\+Resource@{Zeta\+::\+Shared\+Resource}}
+\subsubsection[{valid}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename R\+Type$>$ bool {\bf Zeta\+::\+Shared\+Resource}$<$ R\+Type $>$\+::valid\hspace{0.3cm}{\ttfamily [private]}}}\label{classZeta_1_1SharedResource_aeff02cb931824d567b4f028b733e5ca1}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Zeta/\+Core/\+Resource\+Classes/\hyperlink{SharedResource_8hpp}{Shared\+Resource.\+hpp}\end{DoxyCompactItemize}

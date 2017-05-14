@@ -1,0 +1,151 @@
+.TH "Zeta::LuaFunctor" 3 "Wed Feb 10 2016" "Zeta" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Zeta::LuaFunctor \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <LuaFunctor\&.hpp>\fP
+.PP
+Inherits \fBZeta::LuaReferenced\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBoperator()\fP (std::initializer_list< \fBLuaPushable\fP * > argList) const "
+.br
+.ti -1c
+.RI "void \fBoperator()\fP () const "
+.br
+.ti -1c
+.RI "void \fBset\fP (int stackIndex)"
+.br
+.ti -1c
+.RI "void \fBset\fP (const std::string &script)"
+.br
+.ti -1c
+.RI "void \fBoperator=\fP (const std::string &script)"
+.br
+.ti -1c
+.RI "void \fBoperator=\fP (int stackIndex)"
+.br
+.ti -1c
+.RI "void \fBsetLuaReference\fP (int reference)"
+.br
+.ti -1c
+.RI "\fBLuaFunctor\fP ()"
+.br
+.ti -1c
+.RI "\fBLuaFunctor\fP (int stackIndex, const std::string &\fBname\fP='')"
+.br
+.ti -1c
+.RI "\fBLuaFunctor\fP (const std::string &script)"
+.br
+.ti -1c
+.RI "\fBLuaFunctor\fP (\fBLuaFunctor\fP &&other)=default"
+.br
+.ti -1c
+.RI "\fBLuaFunctor\fP (const \fBLuaFunctor\fP &other)=default"
+.br
+.ti -1c
+.RI "\fBLuaFunctor\fP & \fBoperator=\fP (const \fBLuaFunctor\fP &other)=default"
+.br
+.ti -1c
+.RI "\fBLuaFunctor\fP & \fBoperator=\fP (\fBLuaFunctor\fP &&other)=default"
+.br
+.ti -1c
+.RI "\fB~LuaFunctor\fP ()"
+.br
+.in -1c
+.SS "Additional Inherited Members"
+.SH "Detailed Description"
+.PP 
+Lua Function \fBObject\fP Used to store Lua Code to C++ Memory to be called fast when needed\&. 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Zeta::LuaFunctor::LuaFunctor ()"
+Default Constructor No reference is stored, so calling this won't do anything\&. 
+.SS "Zeta::LuaFunctor::LuaFunctor (intstackIndex, const std::string &name = \fC''\fP)"
+Constructs a \fBLuaFunctor\fP with the function at the provided Index It also assigns a name if provided\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIstackIndex\fP the Stack index where the Lua Function is 
+.br
+\fI(Optional)\fP a name for the function 
+.RE
+.PP
+
+.SS "Zeta::LuaFunctor::LuaFunctor (const std::string &script)"
+Constructs a \fBLuaFunctor\fP with the String as script 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIscript\fP the String that has the script 
+.RE
+.PP
+
+.SS "Zeta::LuaFunctor::LuaFunctor (\fBLuaFunctor\fP &&other)\fC [default]\fP"
+Move Constructor 
+.SS "Zeta::LuaFunctor::LuaFunctor (const \fBLuaFunctor\fP &other)\fC [default]\fP"
+Copy Constructor 
+.SS "Zeta::LuaFunctor::~LuaFunctor ()"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "void Zeta::LuaFunctor::operator() (std::initializer_list< \fBLuaPushable\fP * >argList) const"
+Calls the Lua Function with the arguments provided 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIargList\fP an std::initializer_list<LuaPushable> of arguments to pass 
+.RE
+.PP
+
+.SS "void Zeta::LuaFunctor::operator() () const"
+A more Optimized version of the original operator() This takes no arguments 
+.SS "void Zeta::LuaFunctor::operator= (const std::string &script)\fC [inline]\fP"
+/see \fBset(const std::string&)\fP 
+.SS "void Zeta::LuaFunctor::operator= (intstackIndex)\fC [inline]\fP"
+/see \fBset(int)\fP 
+.SS "\fBLuaFunctor\fP& Zeta::LuaFunctor::operator= (const \fBLuaFunctor\fP &other)\fC [default]\fP"
+Copy assignment operator 
+.SS "\fBLuaFunctor\fP& Zeta::LuaFunctor::operator= (\fBLuaFunctor\fP &&other)\fC [default]\fP"
+Move assignment operator 
+.SS "void Zeta::LuaFunctor::set (intstackIndex)\fC [virtual]\fP"
+References the Lua Functor at the Lua Stack Pointer This function can throw Zeta::Exeption if the object at the Stack is not valid\&. Notice: This does not remove the \fBObject\fP from stack\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIstackIndex\fP the index at Lua Stack the Function is\&. 
+.RE
+.PP
+
+.PP
+Implements \fBZeta::LuaReferenced\fP\&.
+.SS "void Zeta::LuaFunctor::set (const std::string &script)"
+Loads and stores the script provided in the String 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIscript\fP the String with the script to store 
+.RE
+.PP
+
+.SS "void Zeta::LuaFunctor::setLuaReference (intreference)\fC [virtual]\fP"
+Sets the LuaReference\&. This is different with \fBset()\fP The reference should be already taken\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIreference\fP the Reference to Lua Code 
+.RE
+.PP
+
+.PP
+Implements \fBZeta::LuaReferenced\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Zeta from the source code\&.

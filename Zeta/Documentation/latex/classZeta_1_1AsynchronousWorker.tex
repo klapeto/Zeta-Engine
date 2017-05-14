@@ -1,0 +1,134 @@
+\hypertarget{classZeta_1_1AsynchronousWorker}{\section{Zeta\+:\+:Asynchronous\+Worker Class Reference}
+\label{classZeta_1_1AsynchronousWorker}\index{Zeta\+::\+Asynchronous\+Worker@{Zeta\+::\+Asynchronous\+Worker}}
+}
+
+
+{\ttfamily \#include $<$Asynchronous\+Worker.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classZeta_1_1AsynchronousWorker_a7e5d9fb9919bc9eaf90c27c3db4f3b01}{perform\+Cycle} ()
+\begin{DoxyCompactList}\small\item\em Makes the runner thread to call the \hyperlink{classZeta_1_1AsynchronousWorker_a68dbe522e2718cffa436df2f1999369e}{run\+Cycle\+Operations()} \end{DoxyCompactList}\item 
+\hyperlink{classZeta_1_1AsynchronousWorker_aabcc75dc05b5525620fdaf474d70dfb3}{Asynchronous\+Worker} ()
+\begin{DoxyCompactList}\small\item\em Constructs a runner thread. \end{DoxyCompactList}\item 
+virtual \hyperlink{classZeta_1_1AsynchronousWorker_a638b21020fa75875c04b2e98e3762944}{$\sim$\+Asynchronous\+Worker} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{classZeta_1_1AsynchronousWorker_a68dbe522e2718cffa436df2f1999369e}{run\+Cycle\+Operations} ()=0
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::mutex \hyperlink{classZeta_1_1AsynchronousWorker_ae0ae2b7e721ff8c47bb67665523d9876}{mutex}
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classZeta_1_1AsynchronousWorker_aee7e9cb362533e9dcd834ff9174b5096}{loop} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::thread \hyperlink{classZeta_1_1AsynchronousWorker_ae654cd21c700dc571aa2ed53bf291ee1}{worker}
+\item 
+std\+::condition\+\_\+variable \hyperlink{classZeta_1_1AsynchronousWorker_af9d697955024d6a72c9d4bb977c10571}{cycle}
+\item 
+bool \hyperlink{classZeta_1_1AsynchronousWorker_a5ad6cb6f5b8abb7f9a9da695ef02e334}{running}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classZeta_1_1AsynchronousWorker}{Asynchronous\+Worker} base class. Used for the derived classes to create objects that execute actions on a unique separate thread. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classZeta_1_1AsynchronousWorker_aabcc75dc05b5525620fdaf474d70dfb3}{\index{Zeta\+::\+Asynchronous\+Worker@{Zeta\+::\+Asynchronous\+Worker}!Asynchronous\+Worker@{Asynchronous\+Worker}}
+\index{Asynchronous\+Worker@{Asynchronous\+Worker}!Zeta\+::\+Asynchronous\+Worker@{Zeta\+::\+Asynchronous\+Worker}}
+\subsubsection[{Asynchronous\+Worker}]{\setlength{\rightskip}{0pt plus 5cm}Zeta\+::\+Asynchronous\+Worker\+::\+Asynchronous\+Worker (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1AsynchronousWorker_aabcc75dc05b5525620fdaf474d70dfb3}
+
+
+Constructs a runner thread. 
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classZeta_1_1AsynchronousWorker_aabcc75dc05b5525620fdaf474d70dfb3_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classZeta_1_1AsynchronousWorker_a638b21020fa75875c04b2e98e3762944}{\index{Zeta\+::\+Asynchronous\+Worker@{Zeta\+::\+Asynchronous\+Worker}!````~Asynchronous\+Worker@{$\sim$\+Asynchronous\+Worker}}
+\index{````~Asynchronous\+Worker@{$\sim$\+Asynchronous\+Worker}!Zeta\+::\+Asynchronous\+Worker@{Zeta\+::\+Asynchronous\+Worker}}
+\subsubsection[{$\sim$\+Asynchronous\+Worker}]{\setlength{\rightskip}{0pt plus 5cm}virtual Zeta\+::\+Asynchronous\+Worker\+::$\sim$\+Asynchronous\+Worker (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classZeta_1_1AsynchronousWorker_a638b21020fa75875c04b2e98e3762944}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classZeta_1_1AsynchronousWorker_aee7e9cb362533e9dcd834ff9174b5096}{\index{Zeta\+::\+Asynchronous\+Worker@{Zeta\+::\+Asynchronous\+Worker}!loop@{loop}}
+\index{loop@{loop}!Zeta\+::\+Asynchronous\+Worker@{Zeta\+::\+Asynchronous\+Worker}}
+\subsubsection[{loop}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+Asynchronous\+Worker\+::loop (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}}\label{classZeta_1_1AsynchronousWorker_aee7e9cb362533e9dcd834ff9174b5096}
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classZeta_1_1AsynchronousWorker_aee7e9cb362533e9dcd834ff9174b5096_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classZeta_1_1AsynchronousWorker_a7e5d9fb9919bc9eaf90c27c3db4f3b01}{\index{Zeta\+::\+Asynchronous\+Worker@{Zeta\+::\+Asynchronous\+Worker}!perform\+Cycle@{perform\+Cycle}}
+\index{perform\+Cycle@{perform\+Cycle}!Zeta\+::\+Asynchronous\+Worker@{Zeta\+::\+Asynchronous\+Worker}}
+\subsubsection[{perform\+Cycle}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+Asynchronous\+Worker\+::perform\+Cycle (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1AsynchronousWorker_a7e5d9fb9919bc9eaf90c27c3db4f3b01}
+
+
+Makes the runner thread to call the \hyperlink{classZeta_1_1AsynchronousWorker_a68dbe522e2718cffa436df2f1999369e}{run\+Cycle\+Operations()} 
+
+\hypertarget{classZeta_1_1AsynchronousWorker_a68dbe522e2718cffa436df2f1999369e}{\index{Zeta\+::\+Asynchronous\+Worker@{Zeta\+::\+Asynchronous\+Worker}!run\+Cycle\+Operations@{run\+Cycle\+Operations}}
+\index{run\+Cycle\+Operations@{run\+Cycle\+Operations}!Zeta\+::\+Asynchronous\+Worker@{Zeta\+::\+Asynchronous\+Worker}}
+\subsubsection[{run\+Cycle\+Operations}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Zeta\+::\+Asynchronous\+Worker\+::run\+Cycle\+Operations (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}}\label{classZeta_1_1AsynchronousWorker_a68dbe522e2718cffa436df2f1999369e}
+/brief Pure virtual member function to be implemented by derived classes It should contain any actions that should be executed by the object's runner thread 
+
+\subsection{Member Data Documentation}
+\hypertarget{classZeta_1_1AsynchronousWorker_af9d697955024d6a72c9d4bb977c10571}{\index{Zeta\+::\+Asynchronous\+Worker@{Zeta\+::\+Asynchronous\+Worker}!cycle@{cycle}}
+\index{cycle@{cycle}!Zeta\+::\+Asynchronous\+Worker@{Zeta\+::\+Asynchronous\+Worker}}
+\subsubsection[{cycle}]{\setlength{\rightskip}{0pt plus 5cm}std\+::condition\+\_\+variable Zeta\+::\+Asynchronous\+Worker\+::cycle\hspace{0.3cm}{\ttfamily [private]}}}\label{classZeta_1_1AsynchronousWorker_af9d697955024d6a72c9d4bb977c10571}
+\hypertarget{classZeta_1_1AsynchronousWorker_ae0ae2b7e721ff8c47bb67665523d9876}{\index{Zeta\+::\+Asynchronous\+Worker@{Zeta\+::\+Asynchronous\+Worker}!mutex@{mutex}}
+\index{mutex@{mutex}!Zeta\+::\+Asynchronous\+Worker@{Zeta\+::\+Asynchronous\+Worker}}
+\subsubsection[{mutex}]{\setlength{\rightskip}{0pt plus 5cm}std\+::mutex Zeta\+::\+Asynchronous\+Worker\+::mutex\hspace{0.3cm}{\ttfamily [protected]}}}\label{classZeta_1_1AsynchronousWorker_ae0ae2b7e721ff8c47bb67665523d9876}
+\hypertarget{classZeta_1_1AsynchronousWorker_a5ad6cb6f5b8abb7f9a9da695ef02e334}{\index{Zeta\+::\+Asynchronous\+Worker@{Zeta\+::\+Asynchronous\+Worker}!running@{running}}
+\index{running@{running}!Zeta\+::\+Asynchronous\+Worker@{Zeta\+::\+Asynchronous\+Worker}}
+\subsubsection[{running}]{\setlength{\rightskip}{0pt plus 5cm}bool Zeta\+::\+Asynchronous\+Worker\+::running\hspace{0.3cm}{\ttfamily [private]}}}\label{classZeta_1_1AsynchronousWorker_a5ad6cb6f5b8abb7f9a9da695ef02e334}
+\hypertarget{classZeta_1_1AsynchronousWorker_ae654cd21c700dc571aa2ed53bf291ee1}{\index{Zeta\+::\+Asynchronous\+Worker@{Zeta\+::\+Asynchronous\+Worker}!worker@{worker}}
+\index{worker@{worker}!Zeta\+::\+Asynchronous\+Worker@{Zeta\+::\+Asynchronous\+Worker}}
+\subsubsection[{worker}]{\setlength{\rightskip}{0pt plus 5cm}std\+::thread Zeta\+::\+Asynchronous\+Worker\+::worker\hspace{0.3cm}{\ttfamily [private]}}}\label{classZeta_1_1AsynchronousWorker_ae654cd21c700dc571aa2ed53bf291ee1}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Zeta/\+Core/\hyperlink{AsynchronousWorker_8hpp}{Asynchronous\+Worker.\+hpp}\end{DoxyCompactItemize}

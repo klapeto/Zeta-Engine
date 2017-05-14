@@ -1,0 +1,14 @@
+$#include <Zeta/Core/System.hpp>
+
+
+class System {
+public:
+
+	static System& getInstance();
+	
+	AudioContext& getAudioContext();
+
+	void shutdown();
+
+	void abort(const std::string &error);
+};

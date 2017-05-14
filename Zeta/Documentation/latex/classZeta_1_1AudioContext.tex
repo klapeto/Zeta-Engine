@@ -1,0 +1,137 @@
+\hypertarget{classZeta_1_1AudioContext}{\section{Zeta\+:\+:Audio\+Context Class Reference}
+\label{classZeta_1_1AudioContext}\index{Zeta\+::\+Audio\+Context@{Zeta\+::\+Audio\+Context}}
+}
+
+
+{\ttfamily \#include $<$Audio\+Context.\+hpp$>$}
+
+
+
+Inheritance diagram for Zeta\+:\+:Audio\+Context\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=210pt]{classZeta_1_1AudioContext__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Zeta\+:\+:Audio\+Context\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classZeta_1_1AudioContext__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual float \hyperlink{classZeta_1_1AudioContext_ab492d715ae780a8d6c2fc4e7a0432355}{get\+Main\+Gain} () const =0
+\item 
+virtual void \hyperlink{classZeta_1_1AudioContext_af861f3797591e2c62040a18b3d4daa51}{set\+Main\+Gain} (float main\+Gain)=0
+\item 
+void \hyperlink{classZeta_1_1AudioContext_a56c0028bdeadb4901aede192f2af115a}{set\+Music} (const std\+::string \&path)
+\item 
+void \hyperlink{classZeta_1_1AudioContext_a99eaeb4a6af9c515c02eaaf406592833}{start} ()
+\item 
+void \hyperlink{classZeta_1_1AudioContext_a839246cbcf16e65920ad1a5bad31bd22}{stop} ()
+\item 
+\hyperlink{classZeta_1_1AudioContext_a6eacef723378137c0e758a320ee21d7a}{Audio\+Context} ()
+\item 
+virtual \hyperlink{classZeta_1_1AudioContext_a963fbc68f296d7f7b96c2e51799e8855}{$\sim$\+Audio\+Context} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classZeta_1_1SoundInstance}{Sound\+Instance} $\ast$ \hyperlink{classZeta_1_1AudioContext_aae43d48fd2d78a63baaf534d7df56481}{music}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classZeta_1_1AudioContext}{Audio\+Context} Base class Used to create Main \hyperlink{classZeta_1_1Sound}{Sound} Wrappers to connect to Engine's core 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classZeta_1_1AudioContext_a6eacef723378137c0e758a320ee21d7a}{\index{Zeta\+::\+Audio\+Context@{Zeta\+::\+Audio\+Context}!Audio\+Context@{Audio\+Context}}
+\index{Audio\+Context@{Audio\+Context}!Zeta\+::\+Audio\+Context@{Zeta\+::\+Audio\+Context}}
+\subsubsection[{Audio\+Context}]{\setlength{\rightskip}{0pt plus 5cm}Zeta\+::\+Audio\+Context\+::\+Audio\+Context (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classZeta_1_1AudioContext_a6eacef723378137c0e758a320ee21d7a}
+\hypertarget{classZeta_1_1AudioContext_a963fbc68f296d7f7b96c2e51799e8855}{\index{Zeta\+::\+Audio\+Context@{Zeta\+::\+Audio\+Context}!````~Audio\+Context@{$\sim$\+Audio\+Context}}
+\index{````~Audio\+Context@{$\sim$\+Audio\+Context}!Zeta\+::\+Audio\+Context@{Zeta\+::\+Audio\+Context}}
+\subsubsection[{$\sim$\+Audio\+Context}]{\setlength{\rightskip}{0pt plus 5cm}virtual Zeta\+::\+Audio\+Context\+::$\sim$\+Audio\+Context (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classZeta_1_1AudioContext_a963fbc68f296d7f7b96c2e51799e8855}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classZeta_1_1AudioContext_ab492d715ae780a8d6c2fc4e7a0432355}{\index{Zeta\+::\+Audio\+Context@{Zeta\+::\+Audio\+Context}!get\+Main\+Gain@{get\+Main\+Gain}}
+\index{get\+Main\+Gain@{get\+Main\+Gain}!Zeta\+::\+Audio\+Context@{Zeta\+::\+Audio\+Context}}
+\subsubsection[{get\+Main\+Gain}]{\setlength{\rightskip}{0pt plus 5cm}virtual float Zeta\+::\+Audio\+Context\+::get\+Main\+Gain (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classZeta_1_1AudioContext_ab492d715ae780a8d6c2fc4e7a0432355}
+Gets the main \hyperlink{classZeta_1_1Sound}{Sound} gain. \begin{DoxyReturn}{Returns}
+Float 0.\+0f-\/1.\+0f representing the Main Mixer Gain 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classZeta_1_1AllegroAudioContext_a093e94d2f271f0030573e3c7f112fe17}{Zeta\+::\+Allegro\+Audio\+Context}.
+
+\hypertarget{classZeta_1_1AudioContext_af861f3797591e2c62040a18b3d4daa51}{\index{Zeta\+::\+Audio\+Context@{Zeta\+::\+Audio\+Context}!set\+Main\+Gain@{set\+Main\+Gain}}
+\index{set\+Main\+Gain@{set\+Main\+Gain}!Zeta\+::\+Audio\+Context@{Zeta\+::\+Audio\+Context}}
+\subsubsection[{set\+Main\+Gain}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Zeta\+::\+Audio\+Context\+::set\+Main\+Gain (
+\begin{DoxyParamCaption}
+\item[{float}]{main\+Gain}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classZeta_1_1AudioContext_af861f3797591e2c62040a18b3d4daa51}
+Sets the main Soung Gain. 
+\begin{DoxyParams}{Parameters}
+{\em main\+Gain} & Float representing the main\+Gain \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{classZeta_1_1AllegroAudioContext_ab2e61ddbafdb74657390ecdc813501b8}{Zeta\+::\+Allegro\+Audio\+Context}.
+
+\hypertarget{classZeta_1_1AudioContext_a56c0028bdeadb4901aede192f2af115a}{\index{Zeta\+::\+Audio\+Context@{Zeta\+::\+Audio\+Context}!set\+Music@{set\+Music}}
+\index{set\+Music@{set\+Music}!Zeta\+::\+Audio\+Context@{Zeta\+::\+Audio\+Context}}
+\subsubsection[{set\+Music}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+Audio\+Context\+::set\+Music (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{path}
+\end{DoxyParamCaption}
+)}}\label{classZeta_1_1AudioContext_a56c0028bdeadb4901aede192f2af115a}
+Sets the music to be played when \hyperlink{classZeta_1_1AudioContext_a99eaeb4a6af9c515c02eaaf406592833}{start()} is called 
+\begin{DoxyParams}{Parameters}
+{\em path} & The path of the sound file to be played \\
+\hline
+\end{DoxyParams}
+\hypertarget{classZeta_1_1AudioContext_a99eaeb4a6af9c515c02eaaf406592833}{\index{Zeta\+::\+Audio\+Context@{Zeta\+::\+Audio\+Context}!start@{start}}
+\index{start@{start}!Zeta\+::\+Audio\+Context@{Zeta\+::\+Audio\+Context}}
+\subsubsection[{start}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+Audio\+Context\+::start (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classZeta_1_1AudioContext_a99eaeb4a6af9c515c02eaaf406592833}
+Starts playing (Looped) the sound file specified by \hyperlink{classZeta_1_1AudioContext_a56c0028bdeadb4901aede192f2af115a}{set\+Music()}. \hypertarget{classZeta_1_1AudioContext_a839246cbcf16e65920ad1a5bad31bd22}{\index{Zeta\+::\+Audio\+Context@{Zeta\+::\+Audio\+Context}!stop@{stop}}
+\index{stop@{stop}!Zeta\+::\+Audio\+Context@{Zeta\+::\+Audio\+Context}}
+\subsubsection[{stop}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+Audio\+Context\+::stop (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classZeta_1_1AudioContext_a839246cbcf16e65920ad1a5bad31bd22}
+Stops playing the sound that is being played by calling \hyperlink{classZeta_1_1AudioContext_a99eaeb4a6af9c515c02eaaf406592833}{start()} 
+
+\subsection{Member Data Documentation}
+\hypertarget{classZeta_1_1AudioContext_aae43d48fd2d78a63baaf534d7df56481}{\index{Zeta\+::\+Audio\+Context@{Zeta\+::\+Audio\+Context}!music@{music}}
+\index{music@{music}!Zeta\+::\+Audio\+Context@{Zeta\+::\+Audio\+Context}}
+\subsubsection[{music}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Sound\+Instance}$\ast$ Zeta\+::\+Audio\+Context\+::music\hspace{0.3cm}{\ttfamily [private]}}}\label{classZeta_1_1AudioContext_aae43d48fd2d78a63baaf534d7df56481}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Zeta/\+Core/\hyperlink{AudioContext_8hpp}{Audio\+Context.\+hpp}\end{DoxyCompactItemize}

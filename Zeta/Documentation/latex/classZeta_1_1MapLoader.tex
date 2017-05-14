@@ -1,0 +1,171 @@
+\hypertarget{classZeta_1_1MapLoader}{\section{Zeta\+:\+:Map\+Loader Class Reference}
+\label{classZeta_1_1MapLoader}\index{Zeta\+::\+Map\+Loader@{Zeta\+::\+Map\+Loader}}
+}
+
+
+{\ttfamily \#include $<$Map\+Loader.\+hpp$>$}
+
+
+
+Collaboration diagram for Zeta\+:\+:Map\+Loader\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classZeta_1_1MapLoader__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classZeta_1_1MapLoader_1_1LoadBeginCall}{Load\+Begin\+Call}
+\item 
+class \hyperlink{classZeta_1_1MapLoader_1_1LoadEndCall}{Load\+End\+Call}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classZeta_1_1MapLoader_aa6ee7e9a20549f3194a8da7468557110}{is\+Ready} ()
+\item 
+void \hyperlink{classZeta_1_1MapLoader_a2d7fc7a07f9f84fe9fb183dbff398cba}{set\+Next\+Map} (const std\+::string \&path)
+\item 
+\hyperlink{classZeta_1_1Map}{Map} \& \hyperlink{classZeta_1_1MapLoader_a2ea1f933cf25da59ccbb44e9c7aed53c}{get\+Map} ()
+\item 
+const \hyperlink{classZeta_1_1Map}{Map} \& \hyperlink{classZeta_1_1MapLoader_a1b4e5462b6759e3f7f596bb701dde344}{get\+Map} () const 
+\item 
+void \hyperlink{classZeta_1_1MapLoader_aff6fbb30b6b07da75660f7dd83666166}{start\+Load} ()
+\item 
+\hyperlink{classZeta_1_1MapLoader_a2c401d8dc802d29fb004ff6c7d76aa40}{Map\+Loader} (const \hyperlink{classZeta_1_1MapLoader}{Map\+Loader} \&)=default
+\item 
+\hyperlink{classZeta_1_1MapLoader}{Map\+Loader} \& \hyperlink{classZeta_1_1MapLoader_a5f075ad707bd7f9115fa0af1c1c76efa}{operator=} (const \hyperlink{classZeta_1_1MapLoader}{Map\+Loader} \&)=default
+\item 
+\hyperlink{classZeta_1_1MapLoader_abac0cf1f6843a3dccfde587e466f68b2}{Map\+Loader} ()
+\item 
+\hyperlink{classZeta_1_1MapLoader_a517c96723adf19ebca92ce02c86ebed4}{$\sim$\+Map\+Loader} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classZeta_1_1MapLoader_a8a8e0f178ee827813c0595df6471d246}{do\+Load} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classZeta_1_1Map}{Map} \hyperlink{classZeta_1_1MapLoader_a3caaef11ab483388c87e5f0db9b995fa}{map}
+\item 
+std\+::thread \hyperlink{classZeta_1_1MapLoader_a73bd9a2d52358d4c8188327505919fa6}{worker}
+\item 
+std\+::mutex \hyperlink{classZeta_1_1MapLoader_a586211703714fdf5fce629fa25a846ec}{mutex}
+\item 
+std\+::string \hyperlink{classZeta_1_1MapLoader_a63b8fd33a09d3f7bf26a822ece396195}{next\+Map}
+\item 
+\hyperlink{classZeta_1_1MapLoader_1_1LoadBeginCall}{Load\+Begin\+Call} \hyperlink{classZeta_1_1MapLoader_a64d774c15fed3fc5ac1e505d2f1b1588}{on\+Begin}
+\item 
+\hyperlink{classZeta_1_1MapLoader_1_1LoadEndCall}{Load\+End\+Call} \hyperlink{classZeta_1_1MapLoader_a5f9ca0c93a698b67b7cb9dfff3828cc1}{on\+End}
+\item 
+bool \hyperlink{classZeta_1_1MapLoader_a44233c4f572f8b99aeceb47f7c2300db}{ready}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classZeta_1_1MapLoader_a2c401d8dc802d29fb004ff6c7d76aa40}{\index{Zeta\+::\+Map\+Loader@{Zeta\+::\+Map\+Loader}!Map\+Loader@{Map\+Loader}}
+\index{Map\+Loader@{Map\+Loader}!Zeta\+::\+Map\+Loader@{Zeta\+::\+Map\+Loader}}
+\subsubsection[{Map\+Loader}]{\setlength{\rightskip}{0pt plus 5cm}Zeta\+::\+Map\+Loader\+::\+Map\+Loader (
+\begin{DoxyParamCaption}
+\item[{const {\bf Map\+Loader} \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [default]}}}\label{classZeta_1_1MapLoader_a2c401d8dc802d29fb004ff6c7d76aa40}
+\hypertarget{classZeta_1_1MapLoader_abac0cf1f6843a3dccfde587e466f68b2}{\index{Zeta\+::\+Map\+Loader@{Zeta\+::\+Map\+Loader}!Map\+Loader@{Map\+Loader}}
+\index{Map\+Loader@{Map\+Loader}!Zeta\+::\+Map\+Loader@{Zeta\+::\+Map\+Loader}}
+\subsubsection[{Map\+Loader}]{\setlength{\rightskip}{0pt plus 5cm}Zeta\+::\+Map\+Loader\+::\+Map\+Loader (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classZeta_1_1MapLoader_abac0cf1f6843a3dccfde587e466f68b2}
+\hypertarget{classZeta_1_1MapLoader_a517c96723adf19ebca92ce02c86ebed4}{\index{Zeta\+::\+Map\+Loader@{Zeta\+::\+Map\+Loader}!````~Map\+Loader@{$\sim$\+Map\+Loader}}
+\index{````~Map\+Loader@{$\sim$\+Map\+Loader}!Zeta\+::\+Map\+Loader@{Zeta\+::\+Map\+Loader}}
+\subsubsection[{$\sim$\+Map\+Loader}]{\setlength{\rightskip}{0pt plus 5cm}Zeta\+::\+Map\+Loader\+::$\sim$\+Map\+Loader (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classZeta_1_1MapLoader_a517c96723adf19ebca92ce02c86ebed4}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classZeta_1_1MapLoader_a8a8e0f178ee827813c0595df6471d246}{\index{Zeta\+::\+Map\+Loader@{Zeta\+::\+Map\+Loader}!do\+Load@{do\+Load}}
+\index{do\+Load@{do\+Load}!Zeta\+::\+Map\+Loader@{Zeta\+::\+Map\+Loader}}
+\subsubsection[{do\+Load}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+Map\+Loader\+::do\+Load (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classZeta_1_1MapLoader_a8a8e0f178ee827813c0595df6471d246}
+\hypertarget{classZeta_1_1MapLoader_a2ea1f933cf25da59ccbb44e9c7aed53c}{\index{Zeta\+::\+Map\+Loader@{Zeta\+::\+Map\+Loader}!get\+Map@{get\+Map}}
+\index{get\+Map@{get\+Map}!Zeta\+::\+Map\+Loader@{Zeta\+::\+Map\+Loader}}
+\subsubsection[{get\+Map}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Map}\& Zeta\+::\+Map\+Loader\+::get\+Map (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1MapLoader_a2ea1f933cf25da59ccbb44e9c7aed53c}
+\hypertarget{classZeta_1_1MapLoader_a1b4e5462b6759e3f7f596bb701dde344}{\index{Zeta\+::\+Map\+Loader@{Zeta\+::\+Map\+Loader}!get\+Map@{get\+Map}}
+\index{get\+Map@{get\+Map}!Zeta\+::\+Map\+Loader@{Zeta\+::\+Map\+Loader}}
+\subsubsection[{get\+Map}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Map}\& Zeta\+::\+Map\+Loader\+::get\+Map (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1MapLoader_a1b4e5462b6759e3f7f596bb701dde344}
+\hypertarget{classZeta_1_1MapLoader_aa6ee7e9a20549f3194a8da7468557110}{\index{Zeta\+::\+Map\+Loader@{Zeta\+::\+Map\+Loader}!is\+Ready@{is\+Ready}}
+\index{is\+Ready@{is\+Ready}!Zeta\+::\+Map\+Loader@{Zeta\+::\+Map\+Loader}}
+\subsubsection[{is\+Ready}]{\setlength{\rightskip}{0pt plus 5cm}bool Zeta\+::\+Map\+Loader\+::is\+Ready (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1MapLoader_aa6ee7e9a20549f3194a8da7468557110}
+\hypertarget{classZeta_1_1MapLoader_a5f075ad707bd7f9115fa0af1c1c76efa}{\index{Zeta\+::\+Map\+Loader@{Zeta\+::\+Map\+Loader}!operator=@{operator=}}
+\index{operator=@{operator=}!Zeta\+::\+Map\+Loader@{Zeta\+::\+Map\+Loader}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Map\+Loader}\& Zeta\+::\+Map\+Loader\+::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Map\+Loader} \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [default]}}}\label{classZeta_1_1MapLoader_a5f075ad707bd7f9115fa0af1c1c76efa}
+\hypertarget{classZeta_1_1MapLoader_a2d7fc7a07f9f84fe9fb183dbff398cba}{\index{Zeta\+::\+Map\+Loader@{Zeta\+::\+Map\+Loader}!set\+Next\+Map@{set\+Next\+Map}}
+\index{set\+Next\+Map@{set\+Next\+Map}!Zeta\+::\+Map\+Loader@{Zeta\+::\+Map\+Loader}}
+\subsubsection[{set\+Next\+Map}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+Map\+Loader\+::set\+Next\+Map (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{path}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1MapLoader_a2d7fc7a07f9f84fe9fb183dbff398cba}
+\hypertarget{classZeta_1_1MapLoader_aff6fbb30b6b07da75660f7dd83666166}{\index{Zeta\+::\+Map\+Loader@{Zeta\+::\+Map\+Loader}!start\+Load@{start\+Load}}
+\index{start\+Load@{start\+Load}!Zeta\+::\+Map\+Loader@{Zeta\+::\+Map\+Loader}}
+\subsubsection[{start\+Load}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+Map\+Loader\+::start\+Load (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classZeta_1_1MapLoader_aff6fbb30b6b07da75660f7dd83666166}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classZeta_1_1MapLoader_a3caaef11ab483388c87e5f0db9b995fa}{\index{Zeta\+::\+Map\+Loader@{Zeta\+::\+Map\+Loader}!map@{map}}
+\index{map@{map}!Zeta\+::\+Map\+Loader@{Zeta\+::\+Map\+Loader}}
+\subsubsection[{map}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Map} Zeta\+::\+Map\+Loader\+::map\hspace{0.3cm}{\ttfamily [private]}}}\label{classZeta_1_1MapLoader_a3caaef11ab483388c87e5f0db9b995fa}
+\hypertarget{classZeta_1_1MapLoader_a586211703714fdf5fce629fa25a846ec}{\index{Zeta\+::\+Map\+Loader@{Zeta\+::\+Map\+Loader}!mutex@{mutex}}
+\index{mutex@{mutex}!Zeta\+::\+Map\+Loader@{Zeta\+::\+Map\+Loader}}
+\subsubsection[{mutex}]{\setlength{\rightskip}{0pt plus 5cm}std\+::mutex Zeta\+::\+Map\+Loader\+::mutex\hspace{0.3cm}{\ttfamily [private]}}}\label{classZeta_1_1MapLoader_a586211703714fdf5fce629fa25a846ec}
+\hypertarget{classZeta_1_1MapLoader_a63b8fd33a09d3f7bf26a822ece396195}{\index{Zeta\+::\+Map\+Loader@{Zeta\+::\+Map\+Loader}!next\+Map@{next\+Map}}
+\index{next\+Map@{next\+Map}!Zeta\+::\+Map\+Loader@{Zeta\+::\+Map\+Loader}}
+\subsubsection[{next\+Map}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string Zeta\+::\+Map\+Loader\+::next\+Map\hspace{0.3cm}{\ttfamily [private]}}}\label{classZeta_1_1MapLoader_a63b8fd33a09d3f7bf26a822ece396195}
+\hypertarget{classZeta_1_1MapLoader_a64d774c15fed3fc5ac1e505d2f1b1588}{\index{Zeta\+::\+Map\+Loader@{Zeta\+::\+Map\+Loader}!on\+Begin@{on\+Begin}}
+\index{on\+Begin@{on\+Begin}!Zeta\+::\+Map\+Loader@{Zeta\+::\+Map\+Loader}}
+\subsubsection[{on\+Begin}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Load\+Begin\+Call} Zeta\+::\+Map\+Loader\+::on\+Begin\hspace{0.3cm}{\ttfamily [private]}}}\label{classZeta_1_1MapLoader_a64d774c15fed3fc5ac1e505d2f1b1588}
+\hypertarget{classZeta_1_1MapLoader_a5f9ca0c93a698b67b7cb9dfff3828cc1}{\index{Zeta\+::\+Map\+Loader@{Zeta\+::\+Map\+Loader}!on\+End@{on\+End}}
+\index{on\+End@{on\+End}!Zeta\+::\+Map\+Loader@{Zeta\+::\+Map\+Loader}}
+\subsubsection[{on\+End}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Load\+End\+Call} Zeta\+::\+Map\+Loader\+::on\+End\hspace{0.3cm}{\ttfamily [private]}}}\label{classZeta_1_1MapLoader_a5f9ca0c93a698b67b7cb9dfff3828cc1}
+\hypertarget{classZeta_1_1MapLoader_a44233c4f572f8b99aeceb47f7c2300db}{\index{Zeta\+::\+Map\+Loader@{Zeta\+::\+Map\+Loader}!ready@{ready}}
+\index{ready@{ready}!Zeta\+::\+Map\+Loader@{Zeta\+::\+Map\+Loader}}
+\subsubsection[{ready}]{\setlength{\rightskip}{0pt plus 5cm}bool Zeta\+::\+Map\+Loader\+::ready\hspace{0.3cm}{\ttfamily [private]}}}\label{classZeta_1_1MapLoader_a44233c4f572f8b99aeceb47f7c2300db}
+\hypertarget{classZeta_1_1MapLoader_a73bd9a2d52358d4c8188327505919fa6}{\index{Zeta\+::\+Map\+Loader@{Zeta\+::\+Map\+Loader}!worker@{worker}}
+\index{worker@{worker}!Zeta\+::\+Map\+Loader@{Zeta\+::\+Map\+Loader}}
+\subsubsection[{worker}]{\setlength{\rightskip}{0pt plus 5cm}std\+::thread Zeta\+::\+Map\+Loader\+::worker\hspace{0.3cm}{\ttfamily [private]}}}\label{classZeta_1_1MapLoader_a73bd9a2d52358d4c8188327505919fa6}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Zeta/\+Core/\hyperlink{MapLoader_8hpp}{Map\+Loader.\+hpp}\end{DoxyCompactItemize}

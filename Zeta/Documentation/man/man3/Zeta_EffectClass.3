@@ -1,0 +1,143 @@
+.TH "Zeta::EffectClass" 3 "Wed Feb 10 2016" "Zeta" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Zeta::EffectClass \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <EffectClass\&.hpp>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "const std::string & \fBgetName\fP () const "
+.br
+.ti -1c
+.RI "const \fBLuaFunctor\fP & \fBgetOnApply\fP () const "
+.br
+.ti -1c
+.RI "const \fBLuaFunctor\fP & \fBgetOnRemove\fP () const "
+.br
+.ti -1c
+.RI "const \fBLuaFunctor\fP & \fBgetOnTick\fP () const "
+.br
+.ti -1c
+.RI "\fBFloat\fP \fBgetUpTime\fP () const "
+.br
+.ti -1c
+.RI "\fBFloat\fP \fBgetTickEvery\fP () const "
+.br
+.ti -1c
+.RI "bool \fBisStackable\fP () const "
+.br
+.ti -1c
+.RI "\fBEffectClass\fP (\fBEffectClass\fP &&)=default"
+.br
+.ti -1c
+.RI "\fBEffectClass\fP & \fBoperator=\fP (\fBEffectClass\fP &&)=default"
+.br
+.ti -1c
+.RI "\fBEffect\fP * \fBgetNewEffect\fP (\fBLifeform\fP *target, int level) const "
+.br
+.ti -1c
+.RI "\fBEffectClass\fP ()"
+.br
+.ti -1c
+.RI "\fBEffectClass\fP (const \fBLuaTable\fP &table)"
+.br
+.ti -1c
+.RI "\fBEffectClass\fP (\fBlua_Object\fP table)"
+.br
+.ti -1c
+.RI "\fB~EffectClass\fP ()"
+.br
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "std::string \fBname\fP"
+.br
+.ti -1c
+.RI "\fBLuaFunctor\fP \fBonApply\fP"
+.br
+.ti -1c
+.RI "\fBLuaFunctor\fP \fBonRemove\fP"
+.br
+.ti -1c
+.RI "\fBLuaFunctor\fP \fBonTick\fP"
+.br
+.ti -1c
+.RI "\fBFloat\fP \fBuptime\fP"
+.br
+.ti -1c
+.RI "\fBFloat\fP \fBtickEvery\fP"
+.br
+.ti -1c
+.RI "bool \fBdurable\fP"
+.br
+.ti -1c
+.RI "bool \fBoverTime\fP"
+.br
+.ti -1c
+.RI "bool \fBstackable\fP"
+.br
+.in -1c
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Zeta::EffectClass::EffectClass (\fBEffectClass\fP &&)\fC [default]\fP"
+
+.SS "Zeta::EffectClass::EffectClass ()"
+
+.SS "Zeta::EffectClass::EffectClass (const \fBLuaTable\fP &table)"
+
+.SS "Zeta::EffectClass::EffectClass (\fBlua_Object\fPtable)"
+
+.SS "Zeta::EffectClass::~EffectClass ()"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "const std::string& Zeta::EffectClass::getName () const\fC [inline]\fP"
+
+.SS "\fBEffect\fP* Zeta::EffectClass::getNewEffect (\fBLifeform\fP *target, intlevel) const"
+
+.SS "const \fBLuaFunctor\fP& Zeta::EffectClass::getOnApply () const\fC [inline]\fP"
+
+.SS "const \fBLuaFunctor\fP& Zeta::EffectClass::getOnRemove () const\fC [inline]\fP"
+
+.SS "const \fBLuaFunctor\fP& Zeta::EffectClass::getOnTick () const\fC [inline]\fP"
+
+.SS "\fBFloat\fP Zeta::EffectClass::getTickEvery () const\fC [inline]\fP"
+
+.SS "\fBFloat\fP Zeta::EffectClass::getUpTime () const\fC [inline]\fP"
+
+.SS "bool Zeta::EffectClass::isStackable () const\fC [inline]\fP"
+
+.SS "\fBEffectClass\fP& Zeta::EffectClass::operator= (\fBEffectClass\fP &&)\fC [default]\fP"
+
+.SH "Member Data Documentation"
+.PP 
+.SS "bool Zeta::EffectClass::durable\fC [private]\fP"
+
+.SS "std::string Zeta::EffectClass::name\fC [private]\fP"
+
+.SS "\fBLuaFunctor\fP Zeta::EffectClass::onApply\fC [private]\fP"
+
+.SS "\fBLuaFunctor\fP Zeta::EffectClass::onRemove\fC [private]\fP"
+
+.SS "\fBLuaFunctor\fP Zeta::EffectClass::onTick\fC [private]\fP"
+
+.SS "bool Zeta::EffectClass::overTime\fC [private]\fP"
+
+.SS "bool Zeta::EffectClass::stackable\fC [private]\fP"
+
+.SS "\fBFloat\fP Zeta::EffectClass::tickEvery\fC [private]\fP"
+
+.SS "\fBFloat\fP Zeta::EffectClass::uptime\fC [private]\fP"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Zeta from the source code\&.

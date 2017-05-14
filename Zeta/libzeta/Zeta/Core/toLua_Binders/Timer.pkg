@@ -1,0 +1,17 @@
+$#include <Zeta/Core/RPGClasses/Timer.hpp>
+
+class Timer {
+public:
+	Float getMaxTime() const;
+	void setMaxTime(Float maxTime);
+	Float getRemainingTime() const;
+	void setRemainingTime(Float remainingTime);
+	bool isOver() const;
+	bool isRunning() const;
+	void start();
+	void pause();
+	void reset();
+	void setCallback(lua_Object func);
+	Timer(Float maxTime);
+	~Timer();
+};

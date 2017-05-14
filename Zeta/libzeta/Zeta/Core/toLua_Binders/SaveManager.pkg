@@ -1,0 +1,9 @@
+$#include <Zeta/Core/SaveManager.hpp>
+
+class SaveManager {
+public:
+	void setFile(const std::string& path);
+	void save();
+	void load();
+	static SaveManager& getInstance();
+};

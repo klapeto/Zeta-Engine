@@ -1,0 +1,175 @@
+.TH "Zeta::LuaReferenced" 3 "Wed Feb 10 2016" "Zeta" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Zeta::LuaReferenced \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <LuaReferenced\&.hpp>\fP
+.PP
+Inherits \fBZeta::LuaPushable\fP\&.
+.PP
+Inherited by \fBZeta::LuaFunctor\fP, and \fBZeta::LuaTable\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "const std::string & \fBgetName\fP () const "
+.br
+.ti -1c
+.RI "void \fBsetName\fP (const std::string &\fBname\fP)"
+.br
+.ti -1c
+.RI "int \fBgetLuaReference\fP () const "
+.br
+.ti -1c
+.RI "virtual void \fBset\fP (int stackIndex)=0"
+.br
+.ti -1c
+.RI "virtual void \fBsetLuaReference\fP (int reference)=0"
+.br
+.ti -1c
+.RI "bool \fBisValid\fP () const "
+.br
+.ti -1c
+.RI "void \fBpushToLua\fP (lua_State *lstate)"
+.br
+.ti -1c
+.RI "\fBLuaReferenced\fP ()"
+.br
+.ti -1c
+.RI "\fBLuaReferenced\fP (const std::string &luaName)"
+.br
+.ti -1c
+.RI "\fBLuaReferenced\fP (int stackIndex)"
+.br
+.ti -1c
+.RI "\fBLuaReferenced\fP (\fBLuaReferenced\fP &&other)"
+.br
+.ti -1c
+.RI "\fBLuaReferenced\fP (const \fBLuaReferenced\fP &other)"
+.br
+.ti -1c
+.RI "\fBLuaReferenced\fP & \fBoperator=\fP (const \fBLuaReferenced\fP &other)"
+.br
+.ti -1c
+.RI "\fBLuaReferenced\fP & \fBoperator=\fP (\fBLuaReferenced\fP &&other)"
+.br
+.ti -1c
+.RI "virtual \fB~LuaReferenced\fP ()"
+.br
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "std::string \fBname\fP"
+.br
+.ti -1c
+.RI "int \fBluaReference\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+\fBLuaReferenced\fP Is derived by classes representing Lua Code in C++ This means that Objects of the derived classes have a Reference to Lua Environment A \fBLuaReferenced\fP object can have a Name to make debugging easier\&. 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Zeta::LuaReferenced::LuaReferenced ()"
+
+.SS "Zeta::LuaReferenced::LuaReferenced (const std::string &luaName)"
+
+.SS "Zeta::LuaReferenced::LuaReferenced (intstackIndex)"
+
+.SS "Zeta::LuaReferenced::LuaReferenced (\fBLuaReferenced\fP &&other)"
+
+.SS "Zeta::LuaReferenced::LuaReferenced (const \fBLuaReferenced\fP &other)"
+
+.SS "virtual Zeta::LuaReferenced::~LuaReferenced ()\fC [virtual]\fP"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "int Zeta::LuaReferenced::getLuaReference () const\fC [inline]\fP"
+Gets the Reference Int in Lua 
+.PP
+\fBReturns:\fP
+.RS 4
+the integer that represents something in Lua 
+.RE
+.PP
+
+.SS "const std::string& Zeta::LuaReferenced::getName () const\fC [inline]\fP"
+Gets the references Name 
+.PP
+\fBReturns:\fP
+.RS 4
+the name 
+.RE
+.PP
+
+.SS "bool Zeta::LuaReferenced::isValid () const"
+Checks if the Reference is actually pointing to something 
+.PP
+\fBReturns:\fP
+.RS 4
+True if the reference can be used\&. 
+.RE
+.PP
+
+.SS "\fBLuaReferenced\fP& Zeta::LuaReferenced::operator= (const \fBLuaReferenced\fP &other)"
+
+.SS "\fBLuaReferenced\fP& Zeta::LuaReferenced::operator= (\fBLuaReferenced\fP &&other)"
+
+.SS "void Zeta::LuaReferenced::pushToLua (lua_State *lstate)\fC [virtual]\fP"
+Pushes the referenced object to Lua\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIlstate\fP the lua_State to push it\&. 
+.RE
+.PP
+
+.PP
+Implements \fBZeta::LuaPushable\fP\&.
+.SS "virtual void Zeta::LuaReferenced::set (intstackIndex)\fC [pure virtual]\fP"
+Sets the reference according to the stack Pointer provided 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIstackIndex\fP the StackIndex the obejct is in Lua 
+.RE
+.PP
+
+.PP
+Implemented in \fBZeta::LuaTable\fP, and \fBZeta::LuaFunctor\fP\&.
+.SS "virtual void Zeta::LuaReferenced::setLuaReference (intreference)\fC [pure virtual]\fP"
+Sets the Lua Reference directly 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIreference\fP the Reference int to set 
+.RE
+.PP
+
+.PP
+Implemented in \fBZeta::LuaTable\fP, and \fBZeta::LuaFunctor\fP\&.
+.SS "void Zeta::LuaReferenced::setName (const std::string &name)\fC [inline]\fP"
+Sets the references Name 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIname\fP the Name 
+.RE
+.PP
+
+.SH "Member Data Documentation"
+.PP 
+.SS "int Zeta::LuaReferenced::luaReference\fC [protected]\fP"
+
+.SS "std::string Zeta::LuaReferenced::name\fC [protected]\fP"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Zeta from the source code\&.

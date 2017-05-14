@@ -1,0 +1,128 @@
+.TH "Zeta::Attribute" 3 "Wed Feb 10 2016" "Zeta" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Zeta::Attribute \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Attribute\&.hpp>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBcalculate\fP ()"
+.br
+.ti -1c
+.RI "void \fBaddModifier\fP (\fBModifier\fP *mod)"
+.br
+.ti -1c
+.RI "void \fBremoveModifier\fP (\fBModifier\fP *mod)"
+.br
+.ti -1c
+.RI "void \fBremoveModifierAndDelete\fP (\fBModifier\fP *mod)"
+.br
+.ti -1c
+.RI "\fBAttributeValue\fP \fBgetValue\fP () const "
+.br
+.ti -1c
+.RI "\fBAttributeValue\fP \fBgetBaseValue\fP () const "
+.br
+.ti -1c
+.RI "\fBAttribute\fP ()"
+.br
+.ti -1c
+.RI "\fBAttribute\fP (\fBAttributeValue\fP \fBbaseValue\fP)"
+.br
+.ti -1c
+.RI "void \fBapplyToBaseFlat\fP (\fBAttributeValue\fP x)"
+.br
+.ti -1c
+.RI "void \fBapplyToBaseMul\fP (\fBAttributeValue\fP x)"
+.br
+.ti -1c
+.RI "void \fBsetBase\fP (\fBAttributeValue\fP value)"
+.br
+.ti -1c
+.RI "void \fBsetCalculatedValue\fP (\fBAttributeValue\fP value)"
+.br
+.ti -1c
+.RI "void \fBremoveAllModifiers\fP (bool deleteThem)"
+.br
+.ti -1c
+.RI "\fBAttribute\fP (const \fBAttribute\fP &other)"
+.br
+.ti -1c
+.RI "\fBAttribute\fP & \fBoperator=\fP (const \fBAttribute\fP &other)"
+.br
+.ti -1c
+.RI "\fBAttribute\fP & \fBoperator=\fP (\fBAttributeValue\fP value)"
+.br
+.ti -1c
+.RI "virtual \fB~Attribute\fP ()"
+.br
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBZSmallSet\fP< \fBModifier\fP * > \fBmodifiers\fP"
+.br
+.ti -1c
+.RI "\fBAttributeValue\fP \fBbaseValue\fP"
+.br
+.ti -1c
+.RI "\fBAttributeValue\fP \fBcalculatedValue\fP"
+.br
+.in -1c
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Zeta::Attribute::Attribute ()\fC [inline]\fP"
+
+.SS "Zeta::Attribute::Attribute (\fBAttributeValue\fPbaseValue)\fC [inline]\fP"
+
+.SS "Zeta::Attribute::Attribute (const \fBAttribute\fP &other)"
+
+.SS "virtual Zeta::Attribute::~Attribute ()\fC [inline]\fP, \fC [virtual]\fP"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "void Zeta::Attribute::addModifier (\fBModifier\fP *mod)"
+
+.SS "void Zeta::Attribute::applyToBaseFlat (\fBAttributeValue\fPx)\fC [inline]\fP"
+
+.SS "void Zeta::Attribute::applyToBaseMul (\fBAttributeValue\fPx)\fC [inline]\fP"
+
+.SS "void Zeta::Attribute::calculate ()"
+
+.SS "\fBAttributeValue\fP Zeta::Attribute::getBaseValue () const\fC [inline]\fP"
+
+.SS "\fBAttributeValue\fP Zeta::Attribute::getValue () const\fC [inline]\fP"
+
+.SS "\fBAttribute\fP& Zeta::Attribute::operator= (const \fBAttribute\fP &other)"
+
+.SS "\fBAttribute\fP& Zeta::Attribute::operator= (\fBAttributeValue\fPvalue)\fC [inline]\fP"
+
+.SS "void Zeta::Attribute::removeAllModifiers (booldeleteThem)"
+
+.SS "void Zeta::Attribute::removeModifier (\fBModifier\fP *mod)"
+
+.SS "void Zeta::Attribute::removeModifierAndDelete (\fBModifier\fP *mod)"
+
+.SS "void Zeta::Attribute::setBase (\fBAttributeValue\fPvalue)\fC [inline]\fP"
+
+.SS "void Zeta::Attribute::setCalculatedValue (\fBAttributeValue\fPvalue)\fC [inline]\fP"
+
+.SH "Member Data Documentation"
+.PP 
+.SS "\fBAttributeValue\fP Zeta::Attribute::baseValue\fC [protected]\fP"
+
+.SS "\fBAttributeValue\fP Zeta::Attribute::calculatedValue\fC [protected]\fP"
+
+.SS "\fBZSmallSet\fP<\fBModifier\fP*> Zeta::Attribute::modifiers\fC [protected]\fP"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Zeta from the source code\&.

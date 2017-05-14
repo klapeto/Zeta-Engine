@@ -1,0 +1,67 @@
+<?xml version="1.0" ?>
+<GUIScheme version="5" name="EftihiaSkin">
+	<Imageset filename="Eftihia.imageset" />
+	<Imageset filename="MainMenuBack.imageset" />
+	<Imageset filename="MainMenuImages.imageset" />
+	<Imageset filename="Gameplay.imageset" />
+	<Imageset filename="Abilities.imageset" />
+	<Imageset filename="Icons.imageset" />
+	<Imageset filename="InventorIcons.imageset" />
+	<LookNFeel filename="Eftihia.looknfeel" />
+	<Font filename="DejaVuSans-10.font" />
+	<Font filename="DejaVuSans-12.font" />
+	<Font filename="DejaVuSans-14.font" />
+	<Font filename="DejaVuSans-16.font" />
+	<Font filename="DejaVuSans-18.font" />
+	<Font filename="Ubuntu-72.font" />
+	<Font filename="Ubuntu-48.font" />
+	<Font filename="Ubuntu-32.font" />
+	<Font filename="Ubuntu-20.font" />
+	<Font filename="Ubuntu-10.font" />
+	<Font filename="Ubuntu-10-Bold.font" />
+	<Font filename="Ubuntu-12.font" />
+	<Font filename="Ubuntu-14.font" />
+	<Font filename="Ubuntu-16.font" />
+	<Font filename="Ubuntu-18.font" />
+	<Font filename="Ubuntu-Bold-48.font" />
+	<Font filename="TradeWinds-20.font" />
+	<WindowRendererSet filename="CEGUICoreWindowRendererSet" />
+
+	<FalagardMapping windowType="Eftihia/Label" targetType="DefaultWindow" renderer="Core/Default" lookNFeel="Eftihia/Label" />
+	<FalagardMapping windowType="Eftihia/DamageText" targetType="DefaultWindow" renderer="Core/Default" lookNFeel="Eftihia/DamageText" />
+	<FalagardMapping windowType="Eftihia/TitleBar" targetType="CEGUI/Titlebar" renderer="Core/Titlebar" lookNFeel="Eftihia/TitleBar" />
+	<FalagardMapping windowType="Eftihia/Button" targetType="CEGUI/PushButton" renderer="Core/Button" lookNFeel="Eftihia/Button" />
+	<FalagardMapping windowType="Eftihia/FrameWindow" targetType="CEGUI/FrameWindow" renderer="Core/FrameWindow" lookNFeel="Eftihia/FrameWindow" />
+	<FalagardMapping windowType="Eftihia/EditBox" targetType="CEGUI/Editbox" renderer="Core/Editbox" lookNFeel="Eftihia/EditBox" />
+	<FalagardMapping windowType="Eftihia/CloseButton" targetType="CEGUI/PushButton" renderer="Core/Button" lookNFeel="Eftihia/CloseButton" />
+	<FalagardMapping windowType="Eftihia/VerticalScrollbarThumb" targetType="CEGUI/Thumb" renderer="Core/Button" lookNFeel="Eftihia/VerticalScrollbarThumb" />
+	<FalagardMapping windowType="Eftihia/VerticalScrollbar" targetType="CEGUI/Scrollbar" renderer="Core/Scrollbar" lookNFeel="Eftihia/VerticalScrollbar" />
+	<FalagardMapping windowType="Eftihia/HorizontalScrollbarThumb" targetType="CEGUI/Thumb" renderer="Core/Button" lookNFeel="Eftihia/HorizontalScrollbarThumb" />
+	<FalagardMapping windowType="Eftihia/HorizontalScrollbar" targetType="CEGUI/Scrollbar" renderer="Core/Scrollbar" lookNFeel="Eftihia/HorizontalScrollbar" />
+	<FalagardMapping windowType="Eftihia/MultiLineEditbox" targetType="CEGUI/MultiLineEditbox" renderer="Core/MultiLineEditbox" lookNFeel="Eftihia/MultiLineEditbox" />
+	<FalagardMapping windowType="Eftihia/MultiLineEditboxTransp" targetType="CEGUI/MultiLineEditbox" renderer="Core/MultiLineEditbox" lookNFeel="Eftihia/MultiLineEditboxTransp" />
+	<FalagardMapping windowType="Eftihia/StaticImage" targetType="DefaultWindow" renderer="Core/StaticImage" lookNFeel="Eftihia/StaticImage" />
+	<FalagardMapping windowType="Eftihia/StaticText" targetType="DefaultWindow" renderer="Core/StaticText" lookNFeel="Eftihia/StaticText" />
+	<FalagardMapping windowType="Eftihia/ComboDropList" targetType="CEGUI/ComboDropList" renderer="Core/Listbox" lookNFeel="Eftihia/ComboDropList" />
+	<FalagardMapping windowType="Eftihia/Combobox" targetType="CEGUI/Combobox" renderer="Core/Default" lookNFeel="Eftihia/Combobox" />
+	<FalagardMapping windowType="Eftihia/Checkbox" targetType="CEGUI/ToggleButton" renderer="Core/ToggleButton" lookNFeel="Eftihia/Checkbox" />
+	<FalagardMapping windowType="Eftihia/RadioButton" targetType="CEGUI/RadioButton" renderer="Core/ToggleButton" lookNFeel="Eftihia/RadioButton" />
+    <FalagardMapping windowType="Eftihia/Tooltip" targetType="CEGUI/Tooltip" renderer="Core/Tooltip" lookNFeel="Eftihia/Tooltip" />
+	<FalagardMapping windowType="Eftihia/MenuButton" targetType="CEGUI/PushButton" renderer="Core/Button" lookNFeel="Eftihia/MenuButton" />
+	<FalagardMapping windowType="Eftihia/Listbox" targetType="CEGUI/Listbox" renderer="Core/Listbox" lookNFeel="Eftihia/Listbox" />
+	<FalagardMapping windowType="Eftihia/ListboxTranspBG" targetType="CEGUI/Listbox" renderer="Core/Listbox" lookNFeel="Eftihia/ListboxTranspBG" />
+	    <FalagardMapping windowType="Eftihia/HealthBar" targetType="CEGUI/ProgressBar" renderer="Core/ProgressBar" lookNFeel="Eftihia/HealthBar" />
+		<FalagardMapping windowType="Eftihia/AltHealthBar" targetType="CEGUI/ProgressBar" renderer="Core/ProgressBar" lookNFeel="Eftihia/AltHealthBar" />
+		<FalagardMapping windowType="Eftihia/ManaBar" targetType="CEGUI/ProgressBar" renderer="Core/ProgressBar" lookNFeel="Eftihia/ManaBar" />
+		<FalagardMapping windowType="Eftihia/XPBar" targetType="CEGUI/ProgressBar" renderer="Core/ProgressBar" lookNFeel="Eftihia/XPBar" />
+		<FalagardMapping windowType="Eftihia/AvatarBox"    targetType="DefaultWindow"    renderer="Core/StaticImage"    lookNFeel="Efthia/AvatarBox" />
+		 <FalagardMapping windowType="Eftihia/CooldownProgress" targetType="CEGUI/ProgressBar" renderer="Core/ProgressBar" lookNFeel="Eftihia/CooldownProgress" />
+		<FalagardMapping windowType="Eftihia/DragableIcon"    targetType="DragContainer"    renderer="Core/StaticImage"    lookNFeel="Efthia/DragableIcon" />
+		<FalagardMapping windowType="Eftihia/QuestTrack"    targetType="DefaultWindow"    renderer="Core/Default"    lookNFeel="Eftihia/QuestTrack" />
+		<FalagardMapping windowType="Eftihia/ItemText" targetType="DefaultWindow" renderer="Core/Default" lookNFeel="Eftihia/ItemText" />
+		<FalagardMapping windowType="Eftihia/TreeIcon"    targetType="DragContainer"    renderer="Core/StaticImage"    lookNFeel="Eftihia/TreeIcon" />
+		<FalagardMapping windowType="Eftihia/Alt3HealthBar"    targetType="CEGUI/ProgressBar"    renderer="Core/ProgressBar"    lookNFeel="Eftihia/Alt3HealthBar" />
+		<FalagardMapping windowType="Eftihia/UnitFrame"    targetType="DefaultWindow"    renderer="Core/StaticImage"    lookNFeel="Eftihia/UnitFrame" />
+		
+
+</GUIScheme>

@@ -1,0 +1,219 @@
+.TH "Zeta::Tile" 3 "Wed Feb 10 2016" "Zeta" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Zeta::Tile \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Tile\&.hpp>\fP
+.PP
+Inherits \fBZeta::Drawable\fP, and \fBZeta::Updateable\fP\&.
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "struct \fBTileFrame\fP"
+.br
+.in -1c
+.SS "Public Types"
+
+.in +1c
+.ti -1c
+.RI "enum \fBCollision\fP { \fBNone\fP = 0x0, \fBN\fP = 0x3, \fBE\fP = 0xA, \fBS\fP = 0xC, \fBW\fP = 0x5, \fBNW\fP = 0x1, \fBNE\fP = 0x2, \fBSE\fP = 0x8, \fBSW\fP = 0x4, \fBNxW\fP = 0x7, \fBNxE\fP = 0xB, \fBSxE\fP = 0xE, \fBSxW\fP = 0xD, \fBNWxSE\fP = 0x9, \fBSWxNE\fP = 0x6, \fBFull\fP = 0xF }"
+.br
+.in -1c
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "unsigned int \fBgetGID\fP () const "
+.br
+.ti -1c
+.RI "void \fBsetCollision\fP (int coll)"
+.br
+.ti -1c
+.RI "int \fBgetCollision\fP () const "
+.br
+.ti -1c
+.RI "void \fBaddFrame\fP (\fBTileFrame\fP &frame)"
+.br
+.ti -1c
+.RI "void \fBaddRelativeTile\fP (\fBTile\fP &other)"
+.br
+.ti -1c
+.RI "void \fBsetAnimated\fP (bool value)"
+.br
+.ti -1c
+.RI "bool \fBisAnimated\fP () const "
+.br
+.ti -1c
+.RI "const std::vector< \fBTile\fP * > & \fBgetRelativeTiles\fP () const "
+.br
+.ti -1c
+.RI "void \fBdraw\fP (\fBFloat\fP x, \fBFloat\fP y, \fBFloat\fP rotation=0\&.0f, Float scale=1\&.0f) const "
+.br
+.ti -1c
+.RI "void \fBset\fP (const \fBBitmap\fP &bmp, unsigned int \fBid\fP)"
+.br
+.ti -1c
+.RI "void \fBupdate\fP (\fBFloat\fP elapsedTime)"
+.br
+.ti -1c
+.RI "\fBTile\fP ()"
+.br
+.ti -1c
+.RI "\fBTile\fP (const \fBBitmap\fP &bmp, unsigned int \fBid\fP)"
+.br
+.ti -1c
+.RI "virtual \fB~Tile\fP ()"
+.br
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "std::vector< \fBTileFrame\fP > \fBframes\fP"
+.br
+.ti -1c
+.RI "std::vector< \fBTile\fP * > \fBrelativeTiles\fP"
+.br
+.ti -1c
+.RI "const \fBBitmap\fP * \fBimg\fP"
+.br
+.ti -1c
+.RI "unsigned int \fBid\fP"
+.br
+.ti -1c
+.RI "int \fBcollision\fP"
+.br
+.ti -1c
+.RI "unsigned int \fBframeIndex\fP"
+.br
+.ti -1c
+.RI "\fBFloat\fP \fBframeCounter\fP"
+.br
+.ti -1c
+.RI "bool \fBanimated\fP"
+.br
+.in -1c
+.SS "Friends"
+
+.in +1c
+.ti -1c
+.RI "class \fBTileset\fP"
+.br
+.in -1c
+.SH "Member Enumeration Documentation"
+.PP 
+.SS "enum \fBZeta::Tile::Collision\fP"
+
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fINone \fP\fP
+.TP
+\fB\fIN \fP\fP
+.TP
+\fB\fIE \fP\fP
+.TP
+\fB\fIS \fP\fP
+.TP
+\fB\fIW \fP\fP
+.TP
+\fB\fINW \fP\fP
+.TP
+\fB\fINE \fP\fP
+.TP
+\fB\fISE \fP\fP
+.TP
+\fB\fISW \fP\fP
+.TP
+\fB\fINxW \fP\fP
+.TP
+\fB\fINxE \fP\fP
+.TP
+\fB\fISxE \fP\fP
+.TP
+\fB\fISxW \fP\fP
+.TP
+\fB\fINWxSE \fP\fP
+.TP
+\fB\fISWxNE \fP\fP
+.TP
+\fB\fIFull \fP\fP
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Zeta::Tile::Tile ()"
+
+.SS "Zeta::Tile::Tile (const \fBBitmap\fP &bmp, unsigned intid)"
+
+.SS "virtual Zeta::Tile::~Tile ()\fC [virtual]\fP"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "void Zeta::Tile::addFrame (\fBTileFrame\fP &frame)\fC [inline]\fP"
+
+.SS "void Zeta::Tile::addRelativeTile (\fBTile\fP &other)\fC [inline]\fP"
+
+.SS "void Zeta::Tile::draw (\fBFloat\fPx, \fBFloat\fPy, \fBFloat\fProtation = \fC0\&.0f\fP, \fBFloat\fPscale = \fC1\&.0f\fP) const\fC [virtual]\fP"
+Draws the \fBObject\fP on screen\&. Be advised, the x,y, offsets might have different meaning on different implementations\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIx\fP X offset to be applied on the drawing 
+.br
+\fIy\fP Y offset to be applied on the drawing 
+.br
+\fIrotation\fP the rotation to be applied on the drawing 
+.RE
+.PP
+
+.PP
+Implements \fBZeta::Drawable\fP\&.
+.SS "int Zeta::Tile::getCollision () const\fC [inline]\fP"
+
+.SS "unsigned int Zeta::Tile::getGID () const\fC [inline]\fP"
+
+.SS "const std::vector<\fBTile\fP*>& Zeta::Tile::getRelativeTiles () const\fC [inline]\fP"
+
+.SS "bool Zeta::Tile::isAnimated () const\fC [inline]\fP"
+
+.SS "void Zeta::Tile::set (const \fBBitmap\fP &bmp, unsigned intid)"
+
+.SS "void Zeta::Tile::setAnimated (boolvalue)\fC [inline]\fP"
+
+.SS "void Zeta::Tile::setCollision (intcoll)\fC [inline]\fP"
+
+.SS "void Zeta::Tile::update (\fBFloat\fPelapsedTime)\fC [inline]\fP, \fC [virtual]\fP"
+
+.PP
+Implements \fBZeta::Updateable\fP\&.
+.SH "Friends And Related Function Documentation"
+.PP 
+.SS "friend class \fBTileset\fP\fC [friend]\fP"
+
+.SH "Member Data Documentation"
+.PP 
+.SS "bool Zeta::Tile::animated\fC [protected]\fP"
+
+.SS "int Zeta::Tile::collision\fC [protected]\fP"
+
+.SS "\fBFloat\fP Zeta::Tile::frameCounter\fC [protected]\fP"
+
+.SS "unsigned int Zeta::Tile::frameIndex\fC [protected]\fP"
+
+.SS "std::vector<\fBTileFrame\fP> Zeta::Tile::frames\fC [protected]\fP"
+
+.SS "unsigned int Zeta::Tile::id\fC [protected]\fP"
+
+.SS "const \fBBitmap\fP* Zeta::Tile::img\fC [protected]\fP"
+
+.SS "std::vector<\fBTile\fP*> Zeta::Tile::relativeTiles\fC [protected]\fP"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Zeta from the source code\&.

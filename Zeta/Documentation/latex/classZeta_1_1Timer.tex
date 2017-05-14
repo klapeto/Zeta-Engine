@@ -1,0 +1,199 @@
+\hypertarget{classZeta_1_1Timer}{\section{Zeta\+:\+:Timer Class Reference}
+\label{classZeta_1_1Timer}\index{Zeta\+::\+Timer@{Zeta\+::\+Timer}}
+}
+
+
+{\ttfamily \#include $<$Timer.\+hpp$>$}
+
+
+
+Inheritance diagram for Zeta\+:\+:Timer\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=288pt]{classZeta_1_1Timer__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Zeta\+:\+:Timer\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=336pt]{classZeta_1_1Timer__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespaceZeta_a1e0a1265f9b3bd3075fb0fabd39088ba}{Float} \hyperlink{classZeta_1_1Timer_ab85e37cab2ccf91c3affc0a3d2def7f7}{get\+Max\+Time} () const 
+\item 
+void \hyperlink{classZeta_1_1Timer_a7eea492065bdbc64478e2e0396550e22}{set\+Max\+Time} (\hyperlink{namespaceZeta_a1e0a1265f9b3bd3075fb0fabd39088ba}{Float} \hyperlink{classZeta_1_1Timer_a9a9cce102e64f634f3bcc1653f94d92f}{max\+Time})
+\item 
+\hyperlink{namespaceZeta_a1e0a1265f9b3bd3075fb0fabd39088ba}{Float} \hyperlink{classZeta_1_1Timer_a4bf3c4d64122f88c10f914c095e52756}{get\+Remaining\+Time} () const 
+\item 
+void \hyperlink{classZeta_1_1Timer_a53b2dc0910e189266f89ca297476f707}{set\+Remaining\+Time} (\hyperlink{namespaceZeta_a1e0a1265f9b3bd3075fb0fabd39088ba}{Float} \hyperlink{classZeta_1_1Timer_a65a7dfa8c401787c7916a844b0c07965}{remaining\+Time})
+\item 
+bool \hyperlink{classZeta_1_1Timer_aa1638624d8a71298110e97486ac4151b}{is\+Over} () const 
+\item 
+bool \hyperlink{classZeta_1_1Timer_a5eb3032815aee63bbd6093deaa26dcea}{is\+Running} () const 
+\item 
+void \hyperlink{classZeta_1_1Timer_ae0d0528ed8c364b6d33e0573c1a8ce3c}{start} ()
+\item 
+void \hyperlink{classZeta_1_1Timer_a256a4aba4a28450bd8a84c67a76b6271}{pause} ()
+\item 
+void \hyperlink{classZeta_1_1Timer_a88813a4cbfd7bbf49ce15e14e89b7b88}{reset} ()
+\item 
+void \hyperlink{classZeta_1_1Timer_a4e446b9abbac5ed2b74bf029d81e8933}{update} (\hyperlink{namespaceZeta_a1e0a1265f9b3bd3075fb0fabd39088ba}{Float} elapsed\+Time)
+\item 
+void \hyperlink{classZeta_1_1Timer_adc0df535bfb0b30d85a3209f08bc1eb7}{set\+Callback} (\hyperlink{ZetaConfig_8hpp_ae7be32b73848041a60f2412f72bbb221}{lua\+\_\+\+Object} func)
+\item 
+void \hyperlink{classZeta_1_1Timer_aa04d9cc692f5a21d2908bc0ae4c4d6c3}{push\+To\+Lua} (lua\+\_\+\+State $\ast$lstate)
+\item 
+\hyperlink{classZeta_1_1Timer_a0679009352d7d7c85e5cc73046085720}{Timer} (\hyperlink{namespaceZeta_a1e0a1265f9b3bd3075fb0fabd39088ba}{Float} \hyperlink{classZeta_1_1Timer_a9a9cce102e64f634f3bcc1653f94d92f}{max\+Time})
+\item 
+\hyperlink{classZeta_1_1Timer_a93506f6aeb740137fc4d58c7fa4276c5}{$\sim$\+Timer} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classZeta_1_1LuaFunctor}{Lua\+Functor} \hyperlink{classZeta_1_1Timer_a5c34b1ad2fbb002a4b107cc3658a5350}{callback}
+\item 
+\hyperlink{namespaceZeta_a1e0a1265f9b3bd3075fb0fabd39088ba}{Float} \hyperlink{classZeta_1_1Timer_a9a9cce102e64f634f3bcc1653f94d92f}{max\+Time}
+\item 
+\hyperlink{namespaceZeta_a1e0a1265f9b3bd3075fb0fabd39088ba}{Float} \hyperlink{classZeta_1_1Timer_a65a7dfa8c401787c7916a844b0c07965}{remaining\+Time}
+\item 
+bool \hyperlink{classZeta_1_1Timer_a9d32f638022dbcfc33d30ca40aa8ede1}{running}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classZeta_1_1Timer_a0679009352d7d7c85e5cc73046085720}{\index{Zeta\+::\+Timer@{Zeta\+::\+Timer}!Timer@{Timer}}
+\index{Timer@{Timer}!Zeta\+::\+Timer@{Zeta\+::\+Timer}}
+\subsubsection[{Timer}]{\setlength{\rightskip}{0pt plus 5cm}Zeta\+::\+Timer\+::\+Timer (
+\begin{DoxyParamCaption}
+\item[{{\bf Float}}]{max\+Time}
+\end{DoxyParamCaption}
+)}}\label{classZeta_1_1Timer_a0679009352d7d7c85e5cc73046085720}
+\hypertarget{classZeta_1_1Timer_a93506f6aeb740137fc4d58c7fa4276c5}{\index{Zeta\+::\+Timer@{Zeta\+::\+Timer}!````~Timer@{$\sim$\+Timer}}
+\index{````~Timer@{$\sim$\+Timer}!Zeta\+::\+Timer@{Zeta\+::\+Timer}}
+\subsubsection[{$\sim$\+Timer}]{\setlength{\rightskip}{0pt plus 5cm}Zeta\+::\+Timer\+::$\sim$\+Timer (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classZeta_1_1Timer_a93506f6aeb740137fc4d58c7fa4276c5}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classZeta_1_1Timer_ab85e37cab2ccf91c3affc0a3d2def7f7}{\index{Zeta\+::\+Timer@{Zeta\+::\+Timer}!get\+Max\+Time@{get\+Max\+Time}}
+\index{get\+Max\+Time@{get\+Max\+Time}!Zeta\+::\+Timer@{Zeta\+::\+Timer}}
+\subsubsection[{get\+Max\+Time}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Float} Zeta\+::\+Timer\+::get\+Max\+Time (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1Timer_ab85e37cab2ccf91c3affc0a3d2def7f7}
+\hypertarget{classZeta_1_1Timer_a4bf3c4d64122f88c10f914c095e52756}{\index{Zeta\+::\+Timer@{Zeta\+::\+Timer}!get\+Remaining\+Time@{get\+Remaining\+Time}}
+\index{get\+Remaining\+Time@{get\+Remaining\+Time}!Zeta\+::\+Timer@{Zeta\+::\+Timer}}
+\subsubsection[{get\+Remaining\+Time}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Float} Zeta\+::\+Timer\+::get\+Remaining\+Time (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1Timer_a4bf3c4d64122f88c10f914c095e52756}
+\hypertarget{classZeta_1_1Timer_aa1638624d8a71298110e97486ac4151b}{\index{Zeta\+::\+Timer@{Zeta\+::\+Timer}!is\+Over@{is\+Over}}
+\index{is\+Over@{is\+Over}!Zeta\+::\+Timer@{Zeta\+::\+Timer}}
+\subsubsection[{is\+Over}]{\setlength{\rightskip}{0pt plus 5cm}bool Zeta\+::\+Timer\+::is\+Over (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1Timer_aa1638624d8a71298110e97486ac4151b}
+\hypertarget{classZeta_1_1Timer_a5eb3032815aee63bbd6093deaa26dcea}{\index{Zeta\+::\+Timer@{Zeta\+::\+Timer}!is\+Running@{is\+Running}}
+\index{is\+Running@{is\+Running}!Zeta\+::\+Timer@{Zeta\+::\+Timer}}
+\subsubsection[{is\+Running}]{\setlength{\rightskip}{0pt plus 5cm}bool Zeta\+::\+Timer\+::is\+Running (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1Timer_a5eb3032815aee63bbd6093deaa26dcea}
+\hypertarget{classZeta_1_1Timer_a256a4aba4a28450bd8a84c67a76b6271}{\index{Zeta\+::\+Timer@{Zeta\+::\+Timer}!pause@{pause}}
+\index{pause@{pause}!Zeta\+::\+Timer@{Zeta\+::\+Timer}}
+\subsubsection[{pause}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+Timer\+::pause (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1Timer_a256a4aba4a28450bd8a84c67a76b6271}
+\hypertarget{classZeta_1_1Timer_aa04d9cc692f5a21d2908bc0ae4c4d6c3}{\index{Zeta\+::\+Timer@{Zeta\+::\+Timer}!push\+To\+Lua@{push\+To\+Lua}}
+\index{push\+To\+Lua@{push\+To\+Lua}!Zeta\+::\+Timer@{Zeta\+::\+Timer}}
+\subsubsection[{push\+To\+Lua}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+Timer\+::push\+To\+Lua (
+\begin{DoxyParamCaption}
+\item[{lua\+\_\+\+State $\ast$}]{lstate}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classZeta_1_1Timer_aa04d9cc692f5a21d2908bc0ae4c4d6c3}
+
+
+Implements \hyperlink{classZeta_1_1LuaPushable_a0380ec9cff11f749e8eb67b51b8f82fc}{Zeta\+::\+Lua\+Pushable}.
+
+\hypertarget{classZeta_1_1Timer_a88813a4cbfd7bbf49ce15e14e89b7b88}{\index{Zeta\+::\+Timer@{Zeta\+::\+Timer}!reset@{reset}}
+\index{reset@{reset}!Zeta\+::\+Timer@{Zeta\+::\+Timer}}
+\subsubsection[{reset}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+Timer\+::reset (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1Timer_a88813a4cbfd7bbf49ce15e14e89b7b88}
+\hypertarget{classZeta_1_1Timer_adc0df535bfb0b30d85a3209f08bc1eb7}{\index{Zeta\+::\+Timer@{Zeta\+::\+Timer}!set\+Callback@{set\+Callback}}
+\index{set\+Callback@{set\+Callback}!Zeta\+::\+Timer@{Zeta\+::\+Timer}}
+\subsubsection[{set\+Callback}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+Timer\+::set\+Callback (
+\begin{DoxyParamCaption}
+\item[{{\bf lua\+\_\+\+Object}}]{func}
+\end{DoxyParamCaption}
+)}}\label{classZeta_1_1Timer_adc0df535bfb0b30d85a3209f08bc1eb7}
+\hypertarget{classZeta_1_1Timer_a7eea492065bdbc64478e2e0396550e22}{\index{Zeta\+::\+Timer@{Zeta\+::\+Timer}!set\+Max\+Time@{set\+Max\+Time}}
+\index{set\+Max\+Time@{set\+Max\+Time}!Zeta\+::\+Timer@{Zeta\+::\+Timer}}
+\subsubsection[{set\+Max\+Time}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+Timer\+::set\+Max\+Time (
+\begin{DoxyParamCaption}
+\item[{{\bf Float}}]{max\+Time}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1Timer_a7eea492065bdbc64478e2e0396550e22}
+\hypertarget{classZeta_1_1Timer_a53b2dc0910e189266f89ca297476f707}{\index{Zeta\+::\+Timer@{Zeta\+::\+Timer}!set\+Remaining\+Time@{set\+Remaining\+Time}}
+\index{set\+Remaining\+Time@{set\+Remaining\+Time}!Zeta\+::\+Timer@{Zeta\+::\+Timer}}
+\subsubsection[{set\+Remaining\+Time}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+Timer\+::set\+Remaining\+Time (
+\begin{DoxyParamCaption}
+\item[{{\bf Float}}]{remaining\+Time}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1Timer_a53b2dc0910e189266f89ca297476f707}
+\hypertarget{classZeta_1_1Timer_ae0d0528ed8c364b6d33e0573c1a8ce3c}{\index{Zeta\+::\+Timer@{Zeta\+::\+Timer}!start@{start}}
+\index{start@{start}!Zeta\+::\+Timer@{Zeta\+::\+Timer}}
+\subsubsection[{start}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+Timer\+::start (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1Timer_ae0d0528ed8c364b6d33e0573c1a8ce3c}
+\hypertarget{classZeta_1_1Timer_a4e446b9abbac5ed2b74bf029d81e8933}{\index{Zeta\+::\+Timer@{Zeta\+::\+Timer}!update@{update}}
+\index{update@{update}!Zeta\+::\+Timer@{Zeta\+::\+Timer}}
+\subsubsection[{update}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+Timer\+::update (
+\begin{DoxyParamCaption}
+\item[{{\bf Float}}]{elapsed\+Time}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classZeta_1_1Timer_a4e446b9abbac5ed2b74bf029d81e8933}
+
+
+Implements \hyperlink{classZeta_1_1Updateable_af4006bfccb762454b4da08786ad93de0}{Zeta\+::\+Updateable}.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classZeta_1_1Timer_a5c34b1ad2fbb002a4b107cc3658a5350}{\index{Zeta\+::\+Timer@{Zeta\+::\+Timer}!callback@{callback}}
+\index{callback@{callback}!Zeta\+::\+Timer@{Zeta\+::\+Timer}}
+\subsubsection[{callback}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Lua\+Functor} Zeta\+::\+Timer\+::callback\hspace{0.3cm}{\ttfamily [private]}}}\label{classZeta_1_1Timer_a5c34b1ad2fbb002a4b107cc3658a5350}
+\hypertarget{classZeta_1_1Timer_a9a9cce102e64f634f3bcc1653f94d92f}{\index{Zeta\+::\+Timer@{Zeta\+::\+Timer}!max\+Time@{max\+Time}}
+\index{max\+Time@{max\+Time}!Zeta\+::\+Timer@{Zeta\+::\+Timer}}
+\subsubsection[{max\+Time}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Float} Zeta\+::\+Timer\+::max\+Time\hspace{0.3cm}{\ttfamily [private]}}}\label{classZeta_1_1Timer_a9a9cce102e64f634f3bcc1653f94d92f}
+\hypertarget{classZeta_1_1Timer_a65a7dfa8c401787c7916a844b0c07965}{\index{Zeta\+::\+Timer@{Zeta\+::\+Timer}!remaining\+Time@{remaining\+Time}}
+\index{remaining\+Time@{remaining\+Time}!Zeta\+::\+Timer@{Zeta\+::\+Timer}}
+\subsubsection[{remaining\+Time}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Float} Zeta\+::\+Timer\+::remaining\+Time\hspace{0.3cm}{\ttfamily [private]}}}\label{classZeta_1_1Timer_a65a7dfa8c401787c7916a844b0c07965}
+\hypertarget{classZeta_1_1Timer_a9d32f638022dbcfc33d30ca40aa8ede1}{\index{Zeta\+::\+Timer@{Zeta\+::\+Timer}!running@{running}}
+\index{running@{running}!Zeta\+::\+Timer@{Zeta\+::\+Timer}}
+\subsubsection[{running}]{\setlength{\rightskip}{0pt plus 5cm}bool Zeta\+::\+Timer\+::running\hspace{0.3cm}{\ttfamily [private]}}}\label{classZeta_1_1Timer_a9d32f638022dbcfc33d30ca40aa8ede1}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Zeta/\+Core/\+R\+P\+G\+Classes/\hyperlink{Timer_8hpp}{Timer.\+hpp}\end{DoxyCompactItemize}

@@ -1,0 +1,174 @@
+.TH "Zeta::AnimationPlayer" 3 "Wed Feb 10 2016" "Zeta" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Zeta::AnimationPlayer \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <AnimationPlayer\&.hpp>\fP
+.PP
+Inherits \fBZeta::Drawable\fP, and \fBZeta::Updateable\fP\&.
+.PP
+Inherited by \fBZeta::OffAnimation\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "bool \fBisPlaying\fP () const "
+.br
+.ti -1c
+.RI "bool \fBisVisible\fP () const "
+.br
+.ti -1c
+.RI "void \fBsetVisible\fP (bool \fBvisible\fP)"
+.br
+.ti -1c
+.RI "const \fBAnimation\fP & \fBgetAnimation\fP () const "
+.br
+.ti -1c
+.RI "void \fBhide\fP ()"
+.br
+.ti -1c
+.RI "void \fBshow\fP ()"
+.br
+.ti -1c
+.RI "void \fBplay\fP ()"
+.br
+.ti -1c
+.RI "void \fBstop\fP ()"
+.br
+.ti -1c
+.RI "void \fBpause\fP ()"
+.br
+.ti -1c
+.RI "void \fBreset\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetAnimation\fP (const \fBAnimation\fP &\fBanimation\fP)"
+.br
+.ti -1c
+.RI "virtual void \fBdraw\fP (\fBFloat\fP x, \fBFloat\fP y, \fBFloat\fP rotation=0\&.0f, Float scale=1\&.0f) const "
+.br
+.ti -1c
+.RI "void \fBupdate\fP (\fBFloat\fP elapsedTime)"
+.br
+.ti -1c
+.RI "\fBAnimationPlayer\fP ()"
+.br
+.ti -1c
+.RI "\fBAnimationPlayer\fP (const \fBAnimation\fP &\fBanimation\fP)"
+.br
+.ti -1c
+.RI "\fBAnimationPlayer\fP (\fBAnimationPlayer\fP &&)=default"
+.br
+.ti -1c
+.RI "\fBAnimationPlayer\fP (const \fBAnimationPlayer\fP &)=default"
+.br
+.ti -1c
+.RI "\fBAnimationPlayer\fP & \fBoperator=\fP (\fBAnimationPlayer\fP &&)=default"
+.br
+.ti -1c
+.RI "\fBAnimationPlayer\fP & \fBoperator=\fP (const \fBAnimationPlayer\fP &)=default"
+.br
+.ti -1c
+.RI "virtual \fB~AnimationPlayer\fP ()"
+.br
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "const \fBAnimation\fP * \fBanimation\fP"
+.br
+.ti -1c
+.RI "int \fBframeIndex\fP"
+.br
+.ti -1c
+.RI "\fBFloat\fP \fBframeCounter\fP"
+.br
+.ti -1c
+.RI "bool \fBplaying\fP"
+.br
+.ti -1c
+.RI "bool \fBvisible\fP"
+.br
+.in -1c
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Zeta::AnimationPlayer::AnimationPlayer ()"
+
+.SS "Zeta::AnimationPlayer::AnimationPlayer (const \fBAnimation\fP &animation)"
+
+.SS "Zeta::AnimationPlayer::AnimationPlayer (\fBAnimationPlayer\fP &&)\fC [default]\fP"
+
+.SS "Zeta::AnimationPlayer::AnimationPlayer (const \fBAnimationPlayer\fP &)\fC [default]\fP"
+
+.SS "virtual Zeta::AnimationPlayer::~AnimationPlayer ()\fC [virtual]\fP"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "virtual void Zeta::AnimationPlayer::draw (\fBFloat\fPx, \fBFloat\fPy, \fBFloat\fProtation = \fC0\&.0f\fP, \fBFloat\fPscale = \fC1\&.0f\fP) const\fC [virtual]\fP"
+Draws the \fBObject\fP on screen\&. Be advised, the x,y, offsets might have different meaning on different implementations\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIx\fP X offset to be applied on the drawing 
+.br
+\fIy\fP Y offset to be applied on the drawing 
+.br
+\fIrotation\fP the rotation to be applied on the drawing 
+.RE
+.PP
+
+.PP
+Implements \fBZeta::Drawable\fP\&.
+.PP
+Reimplemented in \fBZeta::OffAnimation\fP\&.
+.SS "const \fBAnimation\fP& Zeta::AnimationPlayer::getAnimation () const\fC [inline]\fP"
+
+.SS "void Zeta::AnimationPlayer::hide ()\fC [inline]\fP"
+
+.SS "bool Zeta::AnimationPlayer::isPlaying () const\fC [inline]\fP"
+
+.SS "bool Zeta::AnimationPlayer::isVisible () const\fC [inline]\fP"
+
+.SS "\fBAnimationPlayer\fP& Zeta::AnimationPlayer::operator= (\fBAnimationPlayer\fP &&)\fC [default]\fP"
+
+.SS "\fBAnimationPlayer\fP& Zeta::AnimationPlayer::operator= (const \fBAnimationPlayer\fP &)\fC [default]\fP"
+
+.SS "void Zeta::AnimationPlayer::pause ()"
+
+.SS "void Zeta::AnimationPlayer::play ()"
+
+.SS "void Zeta::AnimationPlayer::reset ()"
+
+.SS "void Zeta::AnimationPlayer::setAnimation (const \fBAnimation\fP &animation)"
+
+.SS "void Zeta::AnimationPlayer::setVisible (boolvisible)\fC [inline]\fP"
+
+.SS "void Zeta::AnimationPlayer::show ()\fC [inline]\fP"
+
+.SS "void Zeta::AnimationPlayer::stop ()"
+
+.SS "void Zeta::AnimationPlayer::update (\fBFloat\fPelapsedTime)\fC [virtual]\fP"
+
+.PP
+Implements \fBZeta::Updateable\fP\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "const \fBAnimation\fP* Zeta::AnimationPlayer::animation\fC [private]\fP"
+
+.SS "\fBFloat\fP Zeta::AnimationPlayer::frameCounter\fC [private]\fP"
+
+.SS "int Zeta::AnimationPlayer::frameIndex\fC [private]\fP"
+
+.SS "bool Zeta::AnimationPlayer::playing\fC [private]\fP"
+
+.SS "bool Zeta::AnimationPlayer::visible\fC [private]\fP"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Zeta from the source code\&.

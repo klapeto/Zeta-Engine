@@ -1,0 +1,73 @@
+.TH "Zeta::SynchronousResourceContext< BitmapT, SoundT >::BitmapLoadRequest" 3 "Wed Feb 10 2016" "Zeta" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Zeta::SynchronousResourceContext< BitmapT, SoundT >::BitmapLoadRequest \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBZeta::ContextOperation< RenderingContext >\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "const std::string & \fBgetPath\fP () const "
+.br
+.ti -1c
+.RI "const \fBBitmap\fP & \fBgetBitmap\fP () const "
+.br
+.ti -1c
+.RI "void \fBhandle\fP (\fBRenderingContext\fP &context)"
+.br
+.ti -1c
+.RI "\fBBitmapLoadRequest\fP (const std::string &\fBpath\fP)"
+.br
+.ti -1c
+.RI "\fB~BitmapLoadRequest\fP ()"
+.br
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "std::string \fBpath\fP"
+.br
+.ti -1c
+.RI "const \fBBitmap\fP * \fBbitmap\fP"
+.br
+.in -1c
+.SS "Additional Inherited Members"
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "template<typename BitmapT , typename SoundT > \fBZeta::SynchronousResourceContext\fP< BitmapT, SoundT >::BitmapLoadRequest::BitmapLoadRequest (const std::string &path)\fC [inline]\fP"
+
+.SS "template<typename BitmapT , typename SoundT > \fBZeta::SynchronousResourceContext\fP< BitmapT, SoundT >::BitmapLoadRequest::~BitmapLoadRequest ()\fC [inline]\fP"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "template<typename BitmapT , typename SoundT > const \fBBitmap\fP& \fBZeta::SynchronousResourceContext\fP< BitmapT, SoundT >::BitmapLoadRequest::getBitmap () const\fC [inline]\fP"
+
+.SS "template<typename BitmapT , typename SoundT > const std::string& \fBZeta::SynchronousResourceContext\fP< BitmapT, SoundT >::BitmapLoadRequest::getPath () const\fC [inline]\fP"
+
+.SS "template<typename BitmapT , typename SoundT > void \fBZeta::SynchronousResourceContext\fP< BitmapT, SoundT >::BitmapLoadRequest::handle (\fBRenderingContext\fP &context)\fC [inline]\fP, \fC [virtual]\fP"
+Pure virtual member Function to be called by the ContextType 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIcontext\fP the \fBContext\fP that called it 
+.RE
+.PP
+
+.PP
+Implements \fBZeta::ContextOperation< RenderingContext >\fP\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "template<typename BitmapT , typename SoundT > const \fBBitmap\fP* \fBZeta::SynchronousResourceContext\fP< BitmapT, SoundT >::BitmapLoadRequest::bitmap\fC [private]\fP"
+
+.SS "template<typename BitmapT , typename SoundT > std::string \fBZeta::SynchronousResourceContext\fP< BitmapT, SoundT >::BitmapLoadRequest::path\fC [private]\fP"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Zeta from the source code\&.

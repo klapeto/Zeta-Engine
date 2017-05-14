@@ -1,0 +1,285 @@
+\hypertarget{classZeta_1_1GeneralLoop}{\section{Zeta\+:\+:General\+Loop Class Reference}
+\label{classZeta_1_1GeneralLoop}\index{Zeta\+::\+General\+Loop@{Zeta\+::\+General\+Loop}}
+}
+
+
+{\ttfamily \#include $<$General\+Loop.\+hpp$>$}
+
+
+
+Inheritance diagram for Zeta\+:\+:General\+Loop\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=176pt]{classZeta_1_1GeneralLoop__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Zeta\+:\+:General\+Loop\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=223pt]{classZeta_1_1GeneralLoop__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::list$<$ \hyperlink{classZeta_1_1Updateable}{Updateable} $\ast$ $>$\\*
+\+::iterator \hyperlink{classZeta_1_1GeneralLoop_ae1284d366ca644323f019a9e3fcb1b0e}{Update\+Index}
+\item 
+typedef std\+::list$<$ \hyperlink{classZeta_1_1Drawable}{Drawable} $\ast$ $>$\\*
+\+::iterator \hyperlink{classZeta_1_1GeneralLoop_a2da478213f010a795485306725782cf4}{Draw\+Index}
+\item 
+typedef std\+::list\\*
+$<$ \hyperlink{classZeta_1_1SystemEventListener}{System\+Event\+Listener} $\ast$ $>$\\*
+\+::iterator \hyperlink{classZeta_1_1GeneralLoop_a1e3fa8c44577a032a92aca0828310d30}{Listener\+Index}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classZeta_1_1GeneralLoop_ae1284d366ca644323f019a9e3fcb1b0e}{Update\+Index} \hyperlink{classZeta_1_1GeneralLoop_a35b72f6ff8e3db3f0fa5c6d5f214551c}{add\+Item\+To\+Be\+Updated} (\hyperlink{classZeta_1_1Updateable}{Updateable} $\ast$item)
+\item 
+\hyperlink{classZeta_1_1GeneralLoop_ae1284d366ca644323f019a9e3fcb1b0e}{Update\+Index} \hyperlink{classZeta_1_1GeneralLoop_a744036b6c533ce6b9d97d73f2c2a9bd2}{insert\+Item\+To\+Be\+Updated} (const \hyperlink{classZeta_1_1GeneralLoop_ae1284d366ca644323f019a9e3fcb1b0e}{Update\+Index} \&itr, \hyperlink{classZeta_1_1Updateable}{Updateable} $\ast$item)
+\item 
+void \hyperlink{classZeta_1_1GeneralLoop_a35bd3ccd1ade50dc0b038f7590c43660}{remove\+Item\+To\+Be\+Updated} (const \hyperlink{classZeta_1_1GeneralLoop_ae1284d366ca644323f019a9e3fcb1b0e}{Update\+Index} \&itr)
+\item 
+\hyperlink{classZeta_1_1GeneralLoop_a2da478213f010a795485306725782cf4}{Draw\+Index} \hyperlink{classZeta_1_1GeneralLoop_a4da63a2f94d6b70bd7592a95adbd2b28}{add\+Item\+To\+Be\+Drawn} (\hyperlink{classZeta_1_1Drawable}{Drawable} $\ast$item)
+\item 
+\hyperlink{classZeta_1_1GeneralLoop_a2da478213f010a795485306725782cf4}{Draw\+Index} \hyperlink{classZeta_1_1GeneralLoop_a7a797e55987c1eada965ba3633056e2d}{insert\+Item\+To\+Be\+Drawn} (const \hyperlink{classZeta_1_1GeneralLoop_a2da478213f010a795485306725782cf4}{Draw\+Index} \&itr, \hyperlink{classZeta_1_1Drawable}{Drawable} $\ast$item)
+\item 
+void \hyperlink{classZeta_1_1GeneralLoop_aeb55df0ba9b5ac76db741d68a0b6601d}{remove\+Item\+To\+Be\+Drawn} (const \hyperlink{classZeta_1_1GeneralLoop_a2da478213f010a795485306725782cf4}{Draw\+Index} \&itr)
+\item 
+\hyperlink{classZeta_1_1GeneralLoop_a1e3fa8c44577a032a92aca0828310d30}{Listener\+Index} \hyperlink{classZeta_1_1GeneralLoop_a6855283a3c95e37a77c4454a7b152856}{add\+System\+Listener} (\hyperlink{classZeta_1_1SystemEventListener}{System\+Event\+Listener} $\ast$item)
+\item 
+\hyperlink{classZeta_1_1GeneralLoop_a1e3fa8c44577a032a92aca0828310d30}{Listener\+Index} \hyperlink{classZeta_1_1GeneralLoop_a58807d603313d970072bef8bac9f6154}{insert\+System\+Listener} (const \hyperlink{classZeta_1_1GeneralLoop_a1e3fa8c44577a032a92aca0828310d30}{Listener\+Index} \&itr, \hyperlink{classZeta_1_1SystemEventListener}{System\+Event\+Listener} $\ast$item)
+\item 
+void \hyperlink{classZeta_1_1GeneralLoop_a1cbaa4500e8ee1c2d8de6633b96b9221}{remove\+System\+Listener} (const \hyperlink{classZeta_1_1GeneralLoop_a1e3fa8c44577a032a92aca0828310d30}{Listener\+Index} \&itr)
+\item 
+void \hyperlink{classZeta_1_1GeneralLoop_a748f6265153c6a08e3413bdd2f58ee89}{start} ()
+\item 
+void \hyperlink{classZeta_1_1GeneralLoop_ae31c6fb01360a94070c65c3cec4345ba}{stop} ()
+\item 
+bool \hyperlink{classZeta_1_1GeneralLoop_a53cbe7a1e4a10f2ef0cc23b62cb34ff8}{is\+Loop\+Running} () const 
+\item 
+float \hyperlink{classZeta_1_1GeneralLoop_abc9e31895b7942a7da5d3381356660a3}{get\+Current\+F\+P\+S} () const 
+\item 
+void \hyperlink{classZeta_1_1GeneralLoop_a53c6783932abb77d44760c218d2662c8}{update} ()
+\item 
+void \hyperlink{classZeta_1_1GeneralLoop_a8eacfbb51e318b435eb7f181d029c175}{draw} ()
+\item 
+void \hyperlink{classZeta_1_1GeneralLoop_a06b8656bbb27d183f74ba0bea8b6b7c9}{handle\+Event} (\hyperlink{classZeta_1_1Event}{Event} \&event)
+\item 
+\hyperlink{classZeta_1_1GeneralLoop_a4a1e4bd5d7176c6ddef32268c7d1aee6}{General\+Loop} ()
+\item 
+virtual \hyperlink{classZeta_1_1GeneralLoop_a7e2c9f744ce2419b8ecc3183372ab714}{$\sim$\+General\+Loop} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::chrono\+::duration\\*
+$<$ float, \\*
+std\+::chrono\+::seconds\+::period $>$ \hyperlink{classZeta_1_1GeneralLoop_a08762f0ffcb03c63096b0da1f5cdf24d}{fp\+Time}
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::list$<$ \hyperlink{classZeta_1_1Updateable}{Updateable} $\ast$ $>$ \hyperlink{classZeta_1_1GeneralLoop_af765b95f83aad985b7d056d154335db9}{updateable\+Items}
+\item 
+std\+::list$<$ \hyperlink{classZeta_1_1Drawable}{Drawable} $\ast$ $>$ \hyperlink{classZeta_1_1GeneralLoop_a20d3c4bcc87b4885636e29efd45b196e}{drawable\+Items}
+\item 
+std\+::list$<$ \hyperlink{classZeta_1_1SystemEventListener}{System\+Event\+Listener} $\ast$ $>$ \hyperlink{classZeta_1_1GeneralLoop_a30eda9d355645737c2c4bd8e30f9eb43}{event\+Listeners}
+\item 
+std\+::chrono\+::high\+\_\+resolution\+\_\+clock\+::time\+\_\+point \hyperlink{classZeta_1_1GeneralLoop_a885569a048470ed6451c1d7e95e56df5}{ltime}
+\item 
+\hyperlink{classZeta_1_1RenderingContext}{Rendering\+Context} $\ast$ \hyperlink{classZeta_1_1GeneralLoop_ac9c60e031a0455d332294c2f38098ad0}{rendering\+Context}
+\item 
+float \hyperlink{classZeta_1_1GeneralLoop_a3f81a307d14ee0944a74c4e1fc9737a4}{elapsed}
+\item 
+float \hyperlink{classZeta_1_1GeneralLoop_a4d4c7e4a92bc9ec7d3cc0a75a0dd7371}{cur\+Fps}
+\item 
+bool \hyperlink{classZeta_1_1GeneralLoop_acf550e56f0fddfcd5f9a5cb35ba036e3}{running}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Typedef Documentation}
+\hypertarget{classZeta_1_1GeneralLoop_a2da478213f010a795485306725782cf4}{\index{Zeta\+::\+General\+Loop@{Zeta\+::\+General\+Loop}!Draw\+Index@{Draw\+Index}}
+\index{Draw\+Index@{Draw\+Index}!Zeta\+::\+General\+Loop@{Zeta\+::\+General\+Loop}}
+\subsubsection[{Draw\+Index}]{\setlength{\rightskip}{0pt plus 5cm}typedef std\+::list$<${\bf Drawable}$\ast$$>$\+::iterator {\bf Zeta\+::\+General\+Loop\+::\+Draw\+Index}}}\label{classZeta_1_1GeneralLoop_a2da478213f010a795485306725782cf4}
+\hypertarget{classZeta_1_1GeneralLoop_a08762f0ffcb03c63096b0da1f5cdf24d}{\index{Zeta\+::\+General\+Loop@{Zeta\+::\+General\+Loop}!fp\+Time@{fp\+Time}}
+\index{fp\+Time@{fp\+Time}!Zeta\+::\+General\+Loop@{Zeta\+::\+General\+Loop}}
+\subsubsection[{fp\+Time}]{\setlength{\rightskip}{0pt plus 5cm}typedef std\+::chrono\+::duration$<$float, std\+::chrono\+::seconds\+::period$>$ {\bf Zeta\+::\+General\+Loop\+::fp\+Time}\hspace{0.3cm}{\ttfamily [private]}}}\label{classZeta_1_1GeneralLoop_a08762f0ffcb03c63096b0da1f5cdf24d}
+\hypertarget{classZeta_1_1GeneralLoop_a1e3fa8c44577a032a92aca0828310d30}{\index{Zeta\+::\+General\+Loop@{Zeta\+::\+General\+Loop}!Listener\+Index@{Listener\+Index}}
+\index{Listener\+Index@{Listener\+Index}!Zeta\+::\+General\+Loop@{Zeta\+::\+General\+Loop}}
+\subsubsection[{Listener\+Index}]{\setlength{\rightskip}{0pt plus 5cm}typedef std\+::list$<${\bf System\+Event\+Listener}$\ast$$>$\+::iterator {\bf Zeta\+::\+General\+Loop\+::\+Listener\+Index}}}\label{classZeta_1_1GeneralLoop_a1e3fa8c44577a032a92aca0828310d30}
+\hypertarget{classZeta_1_1GeneralLoop_ae1284d366ca644323f019a9e3fcb1b0e}{\index{Zeta\+::\+General\+Loop@{Zeta\+::\+General\+Loop}!Update\+Index@{Update\+Index}}
+\index{Update\+Index@{Update\+Index}!Zeta\+::\+General\+Loop@{Zeta\+::\+General\+Loop}}
+\subsubsection[{Update\+Index}]{\setlength{\rightskip}{0pt plus 5cm}typedef std\+::list$<${\bf Updateable}$\ast$$>$\+::iterator {\bf Zeta\+::\+General\+Loop\+::\+Update\+Index}}}\label{classZeta_1_1GeneralLoop_ae1284d366ca644323f019a9e3fcb1b0e}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classZeta_1_1GeneralLoop_a4a1e4bd5d7176c6ddef32268c7d1aee6}{\index{Zeta\+::\+General\+Loop@{Zeta\+::\+General\+Loop}!General\+Loop@{General\+Loop}}
+\index{General\+Loop@{General\+Loop}!Zeta\+::\+General\+Loop@{Zeta\+::\+General\+Loop}}
+\subsubsection[{General\+Loop}]{\setlength{\rightskip}{0pt plus 5cm}Zeta\+::\+General\+Loop\+::\+General\+Loop (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classZeta_1_1GeneralLoop_a4a1e4bd5d7176c6ddef32268c7d1aee6}
+\hypertarget{classZeta_1_1GeneralLoop_a7e2c9f744ce2419b8ecc3183372ab714}{\index{Zeta\+::\+General\+Loop@{Zeta\+::\+General\+Loop}!````~General\+Loop@{$\sim$\+General\+Loop}}
+\index{````~General\+Loop@{$\sim$\+General\+Loop}!Zeta\+::\+General\+Loop@{Zeta\+::\+General\+Loop}}
+\subsubsection[{$\sim$\+General\+Loop}]{\setlength{\rightskip}{0pt plus 5cm}virtual Zeta\+::\+General\+Loop\+::$\sim$\+General\+Loop (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classZeta_1_1GeneralLoop_a7e2c9f744ce2419b8ecc3183372ab714}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classZeta_1_1GeneralLoop_a4da63a2f94d6b70bd7592a95adbd2b28}{\index{Zeta\+::\+General\+Loop@{Zeta\+::\+General\+Loop}!add\+Item\+To\+Be\+Drawn@{add\+Item\+To\+Be\+Drawn}}
+\index{add\+Item\+To\+Be\+Drawn@{add\+Item\+To\+Be\+Drawn}!Zeta\+::\+General\+Loop@{Zeta\+::\+General\+Loop}}
+\subsubsection[{add\+Item\+To\+Be\+Drawn}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Draw\+Index} Zeta\+::\+General\+Loop\+::add\+Item\+To\+Be\+Drawn (
+\begin{DoxyParamCaption}
+\item[{{\bf Drawable} $\ast$}]{item}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1GeneralLoop_a4da63a2f94d6b70bd7592a95adbd2b28}
+\hypertarget{classZeta_1_1GeneralLoop_a35b72f6ff8e3db3f0fa5c6d5f214551c}{\index{Zeta\+::\+General\+Loop@{Zeta\+::\+General\+Loop}!add\+Item\+To\+Be\+Updated@{add\+Item\+To\+Be\+Updated}}
+\index{add\+Item\+To\+Be\+Updated@{add\+Item\+To\+Be\+Updated}!Zeta\+::\+General\+Loop@{Zeta\+::\+General\+Loop}}
+\subsubsection[{add\+Item\+To\+Be\+Updated}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Update\+Index} Zeta\+::\+General\+Loop\+::add\+Item\+To\+Be\+Updated (
+\begin{DoxyParamCaption}
+\item[{{\bf Updateable} $\ast$}]{item}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1GeneralLoop_a35b72f6ff8e3db3f0fa5c6d5f214551c}
+\hypertarget{classZeta_1_1GeneralLoop_a6855283a3c95e37a77c4454a7b152856}{\index{Zeta\+::\+General\+Loop@{Zeta\+::\+General\+Loop}!add\+System\+Listener@{add\+System\+Listener}}
+\index{add\+System\+Listener@{add\+System\+Listener}!Zeta\+::\+General\+Loop@{Zeta\+::\+General\+Loop}}
+\subsubsection[{add\+System\+Listener}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Listener\+Index} Zeta\+::\+General\+Loop\+::add\+System\+Listener (
+\begin{DoxyParamCaption}
+\item[{{\bf System\+Event\+Listener} $\ast$}]{item}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1GeneralLoop_a6855283a3c95e37a77c4454a7b152856}
+\hypertarget{classZeta_1_1GeneralLoop_a8eacfbb51e318b435eb7f181d029c175}{\index{Zeta\+::\+General\+Loop@{Zeta\+::\+General\+Loop}!draw@{draw}}
+\index{draw@{draw}!Zeta\+::\+General\+Loop@{Zeta\+::\+General\+Loop}}
+\subsubsection[{draw}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+General\+Loop\+::draw (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classZeta_1_1GeneralLoop_a8eacfbb51e318b435eb7f181d029c175}
+\hypertarget{classZeta_1_1GeneralLoop_abc9e31895b7942a7da5d3381356660a3}{\index{Zeta\+::\+General\+Loop@{Zeta\+::\+General\+Loop}!get\+Current\+F\+P\+S@{get\+Current\+F\+P\+S}}
+\index{get\+Current\+F\+P\+S@{get\+Current\+F\+P\+S}!Zeta\+::\+General\+Loop@{Zeta\+::\+General\+Loop}}
+\subsubsection[{get\+Current\+F\+P\+S}]{\setlength{\rightskip}{0pt plus 5cm}float Zeta\+::\+General\+Loop\+::get\+Current\+F\+P\+S (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1GeneralLoop_abc9e31895b7942a7da5d3381356660a3}
+\hypertarget{classZeta_1_1GeneralLoop_a06b8656bbb27d183f74ba0bea8b6b7c9}{\index{Zeta\+::\+General\+Loop@{Zeta\+::\+General\+Loop}!handle\+Event@{handle\+Event}}
+\index{handle\+Event@{handle\+Event}!Zeta\+::\+General\+Loop@{Zeta\+::\+General\+Loop}}
+\subsubsection[{handle\+Event}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+General\+Loop\+::handle\+Event (
+\begin{DoxyParamCaption}
+\item[{{\bf Event} \&}]{event}
+\end{DoxyParamCaption}
+)}}\label{classZeta_1_1GeneralLoop_a06b8656bbb27d183f74ba0bea8b6b7c9}
+\hypertarget{classZeta_1_1GeneralLoop_a7a797e55987c1eada965ba3633056e2d}{\index{Zeta\+::\+General\+Loop@{Zeta\+::\+General\+Loop}!insert\+Item\+To\+Be\+Drawn@{insert\+Item\+To\+Be\+Drawn}}
+\index{insert\+Item\+To\+Be\+Drawn@{insert\+Item\+To\+Be\+Drawn}!Zeta\+::\+General\+Loop@{Zeta\+::\+General\+Loop}}
+\subsubsection[{insert\+Item\+To\+Be\+Drawn}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Draw\+Index} Zeta\+::\+General\+Loop\+::insert\+Item\+To\+Be\+Drawn (
+\begin{DoxyParamCaption}
+\item[{const {\bf Draw\+Index} \&}]{itr, }
+\item[{{\bf Drawable} $\ast$}]{item}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1GeneralLoop_a7a797e55987c1eada965ba3633056e2d}
+\hypertarget{classZeta_1_1GeneralLoop_a744036b6c533ce6b9d97d73f2c2a9bd2}{\index{Zeta\+::\+General\+Loop@{Zeta\+::\+General\+Loop}!insert\+Item\+To\+Be\+Updated@{insert\+Item\+To\+Be\+Updated}}
+\index{insert\+Item\+To\+Be\+Updated@{insert\+Item\+To\+Be\+Updated}!Zeta\+::\+General\+Loop@{Zeta\+::\+General\+Loop}}
+\subsubsection[{insert\+Item\+To\+Be\+Updated}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Update\+Index} Zeta\+::\+General\+Loop\+::insert\+Item\+To\+Be\+Updated (
+\begin{DoxyParamCaption}
+\item[{const {\bf Update\+Index} \&}]{itr, }
+\item[{{\bf Updateable} $\ast$}]{item}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1GeneralLoop_a744036b6c533ce6b9d97d73f2c2a9bd2}
+\hypertarget{classZeta_1_1GeneralLoop_a58807d603313d970072bef8bac9f6154}{\index{Zeta\+::\+General\+Loop@{Zeta\+::\+General\+Loop}!insert\+System\+Listener@{insert\+System\+Listener}}
+\index{insert\+System\+Listener@{insert\+System\+Listener}!Zeta\+::\+General\+Loop@{Zeta\+::\+General\+Loop}}
+\subsubsection[{insert\+System\+Listener}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Listener\+Index} Zeta\+::\+General\+Loop\+::insert\+System\+Listener (
+\begin{DoxyParamCaption}
+\item[{const {\bf Listener\+Index} \&}]{itr, }
+\item[{{\bf System\+Event\+Listener} $\ast$}]{item}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1GeneralLoop_a58807d603313d970072bef8bac9f6154}
+\hypertarget{classZeta_1_1GeneralLoop_a53cbe7a1e4a10f2ef0cc23b62cb34ff8}{\index{Zeta\+::\+General\+Loop@{Zeta\+::\+General\+Loop}!is\+Loop\+Running@{is\+Loop\+Running}}
+\index{is\+Loop\+Running@{is\+Loop\+Running}!Zeta\+::\+General\+Loop@{Zeta\+::\+General\+Loop}}
+\subsubsection[{is\+Loop\+Running}]{\setlength{\rightskip}{0pt plus 5cm}bool Zeta\+::\+General\+Loop\+::is\+Loop\+Running (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1GeneralLoop_a53cbe7a1e4a10f2ef0cc23b62cb34ff8}
+\hypertarget{classZeta_1_1GeneralLoop_aeb55df0ba9b5ac76db741d68a0b6601d}{\index{Zeta\+::\+General\+Loop@{Zeta\+::\+General\+Loop}!remove\+Item\+To\+Be\+Drawn@{remove\+Item\+To\+Be\+Drawn}}
+\index{remove\+Item\+To\+Be\+Drawn@{remove\+Item\+To\+Be\+Drawn}!Zeta\+::\+General\+Loop@{Zeta\+::\+General\+Loop}}
+\subsubsection[{remove\+Item\+To\+Be\+Drawn}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+General\+Loop\+::remove\+Item\+To\+Be\+Drawn (
+\begin{DoxyParamCaption}
+\item[{const {\bf Draw\+Index} \&}]{itr}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1GeneralLoop_aeb55df0ba9b5ac76db741d68a0b6601d}
+\hypertarget{classZeta_1_1GeneralLoop_a35bd3ccd1ade50dc0b038f7590c43660}{\index{Zeta\+::\+General\+Loop@{Zeta\+::\+General\+Loop}!remove\+Item\+To\+Be\+Updated@{remove\+Item\+To\+Be\+Updated}}
+\index{remove\+Item\+To\+Be\+Updated@{remove\+Item\+To\+Be\+Updated}!Zeta\+::\+General\+Loop@{Zeta\+::\+General\+Loop}}
+\subsubsection[{remove\+Item\+To\+Be\+Updated}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+General\+Loop\+::remove\+Item\+To\+Be\+Updated (
+\begin{DoxyParamCaption}
+\item[{const {\bf Update\+Index} \&}]{itr}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1GeneralLoop_a35bd3ccd1ade50dc0b038f7590c43660}
+\hypertarget{classZeta_1_1GeneralLoop_a1cbaa4500e8ee1c2d8de6633b96b9221}{\index{Zeta\+::\+General\+Loop@{Zeta\+::\+General\+Loop}!remove\+System\+Listener@{remove\+System\+Listener}}
+\index{remove\+System\+Listener@{remove\+System\+Listener}!Zeta\+::\+General\+Loop@{Zeta\+::\+General\+Loop}}
+\subsubsection[{remove\+System\+Listener}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+General\+Loop\+::remove\+System\+Listener (
+\begin{DoxyParamCaption}
+\item[{const {\bf Listener\+Index} \&}]{itr}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1GeneralLoop_a1cbaa4500e8ee1c2d8de6633b96b9221}
+\hypertarget{classZeta_1_1GeneralLoop_a748f6265153c6a08e3413bdd2f58ee89}{\index{Zeta\+::\+General\+Loop@{Zeta\+::\+General\+Loop}!start@{start}}
+\index{start@{start}!Zeta\+::\+General\+Loop@{Zeta\+::\+General\+Loop}}
+\subsubsection[{start}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+General\+Loop\+::start (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1GeneralLoop_a748f6265153c6a08e3413bdd2f58ee89}
+\hypertarget{classZeta_1_1GeneralLoop_ae31c6fb01360a94070c65c3cec4345ba}{\index{Zeta\+::\+General\+Loop@{Zeta\+::\+General\+Loop}!stop@{stop}}
+\index{stop@{stop}!Zeta\+::\+General\+Loop@{Zeta\+::\+General\+Loop}}
+\subsubsection[{stop}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+General\+Loop\+::stop (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1GeneralLoop_ae31c6fb01360a94070c65c3cec4345ba}
+\hypertarget{classZeta_1_1GeneralLoop_a53c6783932abb77d44760c218d2662c8}{\index{Zeta\+::\+General\+Loop@{Zeta\+::\+General\+Loop}!update@{update}}
+\index{update@{update}!Zeta\+::\+General\+Loop@{Zeta\+::\+General\+Loop}}
+\subsubsection[{update}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+General\+Loop\+::update (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classZeta_1_1GeneralLoop_a53c6783932abb77d44760c218d2662c8}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classZeta_1_1GeneralLoop_a4d4c7e4a92bc9ec7d3cc0a75a0dd7371}{\index{Zeta\+::\+General\+Loop@{Zeta\+::\+General\+Loop}!cur\+Fps@{cur\+Fps}}
+\index{cur\+Fps@{cur\+Fps}!Zeta\+::\+General\+Loop@{Zeta\+::\+General\+Loop}}
+\subsubsection[{cur\+Fps}]{\setlength{\rightskip}{0pt plus 5cm}float Zeta\+::\+General\+Loop\+::cur\+Fps\hspace{0.3cm}{\ttfamily [private]}}}\label{classZeta_1_1GeneralLoop_a4d4c7e4a92bc9ec7d3cc0a75a0dd7371}
+\hypertarget{classZeta_1_1GeneralLoop_a20d3c4bcc87b4885636e29efd45b196e}{\index{Zeta\+::\+General\+Loop@{Zeta\+::\+General\+Loop}!drawable\+Items@{drawable\+Items}}
+\index{drawable\+Items@{drawable\+Items}!Zeta\+::\+General\+Loop@{Zeta\+::\+General\+Loop}}
+\subsubsection[{drawable\+Items}]{\setlength{\rightskip}{0pt plus 5cm}std\+::list$<${\bf Drawable}$\ast$$>$ Zeta\+::\+General\+Loop\+::drawable\+Items\hspace{0.3cm}{\ttfamily [private]}}}\label{classZeta_1_1GeneralLoop_a20d3c4bcc87b4885636e29efd45b196e}
+\hypertarget{classZeta_1_1GeneralLoop_a3f81a307d14ee0944a74c4e1fc9737a4}{\index{Zeta\+::\+General\+Loop@{Zeta\+::\+General\+Loop}!elapsed@{elapsed}}
+\index{elapsed@{elapsed}!Zeta\+::\+General\+Loop@{Zeta\+::\+General\+Loop}}
+\subsubsection[{elapsed}]{\setlength{\rightskip}{0pt plus 5cm}float Zeta\+::\+General\+Loop\+::elapsed\hspace{0.3cm}{\ttfamily [private]}}}\label{classZeta_1_1GeneralLoop_a3f81a307d14ee0944a74c4e1fc9737a4}
+\hypertarget{classZeta_1_1GeneralLoop_a30eda9d355645737c2c4bd8e30f9eb43}{\index{Zeta\+::\+General\+Loop@{Zeta\+::\+General\+Loop}!event\+Listeners@{event\+Listeners}}
+\index{event\+Listeners@{event\+Listeners}!Zeta\+::\+General\+Loop@{Zeta\+::\+General\+Loop}}
+\subsubsection[{event\+Listeners}]{\setlength{\rightskip}{0pt plus 5cm}std\+::list$<${\bf System\+Event\+Listener}$\ast$$>$ Zeta\+::\+General\+Loop\+::event\+Listeners\hspace{0.3cm}{\ttfamily [private]}}}\label{classZeta_1_1GeneralLoop_a30eda9d355645737c2c4bd8e30f9eb43}
+\hypertarget{classZeta_1_1GeneralLoop_a885569a048470ed6451c1d7e95e56df5}{\index{Zeta\+::\+General\+Loop@{Zeta\+::\+General\+Loop}!ltime@{ltime}}
+\index{ltime@{ltime}!Zeta\+::\+General\+Loop@{Zeta\+::\+General\+Loop}}
+\subsubsection[{ltime}]{\setlength{\rightskip}{0pt plus 5cm}std\+::chrono\+::high\+\_\+resolution\+\_\+clock\+::time\+\_\+point Zeta\+::\+General\+Loop\+::ltime\hspace{0.3cm}{\ttfamily [private]}}}\label{classZeta_1_1GeneralLoop_a885569a048470ed6451c1d7e95e56df5}
+\hypertarget{classZeta_1_1GeneralLoop_ac9c60e031a0455d332294c2f38098ad0}{\index{Zeta\+::\+General\+Loop@{Zeta\+::\+General\+Loop}!rendering\+Context@{rendering\+Context}}
+\index{rendering\+Context@{rendering\+Context}!Zeta\+::\+General\+Loop@{Zeta\+::\+General\+Loop}}
+\subsubsection[{rendering\+Context}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Rendering\+Context}$\ast$ Zeta\+::\+General\+Loop\+::rendering\+Context\hspace{0.3cm}{\ttfamily [private]}}}\label{classZeta_1_1GeneralLoop_ac9c60e031a0455d332294c2f38098ad0}
+\hypertarget{classZeta_1_1GeneralLoop_acf550e56f0fddfcd5f9a5cb35ba036e3}{\index{Zeta\+::\+General\+Loop@{Zeta\+::\+General\+Loop}!running@{running}}
+\index{running@{running}!Zeta\+::\+General\+Loop@{Zeta\+::\+General\+Loop}}
+\subsubsection[{running}]{\setlength{\rightskip}{0pt plus 5cm}bool Zeta\+::\+General\+Loop\+::running\hspace{0.3cm}{\ttfamily [private]}}}\label{classZeta_1_1GeneralLoop_acf550e56f0fddfcd5f9a5cb35ba036e3}
+\hypertarget{classZeta_1_1GeneralLoop_af765b95f83aad985b7d056d154335db9}{\index{Zeta\+::\+General\+Loop@{Zeta\+::\+General\+Loop}!updateable\+Items@{updateable\+Items}}
+\index{updateable\+Items@{updateable\+Items}!Zeta\+::\+General\+Loop@{Zeta\+::\+General\+Loop}}
+\subsubsection[{updateable\+Items}]{\setlength{\rightskip}{0pt plus 5cm}std\+::list$<${\bf Updateable}$\ast$$>$ Zeta\+::\+General\+Loop\+::updateable\+Items\hspace{0.3cm}{\ttfamily [private]}}}\label{classZeta_1_1GeneralLoop_af765b95f83aad985b7d056d154335db9}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Zeta/\+Core/\hyperlink{GeneralLoop_8hpp}{General\+Loop.\+hpp}\end{DoxyCompactItemize}

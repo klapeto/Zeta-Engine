@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="10" height="10" tilewidth="64" tileheight="64">
+ <tileset firstgid="1" source="Tilesets/LPC.tsx"/>
+ <layer name="regions_input" width="10" height="10">
+  <data encoding="base64" compression="zlib">
+   eJxjYBjZoHGgHYAGAEogAII=
+  </data>
+ </layer>
+ <layer name="regions_output" width="10" height="10">
+  <data encoding="base64" compression="zlib">
+   eJxjYBh48I0JgamlrpGBeubREwAA7+oLKg==
+  </data>
+ </layer>
+ <layer name="input_Trunks_1" width="10" height="10">
+  <data encoding="base64" compression="zlib">
+   eJxjYBjZYB7TQLsAFQAAW44AoQ==
+  </data>
+ </layer>
+ <layer name="output_Trees_Low1" width="10" height="10">
+  <data encoding="base64" compression="zlib">
+   eJxjYBi5IJaJgSGOaaBdgQoAbngAwA==
+  </data>
+ </layer>
+ <layer name="output_Trees_Low2" width="10" height="10">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgF8UwD7QIEAAA2mgBi
+  </data>
+ </layer>
+ <layer name="output_Trees_Mid1" width="10" height="10">
+  <data encoding="base64" compression="zlib">
+   eJxjYBh+wJaJgcGOaaBdQR4AAF3QAIA=
+  </data>
+ </layer>
+ <layer name="output_Trees_Mid2" width="10" height="10">
+  <data encoding="base64" compression="zlib">
+   eJxjYBi+wJ5poF1AOgAAL0IAQg==
+  </data>
+ </layer>
+ <layer name="output_Trees_Up1" width="10" height="10">
+  <data encoding="base64" compression="zlib">
+   eJxjYBg6QJaJgUGOaaBdQVsAADkoAEA=
+  </data>
+ </layer>
+ <layer name="output_Trees_Up2" width="10" height="10">
+  <data encoding="base64" compression="zlib">
+   eJxjYBh6QJ5poF1AOwAAHeoAIg==
+  </data>
+ </layer>
+ <layer name="output_Trees_Top" width="10" height="10">
+  <data encoding="base64" compression="zlib">
+   eJxjYBh48JeRgeEfEP9nHGiXDDwAABaaAv4=
+  </data>
+ </layer>
+</map>

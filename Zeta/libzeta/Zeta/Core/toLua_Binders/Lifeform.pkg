@@ -1,0 +1,59 @@
+$#include <Zeta/Core/RPGClasses/Lifeform.hpp>
+
+class Lifeform: public Object {
+public:
+
+	void moveToPosition(Float x, Float y);
+	void moveToPosition(const Vector2& pos);
+	LifeformState getState() const;
+	void stopMoving();
+	void setClass(const std::string& path);
+	void setAnimationClass(const std::string& path);
+	void setActionAnimation(const std::string& name);
+	void addOffAnimation(const Animation& animation, Float dx,
+			Float dy, AnimationHandler::QueuePlace queue);
+	AttributeValue getAttributeValue(const std::string& name) const;
+	void setAttributeBaseValue(const std::string& name, AttributeValue value);
+	void getAttributesLuaTable() const;
+	void addAttributeModifier(const std::string& attributeName,
+			const std::string& modifierName, AttributeValue value,
+			Modifier::Type type);
+	AnimationHandler& getAnimationHandler();
+	void removeAttributeModifier(const std::string& attributeName,
+			const std::string& modifierName);
+	void offsetMana(AttributeValue value);
+	void offsetHP(AttributeValue value);
+	void setHP(AttributeValue value);
+	void setMana(AttributeValue value);
+	
+	bool isHostileWith(Lifeform* other) const;
+	void addEffect(Effect *eff);
+	bool canReceiveEffect(const EffectClass& effClass) const;
+	bool isInCombat() const;
+	void setInCombat(bool combat);
+	
+	void resetState();
+	bool isDirty() const;
+	bool isAlive() const;
+	int getLevel() const;
+	bool hasTarget() const;
+	lua_Object getLuaTable();
+	void setLuaTable(lua_Object table);
+	void addAbility(const AbilityClass& abilityClass, int level);
+	void setTarget(Lifeform *trg);
+	ActiveAbility* getActiveAbility(const std::string& abilityName);
+	PassiveAbility* getPassiveAbility(const std::string& abilityName);
+	Regeneration* getRegeneration(const std::string& regenerationName);
+	Ability* getAbility(const std::string& abilityName);
+	Lifeform* getTarget();
+	bool isInMeleeRange(const Lifeform* lf) const;
+	virtual void teleportToCordinates(Float x, Float y);
+	virtual void die();
+	void face(const Vector2 &postion);
+	void face(Float x, Float y);
+	void face(Object *other);
+	Lifeform();
+	Lifeform(const std::string& lifeClass, Float x, Float y);
+	Lifeform(const LifeformClass& lifeClass, Float x, Float y);
+	virtual ~Lifeform();
+};

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LifeformClass name="Χωρική">
+
+	<AnimationClass filename="AnimationClasses/Female_NPC_2.xml" />
+
+	<Stats level="2">
+
+		<Stat name="MaxHP" value="500" />
+		<Stat name="HP" value="500" />
+		<Stat name="MaxMana" value="500" />
+		<Stat name="Mana" value="500" />
+		<Stat name="Pdef" value="500" />
+		<Stat name="Speed" value="200" />
+	</Stats>
+
+	<Abilities>
+		<Ability file="Abilities/DeadlyThrow.lua" level="1" />
+	</Abilities>
+
+
+</LifeformClass>

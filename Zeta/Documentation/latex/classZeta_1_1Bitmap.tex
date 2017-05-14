@@ -1,0 +1,223 @@
+\hypertarget{classZeta_1_1Bitmap}{\section{Zeta\+:\+:Bitmap Class Reference}
+\label{classZeta_1_1Bitmap}\index{Zeta\+::\+Bitmap@{Zeta\+::\+Bitmap}}
+}
+
+
+{\ttfamily \#include $<$Bitmap.\+hpp$>$}
+
+
+
+Inheritance diagram for Zeta\+:\+:Bitmap\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=265pt]{classZeta_1_1Bitmap__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Zeta\+:\+:Bitmap\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=265pt]{classZeta_1_1Bitmap__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{classZeta_1_1Bitmap_a8cb28cf4226b7d6bedf6c9bb2413b3fa}{Flip\+Flag} \{ \hyperlink{classZeta_1_1Bitmap_a8cb28cf4226b7d6bedf6c9bb2413b3faad95504740b4fa9384ac72564cd282755}{Normal}, 
+\hyperlink{classZeta_1_1Bitmap_a8cb28cf4226b7d6bedf6c9bb2413b3faaf348b571904c666b29639666ab027697}{Fliped\+\_\+\+Horizontaly}, 
+\hyperlink{classZeta_1_1Bitmap_a8cb28cf4226b7d6bedf6c9bb2413b3faaac56c661dd220f5f9dd9b79fc5cf53de}{Fliped\+\_\+\+Verticaly}, 
+\hyperlink{classZeta_1_1Bitmap_a8cb28cf4226b7d6bedf6c9bb2413b3faa8593d3469b4055679283171c09dba43d}{Fliped\+\_\+\+Both}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classZeta_1_1Bitmap_a5b41472f13ef2763ef6c4c6e85a706da}{get\+Width} () const 
+\item 
+int \hyperlink{classZeta_1_1Bitmap_ae35e49275691a0b9a5b67b5fb906941b}{get\+Height} () const 
+\item 
+virtual void \hyperlink{classZeta_1_1Bitmap_a2a5af6ab1c1237efe52d155fe63e24b7}{draw} (\hyperlink{namespaceZeta_a1e0a1265f9b3bd3075fb0fabd39088ba}{Float} x, \hyperlink{namespaceZeta_a1e0a1265f9b3bd3075fb0fabd39088ba}{Float} y, \hyperlink{namespaceZeta_a1e0a1265f9b3bd3075fb0fabd39088ba}{Float} rotation, \hyperlink{namespaceZeta_a1e0a1265f9b3bd3075fb0fabd39088ba}{Float} scale, \hyperlink{classZeta_1_1Bitmap_a8cb28cf4226b7d6bedf6c9bb2413b3fa}{Flip\+Flag} flip=\hyperlink{classZeta_1_1Bitmap_a8cb28cf4226b7d6bedf6c9bb2413b3faad95504740b4fa9384ac72564cd282755}{Normal}) const =0
+\item 
+virtual void \hyperlink{classZeta_1_1Bitmap_af06b42874ae626ca8e403c478fab46e9}{draw\+At\+Centre} (\hyperlink{namespaceZeta_a1e0a1265f9b3bd3075fb0fabd39088ba}{Float} x, \hyperlink{namespaceZeta_a1e0a1265f9b3bd3075fb0fabd39088ba}{Float} y, \hyperlink{namespaceZeta_a1e0a1265f9b3bd3075fb0fabd39088ba}{Float} rotation, \hyperlink{namespaceZeta_a1e0a1265f9b3bd3075fb0fabd39088ba}{Float} scale, \hyperlink{classZeta_1_1Bitmap_a8cb28cf4226b7d6bedf6c9bb2413b3fa}{Flip\+Flag} flip=\hyperlink{classZeta_1_1Bitmap_a8cb28cf4226b7d6bedf6c9bb2413b3faad95504740b4fa9384ac72564cd282755}{Normal}) const =0
+\item 
+virtual \hyperlink{classZeta_1_1Bitmap}{Bitmap} \& \hyperlink{classZeta_1_1Bitmap_a790614f445f0c59f9533ed1d4046dd74}{create\+Sub\+Bitmap} (int x, int y, int \hyperlink{classZeta_1_1Bitmap_affa526cccd51b4ac5db7aac25ff7f6a9}{width}, int \hyperlink{classZeta_1_1Bitmap_a4d9a82acc6c418dc9b72227b0d63d9aa}{height}) const =0
+\item 
+virtual void \hyperlink{classZeta_1_1Bitmap_acaef132548ff57ccdc725b864a1150b8}{erase\+Sub\+Bitmap} (\hyperlink{classZeta_1_1Bitmap}{Bitmap} \&bitmap) const =0
+\item 
+virtual void \hyperlink{classZeta_1_1Bitmap_afc49ceff653f55699fe7b723eb6193ae}{reserve\+Sub\+Bitmaps} (size\+\_\+t number) const =0
+\item 
+\hyperlink{classZeta_1_1Bitmap_add684ebb8c0f5dc04376eb1ed760f8b7}{Bitmap} (\hyperlink{classZeta_1_1Bitmap}{Bitmap} \&\&)=default
+\item 
+\hyperlink{classZeta_1_1Bitmap}{Bitmap} \& \hyperlink{classZeta_1_1Bitmap_ace6923621ad08915460c840f12ec701a}{operator=} (\hyperlink{classZeta_1_1Bitmap}{Bitmap} \&\&)=default
+\item 
+\hyperlink{classZeta_1_1Bitmap_aa2abefaeb9204d8f0184c036984f8b2d}{Bitmap} (const std\+::string \&path)
+\item 
+\hyperlink{classZeta_1_1Bitmap_a1338d6c3b7eb2be1dccb247fbf9728c2}{Bitmap} (int \hyperlink{classZeta_1_1Bitmap_affa526cccd51b4ac5db7aac25ff7f6a9}{width}, int \hyperlink{classZeta_1_1Bitmap_a4d9a82acc6c418dc9b72227b0d63d9aa}{height})
+\item 
+virtual \hyperlink{classZeta_1_1Bitmap_a2a62cac74fb6f69afc519b026c63cb17}{$\sim$\+Bitmap} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classZeta_1_1Bitmap_affa526cccd51b4ac5db7aac25ff7f6a9}{width}
+\item 
+int \hyperlink{classZeta_1_1Bitmap_a4d9a82acc6c418dc9b72227b0d63d9aa}{height}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{classZeta_1_1Bitmap_a8cb28cf4226b7d6bedf6c9bb2413b3fa}{\index{Zeta\+::\+Bitmap@{Zeta\+::\+Bitmap}!Flip\+Flag@{Flip\+Flag}}
+\index{Flip\+Flag@{Flip\+Flag}!Zeta\+::\+Bitmap@{Zeta\+::\+Bitmap}}
+\subsubsection[{Flip\+Flag}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Zeta\+::\+Bitmap\+::\+Flip\+Flag}}}\label{classZeta_1_1Bitmap_a8cb28cf4226b7d6bedf6c9bb2413b3fa}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{Normal@{Normal}!Zeta\+::\+Bitmap@{Zeta\+::\+Bitmap}}\index{Zeta\+::\+Bitmap@{Zeta\+::\+Bitmap}!Normal@{Normal}}\item[{\em 
+\hypertarget{classZeta_1_1Bitmap_a8cb28cf4226b7d6bedf6c9bb2413b3faad95504740b4fa9384ac72564cd282755}{Normal}\label{classZeta_1_1Bitmap_a8cb28cf4226b7d6bedf6c9bb2413b3faad95504740b4fa9384ac72564cd282755}
+}]\index{Fliped\+\_\+\+Horizontaly@{Fliped\+\_\+\+Horizontaly}!Zeta\+::\+Bitmap@{Zeta\+::\+Bitmap}}\index{Zeta\+::\+Bitmap@{Zeta\+::\+Bitmap}!Fliped\+\_\+\+Horizontaly@{Fliped\+\_\+\+Horizontaly}}\item[{\em 
+\hypertarget{classZeta_1_1Bitmap_a8cb28cf4226b7d6bedf6c9bb2413b3faaf348b571904c666b29639666ab027697}{Fliped\+\_\+\+Horizontaly}\label{classZeta_1_1Bitmap_a8cb28cf4226b7d6bedf6c9bb2413b3faaf348b571904c666b29639666ab027697}
+}]\index{Fliped\+\_\+\+Verticaly@{Fliped\+\_\+\+Verticaly}!Zeta\+::\+Bitmap@{Zeta\+::\+Bitmap}}\index{Zeta\+::\+Bitmap@{Zeta\+::\+Bitmap}!Fliped\+\_\+\+Verticaly@{Fliped\+\_\+\+Verticaly}}\item[{\em 
+\hypertarget{classZeta_1_1Bitmap_a8cb28cf4226b7d6bedf6c9bb2413b3faaac56c661dd220f5f9dd9b79fc5cf53de}{Fliped\+\_\+\+Verticaly}\label{classZeta_1_1Bitmap_a8cb28cf4226b7d6bedf6c9bb2413b3faaac56c661dd220f5f9dd9b79fc5cf53de}
+}]\index{Fliped\+\_\+\+Both@{Fliped\+\_\+\+Both}!Zeta\+::\+Bitmap@{Zeta\+::\+Bitmap}}\index{Zeta\+::\+Bitmap@{Zeta\+::\+Bitmap}!Fliped\+\_\+\+Both@{Fliped\+\_\+\+Both}}\item[{\em 
+\hypertarget{classZeta_1_1Bitmap_a8cb28cf4226b7d6bedf6c9bb2413b3faa8593d3469b4055679283171c09dba43d}{Fliped\+\_\+\+Both}\label{classZeta_1_1Bitmap_a8cb28cf4226b7d6bedf6c9bb2413b3faa8593d3469b4055679283171c09dba43d}
+}]\end{description}
+\end{Desc}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classZeta_1_1Bitmap_add684ebb8c0f5dc04376eb1ed760f8b7}{\index{Zeta\+::\+Bitmap@{Zeta\+::\+Bitmap}!Bitmap@{Bitmap}}
+\index{Bitmap@{Bitmap}!Zeta\+::\+Bitmap@{Zeta\+::\+Bitmap}}
+\subsubsection[{Bitmap}]{\setlength{\rightskip}{0pt plus 5cm}Zeta\+::\+Bitmap\+::\+Bitmap (
+\begin{DoxyParamCaption}
+\item[{{\bf Bitmap} \&\&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [default]}}}\label{classZeta_1_1Bitmap_add684ebb8c0f5dc04376eb1ed760f8b7}
+\hypertarget{classZeta_1_1Bitmap_aa2abefaeb9204d8f0184c036984f8b2d}{\index{Zeta\+::\+Bitmap@{Zeta\+::\+Bitmap}!Bitmap@{Bitmap}}
+\index{Bitmap@{Bitmap}!Zeta\+::\+Bitmap@{Zeta\+::\+Bitmap}}
+\subsubsection[{Bitmap}]{\setlength{\rightskip}{0pt plus 5cm}Zeta\+::\+Bitmap\+::\+Bitmap (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{path}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1Bitmap_aa2abefaeb9204d8f0184c036984f8b2d}
+\hypertarget{classZeta_1_1Bitmap_a1338d6c3b7eb2be1dccb247fbf9728c2}{\index{Zeta\+::\+Bitmap@{Zeta\+::\+Bitmap}!Bitmap@{Bitmap}}
+\index{Bitmap@{Bitmap}!Zeta\+::\+Bitmap@{Zeta\+::\+Bitmap}}
+\subsubsection[{Bitmap}]{\setlength{\rightskip}{0pt plus 5cm}Zeta\+::\+Bitmap\+::\+Bitmap (
+\begin{DoxyParamCaption}
+\item[{int}]{width, }
+\item[{int}]{height}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1Bitmap_a1338d6c3b7eb2be1dccb247fbf9728c2}
+\hypertarget{classZeta_1_1Bitmap_a2a62cac74fb6f69afc519b026c63cb17}{\index{Zeta\+::\+Bitmap@{Zeta\+::\+Bitmap}!````~Bitmap@{$\sim$\+Bitmap}}
+\index{````~Bitmap@{$\sim$\+Bitmap}!Zeta\+::\+Bitmap@{Zeta\+::\+Bitmap}}
+\subsubsection[{$\sim$\+Bitmap}]{\setlength{\rightskip}{0pt plus 5cm}virtual Zeta\+::\+Bitmap\+::$\sim$\+Bitmap (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classZeta_1_1Bitmap_a2a62cac74fb6f69afc519b026c63cb17}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classZeta_1_1Bitmap_a790614f445f0c59f9533ed1d4046dd74}{\index{Zeta\+::\+Bitmap@{Zeta\+::\+Bitmap}!create\+Sub\+Bitmap@{create\+Sub\+Bitmap}}
+\index{create\+Sub\+Bitmap@{create\+Sub\+Bitmap}!Zeta\+::\+Bitmap@{Zeta\+::\+Bitmap}}
+\subsubsection[{create\+Sub\+Bitmap}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Bitmap}\& Zeta\+::\+Bitmap\+::create\+Sub\+Bitmap (
+\begin{DoxyParamCaption}
+\item[{int}]{x, }
+\item[{int}]{y, }
+\item[{int}]{width, }
+\item[{int}]{height}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classZeta_1_1Bitmap_a790614f445f0c59f9533ed1d4046dd74}
+
+
+Implemented in \hyperlink{classZeta_1_1AllegroBitmap_a92c61e54a550c9756b5567a20625c31d}{Zeta\+::\+Allegro\+Bitmap}.
+
+\hypertarget{classZeta_1_1Bitmap_a2a5af6ab1c1237efe52d155fe63e24b7}{\index{Zeta\+::\+Bitmap@{Zeta\+::\+Bitmap}!draw@{draw}}
+\index{draw@{draw}!Zeta\+::\+Bitmap@{Zeta\+::\+Bitmap}}
+\subsubsection[{draw}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Zeta\+::\+Bitmap\+::draw (
+\begin{DoxyParamCaption}
+\item[{{\bf Float}}]{x, }
+\item[{{\bf Float}}]{y, }
+\item[{{\bf Float}}]{rotation, }
+\item[{{\bf Float}}]{scale, }
+\item[{{\bf Flip\+Flag}}]{flip = {\ttfamily {\bf Normal}}}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classZeta_1_1Bitmap_a2a5af6ab1c1237efe52d155fe63e24b7}
+
+
+Implemented in \hyperlink{classZeta_1_1AllegroBitmap_a26b3206d585a5f30b990c1279eb92e7a}{Zeta\+::\+Allegro\+Bitmap}.
+
+\hypertarget{classZeta_1_1Bitmap_af06b42874ae626ca8e403c478fab46e9}{\index{Zeta\+::\+Bitmap@{Zeta\+::\+Bitmap}!draw\+At\+Centre@{draw\+At\+Centre}}
+\index{draw\+At\+Centre@{draw\+At\+Centre}!Zeta\+::\+Bitmap@{Zeta\+::\+Bitmap}}
+\subsubsection[{draw\+At\+Centre}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Zeta\+::\+Bitmap\+::draw\+At\+Centre (
+\begin{DoxyParamCaption}
+\item[{{\bf Float}}]{x, }
+\item[{{\bf Float}}]{y, }
+\item[{{\bf Float}}]{rotation, }
+\item[{{\bf Float}}]{scale, }
+\item[{{\bf Flip\+Flag}}]{flip = {\ttfamily {\bf Normal}}}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classZeta_1_1Bitmap_af06b42874ae626ca8e403c478fab46e9}
+
+
+Implemented in \hyperlink{classZeta_1_1AllegroBitmap_ac914238cb9e48e6f3e4260f7c62b40f8}{Zeta\+::\+Allegro\+Bitmap}.
+
+\hypertarget{classZeta_1_1Bitmap_acaef132548ff57ccdc725b864a1150b8}{\index{Zeta\+::\+Bitmap@{Zeta\+::\+Bitmap}!erase\+Sub\+Bitmap@{erase\+Sub\+Bitmap}}
+\index{erase\+Sub\+Bitmap@{erase\+Sub\+Bitmap}!Zeta\+::\+Bitmap@{Zeta\+::\+Bitmap}}
+\subsubsection[{erase\+Sub\+Bitmap}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Zeta\+::\+Bitmap\+::erase\+Sub\+Bitmap (
+\begin{DoxyParamCaption}
+\item[{{\bf Bitmap} \&}]{bitmap}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classZeta_1_1Bitmap_acaef132548ff57ccdc725b864a1150b8}
+
+
+Implemented in \hyperlink{classZeta_1_1AllegroBitmap_a2e7d04979e1c34a3d1c320ba67c429d2}{Zeta\+::\+Allegro\+Bitmap}.
+
+\hypertarget{classZeta_1_1Bitmap_ae35e49275691a0b9a5b67b5fb906941b}{\index{Zeta\+::\+Bitmap@{Zeta\+::\+Bitmap}!get\+Height@{get\+Height}}
+\index{get\+Height@{get\+Height}!Zeta\+::\+Bitmap@{Zeta\+::\+Bitmap}}
+\subsubsection[{get\+Height}]{\setlength{\rightskip}{0pt plus 5cm}int Zeta\+::\+Bitmap\+::get\+Height (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1Bitmap_ae35e49275691a0b9a5b67b5fb906941b}
+\hypertarget{classZeta_1_1Bitmap_a5b41472f13ef2763ef6c4c6e85a706da}{\index{Zeta\+::\+Bitmap@{Zeta\+::\+Bitmap}!get\+Width@{get\+Width}}
+\index{get\+Width@{get\+Width}!Zeta\+::\+Bitmap@{Zeta\+::\+Bitmap}}
+\subsubsection[{get\+Width}]{\setlength{\rightskip}{0pt plus 5cm}int Zeta\+::\+Bitmap\+::get\+Width (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1Bitmap_a5b41472f13ef2763ef6c4c6e85a706da}
+\hypertarget{classZeta_1_1Bitmap_ace6923621ad08915460c840f12ec701a}{\index{Zeta\+::\+Bitmap@{Zeta\+::\+Bitmap}!operator=@{operator=}}
+\index{operator=@{operator=}!Zeta\+::\+Bitmap@{Zeta\+::\+Bitmap}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Bitmap}\& Zeta\+::\+Bitmap\+::operator= (
+\begin{DoxyParamCaption}
+\item[{{\bf Bitmap} \&\&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [default]}}}\label{classZeta_1_1Bitmap_ace6923621ad08915460c840f12ec701a}
+\hypertarget{classZeta_1_1Bitmap_afc49ceff653f55699fe7b723eb6193ae}{\index{Zeta\+::\+Bitmap@{Zeta\+::\+Bitmap}!reserve\+Sub\+Bitmaps@{reserve\+Sub\+Bitmaps}}
+\index{reserve\+Sub\+Bitmaps@{reserve\+Sub\+Bitmaps}!Zeta\+::\+Bitmap@{Zeta\+::\+Bitmap}}
+\subsubsection[{reserve\+Sub\+Bitmaps}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Zeta\+::\+Bitmap\+::reserve\+Sub\+Bitmaps (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{number}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classZeta_1_1Bitmap_afc49ceff653f55699fe7b723eb6193ae}
+
+
+Implemented in \hyperlink{classZeta_1_1AllegroBitmap_ac37c6b783f388afe960479b9addcf0a7}{Zeta\+::\+Allegro\+Bitmap}.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classZeta_1_1Bitmap_a4d9a82acc6c418dc9b72227b0d63d9aa}{\index{Zeta\+::\+Bitmap@{Zeta\+::\+Bitmap}!height@{height}}
+\index{height@{height}!Zeta\+::\+Bitmap@{Zeta\+::\+Bitmap}}
+\subsubsection[{height}]{\setlength{\rightskip}{0pt plus 5cm}int Zeta\+::\+Bitmap\+::height\hspace{0.3cm}{\ttfamily [protected]}}}\label{classZeta_1_1Bitmap_a4d9a82acc6c418dc9b72227b0d63d9aa}
+\hypertarget{classZeta_1_1Bitmap_affa526cccd51b4ac5db7aac25ff7f6a9}{\index{Zeta\+::\+Bitmap@{Zeta\+::\+Bitmap}!width@{width}}
+\index{width@{width}!Zeta\+::\+Bitmap@{Zeta\+::\+Bitmap}}
+\subsubsection[{width}]{\setlength{\rightskip}{0pt plus 5cm}int Zeta\+::\+Bitmap\+::width\hspace{0.3cm}{\ttfamily [protected]}}}\label{classZeta_1_1Bitmap_affa526cccd51b4ac5db7aac25ff7f6a9}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Zeta/\+Core/\+Resource\+Classes/\hyperlink{Bitmap_8hpp}{Bitmap.\+hpp}\end{DoxyCompactItemize}

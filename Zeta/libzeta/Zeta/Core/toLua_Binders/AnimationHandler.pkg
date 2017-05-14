@@ -1,0 +1,14 @@
+$#include <Zeta/Core/AnimationClasses/AnimationHandler.hpp>
+
+class AnimationHandler {
+public:
+	enum class QueuePlace {
+		Front, Back
+	};
+	void setAnimation(const std::string& name);
+	void setAnimationClass(const std::string& path);
+	AnimationPlayer& getMainAnimationPlayer() const;
+	void addOffAnimation(const Animation& animation, Float dx ,
+			Float dy, QueuePlace queue);
+	OffAnimation& getOffAnimation(const std::string& name, QueuePlace queue);
+};

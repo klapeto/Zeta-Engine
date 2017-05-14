@@ -1,0 +1,9 @@
+$#include <Zeta/Core/RPGClasses/Enemy.hpp>
+
+class Enemy: public Lifeform {
+public:
+	Enemy(const std::string& lifeClass, Float x, Float y);
+	Enemy(const LifeformClass& lifeClass, Float x, Float y, Float respawnTime =
+			30, Float vanishTime = 10);
+	~Enemy();
+};

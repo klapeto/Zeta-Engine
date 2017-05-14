@@ -1,0 +1,147 @@
+\hypertarget{classZeta_1_1ConsoleManager}{\section{Zeta\+:\+:Console\+Manager Class Reference}
+\label{classZeta_1_1ConsoleManager}\index{Zeta\+::\+Console\+Manager@{Zeta\+::\+Console\+Manager}}
+}
+
+
+{\ttfamily \#include $<$Console\+Manager.\+hpp$>$}
+
+
+
+Inheritance diagram for Zeta\+:\+:Console\+Manager\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=308pt]{classZeta_1_1ConsoleManager__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Zeta\+:\+:Console\+Manager\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=308pt]{classZeta_1_1ConsoleManager__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::string($\ast$ \hyperlink{classZeta_1_1ConsoleManager_a24cbcf9867d966f7e17af66a3f7f2df2}{Command} )(const std\+::string \&)
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \hyperlink{classZeta_1_1ConsoleManager_aa34b2682ebcd6ca625549e0485abd031}{excecute\+Line} (const std\+::string \&line)
+\item 
+void \hyperlink{classZeta_1_1ConsoleManager_a26a4eb8a062008e3a74f528f70951ab3}{add\+Command} (const std\+::string \&name, \hyperlink{classZeta_1_1ConsoleManager_a24cbcf9867d966f7e17af66a3f7f2df2}{Command} command)
+\item 
+void \hyperlink{classZeta_1_1ConsoleManager_adecb14334f9be9e036c726ee511bf7c7}{push\+To\+Lua} (lua\+\_\+\+State $\ast$lstate)
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classZeta_1_1ConsoleManager_a9dc25e0c604db55c02e9f48daa51d099}{Console\+Manager} ()
+\item 
+\hyperlink{classZeta_1_1ConsoleManager_a7a6f0c4566f2353834cfe61a9d84aea5}{$\sim$\+Console\+Manager} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespaceZeta_a9af2e12c4e432d2a1725f19e5a648a04}{Z\+Map}$<$ std\+::string, \hyperlink{classZeta_1_1ConsoleManager_a24cbcf9867d966f7e17af66a3f7f2df2}{Command} $>$ \hyperlink{classZeta_1_1ConsoleManager_a6d48909add29aa8abf67a142cde8f84a}{commands}
+\item 
+\hyperlink{namespaceZeta_a9af2e12c4e432d2a1725f19e5a648a04}{Z\+Map}$<$ std\+::string, std\+::string $>$ \hyperlink{classZeta_1_1ConsoleManager_a6373f97ce6c358df596d68b1e0420bdb}{command\+Help}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classZeta_1_1ConsoleManager_a2fa95d69b32a77fffa4b730679a8b08c}{Single\+Instanced}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\hyperlink{classZeta_1_1ConsoleManager}{Console\+Manager}. Singleton Class to handle Console commands 
+
+\subsection{Member Typedef Documentation}
+\hypertarget{classZeta_1_1ConsoleManager_a24cbcf9867d966f7e17af66a3f7f2df2}{\index{Zeta\+::\+Console\+Manager@{Zeta\+::\+Console\+Manager}!Command@{Command}}
+\index{Command@{Command}!Zeta\+::\+Console\+Manager@{Zeta\+::\+Console\+Manager}}
+\subsubsection[{Command}]{\setlength{\rightskip}{0pt plus 5cm}typedef std\+::string($\ast$ Zeta\+::\+Console\+Manager\+::\+Command)(const std\+::string \&)}}\label{classZeta_1_1ConsoleManager_a24cbcf9867d966f7e17af66a3f7f2df2}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classZeta_1_1ConsoleManager_a9dc25e0c604db55c02e9f48daa51d099}{\index{Zeta\+::\+Console\+Manager@{Zeta\+::\+Console\+Manager}!Console\+Manager@{Console\+Manager}}
+\index{Console\+Manager@{Console\+Manager}!Zeta\+::\+Console\+Manager@{Zeta\+::\+Console\+Manager}}
+\subsubsection[{Console\+Manager}]{\setlength{\rightskip}{0pt plus 5cm}Zeta\+::\+Console\+Manager\+::\+Console\+Manager (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classZeta_1_1ConsoleManager_a9dc25e0c604db55c02e9f48daa51d099}
+\hypertarget{classZeta_1_1ConsoleManager_a7a6f0c4566f2353834cfe61a9d84aea5}{\index{Zeta\+::\+Console\+Manager@{Zeta\+::\+Console\+Manager}!````~Console\+Manager@{$\sim$\+Console\+Manager}}
+\index{````~Console\+Manager@{$\sim$\+Console\+Manager}!Zeta\+::\+Console\+Manager@{Zeta\+::\+Console\+Manager}}
+\subsubsection[{$\sim$\+Console\+Manager}]{\setlength{\rightskip}{0pt plus 5cm}Zeta\+::\+Console\+Manager\+::$\sim$\+Console\+Manager (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classZeta_1_1ConsoleManager_a7a6f0c4566f2353834cfe61a9d84aea5}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classZeta_1_1ConsoleManager_a26a4eb8a062008e3a74f528f70951ab3}{\index{Zeta\+::\+Console\+Manager@{Zeta\+::\+Console\+Manager}!add\+Command@{add\+Command}}
+\index{add\+Command@{add\+Command}!Zeta\+::\+Console\+Manager@{Zeta\+::\+Console\+Manager}}
+\subsubsection[{add\+Command}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+Console\+Manager\+::add\+Command (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{name, }
+\item[{{\bf Command}}]{command}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1ConsoleManager_a26a4eb8a062008e3a74f528f70951ab3}
+\hypertarget{classZeta_1_1ConsoleManager_aa34b2682ebcd6ca625549e0485abd031}{\index{Zeta\+::\+Console\+Manager@{Zeta\+::\+Console\+Manager}!excecute\+Line@{excecute\+Line}}
+\index{excecute\+Line@{excecute\+Line}!Zeta\+::\+Console\+Manager@{Zeta\+::\+Console\+Manager}}
+\subsubsection[{excecute\+Line}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string Zeta\+::\+Console\+Manager\+::excecute\+Line (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{line}
+\end{DoxyParamCaption}
+)}}\label{classZeta_1_1ConsoleManager_aa34b2682ebcd6ca625549e0485abd031}
+Executes the string provided 
+\begin{DoxyParams}{Parameters}
+{\em line} & The string that has the command \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The commands output 
+\end{DoxyReturn}
+\hypertarget{classZeta_1_1ConsoleManager_adecb14334f9be9e036c726ee511bf7c7}{\index{Zeta\+::\+Console\+Manager@{Zeta\+::\+Console\+Manager}!push\+To\+Lua@{push\+To\+Lua}}
+\index{push\+To\+Lua@{push\+To\+Lua}!Zeta\+::\+Console\+Manager@{Zeta\+::\+Console\+Manager}}
+\subsubsection[{push\+To\+Lua}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+Console\+Manager\+::push\+To\+Lua (
+\begin{DoxyParamCaption}
+\item[{lua\+\_\+\+State $\ast$}]{lstate}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classZeta_1_1ConsoleManager_adecb14334f9be9e036c726ee511bf7c7}
+Push\+To\+Lua Implementation. Pushes to Lua Stack the \hyperlink{classZeta_1_1Object}{Object} casted to the appropriate Type 
+\begin{DoxyParams}{Parameters}
+{\em lstate} & the Lua State to push it. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classZeta_1_1LuaPushable_a0380ec9cff11f749e8eb67b51b8f82fc}{Zeta\+::\+Lua\+Pushable}.
+
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{classZeta_1_1ConsoleManager_a2fa95d69b32a77fffa4b730679a8b08c}{\index{Zeta\+::\+Console\+Manager@{Zeta\+::\+Console\+Manager}!Single\+Instanced@{Single\+Instanced}}
+\index{Single\+Instanced@{Single\+Instanced}!Zeta\+::\+Console\+Manager@{Zeta\+::\+Console\+Manager}}
+\subsubsection[{Single\+Instanced}]{\setlength{\rightskip}{0pt plus 5cm}friend class {\bf Single\+Instanced}\hspace{0.3cm}{\ttfamily [friend]}}}\label{classZeta_1_1ConsoleManager_a2fa95d69b32a77fffa4b730679a8b08c}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classZeta_1_1ConsoleManager_a6373f97ce6c358df596d68b1e0420bdb}{\index{Zeta\+::\+Console\+Manager@{Zeta\+::\+Console\+Manager}!command\+Help@{command\+Help}}
+\index{command\+Help@{command\+Help}!Zeta\+::\+Console\+Manager@{Zeta\+::\+Console\+Manager}}
+\subsubsection[{command\+Help}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Z\+Map}$<$std\+::string, std\+::string$>$ Zeta\+::\+Console\+Manager\+::command\+Help\hspace{0.3cm}{\ttfamily [private]}}}\label{classZeta_1_1ConsoleManager_a6373f97ce6c358df596d68b1e0420bdb}
+\hypertarget{classZeta_1_1ConsoleManager_a6d48909add29aa8abf67a142cde8f84a}{\index{Zeta\+::\+Console\+Manager@{Zeta\+::\+Console\+Manager}!commands@{commands}}
+\index{commands@{commands}!Zeta\+::\+Console\+Manager@{Zeta\+::\+Console\+Manager}}
+\subsubsection[{commands}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Z\+Map}$<$std\+::string, {\bf Command}$>$ Zeta\+::\+Console\+Manager\+::commands\hspace{0.3cm}{\ttfamily [private]}}}\label{classZeta_1_1ConsoleManager_a6d48909add29aa8abf67a142cde8f84a}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Zeta/\+Core/\hyperlink{ConsoleManager_8hpp}{Console\+Manager.\+hpp}\end{DoxyCompactItemize}

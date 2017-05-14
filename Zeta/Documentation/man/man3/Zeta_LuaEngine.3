@@ -1,0 +1,178 @@
+.TH "Zeta::LuaEngine" 3 "Wed Feb 10 2016" "Zeta" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Zeta::LuaEngine \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <LuaEngine\&.hpp>\fP
+.PP
+Inherits \fBZeta::SingleInstanced< LuaEngine >\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "lua_State * \fBgetState\fP ()"
+.br
+.ti -1c
+.RI "void \fBincludePath\fP (std::string path)"
+.br
+.ti -1c
+.RI "int \fBgetReference\fP (int index)"
+.br
+.ti -1c
+.RI "int \fBgetReference\fP (const std::string &fullName)"
+.br
+.ti -1c
+.RI "void \fBincreaseReference\fP (int reference)"
+.br
+.ti -1c
+.RI "void \fBdecreaseReference\fP (int reference)"
+.br
+.ti -1c
+.RI "void \fBreleaseReference\fP (int luaReference)"
+.br
+.ti -1c
+.RI "void \fBpushToStackValue\fP (const std::string &fullName)"
+.br
+.ti -1c
+.RI "void \fBregisterFunction\fP (const std::string &name, \fBlua_CFunction\fP func)"
+.br
+.ti -1c
+.RI "void \fBexcecuteScriptFile\fP (const std::string &path, bool force=false)"
+.br
+.ti -1c
+.RI "void \fBperformGarbageCollection\fP ()"
+.br
+.ti -1c
+.RI "\fB~LuaEngine\fP ()"
+.br
+.in -1c
+.SS "Private Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBLuaEngine\fP ()"
+.br
+.ti -1c
+.RI "void \fBcreateState\fP ()"
+.br
+.ti -1c
+.RI "void \fBdestroyState\fP ()"
+.br
+.ti -1c
+.RI "void \fBgetFunction\fP (const std::string &fullName)"
+.br
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "std::unordered_set< std::string > \fBexcecutedScripts\fP"
+.br
+.ti -1c
+.RI "std::unordered_map< int, 
+.br
+std::string > \fBnamedReferences\fP"
+.br
+.ti -1c
+.RI "std::unordered_map< int, int > \fBsharedReferences\fP"
+.br
+.ti -1c
+.RI "lua_State * \fBlstate\fP"
+.br
+.ti -1c
+.RI "int \fBargC\fP"
+.br
+.ti -1c
+.RI "int \fBstackTop\fP"
+.br
+.ti -1c
+.RI "bool \fBfuncPushed\fP"
+.br
+.in -1c
+.SS "Friends"
+
+.in +1c
+.ti -1c
+.RI "class \fBSystem\fP"
+.br
+.ti -1c
+.RI "class \fBSingleInstanced\fP"
+.br
+.in -1c
+.SS "Additional Inherited Members"
+.SH "Detailed Description"
+.PP 
+The global Lua State\&. (Singleton) TODO: Cleanup\&.\&.\&. 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Zeta::LuaEngine::~LuaEngine ()"
+
+.SS "Zeta::LuaEngine::LuaEngine ()\fC [private]\fP"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "void Zeta::LuaEngine::createState ()\fC [private]\fP"
+
+.SS "void Zeta::LuaEngine::decreaseReference (intreference)"
+
+.SS "void Zeta::LuaEngine::destroyState ()\fC [private]\fP"
+
+.SS "void Zeta::LuaEngine::excecuteScriptFile (const std::string &path, boolforce = \fCfalse\fP)"
+
+.SS "void Zeta::LuaEngine::getFunction (const std::string &fullName)\fC [private]\fP"
+
+.SS "int Zeta::LuaEngine::getReference (intindex)"
+
+.SS "int Zeta::LuaEngine::getReference (const std::string &fullName)"
+
+.SS "lua_State* Zeta::LuaEngine::getState ()\fC [inline]\fP"
+Gets the Engine's lua_State 
+.PP
+\fBReturns:\fP
+.RS 4
+the Lua_State\&. 
+.RE
+.PP
+
+.SS "void Zeta::LuaEngine::includePath (std::stringpath)"
+
+.SS "void Zeta::LuaEngine::increaseReference (intreference)"
+
+.SS "void Zeta::LuaEngine::performGarbageCollection ()"
+
+.SS "void Zeta::LuaEngine::pushToStackValue (const std::string &fullName)"
+
+.SS "void Zeta::LuaEngine::registerFunction (const std::string &name, \fBlua_CFunction\fPfunc)"
+
+.SS "void Zeta::LuaEngine::releaseReference (intluaReference)"
+
+.SH "Friends And Related Function Documentation"
+.PP 
+.SS "friend class \fBSingleInstanced\fP\fC [friend]\fP"
+
+.SS "friend class \fBSystem\fP\fC [friend]\fP"
+
+.SH "Member Data Documentation"
+.PP 
+.SS "int Zeta::LuaEngine::argC\fC [private]\fP"
+
+.SS "std::unordered_set<std::string> Zeta::LuaEngine::excecutedScripts\fC [private]\fP"
+
+.SS "bool Zeta::LuaEngine::funcPushed\fC [private]\fP"
+
+.SS "lua_State* Zeta::LuaEngine::lstate\fC [private]\fP"
+
+.SS "std::unordered_map<int, std::string> Zeta::LuaEngine::namedReferences\fC [private]\fP"
+
+.SS "std::unordered_map<int, int> Zeta::LuaEngine::sharedReferences\fC [private]\fP"
+
+.SS "int Zeta::LuaEngine::stackTop\fC [private]\fP"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Zeta from the source code\&.

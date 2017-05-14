@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LifeformClass name="Γιγάντια Μέλισσα">
+	<AnimationClass filename="AnimationClasses/Bee_Normal.xml" />
+	<Stats level="2">
+		<Levelize lowBound="-1" mul="10" upBound="+1">
+			<Stat name="MaxHP" />
+			<Stat name="MaxMana" />
+			<Stat name="Pdef" />
+		</Levelize>
+	</Stats>
+</LifeformClass>

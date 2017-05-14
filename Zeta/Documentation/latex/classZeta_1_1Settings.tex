@@ -1,0 +1,211 @@
+\hypertarget{classZeta_1_1Settings}{\section{Zeta\+:\+:Settings Class Reference}
+\label{classZeta_1_1Settings}\index{Zeta\+::\+Settings@{Zeta\+::\+Settings}}
+}
+
+
+{\ttfamily \#include $<$Settings.\+hpp$>$}
+
+
+
+Inheritance diagram for Zeta\+:\+:Settings\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=308pt]{classZeta_1_1Settings__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Zeta\+:\+:Settings\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classZeta_1_1Settings__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector\\*
+$<$ \hyperlink{classZeta_1_1Display_1_1Resolution}{Display\+::\+Resolution} $>$ \& \hyperlink{classZeta_1_1Settings_afaa9addd4769a11e2de305b16d011829}{get\+Resolutions} ()
+\item 
+const \hyperlink{classZeta_1_1Display_1_1Resolution}{Display\+::\+Resolution} \& \hyperlink{classZeta_1_1Settings_a7f9fde9e7657abde359a20db22ba6b1b}{get\+Resolution\+At} (unsigned int index)
+\item 
+unsigned int \hyperlink{classZeta_1_1Settings_a3a2607406227c4380bd99cf0b6dd206a}{get\+Resolution\+Num} () const 
+\item 
+const \hyperlink{classZeta_1_1Display_1_1Resolution}{Display\+::\+Resolution} \& \hyperlink{classZeta_1_1Settings_a291c862b740824716b3700a63e0b9b44}{get\+Current\+Resolution} () const 
+\item 
+bool \hyperlink{classZeta_1_1Settings_a693742f95d2c7a38ee555aab7c05b2de}{get\+Fullscreen} () const 
+\item 
+void \hyperlink{classZeta_1_1Settings_a06acd4f0308e6eb168e9a9f7124de9ec}{set\+Fullscreen} (bool val)
+\item 
+void \hyperlink{classZeta_1_1Settings_ab0eec21fdf77d6a2b8a9fb10b6483423}{set\+Resolution} (const \hyperlink{classZeta_1_1Display_1_1Resolution}{Display\+::\+Resolution} \&res)
+\item 
+void \hyperlink{classZeta_1_1Settings_afd63482656e1b4101be17f16674059da}{load\+File} (const std\+::string \&path=\char`\"{}X\+M\+L\+Files/Settings.\+xml\char`\"{})
+\item 
+void \hyperlink{classZeta_1_1Settings_a6b4363ae09e449958db4e5f9b73a268c}{save\+Settings} (const std\+::string \&path=\char`\"{}X\+M\+L\+Files/Settings.\+xml\char`\"{})
+\item 
+\hyperlink{ZetaConfig_8hpp_ae7be32b73848041a60f2412f72bbb221}{lua\+\_\+\+Object} \hyperlink{classZeta_1_1Settings_abf5bb2f29ba4c1d4e481760bfaea1c04}{get\+Resolutions\+Table} ()
+\item 
+void \hyperlink{classZeta_1_1Settings_a6faac6b9ffa5772039b0dc642da8997d}{push\+To\+Lua} (lua\+\_\+\+State $\ast$lstate)
+\item 
+\hyperlink{classZeta_1_1Settings_ab5edf939940b07192d2564cce53e5095}{$\sim$\+Settings} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classZeta_1_1Settings_a0c1b4df0d27eac87d81a073a5e5198a0}{Settings} ()
+\item 
+void \hyperlink{classZeta_1_1Settings_a816736b7d3226f4a79439cbe67e7fcb1}{default\+Settings} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \hyperlink{classZeta_1_1Display_1_1Resolution}{Display\+::\+Resolution} $>$ \hyperlink{classZeta_1_1Settings_a4edd784ac3f38ad781dc214ad776e87e}{resolutions}
+\item 
+\hyperlink{classZeta_1_1Display_1_1Resolution}{Display\+::\+Resolution} \hyperlink{classZeta_1_1Settings_a48d7642ab9f41200a04b8fa87df6bd21}{current\+Resolution}
+\item 
+float \hyperlink{classZeta_1_1Settings_a32644610eb7d398eb5b679937bd270b3}{sound\+Gain}
+\item 
+bool \hyperlink{classZeta_1_1Settings_a9ab00f9bfa9b51a82e362109c7c98809}{full\+Screen}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classZeta_1_1Settings_a2fa95d69b32a77fffa4b730679a8b08c}{Single\+Instanced}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classZeta_1_1Settings_ab5edf939940b07192d2564cce53e5095}{\index{Zeta\+::\+Settings@{Zeta\+::\+Settings}!````~Settings@{$\sim$\+Settings}}
+\index{````~Settings@{$\sim$\+Settings}!Zeta\+::\+Settings@{Zeta\+::\+Settings}}
+\subsubsection[{$\sim$\+Settings}]{\setlength{\rightskip}{0pt plus 5cm}Zeta\+::\+Settings\+::$\sim$\+Settings (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classZeta_1_1Settings_ab5edf939940b07192d2564cce53e5095}
+\hypertarget{classZeta_1_1Settings_a0c1b4df0d27eac87d81a073a5e5198a0}{\index{Zeta\+::\+Settings@{Zeta\+::\+Settings}!Settings@{Settings}}
+\index{Settings@{Settings}!Zeta\+::\+Settings@{Zeta\+::\+Settings}}
+\subsubsection[{Settings}]{\setlength{\rightskip}{0pt plus 5cm}Zeta\+::\+Settings\+::\+Settings (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classZeta_1_1Settings_a0c1b4df0d27eac87d81a073a5e5198a0}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classZeta_1_1Settings_a816736b7d3226f4a79439cbe67e7fcb1}{\index{Zeta\+::\+Settings@{Zeta\+::\+Settings}!default\+Settings@{default\+Settings}}
+\index{default\+Settings@{default\+Settings}!Zeta\+::\+Settings@{Zeta\+::\+Settings}}
+\subsubsection[{default\+Settings}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+Settings\+::default\+Settings (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classZeta_1_1Settings_a816736b7d3226f4a79439cbe67e7fcb1}
+\hypertarget{classZeta_1_1Settings_a291c862b740824716b3700a63e0b9b44}{\index{Zeta\+::\+Settings@{Zeta\+::\+Settings}!get\+Current\+Resolution@{get\+Current\+Resolution}}
+\index{get\+Current\+Resolution@{get\+Current\+Resolution}!Zeta\+::\+Settings@{Zeta\+::\+Settings}}
+\subsubsection[{get\+Current\+Resolution}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Display\+::\+Resolution}\& Zeta\+::\+Settings\+::get\+Current\+Resolution (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1Settings_a291c862b740824716b3700a63e0b9b44}
+\hypertarget{classZeta_1_1Settings_a693742f95d2c7a38ee555aab7c05b2de}{\index{Zeta\+::\+Settings@{Zeta\+::\+Settings}!get\+Fullscreen@{get\+Fullscreen}}
+\index{get\+Fullscreen@{get\+Fullscreen}!Zeta\+::\+Settings@{Zeta\+::\+Settings}}
+\subsubsection[{get\+Fullscreen}]{\setlength{\rightskip}{0pt plus 5cm}bool Zeta\+::\+Settings\+::get\+Fullscreen (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1Settings_a693742f95d2c7a38ee555aab7c05b2de}
+\hypertarget{classZeta_1_1Settings_a7f9fde9e7657abde359a20db22ba6b1b}{\index{Zeta\+::\+Settings@{Zeta\+::\+Settings}!get\+Resolution\+At@{get\+Resolution\+At}}
+\index{get\+Resolution\+At@{get\+Resolution\+At}!Zeta\+::\+Settings@{Zeta\+::\+Settings}}
+\subsubsection[{get\+Resolution\+At}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Display\+::\+Resolution}\& Zeta\+::\+Settings\+::get\+Resolution\+At (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{index}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1Settings_a7f9fde9e7657abde359a20db22ba6b1b}
+\hypertarget{classZeta_1_1Settings_a3a2607406227c4380bd99cf0b6dd206a}{\index{Zeta\+::\+Settings@{Zeta\+::\+Settings}!get\+Resolution\+Num@{get\+Resolution\+Num}}
+\index{get\+Resolution\+Num@{get\+Resolution\+Num}!Zeta\+::\+Settings@{Zeta\+::\+Settings}}
+\subsubsection[{get\+Resolution\+Num}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int Zeta\+::\+Settings\+::get\+Resolution\+Num (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1Settings_a3a2607406227c4380bd99cf0b6dd206a}
+\hypertarget{classZeta_1_1Settings_afaa9addd4769a11e2de305b16d011829}{\index{Zeta\+::\+Settings@{Zeta\+::\+Settings}!get\+Resolutions@{get\+Resolutions}}
+\index{get\+Resolutions@{get\+Resolutions}!Zeta\+::\+Settings@{Zeta\+::\+Settings}}
+\subsubsection[{get\+Resolutions}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<${\bf Display\+::\+Resolution}$>$\& Zeta\+::\+Settings\+::get\+Resolutions (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1Settings_afaa9addd4769a11e2de305b16d011829}
+\hypertarget{classZeta_1_1Settings_abf5bb2f29ba4c1d4e481760bfaea1c04}{\index{Zeta\+::\+Settings@{Zeta\+::\+Settings}!get\+Resolutions\+Table@{get\+Resolutions\+Table}}
+\index{get\+Resolutions\+Table@{get\+Resolutions\+Table}!Zeta\+::\+Settings@{Zeta\+::\+Settings}}
+\subsubsection[{get\+Resolutions\+Table}]{\setlength{\rightskip}{0pt plus 5cm}{\bf lua\+\_\+\+Object} Zeta\+::\+Settings\+::get\+Resolutions\+Table (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classZeta_1_1Settings_abf5bb2f29ba4c1d4e481760bfaea1c04}
+\hypertarget{classZeta_1_1Settings_afd63482656e1b4101be17f16674059da}{\index{Zeta\+::\+Settings@{Zeta\+::\+Settings}!load\+File@{load\+File}}
+\index{load\+File@{load\+File}!Zeta\+::\+Settings@{Zeta\+::\+Settings}}
+\subsubsection[{load\+File}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+Settings\+::load\+File (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{path = {\ttfamily \char`\"{}XMLFiles/Settings.xml\char`\"{}}}
+\end{DoxyParamCaption}
+)}}\label{classZeta_1_1Settings_afd63482656e1b4101be17f16674059da}
+\hypertarget{classZeta_1_1Settings_a6faac6b9ffa5772039b0dc642da8997d}{\index{Zeta\+::\+Settings@{Zeta\+::\+Settings}!push\+To\+Lua@{push\+To\+Lua}}
+\index{push\+To\+Lua@{push\+To\+Lua}!Zeta\+::\+Settings@{Zeta\+::\+Settings}}
+\subsubsection[{push\+To\+Lua}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+Settings\+::push\+To\+Lua (
+\begin{DoxyParamCaption}
+\item[{lua\+\_\+\+State $\ast$}]{lstate}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classZeta_1_1Settings_a6faac6b9ffa5772039b0dc642da8997d}
+
+
+Implements \hyperlink{classZeta_1_1LuaPushable_a0380ec9cff11f749e8eb67b51b8f82fc}{Zeta\+::\+Lua\+Pushable}.
+
+\hypertarget{classZeta_1_1Settings_a6b4363ae09e449958db4e5f9b73a268c}{\index{Zeta\+::\+Settings@{Zeta\+::\+Settings}!save\+Settings@{save\+Settings}}
+\index{save\+Settings@{save\+Settings}!Zeta\+::\+Settings@{Zeta\+::\+Settings}}
+\subsubsection[{save\+Settings}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+Settings\+::save\+Settings (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{path = {\ttfamily \char`\"{}XMLFiles/Settings.xml\char`\"{}}}
+\end{DoxyParamCaption}
+)}}\label{classZeta_1_1Settings_a6b4363ae09e449958db4e5f9b73a268c}
+\hypertarget{classZeta_1_1Settings_a06acd4f0308e6eb168e9a9f7124de9ec}{\index{Zeta\+::\+Settings@{Zeta\+::\+Settings}!set\+Fullscreen@{set\+Fullscreen}}
+\index{set\+Fullscreen@{set\+Fullscreen}!Zeta\+::\+Settings@{Zeta\+::\+Settings}}
+\subsubsection[{set\+Fullscreen}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+Settings\+::set\+Fullscreen (
+\begin{DoxyParamCaption}
+\item[{bool}]{val}
+\end{DoxyParamCaption}
+)}}\label{classZeta_1_1Settings_a06acd4f0308e6eb168e9a9f7124de9ec}
+\hypertarget{classZeta_1_1Settings_ab0eec21fdf77d6a2b8a9fb10b6483423}{\index{Zeta\+::\+Settings@{Zeta\+::\+Settings}!set\+Resolution@{set\+Resolution}}
+\index{set\+Resolution@{set\+Resolution}!Zeta\+::\+Settings@{Zeta\+::\+Settings}}
+\subsubsection[{set\+Resolution}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+Settings\+::set\+Resolution (
+\begin{DoxyParamCaption}
+\item[{const {\bf Display\+::\+Resolution} \&}]{res}
+\end{DoxyParamCaption}
+)}}\label{classZeta_1_1Settings_ab0eec21fdf77d6a2b8a9fb10b6483423}
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{classZeta_1_1Settings_a2fa95d69b32a77fffa4b730679a8b08c}{\index{Zeta\+::\+Settings@{Zeta\+::\+Settings}!Single\+Instanced@{Single\+Instanced}}
+\index{Single\+Instanced@{Single\+Instanced}!Zeta\+::\+Settings@{Zeta\+::\+Settings}}
+\subsubsection[{Single\+Instanced}]{\setlength{\rightskip}{0pt plus 5cm}friend class {\bf Single\+Instanced}\hspace{0.3cm}{\ttfamily [friend]}}}\label{classZeta_1_1Settings_a2fa95d69b32a77fffa4b730679a8b08c}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classZeta_1_1Settings_a48d7642ab9f41200a04b8fa87df6bd21}{\index{Zeta\+::\+Settings@{Zeta\+::\+Settings}!current\+Resolution@{current\+Resolution}}
+\index{current\+Resolution@{current\+Resolution}!Zeta\+::\+Settings@{Zeta\+::\+Settings}}
+\subsubsection[{current\+Resolution}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Display\+::\+Resolution} Zeta\+::\+Settings\+::current\+Resolution\hspace{0.3cm}{\ttfamily [private]}}}\label{classZeta_1_1Settings_a48d7642ab9f41200a04b8fa87df6bd21}
+\hypertarget{classZeta_1_1Settings_a9ab00f9bfa9b51a82e362109c7c98809}{\index{Zeta\+::\+Settings@{Zeta\+::\+Settings}!full\+Screen@{full\+Screen}}
+\index{full\+Screen@{full\+Screen}!Zeta\+::\+Settings@{Zeta\+::\+Settings}}
+\subsubsection[{full\+Screen}]{\setlength{\rightskip}{0pt plus 5cm}bool Zeta\+::\+Settings\+::full\+Screen\hspace{0.3cm}{\ttfamily [private]}}}\label{classZeta_1_1Settings_a9ab00f9bfa9b51a82e362109c7c98809}
+\hypertarget{classZeta_1_1Settings_a4edd784ac3f38ad781dc214ad776e87e}{\index{Zeta\+::\+Settings@{Zeta\+::\+Settings}!resolutions@{resolutions}}
+\index{resolutions@{resolutions}!Zeta\+::\+Settings@{Zeta\+::\+Settings}}
+\subsubsection[{resolutions}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<${\bf Display\+::\+Resolution}$>$ Zeta\+::\+Settings\+::resolutions\hspace{0.3cm}{\ttfamily [private]}}}\label{classZeta_1_1Settings_a4edd784ac3f38ad781dc214ad776e87e}
+\hypertarget{classZeta_1_1Settings_a32644610eb7d398eb5b679937bd270b3}{\index{Zeta\+::\+Settings@{Zeta\+::\+Settings}!sound\+Gain@{sound\+Gain}}
+\index{sound\+Gain@{sound\+Gain}!Zeta\+::\+Settings@{Zeta\+::\+Settings}}
+\subsubsection[{sound\+Gain}]{\setlength{\rightskip}{0pt plus 5cm}float Zeta\+::\+Settings\+::sound\+Gain\hspace{0.3cm}{\ttfamily [private]}}}\label{classZeta_1_1Settings_a32644610eb7d398eb5b679937bd270b3}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Zeta/\+Core/\hyperlink{Settings_8hpp}{Settings.\+hpp}\end{DoxyCompactItemize}

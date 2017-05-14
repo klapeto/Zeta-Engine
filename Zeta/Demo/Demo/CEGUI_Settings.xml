@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CEGUIConfig>
+	<ResourceDirectory group="schemes" directory="Demo/EftihiaGUI/schemes" />
+	<ResourceDirectory group="imagesets" directory="Demo/EftihiaGUI/imagesets" />
+	<ResourceDirectory group="fonts" directory="Demo/EftihiaGUI/fonts" />
+	<ResourceDirectory group="looknfeel" directory="Demo/EftihiaGUI/looknfeel" />
+	<ResourceDirectory group="layouts" directory="Demo/EftihiaGUI/layouts" />
+	<ResourceDirectory group="misc" directory="Demo" />
+
+</CEGUIConfig>

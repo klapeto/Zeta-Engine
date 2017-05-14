@@ -1,0 +1,141 @@
+.TH "Zeta::SharedResource< RType >" 3 "Wed Feb 10 2016" "Zeta" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Zeta::SharedResource< RType > \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <SharedResource\&.hpp>\fP
+.PP
+Inherits \fBZeta::NonCopyable\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "bool \fBisValid\fP () const "
+.br
+.ti -1c
+.RI "void \fBsetValid\fP (bool \fBvalid\fP)"
+.br
+.ti -1c
+.RI "int \fBgetReferenceCount\fP () const "
+.br
+.ti -1c
+.RI "const RType & \fBgetInstance\fP () const "
+.br
+.ti -1c
+.RI "void \fBsetInstance\fP (RType &\fBinstance\fP)"
+.br
+.ti -1c
+.RI "void \fBload\fP (const std::string &path)"
+.br
+.ti -1c
+.RI "void \fBincreaseReference\fP ()"
+.br
+.ti -1c
+.RI "void \fBdecreaseReference\fP ()"
+.br
+.ti -1c
+.RI "\fBSharedResource\fP (\fBSharedResource\fP &&)=default"
+.br
+.ti -1c
+.RI "\fBSharedResource\fP & \fBoperator=\fP (\fBSharedResource\fP &&)=default"
+.br
+.ti -1c
+.RI "\fBSharedResource\fP ()"
+.br
+.ti -1c
+.RI "\fBSharedResource\fP (const std::string &path)"
+.br
+.ti -1c
+.RI "\fBSharedResource\fP (RType &resource)"
+.br
+.ti -1c
+.RI "\fB~SharedResource\fP ()"
+.br
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "RType * \fBinstance\fP"
+.br
+.ti -1c
+.RI "int \fBreferenceCount\fP"
+.br
+.ti -1c
+.RI "bool \fBvalid\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SS "template<typename RType>class Zeta::SharedResource< RType >"
+Shared Resouce Template It defines a \fBResource\fP Type that will be shared among other Engine parts 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "template<typename RType> \fBZeta::SharedResource\fP< RType >::\fBSharedResource\fP (\fBSharedResource\fP< RType > &&)\fC [default]\fP"
+
+.SS "template<typename RType> \fBZeta::SharedResource\fP< RType >::\fBSharedResource\fP ()\fC [inline]\fP"
+
+.SS "template<typename RType> \fBZeta::SharedResource\fP< RType >::\fBSharedResource\fP (const std::string &path)\fC [inline]\fP"
+
+.SS "template<typename RType> \fBZeta::SharedResource\fP< RType >::\fBSharedResource\fP (RType &resource)\fC [inline]\fP"
+
+.SS "template<typename RType> \fBZeta::SharedResource\fP< RType >::~\fBSharedResource\fP ()\fC [inline]\fP"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "template<typename RType> void \fBZeta::SharedResource\fP< RType >::decreaseReference ()\fC [inline]\fP"
+
+.SS "template<typename RType> const RType& \fBZeta::SharedResource\fP< RType >::getInstance () const\fC [inline]\fP"
+
+.SS "template<typename RType> int \fBZeta::SharedResource\fP< RType >::getReferenceCount () const\fC [inline]\fP"
+Gets the Reference Count for this resource The Reference Count is a number of how many objects have a reference to this \fBResource\fP\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+The reference Count number 
+.RE
+.PP
+
+.SS "template<typename RType> void \fBZeta::SharedResource\fP< RType >::increaseReference ()\fC [inline]\fP"
+
+.SS "template<typename RType> bool \fBZeta::SharedResource\fP< RType >::isValid () const\fC [inline]\fP"
+We must make sure that the Template argument has \fBResource\fP as Base class Check whether the resource is Valid Valid means that the resource is loaded and can be used 
+.PP
+\fBReturns:\fP
+.RS 4
+true if the resource is valid for use 
+.RE
+.PP
+
+.SS "template<typename RType> void \fBZeta::SharedResource\fP< RType >::load (const std::string &path)\fC [inline]\fP"
+
+.SS "template<typename RType> \fBSharedResource\fP& \fBZeta::SharedResource\fP< RType >::operator= (\fBSharedResource\fP< RType > &&)\fC [default]\fP"
+
+.SS "template<typename RType> void \fBZeta::SharedResource\fP< RType >::setInstance (RType &instance)\fC [inline]\fP"
+
+.SS "template<typename RType> void \fBZeta::SharedResource\fP< RType >::setValid (boolvalid)\fC [inline]\fP"
+Set whether the resource is Valid Valid means that the resource is loaded and can be used 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIvalid\fP The value to assign to the valid falg 
+.RE
+.PP
+
+.SH "Member Data Documentation"
+.PP 
+.SS "template<typename RType> RType* \fBZeta::SharedResource\fP< RType >::instance\fC [private]\fP"
+
+.SS "template<typename RType> int \fBZeta::SharedResource\fP< RType >::referenceCount\fC [private]\fP"
+
+.SS "template<typename RType> bool \fBZeta::SharedResource\fP< RType >::valid\fC [private]\fP"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Zeta from the source code\&.

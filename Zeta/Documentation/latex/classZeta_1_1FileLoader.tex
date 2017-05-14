@@ -1,0 +1,63 @@
+\hypertarget{classZeta_1_1FileLoader}{\section{Zeta\+:\+:File\+Loader Class Reference}
+\label{classZeta_1_1FileLoader}\index{Zeta\+::\+File\+Loader@{Zeta\+::\+File\+Loader}}
+}
+
+
+{\ttfamily \#include $<$File\+Loader.\+hpp$>$}
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structZeta_1_1FileLoader_1_1FileStat}{File\+Stat}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{structZeta_1_1FileLoader_1_1FileStat}{File\+Stat} \hyperlink{classZeta_1_1FileLoader_a6b0fb3a642afb9d316e75b88b00d45e0}{Load} (const char $\ast$path)
+\item 
+static bool \hyperlink{classZeta_1_1FileLoader_aad604fa6b1626be357d14d2e6795b026}{file\+Exists} (const char $\ast$path)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Interface for loading files 
+
+\subsection{Member Function Documentation}
+\hypertarget{classZeta_1_1FileLoader_aad604fa6b1626be357d14d2e6795b026}{\index{Zeta\+::\+File\+Loader@{Zeta\+::\+File\+Loader}!file\+Exists@{file\+Exists}}
+\index{file\+Exists@{file\+Exists}!Zeta\+::\+File\+Loader@{Zeta\+::\+File\+Loader}}
+\subsubsection[{file\+Exists}]{\setlength{\rightskip}{0pt plus 5cm}static bool Zeta\+::\+File\+Loader\+::file\+Exists (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{path}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classZeta_1_1FileLoader_aad604fa6b1626be357d14d2e6795b026}
+Checks if the \hyperlink{classZeta_1_1File}{File} exits 
+\begin{DoxyParams}{Parameters}
+{\em The} & filename to check \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the file exists 
+\end{DoxyReturn}
+\hypertarget{classZeta_1_1FileLoader_a6b0fb3a642afb9d316e75b88b00d45e0}{\index{Zeta\+::\+File\+Loader@{Zeta\+::\+File\+Loader}!Load@{Load}}
+\index{Load@{Load}!Zeta\+::\+File\+Loader@{Zeta\+::\+File\+Loader}}
+\subsubsection[{Load}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf File\+Stat} Zeta\+::\+File\+Loader\+::\+Load (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{path}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classZeta_1_1FileLoader_a6b0fb3a642afb9d316e75b88b00d45e0}
+Static Function that Loads a \hyperlink{classZeta_1_1File}{File} to memory \begin{DoxySeeAlso}{See also}
+\hyperlink{structZeta_1_1FileLoader_1_1FileStat}{File\+Stat} 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+{\em path} & The filename to load \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The \hyperlink{structZeta_1_1FileLoader_1_1FileStat}{File\+Stat} of the \hyperlink{classZeta_1_1File}{File} 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Zeta/\+Library\+Binders/\+Loaders/\hyperlink{FileLoader_8hpp}{File\+Loader.\+hpp}\end{DoxyCompactItemize}

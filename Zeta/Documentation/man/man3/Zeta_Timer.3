@@ -1,0 +1,124 @@
+.TH "Zeta::Timer" 3 "Wed Feb 10 2016" "Zeta" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Zeta::Timer \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Timer\&.hpp>\fP
+.PP
+Inherits \fBZeta::Updateable\fP, and \fBZeta::LuaPushable\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBFloat\fP \fBgetMaxTime\fP () const "
+.br
+.ti -1c
+.RI "void \fBsetMaxTime\fP (\fBFloat\fP \fBmaxTime\fP)"
+.br
+.ti -1c
+.RI "\fBFloat\fP \fBgetRemainingTime\fP () const "
+.br
+.ti -1c
+.RI "void \fBsetRemainingTime\fP (\fBFloat\fP \fBremainingTime\fP)"
+.br
+.ti -1c
+.RI "bool \fBisOver\fP () const "
+.br
+.ti -1c
+.RI "bool \fBisRunning\fP () const "
+.br
+.ti -1c
+.RI "void \fBstart\fP ()"
+.br
+.ti -1c
+.RI "void \fBpause\fP ()"
+.br
+.ti -1c
+.RI "void \fBreset\fP ()"
+.br
+.ti -1c
+.RI "void \fBupdate\fP (\fBFloat\fP elapsedTime)"
+.br
+.ti -1c
+.RI "void \fBsetCallback\fP (\fBlua_Object\fP func)"
+.br
+.ti -1c
+.RI "void \fBpushToLua\fP (lua_State *lstate)"
+.br
+.ti -1c
+.RI "\fBTimer\fP (\fBFloat\fP \fBmaxTime\fP)"
+.br
+.ti -1c
+.RI "\fB~Timer\fP ()"
+.br
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBLuaFunctor\fP \fBcallback\fP"
+.br
+.ti -1c
+.RI "\fBFloat\fP \fBmaxTime\fP"
+.br
+.ti -1c
+.RI "\fBFloat\fP \fBremainingTime\fP"
+.br
+.ti -1c
+.RI "bool \fBrunning\fP"
+.br
+.in -1c
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Zeta::Timer::Timer (\fBFloat\fPmaxTime)"
+
+.SS "Zeta::Timer::~Timer ()"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "\fBFloat\fP Zeta::Timer::getMaxTime () const\fC [inline]\fP"
+
+.SS "\fBFloat\fP Zeta::Timer::getRemainingTime () const\fC [inline]\fP"
+
+.SS "bool Zeta::Timer::isOver () const\fC [inline]\fP"
+
+.SS "bool Zeta::Timer::isRunning () const\fC [inline]\fP"
+
+.SS "void Zeta::Timer::pause ()\fC [inline]\fP"
+
+.SS "void Zeta::Timer::pushToLua (lua_State *lstate)\fC [virtual]\fP"
+
+.PP
+Implements \fBZeta::LuaPushable\fP\&.
+.SS "void Zeta::Timer::reset ()\fC [inline]\fP"
+
+.SS "void Zeta::Timer::setCallback (\fBlua_Object\fPfunc)"
+
+.SS "void Zeta::Timer::setMaxTime (\fBFloat\fPmaxTime)\fC [inline]\fP"
+
+.SS "void Zeta::Timer::setRemainingTime (\fBFloat\fPremainingTime)\fC [inline]\fP"
+
+.SS "void Zeta::Timer::start ()\fC [inline]\fP"
+
+.SS "void Zeta::Timer::update (\fBFloat\fPelapsedTime)\fC [inline]\fP, \fC [virtual]\fP"
+
+.PP
+Implements \fBZeta::Updateable\fP\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "\fBLuaFunctor\fP Zeta::Timer::callback\fC [private]\fP"
+
+.SS "\fBFloat\fP Zeta::Timer::maxTime\fC [private]\fP"
+
+.SS "\fBFloat\fP Zeta::Timer::remainingTime\fC [private]\fP"
+
+.SS "bool Zeta::Timer::running\fC [private]\fP"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Zeta from the source code\&.

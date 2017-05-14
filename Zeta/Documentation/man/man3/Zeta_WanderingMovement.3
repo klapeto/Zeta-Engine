@@ -1,0 +1,113 @@
+.TH "Zeta::WanderingMovement" 3 "Wed Feb 10 2016" "Zeta" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Zeta::WanderingMovement \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <WanderingMovement\&.hpp>\fP
+.PP
+Inherits \fBZeta::Behaviour\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "const std::string & \fBgetIdleAction\fP () const "
+.br
+.ti -1c
+.RI "void \fBsetIdleAction\fP (const std::string &\fBidleAction\fP)"
+.br
+.ti -1c
+.RI "void \fBupdate\fP (\fBFloat\fP elapsedTime)"
+.br
+.ti -1c
+.RI "void \fBonDeath\fP ()"
+.br
+.ti -1c
+.RI "\fBWanderingMovement\fP (const std::string &action, \fBLifeform\fP &\fBowner\fP, \fBFloat\fP minWaitTime=1\&.0f, Float maxWaitTime=4\&.0f, Float maxDistance=500)"
+.br
+.ti -1c
+.RI "\fB~WanderingMovement\fP ()"
+.br
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "std::string \fBidleAction\fP"
+.br
+.ti -1c
+.RI "std::default_random_engine \fBgenerator\fP"
+.br
+.ti -1c
+.RI "std::uniform_real_distribution
+.br
+< \fBFloat\fP > \fBtimeRandomizer\fP"
+.br
+.ti -1c
+.RI "std::uniform_real_distribution
+.br
+< \fBFloat\fP > \fBactionRandomizer\fP"
+.br
+.ti -1c
+.RI "std::uniform_int_distribution
+.br
+< int > \fBxBounds\fP"
+.br
+.ti -1c
+.RI "std::uniform_int_distribution
+.br
+< int > \fByBounds\fP"
+.br
+.ti -1c
+.RI "\fBFloat\fP \fBwaitTime\fP"
+.br
+.ti -1c
+.RI "\fBFloat\fP \fBactionWaitTime\fP"
+.br
+.in -1c
+.SS "Additional Inherited Members"
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Zeta::WanderingMovement::WanderingMovement (const std::string &action, \fBLifeform\fP &owner, \fBFloat\fPminWaitTime = \fC1\&.0f\fP, \fBFloat\fPmaxWaitTime = \fC4\&.0f\fP, \fBFloat\fPmaxDistance = \fC500\fP)"
+
+.SS "Zeta::WanderingMovement::~WanderingMovement ()"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "const std::string& Zeta::WanderingMovement::getIdleAction () const\fC [inline]\fP"
+
+.SS "void Zeta::WanderingMovement::onDeath ()\fC [inline]\fP, \fC [virtual]\fP"
+
+.PP
+Implements \fBZeta::Behaviour\fP\&.
+.SS "void Zeta::WanderingMovement::setIdleAction (const std::string &idleAction)\fC [inline]\fP"
+
+.SS "void Zeta::WanderingMovement::update (\fBFloat\fPelapsedTime)\fC [virtual]\fP"
+
+.PP
+Implements \fBZeta::Updateable\fP\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "std::uniform_real_distribution<\fBFloat\fP> Zeta::WanderingMovement::actionRandomizer\fC [private]\fP"
+
+.SS "\fBFloat\fP Zeta::WanderingMovement::actionWaitTime\fC [private]\fP"
+
+.SS "std::default_random_engine Zeta::WanderingMovement::generator\fC [private]\fP"
+
+.SS "std::string Zeta::WanderingMovement::idleAction\fC [private]\fP"
+
+.SS "std::uniform_real_distribution<\fBFloat\fP> Zeta::WanderingMovement::timeRandomizer\fC [private]\fP"
+
+.SS "\fBFloat\fP Zeta::WanderingMovement::waitTime\fC [private]\fP"
+
+.SS "std::uniform_int_distribution<int> Zeta::WanderingMovement::xBounds\fC [private]\fP"
+
+.SS "std::uniform_int_distribution<int> Zeta::WanderingMovement::yBounds\fC [private]\fP"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Zeta from the source code\&.

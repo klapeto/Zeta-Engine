@@ -1,0 +1,157 @@
+\hypertarget{classZeta_1_1WanderingMovement}{\section{Zeta\+:\+:Wandering\+Movement Class Reference}
+\label{classZeta_1_1WanderingMovement}\index{Zeta\+::\+Wandering\+Movement@{Zeta\+::\+Wandering\+Movement}}
+}
+
+
+{\ttfamily \#include $<$Wandering\+Movement.\+hpp$>$}
+
+
+
+Inheritance diagram for Zeta\+:\+:Wandering\+Movement\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=214pt]{classZeta_1_1WanderingMovement__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Zeta\+:\+:Wandering\+Movement\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classZeta_1_1WanderingMovement__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+const std\+::string \& \hyperlink{classZeta_1_1WanderingMovement_ad92f415528c1f7e8fc967229362435da}{get\+Idle\+Action} () const 
+\item 
+void \hyperlink{classZeta_1_1WanderingMovement_a75ab74025e791ba8a0db8a59a1e8a054}{set\+Idle\+Action} (const std\+::string \&\hyperlink{classZeta_1_1WanderingMovement_a210f9adaeff521f33dd201fcaf741586}{idle\+Action})
+\item 
+void \hyperlink{classZeta_1_1WanderingMovement_a15a7e60d70d4e37fc53f151be29d9bef}{update} (\hyperlink{namespaceZeta_a1e0a1265f9b3bd3075fb0fabd39088ba}{Float} elapsed\+Time)
+\item 
+void \hyperlink{classZeta_1_1WanderingMovement_a1940a0d9b48694a37c4cd022646c3af1}{on\+Death} ()
+\item 
+\hyperlink{classZeta_1_1WanderingMovement_adc5111b62fe398b9f261cfc0bcc520f0}{Wandering\+Movement} (const std\+::string \&action, \hyperlink{classZeta_1_1Lifeform}{Lifeform} \&\hyperlink{classZeta_1_1Behaviour_ad32d56994e4e09e01ef86bcbb5c85e0a}{owner}, \hyperlink{namespaceZeta_a1e0a1265f9b3bd3075fb0fabd39088ba}{Float} min\+Wait\+Time=1.\+0f, Float max\+Wait\+Time=4.\+0f, Float max\+Distance=500)
+\item 
+\hyperlink{classZeta_1_1WanderingMovement_a8353fffff2e5e4325bb0f5463d507db7}{$\sim$\+Wandering\+Movement} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \hyperlink{classZeta_1_1WanderingMovement_a210f9adaeff521f33dd201fcaf741586}{idle\+Action}
+\item 
+std\+::default\+\_\+random\+\_\+engine \hyperlink{classZeta_1_1WanderingMovement_a75080229ace2e55afe18ef6f4467423a}{generator}
+\item 
+std\+::uniform\+\_\+real\+\_\+distribution\\*
+$<$ \hyperlink{namespaceZeta_a1e0a1265f9b3bd3075fb0fabd39088ba}{Float} $>$ \hyperlink{classZeta_1_1WanderingMovement_adf4cc859f2b1bf25264282b67a4f31cf}{time\+Randomizer}
+\item 
+std\+::uniform\+\_\+real\+\_\+distribution\\*
+$<$ \hyperlink{namespaceZeta_a1e0a1265f9b3bd3075fb0fabd39088ba}{Float} $>$ \hyperlink{classZeta_1_1WanderingMovement_af47c068896582706813ad211bfc38a6b}{action\+Randomizer}
+\item 
+std\+::uniform\+\_\+int\+\_\+distribution\\*
+$<$ int $>$ \hyperlink{classZeta_1_1WanderingMovement_acf82ca048daf641c7e961495d549fe20}{x\+Bounds}
+\item 
+std\+::uniform\+\_\+int\+\_\+distribution\\*
+$<$ int $>$ \hyperlink{classZeta_1_1WanderingMovement_a860655a4bedc3d86b8d73409fa0a51b8}{y\+Bounds}
+\item 
+\hyperlink{namespaceZeta_a1e0a1265f9b3bd3075fb0fabd39088ba}{Float} \hyperlink{classZeta_1_1WanderingMovement_ab6b10c55a9ef6c5f0714f88634401a37}{wait\+Time}
+\item 
+\hyperlink{namespaceZeta_a1e0a1265f9b3bd3075fb0fabd39088ba}{Float} \hyperlink{classZeta_1_1WanderingMovement_a81546d4e7aa3167f9d29070632e484cd}{action\+Wait\+Time}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classZeta_1_1WanderingMovement_adc5111b62fe398b9f261cfc0bcc520f0}{\index{Zeta\+::\+Wandering\+Movement@{Zeta\+::\+Wandering\+Movement}!Wandering\+Movement@{Wandering\+Movement}}
+\index{Wandering\+Movement@{Wandering\+Movement}!Zeta\+::\+Wandering\+Movement@{Zeta\+::\+Wandering\+Movement}}
+\subsubsection[{Wandering\+Movement}]{\setlength{\rightskip}{0pt plus 5cm}Zeta\+::\+Wandering\+Movement\+::\+Wandering\+Movement (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{action, }
+\item[{{\bf Lifeform} \&}]{owner, }
+\item[{{\bf Float}}]{min\+Wait\+Time = {\ttfamily 1.0f}, }
+\item[{{\bf Float}}]{max\+Wait\+Time = {\ttfamily 4.0f}, }
+\item[{{\bf Float}}]{max\+Distance = {\ttfamily 500}}
+\end{DoxyParamCaption}
+)}}\label{classZeta_1_1WanderingMovement_adc5111b62fe398b9f261cfc0bcc520f0}
+\hypertarget{classZeta_1_1WanderingMovement_a8353fffff2e5e4325bb0f5463d507db7}{\index{Zeta\+::\+Wandering\+Movement@{Zeta\+::\+Wandering\+Movement}!````~Wandering\+Movement@{$\sim$\+Wandering\+Movement}}
+\index{````~Wandering\+Movement@{$\sim$\+Wandering\+Movement}!Zeta\+::\+Wandering\+Movement@{Zeta\+::\+Wandering\+Movement}}
+\subsubsection[{$\sim$\+Wandering\+Movement}]{\setlength{\rightskip}{0pt plus 5cm}Zeta\+::\+Wandering\+Movement\+::$\sim$\+Wandering\+Movement (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classZeta_1_1WanderingMovement_a8353fffff2e5e4325bb0f5463d507db7}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classZeta_1_1WanderingMovement_ad92f415528c1f7e8fc967229362435da}{\index{Zeta\+::\+Wandering\+Movement@{Zeta\+::\+Wandering\+Movement}!get\+Idle\+Action@{get\+Idle\+Action}}
+\index{get\+Idle\+Action@{get\+Idle\+Action}!Zeta\+::\+Wandering\+Movement@{Zeta\+::\+Wandering\+Movement}}
+\subsubsection[{get\+Idle\+Action}]{\setlength{\rightskip}{0pt plus 5cm}const std\+::string\& Zeta\+::\+Wandering\+Movement\+::get\+Idle\+Action (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1WanderingMovement_ad92f415528c1f7e8fc967229362435da}
+\hypertarget{classZeta_1_1WanderingMovement_a1940a0d9b48694a37c4cd022646c3af1}{\index{Zeta\+::\+Wandering\+Movement@{Zeta\+::\+Wandering\+Movement}!on\+Death@{on\+Death}}
+\index{on\+Death@{on\+Death}!Zeta\+::\+Wandering\+Movement@{Zeta\+::\+Wandering\+Movement}}
+\subsubsection[{on\+Death}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+Wandering\+Movement\+::on\+Death (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classZeta_1_1WanderingMovement_a1940a0d9b48694a37c4cd022646c3af1}
+
+
+Implements \hyperlink{classZeta_1_1Behaviour_ac8c86b2e91f99441ee2e7de54e7d17d9}{Zeta\+::\+Behaviour}.
+
+\hypertarget{classZeta_1_1WanderingMovement_a75ab74025e791ba8a0db8a59a1e8a054}{\index{Zeta\+::\+Wandering\+Movement@{Zeta\+::\+Wandering\+Movement}!set\+Idle\+Action@{set\+Idle\+Action}}
+\index{set\+Idle\+Action@{set\+Idle\+Action}!Zeta\+::\+Wandering\+Movement@{Zeta\+::\+Wandering\+Movement}}
+\subsubsection[{set\+Idle\+Action}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+Wandering\+Movement\+::set\+Idle\+Action (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{idle\+Action}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1WanderingMovement_a75ab74025e791ba8a0db8a59a1e8a054}
+\hypertarget{classZeta_1_1WanderingMovement_a15a7e60d70d4e37fc53f151be29d9bef}{\index{Zeta\+::\+Wandering\+Movement@{Zeta\+::\+Wandering\+Movement}!update@{update}}
+\index{update@{update}!Zeta\+::\+Wandering\+Movement@{Zeta\+::\+Wandering\+Movement}}
+\subsubsection[{update}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+Wandering\+Movement\+::update (
+\begin{DoxyParamCaption}
+\item[{{\bf Float}}]{elapsed\+Time}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classZeta_1_1WanderingMovement_a15a7e60d70d4e37fc53f151be29d9bef}
+
+
+Implements \hyperlink{classZeta_1_1Updateable_af4006bfccb762454b4da08786ad93de0}{Zeta\+::\+Updateable}.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classZeta_1_1WanderingMovement_af47c068896582706813ad211bfc38a6b}{\index{Zeta\+::\+Wandering\+Movement@{Zeta\+::\+Wandering\+Movement}!action\+Randomizer@{action\+Randomizer}}
+\index{action\+Randomizer@{action\+Randomizer}!Zeta\+::\+Wandering\+Movement@{Zeta\+::\+Wandering\+Movement}}
+\subsubsection[{action\+Randomizer}]{\setlength{\rightskip}{0pt plus 5cm}std\+::uniform\+\_\+real\+\_\+distribution$<${\bf Float}$>$ Zeta\+::\+Wandering\+Movement\+::action\+Randomizer\hspace{0.3cm}{\ttfamily [private]}}}\label{classZeta_1_1WanderingMovement_af47c068896582706813ad211bfc38a6b}
+\hypertarget{classZeta_1_1WanderingMovement_a81546d4e7aa3167f9d29070632e484cd}{\index{Zeta\+::\+Wandering\+Movement@{Zeta\+::\+Wandering\+Movement}!action\+Wait\+Time@{action\+Wait\+Time}}
+\index{action\+Wait\+Time@{action\+Wait\+Time}!Zeta\+::\+Wandering\+Movement@{Zeta\+::\+Wandering\+Movement}}
+\subsubsection[{action\+Wait\+Time}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Float} Zeta\+::\+Wandering\+Movement\+::action\+Wait\+Time\hspace{0.3cm}{\ttfamily [private]}}}\label{classZeta_1_1WanderingMovement_a81546d4e7aa3167f9d29070632e484cd}
+\hypertarget{classZeta_1_1WanderingMovement_a75080229ace2e55afe18ef6f4467423a}{\index{Zeta\+::\+Wandering\+Movement@{Zeta\+::\+Wandering\+Movement}!generator@{generator}}
+\index{generator@{generator}!Zeta\+::\+Wandering\+Movement@{Zeta\+::\+Wandering\+Movement}}
+\subsubsection[{generator}]{\setlength{\rightskip}{0pt plus 5cm}std\+::default\+\_\+random\+\_\+engine Zeta\+::\+Wandering\+Movement\+::generator\hspace{0.3cm}{\ttfamily [private]}}}\label{classZeta_1_1WanderingMovement_a75080229ace2e55afe18ef6f4467423a}
+\hypertarget{classZeta_1_1WanderingMovement_a210f9adaeff521f33dd201fcaf741586}{\index{Zeta\+::\+Wandering\+Movement@{Zeta\+::\+Wandering\+Movement}!idle\+Action@{idle\+Action}}
+\index{idle\+Action@{idle\+Action}!Zeta\+::\+Wandering\+Movement@{Zeta\+::\+Wandering\+Movement}}
+\subsubsection[{idle\+Action}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string Zeta\+::\+Wandering\+Movement\+::idle\+Action\hspace{0.3cm}{\ttfamily [private]}}}\label{classZeta_1_1WanderingMovement_a210f9adaeff521f33dd201fcaf741586}
+\hypertarget{classZeta_1_1WanderingMovement_adf4cc859f2b1bf25264282b67a4f31cf}{\index{Zeta\+::\+Wandering\+Movement@{Zeta\+::\+Wandering\+Movement}!time\+Randomizer@{time\+Randomizer}}
+\index{time\+Randomizer@{time\+Randomizer}!Zeta\+::\+Wandering\+Movement@{Zeta\+::\+Wandering\+Movement}}
+\subsubsection[{time\+Randomizer}]{\setlength{\rightskip}{0pt plus 5cm}std\+::uniform\+\_\+real\+\_\+distribution$<${\bf Float}$>$ Zeta\+::\+Wandering\+Movement\+::time\+Randomizer\hspace{0.3cm}{\ttfamily [private]}}}\label{classZeta_1_1WanderingMovement_adf4cc859f2b1bf25264282b67a4f31cf}
+\hypertarget{classZeta_1_1WanderingMovement_ab6b10c55a9ef6c5f0714f88634401a37}{\index{Zeta\+::\+Wandering\+Movement@{Zeta\+::\+Wandering\+Movement}!wait\+Time@{wait\+Time}}
+\index{wait\+Time@{wait\+Time}!Zeta\+::\+Wandering\+Movement@{Zeta\+::\+Wandering\+Movement}}
+\subsubsection[{wait\+Time}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Float} Zeta\+::\+Wandering\+Movement\+::wait\+Time\hspace{0.3cm}{\ttfamily [private]}}}\label{classZeta_1_1WanderingMovement_ab6b10c55a9ef6c5f0714f88634401a37}
+\hypertarget{classZeta_1_1WanderingMovement_acf82ca048daf641c7e961495d549fe20}{\index{Zeta\+::\+Wandering\+Movement@{Zeta\+::\+Wandering\+Movement}!x\+Bounds@{x\+Bounds}}
+\index{x\+Bounds@{x\+Bounds}!Zeta\+::\+Wandering\+Movement@{Zeta\+::\+Wandering\+Movement}}
+\subsubsection[{x\+Bounds}]{\setlength{\rightskip}{0pt plus 5cm}std\+::uniform\+\_\+int\+\_\+distribution$<$int$>$ Zeta\+::\+Wandering\+Movement\+::x\+Bounds\hspace{0.3cm}{\ttfamily [private]}}}\label{classZeta_1_1WanderingMovement_acf82ca048daf641c7e961495d549fe20}
+\hypertarget{classZeta_1_1WanderingMovement_a860655a4bedc3d86b8d73409fa0a51b8}{\index{Zeta\+::\+Wandering\+Movement@{Zeta\+::\+Wandering\+Movement}!y\+Bounds@{y\+Bounds}}
+\index{y\+Bounds@{y\+Bounds}!Zeta\+::\+Wandering\+Movement@{Zeta\+::\+Wandering\+Movement}}
+\subsubsection[{y\+Bounds}]{\setlength{\rightskip}{0pt plus 5cm}std\+::uniform\+\_\+int\+\_\+distribution$<$int$>$ Zeta\+::\+Wandering\+Movement\+::y\+Bounds\hspace{0.3cm}{\ttfamily [private]}}}\label{classZeta_1_1WanderingMovement_a860655a4bedc3d86b8d73409fa0a51b8}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Zeta/\+Core/\+R\+P\+G\+Classes/\+A\+I/\hyperlink{WanderingMovement_8hpp}{Wandering\+Movement.\+hpp}\end{DoxyCompactItemize}

@@ -1,0 +1,238 @@
+\hypertarget{classZeta_1_1SoundInstance}{\section{Zeta\+:\+:Sound\+Instance Class Reference}
+\label{classZeta_1_1SoundInstance}\index{Zeta\+::\+Sound\+Instance@{Zeta\+::\+Sound\+Instance}}
+}
+
+
+{\ttfamily \#include $<$Sound\+Instance.\+hpp$>$}
+
+
+
+Inheritance diagram for Zeta\+:\+:Sound\+Instance\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=341pt]{classZeta_1_1SoundInstance__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Zeta\+:\+:Sound\+Instance\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classZeta_1_1SoundInstance__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{classZeta_1_1SoundInstance_a9c0c29e0bd01fbd1ae9704153ee061d4}{play} ()=0
+\item 
+virtual void \hyperlink{classZeta_1_1SoundInstance_ac373cb282c51c26b715568e5dbd28afe}{stop} ()=0
+\item 
+virtual void \hyperlink{classZeta_1_1SoundInstance_ab0223c560591b60ff283893c518b28b1}{set\+Loop} (bool value)=0
+\item 
+virtual void \hyperlink{classZeta_1_1SoundInstance_ad12e077da7bb16115ebff1405353834d}{set\+Gain} (float value)=0
+\item 
+virtual void \hyperlink{classZeta_1_1SoundInstance_a34b3034515461fd964bba4221ac56a29}{set\+Pan} (float value)=0
+\item 
+float \hyperlink{classZeta_1_1SoundInstance_af7af15c981c0f6230dcbb05eb1ad8586}{get\+Pan} () const 
+\item 
+bool \hyperlink{classZeta_1_1SoundInstance_a1fee274c2701140ba7d84c4c0163c042}{get\+Loop} () const 
+\item 
+float \hyperlink{classZeta_1_1SoundInstance_a8907cccaf49f73bffb6b48bbc60b9556}{get\+Gain} () const 
+\item 
+\hyperlink{classZeta_1_1SoundInstance_a5f03830c771b1ef79829f89bf5986806}{Sound\+Instance} (\hyperlink{classZeta_1_1SoundInstance}{Sound\+Instance} \&\&)=default
+\item 
+\hyperlink{classZeta_1_1SoundInstance}{Sound\+Instance} \& \hyperlink{classZeta_1_1SoundInstance_a94f956d0fd08725a3d1117be47ba78c1}{operator=} (\hyperlink{classZeta_1_1SoundInstance}{Sound\+Instance} \&\&)=default
+\item 
+void \hyperlink{classZeta_1_1SoundInstance_a8c6ae7df7fbd5a602bec4a80f40a6ccd}{push\+To\+Lua} (lua\+\_\+\+State $\ast$lstate)
+\item 
+\hyperlink{classZeta_1_1SoundInstance_a375ece8ce8d33105bc37d25d0aecf178}{Sound\+Instance} ()
+\item 
+virtual \hyperlink{classZeta_1_1SoundInstance_a56d82d0c43f4153b1e15ee8df123bc5e}{$\sim$\+Sound\+Instance} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const \hyperlink{classZeta_1_1Sound}{Sound} $\ast$ \hyperlink{classZeta_1_1SoundInstance_a1a11c5a5c711141061cda151207eb730}{parent\+Sound}
+\item 
+float \hyperlink{classZeta_1_1SoundInstance_acb82c5783574e56f82116574bea15e6d}{gain}
+\item 
+float \hyperlink{classZeta_1_1SoundInstance_a7635755856cabd34dd383bf8edddfdbb}{pan}
+\item 
+bool \hyperlink{classZeta_1_1SoundInstance_a22ccff32fba2ad1ea881a186c86f93c0}{loops}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{classZeta_1_1SoundInstance}{Sound\+Instance} Class These objects are created by Sounds to distribute the control to the rest parts of the Engine where they need this \hyperlink{classZeta_1_1Sound}{Sound}, rather control the \hyperlink{classZeta_1_1Sound}{Sound} itself and create Havoc when many parts need it at the same time. It sound behave as a copy of the sound. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classZeta_1_1SoundInstance_a5f03830c771b1ef79829f89bf5986806}{\index{Zeta\+::\+Sound\+Instance@{Zeta\+::\+Sound\+Instance}!Sound\+Instance@{Sound\+Instance}}
+\index{Sound\+Instance@{Sound\+Instance}!Zeta\+::\+Sound\+Instance@{Zeta\+::\+Sound\+Instance}}
+\subsubsection[{Sound\+Instance}]{\setlength{\rightskip}{0pt plus 5cm}Zeta\+::\+Sound\+Instance\+::\+Sound\+Instance (
+\begin{DoxyParamCaption}
+\item[{{\bf Sound\+Instance} \&\&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [default]}}}\label{classZeta_1_1SoundInstance_a5f03830c771b1ef79829f89bf5986806}
+\hypertarget{classZeta_1_1SoundInstance_a375ece8ce8d33105bc37d25d0aecf178}{\index{Zeta\+::\+Sound\+Instance@{Zeta\+::\+Sound\+Instance}!Sound\+Instance@{Sound\+Instance}}
+\index{Sound\+Instance@{Sound\+Instance}!Zeta\+::\+Sound\+Instance@{Zeta\+::\+Sound\+Instance}}
+\subsubsection[{Sound\+Instance}]{\setlength{\rightskip}{0pt plus 5cm}Zeta\+::\+Sound\+Instance\+::\+Sound\+Instance (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classZeta_1_1SoundInstance_a375ece8ce8d33105bc37d25d0aecf178}
+\hypertarget{classZeta_1_1SoundInstance_a56d82d0c43f4153b1e15ee8df123bc5e}{\index{Zeta\+::\+Sound\+Instance@{Zeta\+::\+Sound\+Instance}!````~Sound\+Instance@{$\sim$\+Sound\+Instance}}
+\index{````~Sound\+Instance@{$\sim$\+Sound\+Instance}!Zeta\+::\+Sound\+Instance@{Zeta\+::\+Sound\+Instance}}
+\subsubsection[{$\sim$\+Sound\+Instance}]{\setlength{\rightskip}{0pt plus 5cm}virtual Zeta\+::\+Sound\+Instance\+::$\sim$\+Sound\+Instance (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classZeta_1_1SoundInstance_a56d82d0c43f4153b1e15ee8df123bc5e}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classZeta_1_1SoundInstance_a8907cccaf49f73bffb6b48bbc60b9556}{\index{Zeta\+::\+Sound\+Instance@{Zeta\+::\+Sound\+Instance}!get\+Gain@{get\+Gain}}
+\index{get\+Gain@{get\+Gain}!Zeta\+::\+Sound\+Instance@{Zeta\+::\+Sound\+Instance}}
+\subsubsection[{get\+Gain}]{\setlength{\rightskip}{0pt plus 5cm}float Zeta\+::\+Sound\+Instance\+::get\+Gain (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1SoundInstance_a8907cccaf49f73bffb6b48bbc60b9556}
+Returns the value of the Gain \begin{DoxyReturn}{Returns}
+The Current gain 
+\end{DoxyReturn}
+\hypertarget{classZeta_1_1SoundInstance_a1fee274c2701140ba7d84c4c0163c042}{\index{Zeta\+::\+Sound\+Instance@{Zeta\+::\+Sound\+Instance}!get\+Loop@{get\+Loop}}
+\index{get\+Loop@{get\+Loop}!Zeta\+::\+Sound\+Instance@{Zeta\+::\+Sound\+Instance}}
+\subsubsection[{get\+Loop}]{\setlength{\rightskip}{0pt plus 5cm}bool Zeta\+::\+Sound\+Instance\+::get\+Loop (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1SoundInstance_a1fee274c2701140ba7d84c4c0163c042}
+Returns if the sound will Loop \begin{DoxyReturn}{Returns}
+true if the sound will Loop 
+\end{DoxyReturn}
+\hypertarget{classZeta_1_1SoundInstance_af7af15c981c0f6230dcbb05eb1ad8586}{\index{Zeta\+::\+Sound\+Instance@{Zeta\+::\+Sound\+Instance}!get\+Pan@{get\+Pan}}
+\index{get\+Pan@{get\+Pan}!Zeta\+::\+Sound\+Instance@{Zeta\+::\+Sound\+Instance}}
+\subsubsection[{get\+Pan}]{\setlength{\rightskip}{0pt plus 5cm}float Zeta\+::\+Sound\+Instance\+::get\+Pan (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1SoundInstance_af7af15c981c0f6230dcbb05eb1ad8586}
+Returns the value of the Pan \begin{DoxyReturn}{Returns}
+The Current pan 
+\end{DoxyReturn}
+\hypertarget{classZeta_1_1SoundInstance_a94f956d0fd08725a3d1117be47ba78c1}{\index{Zeta\+::\+Sound\+Instance@{Zeta\+::\+Sound\+Instance}!operator=@{operator=}}
+\index{operator=@{operator=}!Zeta\+::\+Sound\+Instance@{Zeta\+::\+Sound\+Instance}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Sound\+Instance}\& Zeta\+::\+Sound\+Instance\+::operator= (
+\begin{DoxyParamCaption}
+\item[{{\bf Sound\+Instance} \&\&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [default]}}}\label{classZeta_1_1SoundInstance_a94f956d0fd08725a3d1117be47ba78c1}
+\hypertarget{classZeta_1_1SoundInstance_a9c0c29e0bd01fbd1ae9704153ee061d4}{\index{Zeta\+::\+Sound\+Instance@{Zeta\+::\+Sound\+Instance}!play@{play}}
+\index{play@{play}!Zeta\+::\+Sound\+Instance@{Zeta\+::\+Sound\+Instance}}
+\subsubsection[{play}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Zeta\+::\+Sound\+Instance\+::play (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classZeta_1_1SoundInstance_a9c0c29e0bd01fbd1ae9704153ee061d4}
+Plays the sound 
+
+Implemented in \hyperlink{classZeta_1_1AllegroSoundInstance_a03445ff331168cd23b5943f324a5c0ce}{Zeta\+::\+Allegro\+Sound\+Instance}.
+
+\hypertarget{classZeta_1_1SoundInstance_a8c6ae7df7fbd5a602bec4a80f40a6ccd}{\index{Zeta\+::\+Sound\+Instance@{Zeta\+::\+Sound\+Instance}!push\+To\+Lua@{push\+To\+Lua}}
+\index{push\+To\+Lua@{push\+To\+Lua}!Zeta\+::\+Sound\+Instance@{Zeta\+::\+Sound\+Instance}}
+\subsubsection[{push\+To\+Lua}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+Sound\+Instance\+::push\+To\+Lua (
+\begin{DoxyParamCaption}
+\item[{lua\+\_\+\+State $\ast$}]{lstate}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classZeta_1_1SoundInstance_a8c6ae7df7fbd5a602bec4a80f40a6ccd}
+Pushes the \hyperlink{classZeta_1_1Object}{Object} to the Lua Environment 
+\begin{DoxyParams}{Parameters}
+{\em lstate} & The Lua Environment to push to. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classZeta_1_1LuaPushable_a0380ec9cff11f749e8eb67b51b8f82fc}{Zeta\+::\+Lua\+Pushable}.
+
+\hypertarget{classZeta_1_1SoundInstance_ad12e077da7bb16115ebff1405353834d}{\index{Zeta\+::\+Sound\+Instance@{Zeta\+::\+Sound\+Instance}!set\+Gain@{set\+Gain}}
+\index{set\+Gain@{set\+Gain}!Zeta\+::\+Sound\+Instance@{Zeta\+::\+Sound\+Instance}}
+\subsubsection[{set\+Gain}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Zeta\+::\+Sound\+Instance\+::set\+Gain (
+\begin{DoxyParamCaption}
+\item[{float}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classZeta_1_1SoundInstance_ad12e077da7bb16115ebff1405353834d}
+Sets the gain of the sound (Right of left) I\+M\+P\+O\+R\+T\+A\+N\+T! The field gain should set too! 
+\begin{DoxyParams}{Parameters}
+{\em value} & the gain of the sound to set \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{classZeta_1_1AllegroSoundInstance_a6775c3c2771979d75c9feb3f8bdab4c7}{Zeta\+::\+Allegro\+Sound\+Instance}.
+
+\hypertarget{classZeta_1_1SoundInstance_ab0223c560591b60ff283893c518b28b1}{\index{Zeta\+::\+Sound\+Instance@{Zeta\+::\+Sound\+Instance}!set\+Loop@{set\+Loop}}
+\index{set\+Loop@{set\+Loop}!Zeta\+::\+Sound\+Instance@{Zeta\+::\+Sound\+Instance}}
+\subsubsection[{set\+Loop}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Zeta\+::\+Sound\+Instance\+::set\+Loop (
+\begin{DoxyParamCaption}
+\item[{bool}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classZeta_1_1SoundInstance_ab0223c560591b60ff283893c518b28b1}
+Sets if the sound should repeat after it ended I\+M\+P\+O\+R\+T\+A\+N\+T! The field loops should set too! 
+\begin{DoxyParams}{Parameters}
+{\em value} & true if the sound should loop, otherwise false \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{classZeta_1_1AllegroSoundInstance_a8c61431dc1a8435a4c7916b66958f7aa}{Zeta\+::\+Allegro\+Sound\+Instance}.
+
+\hypertarget{classZeta_1_1SoundInstance_a34b3034515461fd964bba4221ac56a29}{\index{Zeta\+::\+Sound\+Instance@{Zeta\+::\+Sound\+Instance}!set\+Pan@{set\+Pan}}
+\index{set\+Pan@{set\+Pan}!Zeta\+::\+Sound\+Instance@{Zeta\+::\+Sound\+Instance}}
+\subsubsection[{set\+Pan}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Zeta\+::\+Sound\+Instance\+::set\+Pan (
+\begin{DoxyParamCaption}
+\item[{float}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classZeta_1_1SoundInstance_a34b3034515461fd964bba4221ac56a29}
+Sets the pan of the sound The pan takes a value between -\/1 to 1 where -\/1=Left, 0=Center, 1=Right I\+M\+P\+O\+R\+T\+A\+N\+T! The field pan should set too! 
+\begin{DoxyParams}{Parameters}
+{\em value} & the pan of the sound to set \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{classZeta_1_1AllegroSoundInstance_af1ed68d1916fde033a179da5cf83b9ec}{Zeta\+::\+Allegro\+Sound\+Instance}.
+
+\hypertarget{classZeta_1_1SoundInstance_ac373cb282c51c26b715568e5dbd28afe}{\index{Zeta\+::\+Sound\+Instance@{Zeta\+::\+Sound\+Instance}!stop@{stop}}
+\index{stop@{stop}!Zeta\+::\+Sound\+Instance@{Zeta\+::\+Sound\+Instance}}
+\subsubsection[{stop}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Zeta\+::\+Sound\+Instance\+::stop (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classZeta_1_1SoundInstance_ac373cb282c51c26b715568e5dbd28afe}
+Stops the sound if playing 
+
+Implemented in \hyperlink{classZeta_1_1AllegroSoundInstance_a35f836c6af4e94f3796ce2b3b87883b6}{Zeta\+::\+Allegro\+Sound\+Instance}.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classZeta_1_1SoundInstance_acb82c5783574e56f82116574bea15e6d}{\index{Zeta\+::\+Sound\+Instance@{Zeta\+::\+Sound\+Instance}!gain@{gain}}
+\index{gain@{gain}!Zeta\+::\+Sound\+Instance@{Zeta\+::\+Sound\+Instance}}
+\subsubsection[{gain}]{\setlength{\rightskip}{0pt plus 5cm}float Zeta\+::\+Sound\+Instance\+::gain\hspace{0.3cm}{\ttfamily [protected]}}}\label{classZeta_1_1SoundInstance_acb82c5783574e56f82116574bea15e6d}
+\hypertarget{classZeta_1_1SoundInstance_a22ccff32fba2ad1ea881a186c86f93c0}{\index{Zeta\+::\+Sound\+Instance@{Zeta\+::\+Sound\+Instance}!loops@{loops}}
+\index{loops@{loops}!Zeta\+::\+Sound\+Instance@{Zeta\+::\+Sound\+Instance}}
+\subsubsection[{loops}]{\setlength{\rightskip}{0pt plus 5cm}bool Zeta\+::\+Sound\+Instance\+::loops\hspace{0.3cm}{\ttfamily [protected]}}}\label{classZeta_1_1SoundInstance_a22ccff32fba2ad1ea881a186c86f93c0}
+\hypertarget{classZeta_1_1SoundInstance_a7635755856cabd34dd383bf8edddfdbb}{\index{Zeta\+::\+Sound\+Instance@{Zeta\+::\+Sound\+Instance}!pan@{pan}}
+\index{pan@{pan}!Zeta\+::\+Sound\+Instance@{Zeta\+::\+Sound\+Instance}}
+\subsubsection[{pan}]{\setlength{\rightskip}{0pt plus 5cm}float Zeta\+::\+Sound\+Instance\+::pan\hspace{0.3cm}{\ttfamily [protected]}}}\label{classZeta_1_1SoundInstance_a7635755856cabd34dd383bf8edddfdbb}
+\hypertarget{classZeta_1_1SoundInstance_a1a11c5a5c711141061cda151207eb730}{\index{Zeta\+::\+Sound\+Instance@{Zeta\+::\+Sound\+Instance}!parent\+Sound@{parent\+Sound}}
+\index{parent\+Sound@{parent\+Sound}!Zeta\+::\+Sound\+Instance@{Zeta\+::\+Sound\+Instance}}
+\subsubsection[{parent\+Sound}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Sound}$\ast$ Zeta\+::\+Sound\+Instance\+::parent\+Sound\hspace{0.3cm}{\ttfamily [protected]}}}\label{classZeta_1_1SoundInstance_a1a11c5a5c711141061cda151207eb730}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Zeta/\+Core/\+Resource\+Classes/\hyperlink{SoundInstance_8hpp}{Sound\+Instance.\+hpp}\end{DoxyCompactItemize}

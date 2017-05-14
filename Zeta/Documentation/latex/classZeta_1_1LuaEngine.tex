@@ -1,0 +1,253 @@
+\hypertarget{classZeta_1_1LuaEngine}{\section{Zeta\+:\+:Lua\+Engine Class Reference}
+\label{classZeta_1_1LuaEngine}\index{Zeta\+::\+Lua\+Engine@{Zeta\+::\+Lua\+Engine}}
+}
+
+
+{\ttfamily \#include $<$Lua\+Engine.\+hpp$>$}
+
+
+
+Inheritance diagram for Zeta\+:\+:Lua\+Engine\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=190pt]{classZeta_1_1LuaEngine__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Zeta\+:\+:Lua\+Engine\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=190pt]{classZeta_1_1LuaEngine__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+lua\+\_\+\+State $\ast$ \hyperlink{classZeta_1_1LuaEngine_a6243b6e56304a41c5c46808b8f405110}{get\+State} ()
+\item 
+void \hyperlink{classZeta_1_1LuaEngine_a3c24040b93a059c70a79ccd0380b6771}{include\+Path} (std\+::string path)
+\item 
+int \hyperlink{classZeta_1_1LuaEngine_a4c6758aaf0f4fec27032f6d032d8a45c}{get\+Reference} (int index)
+\item 
+int \hyperlink{classZeta_1_1LuaEngine_ac196eab11779d991559d94f89533523f}{get\+Reference} (const std\+::string \&full\+Name)
+\item 
+void \hyperlink{classZeta_1_1LuaEngine_abced20bfcc3b0b9382a891f3f3e5458c}{increase\+Reference} (int reference)
+\item 
+void \hyperlink{classZeta_1_1LuaEngine_ad36d9187ac9a5d794722169f5b916f59}{decrease\+Reference} (int reference)
+\item 
+void \hyperlink{classZeta_1_1LuaEngine_ad7ea8746b8018280f07393a011486738}{release\+Reference} (int lua\+Reference)
+\item 
+void \hyperlink{classZeta_1_1LuaEngine_a7e14b6a034d71ee1691d967317ae5f78}{push\+To\+Stack\+Value} (const std\+::string \&full\+Name)
+\item 
+void \hyperlink{classZeta_1_1LuaEngine_aae892ca8271565dfc2438bf0794d52b4}{register\+Function} (const std\+::string \&name, \hyperlink{ZetaConfig_8hpp_a5f5bedea265eccf43c6e404e020988ce}{lua\+\_\+\+C\+Function} func)
+\item 
+void \hyperlink{classZeta_1_1LuaEngine_ab65326b6249a6da8a4113c708fb07d80}{excecute\+Script\+File} (const std\+::string \&path, bool force=false)
+\item 
+void \hyperlink{classZeta_1_1LuaEngine_a1d8c46316ba05608992740d8f6624e06}{perform\+Garbage\+Collection} ()
+\item 
+\hyperlink{classZeta_1_1LuaEngine_ad7b697451f5321df636f807c01b40939}{$\sim$\+Lua\+Engine} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classZeta_1_1LuaEngine_a016308cae95287e1f5ca00592db9169b}{Lua\+Engine} ()
+\item 
+void \hyperlink{classZeta_1_1LuaEngine_a26ce27255b6b26603ffc08251f7043e7}{create\+State} ()
+\item 
+void \hyperlink{classZeta_1_1LuaEngine_a5ab62f14dc4cad15e2653b8af65abb3f}{destroy\+State} ()
+\item 
+void \hyperlink{classZeta_1_1LuaEngine_a08d7bed35fde73a1f6aa5c68c1f687ca}{get\+Function} (const std\+::string \&full\+Name)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::unordered\+\_\+set$<$ std\+::string $>$ \hyperlink{classZeta_1_1LuaEngine_ac2c806337f55ab7d87e09fdbb052c4ce}{excecuted\+Scripts}
+\item 
+std\+::unordered\+\_\+map$<$ int, \\*
+std\+::string $>$ \hyperlink{classZeta_1_1LuaEngine_ab5b777346b1ce3fbb8848d72eb3657ad}{named\+References}
+\item 
+std\+::unordered\+\_\+map$<$ int, int $>$ \hyperlink{classZeta_1_1LuaEngine_a6ae178c96d635fedd5de66fca06af4b2}{shared\+References}
+\item 
+lua\+\_\+\+State $\ast$ \hyperlink{classZeta_1_1LuaEngine_a3ea9f2a55e1fe3037f542c88a2b1c652}{lstate}
+\item 
+int \hyperlink{classZeta_1_1LuaEngine_a8ca9a31f2d28f6c0928cebe3990aef4b}{arg\+C}
+\item 
+int \hyperlink{classZeta_1_1LuaEngine_a7d5faf4154dcd428f46435070bb6972f}{stack\+Top}
+\item 
+bool \hyperlink{classZeta_1_1LuaEngine_a9bb8e36de6cd25f3d8c9acec396f00a6}{func\+Pushed}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classZeta_1_1LuaEngine_af18a9ee98e70982bfe2975391d7221a5}{System}
+\item 
+class \hyperlink{classZeta_1_1LuaEngine_a2fa95d69b32a77fffa4b730679a8b08c}{Single\+Instanced}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+The global Lua State. (Singleton) T\+O\+D\+O\+: Cleanup... 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classZeta_1_1LuaEngine_ad7b697451f5321df636f807c01b40939}{\index{Zeta\+::\+Lua\+Engine@{Zeta\+::\+Lua\+Engine}!````~Lua\+Engine@{$\sim$\+Lua\+Engine}}
+\index{````~Lua\+Engine@{$\sim$\+Lua\+Engine}!Zeta\+::\+Lua\+Engine@{Zeta\+::\+Lua\+Engine}}
+\subsubsection[{$\sim$\+Lua\+Engine}]{\setlength{\rightskip}{0pt plus 5cm}Zeta\+::\+Lua\+Engine\+::$\sim$\+Lua\+Engine (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classZeta_1_1LuaEngine_ad7b697451f5321df636f807c01b40939}
+\hypertarget{classZeta_1_1LuaEngine_a016308cae95287e1f5ca00592db9169b}{\index{Zeta\+::\+Lua\+Engine@{Zeta\+::\+Lua\+Engine}!Lua\+Engine@{Lua\+Engine}}
+\index{Lua\+Engine@{Lua\+Engine}!Zeta\+::\+Lua\+Engine@{Zeta\+::\+Lua\+Engine}}
+\subsubsection[{Lua\+Engine}]{\setlength{\rightskip}{0pt plus 5cm}Zeta\+::\+Lua\+Engine\+::\+Lua\+Engine (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classZeta_1_1LuaEngine_a016308cae95287e1f5ca00592db9169b}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classZeta_1_1LuaEngine_a26ce27255b6b26603ffc08251f7043e7}{\index{Zeta\+::\+Lua\+Engine@{Zeta\+::\+Lua\+Engine}!create\+State@{create\+State}}
+\index{create\+State@{create\+State}!Zeta\+::\+Lua\+Engine@{Zeta\+::\+Lua\+Engine}}
+\subsubsection[{create\+State}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+Lua\+Engine\+::create\+State (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classZeta_1_1LuaEngine_a26ce27255b6b26603ffc08251f7043e7}
+\hypertarget{classZeta_1_1LuaEngine_ad36d9187ac9a5d794722169f5b916f59}{\index{Zeta\+::\+Lua\+Engine@{Zeta\+::\+Lua\+Engine}!decrease\+Reference@{decrease\+Reference}}
+\index{decrease\+Reference@{decrease\+Reference}!Zeta\+::\+Lua\+Engine@{Zeta\+::\+Lua\+Engine}}
+\subsubsection[{decrease\+Reference}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+Lua\+Engine\+::decrease\+Reference (
+\begin{DoxyParamCaption}
+\item[{int}]{reference}
+\end{DoxyParamCaption}
+)}}\label{classZeta_1_1LuaEngine_ad36d9187ac9a5d794722169f5b916f59}
+\hypertarget{classZeta_1_1LuaEngine_a5ab62f14dc4cad15e2653b8af65abb3f}{\index{Zeta\+::\+Lua\+Engine@{Zeta\+::\+Lua\+Engine}!destroy\+State@{destroy\+State}}
+\index{destroy\+State@{destroy\+State}!Zeta\+::\+Lua\+Engine@{Zeta\+::\+Lua\+Engine}}
+\subsubsection[{destroy\+State}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+Lua\+Engine\+::destroy\+State (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classZeta_1_1LuaEngine_a5ab62f14dc4cad15e2653b8af65abb3f}
+\hypertarget{classZeta_1_1LuaEngine_ab65326b6249a6da8a4113c708fb07d80}{\index{Zeta\+::\+Lua\+Engine@{Zeta\+::\+Lua\+Engine}!excecute\+Script\+File@{excecute\+Script\+File}}
+\index{excecute\+Script\+File@{excecute\+Script\+File}!Zeta\+::\+Lua\+Engine@{Zeta\+::\+Lua\+Engine}}
+\subsubsection[{excecute\+Script\+File}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+Lua\+Engine\+::excecute\+Script\+File (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{path, }
+\item[{bool}]{force = {\ttfamily false}}
+\end{DoxyParamCaption}
+)}}\label{classZeta_1_1LuaEngine_ab65326b6249a6da8a4113c708fb07d80}
+\hypertarget{classZeta_1_1LuaEngine_a08d7bed35fde73a1f6aa5c68c1f687ca}{\index{Zeta\+::\+Lua\+Engine@{Zeta\+::\+Lua\+Engine}!get\+Function@{get\+Function}}
+\index{get\+Function@{get\+Function}!Zeta\+::\+Lua\+Engine@{Zeta\+::\+Lua\+Engine}}
+\subsubsection[{get\+Function}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+Lua\+Engine\+::get\+Function (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{full\+Name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classZeta_1_1LuaEngine_a08d7bed35fde73a1f6aa5c68c1f687ca}
+\hypertarget{classZeta_1_1LuaEngine_a4c6758aaf0f4fec27032f6d032d8a45c}{\index{Zeta\+::\+Lua\+Engine@{Zeta\+::\+Lua\+Engine}!get\+Reference@{get\+Reference}}
+\index{get\+Reference@{get\+Reference}!Zeta\+::\+Lua\+Engine@{Zeta\+::\+Lua\+Engine}}
+\subsubsection[{get\+Reference}]{\setlength{\rightskip}{0pt plus 5cm}int Zeta\+::\+Lua\+Engine\+::get\+Reference (
+\begin{DoxyParamCaption}
+\item[{int}]{index}
+\end{DoxyParamCaption}
+)}}\label{classZeta_1_1LuaEngine_a4c6758aaf0f4fec27032f6d032d8a45c}
+\hypertarget{classZeta_1_1LuaEngine_ac196eab11779d991559d94f89533523f}{\index{Zeta\+::\+Lua\+Engine@{Zeta\+::\+Lua\+Engine}!get\+Reference@{get\+Reference}}
+\index{get\+Reference@{get\+Reference}!Zeta\+::\+Lua\+Engine@{Zeta\+::\+Lua\+Engine}}
+\subsubsection[{get\+Reference}]{\setlength{\rightskip}{0pt plus 5cm}int Zeta\+::\+Lua\+Engine\+::get\+Reference (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{full\+Name}
+\end{DoxyParamCaption}
+)}}\label{classZeta_1_1LuaEngine_ac196eab11779d991559d94f89533523f}
+\hypertarget{classZeta_1_1LuaEngine_a6243b6e56304a41c5c46808b8f405110}{\index{Zeta\+::\+Lua\+Engine@{Zeta\+::\+Lua\+Engine}!get\+State@{get\+State}}
+\index{get\+State@{get\+State}!Zeta\+::\+Lua\+Engine@{Zeta\+::\+Lua\+Engine}}
+\subsubsection[{get\+State}]{\setlength{\rightskip}{0pt plus 5cm}lua\+\_\+\+State$\ast$ Zeta\+::\+Lua\+Engine\+::get\+State (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1LuaEngine_a6243b6e56304a41c5c46808b8f405110}
+Gets the Engine's lua\+\_\+\+State \begin{DoxyReturn}{Returns}
+the Lua\+\_\+\+State. 
+\end{DoxyReturn}
+\hypertarget{classZeta_1_1LuaEngine_a3c24040b93a059c70a79ccd0380b6771}{\index{Zeta\+::\+Lua\+Engine@{Zeta\+::\+Lua\+Engine}!include\+Path@{include\+Path}}
+\index{include\+Path@{include\+Path}!Zeta\+::\+Lua\+Engine@{Zeta\+::\+Lua\+Engine}}
+\subsubsection[{include\+Path}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+Lua\+Engine\+::include\+Path (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{path}
+\end{DoxyParamCaption}
+)}}\label{classZeta_1_1LuaEngine_a3c24040b93a059c70a79ccd0380b6771}
+\hypertarget{classZeta_1_1LuaEngine_abced20bfcc3b0b9382a891f3f3e5458c}{\index{Zeta\+::\+Lua\+Engine@{Zeta\+::\+Lua\+Engine}!increase\+Reference@{increase\+Reference}}
+\index{increase\+Reference@{increase\+Reference}!Zeta\+::\+Lua\+Engine@{Zeta\+::\+Lua\+Engine}}
+\subsubsection[{increase\+Reference}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+Lua\+Engine\+::increase\+Reference (
+\begin{DoxyParamCaption}
+\item[{int}]{reference}
+\end{DoxyParamCaption}
+)}}\label{classZeta_1_1LuaEngine_abced20bfcc3b0b9382a891f3f3e5458c}
+\hypertarget{classZeta_1_1LuaEngine_a1d8c46316ba05608992740d8f6624e06}{\index{Zeta\+::\+Lua\+Engine@{Zeta\+::\+Lua\+Engine}!perform\+Garbage\+Collection@{perform\+Garbage\+Collection}}
+\index{perform\+Garbage\+Collection@{perform\+Garbage\+Collection}!Zeta\+::\+Lua\+Engine@{Zeta\+::\+Lua\+Engine}}
+\subsubsection[{perform\+Garbage\+Collection}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+Lua\+Engine\+::perform\+Garbage\+Collection (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classZeta_1_1LuaEngine_a1d8c46316ba05608992740d8f6624e06}
+\hypertarget{classZeta_1_1LuaEngine_a7e14b6a034d71ee1691d967317ae5f78}{\index{Zeta\+::\+Lua\+Engine@{Zeta\+::\+Lua\+Engine}!push\+To\+Stack\+Value@{push\+To\+Stack\+Value}}
+\index{push\+To\+Stack\+Value@{push\+To\+Stack\+Value}!Zeta\+::\+Lua\+Engine@{Zeta\+::\+Lua\+Engine}}
+\subsubsection[{push\+To\+Stack\+Value}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+Lua\+Engine\+::push\+To\+Stack\+Value (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{full\+Name}
+\end{DoxyParamCaption}
+)}}\label{classZeta_1_1LuaEngine_a7e14b6a034d71ee1691d967317ae5f78}
+\hypertarget{classZeta_1_1LuaEngine_aae892ca8271565dfc2438bf0794d52b4}{\index{Zeta\+::\+Lua\+Engine@{Zeta\+::\+Lua\+Engine}!register\+Function@{register\+Function}}
+\index{register\+Function@{register\+Function}!Zeta\+::\+Lua\+Engine@{Zeta\+::\+Lua\+Engine}}
+\subsubsection[{register\+Function}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+Lua\+Engine\+::register\+Function (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{name, }
+\item[{{\bf lua\+\_\+\+C\+Function}}]{func}
+\end{DoxyParamCaption}
+)}}\label{classZeta_1_1LuaEngine_aae892ca8271565dfc2438bf0794d52b4}
+\hypertarget{classZeta_1_1LuaEngine_ad7ea8746b8018280f07393a011486738}{\index{Zeta\+::\+Lua\+Engine@{Zeta\+::\+Lua\+Engine}!release\+Reference@{release\+Reference}}
+\index{release\+Reference@{release\+Reference}!Zeta\+::\+Lua\+Engine@{Zeta\+::\+Lua\+Engine}}
+\subsubsection[{release\+Reference}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+Lua\+Engine\+::release\+Reference (
+\begin{DoxyParamCaption}
+\item[{int}]{lua\+Reference}
+\end{DoxyParamCaption}
+)}}\label{classZeta_1_1LuaEngine_ad7ea8746b8018280f07393a011486738}
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{classZeta_1_1LuaEngine_a2fa95d69b32a77fffa4b730679a8b08c}{\index{Zeta\+::\+Lua\+Engine@{Zeta\+::\+Lua\+Engine}!Single\+Instanced@{Single\+Instanced}}
+\index{Single\+Instanced@{Single\+Instanced}!Zeta\+::\+Lua\+Engine@{Zeta\+::\+Lua\+Engine}}
+\subsubsection[{Single\+Instanced}]{\setlength{\rightskip}{0pt plus 5cm}friend class {\bf Single\+Instanced}\hspace{0.3cm}{\ttfamily [friend]}}}\label{classZeta_1_1LuaEngine_a2fa95d69b32a77fffa4b730679a8b08c}
+\hypertarget{classZeta_1_1LuaEngine_af18a9ee98e70982bfe2975391d7221a5}{\index{Zeta\+::\+Lua\+Engine@{Zeta\+::\+Lua\+Engine}!System@{System}}
+\index{System@{System}!Zeta\+::\+Lua\+Engine@{Zeta\+::\+Lua\+Engine}}
+\subsubsection[{System}]{\setlength{\rightskip}{0pt plus 5cm}friend class {\bf System}\hspace{0.3cm}{\ttfamily [friend]}}}\label{classZeta_1_1LuaEngine_af18a9ee98e70982bfe2975391d7221a5}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classZeta_1_1LuaEngine_a8ca9a31f2d28f6c0928cebe3990aef4b}{\index{Zeta\+::\+Lua\+Engine@{Zeta\+::\+Lua\+Engine}!arg\+C@{arg\+C}}
+\index{arg\+C@{arg\+C}!Zeta\+::\+Lua\+Engine@{Zeta\+::\+Lua\+Engine}}
+\subsubsection[{arg\+C}]{\setlength{\rightskip}{0pt plus 5cm}int Zeta\+::\+Lua\+Engine\+::arg\+C\hspace{0.3cm}{\ttfamily [private]}}}\label{classZeta_1_1LuaEngine_a8ca9a31f2d28f6c0928cebe3990aef4b}
+\hypertarget{classZeta_1_1LuaEngine_ac2c806337f55ab7d87e09fdbb052c4ce}{\index{Zeta\+::\+Lua\+Engine@{Zeta\+::\+Lua\+Engine}!excecuted\+Scripts@{excecuted\+Scripts}}
+\index{excecuted\+Scripts@{excecuted\+Scripts}!Zeta\+::\+Lua\+Engine@{Zeta\+::\+Lua\+Engine}}
+\subsubsection[{excecuted\+Scripts}]{\setlength{\rightskip}{0pt plus 5cm}std\+::unordered\+\_\+set$<$std\+::string$>$ Zeta\+::\+Lua\+Engine\+::excecuted\+Scripts\hspace{0.3cm}{\ttfamily [private]}}}\label{classZeta_1_1LuaEngine_ac2c806337f55ab7d87e09fdbb052c4ce}
+\hypertarget{classZeta_1_1LuaEngine_a9bb8e36de6cd25f3d8c9acec396f00a6}{\index{Zeta\+::\+Lua\+Engine@{Zeta\+::\+Lua\+Engine}!func\+Pushed@{func\+Pushed}}
+\index{func\+Pushed@{func\+Pushed}!Zeta\+::\+Lua\+Engine@{Zeta\+::\+Lua\+Engine}}
+\subsubsection[{func\+Pushed}]{\setlength{\rightskip}{0pt plus 5cm}bool Zeta\+::\+Lua\+Engine\+::func\+Pushed\hspace{0.3cm}{\ttfamily [private]}}}\label{classZeta_1_1LuaEngine_a9bb8e36de6cd25f3d8c9acec396f00a6}
+\hypertarget{classZeta_1_1LuaEngine_a3ea9f2a55e1fe3037f542c88a2b1c652}{\index{Zeta\+::\+Lua\+Engine@{Zeta\+::\+Lua\+Engine}!lstate@{lstate}}
+\index{lstate@{lstate}!Zeta\+::\+Lua\+Engine@{Zeta\+::\+Lua\+Engine}}
+\subsubsection[{lstate}]{\setlength{\rightskip}{0pt plus 5cm}lua\+\_\+\+State$\ast$ Zeta\+::\+Lua\+Engine\+::lstate\hspace{0.3cm}{\ttfamily [private]}}}\label{classZeta_1_1LuaEngine_a3ea9f2a55e1fe3037f542c88a2b1c652}
+\hypertarget{classZeta_1_1LuaEngine_ab5b777346b1ce3fbb8848d72eb3657ad}{\index{Zeta\+::\+Lua\+Engine@{Zeta\+::\+Lua\+Engine}!named\+References@{named\+References}}
+\index{named\+References@{named\+References}!Zeta\+::\+Lua\+Engine@{Zeta\+::\+Lua\+Engine}}
+\subsubsection[{named\+References}]{\setlength{\rightskip}{0pt plus 5cm}std\+::unordered\+\_\+map$<$int, std\+::string$>$ Zeta\+::\+Lua\+Engine\+::named\+References\hspace{0.3cm}{\ttfamily [private]}}}\label{classZeta_1_1LuaEngine_ab5b777346b1ce3fbb8848d72eb3657ad}
+\hypertarget{classZeta_1_1LuaEngine_a6ae178c96d635fedd5de66fca06af4b2}{\index{Zeta\+::\+Lua\+Engine@{Zeta\+::\+Lua\+Engine}!shared\+References@{shared\+References}}
+\index{shared\+References@{shared\+References}!Zeta\+::\+Lua\+Engine@{Zeta\+::\+Lua\+Engine}}
+\subsubsection[{shared\+References}]{\setlength{\rightskip}{0pt plus 5cm}std\+::unordered\+\_\+map$<$int, int$>$ Zeta\+::\+Lua\+Engine\+::shared\+References\hspace{0.3cm}{\ttfamily [private]}}}\label{classZeta_1_1LuaEngine_a6ae178c96d635fedd5de66fca06af4b2}
+\hypertarget{classZeta_1_1LuaEngine_a7d5faf4154dcd428f46435070bb6972f}{\index{Zeta\+::\+Lua\+Engine@{Zeta\+::\+Lua\+Engine}!stack\+Top@{stack\+Top}}
+\index{stack\+Top@{stack\+Top}!Zeta\+::\+Lua\+Engine@{Zeta\+::\+Lua\+Engine}}
+\subsubsection[{stack\+Top}]{\setlength{\rightskip}{0pt plus 5cm}int Zeta\+::\+Lua\+Engine\+::stack\+Top\hspace{0.3cm}{\ttfamily [private]}}}\label{classZeta_1_1LuaEngine_a7d5faf4154dcd428f46435070bb6972f}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Zeta/\+Core/\hyperlink{LuaEngine_8hpp}{Lua\+Engine.\+hpp}\end{DoxyCompactItemize}

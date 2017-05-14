@@ -1,0 +1,26 @@
+$#include <Zeta/Core/RPGClasses/LifeformState.hpp>
+
+class LifeformState {
+public:
+	typedef int CombinedState;
+
+	enum Direction {
+		Down = 1, Up, Left, Right
+	};
+	enum Action {
+		Idle = (1 << 4),
+		Moving = (2 << 4),
+		Dying = (3 << 4),
+		Dead = (4 << 4),
+		Casting = (5 << 4)
+	};
+	void set(int combinedState);
+	CombinedState getCombinedState() const;
+	void setAction(Action action);
+	void setDirection(Direction direction);
+	Action getAction() const;
+	Direction getDirection() const;
+	void operator=(int combinedState);
+	LifeformState();
+	~LifeformState();
+};

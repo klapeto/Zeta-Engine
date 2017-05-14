@@ -1,0 +1,202 @@
+.TH "Zeta::AbilityClass" 3 "Wed Feb 10 2016" "Zeta" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Zeta::AbilityClass \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <AbilityClass\&.hpp>\fP
+.PP
+Inherits \fBZeta::Resource\fP, and \fBZeta::LuaPushable\fP\&.
+.PP
+Inherited by \fBZeta::ActiveAbilityClass\fP, \fBZeta::PassiveAbilityClass\fP, and \fBZeta::RegenerationAbilityClass\fP\&.
+.SS "Public Types"
+
+.in +1c
+.ti -1c
+.RI "enum \fBType\fP { \fBType::Active\fP, \fBType::Passive\fP, \fBType::Regeneration\fP }"
+.br
+.in -1c
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "int \fBgetLevels\fP () const "
+.br
+.ti -1c
+.RI "const std::string & \fBgetAbilityName\fP () const "
+.br
+.ti -1c
+.RI "bool \fBisPassive\fP () const "
+.br
+.ti -1c
+.RI "\fBType\fP \fBgetType\fP () const "
+.br
+.ti -1c
+.RI "const \fBAbilityClass\fP * \fBgetParent\fP () const "
+.br
+.ti -1c
+.RI "const \fBLuaTable\fP & \fBgetTable\fP () const "
+.br
+.ti -1c
+.RI "\fBlua_Object\fP \fBgetLuaTable\fP () const "
+.br
+.ti -1c
+.RI "void \fBonApply\fP (\fBAbility\fP *invoker, \fBLifeform\fP *caster, \fBLifeform\fP *target) const "
+.br
+.ti -1c
+.RI "void \fBonRemove\fP (\fBAbility\fP *invoker, \fBLifeform\fP *caster, \fBLifeform\fP *target) const "
+.br
+.ti -1c
+.RI "void \fBonLevelChange\fP (\fBAbility\fP *invoker) const "
+.br
+.ti -1c
+.RI "virtual \fBAbility\fP * \fBgetNewAbility\fP (\fBLifeform\fP *caster, int level) const "
+.br
+.ti -1c
+.RI "virtual void \fBpushToLua\fP (lua_State *lstate)"
+.br
+.ti -1c
+.RI "\fBAbilityClass\fP ()"
+.br
+.ti -1c
+.RI "\fBAbilityClass\fP (const std::string &path)"
+.br
+.ti -1c
+.RI "\fBAbilityClass\fP (\fBlua_Object\fP \fBtable\fP)"
+.br
+.ti -1c
+.RI "\fBAbilityClass\fP (\fBAbilityClass\fP &\fBparent\fP, \fBLuaTable\fP &\fBtable\fP)"
+.br
+.ti -1c
+.RI "virtual \fB~AbilityClass\fP ()"
+.br
+.in -1c
+.SS "Protected Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBgetData\fP (\fBLuaTable\fP &\fBtable\fP)"
+.br
+.ti -1c
+.RI "void \fBnullise\fP ()"
+.br
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "std::string \fBabilityName\fP"
+.br
+.ti -1c
+.RI "\fBLuaTable\fP \fBtable\fP"
+.br
+.ti -1c
+.RI "\fBLuaFunctor\fP \fBonApplyF\fP"
+.br
+.ti -1c
+.RI "\fBLuaFunctor\fP \fBonRemoveF\fP"
+.br
+.ti -1c
+.RI "\fBLuaFunctor\fP \fBonLevelChangeF\fP"
+.br
+.ti -1c
+.RI "\fBAbilityClass\fP * \fBimplementation\fP"
+.br
+.ti -1c
+.RI "\fBAbilityClass\fP * \fBparent\fP"
+.br
+.ti -1c
+.RI "int \fBlevels\fP"
+.br
+.ti -1c
+.RI "\fBType\fP \fBtype\fP"
+.br
+.in -1c
+.SH "Member Enumeration Documentation"
+.PP 
+.SS "enum \fBZeta::AbilityClass::Type\fP\fC [strong]\fP"
+
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fIActive \fP\fP
+.TP
+\fB\fIPassive \fP\fP
+.TP
+\fB\fIRegeneration \fP\fP
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Zeta::AbilityClass::AbilityClass ()"
+
+.SS "Zeta::AbilityClass::AbilityClass (const std::string &path)"
+
+.SS "Zeta::AbilityClass::AbilityClass (\fBlua_Object\fPtable)"
+
+.SS "Zeta::AbilityClass::AbilityClass (\fBAbilityClass\fP &parent, \fBLuaTable\fP &table)"
+
+.SS "virtual Zeta::AbilityClass::~AbilityClass ()\fC [virtual]\fP"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "const std::string& Zeta::AbilityClass::getAbilityName () const\fC [inline]\fP"
+
+.SS "void Zeta::AbilityClass::getData (\fBLuaTable\fP &table)\fC [protected]\fP"
+
+.SS "int Zeta::AbilityClass::getLevels () const\fC [inline]\fP"
+
+.SS "\fBlua_Object\fP Zeta::AbilityClass::getLuaTable () const"
+
+.SS "virtual \fBAbility\fP* Zeta::AbilityClass::getNewAbility (\fBLifeform\fP *caster, intlevel) const\fC [virtual]\fP"
+
+.PP
+Reimplemented in \fBZeta::ActiveAbilityClass\fP, \fBZeta::RegenerationAbilityClass\fP, and \fBZeta::PassiveAbilityClass\fP\&.
+.SS "const \fBAbilityClass\fP* Zeta::AbilityClass::getParent () const\fC [inline]\fP"
+
+.SS "const \fBLuaTable\fP& Zeta::AbilityClass::getTable () const\fC [inline]\fP"
+
+.SS "\fBType\fP Zeta::AbilityClass::getType () const\fC [inline]\fP"
+
+.SS "bool Zeta::AbilityClass::isPassive () const\fC [inline]\fP"
+
+.SS "void Zeta::AbilityClass::nullise ()\fC [protected]\fP"
+
+.SS "void Zeta::AbilityClass::onApply (\fBAbility\fP *invoker, \fBLifeform\fP *caster, \fBLifeform\fP *target) const"
+
+.SS "void Zeta::AbilityClass::onLevelChange (\fBAbility\fP *invoker) const"
+
+.SS "void Zeta::AbilityClass::onRemove (\fBAbility\fP *invoker, \fBLifeform\fP *caster, \fBLifeform\fP *target) const"
+
+.SS "virtual void Zeta::AbilityClass::pushToLua (lua_State *lstate)\fC [virtual]\fP"
+
+.PP
+Implements \fBZeta::LuaPushable\fP\&.
+.PP
+Reimplemented in \fBZeta::ActiveAbilityClass\fP, \fBZeta::RegenerationAbilityClass\fP, and \fBZeta::PassiveAbilityClass\fP\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "std::string Zeta::AbilityClass::abilityName\fC [protected]\fP"
+
+.SS "\fBAbilityClass\fP* Zeta::AbilityClass::implementation\fC [protected]\fP"
+
+.SS "int Zeta::AbilityClass::levels\fC [protected]\fP"
+
+.SS "\fBLuaFunctor\fP Zeta::AbilityClass::onApplyF\fC [protected]\fP"
+
+.SS "\fBLuaFunctor\fP Zeta::AbilityClass::onLevelChangeF\fC [protected]\fP"
+
+.SS "\fBLuaFunctor\fP Zeta::AbilityClass::onRemoveF\fC [protected]\fP"
+
+.SS "\fBAbilityClass\fP* Zeta::AbilityClass::parent\fC [protected]\fP"
+
+.SS "\fBLuaTable\fP Zeta::AbilityClass::table\fC [mutable]\fP, \fC [protected]\fP"
+
+.SS "\fBType\fP Zeta::AbilityClass::type\fC [protected]\fP"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Zeta from the source code\&.

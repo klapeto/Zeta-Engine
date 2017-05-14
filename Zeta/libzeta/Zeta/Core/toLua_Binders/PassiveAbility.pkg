@@ -1,0 +1,8 @@
+$#include <Zeta/Core/RPGClasses/PassiveAbility.hpp>
+
+class PassiveAbility: public Ability {
+public:
+
+	const PassiveAbilityClass& getClass() const;
+
+};

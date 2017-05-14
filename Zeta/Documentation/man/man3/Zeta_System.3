@@ -1,0 +1,199 @@
+.TH "Zeta::System" 3 "Wed Feb 10 2016" "Zeta" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Zeta::System \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <System\&.hpp>\fP
+.PP
+Inherits \fBZeta::LuaPushable\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBstart\fP ()"
+.br
+.ti -1c
+.RI "\fBRenderingContext\fP & \fBgetRenderingContext\fP ()"
+.br
+.ti -1c
+.RI "\fBResourceContext\fP & \fBgetResourcesManager\fP ()"
+.br
+.ti -1c
+.RI "\fBAudioContext\fP & \fBgetAudioContext\fP ()"
+.br
+.ti -1c
+.RI "\fBShapeRenderer\fP & \fBgetShapeRenderer\fP ()"
+.br
+.ti -1c
+.RI "void \fBshutdown\fP ()"
+.br
+.ti -1c
+.RI "void \fBabort\fP (const std::string &error)"
+.br
+.ti -1c
+.RI "void \fBpushToLua\fP (lua_State *lstate)"
+.br
+.in -1c
+.SS "Static Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "static \fBSystem\fP & \fBgetInstance\fP ()"
+.br
+.ti -1c
+.RI "static \fBSystem\fP & \fBcreate\fP (\fBRenderingContext\fP *\fBrenderingContext\fP, \fBResourceContext\fP *\fBresManager\fP, \fBAudioContext\fP *\fBaudio\fP, \fBShapeRenderer\fP *\fBrenderer\fP)"
+.br
+.in -1c
+.SS "Private Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBSystem\fP (\fBResourceContext\fP *\fBresManager\fP, \fBRenderingContext\fP *\fBrenderingContext\fP, \fBAudioContext\fP *\fBaudio\fP, \fBShapeRenderer\fP *\fBrenderer\fP)"
+.br
+.ti -1c
+.RI "\fB~System\fP ()"
+.br
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBResourceContext\fP * \fBresManager\fP"
+.br
+.ti -1c
+.RI "\fBRenderingContext\fP * \fBrenderingContext\fP"
+.br
+.ti -1c
+.RI "\fBAudioContext\fP * \fBaudio\fP"
+.br
+.ti -1c
+.RI "\fBShapeRenderer\fP * \fBrenderer\fP"
+.br
+.in -1c
+.SS "Static Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "static \fBSystem\fP * \fBinstance\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+The main \fBSystem\fP Class This Singleton \fBObject\fP contains all the main Modules of the Engine 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Zeta::System::System (\fBResourceContext\fP *resManager, \fBRenderingContext\fP *renderingContext, \fBAudioContext\fP *audio, \fBShapeRenderer\fP *renderer)\fC [private]\fP"
+
+.SS "Zeta::System::~System ()\fC [private]\fP"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "void Zeta::System::abort (const std::string &error)"
+Shutdowns and terminates the execution of the program writing a message to the Log \fBFile\fP All the modules are destroyed and the resources are freed before termination with exception the static allocated objects\&. The message is written to the LogFile before terminating 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIerror\fP The message to write on the Log \fBFile\fP 
+.RE
+.PP
+
+.SS "static \fBSystem\fP& Zeta::System::create (\fBRenderingContext\fP *renderingContext, \fBResourceContext\fP *resManager, \fBAudioContext\fP *audio, \fBShapeRenderer\fP *renderer)\fC [inline]\fP, \fC [static]\fP"
+Creates the \fBSystem\fP \fBObject\fP and assigns the Modules defined The modules will be destroyed by the \fBSystem\fP when it will shutdown If there is already a \fBSystem\fP \fBObject\fP created, the old one will be destroyed and its modules will be destroyed too\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIrenderingContext\fP The \fBRenderingContext\fP to assign 
+.br
+\fIresManager\fP The \fBResourceContext\fP to assign 
+.br
+\fIaudio\fP The \fBAudioContext\fP to assign 
+.br
+\fIrenderer\fP The \fBShapeRenderer\fP to assign 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+The created \fBObject\fP 
+.RE
+.PP
+
+.SS "\fBAudioContext\fP& Zeta::System::getAudioContext ()\fC [inline]\fP"
+Returns the assigned \fBAudioContext\fP 
+.PP
+\fBReturns:\fP
+.RS 4
+The assigned \fBAudioContext\fP 
+.RE
+.PP
+
+.SS "static \fBSystem\fP& Zeta::System::getInstance ()\fC [inline]\fP, \fC [static]\fP"
+Returns the \fBSystem\fP Object(Singleton) 
+.PP
+\fBReturns:\fP
+.RS 4
+The \fBSystem\fP \fBObject\fP 
+.RE
+.PP
+
+.SS "\fBRenderingContext\fP& Zeta::System::getRenderingContext ()\fC [inline]\fP"
+Returns the assigned \fBRenderingContext\fP 
+.PP
+\fBReturns:\fP
+.RS 4
+The assigned \fBRenderingContext\fP 
+.RE
+.PP
+
+.SS "\fBResourceContext\fP& Zeta::System::getResourcesManager ()\fC [inline]\fP"
+Returns the assigned \fBResourceContext\fP 
+.PP
+\fBReturns:\fP
+.RS 4
+The assigned \fBResourceContext\fP 
+.RE
+.PP
+
+.SS "\fBShapeRenderer\fP& Zeta::System::getShapeRenderer ()\fC [inline]\fP"
+Returns the assigned \fBShapeRenderer\fP 
+.PP
+\fBReturns:\fP
+.RS 4
+The assigned \fBShapeRenderer\fP 
+.RE
+.PP
+
+.SS "void Zeta::System::pushToLua (lua_State *lstate)\fC [virtual]\fP"
+Pushes the \fBObject\fP to the Lua Environment 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIlstate\fP The Lua Environment to push to\&. 
+.RE
+.PP
+
+.PP
+Implements \fBZeta::LuaPushable\fP\&.
+.SS "void Zeta::System::shutdown ()"
+Shutdowns and terminates the execution of the program All the modules are destroyed and the resources are freed before termination with exception the static allocated objects\&. 
+.SS "void Zeta::System::start ()"
+Causes the Main Loop to start Running 
+.SH "Member Data Documentation"
+.PP 
+.SS "\fBAudioContext\fP* Zeta::System::audio\fC [private]\fP"
+
+.SS "\fBSystem\fP* Zeta::System::instance\fC [static]\fP, \fC [private]\fP"
+
+.SS "\fBShapeRenderer\fP* Zeta::System::renderer\fC [private]\fP"
+
+.SS "\fBRenderingContext\fP* Zeta::System::renderingContext\fC [private]\fP"
+
+.SS "\fBResourceContext\fP* Zeta::System::resManager\fC [private]\fP"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Zeta from the source code\&.

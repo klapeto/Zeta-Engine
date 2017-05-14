@@ -1,0 +1,99 @@
+.TH "Zeta::Event" 3 "Wed Feb 10 2016" "Zeta" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Zeta::Event \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Event\&.hpp>\fP
+.PP
+Inherited by \fBZeta::AllegroEvent\fP\&.
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "struct \fBDisplayEvent\fP"
+.br
+.ti -1c
+.RI "struct \fBKeyboardEvent\fP"
+.br
+.ti -1c
+.RI "struct \fBMouseEvent\fP"
+.br
+.in -1c
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBtoNoEvent\fP ()"
+.br
+.ti -1c
+.RI "void \fBtoDisplayEvent\fP (\fBEventType\fP \fBtype\fP, int x, int y, int width, int height)"
+.br
+.ti -1c
+.RI "void \fBtoMouseEvent\fP (\fBEventType\fP \fBtype\fP, int x, int y, int wheel, \fBMouseButton\fP button, float pressure, int dx=0, int dy=0)"
+.br
+.ti -1c
+.RI "void \fBtoKeyboardEvent\fP (\fBEventType\fP \fBtype\fP, \fBKeyboardKey\fP key, int unichar, unsigned int modifiers)"
+.br
+.ti -1c
+.RI "virtual \fB~Event\fP ()"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBEventType\fP \fBtype\fP"
+.br
+.ti -1c
+.RI "union {"
+.br
+.ti -1c
+.RI "   \fBDisplayEvent\fP \fBdisplay\fP"
+.br
+.ti -1c
+.RI "   \fBKeyboardEvent\fP \fBkeyboard\fP"
+.br
+.ti -1c
+.RI "   \fBMouseEvent\fP \fBmouse\fP"
+.br
+.ti -1c
+.RI "}; "
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+\fBEvent\fP Base class to Wrap Library-Specific Events\&. 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "virtual Zeta::Event::~Event ()\fC [inline]\fP, \fC [virtual]\fP"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "void Zeta::Event::toDisplayEvent (\fBEventType\fPtype, intx, inty, intwidth, intheight)\fC [inline]\fP"
+
+.SS "void Zeta::Event::toKeyboardEvent (\fBEventType\fPtype, \fBKeyboardKey\fPkey, intunichar, unsigned intmodifiers)\fC [inline]\fP"
+
+.SS "void Zeta::Event::toMouseEvent (\fBEventType\fPtype, intx, inty, intwheel, \fBMouseButton\fPbutton, floatpressure, intdx = \fC0\fP, intdy = \fC0\fP)\fC [inline]\fP"
+
+.SS "void Zeta::Event::toNoEvent ()\fC [inline]\fP"
+
+.SH "Member Data Documentation"
+.PP 
+.SS "union { \&.\&.\&. } "
+
+.SS "\fBDisplayEvent\fP Zeta::Event::display"
+
+.SS "\fBKeyboardEvent\fP Zeta::Event::keyboard"
+
+.SS "\fBMouseEvent\fP Zeta::Event::mouse"
+
+.SS "\fBEventType\fP Zeta::Event::type"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Zeta from the source code\&.

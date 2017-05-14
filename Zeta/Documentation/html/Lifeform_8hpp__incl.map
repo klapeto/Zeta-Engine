@@ -1,0 +1,32 @@
+<map id="include/Zeta/Core/RPGClasses/Lifeform.hpp" name="include/Zeta/Core/RPGClasses/Lifeform.hpp">
+<area shape="rect" id="node2" href="$AnimationHandler_8hpp.html" title="Zeta/Core/AnimationClasses\l/AnimationHandler.hpp" alt="" coords="1822,97,2012,138"/>
+<area shape="rect" id="node6" href="$ZetaConfig_8hpp.html" title="Zeta/Core/ZetaConfig.hpp" alt="" coords="916,549,1089,576"/>
+<area shape="rect" id="node14" href="$Vector2_8hpp.html" title="Zeta/Core/UtilityClasses\l/Vector2.hpp" alt="" coords="94,459,260,501"/>
+<area shape="rect" id="node21" href="$Rectangle_8hpp.html" title="Zeta/Core/UtilityClasses\l/Rectangle.hpp" alt="" coords="145,278,311,319"/>
+<area shape="rect" id="node22" href="$LifeformState_8hpp.html" title="Zeta/Core/RPGClasses\l/LifeformState.hpp" alt="" coords="655,278,816,319"/>
+<area shape="rect" id="node28" href="$ZMap_8hpp.html" title="Zeta/Core/ZMap.hpp" alt="" coords="489,285,631,312"/>
+<area shape="rect" id="node30" href="$Object_8hpp.html" title="Zeta/Core/RPGClasses\l/Object.hpp" alt="" coords="426,187,587,229"/>
+<area shape="rect" id="node32" href="$Attribute_8hpp.html" title="Zeta/Core/RPGClasses\l/Attribute.hpp" alt="" coords="2274,97,2435,138"/>
+<area shape="rect" id="node36" href="$Modifier_8hpp.html" title="Zeta/Core/RPGClasses\l/Modifier.hpp" alt="" coords="2089,97,2249,138"/>
+<area shape="rect" id="node37" href="$Ability_8hpp.html" title="Zeta/Core/RPGClasses\l/Ability.hpp" alt="" coords="2562,97,2723,138"/>
+<area shape="rect" id="node38" href="$LuaFunctor_8hpp.html" title="Zeta/Core/LuaFunctor.hpp" alt="" coords="2517,195,2691,221"/>
+<area shape="rect" id="node41" href="$LuaTable_8hpp.html" title="Zeta/Core/LuaTable.hpp" alt="" coords="2716,195,2879,221"/>
+<area shape="rect" id="node43" href="$ZSet_8hpp.html" title="Zeta/Core/ZSet.hpp" alt="" coords="2946,104,3083,131"/>
+<area shape="rect" id="node3" href="$OffAnimation_8hpp.html" title="Zeta/Core/AnimationClasses\l/OffAnimation.hpp" alt="" coords="1477,278,1667,319"/>
+<area shape="rect" id="node8" href="$LuaPushable_8hpp.html" title="Zeta/Core/LuaPushable.hpp" alt="" coords="2791,549,2975,576"/>
+<area shape="rect" id="node9" href="$AnimationClass_8hpp.html" title="Zeta/Core/ResourceClasses\l/AnimationClass.hpp" alt="" coords="1279,187,1467,229"/>
+<area shape="rect" id="node4" href="$AnimationPlayer_8hpp.html" title="Zeta/Core/AnimationClasses\l/AnimationPlayer.hpp" alt="" coords="1041,369,1231,410"/>
+<area shape="rect" id="node5" href="$Drawable_8hpp.html" title="Zeta/Core/Drawable.hpp" alt="" coords="602,467,765,493"/>
+<area shape="rect" id="node7" href="$Updateable_8hpp.html" title="Zeta/Core/Updateable.hpp" alt="" coords="790,467,964,493"/>
+<area shape="rect" id="node11" href="$Ellipsis_8hpp.html" title="Zeta/Core/UtilityClasses\l/Ellipsis.hpp" alt="" coords="841,278,1007,319"/>
+<area shape="rect" id="node16" href="$Resource_8hpp.html" title="Zeta/Core/ResourceClasses\l/Resource.hpp" alt="" coords="1691,278,1879,319"/>
+<area shape="rect" id="node23" href="$Vector2D_8hpp.html" title="Zeta/Core/UtilityClasses\l/Vector2D.hpp" alt="" coords="1031,278,1197,319"/>
+<area shape="rect" id="node26" href="$ZSmallMap_8hpp.html" title="Zeta/Core/ZSmallMap.hpp" alt="" coords="1307,376,1481,403"/>
+<area shape="rect" id="node12" href="$Shape_8hpp.html" title="Zeta/Core/UtilityClasses\l/Shape.hpp" alt="" coords="387,369,553,410"/>
+<area shape="rect" id="node13" href="$Color_8hpp.html" title="Zeta/Core/Color.hpp" alt="" coords="438,467,577,493"/>
+<area shape="rect" id="node19" href="$NonCopyable_8hpp.html" title="Zeta/Core/NonCopyable.hpp" alt="" coords="1711,467,1899,493"/>
+<area shape="rect" id="node20" href="$SingleInstanced_8hpp.html" title="Zeta/Core/SingleInstanced.hpp" alt="" coords="1773,376,1976,403"/>
+<area shape="rect" id="node31" href="$PropertyList_8hpp.html" title="Zeta/Core/PropertyList.hpp" alt="" coords="1223,285,1401,312"/>
+<area shape="rect" id="node33" href="$ZSmallSet_8hpp.html" title="Zeta/Core/ZSmallSet.hpp" alt="" coords="2259,195,2429,221"/>
+<area shape="rect" id="node39" href="$LuaReferenced_8hpp.html" title="Zeta/Core/LuaReferenced.hpp" alt="" coords="2547,285,2744,312"/>
+</map>

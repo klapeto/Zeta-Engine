@@ -1,0 +1,134 @@
+.TH "Zeta::Bitmap" 3 "Wed Feb 10 2016" "Zeta" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Zeta::Bitmap \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Bitmap\&.hpp>\fP
+.PP
+Inherits \fBZeta::Drawable\fP, and \fBZeta::Resource\fP\&.
+.PP
+Inherited by \fBZeta::AllegroBitmap\fP\&.
+.SS "Public Types"
+
+.in +1c
+.ti -1c
+.RI "enum \fBFlipFlag\fP { \fBNormal\fP, \fBFliped_Horizontaly\fP, \fBFliped_Verticaly\fP, \fBFliped_Both\fP }"
+.br
+.in -1c
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "int \fBgetWidth\fP () const "
+.br
+.ti -1c
+.RI "int \fBgetHeight\fP () const "
+.br
+.ti -1c
+.RI "virtual void \fBdraw\fP (\fBFloat\fP x, \fBFloat\fP y, \fBFloat\fP rotation, \fBFloat\fP scale, \fBFlipFlag\fP flip=\fBNormal\fP) const =0"
+.br
+.ti -1c
+.RI "virtual void \fBdrawAtCentre\fP (\fBFloat\fP x, \fBFloat\fP y, \fBFloat\fP rotation, \fBFloat\fP scale, \fBFlipFlag\fP flip=\fBNormal\fP) const =0"
+.br
+.ti -1c
+.RI "virtual \fBBitmap\fP & \fBcreateSubBitmap\fP (int x, int y, int \fBwidth\fP, int \fBheight\fP) const =0"
+.br
+.ti -1c
+.RI "virtual void \fBeraseSubBitmap\fP (\fBBitmap\fP &bitmap) const =0"
+.br
+.ti -1c
+.RI "virtual void \fBreserveSubBitmaps\fP (size_t number) const =0"
+.br
+.ti -1c
+.RI "\fBBitmap\fP (\fBBitmap\fP &&)=default"
+.br
+.ti -1c
+.RI "\fBBitmap\fP & \fBoperator=\fP (\fBBitmap\fP &&)=default"
+.br
+.ti -1c
+.RI "\fBBitmap\fP (const std::string &path)"
+.br
+.ti -1c
+.RI "\fBBitmap\fP (int \fBwidth\fP, int \fBheight\fP)"
+.br
+.ti -1c
+.RI "virtual \fB~Bitmap\fP ()"
+.br
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "int \fBwidth\fP"
+.br
+.ti -1c
+.RI "int \fBheight\fP"
+.br
+.in -1c
+.SH "Member Enumeration Documentation"
+.PP 
+.SS "enum \fBZeta::Bitmap::FlipFlag\fP"
+
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fINormal \fP\fP
+.TP
+\fB\fIFliped_Horizontaly \fP\fP
+.TP
+\fB\fIFliped_Verticaly \fP\fP
+.TP
+\fB\fIFliped_Both \fP\fP
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Zeta::Bitmap::Bitmap (\fBBitmap\fP &&)\fC [default]\fP"
+
+.SS "Zeta::Bitmap::Bitmap (const std::string &path)\fC [inline]\fP"
+
+.SS "Zeta::Bitmap::Bitmap (intwidth, intheight)\fC [inline]\fP"
+
+.SS "virtual Zeta::Bitmap::~Bitmap ()\fC [inline]\fP, \fC [virtual]\fP"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "virtual \fBBitmap\fP& Zeta::Bitmap::createSubBitmap (intx, inty, intwidth, intheight) const\fC [pure virtual]\fP"
+
+.PP
+Implemented in \fBZeta::AllegroBitmap\fP\&.
+.SS "virtual void Zeta::Bitmap::draw (\fBFloat\fPx, \fBFloat\fPy, \fBFloat\fProtation, \fBFloat\fPscale, \fBFlipFlag\fPflip = \fC\fBNormal\fP\fP) const\fC [pure virtual]\fP"
+
+.PP
+Implemented in \fBZeta::AllegroBitmap\fP\&.
+.SS "virtual void Zeta::Bitmap::drawAtCentre (\fBFloat\fPx, \fBFloat\fPy, \fBFloat\fProtation, \fBFloat\fPscale, \fBFlipFlag\fPflip = \fC\fBNormal\fP\fP) const\fC [pure virtual]\fP"
+
+.PP
+Implemented in \fBZeta::AllegroBitmap\fP\&.
+.SS "virtual void Zeta::Bitmap::eraseSubBitmap (\fBBitmap\fP &bitmap) const\fC [pure virtual]\fP"
+
+.PP
+Implemented in \fBZeta::AllegroBitmap\fP\&.
+.SS "int Zeta::Bitmap::getHeight () const\fC [inline]\fP"
+
+.SS "int Zeta::Bitmap::getWidth () const\fC [inline]\fP"
+
+.SS "\fBBitmap\fP& Zeta::Bitmap::operator= (\fBBitmap\fP &&)\fC [default]\fP"
+
+.SS "virtual void Zeta::Bitmap::reserveSubBitmaps (size_tnumber) const\fC [pure virtual]\fP"
+
+.PP
+Implemented in \fBZeta::AllegroBitmap\fP\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "int Zeta::Bitmap::height\fC [protected]\fP"
+
+.SS "int Zeta::Bitmap::width\fC [protected]\fP"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Zeta from the source code\&.

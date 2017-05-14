@@ -1,0 +1,163 @@
+.TH "Zeta::Quadtree" 3 "Wed Feb 10 2016" "Zeta" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Zeta::Quadtree \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Quadtree\&.hpp>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "int \fBinsert\fP (\fBObject\fP *obj)"
+.br
+.ti -1c
+.RI "std::vector< \fBObject\fP * > \fBgetObjectsAt\fP (\fBFloat\fP x, \fBFloat\fP y) const "
+.br
+.ti -1c
+.RI "std::vector< \fBObject\fP * > \fBgetObjectsAt\fP (const \fBRectangle\fP &rect) const "
+.br
+.ti -1c
+.RI "void \fBdraw\fP (\fBFloat\fP x, \fBFloat\fP y) const "
+.br
+.ti -1c
+.RI "void \fBclear\fP ()"
+.br
+.ti -1c
+.RI "\fBQuadtree\fP ()"
+.br
+.ti -1c
+.RI "\fBQuadtree\fP (\fBFloat\fP x, \fBFloat\fP y, \fBFloat\fP width, \fBFloat\fP height, int \fBlevel\fP, int \fBmaxLevel\fP, \fBQuadtree\fP *parrent)"
+.br
+.ti -1c
+.RI "\fB~Quadtree\fP ()"
+.br
+.in -1c
+.SS "Private Types"
+
+.in +1c
+.ti -1c
+.RI "enum \fBNODES\fP { \fBNW\fP, \fBNE\fP, \fBSW\fP, \fBSE\fP }"
+.br
+.ti -1c
+.RI "enum \fBInsert_Out\fP { \fBNo_Contact\fP = -2, \fBChild_Handles\fP = -1, \fBParent_Handles\fP = 0 }"
+.br
+.in -1c
+.SS "Private Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBsubDivide\fP ()"
+.br
+.ti -1c
+.RI "bool \fBisInside\fP (\fBObject\fP *obj)"
+.br
+.ti -1c
+.RI "bool \fBtouches\fP (\fBObject\fP *obj)"
+.br
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "std::vector< \fBObject\fP * > \fBobjects\fP"
+.br
+.ti -1c
+.RI "\fBQuadtree\fP * \fBchilds\fP [4]"
+.br
+.ti -1c
+.RI "\fBQuadtree\fP * \fBparent\fP"
+.br
+.ti -1c
+.RI "\fBRectangle\fP \fBbounds\fP"
+.br
+.ti -1c
+.RI "int \fBlevel\fP"
+.br
+.ti -1c
+.RI "int \fBmaxLevel\fP"
+.br
+.ti -1c
+.RI "unsigned int \fBmaxObjects\fP"
+.br
+.ti -1c
+.RI "bool \fBleaf\fP"
+.br
+.in -1c
+.SH "Member Enumeration Documentation"
+.PP 
+.SS "enum \fBZeta::Quadtree::Insert_Out\fP\fC [private]\fP"
+
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fINo_Contact \fP\fP
+.TP
+\fB\fIChild_Handles \fP\fP
+.TP
+\fB\fIParent_Handles \fP\fP
+.SS "enum \fBZeta::Quadtree::NODES\fP\fC [private]\fP"
+
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fINW \fP\fP
+.TP
+\fB\fINE \fP\fP
+.TP
+\fB\fISW \fP\fP
+.TP
+\fB\fISE \fP\fP
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Zeta::Quadtree::Quadtree ()"
+
+.SS "Zeta::Quadtree::Quadtree (\fBFloat\fPx, \fBFloat\fPy, \fBFloat\fPwidth, \fBFloat\fPheight, intlevel, intmaxLevel, \fBQuadtree\fP *parrent)"
+
+.SS "Zeta::Quadtree::~Quadtree ()"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "void Zeta::Quadtree::clear ()"
+
+.SS "void Zeta::Quadtree::draw (\fBFloat\fPx, \fBFloat\fPy) const"
+
+.SS "std::vector<\fBObject\fP*> Zeta::Quadtree::getObjectsAt (\fBFloat\fPx, \fBFloat\fPy) const"
+
+.SS "std::vector<\fBObject\fP*> Zeta::Quadtree::getObjectsAt (const \fBRectangle\fP &rect) const"
+
+.SS "int Zeta::Quadtree::insert (\fBObject\fP *obj)"
+
+.SS "bool Zeta::Quadtree::isInside (\fBObject\fP *obj)\fC [private]\fP"
+
+.SS "void Zeta::Quadtree::subDivide ()\fC [private]\fP"
+
+.SS "bool Zeta::Quadtree::touches (\fBObject\fP *obj)\fC [private]\fP"
+
+.SH "Member Data Documentation"
+.PP 
+.SS "\fBRectangle\fP Zeta::Quadtree::bounds\fC [private]\fP"
+
+.SS "\fBQuadtree\fP* Zeta::Quadtree::childs[4]\fC [private]\fP"
+
+.SS "bool Zeta::Quadtree::leaf\fC [private]\fP"
+
+.SS "int Zeta::Quadtree::level\fC [private]\fP"
+
+.SS "int Zeta::Quadtree::maxLevel\fC [private]\fP"
+
+.SS "unsigned int Zeta::Quadtree::maxObjects\fC [private]\fP"
+
+.SS "std::vector<\fBObject\fP*> Zeta::Quadtree::objects\fC [private]\fP"
+
+.SS "\fBQuadtree\fP* Zeta::Quadtree::parent\fC [private]\fP"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Zeta from the source code\&.

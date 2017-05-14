@@ -1,0 +1,228 @@
+\hypertarget{classZeta_1_1Attribute}{\section{Zeta\+:\+:Attribute Class Reference}
+\label{classZeta_1_1Attribute}\index{Zeta\+::\+Attribute@{Zeta\+::\+Attribute}}
+}
+
+
+{\ttfamily \#include $<$Attribute.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classZeta_1_1Attribute_a3f9e6340e8ea4b5e9ad74c9898696a0b}{calculate} ()
+\item 
+void \hyperlink{classZeta_1_1Attribute_a24922604f4f328d952c44be03a0cea0d}{add\+Modifier} (\hyperlink{classZeta_1_1Modifier}{Modifier} $\ast$mod)
+\item 
+void \hyperlink{classZeta_1_1Attribute_ab99269eaf181406cbf7a154b86af1634}{remove\+Modifier} (\hyperlink{classZeta_1_1Modifier}{Modifier} $\ast$mod)
+\item 
+void \hyperlink{classZeta_1_1Attribute_ad19018db150427661cec8516ed1e9e51}{remove\+Modifier\+And\+Delete} (\hyperlink{classZeta_1_1Modifier}{Modifier} $\ast$mod)
+\item 
+\hyperlink{namespaceZeta_ab5947f98c0ab6302b51f8c6e93ec5581}{Attribute\+Value} \hyperlink{classZeta_1_1Attribute_a1b1c22b638e4dc8e2746deb53adb04a8}{get\+Value} () const 
+\item 
+\hyperlink{namespaceZeta_ab5947f98c0ab6302b51f8c6e93ec5581}{Attribute\+Value} \hyperlink{classZeta_1_1Attribute_af56df540b0a1a253b67ef5eac778a6ee}{get\+Base\+Value} () const 
+\item 
+\hyperlink{classZeta_1_1Attribute_a9ee74be316ff855f0a2e2f2b2dacacbd}{Attribute} ()
+\item 
+\hyperlink{classZeta_1_1Attribute_a21ad4fc1a49e3b39d356038ca177182a}{Attribute} (\hyperlink{namespaceZeta_ab5947f98c0ab6302b51f8c6e93ec5581}{Attribute\+Value} \hyperlink{classZeta_1_1Attribute_ab96690c561ec9b78648dafc70bc37529}{base\+Value})
+\item 
+void \hyperlink{classZeta_1_1Attribute_a7071cfacafb5d9d0b4da3913386f61a7}{apply\+To\+Base\+Flat} (\hyperlink{namespaceZeta_ab5947f98c0ab6302b51f8c6e93ec5581}{Attribute\+Value} x)
+\item 
+void \hyperlink{classZeta_1_1Attribute_a4d9cecf6c61ba0ea47b825a6fb8d954e}{apply\+To\+Base\+Mul} (\hyperlink{namespaceZeta_ab5947f98c0ab6302b51f8c6e93ec5581}{Attribute\+Value} x)
+\item 
+void \hyperlink{classZeta_1_1Attribute_a190c07ba11e10554c6819583d7f68317}{set\+Base} (\hyperlink{namespaceZeta_ab5947f98c0ab6302b51f8c6e93ec5581}{Attribute\+Value} value)
+\item 
+void \hyperlink{classZeta_1_1Attribute_a04ef4458c01cf3fce8731bc4d5a010a2}{set\+Calculated\+Value} (\hyperlink{namespaceZeta_ab5947f98c0ab6302b51f8c6e93ec5581}{Attribute\+Value} value)
+\item 
+void \hyperlink{classZeta_1_1Attribute_a7728554250846cbef54e9e1e6f141436}{remove\+All\+Modifiers} (bool delete\+Them)
+\item 
+\hyperlink{classZeta_1_1Attribute_ac564fc00e5396b62e764bd0fe11bbf27}{Attribute} (const \hyperlink{classZeta_1_1Attribute}{Attribute} \&other)
+\item 
+\hyperlink{classZeta_1_1Attribute}{Attribute} \& \hyperlink{classZeta_1_1Attribute_af57980fcca07e00f0464432f45e011ca}{operator=} (const \hyperlink{classZeta_1_1Attribute}{Attribute} \&other)
+\item 
+\hyperlink{classZeta_1_1Attribute}{Attribute} \& \hyperlink{classZeta_1_1Attribute_a58360d435e262ee8fb79d4e62242abb7}{operator=} (\hyperlink{namespaceZeta_ab5947f98c0ab6302b51f8c6e93ec5581}{Attribute\+Value} value)
+\item 
+virtual \hyperlink{classZeta_1_1Attribute_a11b58919e8801749aec2e9e2d933d043}{$\sim$\+Attribute} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespaceZeta_a44c717c98a964d0ebf6ea954cb9c91bf}{Z\+Small\+Set}$<$ \hyperlink{classZeta_1_1Modifier}{Modifier} $\ast$ $>$ \hyperlink{classZeta_1_1Attribute_a340f14d134cb26bf1c8685df3199ffcb}{modifiers}
+\item 
+\hyperlink{namespaceZeta_ab5947f98c0ab6302b51f8c6e93ec5581}{Attribute\+Value} \hyperlink{classZeta_1_1Attribute_ab96690c561ec9b78648dafc70bc37529}{base\+Value}
+\item 
+\hyperlink{namespaceZeta_ab5947f98c0ab6302b51f8c6e93ec5581}{Attribute\+Value} \hyperlink{classZeta_1_1Attribute_a76b3de0b3f4037ed5c19d3da82f105d8}{calculated\+Value}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classZeta_1_1Attribute_a9ee74be316ff855f0a2e2f2b2dacacbd}{\index{Zeta\+::\+Attribute@{Zeta\+::\+Attribute}!Attribute@{Attribute}}
+\index{Attribute@{Attribute}!Zeta\+::\+Attribute@{Zeta\+::\+Attribute}}
+\subsubsection[{Attribute}]{\setlength{\rightskip}{0pt plus 5cm}Zeta\+::\+Attribute\+::\+Attribute (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1Attribute_a9ee74be316ff855f0a2e2f2b2dacacbd}
+\hypertarget{classZeta_1_1Attribute_a21ad4fc1a49e3b39d356038ca177182a}{\index{Zeta\+::\+Attribute@{Zeta\+::\+Attribute}!Attribute@{Attribute}}
+\index{Attribute@{Attribute}!Zeta\+::\+Attribute@{Zeta\+::\+Attribute}}
+\subsubsection[{Attribute}]{\setlength{\rightskip}{0pt plus 5cm}Zeta\+::\+Attribute\+::\+Attribute (
+\begin{DoxyParamCaption}
+\item[{{\bf Attribute\+Value}}]{base\+Value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1Attribute_a21ad4fc1a49e3b39d356038ca177182a}
+\hypertarget{classZeta_1_1Attribute_ac564fc00e5396b62e764bd0fe11bbf27}{\index{Zeta\+::\+Attribute@{Zeta\+::\+Attribute}!Attribute@{Attribute}}
+\index{Attribute@{Attribute}!Zeta\+::\+Attribute@{Zeta\+::\+Attribute}}
+\subsubsection[{Attribute}]{\setlength{\rightskip}{0pt plus 5cm}Zeta\+::\+Attribute\+::\+Attribute (
+\begin{DoxyParamCaption}
+\item[{const {\bf Attribute} \&}]{other}
+\end{DoxyParamCaption}
+)}}\label{classZeta_1_1Attribute_ac564fc00e5396b62e764bd0fe11bbf27}
+\hypertarget{classZeta_1_1Attribute_a11b58919e8801749aec2e9e2d933d043}{\index{Zeta\+::\+Attribute@{Zeta\+::\+Attribute}!````~Attribute@{$\sim$\+Attribute}}
+\index{````~Attribute@{$\sim$\+Attribute}!Zeta\+::\+Attribute@{Zeta\+::\+Attribute}}
+\subsubsection[{$\sim$\+Attribute}]{\setlength{\rightskip}{0pt plus 5cm}virtual Zeta\+::\+Attribute\+::$\sim$\+Attribute (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classZeta_1_1Attribute_a11b58919e8801749aec2e9e2d933d043}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classZeta_1_1Attribute_a24922604f4f328d952c44be03a0cea0d}{\index{Zeta\+::\+Attribute@{Zeta\+::\+Attribute}!add\+Modifier@{add\+Modifier}}
+\index{add\+Modifier@{add\+Modifier}!Zeta\+::\+Attribute@{Zeta\+::\+Attribute}}
+\subsubsection[{add\+Modifier}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+Attribute\+::add\+Modifier (
+\begin{DoxyParamCaption}
+\item[{{\bf Modifier} $\ast$}]{mod}
+\end{DoxyParamCaption}
+)}}\label{classZeta_1_1Attribute_a24922604f4f328d952c44be03a0cea0d}
+\hypertarget{classZeta_1_1Attribute_a7071cfacafb5d9d0b4da3913386f61a7}{\index{Zeta\+::\+Attribute@{Zeta\+::\+Attribute}!apply\+To\+Base\+Flat@{apply\+To\+Base\+Flat}}
+\index{apply\+To\+Base\+Flat@{apply\+To\+Base\+Flat}!Zeta\+::\+Attribute@{Zeta\+::\+Attribute}}
+\subsubsection[{apply\+To\+Base\+Flat}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+Attribute\+::apply\+To\+Base\+Flat (
+\begin{DoxyParamCaption}
+\item[{{\bf Attribute\+Value}}]{x}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1Attribute_a7071cfacafb5d9d0b4da3913386f61a7}
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classZeta_1_1Attribute_a7071cfacafb5d9d0b4da3913386f61a7_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classZeta_1_1Attribute_a4d9cecf6c61ba0ea47b825a6fb8d954e}{\index{Zeta\+::\+Attribute@{Zeta\+::\+Attribute}!apply\+To\+Base\+Mul@{apply\+To\+Base\+Mul}}
+\index{apply\+To\+Base\+Mul@{apply\+To\+Base\+Mul}!Zeta\+::\+Attribute@{Zeta\+::\+Attribute}}
+\subsubsection[{apply\+To\+Base\+Mul}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+Attribute\+::apply\+To\+Base\+Mul (
+\begin{DoxyParamCaption}
+\item[{{\bf Attribute\+Value}}]{x}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1Attribute_a4d9cecf6c61ba0ea47b825a6fb8d954e}
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classZeta_1_1Attribute_a4d9cecf6c61ba0ea47b825a6fb8d954e_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classZeta_1_1Attribute_a3f9e6340e8ea4b5e9ad74c9898696a0b}{\index{Zeta\+::\+Attribute@{Zeta\+::\+Attribute}!calculate@{calculate}}
+\index{calculate@{calculate}!Zeta\+::\+Attribute@{Zeta\+::\+Attribute}}
+\subsubsection[{calculate}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+Attribute\+::calculate (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classZeta_1_1Attribute_a3f9e6340e8ea4b5e9ad74c9898696a0b}
+\hypertarget{classZeta_1_1Attribute_af56df540b0a1a253b67ef5eac778a6ee}{\index{Zeta\+::\+Attribute@{Zeta\+::\+Attribute}!get\+Base\+Value@{get\+Base\+Value}}
+\index{get\+Base\+Value@{get\+Base\+Value}!Zeta\+::\+Attribute@{Zeta\+::\+Attribute}}
+\subsubsection[{get\+Base\+Value}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Attribute\+Value} Zeta\+::\+Attribute\+::get\+Base\+Value (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1Attribute_af56df540b0a1a253b67ef5eac778a6ee}
+\hypertarget{classZeta_1_1Attribute_a1b1c22b638e4dc8e2746deb53adb04a8}{\index{Zeta\+::\+Attribute@{Zeta\+::\+Attribute}!get\+Value@{get\+Value}}
+\index{get\+Value@{get\+Value}!Zeta\+::\+Attribute@{Zeta\+::\+Attribute}}
+\subsubsection[{get\+Value}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Attribute\+Value} Zeta\+::\+Attribute\+::get\+Value (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1Attribute_a1b1c22b638e4dc8e2746deb53adb04a8}
+\hypertarget{classZeta_1_1Attribute_af57980fcca07e00f0464432f45e011ca}{\index{Zeta\+::\+Attribute@{Zeta\+::\+Attribute}!operator=@{operator=}}
+\index{operator=@{operator=}!Zeta\+::\+Attribute@{Zeta\+::\+Attribute}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Attribute}\& Zeta\+::\+Attribute\+::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Attribute} \&}]{other}
+\end{DoxyParamCaption}
+)}}\label{classZeta_1_1Attribute_af57980fcca07e00f0464432f45e011ca}
+\hypertarget{classZeta_1_1Attribute_a58360d435e262ee8fb79d4e62242abb7}{\index{Zeta\+::\+Attribute@{Zeta\+::\+Attribute}!operator=@{operator=}}
+\index{operator=@{operator=}!Zeta\+::\+Attribute@{Zeta\+::\+Attribute}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Attribute}\& Zeta\+::\+Attribute\+::operator= (
+\begin{DoxyParamCaption}
+\item[{{\bf Attribute\+Value}}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1Attribute_a58360d435e262ee8fb79d4e62242abb7}
+\hypertarget{classZeta_1_1Attribute_a7728554250846cbef54e9e1e6f141436}{\index{Zeta\+::\+Attribute@{Zeta\+::\+Attribute}!remove\+All\+Modifiers@{remove\+All\+Modifiers}}
+\index{remove\+All\+Modifiers@{remove\+All\+Modifiers}!Zeta\+::\+Attribute@{Zeta\+::\+Attribute}}
+\subsubsection[{remove\+All\+Modifiers}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+Attribute\+::remove\+All\+Modifiers (
+\begin{DoxyParamCaption}
+\item[{bool}]{delete\+Them}
+\end{DoxyParamCaption}
+)}}\label{classZeta_1_1Attribute_a7728554250846cbef54e9e1e6f141436}
+\hypertarget{classZeta_1_1Attribute_ab99269eaf181406cbf7a154b86af1634}{\index{Zeta\+::\+Attribute@{Zeta\+::\+Attribute}!remove\+Modifier@{remove\+Modifier}}
+\index{remove\+Modifier@{remove\+Modifier}!Zeta\+::\+Attribute@{Zeta\+::\+Attribute}}
+\subsubsection[{remove\+Modifier}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+Attribute\+::remove\+Modifier (
+\begin{DoxyParamCaption}
+\item[{{\bf Modifier} $\ast$}]{mod}
+\end{DoxyParamCaption}
+)}}\label{classZeta_1_1Attribute_ab99269eaf181406cbf7a154b86af1634}
+\hypertarget{classZeta_1_1Attribute_ad19018db150427661cec8516ed1e9e51}{\index{Zeta\+::\+Attribute@{Zeta\+::\+Attribute}!remove\+Modifier\+And\+Delete@{remove\+Modifier\+And\+Delete}}
+\index{remove\+Modifier\+And\+Delete@{remove\+Modifier\+And\+Delete}!Zeta\+::\+Attribute@{Zeta\+::\+Attribute}}
+\subsubsection[{remove\+Modifier\+And\+Delete}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+Attribute\+::remove\+Modifier\+And\+Delete (
+\begin{DoxyParamCaption}
+\item[{{\bf Modifier} $\ast$}]{mod}
+\end{DoxyParamCaption}
+)}}\label{classZeta_1_1Attribute_ad19018db150427661cec8516ed1e9e51}
+\hypertarget{classZeta_1_1Attribute_a190c07ba11e10554c6819583d7f68317}{\index{Zeta\+::\+Attribute@{Zeta\+::\+Attribute}!set\+Base@{set\+Base}}
+\index{set\+Base@{set\+Base}!Zeta\+::\+Attribute@{Zeta\+::\+Attribute}}
+\subsubsection[{set\+Base}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+Attribute\+::set\+Base (
+\begin{DoxyParamCaption}
+\item[{{\bf Attribute\+Value}}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1Attribute_a190c07ba11e10554c6819583d7f68317}
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classZeta_1_1Attribute_a190c07ba11e10554c6819583d7f68317_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classZeta_1_1Attribute_a04ef4458c01cf3fce8731bc4d5a010a2}{\index{Zeta\+::\+Attribute@{Zeta\+::\+Attribute}!set\+Calculated\+Value@{set\+Calculated\+Value}}
+\index{set\+Calculated\+Value@{set\+Calculated\+Value}!Zeta\+::\+Attribute@{Zeta\+::\+Attribute}}
+\subsubsection[{set\+Calculated\+Value}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+Attribute\+::set\+Calculated\+Value (
+\begin{DoxyParamCaption}
+\item[{{\bf Attribute\+Value}}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1Attribute_a04ef4458c01cf3fce8731bc4d5a010a2}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classZeta_1_1Attribute_ab96690c561ec9b78648dafc70bc37529}{\index{Zeta\+::\+Attribute@{Zeta\+::\+Attribute}!base\+Value@{base\+Value}}
+\index{base\+Value@{base\+Value}!Zeta\+::\+Attribute@{Zeta\+::\+Attribute}}
+\subsubsection[{base\+Value}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Attribute\+Value} Zeta\+::\+Attribute\+::base\+Value\hspace{0.3cm}{\ttfamily [protected]}}}\label{classZeta_1_1Attribute_ab96690c561ec9b78648dafc70bc37529}
+\hypertarget{classZeta_1_1Attribute_a76b3de0b3f4037ed5c19d3da82f105d8}{\index{Zeta\+::\+Attribute@{Zeta\+::\+Attribute}!calculated\+Value@{calculated\+Value}}
+\index{calculated\+Value@{calculated\+Value}!Zeta\+::\+Attribute@{Zeta\+::\+Attribute}}
+\subsubsection[{calculated\+Value}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Attribute\+Value} Zeta\+::\+Attribute\+::calculated\+Value\hspace{0.3cm}{\ttfamily [protected]}}}\label{classZeta_1_1Attribute_a76b3de0b3f4037ed5c19d3da82f105d8}
+\hypertarget{classZeta_1_1Attribute_a340f14d134cb26bf1c8685df3199ffcb}{\index{Zeta\+::\+Attribute@{Zeta\+::\+Attribute}!modifiers@{modifiers}}
+\index{modifiers@{modifiers}!Zeta\+::\+Attribute@{Zeta\+::\+Attribute}}
+\subsubsection[{modifiers}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Z\+Small\+Set}$<${\bf Modifier}$\ast$$>$ Zeta\+::\+Attribute\+::modifiers\hspace{0.3cm}{\ttfamily [protected]}}}\label{classZeta_1_1Attribute_a340f14d134cb26bf1c8685df3199ffcb}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Zeta/\+Core/\+R\+P\+G\+Classes/\hyperlink{Attribute_8hpp}{Attribute.\+hpp}\end{DoxyCompactItemize}

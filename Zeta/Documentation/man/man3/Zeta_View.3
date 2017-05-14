@@ -1,0 +1,122 @@
+.TH "Zeta::View" 3 "Wed Feb 10 2016" "Zeta" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Zeta::View \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <View\&.hpp>\fP
+.PP
+Inherits \fBZeta::LuaPushable\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBsetPosition\fP (\fBFloat\fP x, \fBFloat\fP y)"
+.br
+.ti -1c
+.RI "\fBVector2\fP & \fBgetPosition\fP ()"
+.br
+.ti -1c
+.RI "void \fBoffsetPosition\fP (\fBFloat\fP \fBdx\fP, \fBFloat\fP \fBdy\fP)"
+.br
+.ti -1c
+.RI "void \fBresize\fP (int width, int height)"
+.br
+.ti -1c
+.RI "\fBFloat\fP \fBgetX\fP () const "
+.br
+.ti -1c
+.RI "\fBFloat\fP \fBgetY\fP () const "
+.br
+.ti -1c
+.RI "int \fBgetWidth\fP () const "
+.br
+.ti -1c
+.RI "int \fBgetHeight\fP () const "
+.br
+.ti -1c
+.RI "bool \fBisInView\fP (const \fBObject\fP &obj) const "
+.br
+.ti -1c
+.RI "\fBFloat\fP \fBgetDX\fP () const "
+.br
+.ti -1c
+.RI "\fBFloat\fP \fBgetDY\fP () const "
+.br
+.ti -1c
+.RI "void \fBresetOffests\fP ()"
+.br
+.ti -1c
+.RI "void \fBpushToLua\fP (lua_State *lstate)"
+.br
+.ti -1c
+.RI "\fBView\fP ()"
+.br
+.ti -1c
+.RI "\fB~View\fP ()"
+.br
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBRectangle\fP \fBviewRect\fP"
+.br
+.ti -1c
+.RI "\fBFloat\fP \fBdx\fP"
+.br
+.ti -1c
+.RI "\fBFloat\fP \fBdy\fP"
+.br
+.in -1c
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Zeta::View::View ()"
+
+.SS "Zeta::View::~View ()"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "\fBFloat\fP Zeta::View::getDX () const\fC [inline]\fP"
+
+.SS "\fBFloat\fP Zeta::View::getDY () const\fC [inline]\fP"
+
+.SS "int Zeta::View::getHeight () const\fC [inline]\fP"
+
+.SS "\fBVector2\fP& Zeta::View::getPosition ()\fC [inline]\fP"
+
+.SS "int Zeta::View::getWidth () const\fC [inline]\fP"
+
+.SS "\fBFloat\fP Zeta::View::getX () const\fC [inline]\fP"
+
+.SS "\fBFloat\fP Zeta::View::getY () const\fC [inline]\fP"
+
+.SS "bool Zeta::View::isInView (const \fBObject\fP &obj) const\fC [inline]\fP"
+
+.SS "void Zeta::View::offsetPosition (\fBFloat\fPdx, \fBFloat\fPdy)\fC [inline]\fP"
+
+.SS "void Zeta::View::pushToLua (lua_State *lstate)\fC [virtual]\fP"
+
+.PP
+Implements \fBZeta::LuaPushable\fP\&.
+.SS "void Zeta::View::resetOffests ()\fC [inline]\fP"
+
+.SS "void Zeta::View::resize (intwidth, intheight)\fC [inline]\fP"
+
+.SS "void Zeta::View::setPosition (\fBFloat\fPx, \fBFloat\fPy)\fC [inline]\fP"
+
+.SH "Member Data Documentation"
+.PP 
+.SS "\fBFloat\fP Zeta::View::dx\fC [protected]\fP"
+
+.SS "\fBFloat\fP Zeta::View::dy\fC [protected]\fP"
+
+.SS "\fBRectangle\fP Zeta::View::viewRect\fC [protected]\fP"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Zeta from the source code\&.

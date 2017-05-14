@@ -1,0 +1,70 @@
+.TH "include/Zeta/Core/ZetaConfig.hpp" 3 "Wed Feb 10 2016" "Zeta" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+include/Zeta/Core/ZetaConfig.hpp \- 
+.SH SYNOPSIS
+.br
+.PP
+.SS "Namespaces"
+
+.in +1c
+.ti -1c
+.RI " \fBZeta\fP"
+.br
+.in -1c
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBZETA_USE_VECTOR_2D_TABLES\fP"
+.br
+.in -1c
+.SS "Typedefs"
+
+.in +1c
+.ti -1c
+.RI "typedef int \fBlua_Object\fP"
+.br
+.ti -1c
+.RI "typedef int(* \fBlua_CFunction\fP )(lua_State *L)"
+.br
+.ti -1c
+.RI "typedef float \fBZeta::Float\fP"
+.br
+.ti -1c
+.RI "typedef float \fBZeta::AttributeValue\fP"
+.br
+.in -1c
+.SS "Enumerations"
+
+.in +1c
+.ti -1c
+.RI "enum \fBZeta::EventType\fP { \fBZeta::EventType::Window_Close\fP, \fBZeta::EventType::Window_Resize\fP, \fBZeta::EventType::Window_Lost_Focus\fP, \fBZeta::EventType::Window_Got_Focus\fP, \fBZeta::EventType::Mouse_Button_Down\fP, \fBZeta::EventType::Mouse_Button_Up\fP, \fBZeta::EventType::Mouse_Move\fP, \fBZeta::EventType::Keyboard_Key_Down\fP, \fBZeta::EventType::Keyboard_Key_Up\fP, \fBZeta::EventType::Keyboard_Char_Pressed\fP, \fBZeta::EventType::Ignore\fP }"
+.br
+.ti -1c
+.RI "enum \fBZeta::KeyboardKey\fP { \fBZeta::KeyboardKey::Unknown\fP = 0x00, \fBZeta::KeyboardKey::Escape\fP = 0x01, \fBZeta::KeyboardKey::One\fP = 0x02, \fBZeta::KeyboardKey::Two\fP = 0x03, \fBZeta::KeyboardKey::Three\fP = 0x04, \fBZeta::KeyboardKey::Four\fP = 0x05, \fBZeta::KeyboardKey::Five\fP = 0x06, \fBZeta::KeyboardKey::Six\fP = 0x07, \fBZeta::KeyboardKey::Seven\fP = 0x08, \fBZeta::KeyboardKey::Eight\fP = 0x09, \fBZeta::KeyboardKey::Nine\fP = 0x0A, \fBZeta::KeyboardKey::Zero\fP = 0x0B, \fBZeta::KeyboardKey::Minus\fP = 0x0C, \fBZeta::KeyboardKey::Equals\fP = 0x0D, \fBZeta::KeyboardKey::Backspace\fP = 0x0E, \fBZeta::KeyboardKey::Tab\fP = 0x0F, \fBZeta::KeyboardKey::Q\fP = 0x10, \fBZeta::KeyboardKey::W\fP = 0x11, \fBZeta::KeyboardKey::E\fP = 0x12, \fBZeta::KeyboardKey::R\fP = 0x13, \fBZeta::KeyboardKey::T\fP = 0x14, \fBZeta::KeyboardKey::Y\fP = 0x15, \fBZeta::KeyboardKey::U\fP = 0x16, \fBZeta::KeyboardKey::I\fP = 0x17, \fBZeta::KeyboardKey::O\fP = 0x18, \fBZeta::KeyboardKey::P\fP = 0x19, \fBZeta::KeyboardKey::LeftBracket\fP = 0x1A, \fBZeta::KeyboardKey::RightBracket\fP = 0x1B, \fBZeta::KeyboardKey::Return\fP = 0x1C, \fBZeta::KeyboardKey::LeftControl\fP = 0x1D, \fBZeta::KeyboardKey::A\fP = 0x1E, \fBZeta::KeyboardKey::S\fP = 0x1F, \fBZeta::KeyboardKey::D\fP = 0x20, \fBZeta::KeyboardKey::F\fP = 0x21, \fBZeta::KeyboardKey::G\fP = 0x22, \fBZeta::KeyboardKey::H\fP = 0x23, \fBZeta::KeyboardKey::J\fP = 0x24, \fBZeta::KeyboardKey::K\fP = 0x25, \fBZeta::KeyboardKey::L\fP = 0x26, \fBZeta::KeyboardKey::Semicolon\fP = 0x27, \fBZeta::KeyboardKey::Apostrophe\fP = 0x28, \fBZeta::KeyboardKey::Grave\fP = 0x29, \fBZeta::KeyboardKey::LeftShift\fP = 0x2A, \fBZeta::KeyboardKey::Backslash\fP = 0x2B, \fBZeta::KeyboardKey::Z\fP = 0x2C, \fBZeta::KeyboardKey::X\fP = 0x2D, \fBZeta::KeyboardKey::C\fP = 0x2E, \fBZeta::KeyboardKey::V\fP = 0x2F, \fBZeta::KeyboardKey::B\fP = 0x30, \fBZeta::KeyboardKey::N\fP = 0x31, \fBZeta::KeyboardKey::M\fP = 0x32, \fBZeta::KeyboardKey::Comma\fP = 0x33, \fBZeta::KeyboardKey::Period\fP = 0x34, \fBZeta::KeyboardKey::Slash\fP = 0x35, \fBZeta::KeyboardKey::RightShift\fP = 0x36, \fBZeta::KeyboardKey::Multiply\fP = 0x37, \fBZeta::KeyboardKey::LeftAlt\fP = 0x38, \fBZeta::KeyboardKey::Space\fP = 0x39, \fBZeta::KeyboardKey::Capital\fP = 0x3A, \fBZeta::KeyboardKey::F1\fP = 0x3B, \fBZeta::KeyboardKey::F2\fP = 0x3C, \fBZeta::KeyboardKey::F3\fP = 0x3D, \fBZeta::KeyboardKey::F4\fP = 0x3E, \fBZeta::KeyboardKey::F5\fP = 0x3F, \fBZeta::KeyboardKey::F6\fP = 0x40, \fBZeta::KeyboardKey::F7\fP = 0x41, \fBZeta::KeyboardKey::F8\fP = 0x42, \fBZeta::KeyboardKey::F9\fP = 0x43, \fBZeta::KeyboardKey::F10\fP = 0x44, \fBZeta::KeyboardKey::NumLock\fP = 0x45, \fBZeta::KeyboardKey::ScrollLock\fP = 0x46, \fBZeta::KeyboardKey::Numpad7\fP = 0x47, \fBZeta::KeyboardKey::Numpad8\fP = 0x48, \fBZeta::KeyboardKey::Numpad9\fP = 0x49, \fBZeta::KeyboardKey::Subtract\fP = 0x4A, \fBZeta::KeyboardKey::Numpad4\fP = 0x4B, \fBZeta::KeyboardKey::Numpad5\fP = 0x4C, \fBZeta::KeyboardKey::Numpad6\fP = 0x4D, \fBZeta::KeyboardKey::Add\fP = 0x4E, \fBZeta::KeyboardKey::Numpad1\fP = 0x4F, \fBZeta::KeyboardKey::Numpad2\fP = 0x50, \fBZeta::KeyboardKey::Numpad3\fP = 0x51, \fBZeta::KeyboardKey::Numpad0\fP = 0x52, \fBZeta::KeyboardKey::Decimal\fP = 0x53, \fBZeta::KeyboardKey::OEM_102\fP = 0x56, \fBZeta::KeyboardKey::F11\fP = 0x57, \fBZeta::KeyboardKey::F12\fP = 0x58, \fBZeta::KeyboardKey::F13\fP = 0x64, \fBZeta::KeyboardKey::F14\fP = 0x65, \fBZeta::KeyboardKey::F15\fP = 0x66, \fBZeta::KeyboardKey::Kana\fP = 0x70, \fBZeta::KeyboardKey::ABNT_C1\fP = 0x73, \fBZeta::KeyboardKey::Convert\fP = 0x79, \fBZeta::KeyboardKey::NoConvert\fP = 0x7B, \fBZeta::KeyboardKey::Yen\fP = 0x7D, \fBZeta::KeyboardKey::ABNT_C2\fP = 0x7E, \fBZeta::KeyboardKey::NumpadEquals\fP = 0x8D, \fBZeta::KeyboardKey::PrevTrack\fP = 0x90, \fBZeta::KeyboardKey::At\fP = 0x91, \fBZeta::KeyboardKey::Colon\fP = 0x92, \fBZeta::KeyboardKey::Underline\fP = 0x93, \fBZeta::KeyboardKey::Kanji\fP = 0x94, \fBZeta::KeyboardKey::Stop\fP = 0x95, \fBZeta::KeyboardKey::AX\fP = 0x96, \fBZeta::KeyboardKey::Unlabeled\fP = 0x97, \fBZeta::KeyboardKey::NextTrack\fP = 0x99, \fBZeta::KeyboardKey::NumpadEnter\fP = 0x9C, \fBZeta::KeyboardKey::RightControl\fP = 0x9D, \fBZeta::KeyboardKey::Mute\fP = 0xA0, \fBZeta::KeyboardKey::Calculator\fP = 0xA1, \fBZeta::KeyboardKey::PlayPause\fP = 0xA2, \fBZeta::KeyboardKey::MediaStop\fP = 0xA4, \fBZeta::KeyboardKey::VolumeDown\fP = 0xAE, \fBZeta::KeyboardKey::VolumeUp\fP = 0xB0, \fBZeta::KeyboardKey::WebHome\fP = 0xB2, \fBZeta::KeyboardKey::NumpadComma\fP = 0xB3, \fBZeta::KeyboardKey::Divide\fP = 0xB5, \fBZeta::KeyboardKey::SysRq\fP = 0xB7, \fBZeta::KeyboardKey::RightAlt\fP = 0xB8, \fBZeta::KeyboardKey::Pause\fP = 0xC5, \fBZeta::KeyboardKey::Home\fP = 0xC7, \fBZeta::KeyboardKey::ArrowUp\fP = 0xC8, \fBZeta::KeyboardKey::PageUp\fP = 0xC9, \fBZeta::KeyboardKey::ArrowLeft\fP = 0xCB, \fBZeta::KeyboardKey::ArrowRight\fP = 0xCD, \fBZeta::KeyboardKey::End\fP = 0xCF, \fBZeta::KeyboardKey::ArrowDown\fP = 0xD0, \fBZeta::KeyboardKey::PageDown\fP = 0xD1, \fBZeta::KeyboardKey::Insert\fP = 0xD2, \fBZeta::KeyboardKey::Delete\fP = 0xD3, \fBZeta::KeyboardKey::LeftWindows\fP = 0xDB, \fBZeta::KeyboardKey::RightWindows\fP = 0xDC, \fBZeta::KeyboardKey::AppMenu\fP = 0xDD, \fBZeta::KeyboardKey::Power\fP = 0xDE, \fBZeta::KeyboardKey::Sleep\fP = 0xDF, \fBZeta::KeyboardKey::Wake\fP = 0xE3, \fBZeta::KeyboardKey::WebSearch\fP = 0xE5, \fBZeta::KeyboardKey::WebFavorites\fP = 0xE6, \fBZeta::KeyboardKey::WebRefresh\fP = 0xE7, \fBZeta::KeyboardKey::WebStop\fP = 0xE8, \fBZeta::KeyboardKey::WebForward\fP = 0xE9, \fBZeta::KeyboardKey::WebBack\fP = 0xEA, \fBZeta::KeyboardKey::MyComputer\fP = 0xEB, \fBZeta::KeyboardKey::Mail\fP = 0xEC, \fBZeta::KeyboardKey::MediaSelect\fP = 0xED }"
+.br
+.ti -1c
+.RI "enum \fBZeta::KeyModifiers\fP { \fBZeta::KeyModifiers::Shift\fP = 0x00001, \fBZeta::KeyModifiers::Ctrl\fP = 0x00002, \fBZeta::KeyModifiers::Alt\fP = 0x00004, \fBZeta::KeyModifiers::Lwin\fP = 0x00008, \fBZeta::KeyModifiers::Rwin\fP = 0x00010, \fBZeta::KeyModifiers::Menu\fP = 0x00020, \fBZeta::KeyModifiers::Alt_Gr\fP = 0x00040, \fBZeta::KeyModifiers::Command\fP = 0x00080, \fBZeta::KeyModifiers::Scroll_Lock\fP = 0x00100, \fBZeta::KeyModifiers::Num_Lock\fP = 0x00200, \fBZeta::KeyModifiers::Caps_Lock\fP = 0x00400, \fBZeta::KeyModifiers::In_Alt_Seq\fP = 0x00800, \fBZeta::KeyModifiers::Accent1\fP = 0x01000, \fBZeta::KeyModifiers::Accent2\fP = 0x02000, \fBZeta::KeyModifiers::Accent3\fP = 0x04000, \fBZeta::KeyModifiers::Accent4\fP = 0x08000 }"
+.br
+.ti -1c
+.RI "enum \fBZeta::MouseButton\fP { \fBZeta::MouseButton::LeftButton\fP, \fBZeta::MouseButton::RightButton\fP, \fBZeta::MouseButton::MiddleButton\fP, \fBZeta::MouseButton::X1Button\fP, \fBZeta::MouseButton::X2Button\fP }"
+.br
+.ti -1c
+.RI "enum \fBZeta::WindowFlag\fP { \fBZeta::WindowFlag::Normal\fP, \fBZeta::WindowFlag::No_Frame\fP, \fBZeta::WindowFlag::Full_Screen\fP, \fBZeta::WindowFlag::Full_Screen_Windowed\fP }"
+.br
+.in -1c
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define ZETA_USE_VECTOR_2D_TABLES"
+
+.SH "Typedef Documentation"
+.PP 
+.SS "typedef int(* lua_CFunction)(lua_State *L)"
+
+.SS "typedef int \fBlua_Object\fP"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Zeta from the source code\&.

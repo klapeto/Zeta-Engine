@@ -1,0 +1,9 @@
+$#include <Zeta/Core/RPGClasses/ChildObject.hpp>
+
+class ChildObject: public Object {
+public:
+	AnimationHandler& getAnimationHandler();
+	Object* getParent();
+	bool hasParent() const;
+	void setParent(Object* parent);
+};

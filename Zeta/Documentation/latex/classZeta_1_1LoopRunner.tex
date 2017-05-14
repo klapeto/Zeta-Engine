@@ -1,0 +1,191 @@
+\hypertarget{classZeta_1_1LoopRunner}{\section{Zeta\+:\+:Loop\+Runner Class Reference}
+\label{classZeta_1_1LoopRunner}\index{Zeta\+::\+Loop\+Runner@{Zeta\+::\+Loop\+Runner}}
+}
+
+
+{\ttfamily \#include $<$Loop\+Runner.\+hpp$>$}
+
+
+
+Inheritance diagram for Zeta\+:\+:Loop\+Runner\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=174pt]{classZeta_1_1LoopRunner__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Zeta\+:\+:Loop\+Runner\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=223pt]{classZeta_1_1LoopRunner__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{classZeta_1_1LoopRunner_a45c0f0ec5b7d1f48f3aebc429908c456}{start} ()=0
+\item 
+virtual int \hyperlink{classZeta_1_1LoopRunner_ab9ab29d4239c98b49e11879528817dc3}{get\+Target\+Fps} () const =0
+\item 
+virtual void \hyperlink{classZeta_1_1LoopRunner_a82d681fc778e4eb3078c8dc0eac059a0}{set\+Target\+Fps} (int target\+Fps)=0
+\item 
+void \hyperlink{classZeta_1_1LoopRunner_ad0ef83982d819b87a6e5c71a9bbd11b0}{set\+Loop} (\hyperlink{classZeta_1_1GeneralLoop}{General\+Loop} $\ast$\hyperlink{classZeta_1_1LoopRunner_a6ba0f28d22a7645ad1edc49ab9c1e732}{loop})
+\item 
+\hyperlink{classZeta_1_1GeneralLoop}{General\+Loop} $\ast$ \hyperlink{classZeta_1_1LoopRunner_a11df692d8d810585a35379fb8fb306a3}{get\+Loop} () const 
+\item 
+\hyperlink{classZeta_1_1LoopRunner_a6a811a3c856aacf2bfe759c877d91e95}{Loop\+Runner} ()
+\item 
+virtual \hyperlink{classZeta_1_1LoopRunner_a27027688ab6f384cfcf5198eae43a69a}{$\sim$\+Loop\+Runner} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classZeta_1_1LoopRunner_af7d8607eb7de15f7463809ee16254f33}{render} ()
+\item 
+void \hyperlink{classZeta_1_1LoopRunner_a19daf63249a85380485ff0c98bd16e09}{update} ()
+\item 
+void \hyperlink{classZeta_1_1LoopRunner_a1095c1b13cf9909e895d9777fb20fec7}{handle\+Events} (\hyperlink{classZeta_1_1Event}{Event} \&event)
+\item 
+bool \hyperlink{classZeta_1_1LoopRunner_a06d8692924dc367d965c2da59f20cd5c}{is\+Loop\+Running} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classZeta_1_1GeneralLoop}{General\+Loop} $\ast$ \hyperlink{classZeta_1_1LoopRunner_a6ba0f28d22a7645ad1edc49ab9c1e732}{loop}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classZeta_1_1LoopRunner}{Loop\+Runner} abstract class to write Library-\/\+Specific Wrappers 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classZeta_1_1LoopRunner_a6a811a3c856aacf2bfe759c877d91e95}{\index{Zeta\+::\+Loop\+Runner@{Zeta\+::\+Loop\+Runner}!Loop\+Runner@{Loop\+Runner}}
+\index{Loop\+Runner@{Loop\+Runner}!Zeta\+::\+Loop\+Runner@{Zeta\+::\+Loop\+Runner}}
+\subsubsection[{Loop\+Runner}]{\setlength{\rightskip}{0pt plus 5cm}Zeta\+::\+Loop\+Runner\+::\+Loop\+Runner (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1LoopRunner_a6a811a3c856aacf2bfe759c877d91e95}
+Constructs a \hyperlink{classZeta_1_1LoopRunner}{Loop\+Runner} with no Loop assigned \hypertarget{classZeta_1_1LoopRunner_a27027688ab6f384cfcf5198eae43a69a}{\index{Zeta\+::\+Loop\+Runner@{Zeta\+::\+Loop\+Runner}!````~Loop\+Runner@{$\sim$\+Loop\+Runner}}
+\index{````~Loop\+Runner@{$\sim$\+Loop\+Runner}!Zeta\+::\+Loop\+Runner@{Zeta\+::\+Loop\+Runner}}
+\subsubsection[{$\sim$\+Loop\+Runner}]{\setlength{\rightskip}{0pt plus 5cm}virtual Zeta\+::\+Loop\+Runner\+::$\sim$\+Loop\+Runner (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classZeta_1_1LoopRunner_a27027688ab6f384cfcf5198eae43a69a}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classZeta_1_1LoopRunner_a11df692d8d810585a35379fb8fb306a3}{\index{Zeta\+::\+Loop\+Runner@{Zeta\+::\+Loop\+Runner}!get\+Loop@{get\+Loop}}
+\index{get\+Loop@{get\+Loop}!Zeta\+::\+Loop\+Runner@{Zeta\+::\+Loop\+Runner}}
+\subsubsection[{get\+Loop}]{\setlength{\rightskip}{0pt plus 5cm}{\bf General\+Loop}$\ast$ Zeta\+::\+Loop\+Runner\+::get\+Loop (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1LoopRunner_a11df692d8d810585a35379fb8fb306a3}
+Gets the Loop \hyperlink{classZeta_1_1Object}{Object} that runs \begin{DoxyReturn}{Returns}
+The loop object assigned 
+\end{DoxyReturn}
+\hypertarget{classZeta_1_1LoopRunner_ab9ab29d4239c98b49e11879528817dc3}{\index{Zeta\+::\+Loop\+Runner@{Zeta\+::\+Loop\+Runner}!get\+Target\+Fps@{get\+Target\+Fps}}
+\index{get\+Target\+Fps@{get\+Target\+Fps}!Zeta\+::\+Loop\+Runner@{Zeta\+::\+Loop\+Runner}}
+\subsubsection[{get\+Target\+Fps}]{\setlength{\rightskip}{0pt plus 5cm}virtual int Zeta\+::\+Loop\+Runner\+::get\+Target\+Fps (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classZeta_1_1LoopRunner_ab9ab29d4239c98b49e11879528817dc3}
+Gets the Loops target F\+P\+S Warning this is not the Current Engine's F\+P\+S \begin{DoxyReturn}{Returns}
+the target F\+P\+S 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classZeta_1_1AllegroLoop_ac422e8f5961d13161c63a3863236ce99}{Zeta\+::\+Allegro\+Loop}.
+
+\hypertarget{classZeta_1_1LoopRunner_a1095c1b13cf9909e895d9777fb20fec7}{\index{Zeta\+::\+Loop\+Runner@{Zeta\+::\+Loop\+Runner}!handle\+Events@{handle\+Events}}
+\index{handle\+Events@{handle\+Events}!Zeta\+::\+Loop\+Runner@{Zeta\+::\+Loop\+Runner}}
+\subsubsection[{handle\+Events}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+Loop\+Runner\+::handle\+Events (
+\begin{DoxyParamCaption}
+\item[{{\bf Event} \&}]{event}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classZeta_1_1LoopRunner_a1095c1b13cf9909e895d9777fb20fec7}
+Causes the Loop \hyperlink{classZeta_1_1Object}{Object} to handle the system \hyperlink{classZeta_1_1Event}{Event} 
+\begin{DoxyParams}{Parameters}
+{\em event} & The event to handle \\
+\hline
+\end{DoxyParams}
+\hypertarget{classZeta_1_1LoopRunner_a06d8692924dc367d965c2da59f20cd5c}{\index{Zeta\+::\+Loop\+Runner@{Zeta\+::\+Loop\+Runner}!is\+Loop\+Running@{is\+Loop\+Running}}
+\index{is\+Loop\+Running@{is\+Loop\+Running}!Zeta\+::\+Loop\+Runner@{Zeta\+::\+Loop\+Runner}}
+\subsubsection[{is\+Loop\+Running}]{\setlength{\rightskip}{0pt plus 5cm}bool Zeta\+::\+Loop\+Runner\+::is\+Loop\+Running (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classZeta_1_1LoopRunner_a06d8692924dc367d965c2da59f20cd5c}
+Gets if the Loop \hyperlink{classZeta_1_1Object}{Object} must be running As soon this function returns true, the Loop must run \begin{DoxyReturn}{Returns}
+true if the Loop must continue running 
+\end{DoxyReturn}
+\hypertarget{classZeta_1_1LoopRunner_af7d8607eb7de15f7463809ee16254f33}{\index{Zeta\+::\+Loop\+Runner@{Zeta\+::\+Loop\+Runner}!render@{render}}
+\index{render@{render}!Zeta\+::\+Loop\+Runner@{Zeta\+::\+Loop\+Runner}}
+\subsubsection[{render}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+Loop\+Runner\+::render (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classZeta_1_1LoopRunner_af7d8607eb7de15f7463809ee16254f33}
+Causes the Loop \hyperlink{classZeta_1_1Object}{Object} to render everything it should render \hypertarget{classZeta_1_1LoopRunner_ad0ef83982d819b87a6e5c71a9bbd11b0}{\index{Zeta\+::\+Loop\+Runner@{Zeta\+::\+Loop\+Runner}!set\+Loop@{set\+Loop}}
+\index{set\+Loop@{set\+Loop}!Zeta\+::\+Loop\+Runner@{Zeta\+::\+Loop\+Runner}}
+\subsubsection[{set\+Loop}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+Loop\+Runner\+::set\+Loop (
+\begin{DoxyParamCaption}
+\item[{{\bf General\+Loop} $\ast$}]{loop}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1LoopRunner_ad0ef83982d819b87a6e5c71a9bbd11b0}
+Sets the Loop Implementation \hyperlink{classZeta_1_1Object}{Object} to run 
+\begin{DoxyParams}{Parameters}
+{\em loop} & The Loop to run \\
+\hline
+\end{DoxyParams}
+\hypertarget{classZeta_1_1LoopRunner_a82d681fc778e4eb3078c8dc0eac059a0}{\index{Zeta\+::\+Loop\+Runner@{Zeta\+::\+Loop\+Runner}!set\+Target\+Fps@{set\+Target\+Fps}}
+\index{set\+Target\+Fps@{set\+Target\+Fps}!Zeta\+::\+Loop\+Runner@{Zeta\+::\+Loop\+Runner}}
+\subsubsection[{set\+Target\+Fps}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Zeta\+::\+Loop\+Runner\+::set\+Target\+Fps (
+\begin{DoxyParamCaption}
+\item[{int}]{target\+Fps}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classZeta_1_1LoopRunner_a82d681fc778e4eb3078c8dc0eac059a0}
+Sets the Loops target F\+P\+S Warning this is not the Current Engine's F\+P\+S 
+\begin{DoxyParams}{Parameters}
+{\em target\+Fps} & the target F\+P\+S \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{classZeta_1_1AllegroLoop_a845300a5ce14dd8fb8c7f2ffeb0afbb2}{Zeta\+::\+Allegro\+Loop}.
+
+\hypertarget{classZeta_1_1LoopRunner_a45c0f0ec5b7d1f48f3aebc429908c456}{\index{Zeta\+::\+Loop\+Runner@{Zeta\+::\+Loop\+Runner}!start@{start}}
+\index{start@{start}!Zeta\+::\+Loop\+Runner@{Zeta\+::\+Loop\+Runner}}
+\subsubsection[{start}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Zeta\+::\+Loop\+Runner\+::start (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classZeta_1_1LoopRunner_a45c0f0ec5b7d1f48f3aebc429908c456}
+Causes the Main Loop to start 
+
+Implemented in \hyperlink{classZeta_1_1AllegroLoop_a95ef031ace6f929a450c80c9ecdaa057}{Zeta\+::\+Allegro\+Loop}.
+
+\hypertarget{classZeta_1_1LoopRunner_a19daf63249a85380485ff0c98bd16e09}{\index{Zeta\+::\+Loop\+Runner@{Zeta\+::\+Loop\+Runner}!update@{update}}
+\index{update@{update}!Zeta\+::\+Loop\+Runner@{Zeta\+::\+Loop\+Runner}}
+\subsubsection[{update}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+Loop\+Runner\+::update (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classZeta_1_1LoopRunner_a19daf63249a85380485ff0c98bd16e09}
+Causes the Loop \hyperlink{classZeta_1_1Object}{Object} to update everything it should update 
+
+\subsection{Member Data Documentation}
+\hypertarget{classZeta_1_1LoopRunner_a6ba0f28d22a7645ad1edc49ab9c1e732}{\index{Zeta\+::\+Loop\+Runner@{Zeta\+::\+Loop\+Runner}!loop@{loop}}
+\index{loop@{loop}!Zeta\+::\+Loop\+Runner@{Zeta\+::\+Loop\+Runner}}
+\subsubsection[{loop}]{\setlength{\rightskip}{0pt plus 5cm}{\bf General\+Loop}$\ast$ Zeta\+::\+Loop\+Runner\+::loop\hspace{0.3cm}{\ttfamily [private]}}}\label{classZeta_1_1LoopRunner_a6ba0f28d22a7645ad1edc49ab9c1e732}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Zeta/\+Core/\hyperlink{LoopRunner_8hpp}{Loop\+Runner.\+hpp}\end{DoxyCompactItemize}

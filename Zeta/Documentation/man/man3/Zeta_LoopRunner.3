@@ -1,0 +1,145 @@
+.TH "Zeta::LoopRunner" 3 "Wed Feb 10 2016" "Zeta" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Zeta::LoopRunner \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <LoopRunner\&.hpp>\fP
+.PP
+Inherited by \fBZeta::AllegroLoop\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "virtual void \fBstart\fP ()=0"
+.br
+.ti -1c
+.RI "virtual int \fBgetTargetFps\fP () const =0"
+.br
+.ti -1c
+.RI "virtual void \fBsetTargetFps\fP (int targetFps)=0"
+.br
+.ti -1c
+.RI "void \fBsetLoop\fP (\fBGeneralLoop\fP *\fBloop\fP)"
+.br
+.ti -1c
+.RI "\fBGeneralLoop\fP * \fBgetLoop\fP () const "
+.br
+.ti -1c
+.RI "\fBLoopRunner\fP ()"
+.br
+.ti -1c
+.RI "virtual \fB~LoopRunner\fP ()"
+.br
+.in -1c
+.SS "Protected Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBrender\fP ()"
+.br
+.ti -1c
+.RI "void \fBupdate\fP ()"
+.br
+.ti -1c
+.RI "void \fBhandleEvents\fP (\fBEvent\fP &event)"
+.br
+.ti -1c
+.RI "bool \fBisLoopRunning\fP ()"
+.br
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBGeneralLoop\fP * \fBloop\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+\fBLoopRunner\fP abstract class to write Library-Specific Wrappers 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Zeta::LoopRunner::LoopRunner ()\fC [inline]\fP"
+Constructs a \fBLoopRunner\fP with no Loop assigned 
+.SS "virtual Zeta::LoopRunner::~LoopRunner ()\fC [inline]\fP, \fC [virtual]\fP"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "\fBGeneralLoop\fP* Zeta::LoopRunner::getLoop () const\fC [inline]\fP"
+Gets the Loop \fBObject\fP that runs 
+.PP
+\fBReturns:\fP
+.RS 4
+The loop object assigned 
+.RE
+.PP
+
+.SS "virtual int Zeta::LoopRunner::getTargetFps () const\fC [pure virtual]\fP"
+Gets the Loops target FPS Warning this is not the Current Engine's FPS 
+.PP
+\fBReturns:\fP
+.RS 4
+the target FPS 
+.RE
+.PP
+
+.PP
+Implemented in \fBZeta::AllegroLoop\fP\&.
+.SS "void Zeta::LoopRunner::handleEvents (\fBEvent\fP &event)\fC [protected]\fP"
+Causes the Loop \fBObject\fP to handle the system \fBEvent\fP 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIevent\fP The event to handle 
+.RE
+.PP
+
+.SS "bool Zeta::LoopRunner::isLoopRunning ()\fC [protected]\fP"
+Gets if the Loop \fBObject\fP must be running As soon this function returns true, the Loop must run 
+.PP
+\fBReturns:\fP
+.RS 4
+true if the Loop must continue running 
+.RE
+.PP
+
+.SS "void Zeta::LoopRunner::render ()\fC [protected]\fP"
+Causes the Loop \fBObject\fP to render everything it should render 
+.SS "void Zeta::LoopRunner::setLoop (\fBGeneralLoop\fP *loop)\fC [inline]\fP"
+Sets the Loop Implementation \fBObject\fP to run 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIloop\fP The Loop to run 
+.RE
+.PP
+
+.SS "virtual void Zeta::LoopRunner::setTargetFps (inttargetFps)\fC [pure virtual]\fP"
+Sets the Loops target FPS Warning this is not the Current Engine's FPS 
+.PP
+\fBParameters:\fP
+.RS 4
+\fItargetFps\fP the target FPS 
+.RE
+.PP
+
+.PP
+Implemented in \fBZeta::AllegroLoop\fP\&.
+.SS "virtual void Zeta::LoopRunner::start ()\fC [pure virtual]\fP"
+Causes the Main Loop to start 
+.PP
+Implemented in \fBZeta::AllegroLoop\fP\&.
+.SS "void Zeta::LoopRunner::update ()\fC [protected]\fP"
+Causes the Loop \fBObject\fP to update everything it should update 
+.SH "Member Data Documentation"
+.PP 
+.SS "\fBGeneralLoop\fP* Zeta::LoopRunner::loop\fC [private]\fP"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Zeta from the source code\&.

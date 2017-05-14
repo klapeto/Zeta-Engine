@@ -1,0 +1,9 @@
+$#include <Zeta/Core/RPGClasses/Regeneration.hpp>
+
+class Regeneration: public Ability {
+public:
+
+	const RegenerationAbilityClass& getClass() const;
+
+
+};

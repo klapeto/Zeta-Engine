@@ -1,0 +1,54 @@
+.TH "Zeta::RenderingContext" 3 "Wed Feb 10 2016" "Zeta" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Zeta::RenderingContext \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <RenderingContext\&.hpp>\fP
+.PP
+Inherits \fBZeta::Context< RenderingContext >\fP\&.
+.PP
+Inherited by \fBZeta::SynchronousRenderingContext< DisplayT >\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "virtual \fBDisplay\fP & \fBgetDisplay\fP ()=0"
+.br
+.ti -1c
+.RI "\fBRenderingContext\fP ()"
+.br
+.ti -1c
+.RI "virtual \fB~RenderingContext\fP ()"
+.br
+.in -1c
+.SS "Additional Inherited Members"
+.SH "Detailed Description"
+.PP 
+Base Class for the Rendering \fBContext\fP It contains the \fBObject\fP that will represent the created OpenGL \fBContext\fP 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Zeta::RenderingContext::RenderingContext ()\fC [inline]\fP"
+The default Constructor should create a \fBDisplay\fP object and host it on the \fBRenderingContext\fP 
+.SS "virtual Zeta::RenderingContext::~RenderingContext ()\fC [inline]\fP, \fC [virtual]\fP"
+The destructor should destroy the \fBDisplay\fP \fBObject\fP 
+.SH "Member Function Documentation"
+.PP 
+.SS "virtual \fBDisplay\fP& Zeta::RenderingContext::getDisplay ()\fC [pure virtual]\fP"
+Returns the Contexts \fBDisplay\fP object 
+.PP
+\fBReturns:\fP
+.RS 4
+The display \fBObject\fP 
+.RE
+.PP
+
+.PP
+Implemented in \fBZeta::SynchronousRenderingContext< DisplayT >\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Zeta from the source code\&.

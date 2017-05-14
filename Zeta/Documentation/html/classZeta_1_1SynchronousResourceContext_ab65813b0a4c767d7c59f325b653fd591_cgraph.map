@@ -1,0 +1,17 @@
+<map id="Zeta::SynchronousResourceContext::getBitmapImpl" name="Zeta::SynchronousResourceContext::getBitmapImpl">
+<area shape="rect" id="node2" href="$classZeta_1_1NullReference.html#a770ed5c85c6b2682ca76fe2df45ed360" title="Zeta::NullReference\l::getNull" alt="" coords="271,5,409,46"/>
+<area shape="rect" id="node3" href="$classZeta_1_1Display.html#adbe20015304e9c656029feef77bdb78d" title="Zeta::Display::isRendering\lThread" alt="" coords="251,70,429,111"/>
+<area shape="rect" id="node4" href="$classZeta_1_1FileLoader.html#aad604fa6b1626be357d14d2e6795b026" title="Zeta::FileLoader::fileExists" alt="" coords="251,136,429,163"/>
+<area shape="rect" id="node5" href="$classZeta_1_1SharedResource.html#ad1e168b140359bfb79be98f81af9e19e" title="Zeta::SharedResource\l::load" alt="" coords="263,238,417,279"/>
+<area shape="rect" id="node6" href="$classZeta_1_1SingleInstanced.html#af49c6efd918b81e5716e5523122b95f0" title="Zeta::SingleInstanced\l\&lt; Logger \&gt;::getInstance" alt="" coords="486,179,647,221"/>
+<area shape="rect" id="node7" href="$classZeta_1_1Logger.html#af7a67ad7ba12c200679d8108339d4ed2" title="Zeta::Logger::write" alt="" coords="501,300,632,327"/>
+<area shape="rect" id="node9" href="$classZeta_1_1SharedResource.html#a837ee944ca089fcc1f54b9d4e0b530b3" title="Zeta::SharedResource\l::isValid" alt="" coords="263,355,417,397"/>
+<area shape="rect" id="node10" href="$classZeta_1_1SharedResource.html#a3a507e4daffff077d81ec1af71416f2c" title="Zeta::SharedResource\l::increaseReference" alt="" coords="263,421,417,462"/>
+<area shape="rect" id="node11" href="$classZeta_1_1SharedResource.html#aa3d4ba5410d77a977ed73121a42eee70" title="Zeta::SharedResource\l::getInstance" alt="" coords="263,486,417,527"/>
+<area shape="rect" id="node12" href="$classZeta_1_1System.html#a092ead3475d9f6696020001e9fe53da9" title="Zeta::System::getInstance" alt="" coords="251,552,429,579"/>
+<area shape="rect" id="node13" href="$classZeta_1_1System.html#a16bf408e9f5a74af163f2b5ce3b281f3" title="Zeta::System::getRendering\lContext" alt="" coords="247,603,433,645"/>
+<area shape="rect" id="node14" href="$classZeta_1_1Context.html#a67df6157eb24688cc02a33b6f02b458d" title="Zeta::Context::addOperation\lToQueue" alt="" coords="247,669,433,710"/>
+<area shape="rect" id="node15" href="$classZeta_1_1ContextOperation.html#ac552818f408c4d7c75a954f4b92348bd" title="Zeta::ContextOperation\l::waitToBeCompleted" alt="" coords="261,734,419,775"/>
+<area shape="rect" id="node16" href="$classZeta_1_1SynchronousResourceContext_1_1BitmapLoadRequest.html#a860dec69644bf5f78508285537b29796" title="Zeta::SynchronousResource\lContext::BitmapLoadRequest\l::getBitmap" alt="" coords="243,799,437,855"/>
+<area shape="rect" id="node8" href="$classZeta_1_1Exception.html#a922d1ce8c9116f72e98078cd00c97567" title="Zeta::Exception::reason" alt="" coords="486,245,647,272"/>
+</map>

@@ -1,0 +1,123 @@
+.TH "Zeta::SaveManager" 3 "Wed Feb 10 2016" "Zeta" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Zeta::SaveManager \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <SaveManager\&.hpp>\fP
+.PP
+Inherits \fBZeta::SingleInstanced< SaveManager >\fP, and \fBZeta::LuaPushable\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBsetFile\fP (const std::string &path)"
+.br
+.ti -1c
+.RI "void \fBsave\fP ()"
+.br
+.ti -1c
+.RI "void \fBload\fP ()"
+.br
+.ti -1c
+.RI "xmlpp::Element * \fBgetSaveFileRoot\fP ()"
+.br
+.ti -1c
+.RI "void \fBwrite\fP (const std::string &name, const std::string &value)"
+.br
+.ti -1c
+.RI "std::string \fBread\fP (const std::string &name) const "
+.br
+.ti -1c
+.RI "void \fBpushToLua\fP (lua_State *lstate)"
+.br
+.in -1c
+.SS "Private Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBretrievePlayer\fP (xmlpp::Element *node)"
+.br
+.ti -1c
+.RI "void \fBretrieveMap\fP (xmlpp::Element *node)"
+.br
+.ti -1c
+.RI "void \fBsavePlayer\fP (xmlpp::Element *node)"
+.br
+.ti -1c
+.RI "void \fBsaveMap\fP (xmlpp::Element *node)"
+.br
+.ti -1c
+.RI "\fBSaveManager\fP ()"
+.br
+.ti -1c
+.RI "\fB~SaveManager\fP ()"
+.br
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "xmlpp::DomParser \fBparser\fP"
+.br
+.ti -1c
+.RI "std::string \fBfilename\fP"
+.br
+.in -1c
+.SS "Friends"
+
+.in +1c
+.ti -1c
+.RI "class \fBSingleInstanced\fP"
+.br
+.in -1c
+.SS "Additional Inherited Members"
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Zeta::SaveManager::SaveManager ()\fC [private]\fP"
+
+.SS "Zeta::SaveManager::~SaveManager ()\fC [private]\fP"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "xmlpp::Element* Zeta::SaveManager::getSaveFileRoot ()"
+
+.SS "void Zeta::SaveManager::load ()"
+
+.SS "void Zeta::SaveManager::pushToLua (lua_State *lstate)\fC [virtual]\fP"
+
+.PP
+Implements \fBZeta::LuaPushable\fP\&.
+.SS "std::string Zeta::SaveManager::read (const std::string &name) const"
+
+.SS "void Zeta::SaveManager::retrieveMap (xmlpp::Element *node)\fC [private]\fP"
+
+.SS "void Zeta::SaveManager::retrievePlayer (xmlpp::Element *node)\fC [private]\fP"
+
+.SS "void Zeta::SaveManager::save ()"
+
+.SS "void Zeta::SaveManager::saveMap (xmlpp::Element *node)\fC [private]\fP"
+
+.SS "void Zeta::SaveManager::savePlayer (xmlpp::Element *node)\fC [private]\fP"
+
+.SS "void Zeta::SaveManager::setFile (const std::string &path)"
+
+.SS "void Zeta::SaveManager::write (const std::string &name, const std::string &value)"
+
+.SH "Friends And Related Function Documentation"
+.PP 
+.SS "friend class \fBSingleInstanced\fP\fC [friend]\fP"
+
+.SH "Member Data Documentation"
+.PP 
+.SS "std::string Zeta::SaveManager::filename\fC [private]\fP"
+
+.SS "xmlpp::DomParser Zeta::SaveManager::parser\fC [private]\fP"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Zeta from the source code\&.

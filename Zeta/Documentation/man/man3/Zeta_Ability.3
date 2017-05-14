@@ -1,0 +1,120 @@
+.TH "Zeta::Ability" 3 "Wed Feb 10 2016" "Zeta" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Zeta::Ability \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Ability\&.hpp>\fP
+.PP
+Inherits \fBZeta::LuaPushable\fP\&.
+.PP
+Inherited by \fBZeta::ClassifiedAbility< ActiveAbilityClass >\fP, \fBZeta::ClassifiedAbility< PassiveAbilityClass >\fP, \fBZeta::ClassifiedAbility< RegenerationAbilityClass >\fP, and \fBZeta::ClassifiedAbility< AbClass >\fP\&.
+.SS "Public Types"
+
+.in +1c
+.ti -1c
+.RI "enum \fBResult\fP { \fBResult::Success\fP, \fBResult::onCooldown\fP, \fBResult::NoTarget\fP, \fBResult::NoMana\fP, \fBResult::OutOfRange\fP, \fBResult::TargetIsDead\fP, \fBResult::TargetIsNotHostile\fP, \fBResult::InvalidAbility\fP, \fBResult::Other\fP }"
+.br
+.in -1c
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "int \fBgetLevel\fP () const "
+.br
+.ti -1c
+.RI "void \fBsetLevel\fP (int \fBlevel\fP)"
+.br
+.ti -1c
+.RI "\fBLifeform\fP & \fBgetOwner\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetOwner\fP (\fBLifeform\fP *\fBowner\fP)"
+.br
+.ti -1c
+.RI "\fBAbility\fP (\fBLifeform\fP *\fBowner\fP, int \fBlevel\fP)"
+.br
+.ti -1c
+.RI "virtual \fB~Ability\fP ()"
+.br
+.in -1c
+.SS "Protected Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBAbility\fP ()"
+.br
+.ti -1c
+.RI "virtual void \fBonLevelChange\fP ()=0"
+.br
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBLifeform\fP * \fBowner\fP"
+.br
+.ti -1c
+.RI "int \fBlevel\fP"
+.br
+.in -1c
+.SH "Member Enumeration Documentation"
+.PP 
+.SS "enum \fBZeta::Ability::Result\fP\fC [strong]\fP"
+
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fISuccess \fP\fP
+.TP
+\fB\fIonCooldown \fP\fP
+.TP
+\fB\fINoTarget \fP\fP
+.TP
+\fB\fINoMana \fP\fP
+.TP
+\fB\fIOutOfRange \fP\fP
+.TP
+\fB\fITargetIsDead \fP\fP
+.TP
+\fB\fITargetIsNotHostile \fP\fP
+.TP
+\fB\fIInvalidAbility \fP\fP
+.TP
+\fB\fIOther \fP\fP
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Zeta::Ability::Ability (\fBLifeform\fP *owner, intlevel)\fC [inline]\fP"
+
+.SS "virtual Zeta::Ability::~Ability ()\fC [inline]\fP, \fC [virtual]\fP"
+
+.SS "Zeta::Ability::Ability ()\fC [inline]\fP, \fC [protected]\fP"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "int Zeta::Ability::getLevel () const\fC [inline]\fP"
+
+.SS "\fBLifeform\fP& Zeta::Ability::getOwner ()\fC [inline]\fP"
+
+.SS "virtual void Zeta::Ability::onLevelChange ()\fC [protected]\fP, \fC [pure virtual]\fP"
+
+.PP
+Implemented in \fBZeta::ActiveAbility\fP, \fBZeta::Regeneration\fP, and \fBZeta::PassiveAbility\fP\&.
+.SS "void Zeta::Ability::setLevel (intlevel)\fC [inline]\fP"
+
+.SS "void Zeta::Ability::setOwner (\fBLifeform\fP *owner)\fC [inline]\fP"
+
+.SH "Member Data Documentation"
+.PP 
+.SS "int Zeta::Ability::level\fC [protected]\fP"
+
+.SS "\fBLifeform\fP* Zeta::Ability::owner\fC [protected]\fP"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Zeta from the source code\&.

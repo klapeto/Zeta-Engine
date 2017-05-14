@@ -1,0 +1,19 @@
+$#include <Zeta/Core/RPGClasses/Ability.hpp>
+
+class Ability {
+public:
+	enum class Result {
+		Success,
+		onCooldown,
+		NoTarget,
+		NoMana,
+		OutOfRange,
+		TargetIsDead,
+		TargetIsNotHostile,
+		InvalidAbility,
+		Other
+	};
+	int getLevel() const;
+	void setLevel(int level);
+	Lifeform& getOwner();
+};

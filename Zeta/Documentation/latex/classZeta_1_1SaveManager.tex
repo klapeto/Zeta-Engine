@@ -1,0 +1,192 @@
+\hypertarget{classZeta_1_1SaveManager}{\section{Zeta\+:\+:Save\+Manager Class Reference}
+\label{classZeta_1_1SaveManager}\index{Zeta\+::\+Save\+Manager@{Zeta\+::\+Save\+Manager}}
+}
+
+
+{\ttfamily \#include $<$Save\+Manager.\+hpp$>$}
+
+
+
+Inheritance diagram for Zeta\+:\+:Save\+Manager\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=308pt]{classZeta_1_1SaveManager__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Zeta\+:\+:Save\+Manager\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=308pt]{classZeta_1_1SaveManager__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classZeta_1_1SaveManager_ae2b12abe95b617c9cf648b1e934f32de}{set\+File} (const std\+::string \&path)
+\item 
+void \hyperlink{classZeta_1_1SaveManager_a9c2ad5c1f46820364bb7069b3210bfd3}{save} ()
+\item 
+void \hyperlink{classZeta_1_1SaveManager_af710d9514c282b0c2ad3241129db2c9d}{load} ()
+\item 
+xmlpp\+::\+Element $\ast$ \hyperlink{classZeta_1_1SaveManager_a5ecfa156a86e386839462f81b6cf7876}{get\+Save\+File\+Root} ()
+\item 
+void \hyperlink{classZeta_1_1SaveManager_a137ffc0553ab71e347ed2c5f90f63afd}{write} (const std\+::string \&name, const std\+::string \&value)
+\item 
+std\+::string \hyperlink{classZeta_1_1SaveManager_aefcf49f2e8712a999d710e94724305eb}{read} (const std\+::string \&name) const 
+\item 
+void \hyperlink{classZeta_1_1SaveManager_aadb7174777b902b5ac5fd477a28274b7}{push\+To\+Lua} (lua\+\_\+\+State $\ast$lstate)
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classZeta_1_1SaveManager_a31218fc86079c1af8c75379b17531042}{retrieve\+Player} (xmlpp\+::\+Element $\ast$node)
+\item 
+void \hyperlink{classZeta_1_1SaveManager_a3965ccc6c602f25563c07ae64c9eef07}{retrieve\+Map} (xmlpp\+::\+Element $\ast$node)
+\item 
+void \hyperlink{classZeta_1_1SaveManager_af24a1731daba5561770a663a32607c81}{save\+Player} (xmlpp\+::\+Element $\ast$node)
+\item 
+void \hyperlink{classZeta_1_1SaveManager_a78b9ff589296056df3c9668e06cceecd}{save\+Map} (xmlpp\+::\+Element $\ast$node)
+\item 
+\hyperlink{classZeta_1_1SaveManager_a259e51095034ed0508435cd82c773749}{Save\+Manager} ()
+\item 
+\hyperlink{classZeta_1_1SaveManager_a914cdeaa9169406acb886bfd9bb5e0bc}{$\sim$\+Save\+Manager} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+xmlpp\+::\+Dom\+Parser \hyperlink{classZeta_1_1SaveManager_a53455bdada02c8001e49ae1bb19febe7}{parser}
+\item 
+std\+::string \hyperlink{classZeta_1_1SaveManager_ad94304e398c256cf5f661e4d34317cf5}{filename}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classZeta_1_1SaveManager_a2fa95d69b32a77fffa4b730679a8b08c}{Single\+Instanced}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classZeta_1_1SaveManager_a259e51095034ed0508435cd82c773749}{\index{Zeta\+::\+Save\+Manager@{Zeta\+::\+Save\+Manager}!Save\+Manager@{Save\+Manager}}
+\index{Save\+Manager@{Save\+Manager}!Zeta\+::\+Save\+Manager@{Zeta\+::\+Save\+Manager}}
+\subsubsection[{Save\+Manager}]{\setlength{\rightskip}{0pt plus 5cm}Zeta\+::\+Save\+Manager\+::\+Save\+Manager (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classZeta_1_1SaveManager_a259e51095034ed0508435cd82c773749}
+\hypertarget{classZeta_1_1SaveManager_a914cdeaa9169406acb886bfd9bb5e0bc}{\index{Zeta\+::\+Save\+Manager@{Zeta\+::\+Save\+Manager}!````~Save\+Manager@{$\sim$\+Save\+Manager}}
+\index{````~Save\+Manager@{$\sim$\+Save\+Manager}!Zeta\+::\+Save\+Manager@{Zeta\+::\+Save\+Manager}}
+\subsubsection[{$\sim$\+Save\+Manager}]{\setlength{\rightskip}{0pt plus 5cm}Zeta\+::\+Save\+Manager\+::$\sim$\+Save\+Manager (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classZeta_1_1SaveManager_a914cdeaa9169406acb886bfd9bb5e0bc}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classZeta_1_1SaveManager_a5ecfa156a86e386839462f81b6cf7876}{\index{Zeta\+::\+Save\+Manager@{Zeta\+::\+Save\+Manager}!get\+Save\+File\+Root@{get\+Save\+File\+Root}}
+\index{get\+Save\+File\+Root@{get\+Save\+File\+Root}!Zeta\+::\+Save\+Manager@{Zeta\+::\+Save\+Manager}}
+\subsubsection[{get\+Save\+File\+Root}]{\setlength{\rightskip}{0pt plus 5cm}xmlpp\+::\+Element$\ast$ Zeta\+::\+Save\+Manager\+::get\+Save\+File\+Root (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classZeta_1_1SaveManager_a5ecfa156a86e386839462f81b6cf7876}
+\hypertarget{classZeta_1_1SaveManager_af710d9514c282b0c2ad3241129db2c9d}{\index{Zeta\+::\+Save\+Manager@{Zeta\+::\+Save\+Manager}!load@{load}}
+\index{load@{load}!Zeta\+::\+Save\+Manager@{Zeta\+::\+Save\+Manager}}
+\subsubsection[{load}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+Save\+Manager\+::load (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classZeta_1_1SaveManager_af710d9514c282b0c2ad3241129db2c9d}
+\hypertarget{classZeta_1_1SaveManager_aadb7174777b902b5ac5fd477a28274b7}{\index{Zeta\+::\+Save\+Manager@{Zeta\+::\+Save\+Manager}!push\+To\+Lua@{push\+To\+Lua}}
+\index{push\+To\+Lua@{push\+To\+Lua}!Zeta\+::\+Save\+Manager@{Zeta\+::\+Save\+Manager}}
+\subsubsection[{push\+To\+Lua}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+Save\+Manager\+::push\+To\+Lua (
+\begin{DoxyParamCaption}
+\item[{lua\+\_\+\+State $\ast$}]{lstate}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classZeta_1_1SaveManager_aadb7174777b902b5ac5fd477a28274b7}
+
+
+Implements \hyperlink{classZeta_1_1LuaPushable_a0380ec9cff11f749e8eb67b51b8f82fc}{Zeta\+::\+Lua\+Pushable}.
+
+\hypertarget{classZeta_1_1SaveManager_aefcf49f2e8712a999d710e94724305eb}{\index{Zeta\+::\+Save\+Manager@{Zeta\+::\+Save\+Manager}!read@{read}}
+\index{read@{read}!Zeta\+::\+Save\+Manager@{Zeta\+::\+Save\+Manager}}
+\subsubsection[{read}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string Zeta\+::\+Save\+Manager\+::read (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{name}
+\end{DoxyParamCaption}
+) const}}\label{classZeta_1_1SaveManager_aefcf49f2e8712a999d710e94724305eb}
+\hypertarget{classZeta_1_1SaveManager_a3965ccc6c602f25563c07ae64c9eef07}{\index{Zeta\+::\+Save\+Manager@{Zeta\+::\+Save\+Manager}!retrieve\+Map@{retrieve\+Map}}
+\index{retrieve\+Map@{retrieve\+Map}!Zeta\+::\+Save\+Manager@{Zeta\+::\+Save\+Manager}}
+\subsubsection[{retrieve\+Map}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+Save\+Manager\+::retrieve\+Map (
+\begin{DoxyParamCaption}
+\item[{xmlpp\+::\+Element $\ast$}]{node}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classZeta_1_1SaveManager_a3965ccc6c602f25563c07ae64c9eef07}
+\hypertarget{classZeta_1_1SaveManager_a31218fc86079c1af8c75379b17531042}{\index{Zeta\+::\+Save\+Manager@{Zeta\+::\+Save\+Manager}!retrieve\+Player@{retrieve\+Player}}
+\index{retrieve\+Player@{retrieve\+Player}!Zeta\+::\+Save\+Manager@{Zeta\+::\+Save\+Manager}}
+\subsubsection[{retrieve\+Player}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+Save\+Manager\+::retrieve\+Player (
+\begin{DoxyParamCaption}
+\item[{xmlpp\+::\+Element $\ast$}]{node}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classZeta_1_1SaveManager_a31218fc86079c1af8c75379b17531042}
+\hypertarget{classZeta_1_1SaveManager_a9c2ad5c1f46820364bb7069b3210bfd3}{\index{Zeta\+::\+Save\+Manager@{Zeta\+::\+Save\+Manager}!save@{save}}
+\index{save@{save}!Zeta\+::\+Save\+Manager@{Zeta\+::\+Save\+Manager}}
+\subsubsection[{save}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+Save\+Manager\+::save (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classZeta_1_1SaveManager_a9c2ad5c1f46820364bb7069b3210bfd3}
+\hypertarget{classZeta_1_1SaveManager_a78b9ff589296056df3c9668e06cceecd}{\index{Zeta\+::\+Save\+Manager@{Zeta\+::\+Save\+Manager}!save\+Map@{save\+Map}}
+\index{save\+Map@{save\+Map}!Zeta\+::\+Save\+Manager@{Zeta\+::\+Save\+Manager}}
+\subsubsection[{save\+Map}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+Save\+Manager\+::save\+Map (
+\begin{DoxyParamCaption}
+\item[{xmlpp\+::\+Element $\ast$}]{node}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classZeta_1_1SaveManager_a78b9ff589296056df3c9668e06cceecd}
+\hypertarget{classZeta_1_1SaveManager_af24a1731daba5561770a663a32607c81}{\index{Zeta\+::\+Save\+Manager@{Zeta\+::\+Save\+Manager}!save\+Player@{save\+Player}}
+\index{save\+Player@{save\+Player}!Zeta\+::\+Save\+Manager@{Zeta\+::\+Save\+Manager}}
+\subsubsection[{save\+Player}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+Save\+Manager\+::save\+Player (
+\begin{DoxyParamCaption}
+\item[{xmlpp\+::\+Element $\ast$}]{node}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classZeta_1_1SaveManager_af24a1731daba5561770a663a32607c81}
+\hypertarget{classZeta_1_1SaveManager_ae2b12abe95b617c9cf648b1e934f32de}{\index{Zeta\+::\+Save\+Manager@{Zeta\+::\+Save\+Manager}!set\+File@{set\+File}}
+\index{set\+File@{set\+File}!Zeta\+::\+Save\+Manager@{Zeta\+::\+Save\+Manager}}
+\subsubsection[{set\+File}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+Save\+Manager\+::set\+File (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{path}
+\end{DoxyParamCaption}
+)}}\label{classZeta_1_1SaveManager_ae2b12abe95b617c9cf648b1e934f32de}
+\hypertarget{classZeta_1_1SaveManager_a137ffc0553ab71e347ed2c5f90f63afd}{\index{Zeta\+::\+Save\+Manager@{Zeta\+::\+Save\+Manager}!write@{write}}
+\index{write@{write}!Zeta\+::\+Save\+Manager@{Zeta\+::\+Save\+Manager}}
+\subsubsection[{write}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+Save\+Manager\+::write (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{name, }
+\item[{const std\+::string \&}]{value}
+\end{DoxyParamCaption}
+)}}\label{classZeta_1_1SaveManager_a137ffc0553ab71e347ed2c5f90f63afd}
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{classZeta_1_1SaveManager_a2fa95d69b32a77fffa4b730679a8b08c}{\index{Zeta\+::\+Save\+Manager@{Zeta\+::\+Save\+Manager}!Single\+Instanced@{Single\+Instanced}}
+\index{Single\+Instanced@{Single\+Instanced}!Zeta\+::\+Save\+Manager@{Zeta\+::\+Save\+Manager}}
+\subsubsection[{Single\+Instanced}]{\setlength{\rightskip}{0pt plus 5cm}friend class {\bf Single\+Instanced}\hspace{0.3cm}{\ttfamily [friend]}}}\label{classZeta_1_1SaveManager_a2fa95d69b32a77fffa4b730679a8b08c}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classZeta_1_1SaveManager_ad94304e398c256cf5f661e4d34317cf5}{\index{Zeta\+::\+Save\+Manager@{Zeta\+::\+Save\+Manager}!filename@{filename}}
+\index{filename@{filename}!Zeta\+::\+Save\+Manager@{Zeta\+::\+Save\+Manager}}
+\subsubsection[{filename}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string Zeta\+::\+Save\+Manager\+::filename\hspace{0.3cm}{\ttfamily [private]}}}\label{classZeta_1_1SaveManager_ad94304e398c256cf5f661e4d34317cf5}
+\hypertarget{classZeta_1_1SaveManager_a53455bdada02c8001e49ae1bb19febe7}{\index{Zeta\+::\+Save\+Manager@{Zeta\+::\+Save\+Manager}!parser@{parser}}
+\index{parser@{parser}!Zeta\+::\+Save\+Manager@{Zeta\+::\+Save\+Manager}}
+\subsubsection[{parser}]{\setlength{\rightskip}{0pt plus 5cm}xmlpp\+::\+Dom\+Parser Zeta\+::\+Save\+Manager\+::parser\hspace{0.3cm}{\ttfamily [private]}}}\label{classZeta_1_1SaveManager_a53455bdada02c8001e49ae1bb19febe7}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Zeta/\+Core/\hyperlink{SaveManager_8hpp}{Save\+Manager.\+hpp}\end{DoxyCompactItemize}

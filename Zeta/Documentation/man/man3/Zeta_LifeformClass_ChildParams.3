@@ -1,0 +1,109 @@
+.TH "Zeta::LifeformClass::ChildParams" 3 "Wed Feb 10 2016" "Zeta" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Zeta::LifeformClass::ChildParams \- 
+.SH SYNOPSIS
+.br
+.PP
+.SS "Public Types"
+
+.in +1c
+.ti -1c
+.RI "enum \fBChildType\fP { \fBChildType::Sticky\fP, \fBChildType::Static\fP }"
+.br
+.in -1c
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "const std::string & \fBgetName\fP () const "
+.br
+.ti -1c
+.RI "const std::string & \fBgetAnimationClass\fP () const "
+.br
+.ti -1c
+.RI "const std::string & \fBgetAnimationName\fP () const "
+.br
+.ti -1c
+.RI "\fBFloat\fP \fBgetDx\fP () const "
+.br
+.ti -1c
+.RI "\fBFloat\fP \fBgetDy\fP () const "
+.br
+.ti -1c
+.RI "\fBChildType\fP \fBgetType\fP () const "
+.br
+.ti -1c
+.RI "\fBChildParams\fP (const std::string &\fBname\fP, const std::string &\fBanimClass\fP, const std::string &animName, \fBFloat\fP \fBdx\fP, \fBFloat\fP \fBdy\fP, \fBChildType\fP \fBtype\fP)"
+.br
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "std::string \fBname\fP"
+.br
+.ti -1c
+.RI "std::string \fBanimationClass\fP"
+.br
+.ti -1c
+.RI "std::string \fBanimationName\fP"
+.br
+.ti -1c
+.RI "\fBChildType\fP \fBtype\fP"
+.br
+.ti -1c
+.RI "\fBFloat\fP \fBdx\fP"
+.br
+.ti -1c
+.RI "\fBFloat\fP \fBdy\fP"
+.br
+.in -1c
+.SH "Member Enumeration Documentation"
+.PP 
+.SS "enum \fBZeta::LifeformClass::ChildParams::ChildType\fP\fC [strong]\fP"
+
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fISticky \fP\fP
+.TP
+\fB\fIStatic \fP\fP
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Zeta::LifeformClass::ChildParams::ChildParams (const std::string &name, const std::string &animClass, const std::string &animName, \fBFloat\fPdx, \fBFloat\fPdy, \fBChildType\fPtype)\fC [inline]\fP"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "const std::string& Zeta::LifeformClass::ChildParams::getAnimationClass () const\fC [inline]\fP"
+
+.SS "const std::string& Zeta::LifeformClass::ChildParams::getAnimationName () const\fC [inline]\fP"
+
+.SS "\fBFloat\fP Zeta::LifeformClass::ChildParams::getDx () const\fC [inline]\fP"
+
+.SS "\fBFloat\fP Zeta::LifeformClass::ChildParams::getDy () const\fC [inline]\fP"
+
+.SS "const std::string& Zeta::LifeformClass::ChildParams::getName () const\fC [inline]\fP"
+
+.SS "\fBChildType\fP Zeta::LifeformClass::ChildParams::getType () const\fC [inline]\fP"
+
+.SH "Member Data Documentation"
+.PP 
+.SS "std::string Zeta::LifeformClass::ChildParams::animationClass\fC [private]\fP"
+
+.SS "std::string Zeta::LifeformClass::ChildParams::animationName\fC [private]\fP"
+
+.SS "\fBFloat\fP Zeta::LifeformClass::ChildParams::dx\fC [private]\fP"
+
+.SS "\fBFloat\fP Zeta::LifeformClass::ChildParams::dy\fC [private]\fP"
+
+.SS "std::string Zeta::LifeformClass::ChildParams::name\fC [private]\fP"
+
+.SS "\fBChildType\fP Zeta::LifeformClass::ChildParams::type\fC [private]\fP"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Zeta from the source code\&.

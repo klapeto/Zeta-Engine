@@ -1,0 +1,10 @@
+
+class Modifier {
+public:
+
+
+		enum class Type {
+			Flat, Scalar
+		};
+
+};

@@ -1,0 +1,30 @@
+$#include <Zeta/Core/RPGClasses/Object.hpp>
+
+class Object {
+public:
+	const Rectangle& getBounding() const;
+	Rectangle& getBounding();
+	void setBounding(const Rectangle& bounding);
+	const Rectangle& getTargetArea() const;
+	Rectangle& getTargetArea();
+	const Vector2& getPosition() const;
+	void setPosition(const Vector2& position);
+	void setPosition(Float x, Float y);
+	const std::string& getName() const;
+	void setName(const std::string& name);
+	Float getDistance(const Object& other) const;
+	void addChildObject(const std::string& name, ChildObject *child);
+	void addChildObject(Float x, Float y, const std::string& name, const std::string& classPath, const std::string& animName);
+	void removeChildObject(const std::string& name);
+	Vector2 getRenderPosition() const;
+	bool isCollideAble() const;
+	void setCoolideAble(bool value);
+	bool isTriggeringCollisionEvents() const;
+	void setTriggeringCollisionEvents(bool value);
+	bool isVisible() const;
+	void setVisible(bool visible);
+	void show();
+	void hide();
+	ChildObject* getChildObject(const std::string& name);
+	virtual ~Object();
+};

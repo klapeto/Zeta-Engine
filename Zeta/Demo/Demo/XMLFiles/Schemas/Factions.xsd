@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+    <xsd:element name="Factions" type="FactionType"></xsd:element>
+    
+    <xsd:complexType name="FactionType">
+    	<xsd:sequence maxOccurs="unbounded" minOccurs="0">
+    		<xsd:element name="Faction" type="FactionType1" maxOccurs="unbounded" minOccurs="0"></xsd:element>
+    	</xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:complexType name="FactionType1">
+    	<xsd:sequence>
+    		<xsd:element name="Hostile" type="HostileType" maxOccurs="unbounded" minOccurs="1"></xsd:element>
+    	</xsd:sequence>
+    	<xsd:attribute name="name" type="xsd:string" use="required"></xsd:attribute>
+    </xsd:complexType>
+
+    <xsd:complexType name="HostileType">
+    	<xsd:attribute name="name" type="xsd:string"></xsd:attribute>
+    </xsd:complexType>
+</xsd:schema>

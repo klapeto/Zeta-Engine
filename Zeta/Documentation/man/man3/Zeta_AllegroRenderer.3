@@ -1,0 +1,164 @@
+.TH "Zeta::AllegroRenderer" 3 "Wed Feb 10 2016" "Zeta" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Zeta::AllegroRenderer \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <AllegroRenderer\&.hpp>\fP
+.PP
+Inherits \fBZeta::ShapeRenderer\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBholdBitmapDraw\fP (bool vall)"
+.br
+.ti -1c
+.RI "void \fBdrawEllipsis\fP (float center_x, float center_y, float radius_x, float radius_y, const \fBColor\fP &borderC, float thickness)"
+.br
+.ti -1c
+.RI "void \fBdrawFilledEllipsis\fP (float center_x, float center_y, float radius_x, float radius_y, const \fBColor\fP &fillC)"
+.br
+.ti -1c
+.RI "void \fBdrawRectangle\fP (float a_x, float a_y, float b_x, float b_y, const \fBColor\fP &borderC, float thickness)"
+.br
+.ti -1c
+.RI "void \fBdrawFilledRectangle\fP (float a_x, float a_y, float b_x, float b_y, const \fBColor\fP &fillC)"
+.br
+.ti -1c
+.RI "void \fBdrawLine\fP (float x1, float y1, float x2, float y2, const \fBColor\fP &fillC, float thickness)"
+.br
+.ti -1c
+.RI "\fBAllegroRenderer\fP ()"
+.br
+.ti -1c
+.RI "\fB~AllegroRenderer\fP ()"
+.br
+.in -1c
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Zeta::AllegroRenderer::AllegroRenderer ()\fC [inline]\fP"
+
+.SS "Zeta::AllegroRenderer::~AllegroRenderer ()\fC [inline]\fP"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "void Zeta::AllegroRenderer::drawEllipsis (floatcenter_x, floatcenter_y, floatradius_x, floatradius_y, const \fBColor\fP &borderC, floatthickness)\fC [virtual]\fP"
+Draws an \fBEllipsis\fP with no Fill 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIcenter_x\fP The x coordinate of the center of the \fBEllipsis\fP 
+.br
+\fIcenter_y\fP The y coordinate of the center of the \fBEllipsis\fP 
+.br
+\fIradius_x\fP The radius on the x axis 
+.br
+\fIradius_y\fP The radius on the y axis 
+.br
+\fIborderC\fP The color of the outline 
+.br
+\fIthickness\fP The thickness of the outline 
+.RE
+.PP
+
+.PP
+Implements \fBZeta::ShapeRenderer\fP\&.
+.SS "void Zeta::AllegroRenderer::drawFilledEllipsis (floatcenter_x, floatcenter_y, floatradius_x, floatradius_y, const \fBColor\fP &fillC)\fC [virtual]\fP"
+Draws a Filled \fBEllipsis\fP 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIcenter_x\fP The x coordinate of the center of the \fBEllipsis\fP 
+.br
+\fIcenter_y\fP The y coordinate of the center of the \fBEllipsis\fP 
+.br
+\fIradius_x\fP The radius on the x axis 
+.br
+\fIradius_y\fP The radius on the y axis 
+.br
+\fIfillC\fP The color of the fill of the ellipsis 
+.RE
+.PP
+
+.PP
+Implements \fBZeta::ShapeRenderer\fP\&.
+.SS "void Zeta::AllegroRenderer::drawFilledRectangle (floata_x, floata_y, floatb_x, floatb_y, const \fBColor\fP &fillC)\fC [virtual]\fP"
+Draws a Filled \fBRectangle\fP The rectangle is defined by 2 points, the Top-Left, Bottom-Right 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIa_x\fP The x coordinate of the Top-Left point of the \fBRectangle\fP 
+.br
+\fIa_y\fP The y coordinate of the Top-Left point of the \fBRectangle\fP 
+.br
+\fIb_x\fP The x coordinate of the Bottom-Right point of the \fBRectangle\fP 
+.br
+\fIb_y\fP The y coordinate of the Bottom-Right point of the \fBRectangle\fP 
+.br
+\fIfillC\fP The color of the Fill 
+.RE
+.PP
+
+.PP
+Implements \fBZeta::ShapeRenderer\fP\&.
+.SS "void Zeta::AllegroRenderer::drawLine (floatx1, floaty1, floatx2, floaty2, const \fBColor\fP &fillC, floatthickness)\fC [virtual]\fP"
+Draws a Line The line is defined by 2 points 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIx1\fP The x coordinate of the First point 
+.br
+\fIy1\fP The y coordinate of the First point 
+.br
+\fIx2\fP The x coordinate of the Second point 
+.br
+\fIy2\fP The y coordinate of the Second point 
+.br
+\fIfillC\fP The color of the line 
+.br
+\fIthickness\fP the Thickness of the line 
+.RE
+.PP
+
+.PP
+Implements \fBZeta::ShapeRenderer\fP\&.
+.SS "void Zeta::AllegroRenderer::drawRectangle (floata_x, floata_y, floatb_x, floatb_y, const \fBColor\fP &borderC, floatthickness)\fC [virtual]\fP"
+Draws a \fBRectangle\fP with no Fill The rectangle is defined by 2 points, the Top-Left, Bottom-Right 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIa_x\fP The x coordinate of the Top-Left point of the \fBRectangle\fP 
+.br
+\fIa_y\fP The y coordinate of the Top-Left point of the \fBRectangle\fP 
+.br
+\fIb_x\fP The x coordinate of the Bottom-Right point of the \fBRectangle\fP 
+.br
+\fIb_y\fP The y coordinate of the Bottom-Right point of the \fBRectangle\fP 
+.br
+\fIborderC\fP The color of the outline 
+.br
+\fIthickness\fP The thickness of the outline 
+.RE
+.PP
+
+.PP
+Implements \fBZeta::ShapeRenderer\fP\&.
+.SS "void Zeta::AllegroRenderer::holdBitmapDraw (boolvall)\fC [virtual]\fP"
+Enables or disables differed drawing where possible Differed drawing is a certain mode that have some SKDs that draws bitmaps more efficient when the bitmaps are sub-bitmaps to a larger\&. If the implementing SDK does not have such function, then it should not do anything 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIvall\fP true to enable differed drawing, false to disable 
+.RE
+.PP
+
+.PP
+Implements \fBZeta::ShapeRenderer\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Zeta from the source code\&.

@@ -1,0 +1,17 @@
+$#include <Zeta/Core/RPGClasses/Player.hpp>
+
+class Player: public Lifeform {
+public:
+	void setView(View& camera);
+	void moveToWorldPosition(float x, float y);
+	void targetLifeformPosition(float x, float y);
+	void setLevelUpCallback(lua_Object func);
+	Ability::Result invokeAbility(const std::string& name) const;
+	void setTargetIndicator(const std::string& childName);
+	
+	Float getXp() const;
+	void setXp(Float value);
+	void offsetXp(Float value);
+	void setXpToNextLevel(Float value);
+	Float getXpToNextLevel() const;
+};

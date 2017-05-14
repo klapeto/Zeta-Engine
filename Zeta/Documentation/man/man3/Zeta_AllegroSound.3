@@ -1,0 +1,65 @@
+.TH "Zeta::AllegroSound" 3 "Wed Feb 10 2016" "Zeta" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Zeta::AllegroSound \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <AllegroSound\&.hpp>\fP
+.PP
+Inherits \fBZeta::Sound\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBSoundInstance\fP & \fBcreateNewInstance\fP () const "
+.br
+.ti -1c
+.RI "\fBAllegroSound\fP ()"
+.br
+.ti -1c
+.RI "\fBAllegroSound\fP (const std::string &path)"
+.br
+.ti -1c
+.RI "\fB~AllegroSound\fP ()"
+.br
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "ALLEGRO_SAMPLE * \fBsample\fP"
+.br
+.in -1c
+.SS "Additional Inherited Members"
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Zeta::AllegroSound::AllegroSound ()"
+
+.SS "Zeta::AllegroSound::AllegroSound (const std::string &path)"
+
+.SS "Zeta::AllegroSound::~AllegroSound ()"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "\fBSoundInstance\fP& Zeta::AllegroSound::createNewInstance () const\fC [virtual]\fP"
+Creates and returns a new \fBSoundInstance\fP 
+.PP
+\fBReturns:\fP
+.RS 4
+The new \fBSoundInstance\fP 
+.RE
+.PP
+
+.PP
+Implements \fBZeta::Sound\fP\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "ALLEGRO_SAMPLE* Zeta::AllegroSound::sample\fC [private]\fP"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Zeta from the source code\&.

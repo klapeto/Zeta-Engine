@@ -1,0 +1,18 @@
+<map id="Zeta::AnimationHandler" name="Zeta::AnimationHandler">
+<area shape="rect" id="node2" href="$classZeta_1_1Drawable.html" title="Zeta::Drawable" alt="" coords="6,69,117,96"/>
+<area shape="rect" id="node5" href="$classZeta_1_1AnimationPlayer.html" title="Zeta::AnimationPlayer" alt="" coords="1233,109,1383,136"/>
+<area shape="rect" id="node10" href="$classZeta_1_1Bitmap.html" title="Zeta::Bitmap" alt="" coords="185,200,282,227"/>
+<area shape="rect" id="node14" href="$classZeta_1_1Shape.html" title="Zeta::Shape" alt="" coords="695,341,788,368"/>
+<area shape="rect" id="node3" href="$classZeta_1_1Updateable.html" title="Zeta::Updateable" alt="" coords="949,47,1072,73"/>
+<area shape="rect" id="node4" href="$classZeta_1_1LuaPushable.html" title="Zeta::LuaPushable" alt="" coords="168,599,299,625"/>
+<area shape="rect" id="node13" href="$classZeta_1_1Rectangle.html" title="Zeta::Rectangle" alt="" coords="953,375,1068,401"/>
+<area shape="rect" id="node15" href="$classZeta_1_1Vector2.html" title="Zeta::Vector2" alt="" coords="401,341,503,368"/>
+<area shape="rect" id="node6" href="$classZeta_1_1Animation.html" title="Zeta::Animation" alt="" coords="953,164,1068,191"/>
+<area shape="rect" id="node11" href="$classZeta_1_1AnimationClass.html" title="Zeta::AnimationClass" alt="" coords="1234,291,1382,317"/>
+<area shape="rect" id="node7" href="$classZeta_1_1AnimationPack.html" title="Zeta::AnimationPack" alt="" coords="669,164,813,191"/>
+<area shape="rect" id="node8" href="$classZeta_1_1Resource.html" title="Zeta::Resource" alt="" coords="5,231,117,257"/>
+<area shape="rect" id="node9" href="$classZeta_1_1SpriteSheet.html" title="Zeta::SpriteSheet" alt="" coords="390,240,514,267"/>
+<area shape="rect" id="node12" href="$classZeta_1_1Vector2D.html" title="Zeta::Vector2D\&lt; const\l Zeta::Animation * \&gt;" alt="" coords="933,426,1088,467"/>
+<area shape="rect" id="node17" href="$classZeta_1_1Ellipsis.html" title="Zeta::Ellipsis" alt="" coords="961,324,1060,351"/>
+<area shape="rect" id="node16" href="$classZeta_1_1Color.html" title="Zeta::Color" alt="" coords="409,548,495,575"/>
+</map>

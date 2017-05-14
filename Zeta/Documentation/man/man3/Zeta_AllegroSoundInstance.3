@@ -1,0 +1,102 @@
+.TH "Zeta::AllegroSoundInstance" 3 "Wed Feb 10 2016" "Zeta" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Zeta::AllegroSoundInstance \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <AllegroSoundInstance\&.hpp>\fP
+.PP
+Inherits \fBZeta::SoundInstance\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBplay\fP ()"
+.br
+.ti -1c
+.RI "void \fBstop\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetLoop\fP (bool value)"
+.br
+.ti -1c
+.RI "void \fBsetGain\fP (float value)"
+.br
+.ti -1c
+.RI "void \fBsetPan\fP (float value)"
+.br
+.ti -1c
+.RI "\fBAllegroSoundInstance\fP (ALLEGRO_SAMPLE_INSTANCE *\fBinstance\fP)"
+.br
+.ti -1c
+.RI "\fB~AllegroSoundInstance\fP ()"
+.br
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "ALLEGRO_SAMPLE_INSTANCE * \fBinstance\fP"
+.br
+.in -1c
+.SS "Additional Inherited Members"
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Zeta::AllegroSoundInstance::AllegroSoundInstance (ALLEGRO_SAMPLE_INSTANCE *instance)"
+
+.SS "Zeta::AllegroSoundInstance::~AllegroSoundInstance ()"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "void Zeta::AllegroSoundInstance::play ()\fC [virtual]\fP"
+Plays the sound 
+.PP
+Implements \fBZeta::SoundInstance\fP\&.
+.SS "void Zeta::AllegroSoundInstance::setGain (floatvalue)\fC [virtual]\fP"
+Sets the gain of the sound (Right of left) IMPORTANT! The field gain should set too! 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIvalue\fP the gain of the sound to set 
+.RE
+.PP
+
+.PP
+Implements \fBZeta::SoundInstance\fP\&.
+.SS "void Zeta::AllegroSoundInstance::setLoop (boolvalue)\fC [virtual]\fP"
+Sets if the sound should repeat after it ended IMPORTANT! The field loops should set too! 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIvalue\fP true if the sound should loop, otherwise false 
+.RE
+.PP
+
+.PP
+Implements \fBZeta::SoundInstance\fP\&.
+.SS "void Zeta::AllegroSoundInstance::setPan (floatvalue)\fC [virtual]\fP"
+Sets the pan of the sound The pan takes a value between -1 to 1 where -1=Left, 0=Center, 1=Right IMPORTANT! The field pan should set too! 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIvalue\fP the pan of the sound to set 
+.RE
+.PP
+
+.PP
+Implements \fBZeta::SoundInstance\fP\&.
+.SS "void Zeta::AllegroSoundInstance::stop ()\fC [virtual]\fP"
+Stops the sound if playing 
+.PP
+Implements \fBZeta::SoundInstance\fP\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "ALLEGRO_SAMPLE_INSTANCE* Zeta::AllegroSoundInstance::instance\fC [private]\fP"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Zeta from the source code\&.

@@ -1,0 +1,13 @@
+$#include <Zeta/Core/AudioContext.hpp>
+
+class AudioContext {
+public:
+	virtual float getMainGain() const=0;
+	virtual void setMainGain(float mainGain)=0;
+
+	void setMusic(const std::string& path);
+
+	void start();
+	void stop();
+	
+};

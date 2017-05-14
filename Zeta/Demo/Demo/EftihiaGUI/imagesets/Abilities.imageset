@@ -1,0 +1,26 @@
+<Imageset autoScaled="" imagefile="Abilities.png" name="Abilities" nativeHorzRes="800" nativeVertRes="600" version="2">
+    <Image height="64" name="BowAttack1" width="64" xPos="0" yPos="0" />
+    <Image height="64" name="SwordAttack1" width="64" xPos="69" yPos="0" />
+    <Image height="64" name="MagicAttack1" width="64" xPos="138" yPos="0" />
+    <Image height="64" name="BowAttack2" width="64" xPos="0" yPos="69" />
+    <Image height="64" name="GunAttack1" width="64" xPos="69" yPos="69" />
+    <Image height="64" name="SwordAttack2" width="64" xPos="138" yPos="69" />
+    <Image height="64" name="GunAttack3" width="64" xPos="0" yPos="138" />
+    <Image height="64" name="GunAttack2" width="64" xPos="69" yPos="138" />
+    <Image height="64" name="SwordAttack3" width="64" xPos="138" yPos="138" />
+    <Image height="64" name="MagicAttack2" width="64" xPos="0" yPos="207" />
+    <Image height="64" name="ArrowV" width="19" xPos="91" yPos="206" />
+    <Image height="19" name="ArrowH" width="64" xPos="133" yPos="229" />
+    <Image height="64" name="SwordAttack3_Dis" width="64" xPos="340" yPos="138" />
+    <Image height="64" name="SwordAttack1_Dis" width="64" xPos="271" yPos="0" />
+    <Image height="64" name="GunAttack1_Dis" width="64" xPos="271" yPos="69" />
+    <Image height="64" name="GunAttack2_Dis" width="64" xPos="271" yPos="138" />
+    <Image height="19" name="ArrowH_Dis" width="64" xPos="335" yPos="229" />
+    <Image height="64" name="BowAttack1_Dis" width="64" xPos="202" yPos="0" />
+    <Image height="64" name="ArrowV_Dis" width="19" xPos="293" yPos="206" />
+    <Image height="64" name="GunAttack3_Dis" width="64" xPos="202" yPos="138" />
+    <Image height="64" name="MagicAttack1_Dis" width="64" xPos="340" yPos="0" />
+    <Image height="64" name="BowAttack2_Dis" width="64" xPos="202" yPos="69" />
+    <Image height="64" name="SwordAttack2_Dis" width="64" xPos="340" yPos="69" />
+    <Image height="64" name="MagicAttack2_Dis" width="64" xPos="202" yPos="207" />
+</Imageset>

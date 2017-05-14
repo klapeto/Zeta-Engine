@@ -1,0 +1,242 @@
+\hypertarget{classZeta_1_1ChildObject}{\section{Zeta\+:\+:Child\+Object Class Reference}
+\label{classZeta_1_1ChildObject}\index{Zeta\+::\+Child\+Object@{Zeta\+::\+Child\+Object}}
+}
+
+
+{\ttfamily \#include $<$Child\+Object.\+hpp$>$}
+
+
+
+Inheritance diagram for Zeta\+:\+:Child\+Object\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classZeta_1_1ChildObject__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Zeta\+:\+:Child\+Object\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classZeta_1_1ChildObject__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classZeta_1_1Object}{Object} $\ast$ \hyperlink{classZeta_1_1ChildObject_af82270dd9f75f27022a574e92d1b02aa}{get\+Parent} ()
+\item 
+bool \hyperlink{classZeta_1_1ChildObject_ab703ec20290946ca573c3db862e438a8}{has\+Parent} () const 
+\item 
+void \hyperlink{classZeta_1_1ChildObject_a4bb3e87da8660d667a433f9fb9017bda}{set\+Parent} (\hyperlink{classZeta_1_1Object}{Object} $\ast$\hyperlink{classZeta_1_1ChildObject_aca8fcd19fdb0291c58a21cd91046e4aa}{parent})
+\item 
+virtual void \hyperlink{classZeta_1_1ChildObject_ad4832e3d30aff763d06ea631df01ca28}{on\+Collided\+With} (\hyperlink{classZeta_1_1Object}{Object} $\ast$other)
+\item 
+virtual void \hyperlink{classZeta_1_1ChildObject_af410405ced53e5719996157aadf4154e}{on\+Click} (\hyperlink{classZeta_1_1Object}{Object} $\ast$other)
+\item 
+\hyperlink{classZeta_1_1AnimationHandler}{Animation\+Handler} \& \hyperlink{classZeta_1_1ChildObject_a8f3255571ff4e3055920c6c73531c071}{get\+Animation\+Handler} ()
+\item 
+bool \hyperlink{classZeta_1_1ChildObject_ab10b86507072e36092b5e1ee45e8bda9}{is\+To\+Be\+Deleted} () const 
+\item 
+void \hyperlink{classZeta_1_1ChildObject_a93a9382628178e787a3d12a86ae328c6}{set\+To\+Be\+Deleted} (bool \hyperlink{classZeta_1_1ChildObject_aefd99848653386c7e7d98d2f9d66f25d}{to\+Be\+Deleted})
+\item 
+virtual void \hyperlink{classZeta_1_1ChildObject_a3cdc2e1198344a027e48328e5b8fc018}{update} (\hyperlink{namespaceZeta_a1e0a1265f9b3bd3075fb0fabd39088ba}{Float} elapsed\+Time)
+\item 
+virtual void \hyperlink{classZeta_1_1ChildObject_a561389a9afe2cac7363ead7234a79a87}{draw} (\hyperlink{namespaceZeta_a1e0a1265f9b3bd3075fb0fabd39088ba}{Float} x, \hyperlink{namespaceZeta_a1e0a1265f9b3bd3075fb0fabd39088ba}{Float} y, \hyperlink{namespaceZeta_a1e0a1265f9b3bd3075fb0fabd39088ba}{Float} rotation=0.\+0f, Float scale=1.\+0f) const 
+\item 
+virtual void \hyperlink{classZeta_1_1ChildObject_a1727027b77076f5bb59df22f57a148ec}{accept} (\hyperlink{classZeta_1_1Visitor}{Visitor} \&visitor)
+\item 
+virtual void \hyperlink{classZeta_1_1ChildObject_ad424271e178d77b184385a7254a6e712}{push\+To\+Lua} (lua\+\_\+\+State $\ast$lstate)
+\item 
+\hyperlink{classZeta_1_1ChildObject_a7a76839e0b4a8438ed74f2cea71a1e39}{Child\+Object} ()
+\item 
+\hyperlink{classZeta_1_1ChildObject_a60bb3b34fb53d06c8d8272d0046ade4d}{Child\+Object} (\hyperlink{namespaceZeta_a1e0a1265f9b3bd3075fb0fabd39088ba}{Float} x, \hyperlink{namespaceZeta_a1e0a1265f9b3bd3075fb0fabd39088ba}{Float} y, \hyperlink{classZeta_1_1Object}{Object} $\ast$\hyperlink{classZeta_1_1ChildObject_aca8fcd19fdb0291c58a21cd91046e4aa}{parent}, const std\+::string \&\hyperlink{classZeta_1_1Object_ace4ef81b7c300e0a170292e9888cd66f}{name}, const std\+::string \&animation\+Class, const std\+::string \&anim\+Name)
+\item 
+virtual \hyperlink{classZeta_1_1ChildObject_a33d32a8ccc1b63bbe462568c63abeeef}{$\sim$\+Child\+Object} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classZeta_1_1AnimationHandler}{Animation\+Handler} \hyperlink{classZeta_1_1ChildObject_aa53737b5485a63b87c9e50c5f0b9652b}{anim\+Handler}
+\item 
+\hyperlink{classZeta_1_1Object}{Object} $\ast$ \hyperlink{classZeta_1_1ChildObject_aca8fcd19fdb0291c58a21cd91046e4aa}{parent}
+\item 
+bool \hyperlink{classZeta_1_1ChildObject_aefd99848653386c7e7d98d2f9d66f25d}{to\+Be\+Deleted}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classZeta_1_1ChildObject_a7a76839e0b4a8438ed74f2cea71a1e39}{\index{Zeta\+::\+Child\+Object@{Zeta\+::\+Child\+Object}!Child\+Object@{Child\+Object}}
+\index{Child\+Object@{Child\+Object}!Zeta\+::\+Child\+Object@{Zeta\+::\+Child\+Object}}
+\subsubsection[{Child\+Object}]{\setlength{\rightskip}{0pt plus 5cm}Zeta\+::\+Child\+Object\+::\+Child\+Object (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classZeta_1_1ChildObject_a7a76839e0b4a8438ed74f2cea71a1e39}
+\hypertarget{classZeta_1_1ChildObject_a60bb3b34fb53d06c8d8272d0046ade4d}{\index{Zeta\+::\+Child\+Object@{Zeta\+::\+Child\+Object}!Child\+Object@{Child\+Object}}
+\index{Child\+Object@{Child\+Object}!Zeta\+::\+Child\+Object@{Zeta\+::\+Child\+Object}}
+\subsubsection[{Child\+Object}]{\setlength{\rightskip}{0pt plus 5cm}Zeta\+::\+Child\+Object\+::\+Child\+Object (
+\begin{DoxyParamCaption}
+\item[{{\bf Float}}]{x, }
+\item[{{\bf Float}}]{y, }
+\item[{{\bf Object} $\ast$}]{parent, }
+\item[{const std\+::string \&}]{name, }
+\item[{const std\+::string \&}]{animation\+Class, }
+\item[{const std\+::string \&}]{anim\+Name}
+\end{DoxyParamCaption}
+)}}\label{classZeta_1_1ChildObject_a60bb3b34fb53d06c8d8272d0046ade4d}
+\hypertarget{classZeta_1_1ChildObject_a33d32a8ccc1b63bbe462568c63abeeef}{\index{Zeta\+::\+Child\+Object@{Zeta\+::\+Child\+Object}!````~Child\+Object@{$\sim$\+Child\+Object}}
+\index{````~Child\+Object@{$\sim$\+Child\+Object}!Zeta\+::\+Child\+Object@{Zeta\+::\+Child\+Object}}
+\subsubsection[{$\sim$\+Child\+Object}]{\setlength{\rightskip}{0pt plus 5cm}virtual Zeta\+::\+Child\+Object\+::$\sim$\+Child\+Object (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classZeta_1_1ChildObject_a33d32a8ccc1b63bbe462568c63abeeef}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classZeta_1_1ChildObject_a1727027b77076f5bb59df22f57a148ec}{\index{Zeta\+::\+Child\+Object@{Zeta\+::\+Child\+Object}!accept@{accept}}
+\index{accept@{accept}!Zeta\+::\+Child\+Object@{Zeta\+::\+Child\+Object}}
+\subsubsection[{accept}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Zeta\+::\+Child\+Object\+::accept (
+\begin{DoxyParamCaption}
+\item[{{\bf Visitor} \&}]{visitor}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classZeta_1_1ChildObject_a1727027b77076f5bb59df22f57a148ec}
+
+
+Implements \hyperlink{classZeta_1_1Object_ab89312e192868609f745c27748a2e669}{Zeta\+::\+Object}.
+
+\hypertarget{classZeta_1_1ChildObject_a561389a9afe2cac7363ead7234a79a87}{\index{Zeta\+::\+Child\+Object@{Zeta\+::\+Child\+Object}!draw@{draw}}
+\index{draw@{draw}!Zeta\+::\+Child\+Object@{Zeta\+::\+Child\+Object}}
+\subsubsection[{draw}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Zeta\+::\+Child\+Object\+::draw (
+\begin{DoxyParamCaption}
+\item[{{\bf Float}}]{x, }
+\item[{{\bf Float}}]{y, }
+\item[{{\bf Float}}]{rotation = {\ttfamily 0.0f}, }
+\item[{{\bf Float}}]{scale = {\ttfamily 1.0f}}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classZeta_1_1ChildObject_a561389a9afe2cac7363ead7234a79a87}
+Draws the \hyperlink{classZeta_1_1Object}{Object} on screen. Be advised, the x,y, offsets might have different meaning on different implementations. 
+\begin{DoxyParams}{Parameters}
+{\em x} & X offset to be applied on the drawing \\
+\hline
+{\em y} & Y offset to be applied on the drawing \\
+\hline
+{\em rotation} & the rotation to be applied on the drawing \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classZeta_1_1Drawable_a3f453a7a971b7eeba1768be3eaedc192}{Zeta\+::\+Drawable}.
+
+
+
+Reimplemented in \hyperlink{classZeta_1_1CEGUIChild_a46f89f7ef921246d22690d7e1900da35}{Zeta\+::\+C\+E\+G\+U\+I\+Child}.
+
+\hypertarget{classZeta_1_1ChildObject_a8f3255571ff4e3055920c6c73531c071}{\index{Zeta\+::\+Child\+Object@{Zeta\+::\+Child\+Object}!get\+Animation\+Handler@{get\+Animation\+Handler}}
+\index{get\+Animation\+Handler@{get\+Animation\+Handler}!Zeta\+::\+Child\+Object@{Zeta\+::\+Child\+Object}}
+\subsubsection[{get\+Animation\+Handler}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Animation\+Handler}\& Zeta\+::\+Child\+Object\+::get\+Animation\+Handler (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1ChildObject_a8f3255571ff4e3055920c6c73531c071}
+\hypertarget{classZeta_1_1ChildObject_af82270dd9f75f27022a574e92d1b02aa}{\index{Zeta\+::\+Child\+Object@{Zeta\+::\+Child\+Object}!get\+Parent@{get\+Parent}}
+\index{get\+Parent@{get\+Parent}!Zeta\+::\+Child\+Object@{Zeta\+::\+Child\+Object}}
+\subsubsection[{get\+Parent}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Object}$\ast$ Zeta\+::\+Child\+Object\+::get\+Parent (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1ChildObject_af82270dd9f75f27022a574e92d1b02aa}
+\hypertarget{classZeta_1_1ChildObject_ab703ec20290946ca573c3db862e438a8}{\index{Zeta\+::\+Child\+Object@{Zeta\+::\+Child\+Object}!has\+Parent@{has\+Parent}}
+\index{has\+Parent@{has\+Parent}!Zeta\+::\+Child\+Object@{Zeta\+::\+Child\+Object}}
+\subsubsection[{has\+Parent}]{\setlength{\rightskip}{0pt plus 5cm}bool Zeta\+::\+Child\+Object\+::has\+Parent (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1ChildObject_ab703ec20290946ca573c3db862e438a8}
+\hypertarget{classZeta_1_1ChildObject_ab10b86507072e36092b5e1ee45e8bda9}{\index{Zeta\+::\+Child\+Object@{Zeta\+::\+Child\+Object}!is\+To\+Be\+Deleted@{is\+To\+Be\+Deleted}}
+\index{is\+To\+Be\+Deleted@{is\+To\+Be\+Deleted}!Zeta\+::\+Child\+Object@{Zeta\+::\+Child\+Object}}
+\subsubsection[{is\+To\+Be\+Deleted}]{\setlength{\rightskip}{0pt plus 5cm}bool Zeta\+::\+Child\+Object\+::is\+To\+Be\+Deleted (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1ChildObject_ab10b86507072e36092b5e1ee45e8bda9}
+\hypertarget{classZeta_1_1ChildObject_af410405ced53e5719996157aadf4154e}{\index{Zeta\+::\+Child\+Object@{Zeta\+::\+Child\+Object}!on\+Click@{on\+Click}}
+\index{on\+Click@{on\+Click}!Zeta\+::\+Child\+Object@{Zeta\+::\+Child\+Object}}
+\subsubsection[{on\+Click}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Zeta\+::\+Child\+Object\+::on\+Click (
+\begin{DoxyParamCaption}
+\item[{{\bf Object} $\ast$}]{other}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classZeta_1_1ChildObject_af410405ced53e5719996157aadf4154e}
+
+
+Implements \hyperlink{classZeta_1_1Object_a334f107411268cefd5d88a1ec40bb639}{Zeta\+::\+Object}.
+
+\hypertarget{classZeta_1_1ChildObject_ad4832e3d30aff763d06ea631df01ca28}{\index{Zeta\+::\+Child\+Object@{Zeta\+::\+Child\+Object}!on\+Collided\+With@{on\+Collided\+With}}
+\index{on\+Collided\+With@{on\+Collided\+With}!Zeta\+::\+Child\+Object@{Zeta\+::\+Child\+Object}}
+\subsubsection[{on\+Collided\+With}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Zeta\+::\+Child\+Object\+::on\+Collided\+With (
+\begin{DoxyParamCaption}
+\item[{{\bf Object} $\ast$}]{other}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classZeta_1_1ChildObject_ad4832e3d30aff763d06ea631df01ca28}
+
+
+Implements \hyperlink{classZeta_1_1Object_ae8d403a3bb343fb169347251b8eaa219}{Zeta\+::\+Object}.
+
+\hypertarget{classZeta_1_1ChildObject_ad424271e178d77b184385a7254a6e712}{\index{Zeta\+::\+Child\+Object@{Zeta\+::\+Child\+Object}!push\+To\+Lua@{push\+To\+Lua}}
+\index{push\+To\+Lua@{push\+To\+Lua}!Zeta\+::\+Child\+Object@{Zeta\+::\+Child\+Object}}
+\subsubsection[{push\+To\+Lua}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Zeta\+::\+Child\+Object\+::push\+To\+Lua (
+\begin{DoxyParamCaption}
+\item[{lua\+\_\+\+State $\ast$}]{lstate}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classZeta_1_1ChildObject_ad424271e178d77b184385a7254a6e712}
+
+
+Implements \hyperlink{classZeta_1_1LuaPushable_a0380ec9cff11f749e8eb67b51b8f82fc}{Zeta\+::\+Lua\+Pushable}.
+
+\hypertarget{classZeta_1_1ChildObject_a4bb3e87da8660d667a433f9fb9017bda}{\index{Zeta\+::\+Child\+Object@{Zeta\+::\+Child\+Object}!set\+Parent@{set\+Parent}}
+\index{set\+Parent@{set\+Parent}!Zeta\+::\+Child\+Object@{Zeta\+::\+Child\+Object}}
+\subsubsection[{set\+Parent}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+Child\+Object\+::set\+Parent (
+\begin{DoxyParamCaption}
+\item[{{\bf Object} $\ast$}]{parent}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1ChildObject_a4bb3e87da8660d667a433f9fb9017bda}
+\hypertarget{classZeta_1_1ChildObject_a93a9382628178e787a3d12a86ae328c6}{\index{Zeta\+::\+Child\+Object@{Zeta\+::\+Child\+Object}!set\+To\+Be\+Deleted@{set\+To\+Be\+Deleted}}
+\index{set\+To\+Be\+Deleted@{set\+To\+Be\+Deleted}!Zeta\+::\+Child\+Object@{Zeta\+::\+Child\+Object}}
+\subsubsection[{set\+To\+Be\+Deleted}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+Child\+Object\+::set\+To\+Be\+Deleted (
+\begin{DoxyParamCaption}
+\item[{bool}]{to\+Be\+Deleted}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1ChildObject_a93a9382628178e787a3d12a86ae328c6}
+\hypertarget{classZeta_1_1ChildObject_a3cdc2e1198344a027e48328e5b8fc018}{\index{Zeta\+::\+Child\+Object@{Zeta\+::\+Child\+Object}!update@{update}}
+\index{update@{update}!Zeta\+::\+Child\+Object@{Zeta\+::\+Child\+Object}}
+\subsubsection[{update}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Zeta\+::\+Child\+Object\+::update (
+\begin{DoxyParamCaption}
+\item[{{\bf Float}}]{elapsed\+Time}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classZeta_1_1ChildObject_a3cdc2e1198344a027e48328e5b8fc018}
+
+
+Implements \hyperlink{classZeta_1_1Updateable_af4006bfccb762454b4da08786ad93de0}{Zeta\+::\+Updateable}.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classZeta_1_1ChildObject_aa53737b5485a63b87c9e50c5f0b9652b}{\index{Zeta\+::\+Child\+Object@{Zeta\+::\+Child\+Object}!anim\+Handler@{anim\+Handler}}
+\index{anim\+Handler@{anim\+Handler}!Zeta\+::\+Child\+Object@{Zeta\+::\+Child\+Object}}
+\subsubsection[{anim\+Handler}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Animation\+Handler} Zeta\+::\+Child\+Object\+::anim\+Handler\hspace{0.3cm}{\ttfamily [protected]}}}\label{classZeta_1_1ChildObject_aa53737b5485a63b87c9e50c5f0b9652b}
+\hypertarget{classZeta_1_1ChildObject_aca8fcd19fdb0291c58a21cd91046e4aa}{\index{Zeta\+::\+Child\+Object@{Zeta\+::\+Child\+Object}!parent@{parent}}
+\index{parent@{parent}!Zeta\+::\+Child\+Object@{Zeta\+::\+Child\+Object}}
+\subsubsection[{parent}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Object}$\ast$ Zeta\+::\+Child\+Object\+::parent\hspace{0.3cm}{\ttfamily [protected]}}}\label{classZeta_1_1ChildObject_aca8fcd19fdb0291c58a21cd91046e4aa}
+\hypertarget{classZeta_1_1ChildObject_aefd99848653386c7e7d98d2f9d66f25d}{\index{Zeta\+::\+Child\+Object@{Zeta\+::\+Child\+Object}!to\+Be\+Deleted@{to\+Be\+Deleted}}
+\index{to\+Be\+Deleted@{to\+Be\+Deleted}!Zeta\+::\+Child\+Object@{Zeta\+::\+Child\+Object}}
+\subsubsection[{to\+Be\+Deleted}]{\setlength{\rightskip}{0pt plus 5cm}bool Zeta\+::\+Child\+Object\+::to\+Be\+Deleted\hspace{0.3cm}{\ttfamily [protected]}}}\label{classZeta_1_1ChildObject_aefd99848653386c7e7d98d2f9d66f25d}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Zeta/\+Core/\+R\+P\+G\+Classes/\hyperlink{ChildObject_8hpp}{Child\+Object.\+hpp}\end{DoxyCompactItemize}

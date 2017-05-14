@@ -1,0 +1,148 @@
+.TH "Zeta::ChildObject" 3 "Wed Feb 10 2016" "Zeta" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Zeta::ChildObject \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <ChildObject\&.hpp>\fP
+.PP
+Inherits \fBZeta::Object\fP\&.
+.PP
+Inherited by \fBZeta::CEGUIChild\fP, and \fBZeta::StickyObject\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBObject\fP * \fBgetParent\fP ()"
+.br
+.ti -1c
+.RI "bool \fBhasParent\fP () const "
+.br
+.ti -1c
+.RI "void \fBsetParent\fP (\fBObject\fP *\fBparent\fP)"
+.br
+.ti -1c
+.RI "virtual void \fBonCollidedWith\fP (\fBObject\fP *other)"
+.br
+.ti -1c
+.RI "virtual void \fBonClick\fP (\fBObject\fP *other)"
+.br
+.ti -1c
+.RI "\fBAnimationHandler\fP & \fBgetAnimationHandler\fP ()"
+.br
+.ti -1c
+.RI "bool \fBisToBeDeleted\fP () const "
+.br
+.ti -1c
+.RI "void \fBsetToBeDeleted\fP (bool \fBtoBeDeleted\fP)"
+.br
+.ti -1c
+.RI "virtual void \fBupdate\fP (\fBFloat\fP elapsedTime)"
+.br
+.ti -1c
+.RI "virtual void \fBdraw\fP (\fBFloat\fP x, \fBFloat\fP y, \fBFloat\fP rotation=0\&.0f, Float scale=1\&.0f) const "
+.br
+.ti -1c
+.RI "virtual void \fBaccept\fP (\fBVisitor\fP &visitor)"
+.br
+.ti -1c
+.RI "virtual void \fBpushToLua\fP (lua_State *lstate)"
+.br
+.ti -1c
+.RI "\fBChildObject\fP ()"
+.br
+.ti -1c
+.RI "\fBChildObject\fP (\fBFloat\fP x, \fBFloat\fP y, \fBObject\fP *\fBparent\fP, const std::string &\fBname\fP, const std::string &animationClass, const std::string &animName)"
+.br
+.ti -1c
+.RI "virtual \fB~ChildObject\fP ()"
+.br
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBAnimationHandler\fP \fBanimHandler\fP"
+.br
+.ti -1c
+.RI "\fBObject\fP * \fBparent\fP"
+.br
+.ti -1c
+.RI "bool \fBtoBeDeleted\fP"
+.br
+.in -1c
+.SS "Additional Inherited Members"
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Zeta::ChildObject::ChildObject ()"
+
+.SS "Zeta::ChildObject::ChildObject (\fBFloat\fPx, \fBFloat\fPy, \fBObject\fP *parent, const std::string &name, const std::string &animationClass, const std::string &animName)"
+
+.SS "virtual Zeta::ChildObject::~ChildObject ()\fC [virtual]\fP"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "virtual void Zeta::ChildObject::accept (\fBVisitor\fP &visitor)\fC [virtual]\fP"
+
+.PP
+Implements \fBZeta::Object\fP\&.
+.SS "virtual void Zeta::ChildObject::draw (\fBFloat\fPx, \fBFloat\fPy, \fBFloat\fProtation = \fC0\&.0f\fP, \fBFloat\fPscale = \fC1\&.0f\fP) const\fC [virtual]\fP"
+Draws the \fBObject\fP on screen\&. Be advised, the x,y, offsets might have different meaning on different implementations\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIx\fP X offset to be applied on the drawing 
+.br
+\fIy\fP Y offset to be applied on the drawing 
+.br
+\fIrotation\fP the rotation to be applied on the drawing 
+.RE
+.PP
+
+.PP
+Implements \fBZeta::Drawable\fP\&.
+.PP
+Reimplemented in \fBZeta::CEGUIChild\fP\&.
+.SS "\fBAnimationHandler\fP& Zeta::ChildObject::getAnimationHandler ()\fC [inline]\fP"
+
+.SS "\fBObject\fP* Zeta::ChildObject::getParent ()\fC [inline]\fP"
+
+.SS "bool Zeta::ChildObject::hasParent () const\fC [inline]\fP"
+
+.SS "bool Zeta::ChildObject::isToBeDeleted () const\fC [inline]\fP"
+
+.SS "virtual void Zeta::ChildObject::onClick (\fBObject\fP *other)\fC [inline]\fP, \fC [virtual]\fP"
+
+.PP
+Implements \fBZeta::Object\fP\&.
+.SS "virtual void Zeta::ChildObject::onCollidedWith (\fBObject\fP *other)\fC [inline]\fP, \fC [virtual]\fP"
+
+.PP
+Implements \fBZeta::Object\fP\&.
+.SS "virtual void Zeta::ChildObject::pushToLua (lua_State *lstate)\fC [virtual]\fP"
+
+.PP
+Implements \fBZeta::LuaPushable\fP\&.
+.SS "void Zeta::ChildObject::setParent (\fBObject\fP *parent)\fC [inline]\fP"
+
+.SS "void Zeta::ChildObject::setToBeDeleted (booltoBeDeleted)\fC [inline]\fP"
+
+.SS "virtual void Zeta::ChildObject::update (\fBFloat\fPelapsedTime)\fC [virtual]\fP"
+
+.PP
+Implements \fBZeta::Updateable\fP\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "\fBAnimationHandler\fP Zeta::ChildObject::animHandler\fC [protected]\fP"
+
+.SS "\fBObject\fP* Zeta::ChildObject::parent\fC [protected]\fP"
+
+.SS "bool Zeta::ChildObject::toBeDeleted\fC [protected]\fP"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Zeta from the source code\&.

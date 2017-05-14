@@ -1,0 +1,14 @@
+$#include <Zeta/Core/AnimationClasses/AnimationPlayer.hpp>
+
+class AnimationPlayer {
+public:
+	bool isPlaying() const;
+	bool isVisible() const;
+	void setVisible(bool visible);
+	void hide();
+	void show();
+	void play();
+	void stop();
+	void pause();
+	void reset();
+};

@@ -1,0 +1,7 @@
+<map id="Zeta::WorldManager" name="Zeta::WorldManager">
+<area shape="rect" id="node2" href="$classZeta_1_1Updateable.html" title="Zeta::Updateable" alt="" coords="203,5,325,32"/>
+<area shape="rect" id="node3" href="$classZeta_1_1Drawable.html" title="Zeta::Drawable" alt="" coords="209,56,319,83"/>
+<area shape="rect" id="node4" href="$classZeta_1_1SingleInstanced.html" title="Zeta::SingleInstanced\l\&lt; WorldManager \&gt;" alt="" coords="189,107,339,149"/>
+<area shape="rect" id="node5" href="$classZeta_1_1NonCopyable.html" title="Zeta::NonCopyable" alt="" coords="6,115,141,141"/>
+<area shape="rect" id="node6" href="$classZeta_1_1LuaPushable.html" title="Zeta::LuaPushable" alt="" coords="199,173,329,200"/>
+</map>

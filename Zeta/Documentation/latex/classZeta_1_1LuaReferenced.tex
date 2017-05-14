@@ -1,0 +1,234 @@
+\hypertarget{classZeta_1_1LuaReferenced}{\section{Zeta\+:\+:Lua\+Referenced Class Reference}
+\label{classZeta_1_1LuaReferenced}\index{Zeta\+::\+Lua\+Referenced@{Zeta\+::\+Lua\+Referenced}}
+}
+
+
+{\ttfamily \#include $<$Lua\+Referenced.\+hpp$>$}
+
+
+
+Inheritance diagram for Zeta\+:\+:Lua\+Referenced\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=271pt]{classZeta_1_1LuaReferenced__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Zeta\+:\+:Lua\+Referenced\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=188pt]{classZeta_1_1LuaReferenced__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+const std\+::string \& \hyperlink{classZeta_1_1LuaReferenced_a8a1cc4ca0f13f9523957c4b5a406f8de}{get\+Name} () const 
+\item 
+void \hyperlink{classZeta_1_1LuaReferenced_a221f63ccf254251ccb97b6f6acfe800c}{set\+Name} (const std\+::string \&\hyperlink{classZeta_1_1LuaReferenced_ad6f7a947b37382f9968f4a54bd718119}{name})
+\item 
+int \hyperlink{classZeta_1_1LuaReferenced_a848feb700634411658791251023970ea}{get\+Lua\+Reference} () const 
+\item 
+virtual void \hyperlink{classZeta_1_1LuaReferenced_a9b61c3cb2dde8a50d1c463dfe7df146c}{set} (int stack\+Index)=0
+\item 
+virtual void \hyperlink{classZeta_1_1LuaReferenced_a8e487b719107baad17268854b878fc81}{set\+Lua\+Reference} (int reference)=0
+\item 
+bool \hyperlink{classZeta_1_1LuaReferenced_a25a6e3458bed7bfd4ac1d7a24d1a8278}{is\+Valid} () const 
+\item 
+void \hyperlink{classZeta_1_1LuaReferenced_adac9c2f2ad3aafa4e0b6d193075dca76}{push\+To\+Lua} (lua\+\_\+\+State $\ast$lstate)
+\item 
+\hyperlink{classZeta_1_1LuaReferenced_a55b255c116050cb7610abcc53ce67a3a}{Lua\+Referenced} ()
+\item 
+\hyperlink{classZeta_1_1LuaReferenced_ab57ebe8c68b61fae88b3eef4b92582ce}{Lua\+Referenced} (const std\+::string \&lua\+Name)
+\item 
+\hyperlink{classZeta_1_1LuaReferenced_aac7ce73e71472d0eab8f0a74d7ee7e3a}{Lua\+Referenced} (int stack\+Index)
+\item 
+\hyperlink{classZeta_1_1LuaReferenced_a98910517c18314f6f7d53fd6b758e9a8}{Lua\+Referenced} (\hyperlink{classZeta_1_1LuaReferenced}{Lua\+Referenced} \&\&other)
+\item 
+\hyperlink{classZeta_1_1LuaReferenced_a19e872857191135725c0f37e6fa8745e}{Lua\+Referenced} (const \hyperlink{classZeta_1_1LuaReferenced}{Lua\+Referenced} \&other)
+\item 
+\hyperlink{classZeta_1_1LuaReferenced}{Lua\+Referenced} \& \hyperlink{classZeta_1_1LuaReferenced_abf192c4b4fd21769bc026fed3a44c9a5}{operator=} (const \hyperlink{classZeta_1_1LuaReferenced}{Lua\+Referenced} \&other)
+\item 
+\hyperlink{classZeta_1_1LuaReferenced}{Lua\+Referenced} \& \hyperlink{classZeta_1_1LuaReferenced_a7d4a40188fbf14f638d88891efebf167}{operator=} (\hyperlink{classZeta_1_1LuaReferenced}{Lua\+Referenced} \&\&other)
+\item 
+virtual \hyperlink{classZeta_1_1LuaReferenced_abaac777edfe7db27ed63020b976e5362}{$\sim$\+Lua\+Referenced} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \hyperlink{classZeta_1_1LuaReferenced_ad6f7a947b37382f9968f4a54bd718119}{name}
+\item 
+int \hyperlink{classZeta_1_1LuaReferenced_a1b8fa758a5b30071d7b8fb0280d164a4}{lua\+Reference}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classZeta_1_1LuaReferenced}{Lua\+Referenced} Is derived by classes representing Lua Code in C++ This means that Objects of the derived classes have a Reference to Lua Environment A \hyperlink{classZeta_1_1LuaReferenced}{Lua\+Referenced} object can have a Name to make debugging easier. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classZeta_1_1LuaReferenced_a55b255c116050cb7610abcc53ce67a3a}{\index{Zeta\+::\+Lua\+Referenced@{Zeta\+::\+Lua\+Referenced}!Lua\+Referenced@{Lua\+Referenced}}
+\index{Lua\+Referenced@{Lua\+Referenced}!Zeta\+::\+Lua\+Referenced@{Zeta\+::\+Lua\+Referenced}}
+\subsubsection[{Lua\+Referenced}]{\setlength{\rightskip}{0pt plus 5cm}Zeta\+::\+Lua\+Referenced\+::\+Lua\+Referenced (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classZeta_1_1LuaReferenced_a55b255c116050cb7610abcc53ce67a3a}
+\hypertarget{classZeta_1_1LuaReferenced_ab57ebe8c68b61fae88b3eef4b92582ce}{\index{Zeta\+::\+Lua\+Referenced@{Zeta\+::\+Lua\+Referenced}!Lua\+Referenced@{Lua\+Referenced}}
+\index{Lua\+Referenced@{Lua\+Referenced}!Zeta\+::\+Lua\+Referenced@{Zeta\+::\+Lua\+Referenced}}
+\subsubsection[{Lua\+Referenced}]{\setlength{\rightskip}{0pt plus 5cm}Zeta\+::\+Lua\+Referenced\+::\+Lua\+Referenced (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{lua\+Name}
+\end{DoxyParamCaption}
+)}}\label{classZeta_1_1LuaReferenced_ab57ebe8c68b61fae88b3eef4b92582ce}
+\hypertarget{classZeta_1_1LuaReferenced_aac7ce73e71472d0eab8f0a74d7ee7e3a}{\index{Zeta\+::\+Lua\+Referenced@{Zeta\+::\+Lua\+Referenced}!Lua\+Referenced@{Lua\+Referenced}}
+\index{Lua\+Referenced@{Lua\+Referenced}!Zeta\+::\+Lua\+Referenced@{Zeta\+::\+Lua\+Referenced}}
+\subsubsection[{Lua\+Referenced}]{\setlength{\rightskip}{0pt plus 5cm}Zeta\+::\+Lua\+Referenced\+::\+Lua\+Referenced (
+\begin{DoxyParamCaption}
+\item[{int}]{stack\+Index}
+\end{DoxyParamCaption}
+)}}\label{classZeta_1_1LuaReferenced_aac7ce73e71472d0eab8f0a74d7ee7e3a}
+\hypertarget{classZeta_1_1LuaReferenced_a98910517c18314f6f7d53fd6b758e9a8}{\index{Zeta\+::\+Lua\+Referenced@{Zeta\+::\+Lua\+Referenced}!Lua\+Referenced@{Lua\+Referenced}}
+\index{Lua\+Referenced@{Lua\+Referenced}!Zeta\+::\+Lua\+Referenced@{Zeta\+::\+Lua\+Referenced}}
+\subsubsection[{Lua\+Referenced}]{\setlength{\rightskip}{0pt plus 5cm}Zeta\+::\+Lua\+Referenced\+::\+Lua\+Referenced (
+\begin{DoxyParamCaption}
+\item[{{\bf Lua\+Referenced} \&\&}]{other}
+\end{DoxyParamCaption}
+)}}\label{classZeta_1_1LuaReferenced_a98910517c18314f6f7d53fd6b758e9a8}
+\hypertarget{classZeta_1_1LuaReferenced_a19e872857191135725c0f37e6fa8745e}{\index{Zeta\+::\+Lua\+Referenced@{Zeta\+::\+Lua\+Referenced}!Lua\+Referenced@{Lua\+Referenced}}
+\index{Lua\+Referenced@{Lua\+Referenced}!Zeta\+::\+Lua\+Referenced@{Zeta\+::\+Lua\+Referenced}}
+\subsubsection[{Lua\+Referenced}]{\setlength{\rightskip}{0pt plus 5cm}Zeta\+::\+Lua\+Referenced\+::\+Lua\+Referenced (
+\begin{DoxyParamCaption}
+\item[{const {\bf Lua\+Referenced} \&}]{other}
+\end{DoxyParamCaption}
+)}}\label{classZeta_1_1LuaReferenced_a19e872857191135725c0f37e6fa8745e}
+\hypertarget{classZeta_1_1LuaReferenced_abaac777edfe7db27ed63020b976e5362}{\index{Zeta\+::\+Lua\+Referenced@{Zeta\+::\+Lua\+Referenced}!````~Lua\+Referenced@{$\sim$\+Lua\+Referenced}}
+\index{````~Lua\+Referenced@{$\sim$\+Lua\+Referenced}!Zeta\+::\+Lua\+Referenced@{Zeta\+::\+Lua\+Referenced}}
+\subsubsection[{$\sim$\+Lua\+Referenced}]{\setlength{\rightskip}{0pt plus 5cm}virtual Zeta\+::\+Lua\+Referenced\+::$\sim$\+Lua\+Referenced (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classZeta_1_1LuaReferenced_abaac777edfe7db27ed63020b976e5362}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classZeta_1_1LuaReferenced_a848feb700634411658791251023970ea}{\index{Zeta\+::\+Lua\+Referenced@{Zeta\+::\+Lua\+Referenced}!get\+Lua\+Reference@{get\+Lua\+Reference}}
+\index{get\+Lua\+Reference@{get\+Lua\+Reference}!Zeta\+::\+Lua\+Referenced@{Zeta\+::\+Lua\+Referenced}}
+\subsubsection[{get\+Lua\+Reference}]{\setlength{\rightskip}{0pt plus 5cm}int Zeta\+::\+Lua\+Referenced\+::get\+Lua\+Reference (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1LuaReferenced_a848feb700634411658791251023970ea}
+Gets the Reference Int in Lua \begin{DoxyReturn}{Returns}
+the integer that represents something in Lua 
+\end{DoxyReturn}
+\hypertarget{classZeta_1_1LuaReferenced_a8a1cc4ca0f13f9523957c4b5a406f8de}{\index{Zeta\+::\+Lua\+Referenced@{Zeta\+::\+Lua\+Referenced}!get\+Name@{get\+Name}}
+\index{get\+Name@{get\+Name}!Zeta\+::\+Lua\+Referenced@{Zeta\+::\+Lua\+Referenced}}
+\subsubsection[{get\+Name}]{\setlength{\rightskip}{0pt plus 5cm}const std\+::string\& Zeta\+::\+Lua\+Referenced\+::get\+Name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1LuaReferenced_a8a1cc4ca0f13f9523957c4b5a406f8de}
+Gets the references Name \begin{DoxyReturn}{Returns}
+the name 
+\end{DoxyReturn}
+\hypertarget{classZeta_1_1LuaReferenced_a25a6e3458bed7bfd4ac1d7a24d1a8278}{\index{Zeta\+::\+Lua\+Referenced@{Zeta\+::\+Lua\+Referenced}!is\+Valid@{is\+Valid}}
+\index{is\+Valid@{is\+Valid}!Zeta\+::\+Lua\+Referenced@{Zeta\+::\+Lua\+Referenced}}
+\subsubsection[{is\+Valid}]{\setlength{\rightskip}{0pt plus 5cm}bool Zeta\+::\+Lua\+Referenced\+::is\+Valid (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classZeta_1_1LuaReferenced_a25a6e3458bed7bfd4ac1d7a24d1a8278}
+Checks if the Reference is actually pointing to something \begin{DoxyReturn}{Returns}
+True if the reference can be used. 
+\end{DoxyReturn}
+\hypertarget{classZeta_1_1LuaReferenced_abf192c4b4fd21769bc026fed3a44c9a5}{\index{Zeta\+::\+Lua\+Referenced@{Zeta\+::\+Lua\+Referenced}!operator=@{operator=}}
+\index{operator=@{operator=}!Zeta\+::\+Lua\+Referenced@{Zeta\+::\+Lua\+Referenced}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Lua\+Referenced}\& Zeta\+::\+Lua\+Referenced\+::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Lua\+Referenced} \&}]{other}
+\end{DoxyParamCaption}
+)}}\label{classZeta_1_1LuaReferenced_abf192c4b4fd21769bc026fed3a44c9a5}
+\hypertarget{classZeta_1_1LuaReferenced_a7d4a40188fbf14f638d88891efebf167}{\index{Zeta\+::\+Lua\+Referenced@{Zeta\+::\+Lua\+Referenced}!operator=@{operator=}}
+\index{operator=@{operator=}!Zeta\+::\+Lua\+Referenced@{Zeta\+::\+Lua\+Referenced}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Lua\+Referenced}\& Zeta\+::\+Lua\+Referenced\+::operator= (
+\begin{DoxyParamCaption}
+\item[{{\bf Lua\+Referenced} \&\&}]{other}
+\end{DoxyParamCaption}
+)}}\label{classZeta_1_1LuaReferenced_a7d4a40188fbf14f638d88891efebf167}
+\hypertarget{classZeta_1_1LuaReferenced_adac9c2f2ad3aafa4e0b6d193075dca76}{\index{Zeta\+::\+Lua\+Referenced@{Zeta\+::\+Lua\+Referenced}!push\+To\+Lua@{push\+To\+Lua}}
+\index{push\+To\+Lua@{push\+To\+Lua}!Zeta\+::\+Lua\+Referenced@{Zeta\+::\+Lua\+Referenced}}
+\subsubsection[{push\+To\+Lua}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+Lua\+Referenced\+::push\+To\+Lua (
+\begin{DoxyParamCaption}
+\item[{lua\+\_\+\+State $\ast$}]{lstate}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classZeta_1_1LuaReferenced_adac9c2f2ad3aafa4e0b6d193075dca76}
+Pushes the referenced object to Lua. 
+\begin{DoxyParams}{Parameters}
+{\em lstate} & the lua\+\_\+\+State to push it. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classZeta_1_1LuaPushable_a0380ec9cff11f749e8eb67b51b8f82fc}{Zeta\+::\+Lua\+Pushable}.
+
+\hypertarget{classZeta_1_1LuaReferenced_a9b61c3cb2dde8a50d1c463dfe7df146c}{\index{Zeta\+::\+Lua\+Referenced@{Zeta\+::\+Lua\+Referenced}!set@{set}}
+\index{set@{set}!Zeta\+::\+Lua\+Referenced@{Zeta\+::\+Lua\+Referenced}}
+\subsubsection[{set}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Zeta\+::\+Lua\+Referenced\+::set (
+\begin{DoxyParamCaption}
+\item[{int}]{stack\+Index}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classZeta_1_1LuaReferenced_a9b61c3cb2dde8a50d1c463dfe7df146c}
+Sets the reference according to the stack Pointer provided 
+\begin{DoxyParams}{Parameters}
+{\em stack\+Index} & the Stack\+Index the obejct is in Lua \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{classZeta_1_1LuaTable_aaef5554a255658a2fefa84610b240865}{Zeta\+::\+Lua\+Table}, and \hyperlink{classZeta_1_1LuaFunctor_a98abacbb6f907e8cd94256ca91d9cafc}{Zeta\+::\+Lua\+Functor}.
+
+\hypertarget{classZeta_1_1LuaReferenced_a8e487b719107baad17268854b878fc81}{\index{Zeta\+::\+Lua\+Referenced@{Zeta\+::\+Lua\+Referenced}!set\+Lua\+Reference@{set\+Lua\+Reference}}
+\index{set\+Lua\+Reference@{set\+Lua\+Reference}!Zeta\+::\+Lua\+Referenced@{Zeta\+::\+Lua\+Referenced}}
+\subsubsection[{set\+Lua\+Reference}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Zeta\+::\+Lua\+Referenced\+::set\+Lua\+Reference (
+\begin{DoxyParamCaption}
+\item[{int}]{reference}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classZeta_1_1LuaReferenced_a8e487b719107baad17268854b878fc81}
+Sets the Lua Reference directly 
+\begin{DoxyParams}{Parameters}
+{\em reference} & the Reference int to set \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{classZeta_1_1LuaTable_a51832c582c39dc740c54f7aadfa510ac}{Zeta\+::\+Lua\+Table}, and \hyperlink{classZeta_1_1LuaFunctor_a6ec24e778260eec5818278d6bbed01c3}{Zeta\+::\+Lua\+Functor}.
+
+\hypertarget{classZeta_1_1LuaReferenced_a221f63ccf254251ccb97b6f6acfe800c}{\index{Zeta\+::\+Lua\+Referenced@{Zeta\+::\+Lua\+Referenced}!set\+Name@{set\+Name}}
+\index{set\+Name@{set\+Name}!Zeta\+::\+Lua\+Referenced@{Zeta\+::\+Lua\+Referenced}}
+\subsubsection[{set\+Name}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+Lua\+Referenced\+::set\+Name (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1LuaReferenced_a221f63ccf254251ccb97b6f6acfe800c}
+Sets the references Name 
+\begin{DoxyParams}{Parameters}
+{\em name} & the Name \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classZeta_1_1LuaReferenced_a1b8fa758a5b30071d7b8fb0280d164a4}{\index{Zeta\+::\+Lua\+Referenced@{Zeta\+::\+Lua\+Referenced}!lua\+Reference@{lua\+Reference}}
+\index{lua\+Reference@{lua\+Reference}!Zeta\+::\+Lua\+Referenced@{Zeta\+::\+Lua\+Referenced}}
+\subsubsection[{lua\+Reference}]{\setlength{\rightskip}{0pt plus 5cm}int Zeta\+::\+Lua\+Referenced\+::lua\+Reference\hspace{0.3cm}{\ttfamily [protected]}}}\label{classZeta_1_1LuaReferenced_a1b8fa758a5b30071d7b8fb0280d164a4}
+\hypertarget{classZeta_1_1LuaReferenced_ad6f7a947b37382f9968f4a54bd718119}{\index{Zeta\+::\+Lua\+Referenced@{Zeta\+::\+Lua\+Referenced}!name@{name}}
+\index{name@{name}!Zeta\+::\+Lua\+Referenced@{Zeta\+::\+Lua\+Referenced}}
+\subsubsection[{name}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string Zeta\+::\+Lua\+Referenced\+::name\hspace{0.3cm}{\ttfamily [protected]}}}\label{classZeta_1_1LuaReferenced_ad6f7a947b37382f9968f4a54bd718119}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Zeta/\+Core/\hyperlink{LuaReferenced_8hpp}{Lua\+Referenced.\+hpp}\end{DoxyCompactItemize}

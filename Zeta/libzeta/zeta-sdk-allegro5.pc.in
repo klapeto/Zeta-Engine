@@ -1,0 +1,12 @@
+prefix=@prefix@
+exec_prefix=@exec_prefix@
+libdir=@libdir@
+includedir=@includedir@
+
+Name: zeta-sdk-allegro5
+Description: Allegro5 SDK module for Zeta Engine
+URL: sourceforge.net/p/eftihia
+Version: @VERSION@
+Require: zeta
+Libs: -L${libdir} -lzeta-sdk-allegro5
+Cflags: -I${includedir} -I${prefix}/include/Zeta

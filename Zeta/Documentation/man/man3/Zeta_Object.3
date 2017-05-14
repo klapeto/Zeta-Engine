@@ -1,0 +1,322 @@
+.TH "Zeta::Object" 3 "Wed Feb 10 2016" "Zeta" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Zeta::Object \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Object\&.hpp>\fP
+.PP
+Inherits \fBZeta::Drawable\fP, \fBZeta::Updateable\fP, and \fBZeta::LuaPushable\fP\&.
+.PP
+Inherited by \fBZeta::CEGUIObject\fP, \fBZeta::ChildObject\fP, \fBZeta::InteractField\fP, \fBZeta::InteractObject\fP, \fBZeta::Lifeform\fP, \fBZeta::Projectile\fP, \fBZeta::StaticObject\fP, and \fBZeta::TeleportField\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "const \fBRectangle\fP & \fBgetBounding\fP () const "
+.br
+.ti -1c
+.RI "\fBRectangle\fP & \fBgetBounding\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetBounding\fP (const \fBRectangle\fP &\fBbounding\fP)"
+.br
+.ti -1c
+.RI "const \fBRectangle\fP & \fBgetTargetArea\fP () const "
+.br
+.ti -1c
+.RI "\fBRectangle\fP & \fBgetTargetArea\fP ()"
+.br
+.ti -1c
+.RI "const \fBVector2\fP & \fBgetPosition\fP () const "
+.br
+.ti -1c
+.RI "void \fBsetPosition\fP (const \fBVector2\fP &\fBposition\fP)"
+.br
+.ti -1c
+.RI "virtual void \fBsetPosition\fP (\fBFloat\fP x, \fBFloat\fP y)"
+.br
+.ti -1c
+.RI "const std::string & \fBgetName\fP () const "
+.br
+.ti -1c
+.RI "void \fBsetName\fP (const std::string &\fBname\fP)"
+.br
+.ti -1c
+.RI "const \fBPropertyList\fP & \fBgetCustomProperties\fP () const "
+.br
+.ti -1c
+.RI "\fBPropertyList\fP & \fBgetCustomProperties\fP ()"
+.br
+.ti -1c
+.RI "const std::string & \fBgetCustomProperty\fP (const std::string &\fBname\fP) const "
+.br
+.ti -1c
+.RI "void \fBsetCustomProperty\fP (const std::string &\fBname\fP, const std::string &value)"
+.br
+.ti -1c
+.RI "\fBFloat\fP \fBgetDistance\fP (const \fBObject\fP &other) const "
+.br
+.ti -1c
+.RI "\fBFloat\fP \fBgetDistance\fP (const \fBVector2\fP &\fBposition\fP) const "
+.br
+.ti -1c
+.RI "bool \fBisCollideAble\fP () const "
+.br
+.ti -1c
+.RI "void \fBsetCoolideAble\fP (bool value)"
+.br
+.ti -1c
+.RI "bool \fBisTriggeringCollisionEvents\fP () const "
+.br
+.ti -1c
+.RI "void \fBsetTriggeringCollisionEvents\fP (bool value)"
+.br
+.ti -1c
+.RI "bool \fBisVisible\fP () const "
+.br
+.ti -1c
+.RI "void \fBsetVisible\fP (bool \fBvisible\fP)"
+.br
+.ti -1c
+.RI "void \fBshow\fP ()"
+.br
+.ti -1c
+.RI "void \fBhide\fP ()"
+.br
+.ti -1c
+.RI "virtual void \fBonCollidedWith\fP (\fBObject\fP *other)=0"
+.br
+.ti -1c
+.RI "virtual void \fBonClick\fP (\fBObject\fP *other)=0"
+.br
+.ti -1c
+.RI "virtual void \fBonShow\fP ()"
+.br
+.ti -1c
+.RI "virtual void \fBonHide\fP ()"
+.br
+.ti -1c
+.RI "void \fBaddChildObject\fP (const std::string &\fBname\fP, \fBChildObject\fP *child)"
+.br
+.ti -1c
+.RI "void \fBaddChildObject\fP (\fBFloat\fP x, \fBFloat\fP y, const std::string &\fBname\fP, const std::string &classPath, const std::string &animName)"
+.br
+.ti -1c
+.RI "void \fBremoveChildObject\fP (const std::string &\fBname\fP)"
+.br
+.ti -1c
+.RI "\fBChildObject\fP * \fBgetChildObject\fP (const std::string &\fBname\fP)"
+.br
+.ti -1c
+.RI "virtual void \fBoffsetPosition\fP (\fBFloat\fP dx, \fBFloat\fP dy)"
+.br
+.ti -1c
+.RI "void \fBoffsetShapes\fP (\fBFloat\fP dx, \fBFloat\fP dy)"
+.br
+.ti -1c
+.RI "void \fBaddChildToBeOffseted\fP (const std::string &\fBname\fP)"
+.br
+.ti -1c
+.RI "void \fBremoveChildToBeOffseted\fP (const std::string &\fBname\fP)"
+.br
+.ti -1c
+.RI "\fBVector2\fP \fBgetRenderPosition\fP () const "
+.br
+.ti -1c
+.RI "virtual void \fBaccept\fP (\fBVisitor\fP &visitor)=0"
+.br
+.ti -1c
+.RI "\fBObject\fP ()"
+.br
+.ti -1c
+.RI "\fBObject\fP (\fBFloat\fP x, \fBFloat\fP y)"
+.br
+.ti -1c
+.RI "\fBObject\fP (\fBFloat\fP x, \fBFloat\fP y, int width, int height)"
+.br
+.ti -1c
+.RI "virtual \fB~Object\fP ()"
+.br
+.in -1c
+.SS "Protected Member Functions"
+
+.in +1c
+.ti -1c
+.RI "virtual void \fBaddShapesToBeOffseted\fP ()"
+.br
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBPropertyList\fP \fBcustomProperties\fP"
+.br
+.ti -1c
+.RI "\fBZMap\fP< std::string, \fBChildObject\fP * > \fBchilds\fP"
+.br
+.ti -1c
+.RI "\fBZMap\fP< std::string, \fBChildObject\fP * > \fBchildsToBeOffseted\fP"
+.br
+.ti -1c
+.RI "std::vector< \fBShape\fP * > \fBshapesToBeOffseted\fP"
+.br
+.ti -1c
+.RI "std::string \fBname\fP"
+.br
+.ti -1c
+.RI "\fBVector2\fP \fBposition\fP"
+.br
+.ti -1c
+.RI "\fBRectangle\fP \fBbounding\fP"
+.br
+.ti -1c
+.RI "\fBRectangle\fP \fBtargetArea\fP"
+.br
+.ti -1c
+.RI "bool \fBcollideAble\fP"
+.br
+.ti -1c
+.RI "bool \fBtriggersCollisionEvents\fP"
+.br
+.ti -1c
+.RI "bool \fBvisible\fP"
+.br
+.in -1c
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Zeta::Object::Object ()"
+
+.SS "Zeta::Object::Object (\fBFloat\fPx, \fBFloat\fPy)"
+
+.SS "Zeta::Object::Object (\fBFloat\fPx, \fBFloat\fPy, intwidth, intheight)"
+
+.SS "virtual Zeta::Object::~Object ()\fC [virtual]\fP"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "virtual void Zeta::Object::accept (\fBVisitor\fP &visitor)\fC [pure virtual]\fP"
+
+.PP
+Implemented in \fBZeta::Lifeform\fP, \fBZeta::CEGUIObject\fP, \fBZeta::ChildObject\fP, \fBZeta::Player\fP, \fBZeta::Projectile\fP, \fBZeta::InteractObject\fP, \fBZeta::InteractField\fP, and \fBZeta::StaticObject\fP\&.
+.SS "void Zeta::Object::addChildObject (const std::string &name, \fBChildObject\fP *child)"
+
+.SS "void Zeta::Object::addChildObject (\fBFloat\fPx, \fBFloat\fPy, const std::string &name, const std::string &classPath, const std::string &animName)"
+
+.SS "void Zeta::Object::addChildToBeOffseted (const std::string &name)"
+
+.SS "virtual void Zeta::Object::addShapesToBeOffseted ()\fC [protected]\fP, \fC [virtual]\fP"
+
+.PP
+Reimplemented in \fBZeta::Lifeform\fP\&.
+.SS "const \fBRectangle\fP& Zeta::Object::getBounding () const\fC [inline]\fP"
+
+.SS "\fBRectangle\fP& Zeta::Object::getBounding ()\fC [inline]\fP"
+
+.SS "\fBChildObject\fP* Zeta::Object::getChildObject (const std::string &name)"
+
+.SS "const \fBPropertyList\fP& Zeta::Object::getCustomProperties () const\fC [inline]\fP"
+
+.SS "\fBPropertyList\fP& Zeta::Object::getCustomProperties ()\fC [inline]\fP"
+
+.SS "const std::string& Zeta::Object::getCustomProperty (const std::string &name) const\fC [inline]\fP"
+
+.SS "\fBFloat\fP Zeta::Object::getDistance (const \fBObject\fP &other) const\fC [inline]\fP"
+
+.SS "\fBFloat\fP Zeta::Object::getDistance (const \fBVector2\fP &position) const\fC [inline]\fP"
+
+.SS "const std::string& Zeta::Object::getName () const\fC [inline]\fP"
+
+.SS "const \fBVector2\fP& Zeta::Object::getPosition () const\fC [inline]\fP"
+
+.SS "\fBVector2\fP Zeta::Object::getRenderPosition () const"
+
+.SS "const \fBRectangle\fP& Zeta::Object::getTargetArea () const\fC [inline]\fP"
+
+.SS "\fBRectangle\fP& Zeta::Object::getTargetArea ()\fC [inline]\fP"
+
+.SS "void Zeta::Object::hide ()\fC [inline]\fP"
+
+.SS "bool Zeta::Object::isCollideAble () const\fC [inline]\fP"
+
+.SS "bool Zeta::Object::isTriggeringCollisionEvents () const\fC [inline]\fP"
+
+.SS "bool Zeta::Object::isVisible () const\fC [inline]\fP"
+
+.SS "virtual void Zeta::Object::offsetPosition (\fBFloat\fPdx, \fBFloat\fPdy)\fC [virtual]\fP"
+
+.PP
+Reimplemented in \fBZeta::CEGUIObject\fP, and \fBZeta::CEGUIChild\fP\&.
+.SS "void Zeta::Object::offsetShapes (\fBFloat\fPdx, \fBFloat\fPdy)\fC [inline]\fP"
+
+.SS "virtual void Zeta::Object::onClick (\fBObject\fP *other)\fC [pure virtual]\fP"
+
+.PP
+Implemented in \fBZeta::CEGUIObject\fP, \fBZeta::Lifeform\fP, \fBZeta::Projectile\fP, \fBZeta::ChildObject\fP, \fBZeta::TeleportField\fP, \fBZeta::InteractObject\fP, \fBZeta::InteractField\fP, \fBZeta::StaticObject\fP, and \fBZeta::Npc\fP\&.
+.SS "virtual void Zeta::Object::onCollidedWith (\fBObject\fP *other)\fC [pure virtual]\fP"
+
+.PP
+Implemented in \fBZeta::CEGUIObject\fP, \fBZeta::Lifeform\fP, \fBZeta::Projectile\fP, \fBZeta::ChildObject\fP, \fBZeta::TeleportField\fP, \fBZeta::InteractObject\fP, \fBZeta::InteractField\fP, \fBZeta::Npc\fP, \fBZeta::StaticObject\fP, and \fBZeta::SeekingProjectile\fP\&.
+.SS "virtual void Zeta::Object::onHide ()\fC [inline]\fP, \fC [virtual]\fP"
+
+.PP
+Reimplemented in \fBZeta::CEGUIObject\fP, \fBZeta::CEGUIChild\fP, \fBZeta::Lifeform\fP, and \fBZeta::Player\fP\&.
+.SS "virtual void Zeta::Object::onShow ()\fC [inline]\fP, \fC [virtual]\fP"
+
+.PP
+Reimplemented in \fBZeta::CEGUIObject\fP, \fBZeta::CEGUIChild\fP, \fBZeta::Lifeform\fP, and \fBZeta::Player\fP\&.
+.SS "void Zeta::Object::removeChildObject (const std::string &name)"
+
+.SS "void Zeta::Object::removeChildToBeOffseted (const std::string &name)"
+
+.SS "void Zeta::Object::setBounding (const \fBRectangle\fP &bounding)\fC [inline]\fP"
+
+.SS "void Zeta::Object::setCoolideAble (boolvalue)\fC [inline]\fP"
+
+.SS "void Zeta::Object::setCustomProperty (const std::string &name, const std::string &value)\fC [inline]\fP"
+
+.SS "void Zeta::Object::setName (const std::string &name)\fC [inline]\fP"
+
+.SS "void Zeta::Object::setPosition (const \fBVector2\fP &position)"
+
+.SS "virtual void Zeta::Object::setPosition (\fBFloat\fPx, \fBFloat\fPy)\fC [virtual]\fP"
+
+.PP
+Reimplemented in \fBZeta::CEGUIObject\fP, and \fBZeta::CEGUIChild\fP\&.
+.SS "void Zeta::Object::setTriggeringCollisionEvents (boolvalue)\fC [inline]\fP"
+
+.SS "void Zeta::Object::setVisible (boolvisible)\fC [inline]\fP"
+
+.SS "void Zeta::Object::show ()\fC [inline]\fP"
+
+.SH "Member Data Documentation"
+.PP 
+.SS "\fBRectangle\fP Zeta::Object::bounding\fC [protected]\fP"
+
+.SS "\fBZMap\fP<std::string, \fBChildObject\fP*> Zeta::Object::childs\fC [protected]\fP"
+
+.SS "\fBZMap\fP<std::string, \fBChildObject\fP*> Zeta::Object::childsToBeOffseted\fC [protected]\fP"
+
+.SS "bool Zeta::Object::collideAble\fC [protected]\fP"
+
+.SS "\fBPropertyList\fP Zeta::Object::customProperties\fC [protected]\fP"
+
+.SS "std::string Zeta::Object::name\fC [protected]\fP"
+
+.SS "\fBVector2\fP Zeta::Object::position\fC [protected]\fP"
+
+.SS "std::vector<\fBShape\fP*> Zeta::Object::shapesToBeOffseted\fC [protected]\fP"
+
+.SS "\fBRectangle\fP Zeta::Object::targetArea\fC [protected]\fP"
+
+.SS "bool Zeta::Object::triggersCollisionEvents\fC [protected]\fP"
+
+.SS "bool Zeta::Object::visible\fC [protected]\fP"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Zeta from the source code\&.

@@ -1,0 +1,9 @@
+$#include <Zeta/Core/RPGClasses/ProjectileClass.hpp>
+
+class ProjectileClass {
+public:
+	enum class ProjectileType {
+		Normal, Directional, Seeking
+	};
+
+};

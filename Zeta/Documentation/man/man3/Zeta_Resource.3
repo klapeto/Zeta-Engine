@@ -1,0 +1,79 @@
+.TH "Zeta::Resource" 3 "Wed Feb 10 2016" "Zeta" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Zeta::Resource \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Resource\&.hpp>\fP
+.PP
+Inherited by \fBZeta::AbilityClass\fP, \fBZeta::AnimationClass\fP, \fBZeta::AnimationPack\fP, \fBZeta::Bitmap\fP, \fBZeta::File\fP, \fBZeta::LifeformClass\fP, \fBZeta::Map\fP, \fBZeta::Sound\fP, \fBZeta::SpriteSheet\fP, and \fBZeta::Tileset\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "const std::string & \fBgetName\fP () const "
+.br
+.ti -1c
+.RI "void \fBsetName\fP (const std::string &\fBname\fP)"
+.br
+.ti -1c
+.RI "\fBResource\fP (const std::string &\fBname\fP)"
+.br
+.ti -1c
+.RI "virtual \fB~Resource\fP ()"
+.br
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "std::string \fBname\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Base Class for all \fBResource\fP Types 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Zeta::Resource::Resource (const std::string &name)\fC [inline]\fP"
+Default constructor 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIThe\fP name to assign to the \fBResource\fP 
+.RE
+.PP
+
+.SS "virtual Zeta::Resource::~Resource ()\fC [inline]\fP, \fC [virtual]\fP"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "const std::string& Zeta::Resource::getName () const\fC [inline]\fP"
+Returns the name of the \fBResource\fP 
+.PP
+\fBReturns:\fP
+.RS 4
+The name of the \fBResource\fP 
+.RE
+.PP
+
+.SS "void Zeta::Resource::setName (const std::string &name)\fC [inline]\fP"
+Sets the name of the \fBResource\fP 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIThe\fP name to assign 
+.RE
+.PP
+
+.SH "Member Data Documentation"
+.PP 
+.SS "std::string Zeta::Resource::name\fC [protected]\fP"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Zeta from the source code\&.

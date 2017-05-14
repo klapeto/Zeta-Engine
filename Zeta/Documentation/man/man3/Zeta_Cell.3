@@ -1,0 +1,115 @@
+.TH "Zeta::Cell" 3 "Wed Feb 10 2016" "Zeta" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Zeta::Cell \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Cell\&.hpp>\fP
+.PP
+Inherits \fBZeta::Drawable\fP\&.
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "class \fBSprite\fP"
+.br
+.in -1c
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBdraw\fP (\fBFloat\fP x, \fBFloat\fP y, \fBFloat\fP rotation=0\&.0f, Float scale=1\&.0f) const "
+.br
+.ti -1c
+.RI "void \fBaddSprite\fP (const \fBSprite\fP &spr)"
+.br
+.ti -1c
+.RI "void \fBaddSprite\fP (xmlpp::Node *sprNode, const \fBSpriteSheet\fP &spriteSheet)"
+.br
+.ti -1c
+.RI "\fBFloat\fP \fBgetDelay\fP () const "
+.br
+.ti -1c
+.RI "void \fBclearSprites\fP ()"
+.br
+.ti -1c
+.RI "\fBCell\fP (\fBCell\fP &&)=default"
+.br
+.ti -1c
+.RI "\fBCell\fP & \fBoperator=\fP (\fBCell\fP &&)=default"
+.br
+.ti -1c
+.RI "\fBCell\fP ()"
+.br
+.ti -1c
+.RI "\fBCell\fP (\fBFloat\fP \fBdelay\fP)"
+.br
+.ti -1c
+.RI "\fBCell\fP (\fBFloat\fP \fBdelay\fP, const \fBSprite\fP &sprite)"
+.br
+.ti -1c
+.RI "\fB~Cell\fP ()"
+.br
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "std::list< \fBSprite\fP > \fBsprites\fP"
+.br
+.ti -1c
+.RI "\fBFloat\fP \fBdelay\fP"
+.br
+.in -1c
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Zeta::Cell::Cell (\fBCell\fP &&)\fC [default]\fP"
+
+.SS "Zeta::Cell::Cell ()\fC [inline]\fP"
+
+.SS "Zeta::Cell::Cell (\fBFloat\fPdelay)\fC [inline]\fP"
+
+.SS "Zeta::Cell::Cell (\fBFloat\fPdelay, const \fBSprite\fP &sprite)\fC [inline]\fP"
+
+.SS "Zeta::Cell::~Cell ()\fC [inline]\fP"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "void Zeta::Cell::addSprite (const \fBSprite\fP &spr)"
+
+.SS "void Zeta::Cell::addSprite (xmlpp::Node *sprNode, const \fBSpriteSheet\fP &spriteSheet)"
+
+.SS "void Zeta::Cell::clearSprites ()\fC [inline]\fP"
+
+.SS "void Zeta::Cell::draw (\fBFloat\fPx, \fBFloat\fPy, \fBFloat\fProtation = \fC0\&.0f\fP, \fBFloat\fPscale = \fC1\&.0f\fP) const\fC [virtual]\fP"
+Draws the \fBObject\fP on screen\&. Be advised, the x,y, offsets might have different meaning on different implementations\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIx\fP X offset to be applied on the drawing 
+.br
+\fIy\fP Y offset to be applied on the drawing 
+.br
+\fIrotation\fP the rotation to be applied on the drawing 
+.RE
+.PP
+
+.PP
+Implements \fBZeta::Drawable\fP\&.
+.SS "\fBFloat\fP Zeta::Cell::getDelay () const\fC [inline]\fP"
+
+.SS "\fBCell\fP& Zeta::Cell::operator= (\fBCell\fP &&)\fC [default]\fP"
+
+.SH "Member Data Documentation"
+.PP 
+.SS "\fBFloat\fP Zeta::Cell::delay\fC [protected]\fP"
+
+.SS "std::list<\fBSprite\fP> Zeta::Cell::sprites\fC [protected]\fP"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Zeta from the source code\&.

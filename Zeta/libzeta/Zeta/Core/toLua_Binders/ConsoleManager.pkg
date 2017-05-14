@@ -1,0 +1,7 @@
+$#include <Zeta/Core/ConsoleManager.hpp>
+
+class ConsoleManager {
+public:
+	std::string excecuteLine(const std::string& line);
+	static ConsoleManager& getInstance();
+};

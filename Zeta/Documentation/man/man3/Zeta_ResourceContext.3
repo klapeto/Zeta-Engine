@@ -1,0 +1,163 @@
+.TH "Zeta::ResourceContext" 3 "Wed Feb 10 2016" "Zeta" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Zeta::ResourceContext \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <ResourceContext\&.hpp>\fP
+.PP
+Inherits \fBZeta::Context< ResourceContext >\fP\&.
+.PP
+Inherited by \fBZeta::SynchronousResourceContext< BitmapT, SoundT >\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "virtual \fBSoundInstance\fP & \fBgetSound\fP (const std::string &path)=0"
+.br
+.ti -1c
+.RI "virtual const \fBBitmap\fP & \fBgetBitmap\fP (const std::string &path)=0"
+.br
+.ti -1c
+.RI "virtual const \fBAnimationClass\fP & \fBgetAnimationClass\fP (const std::string &path)=0"
+.br
+.ti -1c
+.RI "virtual const \fBAnimationPack\fP & \fBgetAnimationPack\fP (const std::string &path)=0"
+.br
+.ti -1c
+.RI "virtual const \fBFile\fP & \fBgetFile\fP (const std::string &path)=0"
+.br
+.ti -1c
+.RI "virtual const \fBSpriteSheet\fP & \fBgetSpriteSheet\fP (const std::string &path)=0"
+.br
+.ti -1c
+.RI "virtual const \fBAbilityClass\fP & \fBgetAbilityClass\fP (const std::string &path)=0"
+.br
+.ti -1c
+.RI "virtual const \fBLifeformClass\fP & \fBgetLifeformClass\fP (const std::string &path)=0"
+.br
+.ti -1c
+.RI "virtual void \fBreleaseResource\fP (const \fBBitmap\fP &resource)=0"
+.br
+.ti -1c
+.RI "virtual void \fBreleaseResource\fP (const \fBSound\fP &resource)=0"
+.br
+.ti -1c
+.RI "virtual void \fBreleaseResource\fP (const \fBAnimationClass\fP &resource)=0"
+.br
+.ti -1c
+.RI "virtual void \fBreleaseResource\fP (const \fBFile\fP &resource)=0"
+.br
+.ti -1c
+.RI "virtual void \fBreleaseResource\fP (const \fBSpriteSheet\fP &resource)=0"
+.br
+.ti -1c
+.RI "virtual void \fBreleaseResource\fP (const \fBAnimationPack\fP &resource)=0"
+.br
+.ti -1c
+.RI "virtual void \fBreleaseResource\fP (const \fBAbilityClass\fP &resource)=0"
+.br
+.ti -1c
+.RI "virtual void \fBreleaseResource\fP (const \fBLifeformClass\fP &resource)=0"
+.br
+.ti -1c
+.RI "virtual const \fBBitmap\fP & \fBgetNullBitmap\fP ()=0"
+.br
+.ti -1c
+.RI "virtual const \fBSound\fP & \fBgetNullSound\fP ()=0"
+.br
+.ti -1c
+.RI "\fBResourceContext\fP ()"
+.br
+.ti -1c
+.RI "virtual \fB~ResourceContext\fP ()"
+.br
+.in -1c
+.SS "Additional Inherited Members"
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Zeta::ResourceContext::ResourceContext ()\fC [inline]\fP"
+
+.SS "virtual Zeta::ResourceContext::~ResourceContext ()\fC [inline]\fP, \fC [virtual]\fP"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "virtual const \fBAbilityClass\fP& Zeta::ResourceContext::getAbilityClass (const std::string &path)\fC [pure virtual]\fP"
+
+.PP
+Implemented in \fBZeta::SynchronousResourceContext< BitmapT, SoundT >\fP\&.
+.SS "virtual const \fBAnimationClass\fP& Zeta::ResourceContext::getAnimationClass (const std::string &path)\fC [pure virtual]\fP"
+
+.PP
+Implemented in \fBZeta::SynchronousResourceContext< BitmapT, SoundT >\fP\&.
+.SS "virtual const \fBAnimationPack\fP& Zeta::ResourceContext::getAnimationPack (const std::string &path)\fC [pure virtual]\fP"
+
+.PP
+Implemented in \fBZeta::SynchronousResourceContext< BitmapT, SoundT >\fP\&.
+.SS "virtual const \fBBitmap\fP& Zeta::ResourceContext::getBitmap (const std::string &path)\fC [pure virtual]\fP"
+
+.PP
+Implemented in \fBZeta::SynchronousResourceContext< BitmapT, SoundT >\fP\&.
+.SS "virtual const \fBFile\fP& Zeta::ResourceContext::getFile (const std::string &path)\fC [pure virtual]\fP"
+
+.PP
+Implemented in \fBZeta::SynchronousResourceContext< BitmapT, SoundT >\fP\&.
+.SS "virtual const \fBLifeformClass\fP& Zeta::ResourceContext::getLifeformClass (const std::string &path)\fC [pure virtual]\fP"
+
+.PP
+Implemented in \fBZeta::SynchronousResourceContext< BitmapT, SoundT >\fP\&.
+.SS "virtual const \fBBitmap\fP& Zeta::ResourceContext::getNullBitmap ()\fC [pure virtual]\fP"
+
+.PP
+Implemented in \fBZeta::SynchronousResourceContext< BitmapT, SoundT >\fP\&.
+.SS "virtual const \fBSound\fP& Zeta::ResourceContext::getNullSound ()\fC [pure virtual]\fP"
+
+.PP
+Implemented in \fBZeta::SynchronousResourceContext< BitmapT, SoundT >\fP\&.
+.SS "virtual \fBSoundInstance\fP& Zeta::ResourceContext::getSound (const std::string &path)\fC [pure virtual]\fP"
+
+.PP
+Implemented in \fBZeta::SynchronousResourceContext< BitmapT, SoundT >\fP\&.
+.SS "virtual const \fBSpriteSheet\fP& Zeta::ResourceContext::getSpriteSheet (const std::string &path)\fC [pure virtual]\fP"
+
+.PP
+Implemented in \fBZeta::SynchronousResourceContext< BitmapT, SoundT >\fP\&.
+.SS "virtual void Zeta::ResourceContext::releaseResource (const \fBBitmap\fP &resource)\fC [pure virtual]\fP"
+
+.PP
+Implemented in \fBZeta::SynchronousResourceContext< BitmapT, SoundT >\fP\&.
+.SS "virtual void Zeta::ResourceContext::releaseResource (const \fBSound\fP &resource)\fC [pure virtual]\fP"
+
+.PP
+Implemented in \fBZeta::SynchronousResourceContext< BitmapT, SoundT >\fP\&.
+.SS "virtual void Zeta::ResourceContext::releaseResource (const \fBAnimationClass\fP &resource)\fC [pure virtual]\fP"
+
+.PP
+Implemented in \fBZeta::SynchronousResourceContext< BitmapT, SoundT >\fP\&.
+.SS "virtual void Zeta::ResourceContext::releaseResource (const \fBFile\fP &resource)\fC [pure virtual]\fP"
+
+.PP
+Implemented in \fBZeta::SynchronousResourceContext< BitmapT, SoundT >\fP\&.
+.SS "virtual void Zeta::ResourceContext::releaseResource (const \fBSpriteSheet\fP &resource)\fC [pure virtual]\fP"
+
+.PP
+Implemented in \fBZeta::SynchronousResourceContext< BitmapT, SoundT >\fP\&.
+.SS "virtual void Zeta::ResourceContext::releaseResource (const \fBAnimationPack\fP &resource)\fC [pure virtual]\fP"
+
+.PP
+Implemented in \fBZeta::SynchronousResourceContext< BitmapT, SoundT >\fP\&.
+.SS "virtual void Zeta::ResourceContext::releaseResource (const \fBAbilityClass\fP &resource)\fC [pure virtual]\fP"
+
+.PP
+Implemented in \fBZeta::SynchronousResourceContext< BitmapT, SoundT >\fP\&.
+.SS "virtual void Zeta::ResourceContext::releaseResource (const \fBLifeformClass\fP &resource)\fC [pure virtual]\fP"
+
+.PP
+Implemented in \fBZeta::SynchronousResourceContext< BitmapT, SoundT >\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Zeta from the source code\&.

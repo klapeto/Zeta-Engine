@@ -1,0 +1,317 @@
+\hypertarget{classZeta_1_1Tile}{\section{Zeta\+:\+:Tile Class Reference}
+\label{classZeta_1_1Tile}\index{Zeta\+::\+Tile@{Zeta\+::\+Tile}}
+}
+
+
+{\ttfamily \#include $<$Tile.\+hpp$>$}
+
+
+
+Inheritance diagram for Zeta\+:\+:Tile\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=273pt]{classZeta_1_1Tile__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Zeta\+:\+:Tile\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=333pt]{classZeta_1_1Tile__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structZeta_1_1Tile_1_1TileFrame}{Tile\+Frame}
+\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{classZeta_1_1Tile_ae68e7d2b2d2660734fa5f65d690c47eb}{Collision} \{ \\*
+\hyperlink{classZeta_1_1Tile_ae68e7d2b2d2660734fa5f65d690c47eba1ef5b51ca25340c3d603d99411271b63}{None} = 0x0, 
+\hyperlink{classZeta_1_1Tile_ae68e7d2b2d2660734fa5f65d690c47ebac0599785cf29ae34f3682be804b6d926}{N} = 0x3, 
+\hyperlink{classZeta_1_1Tile_ae68e7d2b2d2660734fa5f65d690c47eba946922494faf8ef678bb47fa46dc89c6}{E} = 0x\+A, 
+\hyperlink{classZeta_1_1Tile_ae68e7d2b2d2660734fa5f65d690c47ebabc5b6687ef30f7cc07ddf2ec9fe3e214}{S} = 0x\+C, 
+\\*
+\hyperlink{classZeta_1_1Tile_ae68e7d2b2d2660734fa5f65d690c47ebacc5dc60b00e530533ac85a4dbb516aec}{W} = 0x5, 
+\hyperlink{classZeta_1_1Tile_ae68e7d2b2d2660734fa5f65d690c47eba8fdf62bb45064df93c0676c20d553e7e}{N\+W} = 0x1, 
+\hyperlink{classZeta_1_1Tile_ae68e7d2b2d2660734fa5f65d690c47eba99a2837dc3ca23d44dcfa5f7ff800c45}{N\+E} = 0x2, 
+\hyperlink{classZeta_1_1Tile_ae68e7d2b2d2660734fa5f65d690c47eba5fe020e81050654c99cec894dbf3b537}{S\+E} = 0x8, 
+\\*
+\hyperlink{classZeta_1_1Tile_ae68e7d2b2d2660734fa5f65d690c47eba9fe9676f68d32ce472ffd4b246074c3b}{S\+W} = 0x4, 
+\hyperlink{classZeta_1_1Tile_ae68e7d2b2d2660734fa5f65d690c47eba3572eb380394d5bd69f1cffc38f201e9}{Nx\+W} = 0x7, 
+\hyperlink{classZeta_1_1Tile_ae68e7d2b2d2660734fa5f65d690c47ebab32a862ff0b7442d3101a9656abf559c}{Nx\+E} = 0x\+B, 
+\hyperlink{classZeta_1_1Tile_ae68e7d2b2d2660734fa5f65d690c47ebaba610b000b083982a9b6a4304e99a609}{Sx\+E} = 0x\+E, 
+\\*
+\hyperlink{classZeta_1_1Tile_ae68e7d2b2d2660734fa5f65d690c47eba5dbd4497a6cf44be308b541cd7a9f183}{Sx\+W} = 0x\+D, 
+\hyperlink{classZeta_1_1Tile_ae68e7d2b2d2660734fa5f65d690c47eba5d58087cf8fa27eb80c38ac6d1b29292}{N\+Wx\+S\+E} = 0x9, 
+\hyperlink{classZeta_1_1Tile_ae68e7d2b2d2660734fa5f65d690c47eba5dca8349ed2d2ed3d3a96e750dc988f4}{S\+Wx\+N\+E} = 0x6, 
+\hyperlink{classZeta_1_1Tile_ae68e7d2b2d2660734fa5f65d690c47eba8696a4b80dd519c047d89d5f4174ea22}{Full} = 0x\+F
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+unsigned int \hyperlink{classZeta_1_1Tile_a2605879617c901eb63870400b1459f30}{get\+G\+I\+D} () const 
+\item 
+void \hyperlink{classZeta_1_1Tile_a1dc7e317950b40aa79e25bf8c5108b44}{set\+Collision} (int coll)
+\item 
+int \hyperlink{classZeta_1_1Tile_a680a98169e1f5bc5ed929e55458670af}{get\+Collision} () const 
+\item 
+void \hyperlink{classZeta_1_1Tile_a2893f0b4e1fe83087757a79335405bd6}{add\+Frame} (\hyperlink{structZeta_1_1Tile_1_1TileFrame}{Tile\+Frame} \&frame)
+\item 
+void \hyperlink{classZeta_1_1Tile_a55269b5653598909030d67b05334154c}{add\+Relative\+Tile} (\hyperlink{classZeta_1_1Tile}{Tile} \&other)
+\item 
+void \hyperlink{classZeta_1_1Tile_a60843b6e0db0807cfc8ad6b265174ef7}{set\+Animated} (bool value)
+\item 
+bool \hyperlink{classZeta_1_1Tile_a1dbf9bcc8c3dc0c03de9eafe50e01e3d}{is\+Animated} () const 
+\item 
+const std\+::vector$<$ \hyperlink{classZeta_1_1Tile}{Tile} $\ast$ $>$ \& \hyperlink{classZeta_1_1Tile_a78dab2f64a620fdc26ae7bd60fa30d5b}{get\+Relative\+Tiles} () const 
+\item 
+void \hyperlink{classZeta_1_1Tile_a272534e2d1aeca3057cece7fdefece72}{draw} (\hyperlink{namespaceZeta_a1e0a1265f9b3bd3075fb0fabd39088ba}{Float} x, \hyperlink{namespaceZeta_a1e0a1265f9b3bd3075fb0fabd39088ba}{Float} y, \hyperlink{namespaceZeta_a1e0a1265f9b3bd3075fb0fabd39088ba}{Float} rotation=0.\+0f, Float scale=1.\+0f) const 
+\item 
+void \hyperlink{classZeta_1_1Tile_ada0187d097d6b51c20dd3cef9103b41f}{set} (const \hyperlink{classZeta_1_1Bitmap}{Bitmap} \&bmp, unsigned int \hyperlink{classZeta_1_1Tile_a73e4f7fc4c4770d3dd4ddd823f168944}{id})
+\item 
+void \hyperlink{classZeta_1_1Tile_a7efa5c5a7d45ef571f12900f7ba2f11c}{update} (\hyperlink{namespaceZeta_a1e0a1265f9b3bd3075fb0fabd39088ba}{Float} elapsed\+Time)
+\item 
+\hyperlink{classZeta_1_1Tile_a33756b3554776031cc7f2a46919c020c}{Tile} ()
+\item 
+\hyperlink{classZeta_1_1Tile_a4dddb2eba3e006220022931e820fefe5}{Tile} (const \hyperlink{classZeta_1_1Bitmap}{Bitmap} \&bmp, unsigned int \hyperlink{classZeta_1_1Tile_a73e4f7fc4c4770d3dd4ddd823f168944}{id})
+\item 
+virtual \hyperlink{classZeta_1_1Tile_a807a04438f5ee741791b41141962a772}{$\sim$\+Tile} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \hyperlink{structZeta_1_1Tile_1_1TileFrame}{Tile\+Frame} $>$ \hyperlink{classZeta_1_1Tile_a7bb5f244f2fcfd4d1555b1fc34ed83bf}{frames}
+\item 
+std\+::vector$<$ \hyperlink{classZeta_1_1Tile}{Tile} $\ast$ $>$ \hyperlink{classZeta_1_1Tile_a87ad7f87310b4f614a91027f2eb80ac6}{relative\+Tiles}
+\item 
+const \hyperlink{classZeta_1_1Bitmap}{Bitmap} $\ast$ \hyperlink{classZeta_1_1Tile_a07ecd5534c5706c34caa24b76d1f7732}{img}
+\item 
+unsigned int \hyperlink{classZeta_1_1Tile_a73e4f7fc4c4770d3dd4ddd823f168944}{id}
+\item 
+int \hyperlink{classZeta_1_1Tile_a14528e0a0089ba6d1ef9c7212b0979ef}{collision}
+\item 
+unsigned int \hyperlink{classZeta_1_1Tile_a82054179dbf538fb3f4fb90d27f3c989}{frame\+Index}
+\item 
+\hyperlink{namespaceZeta_a1e0a1265f9b3bd3075fb0fabd39088ba}{Float} \hyperlink{classZeta_1_1Tile_a75c9f1e8284016d616ff77d45be4b4c7}{frame\+Counter}
+\item 
+bool \hyperlink{classZeta_1_1Tile_abbdf92d372e2f64b3d5fdbbcd802c65d}{animated}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classZeta_1_1Tile_ad3a332aadb166ba7a00d4f642709063e}{Tileset}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{classZeta_1_1Tile_ae68e7d2b2d2660734fa5f65d690c47eb}{\index{Zeta\+::\+Tile@{Zeta\+::\+Tile}!Collision@{Collision}}
+\index{Collision@{Collision}!Zeta\+::\+Tile@{Zeta\+::\+Tile}}
+\subsubsection[{Collision}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Zeta\+::\+Tile\+::\+Collision}}}\label{classZeta_1_1Tile_ae68e7d2b2d2660734fa5f65d690c47eb}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{None@{None}!Zeta\+::\+Tile@{Zeta\+::\+Tile}}\index{Zeta\+::\+Tile@{Zeta\+::\+Tile}!None@{None}}\item[{\em 
+\hypertarget{classZeta_1_1Tile_ae68e7d2b2d2660734fa5f65d690c47eba1ef5b51ca25340c3d603d99411271b63}{None}\label{classZeta_1_1Tile_ae68e7d2b2d2660734fa5f65d690c47eba1ef5b51ca25340c3d603d99411271b63}
+}]\index{N@{N}!Zeta\+::\+Tile@{Zeta\+::\+Tile}}\index{Zeta\+::\+Tile@{Zeta\+::\+Tile}!N@{N}}\item[{\em 
+\hypertarget{classZeta_1_1Tile_ae68e7d2b2d2660734fa5f65d690c47ebac0599785cf29ae34f3682be804b6d926}{N}\label{classZeta_1_1Tile_ae68e7d2b2d2660734fa5f65d690c47ebac0599785cf29ae34f3682be804b6d926}
+}]\index{E@{E}!Zeta\+::\+Tile@{Zeta\+::\+Tile}}\index{Zeta\+::\+Tile@{Zeta\+::\+Tile}!E@{E}}\item[{\em 
+\hypertarget{classZeta_1_1Tile_ae68e7d2b2d2660734fa5f65d690c47eba946922494faf8ef678bb47fa46dc89c6}{E}\label{classZeta_1_1Tile_ae68e7d2b2d2660734fa5f65d690c47eba946922494faf8ef678bb47fa46dc89c6}
+}]\index{S@{S}!Zeta\+::\+Tile@{Zeta\+::\+Tile}}\index{Zeta\+::\+Tile@{Zeta\+::\+Tile}!S@{S}}\item[{\em 
+\hypertarget{classZeta_1_1Tile_ae68e7d2b2d2660734fa5f65d690c47ebabc5b6687ef30f7cc07ddf2ec9fe3e214}{S}\label{classZeta_1_1Tile_ae68e7d2b2d2660734fa5f65d690c47ebabc5b6687ef30f7cc07ddf2ec9fe3e214}
+}]\index{W@{W}!Zeta\+::\+Tile@{Zeta\+::\+Tile}}\index{Zeta\+::\+Tile@{Zeta\+::\+Tile}!W@{W}}\item[{\em 
+\hypertarget{classZeta_1_1Tile_ae68e7d2b2d2660734fa5f65d690c47ebacc5dc60b00e530533ac85a4dbb516aec}{W}\label{classZeta_1_1Tile_ae68e7d2b2d2660734fa5f65d690c47ebacc5dc60b00e530533ac85a4dbb516aec}
+}]\index{N\+W@{N\+W}!Zeta\+::\+Tile@{Zeta\+::\+Tile}}\index{Zeta\+::\+Tile@{Zeta\+::\+Tile}!N\+W@{N\+W}}\item[{\em 
+\hypertarget{classZeta_1_1Tile_ae68e7d2b2d2660734fa5f65d690c47eba8fdf62bb45064df93c0676c20d553e7e}{N\+W}\label{classZeta_1_1Tile_ae68e7d2b2d2660734fa5f65d690c47eba8fdf62bb45064df93c0676c20d553e7e}
+}]\index{N\+E@{N\+E}!Zeta\+::\+Tile@{Zeta\+::\+Tile}}\index{Zeta\+::\+Tile@{Zeta\+::\+Tile}!N\+E@{N\+E}}\item[{\em 
+\hypertarget{classZeta_1_1Tile_ae68e7d2b2d2660734fa5f65d690c47eba99a2837dc3ca23d44dcfa5f7ff800c45}{N\+E}\label{classZeta_1_1Tile_ae68e7d2b2d2660734fa5f65d690c47eba99a2837dc3ca23d44dcfa5f7ff800c45}
+}]\index{S\+E@{S\+E}!Zeta\+::\+Tile@{Zeta\+::\+Tile}}\index{Zeta\+::\+Tile@{Zeta\+::\+Tile}!S\+E@{S\+E}}\item[{\em 
+\hypertarget{classZeta_1_1Tile_ae68e7d2b2d2660734fa5f65d690c47eba5fe020e81050654c99cec894dbf3b537}{S\+E}\label{classZeta_1_1Tile_ae68e7d2b2d2660734fa5f65d690c47eba5fe020e81050654c99cec894dbf3b537}
+}]\index{S\+W@{S\+W}!Zeta\+::\+Tile@{Zeta\+::\+Tile}}\index{Zeta\+::\+Tile@{Zeta\+::\+Tile}!S\+W@{S\+W}}\item[{\em 
+\hypertarget{classZeta_1_1Tile_ae68e7d2b2d2660734fa5f65d690c47eba9fe9676f68d32ce472ffd4b246074c3b}{S\+W}\label{classZeta_1_1Tile_ae68e7d2b2d2660734fa5f65d690c47eba9fe9676f68d32ce472ffd4b246074c3b}
+}]\index{Nx\+W@{Nx\+W}!Zeta\+::\+Tile@{Zeta\+::\+Tile}}\index{Zeta\+::\+Tile@{Zeta\+::\+Tile}!Nx\+W@{Nx\+W}}\item[{\em 
+\hypertarget{classZeta_1_1Tile_ae68e7d2b2d2660734fa5f65d690c47eba3572eb380394d5bd69f1cffc38f201e9}{Nx\+W}\label{classZeta_1_1Tile_ae68e7d2b2d2660734fa5f65d690c47eba3572eb380394d5bd69f1cffc38f201e9}
+}]\index{Nx\+E@{Nx\+E}!Zeta\+::\+Tile@{Zeta\+::\+Tile}}\index{Zeta\+::\+Tile@{Zeta\+::\+Tile}!Nx\+E@{Nx\+E}}\item[{\em 
+\hypertarget{classZeta_1_1Tile_ae68e7d2b2d2660734fa5f65d690c47ebab32a862ff0b7442d3101a9656abf559c}{Nx\+E}\label{classZeta_1_1Tile_ae68e7d2b2d2660734fa5f65d690c47ebab32a862ff0b7442d3101a9656abf559c}
+}]\index{Sx\+E@{Sx\+E}!Zeta\+::\+Tile@{Zeta\+::\+Tile}}\index{Zeta\+::\+Tile@{Zeta\+::\+Tile}!Sx\+E@{Sx\+E}}\item[{\em 
+\hypertarget{classZeta_1_1Tile_ae68e7d2b2d2660734fa5f65d690c47ebaba610b000b083982a9b6a4304e99a609}{Sx\+E}\label{classZeta_1_1Tile_ae68e7d2b2d2660734fa5f65d690c47ebaba610b000b083982a9b6a4304e99a609}
+}]\index{Sx\+W@{Sx\+W}!Zeta\+::\+Tile@{Zeta\+::\+Tile}}\index{Zeta\+::\+Tile@{Zeta\+::\+Tile}!Sx\+W@{Sx\+W}}\item[{\em 
+\hypertarget{classZeta_1_1Tile_ae68e7d2b2d2660734fa5f65d690c47eba5dbd4497a6cf44be308b541cd7a9f183}{Sx\+W}\label{classZeta_1_1Tile_ae68e7d2b2d2660734fa5f65d690c47eba5dbd4497a6cf44be308b541cd7a9f183}
+}]\index{N\+Wx\+S\+E@{N\+Wx\+S\+E}!Zeta\+::\+Tile@{Zeta\+::\+Tile}}\index{Zeta\+::\+Tile@{Zeta\+::\+Tile}!N\+Wx\+S\+E@{N\+Wx\+S\+E}}\item[{\em 
+\hypertarget{classZeta_1_1Tile_ae68e7d2b2d2660734fa5f65d690c47eba5d58087cf8fa27eb80c38ac6d1b29292}{N\+Wx\+S\+E}\label{classZeta_1_1Tile_ae68e7d2b2d2660734fa5f65d690c47eba5d58087cf8fa27eb80c38ac6d1b29292}
+}]\index{S\+Wx\+N\+E@{S\+Wx\+N\+E}!Zeta\+::\+Tile@{Zeta\+::\+Tile}}\index{Zeta\+::\+Tile@{Zeta\+::\+Tile}!S\+Wx\+N\+E@{S\+Wx\+N\+E}}\item[{\em 
+\hypertarget{classZeta_1_1Tile_ae68e7d2b2d2660734fa5f65d690c47eba5dca8349ed2d2ed3d3a96e750dc988f4}{S\+Wx\+N\+E}\label{classZeta_1_1Tile_ae68e7d2b2d2660734fa5f65d690c47eba5dca8349ed2d2ed3d3a96e750dc988f4}
+}]\index{Full@{Full}!Zeta\+::\+Tile@{Zeta\+::\+Tile}}\index{Zeta\+::\+Tile@{Zeta\+::\+Tile}!Full@{Full}}\item[{\em 
+\hypertarget{classZeta_1_1Tile_ae68e7d2b2d2660734fa5f65d690c47eba8696a4b80dd519c047d89d5f4174ea22}{Full}\label{classZeta_1_1Tile_ae68e7d2b2d2660734fa5f65d690c47eba8696a4b80dd519c047d89d5f4174ea22}
+}]\end{description}
+\end{Desc}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classZeta_1_1Tile_a33756b3554776031cc7f2a46919c020c}{\index{Zeta\+::\+Tile@{Zeta\+::\+Tile}!Tile@{Tile}}
+\index{Tile@{Tile}!Zeta\+::\+Tile@{Zeta\+::\+Tile}}
+\subsubsection[{Tile}]{\setlength{\rightskip}{0pt plus 5cm}Zeta\+::\+Tile\+::\+Tile (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classZeta_1_1Tile_a33756b3554776031cc7f2a46919c020c}
+\hypertarget{classZeta_1_1Tile_a4dddb2eba3e006220022931e820fefe5}{\index{Zeta\+::\+Tile@{Zeta\+::\+Tile}!Tile@{Tile}}
+\index{Tile@{Tile}!Zeta\+::\+Tile@{Zeta\+::\+Tile}}
+\subsubsection[{Tile}]{\setlength{\rightskip}{0pt plus 5cm}Zeta\+::\+Tile\+::\+Tile (
+\begin{DoxyParamCaption}
+\item[{const {\bf Bitmap} \&}]{bmp, }
+\item[{unsigned int}]{id}
+\end{DoxyParamCaption}
+)}}\label{classZeta_1_1Tile_a4dddb2eba3e006220022931e820fefe5}
+\hypertarget{classZeta_1_1Tile_a807a04438f5ee741791b41141962a772}{\index{Zeta\+::\+Tile@{Zeta\+::\+Tile}!````~Tile@{$\sim$\+Tile}}
+\index{````~Tile@{$\sim$\+Tile}!Zeta\+::\+Tile@{Zeta\+::\+Tile}}
+\subsubsection[{$\sim$\+Tile}]{\setlength{\rightskip}{0pt plus 5cm}virtual Zeta\+::\+Tile\+::$\sim$\+Tile (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classZeta_1_1Tile_a807a04438f5ee741791b41141962a772}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classZeta_1_1Tile_a2893f0b4e1fe83087757a79335405bd6}{\index{Zeta\+::\+Tile@{Zeta\+::\+Tile}!add\+Frame@{add\+Frame}}
+\index{add\+Frame@{add\+Frame}!Zeta\+::\+Tile@{Zeta\+::\+Tile}}
+\subsubsection[{add\+Frame}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+Tile\+::add\+Frame (
+\begin{DoxyParamCaption}
+\item[{{\bf Tile\+Frame} \&}]{frame}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1Tile_a2893f0b4e1fe83087757a79335405bd6}
+\hypertarget{classZeta_1_1Tile_a55269b5653598909030d67b05334154c}{\index{Zeta\+::\+Tile@{Zeta\+::\+Tile}!add\+Relative\+Tile@{add\+Relative\+Tile}}
+\index{add\+Relative\+Tile@{add\+Relative\+Tile}!Zeta\+::\+Tile@{Zeta\+::\+Tile}}
+\subsubsection[{add\+Relative\+Tile}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+Tile\+::add\+Relative\+Tile (
+\begin{DoxyParamCaption}
+\item[{{\bf Tile} \&}]{other}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1Tile_a55269b5653598909030d67b05334154c}
+\hypertarget{classZeta_1_1Tile_a272534e2d1aeca3057cece7fdefece72}{\index{Zeta\+::\+Tile@{Zeta\+::\+Tile}!draw@{draw}}
+\index{draw@{draw}!Zeta\+::\+Tile@{Zeta\+::\+Tile}}
+\subsubsection[{draw}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+Tile\+::draw (
+\begin{DoxyParamCaption}
+\item[{{\bf Float}}]{x, }
+\item[{{\bf Float}}]{y, }
+\item[{{\bf Float}}]{rotation = {\ttfamily 0.0f}, }
+\item[{{\bf Float}}]{scale = {\ttfamily 1.0f}}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classZeta_1_1Tile_a272534e2d1aeca3057cece7fdefece72}
+Draws the \hyperlink{classZeta_1_1Object}{Object} on screen. Be advised, the x,y, offsets might have different meaning on different implementations. 
+\begin{DoxyParams}{Parameters}
+{\em x} & X offset to be applied on the drawing \\
+\hline
+{\em y} & Y offset to be applied on the drawing \\
+\hline
+{\em rotation} & the rotation to be applied on the drawing \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classZeta_1_1Drawable_a3f453a7a971b7eeba1768be3eaedc192}{Zeta\+::\+Drawable}.
+
+\hypertarget{classZeta_1_1Tile_a680a98169e1f5bc5ed929e55458670af}{\index{Zeta\+::\+Tile@{Zeta\+::\+Tile}!get\+Collision@{get\+Collision}}
+\index{get\+Collision@{get\+Collision}!Zeta\+::\+Tile@{Zeta\+::\+Tile}}
+\subsubsection[{get\+Collision}]{\setlength{\rightskip}{0pt plus 5cm}int Zeta\+::\+Tile\+::get\+Collision (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1Tile_a680a98169e1f5bc5ed929e55458670af}
+\hypertarget{classZeta_1_1Tile_a2605879617c901eb63870400b1459f30}{\index{Zeta\+::\+Tile@{Zeta\+::\+Tile}!get\+G\+I\+D@{get\+G\+I\+D}}
+\index{get\+G\+I\+D@{get\+G\+I\+D}!Zeta\+::\+Tile@{Zeta\+::\+Tile}}
+\subsubsection[{get\+G\+I\+D}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int Zeta\+::\+Tile\+::get\+G\+I\+D (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1Tile_a2605879617c901eb63870400b1459f30}
+\hypertarget{classZeta_1_1Tile_a78dab2f64a620fdc26ae7bd60fa30d5b}{\index{Zeta\+::\+Tile@{Zeta\+::\+Tile}!get\+Relative\+Tiles@{get\+Relative\+Tiles}}
+\index{get\+Relative\+Tiles@{get\+Relative\+Tiles}!Zeta\+::\+Tile@{Zeta\+::\+Tile}}
+\subsubsection[{get\+Relative\+Tiles}]{\setlength{\rightskip}{0pt plus 5cm}const std\+::vector$<${\bf Tile}$\ast$$>$\& Zeta\+::\+Tile\+::get\+Relative\+Tiles (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1Tile_a78dab2f64a620fdc26ae7bd60fa30d5b}
+\hypertarget{classZeta_1_1Tile_a1dbf9bcc8c3dc0c03de9eafe50e01e3d}{\index{Zeta\+::\+Tile@{Zeta\+::\+Tile}!is\+Animated@{is\+Animated}}
+\index{is\+Animated@{is\+Animated}!Zeta\+::\+Tile@{Zeta\+::\+Tile}}
+\subsubsection[{is\+Animated}]{\setlength{\rightskip}{0pt plus 5cm}bool Zeta\+::\+Tile\+::is\+Animated (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1Tile_a1dbf9bcc8c3dc0c03de9eafe50e01e3d}
+\hypertarget{classZeta_1_1Tile_ada0187d097d6b51c20dd3cef9103b41f}{\index{Zeta\+::\+Tile@{Zeta\+::\+Tile}!set@{set}}
+\index{set@{set}!Zeta\+::\+Tile@{Zeta\+::\+Tile}}
+\subsubsection[{set}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+Tile\+::set (
+\begin{DoxyParamCaption}
+\item[{const {\bf Bitmap} \&}]{bmp, }
+\item[{unsigned int}]{id}
+\end{DoxyParamCaption}
+)}}\label{classZeta_1_1Tile_ada0187d097d6b51c20dd3cef9103b41f}
+\hypertarget{classZeta_1_1Tile_a60843b6e0db0807cfc8ad6b265174ef7}{\index{Zeta\+::\+Tile@{Zeta\+::\+Tile}!set\+Animated@{set\+Animated}}
+\index{set\+Animated@{set\+Animated}!Zeta\+::\+Tile@{Zeta\+::\+Tile}}
+\subsubsection[{set\+Animated}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+Tile\+::set\+Animated (
+\begin{DoxyParamCaption}
+\item[{bool}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1Tile_a60843b6e0db0807cfc8ad6b265174ef7}
+\hypertarget{classZeta_1_1Tile_a1dc7e317950b40aa79e25bf8c5108b44}{\index{Zeta\+::\+Tile@{Zeta\+::\+Tile}!set\+Collision@{set\+Collision}}
+\index{set\+Collision@{set\+Collision}!Zeta\+::\+Tile@{Zeta\+::\+Tile}}
+\subsubsection[{set\+Collision}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+Tile\+::set\+Collision (
+\begin{DoxyParamCaption}
+\item[{int}]{coll}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1Tile_a1dc7e317950b40aa79e25bf8c5108b44}
+\hypertarget{classZeta_1_1Tile_a7efa5c5a7d45ef571f12900f7ba2f11c}{\index{Zeta\+::\+Tile@{Zeta\+::\+Tile}!update@{update}}
+\index{update@{update}!Zeta\+::\+Tile@{Zeta\+::\+Tile}}
+\subsubsection[{update}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+Tile\+::update (
+\begin{DoxyParamCaption}
+\item[{{\bf Float}}]{elapsed\+Time}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classZeta_1_1Tile_a7efa5c5a7d45ef571f12900f7ba2f11c}
+
+
+Implements \hyperlink{classZeta_1_1Updateable_af4006bfccb762454b4da08786ad93de0}{Zeta\+::\+Updateable}.
+
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{classZeta_1_1Tile_ad3a332aadb166ba7a00d4f642709063e}{\index{Zeta\+::\+Tile@{Zeta\+::\+Tile}!Tileset@{Tileset}}
+\index{Tileset@{Tileset}!Zeta\+::\+Tile@{Zeta\+::\+Tile}}
+\subsubsection[{Tileset}]{\setlength{\rightskip}{0pt plus 5cm}friend class {\bf Tileset}\hspace{0.3cm}{\ttfamily [friend]}}}\label{classZeta_1_1Tile_ad3a332aadb166ba7a00d4f642709063e}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classZeta_1_1Tile_abbdf92d372e2f64b3d5fdbbcd802c65d}{\index{Zeta\+::\+Tile@{Zeta\+::\+Tile}!animated@{animated}}
+\index{animated@{animated}!Zeta\+::\+Tile@{Zeta\+::\+Tile}}
+\subsubsection[{animated}]{\setlength{\rightskip}{0pt plus 5cm}bool Zeta\+::\+Tile\+::animated\hspace{0.3cm}{\ttfamily [protected]}}}\label{classZeta_1_1Tile_abbdf92d372e2f64b3d5fdbbcd802c65d}
+\hypertarget{classZeta_1_1Tile_a14528e0a0089ba6d1ef9c7212b0979ef}{\index{Zeta\+::\+Tile@{Zeta\+::\+Tile}!collision@{collision}}
+\index{collision@{collision}!Zeta\+::\+Tile@{Zeta\+::\+Tile}}
+\subsubsection[{collision}]{\setlength{\rightskip}{0pt plus 5cm}int Zeta\+::\+Tile\+::collision\hspace{0.3cm}{\ttfamily [protected]}}}\label{classZeta_1_1Tile_a14528e0a0089ba6d1ef9c7212b0979ef}
+\hypertarget{classZeta_1_1Tile_a75c9f1e8284016d616ff77d45be4b4c7}{\index{Zeta\+::\+Tile@{Zeta\+::\+Tile}!frame\+Counter@{frame\+Counter}}
+\index{frame\+Counter@{frame\+Counter}!Zeta\+::\+Tile@{Zeta\+::\+Tile}}
+\subsubsection[{frame\+Counter}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Float} Zeta\+::\+Tile\+::frame\+Counter\hspace{0.3cm}{\ttfamily [protected]}}}\label{classZeta_1_1Tile_a75c9f1e8284016d616ff77d45be4b4c7}
+\hypertarget{classZeta_1_1Tile_a82054179dbf538fb3f4fb90d27f3c989}{\index{Zeta\+::\+Tile@{Zeta\+::\+Tile}!frame\+Index@{frame\+Index}}
+\index{frame\+Index@{frame\+Index}!Zeta\+::\+Tile@{Zeta\+::\+Tile}}
+\subsubsection[{frame\+Index}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int Zeta\+::\+Tile\+::frame\+Index\hspace{0.3cm}{\ttfamily [protected]}}}\label{classZeta_1_1Tile_a82054179dbf538fb3f4fb90d27f3c989}
+\hypertarget{classZeta_1_1Tile_a7bb5f244f2fcfd4d1555b1fc34ed83bf}{\index{Zeta\+::\+Tile@{Zeta\+::\+Tile}!frames@{frames}}
+\index{frames@{frames}!Zeta\+::\+Tile@{Zeta\+::\+Tile}}
+\subsubsection[{frames}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<${\bf Tile\+Frame}$>$ Zeta\+::\+Tile\+::frames\hspace{0.3cm}{\ttfamily [protected]}}}\label{classZeta_1_1Tile_a7bb5f244f2fcfd4d1555b1fc34ed83bf}
+\hypertarget{classZeta_1_1Tile_a73e4f7fc4c4770d3dd4ddd823f168944}{\index{Zeta\+::\+Tile@{Zeta\+::\+Tile}!id@{id}}
+\index{id@{id}!Zeta\+::\+Tile@{Zeta\+::\+Tile}}
+\subsubsection[{id}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int Zeta\+::\+Tile\+::id\hspace{0.3cm}{\ttfamily [protected]}}}\label{classZeta_1_1Tile_a73e4f7fc4c4770d3dd4ddd823f168944}
+\hypertarget{classZeta_1_1Tile_a07ecd5534c5706c34caa24b76d1f7732}{\index{Zeta\+::\+Tile@{Zeta\+::\+Tile}!img@{img}}
+\index{img@{img}!Zeta\+::\+Tile@{Zeta\+::\+Tile}}
+\subsubsection[{img}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Bitmap}$\ast$ Zeta\+::\+Tile\+::img\hspace{0.3cm}{\ttfamily [protected]}}}\label{classZeta_1_1Tile_a07ecd5534c5706c34caa24b76d1f7732}
+\hypertarget{classZeta_1_1Tile_a87ad7f87310b4f614a91027f2eb80ac6}{\index{Zeta\+::\+Tile@{Zeta\+::\+Tile}!relative\+Tiles@{relative\+Tiles}}
+\index{relative\+Tiles@{relative\+Tiles}!Zeta\+::\+Tile@{Zeta\+::\+Tile}}
+\subsubsection[{relative\+Tiles}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<${\bf Tile}$\ast$$>$ Zeta\+::\+Tile\+::relative\+Tiles\hspace{0.3cm}{\ttfamily [protected]}}}\label{classZeta_1_1Tile_a87ad7f87310b4f614a91027f2eb80ac6}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Zeta/\+Core/\+Map\+Classes/\hyperlink{Tile_8hpp}{Tile.\+hpp}\end{DoxyCompactItemize}

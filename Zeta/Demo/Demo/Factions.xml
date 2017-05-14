@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Factions>
+	<Faction name="Allies">
+		<Hostile name="Enemies" />
+	</Faction>
+	<Faction name="Enemies">
+		<Hostile name="Allies" />
+	</Faction>
+</Factions>

@@ -1,0 +1,159 @@
+.TH "Zeta::ContextOperation< ContextType >" 3 "Wed Feb 10 2016" "Zeta" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Zeta::ContextOperation< ContextType > \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <ContextOperation\&.hpp>\fP
+.PP
+Inherited by \fBZeta::FunctorContextOperation< ContextType >\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "virtual void \fBhandle\fP (ContextType &context)=0"
+.br
+.ti -1c
+.RI "bool \fBisHandled\fP () const "
+.br
+.ti -1c
+.RI "void \fBsetHandled\fP (bool \fBhandled\fP)"
+.br
+.ti -1c
+.RI "bool \fBisToBeDeleted\fP () const "
+.br
+.ti -1c
+.RI "void \fBsetToBeDeleted\fP (bool \fBtoBeDeleted\fP)"
+.br
+.ti -1c
+.RI "void \fBwaitToBeCompleted\fP ()"
+.br
+.ti -1c
+.RI "void \fBnotifyWaiters\fP ()"
+.br
+.ti -1c
+.RI "\fBContextOperation\fP ()"
+.br
+.ti -1c
+.RI "\fBContextOperation\fP (bool \fBtoBeDeleted\fP)"
+.br
+.ti -1c
+.RI "\fBContextOperation\fP (\fBContextOperation\fP &&)=default"
+.br
+.ti -1c
+.RI "\fBContextOperation\fP & \fBoperator=\fP (\fBContextOperation\fP &&)=default"
+.br
+.ti -1c
+.RI "virtual \fB~ContextOperation\fP ()"
+.br
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "std::mutex \fBmutex\fP"
+.br
+.ti -1c
+.RI "std::condition_variable \fBdone\fP"
+.br
+.ti -1c
+.RI "bool \fBhandled\fP"
+.br
+.ti -1c
+.RI "bool \fBtoBeDeleted\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SS "template<typename ContextType>class Zeta::ContextOperation< ContextType >"
+Template to create ContextOperations to be handled by 'ContextType' contexts 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "template<typename ContextType> \fBZeta::ContextOperation\fP< ContextType >::\fBContextOperation\fP ()\fC [inline]\fP"
+Default constructor sets the toBeDeleted flag to false\&. Best used for Stack objects that will wait for completion\&. 
+.SS "template<typename ContextType> \fBZeta::ContextOperation\fP< ContextType >::\fBContextOperation\fP (booltoBeDeleted)\fC [inline]\fP"
+Constructs an Operation with a specified toBeDeleted flag The toBeDeleted flag specifies if the Operation should be deallocated by the \fBContext\fP once handled\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fItoBeDeleted\fP The toBeDeleted Flag to set 
+.RE
+.PP
+
+.SS "template<typename ContextType> \fBZeta::ContextOperation\fP< ContextType >::\fBContextOperation\fP (\fBContextOperation\fP< ContextType > &&)\fC [default]\fP"
+Move Constructor 
+.SS "template<typename ContextType> virtual \fBZeta::ContextOperation\fP< ContextType >::~\fBContextOperation\fP ()\fC [inline]\fP, \fC [virtual]\fP"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "template<typename ContextType> virtual void \fBZeta::ContextOperation\fP< ContextType >::handle (ContextType &context)\fC [pure virtual]\fP"
+Pure virtual member Function to be called by the ContextType 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIcontext\fP the \fBContext\fP that called it 
+.RE
+.PP
+
+.PP
+Implemented in \fBZeta::SynchronousResourceContext< BitmapT, SoundT >::BitmapLoadRequest\fP, \fBZeta::MapLoader::LoadEndCall\fP, \fBZeta::MapLoader::LoadBeginCall\fP, \fBZeta::ExternalObjectRequest\fP, \fBZeta::FunctorContextOperation< ContextType >\fP, and \fBZeta::RenderRequest\fP\&.
+.SS "template<typename ContextType> bool \fBZeta::ContextOperation\fP< ContextType >::isHandled () const\fC [inline]\fP"
+Get's if the Operation has been Handled\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+True if it has been Handled 
+.RE
+.PP
+
+.SS "template<typename ContextType> bool \fBZeta::ContextOperation\fP< ContextType >::isToBeDeleted () const\fC [inline]\fP"
+Get's if the Operation should be deallocated once it has been Handled\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+true if it should be deallocated 
+.RE
+.PP
+
+.SS "template<typename ContextType> void \fBZeta::ContextOperation\fP< ContextType >::notifyWaiters ()\fC [inline]\fP"
+Notifies all waiters that called \fBwaitToBeCompleted()\fP to continue\&. This in most cases is called by a context\&. Calling it with the Handled flag=false will literally do nothing, except consume system resources\&. So don't call it from anywhere else than a context\&. 
+.SS "template<typename ContextType> \fBContextOperation\fP& \fBZeta::ContextOperation\fP< ContextType >::operator= (\fBContextOperation\fP< ContextType > &&)\fC [default]\fP"
+Move assignment operator 
+.SS "template<typename ContextType> void \fBZeta::ContextOperation\fP< ContextType >::setHandled (boolhandled)\fC [inline]\fP"
+Sets the Handled Flag\&. This call is Thread-Safe\&. In most cases only a \fBContext\fP should call it\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIhandled\fP the value to be give to the Handled flag 
+.RE
+.PP
+
+.SS "template<typename ContextType> void \fBZeta::ContextOperation\fP< ContextType >::setToBeDeleted (booltoBeDeleted)\fC [inline]\fP"
+Sets if the Operation should be deallocated by the \fBContext\fP once it is handled\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fItoBeDeleted\fP true or false 
+.RE
+.PP
+
+.SS "template<typename ContextType> void \fBZeta::ContextOperation\fP< ContextType >::waitToBeCompleted ()\fC [inline]\fP"
+Makes the calling thread to wait until the assigned context handles the Operation\&. Warning! This can cause deadlock if both \fBContext\fP and Caller are in the same Thread\&. Use only if you know what you are doing\&. 
+.SH "Member Data Documentation"
+.PP 
+.SS "template<typename ContextType> std::condition_variable \fBZeta::ContextOperation\fP< ContextType >::done\fC [protected]\fP"
+
+.SS "template<typename ContextType> bool \fBZeta::ContextOperation\fP< ContextType >::handled\fC [protected]\fP"
+
+.SS "template<typename ContextType> std::mutex \fBZeta::ContextOperation\fP< ContextType >::mutex\fC [protected]\fP"
+
+.SS "template<typename ContextType> bool \fBZeta::ContextOperation\fP< ContextType >::toBeDeleted\fC [protected]\fP"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Zeta from the source code\&.

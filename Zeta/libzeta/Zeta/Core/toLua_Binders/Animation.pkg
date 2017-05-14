@@ -1,0 +1,8 @@
+$#include <Zeta/Core/AnimationClasses/Animation.hpp>
+
+class Animation {
+public:
+	const std::string& getName() const;
+	bool isLooping() const;
+	int getNumFrames() const;
+};

@@ -1,0 +1,140 @@
+\hypertarget{classZeta_1_1Event}{\section{Zeta\+:\+:Event Class Reference}
+\label{classZeta_1_1Event}\index{Zeta\+::\+Event@{Zeta\+::\+Event}}
+}
+
+
+{\ttfamily \#include $<$Event.\+hpp$>$}
+
+
+
+Inheritance diagram for Zeta\+:\+:Event\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=176pt]{classZeta_1_1Event__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Zeta\+:\+:Event\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classZeta_1_1Event__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structZeta_1_1Event_1_1DisplayEvent}{Display\+Event}
+\item 
+struct \hyperlink{structZeta_1_1Event_1_1KeyboardEvent}{Keyboard\+Event}
+\item 
+struct \hyperlink{structZeta_1_1Event_1_1MouseEvent}{Mouse\+Event}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classZeta_1_1Event_acda69faf8654653da900fcb8a6d206c8}{to\+No\+Event} ()
+\item 
+void \hyperlink{classZeta_1_1Event_a956388e8c0923b21f20d8bb5197a16ca}{to\+Display\+Event} (\hyperlink{namespaceZeta_a2417d0aa7e77bdc1e5a79bbb909680ec}{Event\+Type} \hyperlink{classZeta_1_1Event_a6a2e98809068443e94dcf60f45cd45be}{type}, int x, int y, int width, int height)
+\item 
+void \hyperlink{classZeta_1_1Event_ac22bcd99528bd8995eb4dea400f81a51}{to\+Mouse\+Event} (\hyperlink{namespaceZeta_a2417d0aa7e77bdc1e5a79bbb909680ec}{Event\+Type} \hyperlink{classZeta_1_1Event_a6a2e98809068443e94dcf60f45cd45be}{type}, int x, int y, int wheel, \hyperlink{namespaceZeta_ad0d73128c6ba1daad12e3e286d63c7d3}{Mouse\+Button} button, float pressure, int dx=0, int dy=0)
+\item 
+void \hyperlink{classZeta_1_1Event_a42aa75c0af72e8bc41aa2e1daf47835b}{to\+Keyboard\+Event} (\hyperlink{namespaceZeta_a2417d0aa7e77bdc1e5a79bbb909680ec}{Event\+Type} \hyperlink{classZeta_1_1Event_a6a2e98809068443e94dcf60f45cd45be}{type}, \hyperlink{namespaceZeta_ad9d19d996b624b55871338b8ca7e629e}{Keyboard\+Key} key, int unichar, unsigned int modifiers)
+\item 
+virtual \hyperlink{classZeta_1_1Event_af2bd6a6a26b5bdbdc54265d898702b7f}{$\sim$\+Event} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespaceZeta_a2417d0aa7e77bdc1e5a79bbb909680ec}{Event\+Type} \hyperlink{classZeta_1_1Event_a6a2e98809068443e94dcf60f45cd45be}{type}
+\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>\hyperlink{structZeta_1_1Event_1_1DisplayEvent}{DisplayEvent} \hyperlink{classZeta_1_1Event_a9985c0e4f8a18ef859f658dec0dff04d}{display}\\
+\>\hyperlink{structZeta_1_1Event_1_1KeyboardEvent}{KeyboardEvent} \hyperlink{classZeta_1_1Event_ae834d422c824e40cb7e50f02653a333f}{keyboard}\\
+\>\hyperlink{structZeta_1_1Event_1_1MouseEvent}{MouseEvent} \hyperlink{classZeta_1_1Event_a8e6641071b0b13020a31bb388af1ce2d}{mouse}\\
+\}; \\
+
+\end{tabbing}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classZeta_1_1Event}{Event} Base class to Wrap Library-\/\+Specific Events. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classZeta_1_1Event_af2bd6a6a26b5bdbdc54265d898702b7f}{\index{Zeta\+::\+Event@{Zeta\+::\+Event}!````~Event@{$\sim$\+Event}}
+\index{````~Event@{$\sim$\+Event}!Zeta\+::\+Event@{Zeta\+::\+Event}}
+\subsubsection[{$\sim$\+Event}]{\setlength{\rightskip}{0pt plus 5cm}virtual Zeta\+::\+Event\+::$\sim$\+Event (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classZeta_1_1Event_af2bd6a6a26b5bdbdc54265d898702b7f}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classZeta_1_1Event_a956388e8c0923b21f20d8bb5197a16ca}{\index{Zeta\+::\+Event@{Zeta\+::\+Event}!to\+Display\+Event@{to\+Display\+Event}}
+\index{to\+Display\+Event@{to\+Display\+Event}!Zeta\+::\+Event@{Zeta\+::\+Event}}
+\subsubsection[{to\+Display\+Event}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+Event\+::to\+Display\+Event (
+\begin{DoxyParamCaption}
+\item[{{\bf Event\+Type}}]{type, }
+\item[{int}]{x, }
+\item[{int}]{y, }
+\item[{int}]{width, }
+\item[{int}]{height}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1Event_a956388e8c0923b21f20d8bb5197a16ca}
+\hypertarget{classZeta_1_1Event_a42aa75c0af72e8bc41aa2e1daf47835b}{\index{Zeta\+::\+Event@{Zeta\+::\+Event}!to\+Keyboard\+Event@{to\+Keyboard\+Event}}
+\index{to\+Keyboard\+Event@{to\+Keyboard\+Event}!Zeta\+::\+Event@{Zeta\+::\+Event}}
+\subsubsection[{to\+Keyboard\+Event}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+Event\+::to\+Keyboard\+Event (
+\begin{DoxyParamCaption}
+\item[{{\bf Event\+Type}}]{type, }
+\item[{{\bf Keyboard\+Key}}]{key, }
+\item[{int}]{unichar, }
+\item[{unsigned int}]{modifiers}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1Event_a42aa75c0af72e8bc41aa2e1daf47835b}
+\hypertarget{classZeta_1_1Event_ac22bcd99528bd8995eb4dea400f81a51}{\index{Zeta\+::\+Event@{Zeta\+::\+Event}!to\+Mouse\+Event@{to\+Mouse\+Event}}
+\index{to\+Mouse\+Event@{to\+Mouse\+Event}!Zeta\+::\+Event@{Zeta\+::\+Event}}
+\subsubsection[{to\+Mouse\+Event}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+Event\+::to\+Mouse\+Event (
+\begin{DoxyParamCaption}
+\item[{{\bf Event\+Type}}]{type, }
+\item[{int}]{x, }
+\item[{int}]{y, }
+\item[{int}]{wheel, }
+\item[{{\bf Mouse\+Button}}]{button, }
+\item[{float}]{pressure, }
+\item[{int}]{dx = {\ttfamily 0}, }
+\item[{int}]{dy = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1Event_ac22bcd99528bd8995eb4dea400f81a51}
+\hypertarget{classZeta_1_1Event_acda69faf8654653da900fcb8a6d206c8}{\index{Zeta\+::\+Event@{Zeta\+::\+Event}!to\+No\+Event@{to\+No\+Event}}
+\index{to\+No\+Event@{to\+No\+Event}!Zeta\+::\+Event@{Zeta\+::\+Event}}
+\subsubsection[{to\+No\+Event}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+Event\+::to\+No\+Event (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1Event_acda69faf8654653da900fcb8a6d206c8}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classZeta_1_1Event_a6d7bf4095cdeed5b547b50b59acf624d}{\subsubsection[{"@1}]{\setlength{\rightskip}{0pt plus 5cm}union \{ ... \} }}\label{classZeta_1_1Event_a6d7bf4095cdeed5b547b50b59acf624d}
+\hypertarget{classZeta_1_1Event_a9985c0e4f8a18ef859f658dec0dff04d}{\index{Zeta\+::\+Event@{Zeta\+::\+Event}!display@{display}}
+\index{display@{display}!Zeta\+::\+Event@{Zeta\+::\+Event}}
+\subsubsection[{display}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Display\+Event} Zeta\+::\+Event\+::display}}\label{classZeta_1_1Event_a9985c0e4f8a18ef859f658dec0dff04d}
+\hypertarget{classZeta_1_1Event_ae834d422c824e40cb7e50f02653a333f}{\index{Zeta\+::\+Event@{Zeta\+::\+Event}!keyboard@{keyboard}}
+\index{keyboard@{keyboard}!Zeta\+::\+Event@{Zeta\+::\+Event}}
+\subsubsection[{keyboard}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Keyboard\+Event} Zeta\+::\+Event\+::keyboard}}\label{classZeta_1_1Event_ae834d422c824e40cb7e50f02653a333f}
+\hypertarget{classZeta_1_1Event_a8e6641071b0b13020a31bb388af1ce2d}{\index{Zeta\+::\+Event@{Zeta\+::\+Event}!mouse@{mouse}}
+\index{mouse@{mouse}!Zeta\+::\+Event@{Zeta\+::\+Event}}
+\subsubsection[{mouse}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Mouse\+Event} Zeta\+::\+Event\+::mouse}}\label{classZeta_1_1Event_a8e6641071b0b13020a31bb388af1ce2d}
+\hypertarget{classZeta_1_1Event_a6a2e98809068443e94dcf60f45cd45be}{\index{Zeta\+::\+Event@{Zeta\+::\+Event}!type@{type}}
+\index{type@{type}!Zeta\+::\+Event@{Zeta\+::\+Event}}
+\subsubsection[{type}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Event\+Type} Zeta\+::\+Event\+::type}}\label{classZeta_1_1Event_a6a2e98809068443e94dcf60f45cd45be}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Zeta/\+Core/\hyperlink{Event_8hpp}{Event.\+hpp}\end{DoxyCompactItemize}

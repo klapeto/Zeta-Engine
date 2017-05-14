@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<GUILayout version="4" >
+    <Window type="Eftihia/StaticImage" name="CharacterSelect" >
+        <Property name="Area" value="{{0,0},{0,0},{1,0},{1,0}}" />
+        <Property name="MaxSize" value="{{1,0},{1,0}}" />
+        <Property name="FrameEnabled" value="False" />
+        <Property name="BackgroundEnabled" value="False" />
+        <Window type="Eftihia/StaticText" name="Eidikotita" >
+            <Property name="Area" value="{{0,315},{0,-230.5},{0,585},{0,-181.5}}" />
+            <Property name="Font" value="Ubuntu-20" />
+            <Property name="Text" value="Ειδικότητα" />
+            <Property name="MaxSize" value="{{1,0},{1,0}}" />
+            <Property name="FrameEnabled" value="False" />
+            <Property name="BackgroundEnabled" value="False" />
+            <Property name="VerticalAlignment" value="Centre" />
+            <Property name="HorzScrollPageSize" value="270" />
+            <Property name="VertScrollPageSize" value="49" />
+            <Property name="HorizontalAlignment" value="Centre" />
+            <Property name="HorzScrollDocumentSize" value="130" />
+            <Property name="VertScrollDocumentSize" value="29.8992" />
+        </Window>
+        <Window type="Eftihia/StaticText" name="CharName" >
+            <Property name="Area" value="{{0,-372.5},{0,-277},{0,122.5},{0,-231}}" />
+            <Property name="Font" value="Ubuntu-32" />
+            <Property name="Text" value="Ευτυχία" />
+            <Property name="MaxSize" value="{{1,0},{1,0}}" />
+            <Property name="FrameEnabled" value="False" />
+            <Property name="HorzFormatting" value="CentreAligned" />
+            <Property name="BackgroundEnabled" value="False" />
+            <Property name="VerticalAlignment" value="Centre" />
+            <Property name="HorzScrollPageSize" value="495" />
+            <Property name="VertScrollPageSize" value="46" />
+            <Property name="HorizontalAlignment" value="Centre" />
+            <Property name="HorzScrollDocumentSize" value="152" />
+            <Property name="VertScrollDocumentSize" value="47.8352" />
+        </Window>
+        <Window type="Eftihia/MenuButton" name="BackStep" >
+            <Property name="Area" value="{{0,10},{0,-5},{0,190},{0,69}}" />
+            <Property name="Font" value="Ubuntu-14" />
+            <Property name="Text" value="Πίσω" />
+            <Property name="VerticalAlignment" value="Bottom" />
+        </Window>
+        <Window type="Eftihia/MenuButton" name="NextStep" >
+            <Property name="Area" value="{{0,-10},{0,-5},{0,170},{0,69}}" />
+            <Property name="Font" value="Ubuntu-14" />
+            <Property name="Text" value="Ξεκίνα!" />
+            <Property name="VerticalAlignment" value="Bottom" />
+            <Property name="HorizontalAlignment" value="Right" />
+        </Window>
+        <Window type="Eftihia/MultiLineEditboxTransp" name="CharDescr" >
+            <Property name="Area" value="{{0,30},{0,-94},{0,320},{0,228}}" />
+            <Property name="Font" value="Ubuntu-12" />
+            <Property name="Text" >
+</Property>
+            <Property name="NormalTextColour" value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property name="VerticalAlignment" value="Centre" />
+            <Property name="HorizontalAlignment" value="Centre" />
+        </Window>
+        <Window type="Eftihia/MultiLineEditboxTransp" name="CharSpec" >
+            <Property name="Area" value="{{0,315},{0,-162.5},{0,585},{0,-77.5}}" />
+            <Property name="Font" value="Ubuntu-18" />
+            <Property name="Text" >
+</Property>
+            <Property name="NormalTextColour" value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property name="VerticalAlignment" value="Centre" />
+            <Property name="HorizontalAlignment" value="Centre" />
+        </Window>
+        <Window type="Eftihia/AvatarBox" name="CharAvatar" >
+            <Property name="Area" value="{{0,-374},{0,1},{0,138},{0,513}}" />
+            <Property name="MaxSize" value="{{1,0},{1,0}}" />
+            <Property name="VerticalAlignment" value="Centre" />
+            <Property name="HorizontalAlignment" value="Centre" />
+        </Window>
+        <Window type="Eftihia/ListboxTranspBG" name="CharList" >
+            <Property name="Area" value="{{0,315},{0,-22.5},{0,585},{0,162.5}}" />
+            <Property name="Font" value="Ubuntu-12" />
+            <Property name="VerticalAlignment" value="Centre" />
+            <Property name="HorizontalAlignment" value="Centre" />
+        </Window>
+    </Window>
+</GUILayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LifeformClass name="Κότα" faction="Neutral">
+	<AnimationClass filename="Demo/AnimationClasses/Chicken.xml" />
+	<Stats level="2">
+		<Levelize lowBound="-1" mul="10" upBound="1">
+			<Stat name="MaxHP" />
+			<Stat name="MaxMana" />
+		</Levelize>
+		<Levelize lowBound="-1" mul="5" upBound="1">
+			<Stat name="Pdef" />
+			<Stat name="Patk" />
+			<Stat name="Matk" />
+			<Stat name="Mdef" />
+		</Levelize>
+	</Stats>
+	<AI>
+		<General type="Passive" />
+		<Movement type="Wandering">
+			<Setting name="maxDistance" value="200" />
+			<Setting name="minWaitTime" value="1.5" />
+			<Setting name="maxWaitTime" value="4" />
+			<Setting name="IdleAction" value="Eat" />
+		</Movement>
+	</AI>
+</LifeformClass>

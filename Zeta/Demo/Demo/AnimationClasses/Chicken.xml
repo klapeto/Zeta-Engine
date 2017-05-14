@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AnimationClass>
+	<Bounding>
+		<Rectangle height="16" width="31" x="-15" y="8" />
+	</Bounding>
+	<TargetArea>
+		<Rectangle height="51" width="40" x="-20" y="-27" />
+	</TargetArea>
+	<Action name="__Movement__">
+		<Up file="Demo/Sprites/Chicken/Chicken.anim" animation="Walk_Up" />
+		<Down file="Demo/Sprites/Chicken/Chicken.anim" animation="Walk_Down" />
+		<Left file="Demo/Sprites/Chicken/Chicken.anim" animation="Walk_Left" />
+		<Right file="Demo/Sprites/Chicken/Chicken.anim" animation="Walk_Right" />
+	</Action>
+	<Action name="__Idle__">
+		<Up file="Demo/Sprites/Chicken/Chicken.anim" animation="Stand_Up" />
+		<Down file="Demo/Sprites/Chicken/Chicken.anim" animation="Stand_Down" />
+		<Left file="Demo/Sprites/Chicken/Chicken.anim" animation="Stand_Left" />
+		<Right file="Demo/Sprites/Chicken/Chicken.anim" animation="Stand_Right" />
+	</Action>
+	<Action name="__Death__">
+		<Up file="Demo/Sprites/Chicken/Chicken.anim" animation="Stand_Up" />
+		<Down file="Demo/Sprites/Chicken/Chicken.anim" animation="Stand_Up" />
+		<Left file="Demo/Sprites/Chicken/Chicken.anim" animation="Stand_Up" />
+		<Right file="Demo/Sprites/Chicken/Chicken.anim" animation="Stand_Up" />
+	</Action>
+	<Action name="__Dead__">
+		<Up file="Demo/Sprites/Chicken/Chicken.anim" animation="Stand_Up" />
+		<Down file="Demo/Sprites/Chicken/Chicken.anim" animation="Stand_Up" />
+		<Left file="Demo/Sprites/Chicken/Chicken.anim" animation="Stand_Up" />
+		<Right file="Demo/Sprites/Chicken/Chicken.anim" animation="Stand_Up" />
+	</Action>
+		<Action name="Eat">
+		<Up file="Demo/Sprites/Chicken/Chicken.anim" animation="Eat_Up" />
+		<Down file="Demo/Sprites/Chicken/Chicken.anim" animation="Eat_Down" />
+		<Left file="Demo/Sprites/Chicken/Chicken.anim" animation="Eat_Left" />
+		<Right file="Demo/Sprites/Chicken/Chicken.anim" animation="Eat_Right" />
+	</Action>
+</AnimationClass>

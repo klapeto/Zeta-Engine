@@ -1,0 +1,216 @@
+.TH "Zeta::ProjectileClass" 3 "Wed Feb 10 2016" "Zeta" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Zeta::ProjectileClass \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <ProjectileClass\&.hpp>\fP
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "class \fBObjectHandler\fP"
+.br
+.in -1c
+.SS "Public Types"
+
+.in +1c
+.ti -1c
+.RI "enum \fBSpawnOffset\fP { \fBSpawnOffset::Up\fP = 0, \fBSpawnOffset::Right\fP, \fBSpawnOffset::Left\fP, \fBSpawnOffset::Down\fP }"
+.br
+.ti -1c
+.RI "enum \fBProjectileType\fP { \fBProjectileType::Normal\fP, \fBProjectileType::Directional\fP, \fBProjectileType::Seeking\fP }"
+.br
+.in -1c
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "const \fBLuaFunctor\fP & \fBgetOnCollision\fP () const "
+.br
+.ti -1c
+.RI "void \fBsetOnCollision\fP (const \fBLuaFunctor\fP &\fBonCollisionF\fP)"
+.br
+.ti -1c
+.RI "const \fBLuaFunctor\fP & \fBgetOnDestinationReach\fP () const "
+.br
+.ti -1c
+.RI "void \fBsetOnDestinationReach\fP (const \fBLuaFunctor\fP &\fBonDestinationReachF\fP)"
+.br
+.ti -1c
+.RI "const \fBLuaFunctor\fP & \fBgetOnRelease\fP () const "
+.br
+.ti -1c
+.RI "void \fBsetOnRelease\fP (const \fBLuaFunctor\fP &\fBonRelease\fP)"
+.br
+.ti -1c
+.RI "const \fBAnimationClass\fP & \fBgetAnimationClass\fP () const "
+.br
+.ti -1c
+.RI "\fBFloat\fP \fBgetSpeed\fP () const "
+.br
+.ti -1c
+.RI "bool \fBisDirectionalRotate\fP () const "
+.br
+.ti -1c
+.RI "void \fBload\fP (const \fBLuaTable\fP &table)"
+.br
+.ti -1c
+.RI "const \fBVector2\fP & \fBgetOffset\fP (\fBSpawnOffset\fP offset) const "
+.br
+.ti -1c
+.RI "void \fBonCollision\fP (\fBProjectile\fP *invoker, \fBObject\fP *obj) const "
+.br
+.ti -1c
+.RI "void \fBonRelease\fP (\fBProjectile\fP *invoker) const "
+.br
+.ti -1c
+.RI "void \fBonDestinationReach\fP (\fBProjectile\fP *invoker) const "
+.br
+.ti -1c
+.RI "\fBProjectileClass\fP (\fBProjectileClass\fP &&)=default"
+.br
+.ti -1c
+.RI "\fBProjectileClass\fP & \fBoperator=\fP (\fBProjectileClass\fP &&)=default"
+.br
+.ti -1c
+.RI "\fBProjectile\fP * \fBcreate\fP (\fBActiveAbility\fP *parent) const "
+.br
+.ti -1c
+.RI "\fBProjectileClass\fP ()"
+.br
+.ti -1c
+.RI "\fBProjectileClass\fP (const \fBLuaTable\fP &table)"
+.br
+.ti -1c
+.RI "virtual \fB~ProjectileClass\fP ()"
+.br
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBVector2\fP \fBspawnOffsets\fP [4]"
+.br
+.ti -1c
+.RI "std::string \fBname\fP"
+.br
+.ti -1c
+.RI "const \fBAnimationClass\fP * \fBanimClass\fP"
+.br
+.ti -1c
+.RI "\fBFloat\fP \fBspeed\fP"
+.br
+.ti -1c
+.RI "\fBLuaFunctor\fP \fBonReleaseF\fP"
+.br
+.ti -1c
+.RI "\fBLuaFunctor\fP \fBonCollisionF\fP"
+.br
+.ti -1c
+.RI "\fBLuaFunctor\fP \fBonDestinationReachF\fP"
+.br
+.ti -1c
+.RI "\fBProjectileType\fP \fBtype\fP"
+.br
+.ti -1c
+.RI "bool \fBdirectionalRotate\fP"
+.br
+.in -1c
+.SH "Member Enumeration Documentation"
+.PP 
+.SS "enum \fBZeta::ProjectileClass::ProjectileType\fP\fC [strong]\fP"
+
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fINormal \fP\fP
+.TP
+\fB\fIDirectional \fP\fP
+.TP
+\fB\fISeeking \fP\fP
+.SS "enum \fBZeta::ProjectileClass::SpawnOffset\fP\fC [strong]\fP"
+
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fIUp \fP\fP
+.TP
+\fB\fIRight \fP\fP
+.TP
+\fB\fILeft \fP\fP
+.TP
+\fB\fIDown \fP\fP
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Zeta::ProjectileClass::ProjectileClass (\fBProjectileClass\fP &&)\fC [default]\fP"
+
+.SS "Zeta::ProjectileClass::ProjectileClass ()"
+
+.SS "Zeta::ProjectileClass::ProjectileClass (const \fBLuaTable\fP &table)"
+
+.SS "virtual Zeta::ProjectileClass::~ProjectileClass ()\fC [virtual]\fP"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "\fBProjectile\fP* Zeta::ProjectileClass::create (\fBActiveAbility\fP *parent) const"
+
+.SS "const \fBAnimationClass\fP& Zeta::ProjectileClass::getAnimationClass () const\fC [inline]\fP"
+
+.SS "const \fBVector2\fP& Zeta::ProjectileClass::getOffset (\fBSpawnOffset\fPoffset) const"
+
+.SS "const \fBLuaFunctor\fP& Zeta::ProjectileClass::getOnCollision () const\fC [inline]\fP"
+
+.SS "const \fBLuaFunctor\fP& Zeta::ProjectileClass::getOnDestinationReach () const\fC [inline]\fP"
+
+.SS "const \fBLuaFunctor\fP& Zeta::ProjectileClass::getOnRelease () const\fC [inline]\fP"
+
+.SS "\fBFloat\fP Zeta::ProjectileClass::getSpeed () const\fC [inline]\fP"
+
+.SS "bool Zeta::ProjectileClass::isDirectionalRotate () const\fC [inline]\fP"
+
+.SS "void Zeta::ProjectileClass::load (const \fBLuaTable\fP &table)"
+
+.SS "void Zeta::ProjectileClass::onCollision (\fBProjectile\fP *invoker, \fBObject\fP *obj) const"
+
+.SS "void Zeta::ProjectileClass::onDestinationReach (\fBProjectile\fP *invoker) const"
+
+.SS "void Zeta::ProjectileClass::onRelease (\fBProjectile\fP *invoker) const"
+
+.SS "\fBProjectileClass\fP& Zeta::ProjectileClass::operator= (\fBProjectileClass\fP &&)\fC [default]\fP"
+
+.SS "void Zeta::ProjectileClass::setOnCollision (const \fBLuaFunctor\fP &onCollisionF)\fC [inline]\fP"
+
+.SS "void Zeta::ProjectileClass::setOnDestinationReach (const \fBLuaFunctor\fP &onDestinationReachF)\fC [inline]\fP"
+
+.SS "void Zeta::ProjectileClass::setOnRelease (const \fBLuaFunctor\fP &onRelease)\fC [inline]\fP"
+
+.SH "Member Data Documentation"
+.PP 
+.SS "const \fBAnimationClass\fP* Zeta::ProjectileClass::animClass\fC [private]\fP"
+
+.SS "bool Zeta::ProjectileClass::directionalRotate\fC [private]\fP"
+
+.SS "std::string Zeta::ProjectileClass::name\fC [private]\fP"
+
+.SS "\fBLuaFunctor\fP Zeta::ProjectileClass::onCollisionF\fC [private]\fP"
+
+.SS "\fBLuaFunctor\fP Zeta::ProjectileClass::onDestinationReachF\fC [private]\fP"
+
+.SS "\fBLuaFunctor\fP Zeta::ProjectileClass::onReleaseF\fC [private]\fP"
+
+.SS "\fBVector2\fP Zeta::ProjectileClass::spawnOffsets[4]\fC [private]\fP"
+
+.SS "\fBFloat\fP Zeta::ProjectileClass::speed\fC [private]\fP"
+
+.SS "\fBProjectileType\fP Zeta::ProjectileClass::type\fC [private]\fP"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Zeta from the source code\&.

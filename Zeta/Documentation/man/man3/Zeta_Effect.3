@@ -1,0 +1,119 @@
+.TH "Zeta::Effect" 3 "Wed Feb 10 2016" "Zeta" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Zeta::Effect \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Effect\&.hpp>\fP
+.PP
+Inherits \fBZeta::Updateable\fP, and \fBZeta::LuaPushable\fP\&.
+.PP
+Inherited by \fBZeta::DurableEffect\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "bool \fBisFinished\fP () const "
+.br
+.ti -1c
+.RI "const \fBEffectClass\fP & \fBgetClass\fP () const "
+.br
+.ti -1c
+.RI "\fBAbility\fP * \fBgetSource\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetSource\fP (\fBAbility\fP *\fBsource\fP)"
+.br
+.ti -1c
+.RI "void \fBend\fP ()"
+.br
+.ti -1c
+.RI "virtual void \fBupdate\fP (\fBFloat\fP elapsedTime)"
+.br
+.ti -1c
+.RI "virtual void \fBpushToLua\fP (lua_State *lstate)"
+.br
+.ti -1c
+.RI "\fBEffect\fP (const \fBEffectClass\fP &effCls, \fBLifeform\fP *target, int \fBlevel\fP)"
+.br
+.ti -1c
+.RI "virtual \fB~Effect\fP ()"
+.br
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBLifeform\fP * \fBowner\fP"
+.br
+.ti -1c
+.RI "const \fBEffectClass\fP * \fBeffClass\fP"
+.br
+.ti -1c
+.RI "\fBAbility\fP * \fBsource\fP"
+.br
+.ti -1c
+.RI "int \fBlevel\fP"
+.br
+.ti -1c
+.RI "bool \fBfinished\fP"
+.br
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "bool \fBwasApplied\fP"
+.br
+.in -1c
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Zeta::Effect::Effect (const \fBEffectClass\fP &effCls, \fBLifeform\fP *target, intlevel)"
+
+.SS "virtual Zeta::Effect::~Effect ()\fC [virtual]\fP"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "void Zeta::Effect::end ()\fC [inline]\fP"
+
+.SS "const \fBEffectClass\fP& Zeta::Effect::getClass () const\fC [inline]\fP"
+
+.SS "\fBAbility\fP* Zeta::Effect::getSource ()\fC [inline]\fP"
+
+.SS "bool Zeta::Effect::isFinished () const\fC [inline]\fP"
+
+.SS "virtual void Zeta::Effect::pushToLua (lua_State *lstate)\fC [virtual]\fP"
+
+.PP
+Implements \fBZeta::LuaPushable\fP\&.
+.PP
+Reimplemented in \fBZeta::DurableEffect\fP, and \fBZeta::OverTimeEffect\fP\&.
+.SS "void Zeta::Effect::setSource (\fBAbility\fP *source)\fC [inline]\fP"
+
+.SS "virtual void Zeta::Effect::update (\fBFloat\fPelapsedTime)\fC [virtual]\fP"
+
+.PP
+Implements \fBZeta::Updateable\fP\&.
+.PP
+Reimplemented in \fBZeta::DurableEffect\fP, and \fBZeta::OverTimeEffect\fP\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "const \fBEffectClass\fP* Zeta::Effect::effClass\fC [protected]\fP"
+
+.SS "bool Zeta::Effect::finished\fC [protected]\fP"
+
+.SS "int Zeta::Effect::level\fC [protected]\fP"
+
+.SS "\fBLifeform\fP* Zeta::Effect::owner\fC [protected]\fP"
+
+.SS "\fBAbility\fP* Zeta::Effect::source\fC [protected]\fP"
+
+.SS "bool Zeta::Effect::wasApplied\fC [private]\fP"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Zeta from the source code\&.

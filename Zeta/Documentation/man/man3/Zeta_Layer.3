@@ -1,0 +1,103 @@
+.TH "Zeta::Layer" 3 "Wed Feb 10 2016" "Zeta" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Zeta::Layer \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Layer\&.hpp>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBdraw\fP (float dx, float dy, int numTilesX, int numTilesY) const "
+.br
+.ti -1c
+.RI "const \fBTile\fP * \fBgetTileAt\fP (unsigned int x, unsigned int y) const "
+.br
+.ti -1c
+.RI "\fBLayer\fP ()"
+.br
+.ti -1c
+.RI "\fBLayer\fP (xmlpp::Element *layerNode, const std::vector< \fBMap::MapTileset\fP > &tilesets, \fBMap\fP &parrent)"
+.br
+.ti -1c
+.RI "\fB~Layer\fP ()"
+.br
+.in -1c
+.SS "Protected Types"
+
+.in +1c
+.ti -1c
+.RI "enum \fBTileFlags\fP { \fBFlipped_Horizontally\fP = 0x80000000u, \fBFlipped_Vertically\fP = 0x40000000u, \fBFlipped_Diagonally\fP = 0x20000000u }"
+.br
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBVector2D\fP< const \fBTile\fP * > \fBtiles\fP"
+.br
+.ti -1c
+.RI "\fBMap\fP * \fBparent\fP"
+.br
+.ti -1c
+.RI "unsigned int \fBwidth\fP"
+.br
+.ti -1c
+.RI "unsigned int \fBheight\fP"
+.br
+.ti -1c
+.RI "int \fBtileWidth\fP"
+.br
+.ti -1c
+.RI "int \fBtileHeight\fP"
+.br
+.in -1c
+.SH "Member Enumeration Documentation"
+.PP 
+.SS "enum \fBZeta::Layer::TileFlags\fP\fC [protected]\fP"
+
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fIFlipped_Horizontally \fP\fP
+.TP
+\fB\fIFlipped_Vertically \fP\fP
+.TP
+\fB\fIFlipped_Diagonally \fP\fP
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Zeta::Layer::Layer ()"
+
+.SS "Zeta::Layer::Layer (xmlpp::Element *layerNode, const std::vector< \fBMap::MapTileset\fP > &tilesets, \fBMap\fP &parrent)"
+
+.SS "Zeta::Layer::~Layer ()"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "void Zeta::Layer::draw (floatdx, floatdy, intnumTilesX, intnumTilesY) const"
+
+.SS "const \fBTile\fP* Zeta::Layer::getTileAt (unsigned intx, unsigned inty) const"
+
+.SH "Member Data Documentation"
+.PP 
+.SS "unsigned int Zeta::Layer::height\fC [protected]\fP"
+
+.SS "\fBMap\fP* Zeta::Layer::parent\fC [protected]\fP"
+
+.SS "int Zeta::Layer::tileHeight\fC [protected]\fP"
+
+.SS "\fBVector2D\fP<const \fBTile\fP*> Zeta::Layer::tiles\fC [protected]\fP"
+
+.SS "int Zeta::Layer::tileWidth\fC [protected]\fP"
+
+.SS "unsigned int Zeta::Layer::width\fC [protected]\fP"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Zeta from the source code\&.

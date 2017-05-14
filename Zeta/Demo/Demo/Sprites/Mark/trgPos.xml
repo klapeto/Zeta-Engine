@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AnimationClass>
+	<Bounding>
+		<Rectangle x="0" y="0" width="0" height="0" />
+	</Bounding>
+	<TargetArea>
+		<Rectangle x="0" y="0" width="0" height="0" />
+	</TargetArea>
+	<Action name="Default">
+		<Up animation="running" file="Demo/Sprites/Mark/trgPos.anim" />
+		<Down animation="running" file="Demo/Sprites/Mark/trgPos.anim" />
+		<Left animation="running" file="Demo/Sprites/Mark/trgPos.anim" />
+		<Right animation="running" file="Demo/Sprites/Mark/trgPos.anim" />
+	</Action>
+</AnimationClass>

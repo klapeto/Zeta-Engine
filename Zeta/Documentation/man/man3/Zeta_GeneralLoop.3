@@ -1,0 +1,202 @@
+.TH "Zeta::GeneralLoop" 3 "Wed Feb 10 2016" "Zeta" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Zeta::GeneralLoop \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <GeneralLoop\&.hpp>\fP
+.PP
+Inherited by \fBZeta::MainLoop\fP\&.
+.SS "Public Types"
+
+.in +1c
+.ti -1c
+.RI "typedef std::list< \fBUpdateable\fP * >
+.br
+::iterator \fBUpdateIndex\fP"
+.br
+.ti -1c
+.RI "typedef std::list< \fBDrawable\fP * >
+.br
+::iterator \fBDrawIndex\fP"
+.br
+.ti -1c
+.RI "typedef std::list
+.br
+< \fBSystemEventListener\fP * >
+.br
+::iterator \fBListenerIndex\fP"
+.br
+.in -1c
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBUpdateIndex\fP \fBaddItemToBeUpdated\fP (\fBUpdateable\fP *item)"
+.br
+.ti -1c
+.RI "\fBUpdateIndex\fP \fBinsertItemToBeUpdated\fP (const \fBUpdateIndex\fP &itr, \fBUpdateable\fP *item)"
+.br
+.ti -1c
+.RI "void \fBremoveItemToBeUpdated\fP (const \fBUpdateIndex\fP &itr)"
+.br
+.ti -1c
+.RI "\fBDrawIndex\fP \fBaddItemToBeDrawn\fP (\fBDrawable\fP *item)"
+.br
+.ti -1c
+.RI "\fBDrawIndex\fP \fBinsertItemToBeDrawn\fP (const \fBDrawIndex\fP &itr, \fBDrawable\fP *item)"
+.br
+.ti -1c
+.RI "void \fBremoveItemToBeDrawn\fP (const \fBDrawIndex\fP &itr)"
+.br
+.ti -1c
+.RI "\fBListenerIndex\fP \fBaddSystemListener\fP (\fBSystemEventListener\fP *item)"
+.br
+.ti -1c
+.RI "\fBListenerIndex\fP \fBinsertSystemListener\fP (const \fBListenerIndex\fP &itr, \fBSystemEventListener\fP *item)"
+.br
+.ti -1c
+.RI "void \fBremoveSystemListener\fP (const \fBListenerIndex\fP &itr)"
+.br
+.ti -1c
+.RI "void \fBstart\fP ()"
+.br
+.ti -1c
+.RI "void \fBstop\fP ()"
+.br
+.ti -1c
+.RI "bool \fBisLoopRunning\fP () const "
+.br
+.ti -1c
+.RI "float \fBgetCurrentFPS\fP () const "
+.br
+.ti -1c
+.RI "void \fBupdate\fP ()"
+.br
+.ti -1c
+.RI "void \fBdraw\fP ()"
+.br
+.ti -1c
+.RI "void \fBhandleEvent\fP (\fBEvent\fP &event)"
+.br
+.ti -1c
+.RI "\fBGeneralLoop\fP ()"
+.br
+.ti -1c
+.RI "virtual \fB~GeneralLoop\fP ()"
+.br
+.in -1c
+.SS "Private Types"
+
+.in +1c
+.ti -1c
+.RI "typedef std::chrono::duration
+.br
+< float, 
+.br
+std::chrono::seconds::period > \fBfpTime\fP"
+.br
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "std::list< \fBUpdateable\fP * > \fBupdateableItems\fP"
+.br
+.ti -1c
+.RI "std::list< \fBDrawable\fP * > \fBdrawableItems\fP"
+.br
+.ti -1c
+.RI "std::list< \fBSystemEventListener\fP * > \fBeventListeners\fP"
+.br
+.ti -1c
+.RI "std::chrono::high_resolution_clock::time_point \fBltime\fP"
+.br
+.ti -1c
+.RI "\fBRenderingContext\fP * \fBrenderingContext\fP"
+.br
+.ti -1c
+.RI "float \fBelapsed\fP"
+.br
+.ti -1c
+.RI "float \fBcurFps\fP"
+.br
+.ti -1c
+.RI "bool \fBrunning\fP"
+.br
+.in -1c
+.SH "Member Typedef Documentation"
+.PP 
+.SS "typedef std::list<\fBDrawable\fP*>::iterator \fBZeta::GeneralLoop::DrawIndex\fP"
+
+.SS "typedef std::chrono::duration<float, std::chrono::seconds::period> \fBZeta::GeneralLoop::fpTime\fP\fC [private]\fP"
+
+.SS "typedef std::list<\fBSystemEventListener\fP*>::iterator \fBZeta::GeneralLoop::ListenerIndex\fP"
+
+.SS "typedef std::list<\fBUpdateable\fP*>::iterator \fBZeta::GeneralLoop::UpdateIndex\fP"
+
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Zeta::GeneralLoop::GeneralLoop ()"
+
+.SS "virtual Zeta::GeneralLoop::~GeneralLoop ()\fC [inline]\fP, \fC [virtual]\fP"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "\fBDrawIndex\fP Zeta::GeneralLoop::addItemToBeDrawn (\fBDrawable\fP *item)\fC [inline]\fP"
+
+.SS "\fBUpdateIndex\fP Zeta::GeneralLoop::addItemToBeUpdated (\fBUpdateable\fP *item)\fC [inline]\fP"
+
+.SS "\fBListenerIndex\fP Zeta::GeneralLoop::addSystemListener (\fBSystemEventListener\fP *item)\fC [inline]\fP"
+
+.SS "void Zeta::GeneralLoop::draw ()"
+
+.SS "float Zeta::GeneralLoop::getCurrentFPS () const\fC [inline]\fP"
+
+.SS "void Zeta::GeneralLoop::handleEvent (\fBEvent\fP &event)"
+
+.SS "\fBDrawIndex\fP Zeta::GeneralLoop::insertItemToBeDrawn (const \fBDrawIndex\fP &itr, \fBDrawable\fP *item)\fC [inline]\fP"
+
+.SS "\fBUpdateIndex\fP Zeta::GeneralLoop::insertItemToBeUpdated (const \fBUpdateIndex\fP &itr, \fBUpdateable\fP *item)\fC [inline]\fP"
+
+.SS "\fBListenerIndex\fP Zeta::GeneralLoop::insertSystemListener (const \fBListenerIndex\fP &itr, \fBSystemEventListener\fP *item)\fC [inline]\fP"
+
+.SS "bool Zeta::GeneralLoop::isLoopRunning () const\fC [inline]\fP"
+
+.SS "void Zeta::GeneralLoop::removeItemToBeDrawn (const \fBDrawIndex\fP &itr)\fC [inline]\fP"
+
+.SS "void Zeta::GeneralLoop::removeItemToBeUpdated (const \fBUpdateIndex\fP &itr)\fC [inline]\fP"
+
+.SS "void Zeta::GeneralLoop::removeSystemListener (const \fBListenerIndex\fP &itr)\fC [inline]\fP"
+
+.SS "void Zeta::GeneralLoop::start ()\fC [inline]\fP"
+
+.SS "void Zeta::GeneralLoop::stop ()\fC [inline]\fP"
+
+.SS "void Zeta::GeneralLoop::update ()"
+
+.SH "Member Data Documentation"
+.PP 
+.SS "float Zeta::GeneralLoop::curFps\fC [private]\fP"
+
+.SS "std::list<\fBDrawable\fP*> Zeta::GeneralLoop::drawableItems\fC [private]\fP"
+
+.SS "float Zeta::GeneralLoop::elapsed\fC [private]\fP"
+
+.SS "std::list<\fBSystemEventListener\fP*> Zeta::GeneralLoop::eventListeners\fC [private]\fP"
+
+.SS "std::chrono::high_resolution_clock::time_point Zeta::GeneralLoop::ltime\fC [private]\fP"
+
+.SS "\fBRenderingContext\fP* Zeta::GeneralLoop::renderingContext\fC [private]\fP"
+
+.SS "bool Zeta::GeneralLoop::running\fC [private]\fP"
+
+.SS "std::list<\fBUpdateable\fP*> Zeta::GeneralLoop::updateableItems\fC [private]\fP"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Zeta from the source code\&.

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Settings>
+	<Setting name="Width" value="1280" />
+	<Setting name="Height" value="1024" />
+	<Setting name="FullScreen" value="1" />
+	<Setting name="MainGain" value="0" />
+</Settings>

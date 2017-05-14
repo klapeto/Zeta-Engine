@@ -1,0 +1,16 @@
+$#include <Zeta/Core/View.hpp>
+
+class View {
+public:
+	void setPosition(Float x, float y);
+	void offsetPosition(Float dx, float dy);
+	void resize(int width, int height);
+	Float getX() const ;
+	Float getY() const;
+	int getWidth() const;
+	int getHeight() const;
+	bool isInView(const Object& obj) const;
+
+	View();
+	~View();
+};

@@ -1,0 +1,89 @@
+.TH "Zeta::File" 3 "Wed Feb 10 2016" "Zeta" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Zeta::File \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <File\&.hpp>\fP
+.PP
+Inherits \fBZeta::Resource\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "char * \fBgetData\fP () const "
+.br
+.ti -1c
+.RI "size_t \fBgetSize\fP () const "
+.br
+.ti -1c
+.RI "\fBFile\fP ()"
+.br
+.ti -1c
+.RI "\fBFile\fP (const std::string &path)"
+.br
+.ti -1c
+.RI "\fB~File\fP ()"
+.br
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "size_t \fBsize\fP"
+.br
+.ti -1c
+.RI "char * \fBdata\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+General \fBFile\fP Class This class loads a file to memory 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Zeta::File::File ()"
+Default Constructor It creates a empty XML \fBFile\fP in the memory 
+.SS "Zeta::File::File (const std::string &path)"
+Loads the file in memory from the path 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIpath\fP The filename path to load 
+.RE
+.PP
+
+.SS "Zeta::File::~File ()"
+Deallocates the memory that the file data used 
+.SH "Member Function Documentation"
+.PP 
+.SS "char* Zeta::File::getData () const\fC [inline]\fP"
+Gets the pointer to the data of the \fBFile\fP The Pointer is at the beginning of the file 
+.PP
+\fBReturns:\fP
+.RS 4
+The Pointer to the file data 
+.RE
+.PP
+
+.SS "size_t Zeta::File::getSize () const\fC [inline]\fP"
+Gets the size of the file in bytes 
+.PP
+\fBReturns:\fP
+.RS 4
+The file Size 
+.RE
+.PP
+
+.SH "Member Data Documentation"
+.PP 
+.SS "char* Zeta::File::data\fC [mutable]\fP, \fC [protected]\fP"
+
+.SS "size_t Zeta::File::size\fC [protected]\fP"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Zeta from the source code\&.

@@ -1,0 +1,115 @@
+.TH "Zeta::DurableEffect" 3 "Wed Feb 10 2016" "Zeta" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Zeta::DurableEffect \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <DurableEffect\&.hpp>\fP
+.PP
+Inherits \fBZeta::Effect\fP\&.
+.PP
+Inherited by \fBZeta::OverTimeEffect\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBFloat\fP \fBgetRemainingTime\fP () const "
+.br
+.ti -1c
+.RI "\fBFloat\fP \fBgetUpTime\fP () const "
+.br
+.ti -1c
+.RI "void \fBsetUpTime\fP (\fBFloat\fP \fBupTime\fP)"
+.br
+.ti -1c
+.RI "void \fBreset\fP ()"
+.br
+.ti -1c
+.RI "virtual void \fBpushToLua\fP (lua_State *lstate)"
+.br
+.ti -1c
+.RI "virtual void \fBupdate\fP (\fBFloat\fP elapsedTime)"
+.br
+.ti -1c
+.RI "\fBDurableEffect\fP (const \fBEffectClass\fP &effCls, \fBLifeform\fP *target, int \fBlevel\fP)"
+.br
+.ti -1c
+.RI "virtual \fB~DurableEffect\fP ()"
+.br
+.in -1c
+.SS "Protected Types"
+
+.in +1c
+.ti -1c
+.RI "enum \fBEffectState\fP { \fBEffectState::Begin\fP, \fBEffectState::Running\fP, \fBEffectState::End\fP }"
+.br
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBFloat\fP \fBframeCounter\fP"
+.br
+.ti -1c
+.RI "\fBFloat\fP \fBupTime\fP"
+.br
+.ti -1c
+.RI "\fBEffectState\fP \fBstate\fP"
+.br
+.in -1c
+.SH "Member Enumeration Documentation"
+.PP 
+.SS "enum \fBZeta::DurableEffect::EffectState\fP\fC [strong]\fP, \fC [protected]\fP"
+
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fIBegin \fP\fP
+.TP
+\fB\fIRunning \fP\fP
+.TP
+\fB\fIEnd \fP\fP
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Zeta::DurableEffect::DurableEffect (const \fBEffectClass\fP &effCls, \fBLifeform\fP *target, intlevel)"
+
+.SS "virtual Zeta::DurableEffect::~DurableEffect ()\fC [virtual]\fP"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "\fBFloat\fP Zeta::DurableEffect::getRemainingTime () const\fC [inline]\fP"
+
+.SS "\fBFloat\fP Zeta::DurableEffect::getUpTime () const\fC [inline]\fP"
+
+.SS "virtual void Zeta::DurableEffect::pushToLua (lua_State *lstate)\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBZeta::Effect\fP\&.
+.PP
+Reimplemented in \fBZeta::OverTimeEffect\fP\&.
+.SS "void Zeta::DurableEffect::reset ()"
+
+.SS "void Zeta::DurableEffect::setUpTime (\fBFloat\fPupTime)\fC [inline]\fP"
+
+.SS "virtual void Zeta::DurableEffect::update (\fBFloat\fPelapsedTime)\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBZeta::Effect\fP\&.
+.PP
+Reimplemented in \fBZeta::OverTimeEffect\fP\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "\fBFloat\fP Zeta::DurableEffect::frameCounter\fC [protected]\fP"
+
+.SS "\fBEffectState\fP Zeta::DurableEffect::state\fC [protected]\fP"
+
+.SS "\fBFloat\fP Zeta::DurableEffect::upTime\fC [protected]\fP"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Zeta from the source code\&.

@@ -1,0 +1,20 @@
+$#include <Zeta/Core/RPGClasses/AbilityClass.hpp>
+
+class AbilityClass {
+public:
+
+	enum class Type {
+		Active, Passive, Regeneration
+	};
+
+
+	int getLevels() const;
+	const std::string& getAbilityName() const;
+	bool isPassive() const;
+	Type getType() const;
+	lua_Object getLuaTable() const;
+	void onApply(Ability *invoker, Lifeform *caster, Lifeform *target) const;
+	void onRemove(Ability *invoker, Lifeform *caster, Lifeform *target) const;
+	AbilityClass(lua_Object table);
+	~AbilityClass();
+};

@@ -1,0 +1,12 @@
+$#include <Zeta/Core/AnimationClasses/AnimationEffectsManager.hpp>
+
+class AnimationEffectsManager {
+public:
+
+	const Animation& getAnimationFX(const std::string& name,
+			const std::string& animationPack) const;
+
+	void addAnimationPack(const std::string& path,
+			const std::string& name = "");
+	static AnimationEffectsManager& getInstance();	
+};

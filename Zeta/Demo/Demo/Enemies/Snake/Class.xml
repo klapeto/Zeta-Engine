@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LifeformClass name="Φίδι" faction="Enemies">
+	<AnimationClass filename="Demo/AnimationClasses/Snake.xml" />
+	<Stats level="2">
+		<Levelize lowBound="-1" mul="50" upBound="1">
+			<Stat name="MaxHP" />
+			<Stat name="MaxMana" />
+		</Levelize>
+		<Levelize lowBound="-1" mul="5" upBound="1">
+			<Stat name="Pdef" />
+			<Stat name="Patk" />
+			<Stat name="Matk" />
+			<Stat name="Mdef" />
+		</Levelize>
+	</Stats>
+	<AI>
+		<General type="Aggressive">
+			<Setting name="aggroRange" value="300" />
+			<Setting name="driftRange" value="600" />
+		</General>
+		<Movement type="Wandering">
+			<Setting name="maxDistance" value="400" />
+			<Setting name="minWaitTime" value="1" />
+			<Setting name="maxWaitTime" value="4" />
+		</Movement>
+	</AI>
+<!-- 	<Abilities> -->
+<!-- 		<Ability file="Demo/Abilities/Strike.lua" level="1" /> -->
+<!-- 	</Abilities> -->
+</LifeformClass>

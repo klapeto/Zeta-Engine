@@ -1,0 +1,35 @@
+<map id="Zeta::Regeneration" name="Zeta::Regeneration">
+<area shape="rect" id="node2" href="$classZeta_1_1ClassifiedAbility.html" title="Zeta::ClassifiedAbility\l\&lt; RegenerationAbilityClass \&gt;" alt="" coords="2321,382,2514,423"/>
+<area shape="rect" id="node3" href="$classZeta_1_1Ability.html" title="Zeta::Ability" alt="" coords="2166,337,2258,364"/>
+<area shape="rect" id="node4" href="$classZeta_1_1LuaPushable.html" title="Zeta::LuaPushable" alt="" coords="168,329,299,356"/>
+<area shape="rect" id="node6" href="$classZeta_1_1Object.html" title="Zeta::Object" alt="" coords="1271,245,1366,272"/>
+<area shape="rect" id="node9" href="$classZeta_1_1Rectangle.html" title="Zeta::Rectangle" alt="" coords="953,416,1068,443"/>
+<area shape="rect" id="node11" href="$classZeta_1_1Vector2.html" title="Zeta::Vector2" alt="" coords="401,329,503,356"/>
+<area shape="rect" id="node17" href="$classZeta_1_1LuaReferenced.html" title="Zeta::LuaReferenced" alt="" coords="939,637,1083,664"/>
+<area shape="rect" id="node24" href="$classZeta_1_1AnimationHandler.html" title="Zeta::AnimationHandler" alt="" coords="1542,807,1701,833"/>
+<area shape="rect" id="node33" href="$classZeta_1_1AbilityClass.html" title="Zeta::AbilityClass" alt="" coords="1558,195,1685,221"/>
+<area shape="rect" id="node5" href="$classZeta_1_1Lifeform.html" title="Zeta::Lifeform" alt="" coords="1833,557,1935,584"/>
+<area shape="rect" id="node21" href="$classZeta_1_1Behaviour.html" title="Zeta::Behaviour" alt="" coords="2155,617,2269,644"/>
+<area shape="rect" id="node7" href="$classZeta_1_1Drawable.html" title="Zeta::Drawable" alt="" coords="6,789,117,816"/>
+<area shape="rect" id="node10" href="$classZeta_1_1Shape.html" title="Zeta::Shape" alt="" coords="695,459,788,485"/>
+<area shape="rect" id="node25" href="$classZeta_1_1AnimationPlayer.html" title="Zeta::AnimationPlayer" alt="" coords="1243,873,1394,900"/>
+<area shape="rect" id="node29" href="$classZeta_1_1Bitmap.html" title="Zeta::Bitmap" alt="" coords="185,957,282,984"/>
+<area shape="rect" id="node8" href="$classZeta_1_1Updateable.html" title="Zeta::Updateable" alt="" coords="949,1013,1072,1040"/>
+<area shape="rect" id="node30" href="$classZeta_1_1AnimationClass.html" title="Zeta::AnimationClass" alt="" coords="1245,759,1393,785"/>
+<area shape="rect" id="node23" href="$classZeta_1_1Ellipsis.html" title="Zeta::Ellipsis" alt="" coords="961,475,1060,501"/>
+<area shape="rect" id="node12" href="$classZeta_1_1Color.html" title="Zeta::Color" alt="" coords="409,643,495,669"/>
+<area shape="rect" id="node13" href="$classZeta_1_1PropertyList.html" title="Zeta::PropertyList" alt="" coords="947,245,1074,272"/>
+<area shape="rect" id="node14" href="$classZeta_1_1LifeformClass.html" title="Zeta::LifeformClass" alt="" coords="1553,1001,1690,1028"/>
+<area shape="rect" id="node15" href="$classZeta_1_1Resource.html" title="Zeta::Resource" alt="" coords="5,987,117,1013"/>
+<area shape="rect" id="node27" href="$classZeta_1_1AnimationPack.html" title="Zeta::AnimationPack" alt="" coords="669,996,813,1023"/>
+<area shape="rect" id="node28" href="$classZeta_1_1SpriteSheet.html" title="Zeta::SpriteSheet" alt="" coords="390,996,514,1023"/>
+<area shape="rect" id="node16" href="$classZeta_1_1LuaTable.html" title="Zeta::LuaTable" alt="" coords="1264,624,1373,651"/>
+<area shape="rect" id="node20" href="$classZeta_1_1LuaFunctor.html" title="Zeta::LuaFunctor" alt="" coords="1258,535,1379,561"/>
+<area shape="rect" id="node18" href="$classZeta_1_1Faction.html" title="Zeta::Faction" alt="" coords="1269,975,1368,1001"/>
+<area shape="rect" id="node19" href="$classZeta_1_1BehaviourClass.html" title="Zeta::BehaviourClass" alt="" coords="1245,1035,1393,1061"/>
+<area shape="rect" id="node22" href="$classZeta_1_1LifeformState.html" title="Zeta::LifeformState" alt="" coords="1554,491,1689,517"/>
+<area shape="rect" id="node26" href="$classZeta_1_1Animation.html" title="Zeta::Animation" alt="" coords="953,957,1068,984"/>
+<area shape="rect" id="node31" href="$classZeta_1_1Vector2D.html" title="Zeta::Vector2D\&lt; const\l Zeta::Animation * \&gt;" alt="" coords="933,739,1088,781"/>
+<area shape="rect" id="node32" href="$classZeta_1_1RegenerationAbilityClass.html" title="Zeta::RegenerationAbility\lClass" alt="" coords="1961,277,2130,318"/>
+<area shape="rect" id="node34" href="$classZeta_1_1Attribute.html" title="Zeta::Attribute" alt="" coords="2365,1209,2470,1236"/>
+</map>

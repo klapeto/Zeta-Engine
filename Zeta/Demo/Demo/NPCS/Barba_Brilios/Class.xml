@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LifeformClass name="Μπάρμπα Μπρίλιος" faction="Allies">
+	<AnimationClass filename="Demo/AnimationClasses/Elder.xml" />
+	<ChildObjects>
+		<Sticky name="mark" classPath="Demo/Sprites/Mark/Mark.xml" animName="Default"
+			x="0" y="-50" />
+	</ChildObjects>
+	<Stats level="5">
+		<Levelize lowBound="-1" mul="10" upBound="1">
+			<Stat name="MaxHP" />
+			<Stat name="MaxMana" />
+			<Stat name="Pdef" />
+			<Stat name="Patk" />
+			<Stat name="Matk" />
+			<Stat name="Mdef" />
+		</Levelize>
+	</Stats>
+</LifeformClass>

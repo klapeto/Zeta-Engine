@@ -1,0 +1,5 @@
+<map id="include/Zeta/Core/ResourceClasses/SoundInstance.hpp" name="include/Zeta/Core/ResourceClasses/SoundInstance.hpp">
+<area shape="rect" id="node2" href="$MusicManager_8hpp.html" title="include/Zeta/Core/MusicManager.hpp" alt="" coords="5,104,243,131"/>
+<area shape="rect" id="node3" href="$SynchronousResourceContext_8hpp.html" title="include/Zeta/Core/Synchronous\lResourceContext.hpp" alt="" coords="268,97,473,138"/>
+<area shape="rect" id="node4" href="$AllegroSoundInstance_8hpp.html" title="include/Zeta/LibraryBinders\l/Allegro5/AllegroSoundInstance.hpp" alt="" coords="497,97,727,138"/>
+</map>

@@ -1,0 +1,4464 @@
+<?xml version="1.0" ?>
+<Falagard version="7">
+
+	<WidgetLook name="Eftihia/Label">
+		<PropertyDefinition redrawOnWrite="true"
+			initialValue="FF173E8E" type="Colour" name="NormalTextColour" />
+		<PropertyDefinition redrawOnWrite="true"
+			initialValue="FFDDDDDD" type="Colour" name="DisabledTextColour" />
+		<PropertyDefinition redrawOnWrite="true"
+			initialValue="CentreAligned" type="VerticalTextFormatting" name="VertFormatting" />
+		<PropertyDefinition redrawOnWrite="true"
+			initialValue="CentreAligned" type="HorizontalTextFormatting" name="HorzFormatting" />
+		<Property name="Size" value="{{0, 128}, {0, 32}}" />
+		<ImagerySection name="Label">
+			<TextComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="Width">
+						<UnifiedDim scale="1" type="Width" />
+					</Dim>
+					<Dim type="Height">
+						<UnifiedDim scale="1" type="Height" />
+					</Dim>
+				</Area>
+				<VertFormatProperty name="VertFormatting" />
+				<HorzFormatProperty name="HorzFormatting" />
+			</TextComponent>
+		</ImagerySection>
+		<StateImagery name="Enabled">
+			<Layer>
+				<Section section="Label">
+					<ColourProperty name="NormalTextColour" />
+				</Section>
+			</Layer>
+		</StateImagery>
+		<StateImagery name="Disabled">
+			<Layer>
+				<Section section="Label">
+					<ColourProperty name="DisabledTextColour" />
+				</Section>
+			</Layer>
+		</StateImagery>
+	</WidgetLook>
+
+	<WidgetLook name="Eftihia/DamageText">
+		<PropertyDefinition redrawOnWrite="true"
+			initialValue="FFFFFFFF" type="Colour" name="NormalTextColour" />
+		<PropertyDefinition redrawOnWrite="true"
+			initialValue="FFDDDDDD" type="Colour" name="DisabledTextColour" />
+		<PropertyDefinition redrawOnWrite="true"
+			initialValue="CentreAligned" type="VerticalTextFormatting" name="VertFormatting" />
+		<PropertyDefinition redrawOnWrite="true"
+			initialValue="CentreAligned" type="HorizontalTextFormatting" name="HorzFormatting" />
+		<Property name="Size" value="{{0, 128}, {0, 32}}" />
+		<Property name="Font" value="TradeWinds-20" />
+		<ImagerySection name="Label">
+			<TextComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="Width">
+						<UnifiedDim scale="1" type="Width" />
+					</Dim>
+					<Dim type="Height">
+						<UnifiedDim scale="1" type="Height" />
+					</Dim>
+				</Area>
+				<VertFormatProperty name="VertFormatting" />
+				<HorzFormatProperty name="HorzFormatting" />
+			</TextComponent>
+		</ImagerySection>
+		<StateImagery name="Enabled">
+			<Layer>
+				<Section section="Label">
+					<ColourProperty name="NormalTextColour" />
+				</Section>
+			</Layer>
+		</StateImagery>
+		<StateImagery name="Disabled">
+			<Layer>
+				<Section section="Label">
+					<ColourProperty name="DisabledTextColour" />
+				</Section>
+			</Layer>
+		</StateImagery>
+
+		<AnimationDefinition autoStart="false" name="FadeOut"
+			duration="1.2" replayMode="once">
+			<Affector property="Alpha" interpolator="float">
+				<KeyFrame position="0" sourceProperty="Alpha" />
+				<KeyFrame position="1.2" value="0" progression="linear" />
+			</Affector>
+			<Affector property="Visible" interpolator="bool">
+				<KeyFrame position="0" sourceProperty="Visible" />
+				<KeyFrame position="1.2" value="false" progression="discrete" />
+			</Affector>
+			<Affector property="Position" interpolator="UVector2"
+				applicationMethod="relative">
+				<KeyFrame position="0.0" value="{{0, 0}, {0, 0}}" />
+				<KeyFrame position="1.2" progression="linear" value="{{0, 0}, {0, -60}}" />
+			</Affector>
+			<Subscription event="StartAnimation" action="Start" />
+			<Subscription event="StopAnimation" action="Stop" />
+		</AnimationDefinition>
+	</WidgetLook>
+
+	<WidgetLook name="Eftihia/LightArea">
+		<ImagerySection name="Frame">
+			<FrameComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="RightEdge">
+						<UnifiedDim scale="1" type="RightEdge" />
+					</Dim>
+					<Dim type="BottomEdge">
+						<UnifiedDim scale="1" type="BottomEdge" />
+					</Dim>
+				</Area>
+				<Image component="TopLeftCorner" name="Eftihia/LightTopLeft" />
+				<Image component="TopRightCorner" name="Eftihia/LightTopRight" />
+				<Image component="BottomLeftCorner" name="Eftihia/LightBottomLeft" />
+				<Image component="BottomRightCorner" name="Eftihia/LightBottomRight" />
+				<Image component="LeftEdge" name="Eftihia/LightLeft" />
+				<Image component="TopEdge" name="Eftihia/LightTop" />
+				<Image component="RightEdge" name="Eftihia/LightRight" />
+				<Image component="BottomEdge" name="Eftihia/LightBottom" />
+				<Image component="Background" name="Eftihia/LightCentre" />
+			</FrameComponent>
+		</ImagerySection>
+	</WidgetLook>
+
+	<WidgetLook name="Eftihia/TranspBG">
+		<ImagerySection name="Frame">
+			<FrameComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="RightEdge">
+						<UnifiedDim scale="1" type="RightEdge" />
+					</Dim>
+					<Dim type="BottomEdge">
+						<UnifiedDim scale="1" type="BottomEdge" />
+					</Dim>
+				</Area>
+				<Image component="TopLeftCorner" name="Eftihia/TranspTopLeft" />
+				<Image component="TopRightCorner" name="Eftihia/TranspTopRight" />
+				<Image component="BottomLeftCorner" name="Eftihia/TranspBottomLeft" />
+				<Image component="BottomRightCorner" name="Eftihia/TranspBottomRight" />
+				<Image component="LeftEdge" name="Eftihia/TranspLeft" />
+				<Image component="TopEdge" name="Eftihia/TranspTop" />
+				<Image component="RightEdge" name="Eftihia/TranspRight" />
+				<Image component="BottomEdge" name="Eftihia/TranspBottom" />
+				<!--<Image component="Background" name="Eftihia/TranspCentre" /> -->
+			</FrameComponent>
+		</ImagerySection>
+	</WidgetLook>
+
+	<WidgetLook name="Eftihia/CommonNormal">
+		<ImagerySection name="Frame">
+			<FrameComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="RightEdge">
+						<UnifiedDim scale="1" type="RightEdge" />
+					</Dim>
+					<Dim type="BottomEdge">
+						<UnifiedDim scale="1" type="BottomEdge" />
+					</Dim>
+				</Area>
+				<Image component="TopLeftCorner" name="Eftihia/NormalTopLeft" />
+				<Image component="TopRightCorner" name="Eftihia/NormalTopRight" />
+				<Image component="BottomLeftCorner" name="Eftihia/NormalBottomLeft" />
+				<Image component="BottomRightCorner" name="Eftihia/NormalBottomRight" />
+				<Image component="LeftEdge" name="Eftihia/NormalLeft" />
+				<Image component="TopEdge" name="Eftihia/NormalTop" />
+				<Image component="RightEdge" name="Eftihia/NormalRight" />
+				<Image component="BottomEdge" name="Eftihia/NormalBottom" />
+				<Image component="Background" name="Eftihia/NormalCentre" />
+			</FrameComponent>
+		</ImagerySection>
+	</WidgetLook>
+
+	<WidgetLook name="Eftihia/CommonHover">
+		<ImagerySection name="Frame">
+			<FrameComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="RightEdge">
+						<UnifiedDim scale="1" type="RightEdge" />
+					</Dim>
+					<Dim type="BottomEdge">
+						<UnifiedDim scale="1" type="BottomEdge" />
+					</Dim>
+				</Area>
+				<Image component="TopLeftCorner" name="Eftihia/HoverTopLeft" />
+				<Image component="TopRightCorner" name="Eftihia/HoverTopRight" />
+				<Image component="BottomLeftCorner" name="Eftihia/HoverBottomLeft" />
+				<Image component="BottomRightCorner" name="Eftihia/HoverBottomRight" />
+				<Image component="LeftEdge" name="Eftihia/HoverLeft" />
+				<Image component="TopEdge" name="Eftihia/HoverTop" />
+				<Image component="RightEdge" name="Eftihia/HoverRight" />
+				<Image component="BottomEdge" name="Eftihia/HoverBottom" />
+				<Image component="Background" name="Eftihia/HoverCentre" />
+			</FrameComponent>
+		</ImagerySection>
+	</WidgetLook>
+
+	<WidgetLook name="Eftihia/CommonClicked">
+		<ImagerySection name="Frame">
+			<FrameComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="RightEdge">
+						<UnifiedDim scale="1" type="RightEdge" />
+					</Dim>
+					<Dim type="BottomEdge">
+						<UnifiedDim scale="1" type="BottomEdge" />
+					</Dim>
+				</Area>
+				<Image component="TopLeftCorner" name="Eftihia/ClickedTopLeft" />
+				<Image component="TopRightCorner" name="Eftihia/ClickedTopRight" />
+				<Image component="BottomLeftCorner" name="Eftihia/ClickedBottomLeft" />
+				<Image component="BottomRightCorner" name="Eftihia/ClickedBottomRight" />
+				<Image component="LeftEdge" name="Eftihia/ClickedLeft" />
+				<Image component="TopEdge" name="Eftihia/ClickedTop" />
+				<Image component="RightEdge" name="Eftihia/ClickedRight" />
+				<Image component="BottomEdge" name="Eftihia/ClickedBottom" />
+				<Image component="Background" name="Eftihia/ClickedCentre" />
+			</FrameComponent>
+		</ImagerySection>
+	</WidgetLook>
+
+	<WidgetLook name="Eftihia/TitleBar">
+		<PropertyDefinition redrawOnWrite="true"
+			initialValue="FF173e7e" type="ColourRect" name="CaptionColour" />
+		<Property name="NonClient" value="True" />
+		<Property name="Size" value="{{0, 256}, {0, 32}}" />
+		<ImagerySection name="caption">
+			<TextComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="RightEdge">
+						<UnifiedDim scale="1" type="RightEdge" />
+					</Dim>
+					<Dim type="BottomEdge">
+						<UnifiedDim scale="1" type="BottomEdge" />
+					</Dim>
+				</Area>
+				<ColourProperty name="CaptionColour" />
+				<VertFormat type="CentreAligned" />
+				<HorzFormat type="CentreAligned" />
+			</TextComponent>
+		</ImagerySection>
+		<StateImagery name="Active">
+			<Layer>
+				<Section section="caption" />
+			</Layer>
+		</StateImagery>
+		<StateImagery name="Inactive">
+			<Layer>
+				<Section section="caption" />
+			</Layer>
+		</StateImagery>
+		<StateImagery name="Disabled">
+			<Layer>
+				<Section section="caption" />
+			</Layer>
+		</StateImagery>
+	</WidgetLook>
+
+	<WidgetLook name="Eftihia/Button">
+		<PropertyDefinition redrawOnWrite="true"
+			initialValue="FF173E7E" type="ColourRect" name="NormalTextColour" />
+		<PropertyDefinition redrawOnWrite="true"
+			initialValue="FF173E7E" type="ColourRect" name="HoverTextColour" />
+		<PropertyDefinition redrawOnWrite="true"
+			initialValue="FF173E7E" type="ColourRect" name="PushedTextColour" />
+		<PropertyDefinition redrawOnWrite="true"
+			initialValue="FF888888" type="ColourRect" name="DisabledTextColour" />
+		<PropertyDefinition redrawOnWrite="true"
+			initialValue="True" type="bool" name="UseStandardImagery" />
+		<PropertyDefinition redrawOnWrite="true"
+			initialValue="" type="Image" name="NormalImage" />
+		<PropertyDefinition redrawOnWrite="true"
+			initialValue="" type="Image" name="HoverImage" />
+		<PropertyDefinition redrawOnWrite="true"
+			initialValue="" type="Image" name="PushedImage" />
+		<PropertyDefinition redrawOnWrite="true"
+			initialValue="Stretched" type="VerticalFormatting" name="VertImageFormatting" />
+		<PropertyDefinition redrawOnWrite="true"
+			initialValue="Stretched" type="HorizontalFormatting" name="HorzImageFormatting" />
+		<Property name="WantsMultiClickEvents" value="False" />
+		<Property name="Size" value="{{0, 96}, {0, 32}}" />
+		<ImagerySection name="label">
+			<TextComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="RightEdge">
+						<UnifiedDim scale="1" type="RightEdge" />
+					</Dim>
+					<Dim type="BottomEdge">
+						<UnifiedDim scale="1" type="BottomEdge" />
+					</Dim>
+				</Area>
+				<VertFormat type="CentreAligned" />
+				<HorzFormat type="WordWrapCentreAligned" />
+			</TextComponent>
+		</ImagerySection>
+		<ImagerySection name="normal_image">
+			<ImageryComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="Width">
+						<UnifiedDim scale="1" type="Width" />
+					</Dim>
+					<Dim type="Height">
+						<UnifiedDim scale="1" type="Height" />
+					</Dim>
+				</Area>
+				<ImageProperty name="NormalImage" />
+				<VertFormatProperty name="VertImageFormatting" />
+				<HorzFormatProperty name="HorzImageFormatting" />
+			</ImageryComponent>
+		</ImagerySection>
+		<ImagerySection name="hover_image">
+			<ImageryComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="Width">
+						<UnifiedDim scale="1" type="Width" />
+					</Dim>
+					<Dim type="Height">
+						<UnifiedDim scale="1" type="Height" />
+					</Dim>
+				</Area>
+				<ImageProperty name="HoverImage" />
+				<VertFormatProperty name="VertImageFormatting" />
+				<HorzFormatProperty name="HorzImageFormatting" />
+			</ImageryComponent>
+		</ImagerySection>
+		<ImagerySection name="pushed_image">
+			<ImageryComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="Width">
+						<UnifiedDim scale="1" type="Width" />
+					</Dim>
+					<Dim type="Height">
+						<UnifiedDim scale="1" type="Height" />
+					</Dim>
+				</Area>
+				<ImageProperty name="PushedImage" />
+				<VertFormatProperty name="VertImageFormatting" />
+				<HorzFormatProperty name="HorzImageFormatting" />
+			</ImageryComponent>
+		</ImagerySection>
+		<StateImagery name="Normal">
+			<Layer>
+				<Section section="Frame" look="Eftihia/CommonNormal"
+					controlProperty="UseStandardImagery" />
+				<Section section="normal_image" />
+				<Section section="label">
+					<ColourProperty name="NormalTextColour" />
+				</Section>
+			</Layer>
+		</StateImagery>
+		<StateImagery name="Hover">
+			<Layer>
+				<Section section="Frame" look="Eftihia/CommonHover"
+					controlProperty="UseStandardImagery">
+				</Section>
+				<Section section="hover_image" />
+				<Section section="label">
+					<ColourProperty name="HoverTextColour" />
+				</Section>
+			</Layer>
+		</StateImagery>
+		<StateImagery name="Pushed">
+			<Layer>
+				<Section section="Frame" look="Eftihia/CommonClicked"
+					controlProperty="UseStandardImagery">
+				</Section>
+				<Section section="pushed_image" />
+				<Section section="label">
+					<ColourProperty name="PushedTextColour" />
+				</Section>
+			</Layer>
+		</StateImagery>
+		<StateImagery name="Disabled">
+			<Layer>
+				<Section section="Frame" look="Eftihia/CommonClicked"
+					controlProperty="UseStandardImagery">
+				</Section>
+				<Section section="normal_image">
+				</Section>
+				<Section section="label">
+					<ColourProperty name="DisabledTextColour" />
+				</Section>
+			</Layer>
+		</StateImagery>
+
+	</WidgetLook>
+	<WidgetLook name="Eftihia/FrameWindow">
+		<PropertyLinkDefinition targetProperty="CaptionColour"
+			widget="__auto_titlebar__" initialValue="FF173e7e" type="ColourRect"
+			name="CaptionColour" />
+		<PropertyLinkDefinition name="TitlebarFont"
+			widget="__auto_titlebar__" targetProperty="Font" type="Font" />
+
+		<Property name="MinSize" value="{{0.1,0},{0.1,0}}" />
+		<Property name="AutoRenderingSurface" value="True" />
+		<Property name="Size" value="{{0.3, 0}, {0.3, 0}}" />
+		<NamedArea name="ClientWithTitleWithFrame">
+			<Area>
+				<Dim type="LeftEdge">
+					<AbsoluteDim value="8" />
+				</Dim>
+				<Dim type="TopEdge">
+					<WidgetDim widget="__auto_titlebar__" dimension="BottomEdge" />
+				</Dim>
+				<Dim type="RightEdge">
+					<UnifiedDim scale="1" type="RightEdge" offset="-8" />
+				</Dim>
+				<Dim type="BottomEdge">
+					<UnifiedDim scale="1" type="BottomEdge" offset="-8" />
+				</Dim>
+			</Area>
+		</NamedArea>
+		<NamedArea name="ClientWithTitleNoFrame">
+			<Area>
+				<Dim type="LeftEdge">
+					<AbsoluteDim value="0" />
+				</Dim>
+				<Dim type="TopEdge">
+					<WidgetDim widget="__auto_titlebar__" dimension="BottomEdge" />
+				</Dim>
+				<Dim type="RightEdge">
+					<UnifiedDim scale="1" type="RightEdge" />
+				</Dim>
+				<Dim type="BottomEdge">
+					<UnifiedDim scale="1" type="BottomEdge" />
+				</Dim>
+			</Area>
+		</NamedArea>
+		<NamedArea name="ClientNoTitleWithFrame">
+			<Area>
+				<Dim type="LeftEdge">
+					<AbsoluteDim value="8" />
+				</Dim>
+				<Dim type="TopEdge">
+					<AbsoluteDim value="8" />
+				</Dim>
+				<Dim type="RightEdge">
+					<UnifiedDim scale="1" type="RightEdge" offset="-8" />
+				</Dim>
+				<Dim type="BottomEdge">
+					<UnifiedDim scale="1" type="BottomEdge" offset="-8" />
+				</Dim>
+			</Area>
+		</NamedArea>
+		<Child nameSuffix="__auto_titlebar__" type="Eftihia/TitleBar">
+			<Area>
+				<Dim type="LeftEdge">
+					<AbsoluteDim value="0" />
+				</Dim>
+				<Dim type="TopEdge">
+					<AbsoluteDim value="0" />
+				</Dim>
+				<Dim type="Width">
+					<UnifiedDim scale="1" type="Width" />
+				</Dim>
+				<Dim type="Height">
+					<FontDim padding="14" type="LineSpacing" />
+				</Dim>
+			</Area>
+			<Property name="AlwaysOnTop" value="False" />
+		</Child>
+		<Child nameSuffix="__auto_closebutton__" type="Eftihia/CloseButton">
+			<Area>
+				<Dim type="LeftEdge">
+					<AbsoluteDim value="-5" />
+				</Dim>
+				<Dim type="TopEdge">
+					<AbsoluteDim value="5" />
+				</Dim>
+				<Dim type="Width">
+					<AbsoluteDim value="21" />
+				</Dim>
+				<Dim type="Height">
+					<AbsoluteDim value="21" />
+				</Dim>
+			</Area>
+			<HorzAlignment type="RightAligned" />
+			<Property name="NonClient" value="True" />
+			<Property name="AlwaysOnTop" value="True" />
+		</Child>
+		<ImagerySection name="withtitle_frame">
+			<FrameComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="RightEdge">
+						<UnifiedDim scale="1" type="RightEdge" />
+					</Dim>
+					<Dim type="BottomEdge">
+						<UnifiedDim scale="1" type="BottomEdge" />
+					</Dim>
+				</Area>
+				<Image component="TopLeftCorner" name="Eftihia/WindowTopLeft" />
+				<Image component="TopRightCorner" name="Eftihia/WindowTopRight" />
+				<Image component="BottomLeftCorner" name="Eftihia/WindowBottomLeft" />
+				<Image component="BottomRightCorner" name="Eftihia/WindowBottomRight" />
+				<Image component="LeftEdge" name="Eftihia/WindowLeft" />
+				<Image component="TopEdge" name="Eftihia/WindowTop" />
+				<Image component="RightEdge" name="Eftihia/WindowRight" />
+				<Image component="BottomEdge" name="Eftihia/WindowBottom" />
+				<Image component="Background" name="Eftihia/WindowCentre" />
+			</FrameComponent>
+		</ImagerySection>
+		<ImagerySection name="notitle_frame">
+			<FrameComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="RightEdge">
+						<UnifiedDim scale="1" type="RightEdge" />
+					</Dim>
+					<Dim type="BottomEdge">
+						<UnifiedDim scale="1" type="BottomEdge" />
+					</Dim>
+				</Area>
+				<Image component="TopLeftCorner" name="Eftihia/WindowTopLeft" />
+				<Image component="TopRightCorner" name="Eftihia/WindowTopRight" />
+				<Image component="BottomLeftCorner" name="Eftihia/WindowBottomLeft" />
+				<Image component="BottomRightCorner" name="Eftihia/WindowBottomRight" />
+				<Image component="LeftEdge" name="Eftihia/WindowLeft" />
+				<Image component="TopEdge" name="Eftihia/WindowTop" />
+				<Image component="RightEdge" name="Eftihia/WindowRight" />
+				<Image component="BottomEdge" name="Eftihia/WindowBottom" />
+				<Image component="Background" name="Eftihia/WindowCentre" />
+			</FrameComponent>
+		</ImagerySection>
+		<ImagerySection name="withtitle_noframe_client_area">
+			<FrameComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="RightEdge">
+						<UnifiedDim scale="1" type="RightEdge" />
+					</Dim>
+					<Dim type="BottomEdge">
+						<UnifiedDim scale="1" type="BottomEdge" />
+					</Dim>
+				</Area>
+				<Image component="TopLeftCorner" name="Eftihia/WindowTopLeft" />
+				<Image component="TopRightCorner" name="Eftihia/WindowTopRight" />
+				<Image component="BottomLeftCorner" name="Eftihia/WindowBottomLeft" />
+				<Image component="BottomRightCorner" name="Eftihia/WindowBottomRight" />
+				<Image component="LeftEdge" name="Eftihia/WindowLeft" />
+				<Image component="TopEdge" name="Eftihia/WindowTop" />
+				<Image component="RightEdge" name="Eftihia/WindowRight" />
+				<Image component="BottomEdge" name="Eftihia/WindowBottom" />
+				<Image component="Background" name="Eftihia/WindowCentre" />
+			</FrameComponent>
+		</ImagerySection>
+		<ImagerySection name="notitle_noframe_client_area">
+			<FrameComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="RightEdge">
+						<UnifiedDim scale="1" type="RightEdge" />
+					</Dim>
+					<Dim type="BottomEdge">
+						<UnifiedDim scale="1" type="BottomEdge" />
+					</Dim>
+				</Area>
+				<Image component="TopLeftCorner" name="Eftihia/WindowTopLeft" />
+				<Image component="TopRightCorner" name="Eftihia/WindowTopRight" />
+				<Image component="BottomLeftCorner" name="Eftihia/WindowBottomLeft" />
+				<Image component="BottomRightCorner" name="Eftihia/WindowBottomRight" />
+				<Image component="LeftEdge" name="Eftihia/WindowLeft" />
+				<Image component="TopEdge" name="Eftihia/WindowTop" />
+				<Image component="RightEdge" name="Eftihia/WindowRight" />
+				<Image component="BottomEdge" name="Eftihia/WindowBottom" />
+				<Image component="Background" name="Eftihia/WindowCentre" />
+			</FrameComponent>
+		</ImagerySection>
+		<StateImagery name="ActiveWithTitleWithFrame">
+			<Layer>
+				<Section section="withtitle_frame" />
+			</Layer>
+		</StateImagery>
+		<StateImagery name="InactiveWithTitleWithFrame">
+			<Layer>
+				<Section section="withtitle_frame" />
+			</Layer>
+		</StateImagery>
+		<StateImagery name="DisabledWithTitleWithFrame">
+			<Layer>
+				<Section section="withtitle_frame" />
+			</Layer>
+		</StateImagery>
+		<StateImagery name="ActiveWithTitleNoFrame">
+			<Layer>
+				<Section section="withtitle_noframe_client_area" />
+			</Layer>
+		</StateImagery>
+		<StateImagery name="InactiveWithTitleNoFrame">
+			<Layer>
+				<Section section="withtitle_noframe_client_area" />
+			</Layer>
+		</StateImagery>
+		<StateImagery name="DisabledWithTitleNoFrame">
+			<Layer>
+				<Section section="withtitle_noframe_client_area" />
+			</Layer>
+		</StateImagery>
+		<StateImagery name="ActiveNoTitleWithFrame">
+			<Layer>
+				<Section section="notitle_frame" />
+			</Layer>
+		</StateImagery>
+		<StateImagery name="InactiveNoTitleWithFrame">
+			<Layer>
+				<Section section="notitle_frame" />
+			</Layer>
+		</StateImagery>
+		<StateImagery name="DisabledNoTitleWithFrame">
+			<Layer>
+				<Section section="notitle_frame" />
+			</Layer>
+		</StateImagery>
+		<StateImagery name="ActiveNoTitleNoFrame">
+			<Layer>
+				<Section section="notitle_noframe_client_area" />
+			</Layer>
+		</StateImagery>
+		<StateImagery name="InactiveNoTitleNoFrame">
+			<Layer>
+				<Section section="notitle_noframe_client_area" />
+			</Layer>
+		</StateImagery>
+		<StateImagery name="DisabledNoTitleNoFrame">
+			<Layer>
+				<Section section="notitle_noframe_client_area" />
+			</Layer>
+		</StateImagery>
+	</WidgetLook>
+
+	<WidgetLook name="Eftihia/EditBox">
+		<PropertyDefinition redrawOnWrite="true"
+			initialValue="FFd5e5fe" type="ColourRect" name="ReadOnlyBGColour" />
+		<PropertyDefinition redrawOnWrite="true"
+			initialValue="FF173E7E" type="ColourRect" name="NormalTextColour" />
+		<PropertyDefinition redrawOnWrite="true"
+			initialValue="FFFFFFFF" type="ColourRect" name="SelectedTextColour" />
+		<PropertyDefinition redrawOnWrite="true"
+			initialValue="FF607FFF" type="ColourRect" name="ActiveSelectionColour" />
+		<PropertyDefinition redrawOnWrite="true"
+			initialValue="FF808080" type="ColourRect" name="InactiveSelectionColour" />
+		<Property name="Size" value="{{0, 128}, {0, 26}}" />
+		<NamedArea name="TextArea">
+			<Area>
+				<Dim type="LeftEdge">
+					<AbsoluteDim value="7" />
+				</Dim>
+				<Dim type="TopEdge">
+					<AbsoluteDim value="5" />
+				</Dim>
+				<Dim type="RightEdge">
+					<UnifiedDim scale="1.0" type="RightEdge" offset="-7" />
+				</Dim>
+				<Dim type="BottomEdge">
+					<UnifiedDim scale="1.0" type="BottomEdge" offset="-7" />
+				</Dim>
+			</Area>
+		</NamedArea>
+		<ImagerySection name="selection">
+			<ImageryComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="RightEdge">
+						<UnifiedDim scale="1.0" type="RightEdge" />
+					</Dim>
+					<Dim type="BottomEdge">
+						<UnifiedDim scale="1.0" type="BottomEdge" />
+					</Dim>
+				</Area>
+				<Image name="Eftihia/LightCentre" />
+				<VertFormat type="Stretched" />
+				<HorzFormat type="Stretched" />
+			</ImageryComponent>
+		</ImagerySection>
+		<ImagerySection name="Caret">
+			<ImageryComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="Width">
+						<AbsoluteDim value="2" />
+					</Dim>
+					<Dim type="BottomEdge">
+						<UnifiedDim scale="1.0" type="BottomEdge" />
+					</Dim>
+				</Area>
+				<Image name="Eftihia/LightCentre" />
+				<Colours topLeft="FF2222FF" bottomLeft="FF2222FF" topRight="FF2222FF"
+					bottomRight="FF2222FF" />
+				<VertFormat type="Stretched" />
+				<HorzFormat type="Stretched" />
+			</ImageryComponent>
+		</ImagerySection>
+		<StateImagery name="Enabled">
+			<Layer>
+				<Section section="Frame" look="Eftihia/LightArea" />
+			</Layer>
+		</StateImagery>
+		<StateImagery name="ReadOnly">
+			<Layer>
+				<Section section="Frame" look="Eftihia/LightArea">
+					<ColourProperty name="ReadOnlyBGColour" />
+				</Section>
+			</Layer>
+		</StateImagery>
+		<StateImagery name="Disabled">
+			<Layer>
+				<Section section="Frame" look="Eftihia/LightArea">
+					<ColourProperty name="ReadOnlyBGColour" />
+				</Section>
+			</Layer>
+		</StateImagery>
+		<StateImagery name="ActiveSelection">
+			<Layer>
+				<Section section="selection">
+					<ColourProperty name="ActiveSelectionColour" />
+				</Section>
+			</Layer>
+		</StateImagery>
+		<StateImagery name="InactiveSelection">
+			<Layer>
+				<Section section="selection">
+					<ColourProperty name="InactiveSelectionColour" />
+				</Section>
+			</Layer>
+		</StateImagery>
+	</WidgetLook>
+	<WidgetLook name="Eftihia/CloseButton">
+		<PropertyDefinition redrawOnWrite="true"
+			initialValue="FF173E7E" type="ColourRect" name="NormalTextColour" />
+		<PropertyDefinition redrawOnWrite="true"
+			initialValue="FF173E7E" type="ColourRect" name="HoverTextColour" />
+		<PropertyDefinition redrawOnWrite="true"
+			initialValue="FF173E7E" type="ColourRect" name="PushedTextColour" />
+		<PropertyDefinition redrawOnWrite="true"
+			initialValue="FF888888" type="ColourRect" name="DisabledTextColour" />
+		<PropertyDefinition redrawOnWrite="true"
+			initialValue="True" type="bool" name="UseStandardImagery" />
+		<PropertyDefinition redrawOnWrite="true"
+			initialValue="" type="Image" name="NormalImage" />
+		<PropertyDefinition redrawOnWrite="true"
+			initialValue="" type="Image" name="HoverImage" />
+		<PropertyDefinition redrawOnWrite="true"
+			initialValue="" type="Image" name="PushedImage" />
+		<PropertyDefinition redrawOnWrite="true"
+			initialValue="Stretched" type="VerticalFormatting" name="VertImageFormatting" />
+		<PropertyDefinition redrawOnWrite="true"
+			initialValue="Stretched" type="HorizontalFormatting" name="HorzImageFormatting" />
+		<Property name="WantsMultiClickEvents" value="False" />
+		<Property name="Size" value="{{0, 22}, {0, 21}}" />
+		<ImagerySection name="label">
+			<TextComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="RightEdge">
+						<UnifiedDim scale="1" type="RightEdge" />
+					</Dim>
+					<Dim type="BottomEdge">
+						<UnifiedDim scale="1" type="BottomEdge" />
+					</Dim>
+				</Area>
+				<VertFormat type="CentreAligned" />
+				<HorzFormat type="WordWrapCentreAligned" />
+			</TextComponent>
+		</ImagerySection>
+		<ImagerySection name="normal_image">
+			<ImageryComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="Width">
+						<UnifiedDim scale="1" type="Width" />
+					</Dim>
+					<Dim type="Height">
+						<UnifiedDim scale="1" type="Height" />
+					</Dim>
+				</Area>
+				<ImageProperty name="NormalImage" />
+				<VertFormatProperty name="VertImageFormatting" />
+				<HorzFormatProperty name="HorzImageFormatting" />
+			</ImageryComponent>
+		</ImagerySection>
+		<ImagerySection name="hover_image">
+			<ImageryComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="Width">
+						<UnifiedDim scale="1" type="Width" />
+					</Dim>
+					<Dim type="Height">
+						<UnifiedDim scale="1" type="Height" />
+					</Dim>
+				</Area>
+				<ImageProperty name="HoverImage" />
+				<VertFormatProperty name="VertImageFormatting" />
+				<HorzFormatProperty name="HorzImageFormatting" />
+			</ImageryComponent>
+		</ImagerySection>
+		<ImagerySection name="pushed_image">
+			<ImageryComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="Width">
+						<UnifiedDim scale="1" type="Width" />
+					</Dim>
+					<Dim type="Height">
+						<UnifiedDim scale="1" type="Height" />
+					</Dim>
+				</Area>
+				<ImageProperty name="PushedImage" />
+				<VertFormatProperty name="VertImageFormatting" />
+				<HorzFormatProperty name="HorzImageFormatting" />
+			</ImageryComponent>
+		</ImagerySection>
+		<StateImagery name="Normal">
+			<Layer>
+				<Section section="Frame" look="Eftihia/CloseNormal"
+					controlProperty="UseStandardImagery" />
+				<Section section="normal_image" />
+				<Section section="label">
+					<ColourProperty name="NormalTextColour" />
+				</Section>
+			</Layer>
+		</StateImagery>
+		<StateImagery name="Hover">
+			<Layer>
+				<Section section="Frame" look="Eftihia/CloseHover"
+					controlProperty="UseStandardImagery">
+				</Section>
+				<Section section="hover_image" />
+				<Section section="label">
+					<ColourProperty name="HoverTextColour" />
+				</Section>
+			</Layer>
+		</StateImagery>
+		<StateImagery name="Pushed">
+			<Layer>
+				<Section section="Frame" look="Eftihia/CloseClicked"
+					controlProperty="UseStandardImagery">
+				</Section>
+				<Section section="pushed_image" />
+				<Section section="label">
+					<ColourProperty name="PushedTextColour" />
+				</Section>
+			</Layer>
+		</StateImagery>
+		<StateImagery name="Disabled">
+			<Layer>
+				<Section section="Frame" look="Eftihia/CloseClicked"
+					controlProperty="UseStandardImagery">
+				</Section>
+				<Section section="normal_image">
+				</Section>
+				<Section section="label">
+					<ColourProperty name="DisabledTextColour" />
+				</Section>
+			</Layer>
+		</StateImagery>
+	</WidgetLook>
+
+	<WidgetLook name="Eftihia/CloseNormal">
+		<ImagerySection name="Frame">
+			<FrameComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="RightEdge">
+						<UnifiedDim scale="1" type="RightEdge" />
+					</Dim>
+					<Dim type="BottomEdge">
+						<UnifiedDim scale="1" type="BottomEdge" />
+					</Dim>
+				</Area>
+				<Image component="Background" name="Eftihia/CloseButtonNormal" />
+			</FrameComponent>
+		</ImagerySection>
+	</WidgetLook>
+
+	<WidgetLook name="Eftihia/CloseHover">
+		<ImagerySection name="Frame">
+			<FrameComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="RightEdge">
+						<UnifiedDim scale="1" type="RightEdge" />
+					</Dim>
+					<Dim type="BottomEdge">
+						<UnifiedDim scale="1" type="BottomEdge" />
+					</Dim>
+				</Area>
+				<Image component="Background" name="Eftihia/CloseButtonHover" />
+			</FrameComponent>
+		</ImagerySection>
+	</WidgetLook>
+
+	<WidgetLook name="Eftihia/CloseClicked">
+		<ImagerySection name="Frame">
+			<FrameComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="RightEdge">
+						<UnifiedDim scale="1" type="RightEdge" />
+					</Dim>
+					<Dim type="BottomEdge">
+						<UnifiedDim scale="1" type="BottomEdge" />
+					</Dim>
+				</Area>
+				<Image component="Background" name="Eftihia/CloseButtonClicked" />
+			</FrameComponent>
+		</ImagerySection>
+	</WidgetLook>
+
+	<WidgetLook name="Eftihia/VerticalScrollbarThumb">
+		<Property name="VertFree" value="True" />
+		<Property name="MouseInputPropagationEnabled" value="True" />
+		<Property name="Size" value="{{0, 21}, {0, 17}}" />
+		<ImagerySection name="indicator">
+			<ImageryComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="Width">
+						<UnifiedDim scale="1.0" type="Width" />
+					</Dim>
+					<Dim type="Height">
+						<UnifiedDim scale="1.0" type="Height" />
+					</Dim>
+				</Area>
+				<Image name="Eftihia/VScrollIndicator" />
+				<VertFormat type="Stretched" />
+				<HorzFormat type="Stretched" />
+			</ImageryComponent>
+		</ImagerySection>
+		<StateImagery name="Normal">
+			<Layer>
+				<Section section="indicator" />
+			</Layer>
+		</StateImagery>
+		<StateImagery name="Hover">
+			<Layer>
+				<Section section="indicator" />
+			</Layer>
+		</StateImagery>
+		<StateImagery name="Pushed">
+			<Layer>
+				<Section section="indicator" />
+			</Layer>
+		</StateImagery>
+	</WidgetLook>
+
+	<WidgetLook name="Eftihia/HorizontalScrollbarThumb">
+		<Property name="HorzFree" value="True" />
+		<Property name="MouseInputPropagationEnabled" value="True" />
+		<Property name="Size" value="{{0, 17}, {0, 21}}" />
+		<ImagerySection name="indicator">
+			<ImageryComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="Width">
+						<UnifiedDim scale="1.0" type="Width" />
+					</Dim>
+					<Dim type="Height">
+						<UnifiedDim scale="1.0" type="Height" />
+					</Dim>
+				</Area>
+				<Image name="Eftihia/HScrollIndicator" />
+				<VertFormat type="Stretched" />
+				<HorzFormat type="Stretched" />
+			</ImageryComponent>
+		</ImagerySection>
+		<StateImagery name="Normal">
+			<Layer>
+				<Section section="indicator" />
+			</Layer>
+		</StateImagery>
+		<StateImagery name="Hover">
+			<Layer>
+				<Section section="indicator" />
+			</Layer>
+		</StateImagery>
+		<StateImagery name="Pushed">
+			<Layer>
+				<Section section="indicator" />
+			</Layer>
+		</StateImagery>
+	</WidgetLook>
+
+	<WidgetLook name="Eftihia/HorizontalScrollbar">
+		<Property name="Size" value="{{1, 0}, {0, 22}}" />
+		<NamedArea name="ThumbTrackArea">
+			<Area>
+				<Dim type="LeftEdge">
+					<WidgetDim widget="__auto_decbtn__" dimension="RightEdge" />
+				</Dim>
+				<Dim type="TopEdge">
+					<AbsoluteDim value="0" />
+				</Dim>
+				<Dim type="RightEdge">
+					<OperatorDim op="Subtract">
+						<UnifiedDim scale="1" type="RightEdge" />
+						<WidgetDim widget="__auto_incbtn__" dimension="Width" />
+					</OperatorDim>
+				</Dim>
+				<Dim type="BottomEdge">
+					<UnifiedDim scale="1" type="BottomEdge" />
+				</Dim>
+			</Area>
+		</NamedArea>
+		<Child nameSuffix="__auto_incbtn__" type="Eftihia/Button">
+			<Area>
+				<Dim type="LeftEdge">
+					<AbsoluteDim value="0" />
+				</Dim>
+				<Dim type="TopEdge">
+					<AbsoluteDim value="0" />
+				</Dim>
+				<Dim type="Width">
+					<UnifiedDim scale="1" type="Height" />
+				</Dim>
+				<Dim type="Height">
+					<UnifiedDim scale="1" type="Height" />
+				</Dim>
+			</Area>
+			<VertAlignment type="CentreAligned" />
+			<HorzAlignment type="RightAligned" />
+			<Property name="UseStandardImagery" value="False" />
+			<Property name="NormalImage" value="Eftihia/HScrollRightArrow" />
+			<Property name="HoverImage" value="Eftihia/HScrollRightArrow" />
+			<Property name="PushedImage" value="Eftihia/HScrollRightArrow" />
+		</Child>
+		<Child nameSuffix="__auto_decbtn__" type="Eftihia/Button">
+			<Area>
+				<Dim type="LeftEdge">
+					<AbsoluteDim value="0" />
+				</Dim>
+				<Dim type="TopEdge">
+					<AbsoluteDim value="0" />
+				</Dim>
+				<Dim type="Width">
+					<UnifiedDim scale="1" type="Height" />
+				</Dim>
+				<Dim type="Height">
+					<UnifiedDim scale="1" type="Height" />
+				</Dim>
+			</Area>
+			<VertAlignment type="CentreAligned" />
+			<Property name="UseStandardImagery" value="False" />
+			<Property name="NormalImage" value="Eftihia/HScrollLeftArrow" />
+			<Property name="HoverImage" value="Eftihia/HScrollLeftArrow" />
+			<Property name="PushedImage" value="Eftihia/HScrollLeftArrow" />
+		</Child>
+		<Child nameSuffix="__auto_thumb__" type="Eftihia/HorizontalScrollbarThumb">
+			<Area>
+				<Dim type="LeftEdge">
+					<AbsoluteDim value="0" />
+				</Dim>
+				<Dim type="TopEdge">
+					<AbsoluteDim value="0" />
+				</Dim>
+				<Dim type="Width">
+					<UnifiedDim scale="1" type="Height" />
+				</Dim>
+				<Dim type="Height">
+					<UnifiedDim scale="1" type="Height" />
+				</Dim>
+			</Area>
+		</Child>
+		<ImagerySection name="main">
+			<ImageryComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<WidgetDim widget="__auto_decbtn__" dimension="RightEdge" />
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="RightEdge">
+						<OperatorDim op="Subtract">
+							<UnifiedDim scale="1" type="RightEdge" />
+							<WidgetDim widget="__auto_incbtn__" dimension="Width" />
+						</OperatorDim>
+					</Dim>
+					<Dim type="BottomEdge">
+						<UnifiedDim scale="1" type="BottomEdge" />
+					</Dim>
+				</Area>
+				<Image name="Eftihia/HScrollExpansion" />
+				<VertFormat type="Stretched" />
+				<HorzFormat type="Stretched" />
+			</ImageryComponent>
+		</ImagerySection>
+		<StateImagery name="Enabled">
+			<Layer>
+				<Section section="main" />
+			</Layer>
+		</StateImagery>
+		<StateImagery name="Disabled">
+			<Layer>
+				<Section section="main" />
+			</Layer>
+		</StateImagery>
+	</WidgetLook>
+
+	<WidgetLook name="Eftihia/VerticalScrollbar">
+		<Property name="VerticalScrollbar" value="True" />
+		<Property name="Size" value="{{0, 22}, {1, 0}}" />
+		<NamedArea name="ThumbTrackArea">
+			<Area>
+				<Dim type="LeftEdge">
+					<AbsoluteDim value="0" />
+				</Dim>
+				<Dim type="TopEdge">
+					<WidgetDim widget="__auto_decbtn__" dimension="BottomEdge" />
+				</Dim>
+				<Dim type="RightEdge">
+					<UnifiedDim scale="1.0" type="RightEdge" />
+				</Dim>
+				<Dim type="BottomEdge">
+					<OperatorDim op="Subtract">
+						<UnifiedDim scale="1.0" type="BottomEdge" />
+						<WidgetDim widget="__auto_incbtn__" dimension="Height" />
+					</OperatorDim>
+				</Dim>
+			</Area>
+		</NamedArea>
+		<Child nameSuffix="__auto_incbtn__" type="Eftihia/Button">
+			<Area>
+				<Dim type="LeftEdge">
+					<AbsoluteDim value="0" />
+				</Dim>
+				<Dim type="TopEdge">
+					<AbsoluteDim value="0" />
+				</Dim>
+				<Dim type="Width">
+					<UnifiedDim scale="1" type="Width" />
+				</Dim>
+				<Dim type="Height">
+					<UnifiedDim scale="1" type="Width" />
+				</Dim>
+			</Area>
+			<VertAlignment type="BottomAligned" />
+			<HorzAlignment type="CentreAligned" />
+			<Property name="UseStandardImagery" value="False" />
+			<Property name="NormalImage" value="Eftihia/VScrollDownArrow" />
+			<Property name="HoverImage" value="Eftihia/VScrollDownArrow" />
+			<Property name="PushedImage" value="Eftihia/VScrollDownArrow" />
+		</Child>
+		<Child nameSuffix="__auto_decbtn__" type="Eftihia/Button">
+			<Area>
+				<Dim type="LeftEdge">
+					<AbsoluteDim value="0" />
+				</Dim>
+				<Dim type="TopEdge">
+					<AbsoluteDim value="0" />
+				</Dim>
+				<Dim type="Width">
+					<UnifiedDim scale="1" type="Width" />
+				</Dim>
+				<Dim type="Height">
+					<UnifiedDim scale="1" type="Width" />
+				</Dim>
+			</Area>
+			<HorzAlignment type="CentreAligned" />
+			<Property name="UseStandardImagery" value="False" />
+			<Property name="NormalImage" value="Eftihia/VScrollUpArrow" />
+			<Property name="HoverImage" value="Eftihia/VScrollUpArrow" />
+			<Property name="PushedImage" value="Eftihia/VScrollUpArrow" />
+		</Child>
+		<Child nameSuffix="__auto_thumb__" type="Eftihia/VerticalScrollbarThumb">
+			<Area>
+				<Dim type="LeftEdge">
+					<AbsoluteDim value="0" />
+				</Dim>
+				<Dim type="TopEdge">
+					<AbsoluteDim value="0" />
+				</Dim>
+				<Dim type="Width">
+					<UnifiedDim scale="1" type="Width" />
+				</Dim>
+				<Dim type="Height">
+					<UnifiedDim scale="1" type="Width" />
+				</Dim>
+			</Area>
+		</Child>
+		<ImagerySection name="main">
+			<ImageryComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="TopEdge">
+						<WidgetDim widget="__auto_decbtn__" dimension="BottomEdge" />
+					</Dim>
+					<Dim type="RightEdge">
+						<UnifiedDim scale="1.0" type="RightEdge" />
+					</Dim>
+					<Dim type="BottomEdge">
+						<OperatorDim op="Subtract">
+							<UnifiedDim scale="1.0" type="BottomEdge" />
+							<WidgetDim widget="__auto_incbtn__" dimension="Height" />
+						</OperatorDim>
+					</Dim>
+				</Area>
+				<Image name="Eftihia/VScrollExpansion" />
+				<VertFormat type="Stretched" />
+				<HorzFormat type="Stretched" />
+			</ImageryComponent>
+		</ImagerySection>
+		<StateImagery name="Enabled">
+			<Layer>
+				<Section section="main" />
+			</Layer>
+		</StateImagery>
+		<StateImagery name="Disabled">
+			<Layer>
+				<Section section="main" />
+			</Layer>
+		</StateImagery>
+	</WidgetLook>
+
+	<WidgetLook name="Eftihia/MultiLineEditbox">
+		<PropertyDefinition redrawOnWrite="true"
+			initialValue="FFd5e5fe" type="ColourRect" name="ReadOnlyBGColour" />
+		<PropertyDefinition redrawOnWrite="true"
+			initialValue="FF173E7E" type="ColourRect" name="NormalTextColour" />
+		<PropertyDefinition redrawOnWrite="true"
+			initialValue="FF607FFF" type="ColourRect" name="ActiveSelectionColour" />
+		<PropertyDefinition redrawOnWrite="true"
+			initialValue="FF808080" type="ColourRect" name="InactiveSelectionColour" />
+		<Property name="SelectionBrushImage" value="Eftihia/LightCentre" />
+		<Property name="Size" value="{{0, 128}, {0, 128}}" />
+		<NamedArea name="TextArea">
+			<Area>
+				<Dim type="LeftEdge">
+					<ImageDim name="Eftihia/LightLeft" dimension="Width" />
+				</Dim>
+				<Dim type="TopEdge">
+					<ImageDim name="Eftihia/LightTop" dimension="Height" />
+				</Dim>
+				<Dim type="RightEdge">
+					<OperatorDim op="Subtract">
+						<UnifiedDim scale="1" type="RightEdge" />
+						<ImageDim name="Eftihia/LightRight" dimension="Width" />
+					</OperatorDim>
+				</Dim>
+				<Dim type="BottomEdge">
+					<OperatorDim op="Subtract">
+						<UnifiedDim scale="1" type="BottomEdge" />
+						<ImageDim name="Eftihia/LightBottom" dimension="Height" />
+					</OperatorDim>
+				</Dim>
+			</Area>
+		</NamedArea>
+		<NamedArea name="TextAreaHScroll">
+			<Area>
+				<Dim type="LeftEdge">
+					<ImageDim name="Eftihia/LightLeft" dimension="Width" />
+				</Dim>
+				<Dim type="TopEdge">
+					<ImageDim name="Eftihia/LightTop" dimension="Height" />
+				</Dim>
+				<Dim type="RightEdge">
+					<OperatorDim op="Subtract">
+						<UnifiedDim scale="1" type="RightEdge" />
+						<ImageDim name="Eftihia/LightRight" dimension="Width" />
+					</OperatorDim>
+				</Dim>
+				<Dim type="BottomEdge">
+					<OperatorDim op="Subtract">
+						<UnifiedDim scale="1" type="BottomEdge" />
+						<OperatorDim op="Add">
+							<ImageDim name="Eftihia/LightBottom" dimension="Height" />
+							<WidgetDim widget="__auto_hscrollbar__" dimension="Height" />
+						</OperatorDim>
+					</OperatorDim>
+				</Dim>
+			</Area>
+		</NamedArea>
+		<NamedArea name="TextAreaVScroll">
+			<Area>
+				<Dim type="LeftEdge">
+					<ImageDim name="Eftihia/LightLeft" dimension="Width" />
+				</Dim>
+				<Dim type="TopEdge">
+					<ImageDim name="Eftihia/LightTop" dimension="Height" />
+				</Dim>
+				<Dim type="RightEdge">
+					<OperatorDim op="Subtract">
+						<UnifiedDim scale="1" type="RightEdge" />
+						<OperatorDim op="Add">
+							<ImageDim name="Eftihia/LightRight" dimension="Width" />
+							<WidgetDim widget="__auto_vscrollbar__" dimension="Width" />
+						</OperatorDim>
+					</OperatorDim>
+				</Dim>
+				<Dim type="BottomEdge">
+					<OperatorDim op="Subtract">
+						<UnifiedDim scale="1" type="BottomEdge" />
+						<ImageDim name="Eftihia/LightBottom" dimension="Height" />
+					</OperatorDim>
+				</Dim>
+			</Area>
+		</NamedArea>
+		<NamedArea name="TextAreaHVScroll">
+			<Area>
+				<Dim type="LeftEdge">
+					<ImageDim name="Eftihia/LightLeft" dimension="Width" />
+				</Dim>
+				<Dim type="TopEdge">
+					<ImageDim name="Eftihia/LightTop" dimension="Height" />
+				</Dim>
+				<Dim type="RightEdge">
+					<OperatorDim op="Subtract">
+						<UnifiedDim scale="1" type="RightEdge" />
+						<OperatorDim op="Add">
+							<ImageDim name="Eftihia/LightRight" dimension="Width" />
+							<WidgetDim widget="__auto_vscrollbar__" dimension="Width" />
+						</OperatorDim>
+					</OperatorDim>
+				</Dim>
+				<Dim type="BottomEdge">
+					<OperatorDim op="Subtract">
+						<UnifiedDim scale="1" type="BottomEdge" />
+						<OperatorDim op="Add">
+							<ImageDim name="Eftihia/LightBottom" dimension="Height" />
+							<WidgetDim widget="__auto_hscrollbar__" dimension="Height" />
+						</OperatorDim>
+					</OperatorDim>
+				</Dim>
+			</Area>
+		</NamedArea>
+		<Child nameSuffix="__auto_hscrollbar__" type="Eftihia/HorizontalScrollbar">
+			<Area>
+				<Dim type="LeftEdge">
+					<AbsoluteDim value="5" />
+				</Dim>
+				<Dim type="TopEdge">
+					<AbsoluteDim value="-5" />
+				</Dim>
+				<Dim type="Width">
+					<UnifiedDim scale="1" type="Width" offset="-25" />
+				</Dim>
+				<Dim type="Height">
+					<AbsoluteDim value="20" />
+				</Dim>
+			</Area>
+			<VertAlignment type="BottomAligned" />
+		</Child>
+		<Child nameSuffix="__auto_vscrollbar__" type="Eftihia/VerticalScrollbar">
+			<Area>
+				<Dim type="LeftEdge">
+					<AbsoluteDim value="-5" />
+				</Dim>
+				<Dim type="TopEdge">
+					<AbsoluteDim value="5" />
+				</Dim>
+				<Dim type="Width">
+					<AbsoluteDim value="20" />
+				</Dim>
+				<Dim type="Height">
+					<UnifiedDim scale="1" type="Height" offset="-10" />
+				</Dim>
+			</Area>
+			<HorzAlignment type="RightAligned" />
+		</Child>
+		<ImagerySection name="Caret">
+			<ImageryComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="Width">
+						<AbsoluteDim value="2" />
+					</Dim>
+					<Dim type="BottomEdge">
+						<UnifiedDim scale="1.0" type="BottomEdge" />
+					</Dim>
+				</Area>
+				<Image name="Eftihia/LightCentre" />
+				<Colours topLeft="FF2222FF" bottomLeft="FF2222FF" topRight="FF2222FF"
+					bottomRight="FF2222FF" />
+				<VertFormat type="Stretched" />
+				<HorzFormat type="Stretched" />
+			</ImageryComponent>
+		</ImagerySection>
+		<StateImagery name="Enabled">
+			<Layer>
+				<Section section="Frame" look="Eftihia/LightArea" />
+			</Layer>
+		</StateImagery>
+		<StateImagery name="ReadOnly">
+			<Layer>
+				<Section section="Frame" look="Eftihia/LightArea" />
+			</Layer>
+		</StateImagery>
+		<StateImagery name="Disabled">
+			<Layer>
+				<Section section="Frame" look="Eftihia/LightArea" />
+			</Layer>
+		</StateImagery>
+	</WidgetLook>
+
+	<WidgetLook name="Eftihia/StaticImage">
+		<PropertyDefinition redrawOnWrite="true"
+			initialValue="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" type="ColourRect"
+			name="ImageColours" />
+		<PropertyDefinition redrawOnWrite="true"
+			initialValue="Stretched" type="VerticalFormatting" name="VertFormatting" />
+		<PropertyDefinition redrawOnWrite="true"
+			initialValue="Stretched" type="HorizontalFormatting" name="HorzFormatting" />
+		<Property name="BackgroundEnabled" value="True" />
+		<Property name="FrameEnabled" value="True" />
+		<Property name="Size" value="{{0, 128}, {0, 128}}" />
+		<ImagerySection name="image_withframe">
+			<ImageryComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<ImageDim name="Eftihia/LightLeft" dimension="Width" />
+					</Dim>
+					<Dim type="TopEdge">
+						<ImageDim name="Eftihia/LightTop" dimension="Height" />
+					</Dim>
+					<Dim type="RightEdge">
+						<OperatorDim op="Subtract">
+							<UnifiedDim scale="1" type="RightEdge" />
+							<ImageDim name="Eftihia/LightRight" dimension="Width" />
+						</OperatorDim>
+					</Dim>
+					<Dim type="BottomEdge">
+						<OperatorDim op="Subtract">
+							<UnifiedDim scale="1" type="BottomEdge" />
+							<ImageDim name="Eftihia/LightBottom" dimension="Height" />
+						</OperatorDim>
+					</Dim>
+				</Area>
+				<ImageProperty name="Image" />
+				<ColourRectProperty name="ImageColours" />
+				<VertFormatProperty name="VertFormatting" />
+				<HorzFormatProperty name="HorzFormatting" />
+			</ImageryComponent>
+		</ImagerySection>
+		<ImagerySection name="image_noframe">
+			<ImageryComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="RightEdge">
+						<UnifiedDim scale="1.0" type="RightEdge" />
+					</Dim>
+					<Dim type="BottomEdge">
+						<UnifiedDim scale="1.0" type="BottomEdge" />
+					</Dim>
+				</Area>
+				<ImageProperty name="Image" />
+				<ColourRectProperty name="ImageColours" />
+				<VertFormatProperty name="VertFormatting" />
+				<HorzFormatProperty name="HorzFormatting" />
+			</ImageryComponent>
+		</ImagerySection>
+		<StateImagery name="Enabled" />
+		<StateImagery name="Disabled" />
+		<StateImagery name="EnabledFrame">
+			<Layer>
+				<Section section="Frame" look="Eftihia/LightArea">
+				</Section>
+			</Layer>
+		</StateImagery>
+		<StateImagery name="DisabledFrame">
+			<Layer>
+				<Section section="Frame" look="Eftihia/LightArea">
+					<Colours topLeft="FFb7cdf4" bottomLeft="FFb7cdf4" topRight="FFb7cdf4"
+						bottomRight="FFb7cdf4" />
+				</Section>
+			</Layer>
+		</StateImagery>
+		<StateImagery name="WithFrameEnabledBackground">
+			<Layer>
+				<Section section="Frame" look="Eftihia/LightArea">
+				</Section>
+			</Layer>
+		</StateImagery>
+		<StateImagery name="WithFrameDisabledBackground">
+			<Layer>
+				<Section section="Frame" look="Eftihia/LightArea">
+				</Section>
+			</Layer>
+		</StateImagery>
+		<StateImagery name="NoFrameEnabledBackground">
+			<Layer>
+				<Section section="Frame" look="Eftihia/LightArea">
+				</Section>
+			</Layer>
+		</StateImagery>
+		<StateImagery name="NoFrameDisabledBackground">
+			<Layer>
+				<Section section="Frame" look="Eftihia/LightArea">
+				</Section>
+			</Layer>
+		</StateImagery>
+		<StateImagery name="WithFrameImage">
+			<Layer>
+				<Section section="image_withframe" />
+			</Layer>
+		</StateImagery>
+		<StateImagery name="NoFrameImage">
+			<Layer>
+				<Section section="image_noframe" />
+			</Layer>
+		</StateImagery>
+		<AnimationDefinition name="fadeIn" duration="1"
+			replayMode="once">
+			<Affector property="Alpha" interpolator="float">
+				<KeyFrame position="0.0" value="0.0" />
+				<KeyFrame position="1" value="1.0" />
+			</Affector>
+			<Subscription event="FadeInStart" action="Start" />
+			<Subscription event="FadeInStop" action="Stop" />
+		</AnimationDefinition>
+		<AnimationDefinition name="fadeOut" duration="2"
+			replayMode="once">
+			<Affector property="Alpha" interpolator="float">
+				<KeyFrame position="0.0" value="1.0" />
+				<KeyFrame position="2" value="0.0" />
+			</Affector>
+			<Affector property="Visible" interpolator="bool">
+				<KeyFrame position="0" sourceProperty="Visible" />
+				<KeyFrame position="2" value="false" progression="discrete" />
+			</Affector>
+			<Subscription event="FadeOutStart" action="Start" />
+			<Subscription event="FadeOutStop" action="Stop" />
+		</AnimationDefinition>
+		<AnimationDefinition name="fadeOut2" duration="5"
+			replayMode="once">
+			<Affector property="Alpha" interpolator="float">
+				<KeyFrame position="4.0" value="1.0" />
+				<KeyFrame position="5" value="0.0" />
+			</Affector>
+			<Affector property="Visible" interpolator="bool">
+				<KeyFrame position="4" sourceProperty="Visible" />
+				<KeyFrame position="5" value="false" progression="discrete" />
+			</Affector>
+			<Subscription event="FadeOut2Start" action="Start" />
+			<Subscription event="FadeOut2Stop" action="Stop" />
+		</AnimationDefinition>
+	</WidgetLook>
+
+	<WidgetLook name="Eftihia/StaticText">
+		<PropertyLinkDefinition targetProperty="ScrollPosition"
+			widget="__auto_hscrollbar__" type="float" name="HorzScrollPosition" />
+		<PropertyLinkDefinition targetProperty="PageSize"
+			widget="__auto_hscrollbar__" type="float" name="HorzScrollPageSize" />
+		<PropertyLinkDefinition targetProperty="DocumentSize"
+			widget="__auto_hscrollbar__" type="float" name="HorzScrollDocumentSize" />
+		<PropertyLinkDefinition targetProperty="ScrollPosition"
+			widget="__auto_vscrollbar__" type="float" name="VertScrollPosition" />
+		<PropertyLinkDefinition targetProperty="PageSize"
+			widget="__auto_vscrollbar__" type="float" name="VertScrollPageSize" />
+		<PropertyLinkDefinition targetProperty="DocumentSize"
+			widget="__auto_vscrollbar__" type="float" name="VertScrollDocumentSize" />
+		<Property name="BackgroundEnabled" value="True" />
+		<Property name="FrameEnabled" value="True" />
+		<Property name="Size" value="{{0, 256}, {0, 128}}" />
+		<NamedArea name="WithFrameTextRenderArea">
+			<Area>
+				<Dim type="LeftEdge">
+					<ImageDim name="Eftihia/LightLeft" dimension="Width" />
+				</Dim>
+				<Dim type="TopEdge">
+					<ImageDim name="Eftihia/LightTop" dimension="Height" />
+				</Dim>
+				<Dim type="RightEdge">
+					<OperatorDim op="Subtract">
+						<UnifiedDim scale="1" type="RightEdge" />
+						<ImageDim name="Eftihia/LightRight" dimension="Width" />
+					</OperatorDim>
+				</Dim>
+				<Dim type="BottomEdge">
+					<OperatorDim op="Subtract">
+						<UnifiedDim scale="1" type="BottomEdge" />
+						<ImageDim name="Eftihia/LightBottom" dimension="Height" />
+					</OperatorDim>
+				</Dim>
+			</Area>
+		</NamedArea>
+		<NamedArea name="WithFrameTextRenderAreaHScroll">
+			<Area>
+				<Dim type="LeftEdge">
+					<ImageDim name="Eftihia/LightLeft" dimension="Width" />
+				</Dim>
+				<Dim type="TopEdge">
+					<ImageDim name="Eftihia/LightTop" dimension="Height" />
+				</Dim>
+				<Dim type="RightEdge">
+					<OperatorDim op="Subtract">
+						<UnifiedDim scale="1" type="RightEdge" />
+						<ImageDim name="Eftihia/LightRight" dimension="Width" />
+					</OperatorDim>
+				</Dim>
+				<Dim type="BottomEdge">
+					<UnifiedDim scale="1" type="BottomEdge" offset="-20" />
+				</Dim>
+			</Area>
+		</NamedArea>
+		<NamedArea name="WithFrameTextRenderAreaVScroll">
+			<Area>
+				<Dim type="LeftEdge">
+					<ImageDim name="Eftihia/LightLeft" dimension="Width" />
+				</Dim>
+				<Dim type="TopEdge">
+					<ImageDim name="Eftihia/LightTop" dimension="Height" />
+				</Dim>
+				<Dim type="RightEdge">
+					<UnifiedDim scale="1" type="RightEdge" offset="-20" />
+				</Dim>
+				<Dim type="BottomEdge">
+					<OperatorDim op="Subtract">
+						<UnifiedDim scale="1" type="BottomEdge" />
+						<ImageDim name="Eftihia/LightBottom" dimension="Height" />
+					</OperatorDim>
+				</Dim>
+			</Area>
+		</NamedArea>
+		<NamedArea name="WithFrameTextRenderAreaHVScroll">
+			<Area>
+				<Dim type="LeftEdge">
+					<ImageDim name="Eftihia/LightLeft" dimension="Width" />
+				</Dim>
+				<Dim type="TopEdge">
+					<ImageDim name="Eftihia/LightTop" dimension="Height" />
+				</Dim>
+				<Dim type="RightEdge">
+					<UnifiedDim scale="1" type="RightEdge" offset="-20" />
+				</Dim>
+				<Dim type="BottomEdge">
+					<UnifiedDim scale="1" type="BottomEdge" offset="-20" />
+				</Dim>
+			</Area>
+		</NamedArea>
+		<NamedArea name="NoFrameTextRenderArea">
+			<Area>
+				<Dim type="LeftEdge">
+					<AbsoluteDim value="0" />
+				</Dim>
+				<Dim type="TopEdge">
+					<AbsoluteDim value="0" />
+				</Dim>
+				<Dim type="RightEdge">
+					<UnifiedDim scale="1" type="RightEdge" />
+				</Dim>
+				<Dim type="BottomEdge">
+					<UnifiedDim scale="1" type="BottomEdge" />
+				</Dim>
+			</Area>
+		</NamedArea>
+		<NamedArea name="NoFrameTextRenderAreaHScroll">
+			<Area>
+				<Dim type="LeftEdge">
+					<AbsoluteDim value="0" />
+				</Dim>
+				<Dim type="TopEdge">
+					<AbsoluteDim value="0" />
+				</Dim>
+				<Dim type="RightEdge">
+					<UnifiedDim scale="1" type="RightEdge" />
+				</Dim>
+				<Dim type="BottomEdge">
+					<UnifiedDim scale="1" type="BottomEdge" offset="-20" />
+				</Dim>
+			</Area>
+		</NamedArea>
+		<NamedArea name="NoFrameTextRenderAreaVScroll">
+			<Area>
+				<Dim type="LeftEdge">
+					<AbsoluteDim value="0" />
+				</Dim>
+				<Dim type="TopEdge">
+					<AbsoluteDim value="0" />
+				</Dim>
+				<Dim type="RightEdge">
+					<UnifiedDim scale="1" type="RightEdge" offset="-20" />
+				</Dim>
+				<Dim type="BottomEdge">
+					<UnifiedDim scale="1" type="BottomEdge" />
+				</Dim>
+			</Area>
+		</NamedArea>
+		<NamedArea name="NoFrameTextRenderAreaHVScroll">
+			<Area>
+				<Dim type="LeftEdge">
+					<AbsoluteDim value="0" />
+				</Dim>
+				<Dim type="TopEdge">
+					<AbsoluteDim value="0" />
+				</Dim>
+				<Dim type="RightEdge">
+					<UnifiedDim scale="1" type="RightEdge" offset="-20" />
+				</Dim>
+				<Dim type="BottomEdge">
+					<UnifiedDim scale="1" type="BottomEdge" offset="-20" />
+				</Dim>
+			</Area>
+		</NamedArea>
+		<Child nameSuffix="__auto_hscrollbar__" type="Eftihia/HorizontalScrollbar">
+			<Area>
+				<Dim type="LeftEdge">
+					<AbsoluteDim value="0" />
+				</Dim>
+				<Dim type="TopEdge">
+					<AbsoluteDim value="0" />
+				</Dim>
+				<Dim type="Width">
+					<UnifiedDim scale="1" type="Width" offset="-20" />
+				</Dim>
+				<Dim type="Height">
+					<AbsoluteDim value="20" />
+				</Dim>
+			</Area>
+			<VertAlignment type="BottomAligned" />
+		</Child>
+		<Child nameSuffix="__auto_vscrollbar__" type="Eftihia/VerticalScrollbar">
+			<Area>
+				<Dim type="LeftEdge">
+					<AbsoluteDim value="0" />
+				</Dim>
+				<Dim type="TopEdge">
+					<AbsoluteDim value="0" />
+				</Dim>
+				<Dim type="Width">
+					<AbsoluteDim value="20" />
+				</Dim>
+				<Dim type="Height">
+					<UnifiedDim scale="1" type="Height" offset="-20" />
+				</Dim>
+			</Area>
+			<HorzAlignment type="RightAligned" />
+		</Child>
+		<StateImagery name="Enabled" />
+		<StateImagery name="Disabled" />
+		<StateImagery name="EnabledFrame">
+			<Layer>
+				<Section section="Frame" look="Eftihia/LightArea">
+				</Section>
+			</Layer>
+		</StateImagery>
+		<StateImagery name="DisabledFrame">
+			<Layer>
+				<Section section="Frame" look="Eftihia/LightArea">
+					<Colours topLeft="FFb7cdf4" bottomLeft="FFb7cdf4" topRight="FFb7cdf4"
+						bottomRight="FFb7cdf4" />
+				</Section>
+			</Layer>
+		</StateImagery>
+		<StateImagery name="WithFrameEnabledBackground">
+			<Layer>
+				<Section section="Frame" look="Eftihia/LightArea">
+				</Section>
+			</Layer>
+		</StateImagery>
+		<StateImagery name="WithFrameDisabledBackground">
+			<Layer>
+				<Section section="Frame" look="Eftihia/LightArea">
+				</Section>
+			</Layer>
+		</StateImagery>
+		<StateImagery name="NoFrameEnabledBackground">
+			<Layer>
+				<Section section="Frame" look="Eftihia/LightArea">
+				</Section>
+			</Layer>
+		</StateImagery>
+		<StateImagery name="NoFrameDisabledBackground">
+			<Layer>
+				<Section section="Frame" look="Eftihia/LightArea">
+				</Section>
+			</Layer>
+		</StateImagery>
+		<AnimationDefinition name="fadeIn" duration="2"
+			replayMode="once">
+			<Affector property="Alpha" interpolator="float">
+				<KeyFrame position="0.0" value="0.0" />
+				<KeyFrame position="2" value="1.0" />
+			</Affector>
+			<Affector property="Visible" interpolator="bool">
+				<KeyFrame position="1" sourceProperty="Visible" />
+				<KeyFrame position="2" value="true" progression="discrete" />
+			</Affector>
+			<Subscription event="FadeInStart" action="Start" />
+			<Subscription event="FadeInStop" action="Stop" />
+		</AnimationDefinition>
+		<AnimationDefinition name="fadeOut" duration="5"
+			replayMode="once">
+			<Affector property="Alpha" interpolator="float">
+				<KeyFrame position="4.0" value="1.0" />
+				<KeyFrame position="5" value="0.0" />
+			</Affector>
+			<Affector property="Visible" interpolator="bool">
+				<KeyFrame position="4" sourceProperty="Visible" />
+				<KeyFrame position="5" value="false" progression="discrete" />
+			</Affector>
+			<Subscription event="FadeOutStart" action="Start" />
+			<Subscription event="FadeOutStop" action="Stop" />
+		</AnimationDefinition>
+	</WidgetLook>
+
+	<WidgetLook name="Eftihia/Combobox">
+		<PropertyLinkDefinition targetProperty="NormalTextColour"
+			widget="__auto_editbox__" initialValue="FF173E8E" type="ColourRect"
+			name="NormalEditTextColour" />
+		<PropertyLinkDefinition targetProperty="SelectedTextColour"
+			widget="__auto_editbox__" initialValue="FFFFFFFF" type="ColourRect"
+			name="SelectedEditTextColour" />
+		<PropertyLinkDefinition targetProperty="ActiveSelectionColour"
+			widget="__auto_editbox__" initialValue="FF607FFF" type="ColourRect"
+			name="ActiveEditSelectionColour" />
+		<PropertyLinkDefinition targetProperty="InactiveSelectionColour"
+			widget="__auto_editbox__" initialValue="FF808080" type="ColourRect"
+			name="InactiveEditSelectionColour" />
+		<PropertyLinkDefinition targetProperty="NormalImage"
+			widget="__auto_button__" initialValue="Eftihia/ComboButtonNormal"
+			name="DropDownButtonNormalImage" />
+		<PropertyLinkDefinition targetProperty="HoverImage"
+			widget="__auto_button__" initialValue="Eftihia/ComboButtonHover"
+			name="DropDownButtonHoverImage" />
+		<PropertyLinkDefinition targetProperty="PushedImage"
+			widget="__auto_button__" initialValue="Eftihia/ComboButtonClicked"
+			name="DropDownButtonPushedImage" />
+		<Property name="Size" value="{{0, 256}, {0, 256}}" />
+		<Child nameSuffix="__auto_editbox__" type="Eftihia/EditBox">
+			<Area>
+				<Dim type="LeftEdge">
+					<AbsoluteDim value="0" />
+				</Dim>
+				<Dim type="TopEdge">
+					<AbsoluteDim value="0" />
+				</Dim>
+				<Dim type="RightEdge">
+					<OperatorDim op="Subtract">
+						<UnifiedDim scale="1" type="RightEdge" />
+						<FontDim padding="10" type="LineSpacing" />
+					</OperatorDim>
+				</Dim>
+				<Dim type="Height">
+					<FontDim padding="10" type="LineSpacing" />
+				</Dim>
+			</Area>
+		</Child>
+		<Child nameSuffix="__auto_droplist__" type="Eftihia/ComboDropList">
+			<Area>
+				<Dim type="LeftEdge">
+					<AbsoluteDim value="0" />
+				</Dim>
+				<Dim type="TopEdge">
+					<WidgetDim widget="__auto_editbox__" dimension="BottomEdge" />
+				</Dim>
+				<Dim type="Width">
+					<UnifiedDim scale="1" type="Width" />
+				</Dim>
+				<Dim type="BottomEdge">
+					<UnifiedDim scale="1" type="BottomEdge" />
+				</Dim>
+			</Area>
+		</Child>
+		<Child nameSuffix="__auto_button__" type="Eftihia/Button">
+			<Area>
+				<Dim type="LeftEdge">
+					<AbsoluteDim value="0" />
+				</Dim>
+				<Dim type="TopEdge">
+					<AbsoluteDim value="0" />
+				</Dim>
+				<Dim type="Width">
+					<WidgetDim widget="__auto_editbox__" dimension="Height" />
+				</Dim>
+				<Dim type="Height">
+					<WidgetDim widget="__auto_editbox__" dimension="Height" />
+				</Dim>
+			</Area>
+			<HorzAlignment type="RightAligned" />
+		</Child>
+		<StateImagery name="Enabled" />
+		<StateImagery name="Disabled" />
+	</WidgetLook>
+
+	<WidgetLook name="Eftihia/ComboDropList">
+		<Property name="ForceVertScrollbar" value="False" />
+		<Property name="Size" value="{{0, 256}, {0, 256}}" />
+		<NamedArea name="ItemRenderingArea">
+			<Area>
+				<Dim type="LeftEdge">
+					<ImageDim name="Eftihia/LightLeft" dimension="Width" />
+				</Dim>
+				<Dim type="TopEdge">
+					<ImageDim name="Eftihia/LightTop" dimension="Height" />
+				</Dim>
+				<Dim type="RightEdge">
+					<OperatorDim op="Subtract">
+						<UnifiedDim scale="1" type="RightEdge" />
+						<ImageDim name="Eftihia/LightRight" dimension="Width" />
+					</OperatorDim>
+				</Dim>
+				<Dim type="BottomEdge">
+					<OperatorDim op="Subtract">
+						<UnifiedDim scale="1" type="BottomEdge" />
+						<ImageDim name="Eftihia/LightBottom" dimension="Height" />
+					</OperatorDim>
+				</Dim>
+			</Area>
+		</NamedArea>
+		<NamedArea name="ItemRenderingAreaVScroll">
+			<Area>
+				<Dim type="LeftEdge">
+					<ImageDim name="Eftihia/LightLeft" dimension="Width" />
+				</Dim>
+				<Dim type="TopEdge">
+					<ImageDim name="Eftihia/LightTop" dimension="Height" />
+				</Dim>
+				<Dim type="RightEdge">
+					<OperatorDim op="Subtract">
+						<UnifiedDim scale="1" type="RightEdge" />
+						<AbsoluteDim value="30" />
+					</OperatorDim>
+				</Dim>
+				<Dim type="BottomEdge">
+					<OperatorDim op="Subtract">
+						<UnifiedDim scale="1" type="BottomEdge" />
+						<ImageDim name="Eftihia/LightBottom" dimension="Height" />
+					</OperatorDim>
+				</Dim>
+			</Area>
+		</NamedArea>
+		<NamedArea name="ItemRenderingAreaHVScroll">
+			<Area>
+				<Dim type="LeftEdge">
+					<ImageDim name="Eftihia/LightLeft" dimension="Width" />
+				</Dim>
+				<Dim type="TopEdge">
+					<ImageDim name="Eftihia/LightTop" dimension="Height" />
+				</Dim>
+				<Dim type="RightEdge">
+					<OperatorDim op="Subtract">
+						<UnifiedDim scale="1" type="RightEdge" />
+						<AbsoluteDim value="30" />
+					</OperatorDim>
+				</Dim>
+				<Dim type="BottomEdge">
+					<OperatorDim op="Subtract">
+						<UnifiedDim scale="1" type="BottomEdge" />
+						<AbsoluteDim value="30" />
+					</OperatorDim>
+				</Dim>
+			</Area>
+		</NamedArea>
+		<Child nameSuffix="__auto_hscrollbar__" type="Eftihia/HorizontalScrollbar">
+			<Area>
+				<Dim type="LeftEdge">
+					<AbsoluteDim value="5" />
+				</Dim>
+				<Dim type="TopEdge">
+					<AbsoluteDim value="-5" />
+				</Dim>
+				<Dim type="Width">
+					<UnifiedDim scale="1" type="Width" offset="-30" />
+				</Dim>
+				<Dim type="Height">
+					<AbsoluteDim value="20" />
+				</Dim>
+			</Area>
+			<VertAlignment type="BottomAligned" />
+		</Child>
+		<Child nameSuffix="__auto_vscrollbar__" type="Eftihia/VerticalScrollbar">
+			<Area>
+				<Dim type="LeftEdge">
+					<AbsoluteDim value="-5" />
+				</Dim>
+				<Dim type="TopEdge">
+					<AbsoluteDim value="5" />
+				</Dim>
+				<Dim type="Width">
+					<AbsoluteDim value="20" />
+				</Dim>
+				<Dim type="Height">
+					<UnifiedDim scale="1" type="Height" offset="-10" />
+				</Dim>
+			</Area>
+			<HorzAlignment type="RightAligned" />
+		</Child>
+		<StateImagery name="Enabled">
+			<Layer>
+				<Section section="Frame" look="Eftihia/LightArea">
+				</Section>
+			</Layer>
+		</StateImagery>
+		<StateImagery name="Disabled">
+			<Layer>
+				<Section section="Frame" look="Eftihia/LightArea">
+					<Colours topLeft="FF7F7F7F" bottomLeft="FF7F7F7F" topRight="FF7F7F7F"
+						bottomRight="FF7F7F7F" />
+				</Section>
+			</Layer>
+		</StateImagery>
+	</WidgetLook>
+
+	<WidgetLook name="Eftihia/Checkbox">
+		<PropertyDefinition redrawOnWrite="true"
+			initialValue="FF173E7E" type="ColourRect" name="NormalTextColour" />
+		<PropertyDefinition redrawOnWrite="true"
+			initialValue="FF173E7E" type="ColourRect" name="HoverTextColour" />
+		<PropertyDefinition redrawOnWrite="true"
+			initialValue="FF173E7E" type="ColourRect" name="PushedTextColour" />
+		<PropertyDefinition redrawOnWrite="true"
+			initialValue="FF7F7F7F" type="ColourRect" name="DisabledTextColour" />
+		<Property name="Size" value="{{0, 128}, {0, 32}}" />
+		<ImagerySection name="label">
+			<TextComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<OperatorDim op="Add">
+							<ImageDim name="Eftihia/CheckBoxNormal" dimension="Width" />
+							<AbsoluteDim value="3" />
+						</OperatorDim>
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="RightEdge">
+						<UnifiedDim scale="1" type="Width" />
+					</Dim>
+					<Dim type="Height">
+						<UnifiedDim scale="1" type="Height" />
+					</Dim>
+				</Area>
+				<VertFormat type="CentreAligned" />
+				<HorzFormat type="LeftAligned" />
+			</TextComponent>
+		</ImagerySection>
+		<ImagerySection name="normal">
+			<ImageryComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="Width">
+						<UnifiedDim scale="1" type="Width" />
+					</Dim>
+					<Dim type="Height">
+						<UnifiedDim scale="1" type="Height" />
+					</Dim>
+				</Area>
+				<Image name="Eftihia/CheckBoxNormal" />
+				<VertFormat type="CentreAligned" />
+				<HorzFormat type="LeftAligned" />
+			</ImageryComponent>
+		</ImagerySection>
+		<ImagerySection name="hover">
+			<ImageryComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="Width">
+						<UnifiedDim scale="1" type="Width" />
+					</Dim>
+					<Dim type="Height">
+						<UnifiedDim scale="1" type="Height" />
+					</Dim>
+				</Area>
+				<Image name="Eftihia/CheckBoxHover" />
+				<VertFormat type="CentreAligned" />
+				<HorzFormat type="LeftAligned" />
+			</ImageryComponent>
+		</ImagerySection>
+		<ImagerySection name="select_mark">
+			<ImageryComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="Width">
+						<UnifiedDim scale="1" type="Width" />
+					</Dim>
+					<Dim type="Height">
+						<UnifiedDim scale="1" type="Height" />
+					</Dim>
+				</Area>
+				<Image name="Eftihia/CheckBoxDot" />
+				<VertFormat type="CentreAligned" />
+				<HorzFormat type="LeftAligned" />
+			</ImageryComponent>
+		</ImagerySection>
+		<StateImagery name="Normal">
+			<Layer>
+				<Section section="normal" />
+				<Section section="label">
+					<ColourProperty name="NormalTextColour" />
+				</Section>
+			</Layer>
+		</StateImagery>
+		<StateImagery name="Hover">
+			<Layer>
+				<Section section="hover" />
+				<Section section="label">
+					<ColourProperty name="HoverTextColour" />
+				</Section>
+			</Layer>
+		</StateImagery>
+		<StateImagery name="Disabled">
+			<Layer>
+				<Section section="normal">
+				</Section>
+				<Section section="label">
+					<ColourProperty name="DisabledTextColour" />
+				</Section>
+			</Layer>
+		</StateImagery>
+		<StateImagery name="SelectedNormal">
+			<Layer>
+				<Section section="normal" />
+				<Section section="select_mark" />
+				<Section section="label">
+					<ColourProperty name="NormalTextColour" />
+				</Section>
+			</Layer>
+		</StateImagery>
+		<StateImagery name="SelectedHover">
+			<Layer>
+				<Section section="hover" />
+				<Section section="select_mark" />
+				<Section section="label">
+					<ColourProperty name="HoverTextColour" />
+				</Section>
+			</Layer>
+		</StateImagery>
+		<StateImagery name="SelectedDisabled">
+			<Layer>
+				<Section section="normal">
+					<Colours topLeft="FFd5e5fe" bottomLeft="FFd5e5fe" topRight="FFd5e5fe"
+						bottomRight="FFd5e5fe" />
+				</Section>
+				<Section section="select_mark">
+					<Colours topLeft="FFd5e5fe" bottomLeft="FFd5e5fe" topRight="FFd5e5fe"
+						bottomRight="FFd5e5fe" />
+				</Section>
+				<Section section="label">
+					<ColourProperty name="DisabledTextColour" />
+				</Section>
+			</Layer>
+		</StateImagery>
+	</WidgetLook>
+
+	<WidgetLook name="Eftihia/RadioButton">
+		<PropertyDefinition redrawOnWrite="true"
+			initialValue="FF173E7E" type="ColourRect" name="NormalTextColour" />
+		<PropertyDefinition redrawOnWrite="true"
+			initialValue="FF173E7E" type="ColourRect" name="HoverTextColour" />
+		<PropertyDefinition redrawOnWrite="true"
+			initialValue="FF173E7E" type="ColourRect" name="PushedTextColour" />
+		<PropertyDefinition redrawOnWrite="true"
+			initialValue="FF7F7F7F" type="ColourRect" name="DisabledTextColour" />
+		<PropertyDefinition redrawOnWrite="true"
+			initialValue="1.0" type="float" name="RadioButtonRelativeWidth" />
+		<PropertyDefinition redrawOnWrite="true"
+			initialValue="1.0" type="float" name="RadioButtonRelativeHeight" />
+		<Property name="Size" value="{{0, 256}, {0, 32}}" />
+		<ImagerySection name="label">
+			<TextComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<OperatorDim op="Add">
+							<AbsoluteDim value="3" />
+							<OperatorDim op="Multiply">
+								<ImageDim name="Eftihia/RadioNormal" dimension="Width" />
+								<PropertyDim name="RadioButtonRelativeWidth" />
+							</OperatorDim>
+						</OperatorDim>
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="RightEdge">
+						<UnifiedDim scale="1" type="Width" />
+					</Dim>
+					<Dim type="Height">
+						<UnifiedDim scale="1" type="Height" />
+					</Dim>
+				</Area>
+				<VertFormat type="CentreAligned" />
+				<HorzFormat type="LeftAligned" />
+			</TextComponent>
+		</ImagerySection>
+		<ImagerySection name="normal">
+			<ImageryComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="TopEdge">
+						<OperatorDim op="Subtract">
+							<UnifiedDim scale="0.5" type="Height" />
+							<OperatorDim op="Multiply">
+								<ImageDim name="Eftihia/RadioNormal" dimension="Height" />
+								<OperatorDim op="Multiply">
+									<PropertyDim name="RadioButtonRelativeHeight" />
+									<AbsoluteDim value="0.5" />
+								</OperatorDim>
+							</OperatorDim>
+						</OperatorDim>
+					</Dim>
+					<Dim type="Width">
+						<OperatorDim op="Multiply">
+							<ImageDim name="Eftihia/RadioNormal" dimension="Width" />
+							<PropertyDim name="RadioButtonRelativeWidth" />
+						</OperatorDim>
+					</Dim>
+					<Dim type="Height">
+						<OperatorDim op="Multiply">
+							<ImageDim name="Eftihia/RadioNormal" dimension="Height" />
+							<PropertyDim name="RadioButtonRelativeHeight" />
+						</OperatorDim>
+					</Dim>
+				</Area>
+				<Image name="Eftihia/RadioNormal" />
+				<VertFormat type="Stretched" />
+				<HorzFormat type="Stretched" />
+			</ImageryComponent>
+		</ImagerySection>
+		<ImagerySection name="hover">
+			<ImageryComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="TopEdge">
+						<OperatorDim op="Subtract">
+							<UnifiedDim scale="0.5" type="Height" />
+							<OperatorDim op="Multiply">
+								<ImageDim name="Eftihia/RadioNormal" dimension="Height" />
+								<OperatorDim op="Multiply">
+									<PropertyDim name="RadioButtonRelativeHeight" />
+									<AbsoluteDim value="0.5" />
+								</OperatorDim>
+							</OperatorDim>
+						</OperatorDim>
+					</Dim>
+					<Dim type="Width">
+						<OperatorDim op="Multiply">
+							<ImageDim name="Eftihia/RadioHover" dimension="Width" />
+							<PropertyDim name="RadioButtonRelativeWidth" />
+						</OperatorDim>
+					</Dim>
+					<Dim type="Height">
+						<OperatorDim op="Multiply">
+							<ImageDim name="Eftihia/RadioHover" dimension="Height" />
+							<PropertyDim name="RadioButtonRelativeHeight" />
+						</OperatorDim>
+					</Dim>
+				</Area>
+				<Image name="Eftihia/RadioHover" />
+				<VertFormat type="Stretched" />
+				<HorzFormat type="Stretched" />
+			</ImageryComponent>
+		</ImagerySection>
+		<ImagerySection name="select_mark">
+			<ImageryComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="TopEdge">
+						<OperatorDim op="Subtract">
+							<UnifiedDim scale="0.5" type="Height" />
+							<OperatorDim op="Multiply">
+								<ImageDim name="Eftihia/RadioNormal" dimension="Height" />
+								<OperatorDim op="Multiply">
+									<PropertyDim name="RadioButtonRelativeHeight" />
+									<AbsoluteDim value="0.5" />
+								</OperatorDim>
+							</OperatorDim>
+						</OperatorDim>
+					</Dim>
+					<Dim type="Width">
+						<OperatorDim op="Multiply">
+							<ImageDim name="Eftihia/RadioDot" dimension="Width" />
+							<PropertyDim name="RadioButtonRelativeWidth" />
+						</OperatorDim>
+					</Dim>
+					<Dim type="Height">
+						<OperatorDim op="Multiply">
+							<ImageDim name="Eftihia/RadioDot" dimension="Height" />
+							<PropertyDim name="RadioButtonRelativeHeight" />
+						</OperatorDim>
+					</Dim>
+				</Area>
+				<Image name="Eftihia/RadioDot" />
+				<VertFormat type="Stretched" />
+				<HorzFormat type="Stretched" />
+			</ImageryComponent>
+		</ImagerySection>
+		<StateImagery name="Normal">
+			<Layer>
+				<Section section="normal" />
+				<Section section="label">
+					<ColourProperty name="NormalTextColour" />
+				</Section>
+			</Layer>
+		</StateImagery>
+		<StateImagery name="Hover">
+			<Layer>
+				<Section section="hover" />
+				<Section section="label">
+					<ColourProperty name="HoverTextColour" />
+				</Section>
+			</Layer>
+		</StateImagery>
+		<StateImagery name="Disabled">
+			<Layer>
+				<Section section="normal">
+					<Colours topLeft="FF7F7F7F" bottomLeft="FF7F7F7F" topRight="FF7F7F7F"
+						bottomRight="FF7F7F7F" />
+				</Section>
+				<Section section="label">
+					<ColourProperty name="DisabledTextColour" />
+				</Section>
+			</Layer>
+		</StateImagery>
+		<StateImagery name="SelectedNormal">
+			<Layer>
+				<Section section="normal" />
+				<Section section="select_mark" />
+				<Section section="label">
+					<ColourProperty name="NormalTextColour" />
+				</Section>
+			</Layer>
+		</StateImagery>
+		<StateImagery name="SelectedHover">
+			<Layer>
+				<Section section="hover" />
+				<Section section="select_mark" />
+				<Section section="label">
+					<ColourProperty name="HoverTextColour" />
+				</Section>
+			</Layer>
+		</StateImagery>
+		<StateImagery name="SelectedDisabled">
+			<Layer>
+				<Section section="normal">
+					<Colours topLeft="FF7F7F7F" bottomLeft="FF7F7F7F" topRight="FF7F7F7F"
+						bottomRight="FF7F7F7F" />
+				</Section>
+				<Section section="select_mark">
+					<Colours topLeft="FF7F7F7F" bottomLeft="FF7F7F7F" topRight="FF7F7F7F"
+						bottomRight="FF7F7F7F" />
+				</Section>
+				<Section section="label">
+					<ColourProperty name="DisabledTextColour" />
+				</Section>
+			</Layer>
+		</StateImagery>
+	</WidgetLook>
+
+	<WidgetLook name="Eftihia/Tooltip">
+		<Property name="Size" value="{{0, 
+			128}, {0, 32}}" />
+		<NamedArea name="TextArea">
+			<Area>
+				<Dim type="LeftEdge">
+					<ImageDim name="Eftihia/ToolTipLeft" dimension="Width" />
+				</Dim>
+				<Dim type="TopEdge">
+					<ImageDim name="Eftihia/ToolTipTop" dimension="Height" />
+				</Dim>
+				<Dim type="RightEdge">
+					<OperatorDim op="Subtract">
+						<UnifiedDim scale="1" type="RightEdge" />
+						<ImageDim name="Eftihia/ToolTipRight" dimension="Width" />
+					</OperatorDim>
+				</Dim>
+				<Dim type="BottomEdge">
+					<OperatorDim op="Subtract">
+						<UnifiedDim scale="1" type="BottomEdge" />
+						<ImageDim name="Eftihia/ToolTipBottom" dimension="Height" />
+					</OperatorDim>
+				</Dim>
+			</Area>
+		</NamedArea>
+		<ImagerySection name="main">
+			<FrameComponent>
+				<Image component="TopLeftCorner" name="Eftihia/ToolTipLeft" />
+				<Image component="TopRightCorner" name="Eftihia/ToolTipTopRight" />
+				<Image component="BottomLeftCorner" name="Eftihia/ToolTipBottomLeft" />
+				<Image component="BottomRightCorner" name="Eftihia/ToolTipBottomRight" />
+				<Image component="LeftEdge" name="Eftihia/ToolTipLeft" />
+				<Image component="RightEdge" name="Eftihia/ToolTipRight" />
+				<Image component="TopEdge" name="Eftihia/ToolTipTop" />
+				<Image component="BottomEdge" name="Eftihia/ToolTipBottom" />
+				<Image component="Background" name="Eftihia/ToolTipCentre" />
+			</FrameComponent>
+		</ImagerySection>
+		<ImagerySection name="label">
+			<TextComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<ImageDim name="Eftihia/ToolTipLeft" dimension="Width" />
+					</Dim>
+					<Dim type="TopEdge">
+						<ImageDim name="Eftihia/ToolTipTop" dimension="Height" />
+					</Dim>
+					<Dim type="RightEdge">
+						<OperatorDim op="Subtract">
+							<UnifiedDim scale="1" type="RightEdge" />
+							<ImageDim name="Eftihia/ToolTipRight" dimension="Width" />
+						</OperatorDim>
+					</Dim>
+					<Dim type="BottomEdge">
+						<OperatorDim op="Subtract">
+							<UnifiedDim scale="1" type="BottomEdge" />
+							<ImageDim name="Eftihia/ToolTipBottom" dimension="Height" />
+						</OperatorDim>
+					</Dim>
+				</Area>
+				<VertFormat type="CentreAligned" />
+				<HorzFormat type="LeftAligned" />
+			</TextComponent>
+		</ImagerySection>
+		<StateImagery name="Enabled">
+			<Layer>
+				<Section section="main" />
+				<Section section="label" />
+			</Layer>
+		</StateImagery>
+		<StateImagery name="Disabled">
+			<Layer>
+				<Section section="main" />
+				<Section section="label" />
+			</Layer>
+		</StateImagery>
+		<AnimationDefinition name="FadeIn" duration="0.33"
+			replayMode="once">
+			<Affector property="Alpha" interpolator="float">
+				<KeyFrame position="0" sourceProperty="Alpha" />
+				<KeyFrame position="0.33" value="1" progression="linear" />
+			</Affector>
+			<Affector property="Position" interpolator="UVector2"
+				applicationMethod="relative">
+				<KeyFrame position="0" value="{{0,12},{0,0}}" />
+			</Affector>
+			<Subscription event="TooltipActive" action="Start" />
+		</AnimationDefinition>
+		<AnimationDefinition name="FadeOut" duration="0.33"
+			replayMode="once">
+			<Affector property="Alpha" interpolator="float">
+				<KeyFrame position="0" sourceProperty="Alpha" />
+				<KeyFrame position="0.33" value="0" progression="linear" />
+			</Affector>
+			<Affector property="Visible" interpolator="bool">
+				<KeyFrame position="0" sourceProperty="Visible" />
+				<KeyFrame position="0.33" value="false" progression="discrete" />
+			</Affector>
+			<Subscription event="TooltipInactive" action="Start" />
+		</AnimationDefinition>
+
+	</WidgetLook>
+
+	<WidgetLook name="Eftihia/MenuButton">
+		<PropertyDefinition redrawOnWrite="true"
+			initialValue="FFE7E7FC" type="ColourRect" name="NormalTextColour" />
+		<PropertyDefinition redrawOnWrite="true"
+			initialValue="FFE7E7FC" type="ColourRect" name="HoverTextColour" />
+		<PropertyDefinition redrawOnWrite="true"
+			initialValue="FFE7E7FC" type="ColourRect" name="PushedTextColour" />
+		<PropertyDefinition redrawOnWrite="true"
+			initialValue="FF888888" type="ColourRect" name="DisabledTextColour" />
+		<PropertyDefinition redrawOnWrite="true"
+			initialValue="True" type="bool" name="UseStandardImagery" />
+		<PropertyDefinition redrawOnWrite="true"
+			initialValue="" type="Image" name="NormalImage" />
+		<PropertyDefinition redrawOnWrite="true"
+			initialValue="" type="Image" name="HoverImage" />
+		<PropertyDefinition redrawOnWrite="true"
+			initialValue="" type="Image" name="PushedImage" />
+		<PropertyDefinition redrawOnWrite="true"
+			initialValue="Stretched" type="VerticalFormatting" name="VertImageFormatting" />
+		<PropertyDefinition redrawOnWrite="true"
+			initialValue="Stretched" type="HorizontalFormatting" name="HorzImageFormatting" />
+		<Property name="WantsMultiClickEvents" value="False" />
+		<Property name="Size" value="{{0, 183}, {0, 73}}" />
+		<ImagerySection name="label">
+			<TextComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="RightEdge">
+						<UnifiedDim scale="1" type="RightEdge" />
+					</Dim>
+					<Dim type="BottomEdge">
+						<UnifiedDim scale="1" type="BottomEdge" />
+					</Dim>
+				</Area>
+				<VertFormat type="CentreAligned" />
+				<HorzFormat type="WordWrapCentreAligned" />
+			</TextComponent>
+		</ImagerySection>
+		<ImagerySection name="normal_image">
+			<ImageryComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="Width">
+						<UnifiedDim scale="1" type="Width" />
+					</Dim>
+					<Dim type="Height">
+						<UnifiedDim scale="1" type="Height" />
+					</Dim>
+				</Area>
+				<Image name="MainMenuImages/ButtonNormal" />
+				<VertFormatProperty name="VertImageFormatting" />
+				<HorzFormatProperty name="HorzImageFormatting" />
+			</ImageryComponent>
+		</ImagerySection>
+		<ImagerySection name="hover_image">
+			<ImageryComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="2" />
+					</Dim>
+					<Dim type="Width">
+						<UnifiedDim scale="1" type="Width" />
+					</Dim>
+					<Dim type="Height">
+						<UnifiedDim scale="1" type="Height" />
+					</Dim>
+				</Area>
+				<Image name="MainMenuImages/ButtonHover" />
+				<VertFormatProperty name="VertImageFormatting" />
+				<HorzFormatProperty name="HorzImageFormatting" />
+			</ImageryComponent>
+		</ImagerySection>
+		<ImagerySection name="pushed_image">
+			<ImageryComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="Width">
+						<UnifiedDim scale="1" type="Width" />
+					</Dim>
+					<Dim type="Height">
+						<UnifiedDim scale="1" type="Height" />
+					</Dim>
+				</Area>
+				<Image name="MainMenuImages/ButtonHover" />
+				<VertFormatProperty name="VertImageFormatting" />
+				<HorzFormatProperty name="HorzImageFormatting" />
+			</ImageryComponent>
+		</ImagerySection>
+		<StateImagery name="Normal">
+			<Layer>
+				<Section section="normal_image" />
+				<Section section="label">
+					<ColourProperty name="NormalTextColour" />
+				</Section>
+			</Layer>
+		</StateImagery>
+		<StateImagery name="Hover">
+			<Layer>
+				<Section section="hover_image" />
+				<Section section="label">
+					<ColourProperty name="HoverTextColour" />
+				</Section>
+			</Layer>
+		</StateImagery>
+		<StateImagery name="Pushed">
+			<Layer>
+				<Section section="pushed_image" />
+				<Section section="label">
+					<ColourProperty name="PushedTextColour" />
+				</Section>
+			</Layer>
+		</StateImagery>
+		<StateImagery name="Disabled">
+			<Layer>
+				<Section section="normal_image">
+				</Section>
+				<Section section="label">
+					<ColourProperty name="DisabledTextColour" />
+				</Section>
+			</Layer>
+		</StateImagery>
+	</WidgetLook>
+
+
+	<WidgetLook name="Eftihia/MultiLineEditboxTransp">
+		<PropertyDefinition redrawOnWrite="true"
+			initialValue="FFd5e5fe" type="ColourRect" name="ReadOnlyBGColour" />
+		<PropertyDefinition redrawOnWrite="true"
+			initialValue="FF173E7E" type="ColourRect" name="NormalTextColour" />
+		<PropertyDefinition redrawOnWrite="true"
+			initialValue="FF607FFF" type="ColourRect" name="ActiveSelectionColour" />
+		<PropertyDefinition redrawOnWrite="true"
+			initialValue="FF808080" type="ColourRect" name="InactiveSelectionColour" />
+		<Property name="SelectionBrushImage" value="Eftihia/LightCentre" />
+		<Property name="Size" value="{{0, 128}, {0, 128}}" />
+		<NamedArea name="TextArea">
+			<Area>
+				<Dim type="LeftEdge">
+					<ImageDim name="Eftihia/LightLeft" dimension="Width" />
+				</Dim>
+				<Dim type="TopEdge">
+					<ImageDim name="Eftihia/LightTop" dimension="Height" />
+				</Dim>
+				<Dim type="RightEdge">
+					<OperatorDim op="Subtract">
+						<UnifiedDim scale="1" type="RightEdge" />
+						<ImageDim name="Eftihia/LightRight" dimension="Width" />
+					</OperatorDim>
+				</Dim>
+				<Dim type="BottomEdge">
+					<OperatorDim op="Subtract">
+						<UnifiedDim scale="1" type="BottomEdge" />
+						<ImageDim name="Eftihia/LightBottom" dimension="Height" />
+					</OperatorDim>
+				</Dim>
+			</Area>
+		</NamedArea>
+		<NamedArea name="TextAreaHScroll">
+			<Area>
+				<Dim type="LeftEdge">
+					<ImageDim name="Eftihia/LightLeft" dimension="Width" />
+				</Dim>
+				<Dim type="TopEdge">
+					<ImageDim name="Eftihia/LightTop" dimension="Height" />
+				</Dim>
+				<Dim type="RightEdge">
+					<OperatorDim op="Subtract">
+						<UnifiedDim scale="1" type="RightEdge" />
+						<ImageDim name="Eftihia/LightRight" dimension="Width" />
+					</OperatorDim>
+				</Dim>
+				<Dim type="BottomEdge">
+					<OperatorDim op="Subtract">
+						<UnifiedDim scale="1" type="BottomEdge" />
+						<OperatorDim op="Add">
+							<ImageDim name="Eftihia/LightBottom" dimension="Height" />
+							<WidgetDim widget="__auto_hscrollbar__" dimension="Height" />
+						</OperatorDim>
+					</OperatorDim>
+				</Dim>
+			</Area>
+		</NamedArea>
+		<NamedArea name="TextAreaVScroll">
+			<Area>
+				<Dim type="LeftEdge">
+					<ImageDim name="Eftihia/LightLeft" dimension="Width" />
+				</Dim>
+				<Dim type="TopEdge">
+					<ImageDim name="Eftihia/LightTop" dimension="Height" />
+				</Dim>
+				<Dim type="RightEdge">
+					<OperatorDim op="Subtract">
+						<UnifiedDim scale="1" type="RightEdge" />
+						<OperatorDim op="Add">
+							<ImageDim name="Eftihia/LightRight" dimension="Width" />
+							<WidgetDim widget="__auto_vscrollbar__" dimension="Width" />
+						</OperatorDim>
+					</OperatorDim>
+				</Dim>
+				<Dim type="BottomEdge">
+					<OperatorDim op="Subtract">
+						<UnifiedDim scale="1" type="BottomEdge" />
+						<ImageDim name="Eftihia/LightBottom" dimension="Height" />
+					</OperatorDim>
+				</Dim>
+			</Area>
+		</NamedArea>
+		<NamedArea name="TextAreaHVScroll">
+			<Area>
+				<Dim type="LeftEdge">
+					<ImageDim name="Eftihia/LightLeft" dimension="Width" />
+				</Dim>
+				<Dim type="TopEdge">
+					<ImageDim name="Eftihia/LightTop" dimension="Height" />
+				</Dim>
+				<Dim type="RightEdge">
+					<OperatorDim op="Subtract">
+						<UnifiedDim scale="1" type="RightEdge" />
+						<OperatorDim op="Add">
+							<ImageDim name="Eftihia/LightRight" dimension="Width" />
+							<WidgetDim widget="__auto_vscrollbar__" dimension="Width" />
+						</OperatorDim>
+					</OperatorDim>
+				</Dim>
+				<Dim type="BottomEdge">
+					<OperatorDim op="Subtract">
+						<UnifiedDim scale="1" type="BottomEdge" />
+						<OperatorDim op="Add">
+							<ImageDim name="Eftihia/LightBottom" dimension="Height" />
+							<WidgetDim widget="__auto_hscrollbar__" dimension="Height" />
+						</OperatorDim>
+					</OperatorDim>
+				</Dim>
+			</Area>
+		</NamedArea>
+		<Child nameSuffix="__auto_hscrollbar__" type="Eftihia/HorizontalScrollbar">
+			<Area>
+				<Dim type="LeftEdge">
+					<AbsoluteDim value="5" />
+				</Dim>
+				<Dim type="TopEdge">
+					<AbsoluteDim value="-5" />
+				</Dim>
+				<Dim type="Width">
+					<UnifiedDim scale="1" type="Width" offset="-25" />
+				</Dim>
+				<Dim type="Height">
+					<AbsoluteDim value="20" />
+				</Dim>
+			</Area>
+			<VertAlignment type="BottomAligned" />
+		</Child>
+		<Child nameSuffix="__auto_vscrollbar__" type="Eftihia/VerticalScrollbar">
+			<Area>
+				<Dim type="LeftEdge">
+					<AbsoluteDim value="-5" />
+				</Dim>
+				<Dim type="TopEdge">
+					<AbsoluteDim value="5" />
+				</Dim>
+				<Dim type="Width">
+					<AbsoluteDim value="20" />
+				</Dim>
+				<Dim type="Height">
+					<UnifiedDim scale="1" type="Height" offset="-10" />
+				</Dim>
+			</Area>
+			<HorzAlignment type="RightAligned" />
+		</Child>
+		<ImagerySection name="Caret">
+			<ImageryComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="Width">
+						<AbsoluteDim value="2" />
+					</Dim>
+					<Dim type="BottomEdge">
+						<UnifiedDim scale="1.0" type="BottomEdge" />
+					</Dim>
+				</Area>
+				<Image name="Eftihia/LightCentre" />
+				<Colours topLeft="FF2222FF" bottomLeft="FF2222FF" topRight="FF2222FF"
+					bottomRight="FF2222FF" />
+				<VertFormat type="Stretched" />
+				<HorzFormat type="Stretched" />
+			</ImageryComponent>
+		</ImagerySection>
+		<StateImagery name="Enabled">
+			<Layer>
+				<!--<Section section="Frame" look="" /> -->
+			</Layer>
+		</StateImagery>
+		<StateImagery name="ReadOnly">
+			<Layer>
+				<!--<Section section="Frame" look="" /> -->
+			</Layer>
+		</StateImagery>
+		<StateImagery name="Disabled">
+			<Layer>
+				<!--<Section section="Frame" look="" /> -->
+			</Layer>
+		</StateImagery>
+	</WidgetLook>
+
+	<WidgetLook name="Eftihia/Listbox">
+		<Property name="ForceVertScrollbar" value="False" />
+		<Property name="Size" value="{{0, 256}, {0, 256}}" />
+		<NamedArea name="ItemRenderingArea">
+			<Area>
+				<Dim type="LeftEdge">
+					<ImageDim name="Eftihia/LightLeft" dimension="Width" />
+				</Dim>
+				<Dim type="TopEdge">
+					<ImageDim name="Eftihia/LightTop" dimension="Height" />
+				</Dim>
+				<Dim type="RightEdge">
+					<OperatorDim op="Subtract">
+						<UnifiedDim scale="1" type="RightEdge" />
+						<ImageDim name="Eftihia/LightRight" dimension="Width" />
+					</OperatorDim>
+				</Dim>
+				<Dim type="BottomEdge">
+					<OperatorDim op="Subtract">
+						<UnifiedDim scale="1" type="BottomEdge" />
+						<ImageDim name="Eftihia/LightBottom" dimension="Height" />
+					</OperatorDim>
+				</Dim>
+			</Area>
+		</NamedArea>
+		<Child nameSuffix="__auto_hscrollbar__" type="Eftihia/HorizontalScrollbar">
+			<Area>
+				<Dim type="LeftEdge">
+					<AbsoluteDim value="5" />
+				</Dim>
+				<Dim type="TopEdge">
+					<AbsoluteDim value="-5" />
+				</Dim>
+				<Dim type="Width">
+					<UnifiedDim scale="1" type="Width" offset="-25" />
+				</Dim>
+				<Dim type="Height">
+					<AbsoluteDim value="20" />
+				</Dim>
+			</Area>
+			<VertAlignment type="BottomAligned" />
+		</Child>
+		<Child nameSuffix="__auto_vscrollbar__" type="Eftihia/VerticalScrollbar">
+			<Area>
+				<Dim type="LeftEdge">
+					<AbsoluteDim value="-5" />
+				</Dim>
+				<Dim type="TopEdge">
+					<AbsoluteDim value="5" />
+				</Dim>
+				<Dim type="Width">
+					<AbsoluteDim value="20" />
+				</Dim>
+				<Dim type="Height">
+					<UnifiedDim scale="1" type="Height" offset="-10" />
+				</Dim>
+			</Area>
+			<HorzAlignment type="RightAligned" />
+		</Child>
+		<StateImagery name="Enabled">
+			<Layer>
+				<Section section="Frame" look="Eftihia/LightArea">
+					<!-- <Colours topLeft="FF7F7F7F" bottomLeft="FF7F7F7F" topRight="FF7F7F7F" 
+						bottomRight="FF7F7F7F"/> -->
+				</Section>
+			</Layer>
+		</StateImagery>
+		<StateImagery name="Disabled">
+			<Layer>
+				<Section section="Frame" look="Eftihia/LightArea">
+					<Colours topLeft="FF7F7F7F" bottomLeft="FF7F7F7F" topRight="FF7F7F7F"
+						bottomRight="FF7F7F7F" />
+				</Section>
+			</Layer>
+		</StateImagery>
+	</WidgetLook>
+
+	<WidgetLook name="Eftihia/ListboxTranspBG">
+		<Property name="ForceVertScrollbar" value="False" />
+		<Property name="Size" value="{{0, 256}, {0, 256}}" />
+		<NamedArea name="ItemRenderingArea">
+			<Area>
+				<Dim type="LeftEdge">
+					<ImageDim name="Eftihia/TranspLeft" dimension="Width" />
+				</Dim>
+				<Dim type="TopEdge">
+					<ImageDim name="Eftihia/TranspTop" dimension="Height" />
+				</Dim>
+				<Dim type="RightEdge">
+					<OperatorDim op="Subtract">
+						<UnifiedDim scale="1" type="RightEdge" />
+						<ImageDim name="Eftihia/TranspRight" dimension="Width" />
+					</OperatorDim>
+				</Dim>
+				<Dim type="BottomEdge">
+					<OperatorDim op="Subtract">
+						<UnifiedDim scale="1" type="BottomEdge" />
+						<ImageDim name="Eftihia/TranspBottom" dimension="Height" />
+					</OperatorDim>
+				</Dim>
+			</Area>
+		</NamedArea>
+		<Child nameSuffix="__auto_hscrollbar__" type="Eftihia/HorizontalScrollbar">
+			<Area>
+				<Dim type="LeftEdge">
+					<AbsoluteDim value="5" />
+				</Dim>
+				<Dim type="TopEdge">
+					<AbsoluteDim value="-5" />
+				</Dim>
+				<Dim type="Width">
+					<UnifiedDim scale="1" type="Width" offset="-25" />
+				</Dim>
+				<Dim type="Height">
+					<AbsoluteDim value="20" />
+				</Dim>
+			</Area>
+			<VertAlignment type="BottomAligned" />
+		</Child>
+		<Child nameSuffix="__auto_vscrollbar__" type="Eftihia/VerticalScrollbar">
+			<Area>
+				<Dim type="LeftEdge">
+					<AbsoluteDim value="-5" />
+				</Dim>
+				<Dim type="TopEdge">
+					<AbsoluteDim value="5" />
+				</Dim>
+				<Dim type="Width">
+					<AbsoluteDim value="20" />
+				</Dim>
+				<Dim type="Height">
+					<UnifiedDim scale="1" type="Height" offset="-10" />
+				</Dim>
+			</Area>
+			<HorzAlignment type="RightAligned" />
+		</Child>
+		<StateImagery name="Enabled">
+			<Layer>
+				<Section section="Frame" look="Eftihia/TranspBG">
+					<!-- <Colours topLeft="FF7F7F7F" bottomLeft="FF7F7F7F" topRight="FF7F7F7F" 
+						bottomRight="FF7F7F7F"/> -->
+				</Section>
+			</Layer>
+		</StateImagery>
+		<StateImagery name="Disabled">
+			<Layer>
+				<Section section="Frame" look="Eftihia/TranspBG">
+					<Colours topLeft="FF7F7F7F" bottomLeft="FF7F7F7F" topRight="FF7F7F7F"
+						bottomRight="FF7F7F7F" />
+				</Section>
+			</Layer>
+		</StateImagery>
+	</WidgetLook>
+
+
+	<WidgetLook name="Eftihia/HealthBar">
+		<Property name="Size" value="{{0, 256}, {0, 32}}" />
+		<NamedArea name="ProgressArea">
+			<Area>
+				<Dim type="LeftEdge">
+					<AbsoluteDim value="2" />
+				</Dim>
+				<Dim type="TopEdge">
+					<AbsoluteDim value="2" />
+				</Dim>
+				<Dim type="RightEdge">
+					<OperatorDim op="Subtract">
+						<UnifiedDim scale="1" type="RightEdge" />
+						<AbsoluteDim value="1" />
+					</OperatorDim>
+				</Dim>
+				<Dim type="BottomEdge">
+					<OperatorDim op="Subtract">
+						<UnifiedDim scale="1" type="BottomEdge" />
+						<AbsoluteDim value="2" />
+					</OperatorDim>
+				</Dim>
+			</Area>
+		</NamedArea>
+		<ImagerySection name="frame">
+			<FrameComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="Width">
+						<UnifiedDim scale="1" type="Width" />
+					</Dim>
+					<Dim type="Height">
+						<UnifiedDim scale="1" type="Height" />
+					</Dim>
+				</Area>
+				<Image component="TopLeftCorner" name="Gameplay/HealthBar_TopLeft" />
+				<Image component="TopRightCorner" name="Gameplay/HealthBar_TopRight" />
+				<Image component="BottomLeftCorner" name="Gameplay/HealthBar_BottomLeft" />
+				<Image component="BottomRightCorner" name="Gameplay/HealthBar_BottomRight" />
+				<Image component="LeftEdge" name="Gameplay/HealthBar_Left" />
+				<Image component="TopEdge" name="Gameplay/HealthBar_Top" />
+				<Image component="RightEdge" name="Gameplay/HealthBar_Right" />
+				<Image component="BottomEdge" name="Gameplay/HealthBar_Bottom" />
+				<Image component="Background" name="Gameplay/HealthBar_Centre" />
+			</FrameComponent>
+		</ImagerySection>
+		<ImagerySection name="progress">
+			<FrameComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="Width">
+						<OperatorDim op="Multiply">
+							<UnifiedDim scale="1" type="Width" />
+							<PropertyDim name="CurrentProgress" />
+						</OperatorDim>
+					</Dim>
+					<Dim type="Height">
+						<UnifiedDim scale="1" type="Height" />
+					</Dim>
+				</Area>
+				<Image component="TopLeftCorner" name="Gameplay/HealthBarFill_TopLeft" />
+				<Image component="TopRightCorner" name="Gameplay/HealthBarFill_TopRight" />
+				<Image component="BottomLeftCorner" name="Gameplay/HealthBarFill_BottomLeft" />
+				<Image component="BottomRightCorner" name="Gameplay/HealthBarFill_BottomRight" />
+				<Image component="LeftEdge" name="Gameplay/HealthBarFill_Left" />
+				<Image component="TopEdge" name="Gameplay/HealthBarFill_Top" />
+				<Image component="RightEdge" name="Gameplay/HealthBarFill_Right" />
+				<Image component="BottomEdge" name="Gameplay/HealthBarFill_Bottom" />
+				<Image component="Background" name="Gameplay/HealthBarFill_Centre" />
+			</FrameComponent>
+		</ImagerySection>
+		<StateImagery name="Enabled">
+			<Layer>
+				<Section section="frame" />
+			</Layer>
+		</StateImagery>
+		<StateImagery name="Disabled">
+			<Layer>
+				<Section section="frame" />
+			</Layer>
+		</StateImagery>
+		<StateImagery name="EnabledProgress">
+			<Layer>
+				<Section section="progress" />
+			</Layer>
+		</StateImagery>
+		<StateImagery name="DisabledProgress">
+			<Layer>
+				<Section section="progress" />
+			</Layer>
+		</StateImagery>
+	</WidgetLook>
+
+
+	<WidgetLook name="Eftihia/ManaBar">
+		<Property name="Size" value="{{0, 256}, {0, 32}}" />
+		<NamedArea name="ProgressArea">
+			<Area>
+				<Dim type="LeftEdge">
+					<AbsoluteDim value="2" />
+				</Dim>
+				<Dim type="TopEdge">
+					<AbsoluteDim value="2" />
+				</Dim>
+				<Dim type="RightEdge">
+					<OperatorDim op="Subtract">
+						<UnifiedDim scale="1" type="RightEdge" />
+						<AbsoluteDim value="1" />
+					</OperatorDim>
+				</Dim>
+				<Dim type="BottomEdge">
+					<OperatorDim op="Subtract">
+						<UnifiedDim scale="1" type="BottomEdge" />
+						<AbsoluteDim value="2" />
+					</OperatorDim>
+				</Dim>
+			</Area>
+		</NamedArea>
+		<ImagerySection name="frame">
+			<FrameComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="Width">
+						<UnifiedDim scale="1" type="Width" />
+					</Dim>
+					<Dim type="Height">
+						<UnifiedDim scale="1" type="Height" />
+					</Dim>
+				</Area>
+				<Image component="TopLeftCorner" name="Gameplay/ManaBar_TopLeft" />
+				<Image component="TopRightCorner" name="Gameplay/ManaBar_TopRight" />
+				<Image component="BottomLeftCorner" name="Gameplay/ManaBar_BottomLeft" />
+				<Image component="BottomRightCorner" name="Gameplay/ManaBar_BottomRight" />
+				<Image component="LeftEdge" name="Gameplay/ManaBar_Left" />
+				<Image component="TopEdge" name="Gameplay/ManaBar_Top" />
+				<Image component="RightEdge" name="Gameplay/ManaBar_Right" />
+				<Image component="BottomEdge" name="Gameplay/ManaBar_Bottom" />
+				<Image component="Background" name="Gameplay/ManaBar_Centre" />
+			</FrameComponent>
+		</ImagerySection>
+		<ImagerySection name="progress">
+			<FrameComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="Width">
+						<OperatorDim op="Multiply">
+							<UnifiedDim scale="1" type="Width" />
+							<PropertyDim name="CurrentProgress" />
+						</OperatorDim>
+					</Dim>
+					<Dim type="Height">
+						<UnifiedDim scale="1" type="Height" />
+					</Dim>
+				</Area>
+				<Image component="TopLeftCorner" name="Gameplay/ManaBarFill_TopLeft" />
+				<Image component="TopRightCorner" name="Gameplay/ManaBarFill_TopRight" />
+				<Image component="BottomLeftCorner" name="Gameplay/ManaBarFill_BottomLeft" />
+				<Image component="BottomRightCorner" name="Gameplay/ManaBarFill_BottomRight" />
+				<Image component="LeftEdge" name="Gameplay/ManaBarFill_Left" />
+				<Image component="TopEdge" name="Gameplay/ManaBarFill_Top" />
+				<Image component="RightEdge" name="Gameplay/ManaBarFill_Right" />
+				<Image component="BottomEdge" name="Gameplay/ManaBarFill_Bottom" />
+				<Image component="Background" name="Gameplay/ManaBarFill_Centre" />
+			</FrameComponent>
+		</ImagerySection>
+		<StateImagery name="Enabled">
+			<Layer>
+				<Section section="frame" />
+			</Layer>
+		</StateImagery>
+		<StateImagery name="Disabled">
+			<Layer>
+				<Section section="frame" />
+			</Layer>
+		</StateImagery>
+		<StateImagery name="EnabledProgress">
+			<Layer>
+				<Section section="progress" />
+			</Layer>
+		</StateImagery>
+		<StateImagery name="DisabledProgress">
+			<Layer>
+				<Section section="progress" />
+			</Layer>
+		</StateImagery>
+	</WidgetLook>
+
+
+	<WidgetLook name="Eftihia/XPBar">
+		<Property name="Size" value="{{0, 256}, {0, 32}}" />
+		<NamedArea name="ProgressArea">
+			<Area>
+				<Dim type="LeftEdge">
+					<AbsoluteDim value="2" />
+				</Dim>
+				<Dim type="TopEdge">
+					<AbsoluteDim value="2" />
+				</Dim>
+				<Dim type="RightEdge">
+					<OperatorDim op="Subtract">
+						<UnifiedDim scale="1" type="RightEdge" />
+						<AbsoluteDim value="1" />
+					</OperatorDim>
+				</Dim>
+				<Dim type="BottomEdge">
+					<OperatorDim op="Subtract">
+						<UnifiedDim scale="1" type="BottomEdge" />
+						<AbsoluteDim value="2" />
+					</OperatorDim>
+				</Dim>
+			</Area>
+		</NamedArea>
+		<ImagerySection name="frame">
+			<FrameComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="Width">
+						<UnifiedDim scale="1" type="Width" />
+					</Dim>
+					<Dim type="Height">
+						<UnifiedDim scale="1" type="Height" />
+					</Dim>
+				</Area>
+				<Image component="TopLeftCorner" name="Gameplay/XPBar_TopLeft" />
+				<Image component="TopRightCorner" name="Gameplay/XPBar_TopRight" />
+				<Image component="BottomLeftCorner" name="Gameplay/XPBar_BottomLeft" />
+				<Image component="BottomRightCorner" name="Gameplay/XPBar_BottomRight" />
+				<Image component="LeftEdge" name="Gameplay/XPBar_Left" />
+				<Image component="TopEdge" name="Gameplay/XPBar_Top" />
+				<Image component="RightEdge" name="Gameplay/XPBar_Right" />
+				<Image component="BottomEdge" name="Gameplay/XPBar_Bottom" />
+				<Image component="Background" name="Gameplay/XPBar_Centre" />
+			</FrameComponent>
+		</ImagerySection>
+		<ImagerySection name="progress">
+			<FrameComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="Width">
+						<OperatorDim op="Multiply">
+							<UnifiedDim scale="1" type="Width" />
+							<PropertyDim name="CurrentProgress" />
+						</OperatorDim>
+					</Dim>
+					<Dim type="Height">
+						<UnifiedDim scale="1" type="Height" />
+					</Dim>
+				</Area>
+				<Image component="TopLeftCorner" name="Gameplay/XPBarFill_TopLeft" />
+				<Image component="TopRightCorner" name="Gameplay/XPBarFill_TopRight" />
+				<Image component="BottomLeftCorner" name="Gameplay/XPBarFill_BottomLeft" />
+				<Image component="BottomRightCorner" name="Gameplay/XPBarFill_BottomRight" />
+				<Image component="LeftEdge" name="Gameplay/XPBarFill_Left" />
+				<Image component="TopEdge" name="Gameplay/XPBarFill_Top" />
+				<Image component="RightEdge" name="Gameplay/XPBarFill_Right" />
+				<Image component="BottomEdge" name="Gameplay/XPBarFill_Bottom" />
+				<Image component="Background" name="Gameplay/XPBarFill_Centre" />
+			</FrameComponent>
+		</ImagerySection>
+		<StateImagery name="Enabled">
+			<Layer>
+				<Section section="frame" />
+			</Layer>
+		</StateImagery>
+		<StateImagery name="Disabled">
+			<Layer>
+				<Section section="frame" />
+			</Layer>
+		</StateImagery>
+		<StateImagery name="EnabledProgress">
+			<Layer>
+				<Section section="progress" />
+			</Layer>
+		</StateImagery>
+		<StateImagery name="DisabledProgress">
+			<Layer>
+				<Section section="progress" />
+			</Layer>
+		</StateImagery>
+	</WidgetLook>
+
+
+	<WidgetLook name="Eftihia/AltHealthBar">
+		<Property name="Size" value="{{0, 256}, {0, 16}}" />
+		<NamedArea name="ProgressArea">
+			<Area>
+				<Dim type="LeftEdge">
+					<AbsoluteDim value="0" />
+				</Dim>
+				<Dim type="TopEdge">
+					<AbsoluteDim value="0" />
+				</Dim>
+				<Dim type="RightEdge">
+					<UnifiedDim scale="1" type="RightEdge" />
+				</Dim>
+				<Dim type="BottomEdge">
+					<UnifiedDim scale="1" type="BottomEdge" />
+				</Dim>
+			</Area>
+		</NamedArea>
+		<ImagerySection name="frame">
+			<FrameComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="Width">
+						<UnifiedDim scale="1" type="Width" />
+					</Dim>
+					<Dim type="Height">
+						<UnifiedDim scale="1" type="Height" />
+					</Dim>
+				</Area>
+				<Image component="TopLeftCorner" name="Gameplay/AltHealthBar_TopLeft" />
+				<Image component="TopRightCorner" name="Gameplay/AltHealthBar_TopRight" />
+				<Image component="BottomLeftCorner" name="Gameplay/AltHealthBar_BottomLeft" />
+				<Image component="BottomRightCorner" name="Gameplay/AltHealthBar_BottomRight" />
+				<Image component="LeftEdge" name="Gameplay/AltHealthBar_Left" />
+				<Image component="TopEdge" name="Gameplay/AltHealthBar_Top" />
+				<Image component="RightEdge" name="Gameplay/AltHealthBar_Right" />
+				<Image component="BottomEdge" name="Gameplay/AltHealthBar_Bottom" />
+				<Image component="Background" name="Gameplay/AltHealthBar_Centre" />
+			</FrameComponent>
+		</ImagerySection>
+		<ImagerySection name="progress">
+			<FrameComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="Width">
+						<OperatorDim op="Multiply">
+							<UnifiedDim scale="1" type="Width" />
+							<PropertyDim name="CurrentProgress" />
+						</OperatorDim>
+					</Dim>
+					<Dim type="Height">
+						<UnifiedDim scale="1" type="Height" />
+					</Dim>
+				</Area>
+				<Image component="TopLeftCorner" name="Gameplay/AltHealthBarFill_TopLeft" />
+				<Image component="TopRightCorner" name="Gameplay/AltHealthBarFill_TopRight" />
+				<Image component="BottomLeftCorner" name="Gameplay/AltHealthBarFill_BottomLeft" />
+				<Image component="BottomRightCorner" name="Gameplay/AltHealthBarFill_BottomRight" />
+				<Image component="LeftEdge" name="Gameplay/AltHealthBarFill_Left" />
+				<Image component="TopEdge" name="Gameplay/AltHealthBarFill_Top" />
+				<Image component="RightEdge" name="Gameplay/AltHealthBarFill_Right" />
+				<Image component="BottomEdge" name="Gameplay/AltHealthBarFill_Bottom" />
+				<Image component="Background" name="Gameplay/AltHealthBarFill_Centre" />
+			</FrameComponent>
+		</ImagerySection>
+		<StateImagery name="Enabled">
+			<Layer>
+				<Section section="frame" />
+			</Layer>
+		</StateImagery>
+		<StateImagery name="Disabled">
+			<Layer>
+				<Section section="frame" />
+			</Layer>
+		</StateImagery>
+		<StateImagery name="EnabledProgress">
+			<Layer>
+				<Section section="progress" />
+			</Layer>
+		</StateImagery>
+		<StateImagery name="DisabledProgress">
+			<Layer>
+				<Section section="progress" />
+			</Layer>
+		</StateImagery>
+	</WidgetLook>
+
+
+	<WidgetLook name="Eftihia/BlueFrame">
+		<ImagerySection name="Frame">
+			<FrameComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="RightEdge">
+						<UnifiedDim scale="1" type="RightEdge" />
+					</Dim>
+					<Dim type="BottomEdge">
+						<UnifiedDim scale="1" type="BottomEdge" />
+					</Dim>
+				</Area>
+				<Image component="TopLeftCorner" name="Gameplay/Avatar_TopLeft" />
+				<Image component="TopRightCorner" name="Gameplay/Avatar_TopRight" />
+				<Image component="BottomLeftCorner" name="Gameplay/Avatar_BottomLeft" />
+				<Image component="BottomRightCorner" name="Gameplay/Avatar_BottomRight" />
+				<Image component="LeftEdge" name="Gameplay/Avatar_Left" />
+				<Image component="TopEdge" name="Gameplay/Avatar_Top" />
+				<Image component="RightEdge" name="Gameplay/Avatar_Right" />
+				<Image component="BottomEdge" name="Gameplay/Avatar_Bottom" />
+				<Image component="Background" name="Gameplay/Avatar_Centre" />
+			</FrameComponent>
+		</ImagerySection>
+	</WidgetLook>
+
+
+	<WidgetLook name="Efthia/AvatarBox">
+		<PropertyDefinition redrawOnWrite="true"
+			initialValue="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" type="ColourRect"
+			name="ImageColours" />
+		<PropertyDefinition redrawOnWrite="true"
+			initialValue="Stretched" type="VerticalFormatting" name="VertFormatting" />
+		<PropertyDefinition redrawOnWrite="true"
+			initialValue="Stretched" type="HorizontalFormatting" name="HorzFormatting" />
+		<Property name="BackgroundEnabled" value="True" />
+		<Property name="FrameEnabled" value="True" />
+		<Property name="Size" value="{{0, 128}, {0, 128}}" />
+		<ImagerySection name="image_withframe">
+			<ImageryComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<ImageDim name="Gameplay/Avatar_Left" dimension="Width" />
+					</Dim>
+					<Dim type="TopEdge">
+						<ImageDim name="Gameplay/Avatar_Top" dimension="Height" />
+					</Dim>
+					<Dim type="RightEdge">
+						<OperatorDim op="Subtract">
+							<UnifiedDim scale="1" type="RightEdge" />
+							<ImageDim name="Gameplay/Avatar_Right" dimension="Width" />
+						</OperatorDim>
+					</Dim>
+					<Dim type="BottomEdge">
+						<OperatorDim op="Subtract">
+							<UnifiedDim scale="1" type="BottomEdge" />
+							<ImageDim name="Gameplay/Avatar_Bottom" dimension="Height" />
+						</OperatorDim>
+					</Dim>
+				</Area>
+				<ImageProperty name="Image" />
+				<ColourRectProperty name="ImageColours" />
+				<VertFormatProperty name="VertFormatting" />
+				<HorzFormatProperty name="HorzFormatting" />
+			</ImageryComponent>
+		</ImagerySection>
+		<ImagerySection name="image_noframe">
+			<ImageryComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="RightEdge">
+						<UnifiedDim scale="1.0" type="RightEdge" />
+					</Dim>
+					<Dim type="BottomEdge">
+						<UnifiedDim scale="1.0" type="BottomEdge" />
+					</Dim>
+				</Area>
+				<ImageProperty name="Image" />
+				<ColourRectProperty name="ImageColours" />
+				<VertFormatProperty name="VertFormatting" />
+				<HorzFormatProperty name="HorzFormatting" />
+			</ImageryComponent>
+		</ImagerySection>
+		<StateImagery name="Enabled" />
+		<StateImagery name="Disabled" />
+		<StateImagery name="EnabledFrame">
+			<Layer>
+				<Section section="Frame" look="Eftihia/BlueFrame">
+				</Section>
+			</Layer>
+		</StateImagery>
+		<StateImagery name="DisabledFrame">
+			<Layer>
+				<Section section="Frame" look="Eftihia/BlueFrame">
+					<Colours topLeft="FFb7cdf4" bottomLeft="FFb7cdf4" topRight="FFb7cdf4"
+						bottomRight="FFb7cdf4" />
+				</Section>
+			</Layer>
+		</StateImagery>
+		<StateImagery name="WithFrameEnabledBackground">
+			<Layer>
+				<Section section="Frame" look="Eftihia/BlueFrame">
+				</Section>
+			</Layer>
+		</StateImagery>
+		<StateImagery name="WithFrameDisabledBackground">
+			<Layer>
+				<Section section="Frame" look="Eftihia/BlueFrame">
+				</Section>
+			</Layer>
+		</StateImagery>
+		<StateImagery name="NoFrameEnabledBackground">
+			<Layer>
+				<Section section="Frame" look="Eftihia/BlueFrame">
+				</Section>
+			</Layer>
+		</StateImagery>
+		<StateImagery name="NoFrameDisabledBackground">
+			<Layer>
+				<Section section="Frame" look="Eftihia/BlueFrame">
+				</Section>
+			</Layer>
+		</StateImagery>
+		<StateImagery name="WithFrameImage">
+			<Layer>
+				<Section section="image_withframe" />
+			</Layer>
+		</StateImagery>
+		<StateImagery name="NoFrameImage">
+			<Layer>
+				<Section section="image_noframe" />
+			</Layer>
+		</StateImagery>
+		<AnimationDefinition name="fadeIn" duration="2"
+			replayMode="once">
+			<Affector property="Alpha" interpolator="float">
+				<KeyFrame position="0.0" value="0.0" />
+				<KeyFrame position="2" value="1.0" />
+			</Affector>
+		</AnimationDefinition>
+		<AnimationDefinition name="fadeOut" duration="2"
+			replayMode="once">
+			<Affector property="Alpha" interpolator="float">
+				<KeyFrame position="0.0" value="1.0" />
+				<KeyFrame position="2" value="0.0" />
+			</Affector>
+		</AnimationDefinition>
+	</WidgetLook>
+
+	<WidgetLook name="Eftihia/SkillFrame">
+		<ImagerySection name="Frame">
+			<FrameComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="RightEdge">
+						<UnifiedDim scale="1" type="RightEdge" />
+					</Dim>
+					<Dim type="BottomEdge">
+						<UnifiedDim scale="1" type="BottomEdge" />
+					</Dim>
+				</Area>
+				<Image component="TopLeftCorner" name="Gameplay/Skill_TopLeft" />
+				<Image component="TopRightCorner" name="Gameplay/Skill_TopRight" />
+				<Image component="BottomLeftCorner" name="Gameplay/Skill_BottomLeft" />
+				<Image component="BottomRightCorner" name="Gameplay/Skill_BottomRight" />
+				<Image component="LeftEdge" name="Gameplay/Skill_Left" />
+				<Image component="TopEdge" name="Gameplay/Skill_Top" />
+				<Image component="RightEdge" name="Gameplay/Skill_Right" />
+				<Image component="BottomEdge" name="Gameplay/Skill_Bottom" />
+				<Image component="Background" name="Gameplay/Skill_Centre" />
+			</FrameComponent>
+		</ImagerySection>
+	</WidgetLook>
+
+	<WidgetLook name="Efthia/DragableIcon">
+		<Property name="Size" value="{{0, 64}, {0, 64}}" />
+		<PropertyDefinition redrawOnWrite="true"
+			initialValue="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" type="ColourRect"
+			name="ImageColours" />
+		<PropertyDefinition redrawOnWrite="true"
+			initialValue="FF888888" type="ColourRect" name="DisabledTextColour" />
+		<PropertyDefinition redrawOnWrite="true"
+			initialValue="Stretched" type="VerticalFormatting" name="VertFormatting" />
+		<PropertyDefinition redrawOnWrite="true"
+			initialValue="Stretched" type="HorizontalFormatting" name="HorzFormatting" />
+		<Property name="BackgroundEnabled" value="True" />
+		<Property name="FrameEnabled" value="True" />
+
+		<Child nameSuffix="Progress" type="Eftihia/CooldownProgress">
+			<Property name="CurrentProgress" value="0" />
+			<Property name="MousePassThroughEnabled" value="True" />
+			<Property name="VerticalProgress" value="True" />
+			<Area>
+				<Dim type="LeftEdge">
+					<AbsoluteDim value="0" />
+				</Dim>
+				<Dim type="TopEdge">
+					<AbsoluteDim value="0" />
+				</Dim>
+				<Dim type="Width">
+					<UnifiedDim scale="1" type="Width" />
+				</Dim>
+				<Dim type="Height">
+					<UnifiedDim scale="1" type="Height" />
+				</Dim>
+			</Area>
+		</Child>
+		<ImagerySection name="image_withframe">
+			<ImageryComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<ImageDim name="Gameplay/Skill_Left" dimension="Width" />
+					</Dim>
+					<Dim type="TopEdge">
+						<ImageDim name="Gameplay/Skill_Top" dimension="Height" />
+					</Dim>
+					<Dim type="RightEdge">
+						<OperatorDim op="Subtract">
+							<UnifiedDim scale="1" type="RightEdge" />
+							<ImageDim name="Gameplay/Skill_Right" dimension="Width" />
+						</OperatorDim>
+					</Dim>
+					<Dim type="BottomEdge">
+						<OperatorDim op="Subtract">
+							<UnifiedDim scale="1" type="BottomEdge" />
+							<ImageDim name="Gameplay/Skill_Bottom" dimension="Height" />
+						</OperatorDim>
+					</Dim>
+				</Area>
+				<ImageProperty name="Image" />
+				<ColourRectProperty name="ImageColours" />
+				<VertFormatProperty name="VertFormatting" />
+				<HorzFormatProperty name="HorzFormatting" />
+			</ImageryComponent>
+		</ImagerySection>
+		<ImagerySection name="image_noframe">
+			<ImageryComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="RightEdge">
+						<UnifiedDim scale="1.0" type="RightEdge" />
+					</Dim>
+					<Dim type="BottomEdge">
+						<UnifiedDim scale="1.0" type="BottomEdge" />
+					</Dim>
+				</Area>
+				<ImageProperty name="Image" />
+				<ColourRectProperty name="ImageColours" />
+				<VertFormatProperty name="VertFormatting" />
+				<HorzFormatProperty name="HorzFormatting" />
+			</ImageryComponent>
+		</ImagerySection>
+		<StateImagery name="Enabled" />
+		<StateImagery name="Disabled" />
+		<StateImagery name="EnabledFrame">
+			<Layer>
+				<Section section="Frame" look="Eftihia/SkillFrame">
+				</Section>
+			</Layer>
+		</StateImagery>
+		<StateImagery name="DisabledFrame">
+			<Layer>
+				<Section section="Frame" look="Eftihia/SkillFrame">
+					<Colours topLeft="FFb7cdf4" bottomLeft="FFb7cdf4" topRight="FFb7cdf4"
+						bottomRight="FFb7cdf4" />
+				</Section>
+			</Layer>
+		</StateImagery>
+		<StateImagery name="WithFrameEnabledBackground">
+			<Layer>
+				<Section section="Frame" look="Eftihia/SkillFrame">
+				</Section>
+			</Layer>
+		</StateImagery>
+		<StateImagery name="WithFrameDisabledBackground">
+			<Layer>
+				<Section section="Frame" look="Eftihia/SkillFrame">
+				</Section>
+			</Layer>
+		</StateImagery>
+		<StateImagery name="NoFrameEnabledBackground">
+			<Layer>
+				<Section section="Frame" look="Eftihia/SkillFrame">
+				</Section>
+			</Layer>
+		</StateImagery>
+		<StateImagery name="NoFrameDisabledBackground">
+			<Layer>
+				<Section section="Frame" look="Eftihia/SkillFrame">
+					<Colours topLeft="FFb7cdf4" bottomLeft="FFb7cdf4" topRight="FFb7cdf4"
+						bottomRight="FFb7cdf4" />
+				</Section>
+			</Layer>
+		</StateImagery>
+		<StateImagery name="WithFrameImage">
+			<Layer>
+				<Section section="image_withframe" />
+			</Layer>
+		</StateImagery>
+		<StateImagery name="NoFrameImage">
+			<Layer>
+				<Section section="image_noframe" />
+			</Layer>
+		</StateImagery>
+	</WidgetLook>
+
+
+	<WidgetLook name="Eftihia/CooldownProgress">
+		<Property name="Size" value="{{1, 0}, {1, 0}}" />
+		<NamedArea name="ProgressArea">
+			<Area>
+				<Dim type="LeftEdge">
+					<AbsoluteDim value="2" />
+				</Dim>
+				<Dim type="TopEdge">
+					<AbsoluteDim value="2" />
+				</Dim>
+				<Dim type="RightEdge">
+					<OperatorDim op="Subtract">
+						<UnifiedDim scale="1" type="RightEdge" />
+						<AbsoluteDim value="1" />
+					</OperatorDim>
+				</Dim>
+				<Dim type="BottomEdge">
+					<OperatorDim op="Subtract">
+						<UnifiedDim scale="1" type="BottomEdge" />
+						<AbsoluteDim value="2" />
+					</OperatorDim>
+				</Dim>
+			</Area>
+		</NamedArea>
+		<ImagerySection name="frame">
+			<FrameComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="Width">
+						<UnifiedDim scale="1" type="Width" />
+					</Dim>
+					<Dim type="Height">
+						<UnifiedDim scale="1" type="Height" />
+					</Dim>
+				</Area>
+			</FrameComponent>
+		</ImagerySection>
+		<ImagerySection name="progress">
+			<FrameComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="Width">
+						<UnifiedDim scale="1" type="Width" />
+					</Dim>
+					<Dim type="Height">
+						<UnifiedDim scale="1" type="Height" />
+					</Dim>
+				</Area>
+				<Image component="TopLeftCorner" name="Eftihia/ToolTipCentre" />
+				<Image component="TopRightCorner" name="Eftihia/ToolTipCentre" />
+				<Image component="BottomLeftCorner" name="Eftihia/ToolTipCentre" />
+				<Image component="BottomRightCorner" name="Eftihia/ToolTipCentre" />
+				<Image component="LeftEdge" name="Eftihia/ToolTipCentre" />
+				<Image component="TopEdge" name="Eftihia/ToolTipCentre" />
+				<Image component="RightEdge" name="Eftihia/ToolTipCentre" />
+				<Image component="BottomEdge" name="Eftihia/ToolTipCentre" />
+				<Image component="Background" name="Eftihia/ToolTipCentre" />
+			</FrameComponent>
+		</ImagerySection>
+		<StateImagery name="Enabled">
+			<Layer>
+				<Section section="frame" />
+			</Layer>
+		</StateImagery>
+		<StateImagery name="Disabled">
+			<Layer>
+				<Section section="frame" />
+			</Layer>
+		</StateImagery>
+		<StateImagery name="EnabledProgress">
+			<Layer>
+				<Section section="progress" />
+			</Layer>
+		</StateImagery>
+		<StateImagery name="DisabledProgress">
+			<Layer>
+				<Section section="progress" />
+			</Layer>
+		</StateImagery>
+	</WidgetLook>
+
+	<WidgetLook name="Eftihia/QuestTrack">
+		<Property name="Size" value="{{0, 225}, {0, 71}}" />
+		<Child nameSuffix="Name" type="Eftihia/StaticText">
+			<Area>
+				<Dim type="LeftEdge">
+					<AbsoluteDim value="0" />
+				</Dim>
+				<Dim type="TopEdge">
+					<AbsoluteDim value="0" />
+				</Dim>
+				<Dim type="RightEdge">
+					<AbsoluteDim value="225" />
+				</Dim>
+				<Dim type="BottomEdge">
+					<AbsoluteDim value="26.5" />
+				</Dim>
+			</Area>
+			<Property name="Text" value="Όνομα" />
+			<Property name="AlwaysOnTop" value="True" />
+			<Property name="TextColours"
+				value="tl:FF1C5C93 tr:FF1C5C93 bl:FF1C5C93 br:FF1C5C93" />
+			<Property name="HorzScrollPageSize" value="215" />
+			<Property name="VertScrollPageSize" value="11" />
+			<Property name="HorzScrollDocumentSize" value="41" />
+			<Property name="VertScrollDocumentSize" value="14.9408" />
+		</Child>
+		<Child nameSuffix="Objectives" type="Eftihia/Listbox">
+			<Area>
+				<Dim type="LeftEdge">
+					<AbsoluteDim value="15" />
+				</Dim>
+				<Dim type="TopEdge">
+					<AbsoluteDim value="21.5" />
+				</Dim>
+				<Dim type="RightEdge">
+					<AbsoluteDim value="225" />
+				</Dim>
+				<Dim type="BottomEdge">
+					<AbsoluteDim value="71.5" />
+				</Dim>
+			</Area>
+		</Child>
+		<StateImagery name="Enabled">
+			<Layer>
+			</Layer>
+		</StateImagery>
+		<StateImagery name="Disabled">
+			<Layer>
+			</Layer>
+		</StateImagery>
+	</WidgetLook>
+
+	<WidgetLook name="Eftihia/ItemText">
+		<PropertyDefinition redrawOnWrite="true"
+			initialValue="FF173E8E" type="Colour" name="NormalTextColour" />
+		<PropertyDefinition redrawOnWrite="true"
+			initialValue="FFDDDDDD" type="Colour" name="DisabledTextColour" />
+		<PropertyDefinition redrawOnWrite="true"
+			initialValue="CentreAligned" type="VerticalTextFormatting" name="VertFormatting" />
+		<PropertyDefinition redrawOnWrite="true"
+			initialValue="CentreAligned" type="HorizontalTextFormatting" name="HorzFormatting" />
+		<Property name="Size" value="{{0, 128}, {0, 24}}" />
+		<ImagerySection name="Label">
+			<TextComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="RightEdge">
+						<UnifiedDim scale="1" type="RightEdge" />
+					</Dim>
+					<Dim type="BottomEdge">
+						<UnifiedDim scale="1" type="BottomEdge" />
+					</Dim>
+				</Area>
+				<VertFormat type="CentreAligned" />
+				<HorzFormat type="WordWrapCentreAligned" />
+			</TextComponent>
+		</ImagerySection>
+		<ImagerySection name="Bg">
+			<FrameComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="Width">
+						<UnifiedDim scale="1" type="Width" />
+					</Dim>
+					<Dim type="Height">
+						<UnifiedDim scale="1" type="Height" />
+					</Dim>
+				</Area>
+				<Image component="TopLeftCorner" name="Eftihia/ToolTipTopLeft" />
+				<Image component="TopRightCorner" name="Eftihia/ToolTipTopRight" />
+				<Image component="BottomLeftCorner" name="Eftihia/ToolTipBottomLeft" />
+				<Image component="BottomRightCorner" name="Eftihia/ToolTipBottomRight" />
+				<Image component="LeftEdge" name="Eftihia/ToolTipLeft" />
+				<Image component="TopEdge" name="Eftihia/ToolTipTop" />
+				<Image component="RightEdge" name="Eftihia/ToolTipRight" />
+				<Image component="BottomEdge" name="Eftihia/ToolTipBottom" />
+				<Image component="Background" name="Eftihia/ToolTipCentre" />
+			</FrameComponent>
+		</ImagerySection>
+		<StateImagery name="Enabled">
+			<Layer>
+				<Section section="Bg"></Section>
+				<Section section="Label">
+					<ColourProperty name="NormalTextColour" />
+				</Section>
+			</Layer>
+		</StateImagery>
+		<StateImagery name="Disabled">
+			<Layer>
+				<Section section="Bg"></Section>
+				<Section section="Label">
+					<ColourProperty name="DisabledTextColour" />
+				</Section>
+			</Layer>
+		</StateImagery>
+	</WidgetLook>
+
+	<WidgetLook name="Eftihia/TreeIcon">
+		<Property name="Size" value="{{0, 64}, {0, 64}}" />
+		<PropertyDefinition redrawOnWrite="true"
+			initialValue="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" type="ColourRect"
+			name="ImageColours" />
+		<PropertyDefinition redrawOnWrite="true"
+			initialValue="FF888888" type="ColourRect" name="DisabledTextColour" />
+		<PropertyDefinition redrawOnWrite="true"
+			initialValue="Stretched" type="VerticalFormatting" name="VertFormatting" />
+		<PropertyDefinition redrawOnWrite="true"
+			initialValue="Stretched" type="HorizontalFormatting" name="HorzFormatting" />
+		<Property name="BackgroundEnabled" value="True" />
+		<Property name="FrameEnabled" value="True" />
+
+		<ImagerySection name="Label">
+			<TextComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="40" />
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="40" />
+					</Dim>
+					<Dim type="RightEdge">
+						<AbsoluteDim value="60" />
+					</Dim>
+					<Dim type="BottomEdge">
+						<AbsoluteDim value="60" />
+					</Dim>
+				</Area>
+			</TextComponent>
+		</ImagerySection>
+		<ImagerySection name="image_withframe">
+			<ImageryComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<ImageDim name="Gameplay/Skill_Left" dimension="Width" />
+					</Dim>
+					<Dim type="TopEdge">
+						<ImageDim name="Gameplay/Skill_Top" dimension="Height" />
+					</Dim>
+					<Dim type="RightEdge">
+						<OperatorDim op="Subtract">
+							<UnifiedDim scale="1" type="RightEdge" />
+							<ImageDim name="Gameplay/Skill_Right" dimension="Width" />
+						</OperatorDim>
+					</Dim>
+					<Dim type="BottomEdge">
+						<OperatorDim op="Subtract">
+							<UnifiedDim scale="1" type="BottomEdge" />
+							<ImageDim name="Gameplay/Skill_Bottom" dimension="Height" />
+						</OperatorDim>
+					</Dim>
+				</Area>
+				<ImageProperty name="Image" />
+				<ColourRectProperty name="ImageColours" />
+				<VertFormatProperty name="VertFormatting" />
+				<HorzFormatProperty name="HorzFormatting" />
+			</ImageryComponent>
+		</ImagerySection>
+		<ImagerySection name="image_noframe">
+			<ImageryComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="RightEdge">
+						<UnifiedDim scale="1.0" type="RightEdge" />
+					</Dim>
+					<Dim type="BottomEdge">
+						<UnifiedDim scale="1.0" type="BottomEdge" />
+					</Dim>
+				</Area>
+				<ImageProperty name="Image" />
+				<ColourRectProperty name="ImageColours" />
+				<VertFormatProperty name="VertFormatting" />
+				<HorzFormatProperty name="HorzFormatting" />
+			</ImageryComponent>
+		</ImagerySection>
+		<StateImagery name="Enabled" />
+		<StateImagery name="Disabled" />
+		<StateImagery name="EnabledFrame">
+			<Layer>
+				<Section section="Frame" look="Eftihia/SkillFrame">
+				</Section>
+				<Section section="Label" />
+			</Layer>
+		</StateImagery>
+		<StateImagery name="DisabledFrame">
+			<Layer>
+				<Section section="Frame" look="Eftihia/SkillFrame">
+					<Colours topLeft="FFb7cdf4" bottomLeft="FFb7cdf4" topRight="FFb7cdf4"
+						bottomRight="FFb7cdf4" />
+				</Section>
+				<Section section="Label" />
+			</Layer>
+		</StateImagery>
+		<StateImagery name="WithFrameEnabledBackground">
+			<Layer>
+				<Section section="Frame" look="Eftihia/SkillFrame">
+				</Section>
+				<Section section="Label" />
+			</Layer>
+		</StateImagery>
+		<StateImagery name="WithFrameDisabledBackground">
+			<Layer>
+				<Section section="Frame" look="Eftihia/SkillFrame">
+				</Section>
+				<Section section="Label" />
+			</Layer>
+		</StateImagery>
+		<StateImagery name="NoFrameEnabledBackground">
+			<Layer>
+				<Section section="Frame" look="Eftihia/SkillFrame">
+				</Section>
+				<Section section="Label" />
+			</Layer>
+		</StateImagery>
+		<StateImagery name="NoFrameDisabledBackground">
+			<Layer>
+				<Section section="Frame" look="Eftihia/SkillFrame">
+					<Colours topLeft="FFb7cdf4" bottomLeft="FFb7cdf4" topRight="FFb7cdf4"
+						bottomRight="FFb7cdf4" />
+				</Section>
+				<Section section="Label" />
+			</Layer>
+		</StateImagery>
+		<StateImagery name="WithFrameImage">
+			<Layer>
+				<Section section="image_withframe" />
+				<Section section="Label" />
+			</Layer>
+		</StateImagery>
+		<StateImagery name="NoFrameImage">
+			<Layer>
+				<Section section="image_noframe" />
+				<Section section="Label" />
+			</Layer>
+		</StateImagery>
+	</WidgetLook>
+
+	<WidgetLook name="Eftihia/Alt3HealthBar">
+		<Property name="Size" value="{{0, 256}, {0, 16}}" />
+		<NamedArea name="ProgressArea">
+			<Area>
+				<Dim type="LeftEdge">
+					<AbsoluteDim value="0" />
+				</Dim>
+				<Dim type="TopEdge">
+					<AbsoluteDim value="0" />
+				</Dim>
+				<Dim type="RightEdge">
+					<UnifiedDim scale="1" type="RightEdge" />
+				</Dim>
+				<Dim type="BottomEdge">
+					<UnifiedDim scale="1" type="BottomEdge" />
+				</Dim>
+			</Area>
+		</NamedArea>
+		<ImagerySection name="frame">
+			<FrameComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="Width">
+						<UnifiedDim scale="1" type="Width" />
+					</Dim>
+					<Dim type="Height">
+						<UnifiedDim scale="1" type="Height" />
+					</Dim>
+				</Area>
+				<Image component="TopLeftCorner" name="Gameplay/Alt3Progress_TopLeft" />
+				<Image component="TopRightCorner" name="Gameplay/Alt3Progress_TopRight" />
+				<Image component="BottomLeftCorner" name="Gameplay/Alt3Progress_BottomLeft" />
+				<Image component="BottomRightCorner" name="Gameplay/Alt3Progress_BottomRight" />
+				<Image component="LeftEdge" name="Gameplay/Alt3Progress_Left" />
+				<Image component="TopEdge" name="Gameplay/Alt3Progress_Top" />
+				<Image component="RightEdge" name="Gameplay/Alt3Progress_Right" />
+				<Image component="BottomEdge" name="Gameplay/Alt3Progress_Bottom" />
+				<Image component="Background" name="Gameplay/Alt3Progress_Centre" />
+			</FrameComponent>
+		</ImagerySection>
+		<ImagerySection name="progress">
+			<FrameComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="1" />
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="1" />
+					</Dim>
+					<Dim type="Width">
+						<OperatorDim op="Multiply">
+							<UnifiedDim scale="1" type="Width" />
+							<PropertyDim name="CurrentProgress" />
+						</OperatorDim>
+					</Dim>
+					<Dim type="Height">
+						<OperatorDim op="Subtract">
+							<UnifiedDim scale="1" type="Height" />
+							<AbsoluteDim value="2" />
+						</OperatorDim>
+					</Dim>
+				</Area>
+				<Image component="TopLeftCorner" name="Gameplay/Alt3Fill_TopLeft" />
+				<Image component="TopRightCorner" name="Gameplay/Alt3Fill_TopRight" />
+				<Image component="BottomLeftCorner" name="Gameplay/Alt3Fill_BottomLeft" />
+				<Image component="BottomRightCorner" name="Gameplay/Alt3Fill_BottomRight" />
+				<Image component="LeftEdge" name="Gameplay/Alt3Fill_Left" />
+				<Image component="TopEdge" name="Gameplay/Alt3Fill_Top" />
+				<Image component="RightEdge" name="Gameplay/Alt3Fill_Right" />
+				<Image component="BottomEdge" name="Gameplay/Alt3Fill_Bottom" />
+				<Image component="Background" name="Gameplay/Alt3Fill_Centre" />
+			</FrameComponent>
+		</ImagerySection>
+		<StateImagery name="Enabled">
+			<Layer>
+				<Section section="frame" />
+			</Layer>
+		</StateImagery>
+		<StateImagery name="Disabled">
+			<Layer>
+				<Section section="frame" />
+			</Layer>
+		</StateImagery>
+		<StateImagery name="EnabledProgress">
+			<Layer>
+				<Section section="progress" />
+			</Layer>
+		</StateImagery>
+		<StateImagery name="DisabledProgress">
+			<Layer>
+				<Section section="progress" />
+			</Layer>
+		</StateImagery>
+	</WidgetLook>
+
+	<WidgetLook name="Eftihia/UnitFrame">
+		<Property name="Size" value="{{0, 150}, {0, 21}}" />
+		<Property name="Image" value="Gameplay/Plate" />
+		<Property name="FrameEnabled" value="False" />
+		<Property name="BackgroundEnabled" value="False" />
+		<PropertyDefinition redrawOnWrite="true"
+			initialValue="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" type="ColourRect"
+			name="ImageColours" />
+		<PropertyDefinition redrawOnWrite="true"
+			initialValue="FF888888" type="ColourRect" name="DisabledTextColour" />
+		<PropertyDefinition redrawOnWrite="true"
+			initialValue="Stretched" type="VerticalFormatting" name="VertFormatting" />
+		<PropertyDefinition redrawOnWrite="true"
+			initialValue="Stretched" type="HorizontalFormatting" name="HorzFormatting" />
+		<Child nameSuffix="Name" type="Eftihia/Label">
+			<Area>
+				<Dim type="LeftEdge">
+					<AbsoluteDim value="0" />
+				</Dim>
+				<Dim type="TopEdge">
+					<AbsoluteDim value="0" />
+				</Dim>
+				<Dim type="RightEdge">
+					<AbsoluteDim value="120" />
+				</Dim>
+				<Dim type="BottomEdge">
+					<AbsoluteDim value="13" />
+				</Dim>
+			</Area>
+			<Property name="Text" value="Hells Chicken" />
+			<Property name="Font" value="Ubuntu-10" />
+			<Property name="MousePassThroughEnabled" value="True" />
+		</Child>
+		<Child nameSuffix="Level" type="Eftihia/Label">
+			<Area>
+				<Dim type="LeftEdge">
+					<AbsoluteDim value="125" />
+				</Dim>
+				<Dim type="TopEdge">
+					<AbsoluteDim value="-0.5" />
+				</Dim>
+				<Dim type="RightEdge">
+					<AbsoluteDim value="145" />
+				</Dim>
+				<Dim type="BottomEdge">
+					<AbsoluteDim value="19.25" />
+				</Dim>
+			</Area>
+			<Property name="Font" value="Ubuntu-12" />
+			<Property name="Text" value="99" />
+			<Property name="VerticalAlignment" value="Centre" />
+			<Property name="MousePassThroughEnabled" value="True" />
+		</Child>
+		<Child nameSuffix="Health" type="Eftihia/Alt3HealthBar">
+			<Area>
+				<Dim type="LeftEdge">
+					<AbsoluteDim value="0" />
+				</Dim>
+				<Dim type="TopEdge">
+					<AbsoluteDim value="0" />
+				</Dim>
+				<Dim type="RightEdge">
+					<AbsoluteDim value="120.25" />
+				</Dim>
+				<Dim type="BottomEdge">
+					<AbsoluteDim value="8" />
+				</Dim>
+			</Area>
+			<Property name="MousePassThroughEnabled" value="True" />
+			<Property name="VerticalAlignment" value="Bottom" />
+		</Child>
+		<ImagerySection name="image_withframe">
+			<ImageryComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="RightEdge">
+						<AbsoluteDim value="150" />
+					</Dim>
+					<Dim type="BottomEdge">
+						<AbsoluteDim value="21" />
+					</Dim>
+				</Area>
+				<ImageProperty name="Image" />
+				<ColourRectProperty name="ImageColours" />
+				<VertFormatProperty name="VertFormatting" />
+				<HorzFormatProperty name="HorzFormatting" />
+			</ImageryComponent>
+		</ImagerySection>
+		<ImagerySection name="image_noframe">
+			<ImageryComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="RightEdge">
+						<AbsoluteDim value="150" />
+					</Dim>
+					<Dim type="BottomEdge">
+						<AbsoluteDim value="21" />
+					</Dim>
+				</Area>
+				<ImageProperty name="Image" />
+				<ColourRectProperty name="ImageColours" />
+				<VertFormatProperty name="VertFormatting" />
+				<HorzFormatProperty name="HorzFormatting" />
+			</ImageryComponent>
+		</ImagerySection>
+		<StateImagery name="Enabled" />
+		<StateImagery name="Disabled" />
+		<StateImagery name="EnabledFrame">
+			<Layer>
+				<Section section="image_withframe" />
+			</Layer>
+		</StateImagery>
+		<StateImagery name="DisabledFrame">
+			<Layer>
+				<Section section="image_withframe" />
+			</Layer>
+		</StateImagery>
+		<StateImagery name="WithFrameEnabledBackground">
+			<Layer>
+				<Section section="image_withframe" />
+			</Layer>
+		</StateImagery>
+		<StateImagery name="WithFrameDisabledBackground">
+			<Layer>
+				<Section section="image_withframe" />
+			</Layer>
+		</StateImagery>
+		<StateImagery name="NoFrameEnabledBackground">
+			<Layer>
+				<Section section="image_withframe" />
+			</Layer>
+		</StateImagery>
+		<StateImagery name="NoFrameDisabledBackground">
+			<Layer>
+				<Section section="image_withframe" />
+			</Layer>
+		</StateImagery>
+		<StateImagery name="WithFrameImage">
+			<Layer>
+				<Section section="image_withframe" />
+			</Layer>
+		</StateImagery>
+		<StateImagery name="NoFrameImage">
+			<Layer>
+				<Section section="image_noframe" />
+
+			</Layer>
+		</StateImagery>
+	</WidgetLook>
+
+</Falagard>

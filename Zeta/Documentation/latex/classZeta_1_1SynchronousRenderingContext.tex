@@ -1,0 +1,148 @@
+\hypertarget{classZeta_1_1SynchronousRenderingContext}{\section{Zeta\+:\+:Synchronous\+Rendering\+Context$<$ Display\+T $>$ Class Template Reference}
+\label{classZeta_1_1SynchronousRenderingContext}\index{Zeta\+::\+Synchronous\+Rendering\+Context$<$ Display\+T $>$@{Zeta\+::\+Synchronous\+Rendering\+Context$<$ Display\+T $>$}}
+}
+
+
+{\ttfamily \#include $<$Synchronous\+Rendering\+Context.\+hpp$>$}
+
+
+
+Inheritance diagram for Zeta\+:\+:Synchronous\+Rendering\+Context$<$ Display\+T $>$\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=222pt]{classZeta_1_1SynchronousRenderingContext__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Zeta\+:\+:Synchronous\+Rendering\+Context$<$ Display\+T $>$\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=222pt]{classZeta_1_1SynchronousRenderingContext__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classZeta_1_1Display}{Display} \& \hyperlink{classZeta_1_1SynchronousRenderingContext_afaa2ed7e145e76c86cfc8b2a2758ee84}{get\+Display} ()
+\item 
+void \hyperlink{classZeta_1_1SynchronousRenderingContext_a7bf5cc95e195b09df8d75f75e771115a}{add\+Operation\+To\+Queue} (\hyperlink{classZeta_1_1ContextOperation}{Context\+Operation}$<$ \hyperlink{classZeta_1_1RenderingContext}{Rendering\+Context} $>$ \&operation)
+\item 
+void \hyperlink{classZeta_1_1SynchronousRenderingContext_afe8b238d3302e2bdb0f2fcc0735c24e3}{execute\+Operations} ()
+\item 
+\hyperlink{classZeta_1_1SynchronousRenderingContext_a9e871f9f8f8c4a55657dbc816f75ee63}{Synchronous\+Rendering\+Context} ()
+\item 
+\hyperlink{classZeta_1_1SynchronousRenderingContext_a74ac76c14c19a5645c24c68cd3195f1f}{$\sim$\+Synchronous\+Rendering\+Context} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::mutex \hyperlink{classZeta_1_1SynchronousRenderingContext_a9d7b048e2278ca9878847e053fb57f44}{mutex}
+\item 
+Display\+T \hyperlink{classZeta_1_1SynchronousRenderingContext_a6c95c3ec9d5089710d48fb5a3ef3f7a6}{display}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename Display\+T$>$class Zeta\+::\+Synchronous\+Rendering\+Context$<$ Display\+T $>$}
+
+Template for creating Synchronous Rendering Contexts The Synchronous Contexts are the ones that run on the same thread they are created The template parameter is the Class that will create the \hyperlink{classZeta_1_1Display}{Display} \hyperlink{classZeta_1_1Object}{Object} 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classZeta_1_1SynchronousRenderingContext_a9e871f9f8f8c4a55657dbc816f75ee63}{\index{Zeta\+::\+Synchronous\+Rendering\+Context@{Zeta\+::\+Synchronous\+Rendering\+Context}!Synchronous\+Rendering\+Context@{Synchronous\+Rendering\+Context}}
+\index{Synchronous\+Rendering\+Context@{Synchronous\+Rendering\+Context}!Zeta\+::\+Synchronous\+Rendering\+Context@{Zeta\+::\+Synchronous\+Rendering\+Context}}
+\subsubsection[{Synchronous\+Rendering\+Context}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Display\+T $>$ {\bf Zeta\+::\+Synchronous\+Rendering\+Context}$<$ Display\+T $>$\+::{\bf Synchronous\+Rendering\+Context} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1SynchronousRenderingContext_a9e871f9f8f8c4a55657dbc816f75ee63}
+Default Constructor Upon Creation, the Class will create a \hyperlink{classZeta_1_1Object}{Object} defined by the Template Argument \hypertarget{classZeta_1_1SynchronousRenderingContext_a74ac76c14c19a5645c24c68cd3195f1f}{\index{Zeta\+::\+Synchronous\+Rendering\+Context@{Zeta\+::\+Synchronous\+Rendering\+Context}!````~Synchronous\+Rendering\+Context@{$\sim$\+Synchronous\+Rendering\+Context}}
+\index{````~Synchronous\+Rendering\+Context@{$\sim$\+Synchronous\+Rendering\+Context}!Zeta\+::\+Synchronous\+Rendering\+Context@{Zeta\+::\+Synchronous\+Rendering\+Context}}
+\subsubsection[{$\sim$\+Synchronous\+Rendering\+Context}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Display\+T $>$ {\bf Zeta\+::\+Synchronous\+Rendering\+Context}$<$ Display\+T $>$\+::$\sim${\bf Synchronous\+Rendering\+Context} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1SynchronousRenderingContext_a74ac76c14c19a5645c24c68cd3195f1f}
+Destructor Upon destruction, the \hyperlink{classZeta_1_1Display}{Display} \hyperlink{classZeta_1_1Object}{Object} is destroyed too 
+
+\subsection{Member Function Documentation}
+\hypertarget{classZeta_1_1SynchronousRenderingContext_a7bf5cc95e195b09df8d75f75e771115a}{\index{Zeta\+::\+Synchronous\+Rendering\+Context@{Zeta\+::\+Synchronous\+Rendering\+Context}!add\+Operation\+To\+Queue@{add\+Operation\+To\+Queue}}
+\index{add\+Operation\+To\+Queue@{add\+Operation\+To\+Queue}!Zeta\+::\+Synchronous\+Rendering\+Context@{Zeta\+::\+Synchronous\+Rendering\+Context}}
+\subsubsection[{add\+Operation\+To\+Queue}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Display\+T $>$ void {\bf Zeta\+::\+Synchronous\+Rendering\+Context}$<$ Display\+T $>$\+::add\+Operation\+To\+Queue (
+\begin{DoxyParamCaption}
+\item[{{\bf Context\+Operation}$<$ {\bf Rendering\+Context} $>$ \&}]{operation}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classZeta_1_1SynchronousRenderingContext_a7bf5cc95e195b09df8d75f75e771115a}
+Adds the Operation to the Queue for execution 
+\begin{DoxyParams}{Parameters}
+{\em operation} & The operation to add \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{classZeta_1_1Context_a67df6157eb24688cc02a33b6f02b458d}{Zeta\+::\+Context$<$ Rendering\+Context $>$}.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classZeta_1_1SynchronousRenderingContext_a7bf5cc95e195b09df8d75f75e771115a_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classZeta_1_1SynchronousRenderingContext_afe8b238d3302e2bdb0f2fcc0735c24e3}{\index{Zeta\+::\+Synchronous\+Rendering\+Context@{Zeta\+::\+Synchronous\+Rendering\+Context}!execute\+Operations@{execute\+Operations}}
+\index{execute\+Operations@{execute\+Operations}!Zeta\+::\+Synchronous\+Rendering\+Context@{Zeta\+::\+Synchronous\+Rendering\+Context}}
+\subsubsection[{execute\+Operations}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Display\+T $>$ void {\bf Zeta\+::\+Synchronous\+Rendering\+Context}$<$ Display\+T $>$\+::execute\+Operations (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classZeta_1_1SynchronousRenderingContext_afe8b238d3302e2bdb0f2fcc0735c24e3}
+Executes all the operations that are on the Queue 
+
+Reimplemented from \hyperlink{classZeta_1_1Context_ac6162b04dc1fc87cab6bc754b9ef9f0b}{Zeta\+::\+Context$<$ Rendering\+Context $>$}.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classZeta_1_1SynchronousRenderingContext_afe8b238d3302e2bdb0f2fcc0735c24e3_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classZeta_1_1SynchronousRenderingContext_afaa2ed7e145e76c86cfc8b2a2758ee84}{\index{Zeta\+::\+Synchronous\+Rendering\+Context@{Zeta\+::\+Synchronous\+Rendering\+Context}!get\+Display@{get\+Display}}
+\index{get\+Display@{get\+Display}!Zeta\+::\+Synchronous\+Rendering\+Context@{Zeta\+::\+Synchronous\+Rendering\+Context}}
+\subsubsection[{get\+Display}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Display\+T $>$ {\bf Display}\& {\bf Zeta\+::\+Synchronous\+Rendering\+Context}$<$ Display\+T $>$\+::get\+Display (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classZeta_1_1SynchronousRenderingContext_afaa2ed7e145e76c86cfc8b2a2758ee84}
+Returns the Contexts \hyperlink{classZeta_1_1Display}{Display} object \begin{DoxyReturn}{Returns}
+The display \hyperlink{classZeta_1_1Object}{Object} 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classZeta_1_1RenderingContext_af56b7711c685f9e0331dbcf7b63ac73b}{Zeta\+::\+Rendering\+Context}.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classZeta_1_1SynchronousRenderingContext_a6c95c3ec9d5089710d48fb5a3ef3f7a6}{\index{Zeta\+::\+Synchronous\+Rendering\+Context@{Zeta\+::\+Synchronous\+Rendering\+Context}!display@{display}}
+\index{display@{display}!Zeta\+::\+Synchronous\+Rendering\+Context@{Zeta\+::\+Synchronous\+Rendering\+Context}}
+\subsubsection[{display}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Display\+T $>$ Display\+T {\bf Zeta\+::\+Synchronous\+Rendering\+Context}$<$ Display\+T $>$\+::display\hspace{0.3cm}{\ttfamily [private]}}}\label{classZeta_1_1SynchronousRenderingContext_a6c95c3ec9d5089710d48fb5a3ef3f7a6}
+\hypertarget{classZeta_1_1SynchronousRenderingContext_a9d7b048e2278ca9878847e053fb57f44}{\index{Zeta\+::\+Synchronous\+Rendering\+Context@{Zeta\+::\+Synchronous\+Rendering\+Context}!mutex@{mutex}}
+\index{mutex@{mutex}!Zeta\+::\+Synchronous\+Rendering\+Context@{Zeta\+::\+Synchronous\+Rendering\+Context}}
+\subsubsection[{mutex}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Display\+T $>$ std\+::mutex {\bf Zeta\+::\+Synchronous\+Rendering\+Context}$<$ Display\+T $>$\+::mutex\hspace{0.3cm}{\ttfamily [private]}}}\label{classZeta_1_1SynchronousRenderingContext_a9d7b048e2278ca9878847e053fb57f44}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Zeta/\+Core/\hyperlink{SynchronousRenderingContext_8hpp}{Synchronous\+Rendering\+Context.\+hpp}\end{DoxyCompactItemize}

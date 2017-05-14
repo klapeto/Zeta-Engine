@@ -1,0 +1,6 @@
+<map id="Zeta::Shape" name="Zeta::Shape">
+<area shape="rect" id="node3" href="$classZeta_1_1Crosshair.html" title="Zeta::Crosshair" alt="" coords="5,155,116,181"/>
+<area shape="rect" id="node4" href="$classZeta_1_1Ellipsis.html" title="Zeta::Ellipsis" alt="" coords="141,155,240,181"/>
+<area shape="rect" id="node5" href="$classZeta_1_1Rectangle.html" title="Zeta::Rectangle" alt="" coords="264,155,379,181"/>
+<area shape="rect" id="node2" href="$classZeta_1_1Drawable.html" title="Zeta::Drawable" alt="" coords="135,5,245,32"/>
+</map>

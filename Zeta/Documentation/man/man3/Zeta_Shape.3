@@ -1,0 +1,167 @@
+.TH "Zeta::Shape" 3 "Wed Feb 10 2016" "Zeta" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Zeta::Shape \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Shape\&.hpp>\fP
+.PP
+Inherits \fBZeta::Drawable\fP\&.
+.PP
+Inherited by \fBZeta::Crosshair\fP, \fBZeta::Ellipsis\fP, and \fBZeta::Rectangle\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBFloat\fP \fBgetX\fP () const "
+.br
+.ti -1c
+.RI "\fBFloat\fP \fBgetY\fP () const "
+.br
+.ti -1c
+.RI "void \fBsetPosition\fP (\fBFloat\fP x, \fBFloat\fP y)"
+.br
+.ti -1c
+.RI "void \fBsetPosition\fP (const \fBVector2\fP &pos)"
+.br
+.ti -1c
+.RI "\fBVector2\fP & \fBgetPosition\fP ()"
+.br
+.ti -1c
+.RI "const \fBVector2\fP & \fBgetPosition\fP () const "
+.br
+.ti -1c
+.RI "void \fBoffsetPosition\fP (\fBFloat\fP dx, \fBFloat\fP dy)"
+.br
+.ti -1c
+.RI "bool \fBisBackgroundEnabled\fP () const "
+.br
+.ti -1c
+.RI "void \fBsetBackgroundEnabled\fP (bool \fBbackgroundEnabled\fP)"
+.br
+.ti -1c
+.RI "bool \fBisOutlineEnabled\fP () const "
+.br
+.ti -1c
+.RI "void \fBsetOutlineEnabled\fP (bool \fBoutlineEnabled\fP)"
+.br
+.ti -1c
+.RI "const \fBColor\fP & \fBgetOutlineColor\fP () const "
+.br
+.ti -1c
+.RI "void \fBsetOutlineColor\fP (const \fBColor\fP &\fBoutlineColor\fP)"
+.br
+.ti -1c
+.RI "const \fBColor\fP & \fBgetBackgroundColor\fP () const "
+.br
+.ti -1c
+.RI "void \fBsetBackgroundColor\fP (const \fBColor\fP &\fBbackgroundColor\fP)"
+.br
+.ti -1c
+.RI "\fBFloat\fP \fBgetOutlineThickness\fP () const "
+.br
+.ti -1c
+.RI "void \fBsetOutlineThickness\fP (\fBFloat\fP \fBoutlineThickness\fP)"
+.br
+.ti -1c
+.RI "\fBShape\fP ()"
+.br
+.ti -1c
+.RI "\fBShape\fP (\fBFloat\fP x, \fBFloat\fP y)"
+.br
+.ti -1c
+.RI "\fBShape\fP (const \fBVector2\fP &\fBposition\fP)"
+.br
+.ti -1c
+.RI "virtual \fB~Shape\fP ()"
+.br
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBVector2\fP \fBposition\fP"
+.br
+.ti -1c
+.RI "\fBColor\fP \fBoutlineColor\fP"
+.br
+.ti -1c
+.RI "\fBColor\fP \fBbackgroundColor\fP"
+.br
+.ti -1c
+.RI "\fBFloat\fP \fBoutlineThickness\fP"
+.br
+.ti -1c
+.RI "bool \fBoutlineEnabled\fP"
+.br
+.ti -1c
+.RI "bool \fBbackgroundEnabled\fP"
+.br
+.in -1c
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Zeta::Shape::Shape ()\fC [inline]\fP"
+
+.SS "Zeta::Shape::Shape (\fBFloat\fPx, \fBFloat\fPy)\fC [inline]\fP"
+
+.SS "Zeta::Shape::Shape (const \fBVector2\fP &position)\fC [inline]\fP"
+
+.SS "virtual Zeta::Shape::~Shape ()\fC [inline]\fP, \fC [virtual]\fP"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "const \fBColor\fP& Zeta::Shape::getBackgroundColor () const\fC [inline]\fP"
+
+.SS "const \fBColor\fP& Zeta::Shape::getOutlineColor () const\fC [inline]\fP"
+
+.SS "\fBFloat\fP Zeta::Shape::getOutlineThickness () const\fC [inline]\fP"
+
+.SS "\fBVector2\fP& Zeta::Shape::getPosition ()\fC [inline]\fP"
+
+.SS "const \fBVector2\fP& Zeta::Shape::getPosition () const\fC [inline]\fP"
+
+.SS "\fBFloat\fP Zeta::Shape::getX () const\fC [inline]\fP"
+
+.SS "\fBFloat\fP Zeta::Shape::getY () const\fC [inline]\fP"
+
+.SS "bool Zeta::Shape::isBackgroundEnabled () const\fC [inline]\fP"
+
+.SS "bool Zeta::Shape::isOutlineEnabled () const\fC [inline]\fP"
+
+.SS "void Zeta::Shape::offsetPosition (\fBFloat\fPdx, \fBFloat\fPdy)\fC [inline]\fP"
+
+.SS "void Zeta::Shape::setBackgroundColor (const \fBColor\fP &backgroundColor)\fC [inline]\fP"
+
+.SS "void Zeta::Shape::setBackgroundEnabled (boolbackgroundEnabled)\fC [inline]\fP"
+
+.SS "void Zeta::Shape::setOutlineColor (const \fBColor\fP &outlineColor)\fC [inline]\fP"
+
+.SS "void Zeta::Shape::setOutlineEnabled (booloutlineEnabled)\fC [inline]\fP"
+
+.SS "void Zeta::Shape::setOutlineThickness (\fBFloat\fPoutlineThickness)\fC [inline]\fP"
+
+.SS "void Zeta::Shape::setPosition (\fBFloat\fPx, \fBFloat\fPy)\fC [inline]\fP"
+
+.SS "void Zeta::Shape::setPosition (const \fBVector2\fP &pos)\fC [inline]\fP"
+
+.SH "Member Data Documentation"
+.PP 
+.SS "\fBColor\fP Zeta::Shape::backgroundColor\fC [protected]\fP"
+
+.SS "bool Zeta::Shape::backgroundEnabled\fC [protected]\fP"
+
+.SS "\fBColor\fP Zeta::Shape::outlineColor\fC [protected]\fP"
+
+.SS "bool Zeta::Shape::outlineEnabled\fC [protected]\fP"
+
+.SS "\fBFloat\fP Zeta::Shape::outlineThickness\fC [protected]\fP"
+
+.SS "\fBVector2\fP Zeta::Shape::position\fC [protected]\fP"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Zeta from the source code\&.

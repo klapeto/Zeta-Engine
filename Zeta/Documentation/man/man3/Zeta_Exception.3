@@ -1,0 +1,65 @@
+.TH "Zeta::Exception" 3 "Wed Feb 10 2016" "Zeta" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Zeta::Exception \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Exception\&.hpp>\fP
+.PP
+Inherits exception\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "const char * \fBwhat\fP () const noexcept"
+.br
+.ti -1c
+.RI "const std::string & \fBreason\fP () const noexcept"
+.br
+.ti -1c
+.RI "\fBException\fP ()"
+.br
+.ti -1c
+.RI "\fBException\fP (const std::string &\fBwhat\fP, const std::string &\fBreason\fP) noexcept"
+.br
+.ti -1c
+.RI "virtual \fB~Exception\fP ()"
+.br
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "std::string \fBm_what\fP"
+.br
+.ti -1c
+.RI "std::string \fBm_reason\fP"
+.br
+.in -1c
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Zeta::Exception::Exception ()\fC [inline]\fP"
+
+.SS "Zeta::Exception::Exception (const std::string &what, const std::string &reason)\fC [inline]\fP, \fC [noexcept]\fP"
+
+.SS "virtual Zeta::Exception::~Exception ()\fC [inline]\fP, \fC [virtual]\fP"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "const std::string& Zeta::Exception::reason () const\fC [inline]\fP, \fC [noexcept]\fP"
+
+.SS "const char* Zeta::Exception::what () const\fC [inline]\fP, \fC [noexcept]\fP"
+
+.SH "Member Data Documentation"
+.PP 
+.SS "std::string Zeta::Exception::m_reason\fC [protected]\fP"
+
+.SS "std::string Zeta::Exception::m_what\fC [protected]\fP"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Zeta from the source code\&.

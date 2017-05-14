@@ -1,0 +1,497 @@
+\hypertarget{classZeta_1_1WorldManager}{\section{Zeta\+:\+:World\+Manager Class Reference}
+\label{classZeta_1_1WorldManager}\index{Zeta\+::\+World\+Manager@{Zeta\+::\+World\+Manager}}
+}
+
+
+{\ttfamily \#include $<$World\+Manager.\+hpp$>$}
+
+
+
+Inheritance diagram for Zeta\+:\+:World\+Manager\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classZeta_1_1WorldManager__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Zeta\+:\+:World\+Manager\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classZeta_1_1WorldManager__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structZeta_1_1WorldManager_1_1CustomListenerPair}{Custom\+Listener\+Pair}
+\item 
+struct \hyperlink{structZeta_1_1WorldManager_1_1WorldListenerPair}{World\+Listener\+Pair}
+\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{classZeta_1_1WorldManager_a196f5dc39fe2f6856871fef729fd8454}{Callback} \{ \\*
+\hyperlink{classZeta_1_1WorldManager_a196f5dc39fe2f6856871fef729fd8454aee08e9af3756988e590473fb1a0f665a}{Callback\+::\+Change\+Map}, 
+\hyperlink{classZeta_1_1WorldManager_a196f5dc39fe2f6856871fef729fd8454a0d3b6dc88480174d6661969e534d0d9b}{Callback\+::\+Load\+Begin}, 
+\hyperlink{classZeta_1_1WorldManager_a196f5dc39fe2f6856871fef729fd8454a1b36a8205a97ee21ebf3c7ba6b102e00}{Callback\+::\+Load\+End}, 
+\hyperlink{classZeta_1_1WorldManager_a196f5dc39fe2f6856871fef729fd8454a0526bfe956591337eeb68eca998aec15}{Callback\+::\+Frame\+Begin}, 
+\\*
+\hyperlink{classZeta_1_1WorldManager_a196f5dc39fe2f6856871fef729fd8454af32dfac7bfae19e243e9e6d180228666}{Callback\+::\+Frame\+End}, 
+\hyperlink{classZeta_1_1WorldManager_a196f5dc39fe2f6856871fef729fd8454a8ae8b593221ee011d37755b192c9e3a9}{Callback\+::\+Lifeform\+Death}, 
+\hyperlink{classZeta_1_1WorldManager_a196f5dc39fe2f6856871fef729fd8454a4b9fb8826787149b3c2f7ce8a50c15ee}{Callback\+::\+Lifeform\+Show}, 
+\hyperlink{classZeta_1_1WorldManager_a196f5dc39fe2f6856871fef729fd8454a4c9a6f5b49e21d29060d50c07a9dbe69}{Callback\+::\+Lifeform\+Hide}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classZeta_1_1WorldManager_a4d71d05f9f5d6b46744abc0cd973630d}{add\+Listener} (\hyperlink{classZeta_1_1WorldListener}{World\+Listener} $\ast$listener, \hyperlink{classZeta_1_1WorldEvent_a92adb82c22c6f59afec5911098f85158}{World\+Event\+::\+Type} event\+Type)
+\item 
+void \hyperlink{classZeta_1_1WorldManager_aca6da0cf43ee96f88b818ccc1afaf764}{add\+Listener} (\hyperlink{classZeta_1_1WorldListener}{World\+Listener} $\ast$listener, const std\+::string \&channel)
+\item 
+void \hyperlink{classZeta_1_1WorldManager_a8e2ad66bc6420d386471cf1a4bfc1de8}{remove\+Listener} (\hyperlink{classZeta_1_1WorldListener}{World\+Listener} $\ast$listener, \hyperlink{classZeta_1_1WorldEvent_a92adb82c22c6f59afec5911098f85158}{World\+Event\+::\+Type} event\+Type)
+\item 
+void \hyperlink{classZeta_1_1WorldManager_a64f450d494c1610d6f170adcc5fc7868}{remove\+Listener} (\hyperlink{classZeta_1_1WorldListener}{World\+Listener} $\ast$listener, const std\+::string \&channel)
+\item 
+void \hyperlink{classZeta_1_1WorldManager_acfab878b37b6008578c71bada4245631}{raise\+Event} (const \hyperlink{classZeta_1_1WorldEvent}{World\+Event} \&event)
+\item 
+void \hyperlink{classZeta_1_1WorldManager_a29a3b95fb33eb3b4ed65e17c98e79692}{change\+Map} (const std\+::string \&path)
+\item 
+void \hyperlink{classZeta_1_1WorldManager_acf3dd4329089cbc1115bfabb6957c5ef}{change\+Map\+With\+Callback} (const std\+::string \&path)
+\item 
+void \hyperlink{classZeta_1_1WorldManager_a992cadb0cf1843f58e7596945c8a7c6b}{set\+Callback} (\hyperlink{classZeta_1_1WorldManager_a196f5dc39fe2f6856871fef729fd8454}{Callback} call, const std\+::string \&name)
+\item 
+void \hyperlink{classZeta_1_1WorldManager_ad595ba816d78c0c65f8407b66e384c1b}{set\+Callback} (\hyperlink{classZeta_1_1WorldManager_a196f5dc39fe2f6856871fef729fd8454}{Callback} call, \hyperlink{ZetaConfig_8hpp_ae7be32b73848041a60f2412f72bbb221}{lua\+\_\+\+Object} func)
+\item 
+const \hyperlink{classZeta_1_1LuaFunctor}{Lua\+Functor} \& \hyperlink{classZeta_1_1WorldManager_a46b2e31355813dcf4ad1900c65f64ab9}{get\+Callback} (\hyperlink{classZeta_1_1WorldManager_a196f5dc39fe2f6856871fef729fd8454}{Callback} call) const 
+\item 
+void \hyperlink{classZeta_1_1WorldManager_a6d43e79fd3eaa735fc80eec3dd992415}{call\+Callback} (\hyperlink{classZeta_1_1WorldManager_a196f5dc39fe2f6856871fef729fd8454}{Callback} call, std\+::initializer\+\_\+list$<$ \hyperlink{classZeta_1_1LuaPushable}{Lua\+Pushable} $\ast$ $>$ args)
+\item 
+void \hyperlink{classZeta_1_1WorldManager_af27c2652f615e62ee9d3cbb28756b742}{add\+Frame\+Listener} (\hyperlink{classZeta_1_1Updateable}{Updateable} $\ast$listener)
+\item 
+void \hyperlink{classZeta_1_1WorldManager_ab444e385222889cf97a06463f71e5779}{remove\+Frame\+Listener} (\hyperlink{classZeta_1_1Updateable}{Updateable} $\ast$listener)
+\item 
+\hyperlink{classZeta_1_1View}{View} \& \hyperlink{classZeta_1_1WorldManager_a6e3c639b3e1590fea2b80f472c939aff}{get\+View} ()
+\item 
+void \hyperlink{classZeta_1_1WorldManager_a59601c687f891b38fab7c0b1fbaa81eb}{show} ()
+\item 
+void \hyperlink{classZeta_1_1WorldManager_a7858c75a716e69474d9d21e0cd41f5fe}{hide} ()
+\item 
+bool \hyperlink{classZeta_1_1WorldManager_a5a9401c91d123282504348d32ecbf97d}{is\+Visible} () const 
+\item 
+void \hyperlink{classZeta_1_1WorldManager_a8ca30f060db7d05295164b518c1e885d}{pause} ()
+\item 
+void \hyperlink{classZeta_1_1WorldManager_a3faed000bf683263268010617dae724f}{resume} ()
+\item 
+\hyperlink{classZeta_1_1Map}{Map} \& \hyperlink{classZeta_1_1WorldManager_a0964944ead294c9d71599e1291b2aa07}{get\+Current\+Map} ()
+\item 
+\hyperlink{classZeta_1_1Player}{Player} \& \hyperlink{classZeta_1_1WorldManager_abfb5cbf7a6c7182497cbd87d2981b84b}{get\+Player} ()
+\item 
+void \hyperlink{classZeta_1_1WorldManager_a65ddaf0bc1c23045fae585c175f3aeaf}{destroy\+Player} ()
+\item 
+void \hyperlink{classZeta_1_1WorldManager_a7d59c68fff6d102540a05dade8672c99}{create\+Player} ()
+\item 
+void \hyperlink{classZeta_1_1WorldManager_a695f5b869c76518c338529caa44538db}{draw} (\hyperlink{namespaceZeta_a1e0a1265f9b3bd3075fb0fabd39088ba}{Float} x, \hyperlink{namespaceZeta_a1e0a1265f9b3bd3075fb0fabd39088ba}{Float} y, \hyperlink{namespaceZeta_a1e0a1265f9b3bd3075fb0fabd39088ba}{Float} rotation=0.\+0f, Float scale=1.\+0f) const 
+\item 
+void \hyperlink{classZeta_1_1WorldManager_ad6eec6454808f4d8c7aa1110087d55e6}{update} (\hyperlink{namespaceZeta_a1e0a1265f9b3bd3075fb0fabd39088ba}{Float} elapsed\+Time)
+\item 
+void \hyperlink{classZeta_1_1WorldManager_a3a267423a70758aa2b72ad311e19e8d7}{push\+To\+Lua} (lua\+\_\+\+State $\ast$lstate)
+\item 
+\hyperlink{classZeta_1_1WorldManager_a29467359dc0134b3d60f1f88bd820e63}{$\sim$\+World\+Manager} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{namespaceZeta_a44c717c98a964d0ebf6ea954cb9c91bf}{Z\+Small\+Set}\\*
+$<$ \hyperlink{classZeta_1_1WorldListener}{World\+Listener} $\ast$ $>$ \hyperlink{classZeta_1_1WorldManager_aab11e4268a3e5b0d650668134bf73ef0}{Listener\+Set}
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classZeta_1_1WorldManager_af20bcdad4b701dd084d1fec3b6f76548}{World\+Manager} ()
+\item 
+void \hyperlink{classZeta_1_1WorldManager_aa0d5cfadc1b453dee71185e07f9faa66}{get\+String\+Callback} (const std\+::string \&name, int \&var)
+\item 
+void \hyperlink{classZeta_1_1WorldManager_aca449116d0f397380766bea8999c23ad}{get\+Func\+Call\+Back} (\hyperlink{ZetaConfig_8hpp_ae7be32b73848041a60f2412f72bbb221}{lua\+\_\+\+Object} func, int \&var)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classZeta_1_1WorldManager_aab11e4268a3e5b0d650668134bf73ef0}{Listener\+Set} \hyperlink{classZeta_1_1WorldManager_a0fe0b18ba1b0254d5422fb1b213211e4}{event\+Channel} \mbox{[}10\mbox{]}
+\item 
+\hyperlink{namespaceZeta_a4c11e23ddc559dccdb5e85901d7dfb84}{Z\+Small\+Map}$<$ std\+::string, \\*
+\hyperlink{classZeta_1_1WorldManager_aab11e4268a3e5b0d650668134bf73ef0}{Listener\+Set} $>$ \hyperlink{classZeta_1_1WorldManager_ab268372a957917e58c113083087fb4a5}{custom\+Channel}
+\item 
+\hyperlink{namespaceZeta_a92c229b4db6ab7275c2b7f32bdfabc87}{Z\+Set}$<$ \hyperlink{classZeta_1_1Updateable}{Updateable} $\ast$ $>$ \hyperlink{classZeta_1_1WorldManager_a9806e16597676563228f8f6c06a85e54}{frame\+Listeners}
+\item 
+std\+::vector$<$ \hyperlink{classZeta_1_1Updateable}{Updateable} $\ast$ $>$ \hyperlink{classZeta_1_1WorldManager_a3910bb75091f95c5b8e8d04550bc4eae}{frame\+Listeners\+To\+Be\+Removed}
+\item 
+std\+::vector$<$ \hyperlink{structZeta_1_1WorldManager_1_1WorldListenerPair}{World\+Listener\+Pair} $>$ \hyperlink{classZeta_1_1WorldManager_a9d5daaf5fd9db8f35b52e9606c6d9ede}{world\+Listeners\+To\+Be\+Erased}
+\item 
+std\+::vector$<$ \hyperlink{structZeta_1_1WorldManager_1_1CustomListenerPair}{Custom\+Listener\+Pair} $>$ \hyperlink{classZeta_1_1WorldManager_a4737df2046668caffa598cf1e2b7e153}{custom\+Listeners\+To\+Be\+Erased}
+\item 
+\hyperlink{classZeta_1_1LuaFunctor}{Lua\+Functor} \hyperlink{classZeta_1_1WorldManager_ad7cd870adcdb916ad11ebd770e7e17bf}{callbacks} \mbox{[}12\mbox{]}
+\item 
+\hyperlink{classZeta_1_1MapLoader}{Map\+Loader} \hyperlink{classZeta_1_1WorldManager_aa74c8d0807809445d3dbae2d6ec6281f}{map\+Loader}
+\item 
+\hyperlink{classZeta_1_1View}{View} \hyperlink{classZeta_1_1WorldManager_a66357a14540415262464a5fc35ae75fd}{camera}
+\item 
+\hyperlink{classZeta_1_1Player}{Player} $\ast$ \hyperlink{classZeta_1_1WorldManager_abf8ed0d3fbc48096ac16edfdce8c14f7}{player}
+\item 
+bool \hyperlink{classZeta_1_1WorldManager_a047253e00257f247919a2d075baafc34}{visible}
+\item 
+bool \hyperlink{classZeta_1_1WorldManager_af613bcf59a48f527ae8ad965ac325bfc}{running}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classZeta_1_1WorldManager_a2fa95d69b32a77fffa4b730679a8b08c}{Single\+Instanced}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Member Typedef Documentation}
+\hypertarget{classZeta_1_1WorldManager_aab11e4268a3e5b0d650668134bf73ef0}{\index{Zeta\+::\+World\+Manager@{Zeta\+::\+World\+Manager}!Listener\+Set@{Listener\+Set}}
+\index{Listener\+Set@{Listener\+Set}!Zeta\+::\+World\+Manager@{Zeta\+::\+World\+Manager}}
+\subsubsection[{Listener\+Set}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf Z\+Small\+Set}$<${\bf World\+Listener}$\ast$$>$ {\bf Zeta\+::\+World\+Manager\+::\+Listener\+Set}\hspace{0.3cm}{\ttfamily [private]}}}\label{classZeta_1_1WorldManager_aab11e4268a3e5b0d650668134bf73ef0}
+
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{classZeta_1_1WorldManager_a196f5dc39fe2f6856871fef729fd8454}{\index{Zeta\+::\+World\+Manager@{Zeta\+::\+World\+Manager}!Callback@{Callback}}
+\index{Callback@{Callback}!Zeta\+::\+World\+Manager@{Zeta\+::\+World\+Manager}}
+\subsubsection[{Callback}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Zeta\+::\+World\+Manager\+::\+Callback}\hspace{0.3cm}{\ttfamily [strong]}}}\label{classZeta_1_1WorldManager_a196f5dc39fe2f6856871fef729fd8454}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{Change\+Map@{Change\+Map}!Zeta\+::\+World\+Manager@{Zeta\+::\+World\+Manager}}\index{Zeta\+::\+World\+Manager@{Zeta\+::\+World\+Manager}!Change\+Map@{Change\+Map}}\item[{\em 
+\hypertarget{classZeta_1_1WorldManager_a196f5dc39fe2f6856871fef729fd8454aee08e9af3756988e590473fb1a0f665a}{Change\+Map}\label{classZeta_1_1WorldManager_a196f5dc39fe2f6856871fef729fd8454aee08e9af3756988e590473fb1a0f665a}
+}]\index{Load\+Begin@{Load\+Begin}!Zeta\+::\+World\+Manager@{Zeta\+::\+World\+Manager}}\index{Zeta\+::\+World\+Manager@{Zeta\+::\+World\+Manager}!Load\+Begin@{Load\+Begin}}\item[{\em 
+\hypertarget{classZeta_1_1WorldManager_a196f5dc39fe2f6856871fef729fd8454a0d3b6dc88480174d6661969e534d0d9b}{Load\+Begin}\label{classZeta_1_1WorldManager_a196f5dc39fe2f6856871fef729fd8454a0d3b6dc88480174d6661969e534d0d9b}
+}]\index{Load\+End@{Load\+End}!Zeta\+::\+World\+Manager@{Zeta\+::\+World\+Manager}}\index{Zeta\+::\+World\+Manager@{Zeta\+::\+World\+Manager}!Load\+End@{Load\+End}}\item[{\em 
+\hypertarget{classZeta_1_1WorldManager_a196f5dc39fe2f6856871fef729fd8454a1b36a8205a97ee21ebf3c7ba6b102e00}{Load\+End}\label{classZeta_1_1WorldManager_a196f5dc39fe2f6856871fef729fd8454a1b36a8205a97ee21ebf3c7ba6b102e00}
+}]\index{Frame\+Begin@{Frame\+Begin}!Zeta\+::\+World\+Manager@{Zeta\+::\+World\+Manager}}\index{Zeta\+::\+World\+Manager@{Zeta\+::\+World\+Manager}!Frame\+Begin@{Frame\+Begin}}\item[{\em 
+\hypertarget{classZeta_1_1WorldManager_a196f5dc39fe2f6856871fef729fd8454a0526bfe956591337eeb68eca998aec15}{Frame\+Begin}\label{classZeta_1_1WorldManager_a196f5dc39fe2f6856871fef729fd8454a0526bfe956591337eeb68eca998aec15}
+}]\index{Frame\+End@{Frame\+End}!Zeta\+::\+World\+Manager@{Zeta\+::\+World\+Manager}}\index{Zeta\+::\+World\+Manager@{Zeta\+::\+World\+Manager}!Frame\+End@{Frame\+End}}\item[{\em 
+\hypertarget{classZeta_1_1WorldManager_a196f5dc39fe2f6856871fef729fd8454af32dfac7bfae19e243e9e6d180228666}{Frame\+End}\label{classZeta_1_1WorldManager_a196f5dc39fe2f6856871fef729fd8454af32dfac7bfae19e243e9e6d180228666}
+}]\index{Lifeform\+Death@{Lifeform\+Death}!Zeta\+::\+World\+Manager@{Zeta\+::\+World\+Manager}}\index{Zeta\+::\+World\+Manager@{Zeta\+::\+World\+Manager}!Lifeform\+Death@{Lifeform\+Death}}\item[{\em 
+\hypertarget{classZeta_1_1WorldManager_a196f5dc39fe2f6856871fef729fd8454a8ae8b593221ee011d37755b192c9e3a9}{Lifeform\+Death}\label{classZeta_1_1WorldManager_a196f5dc39fe2f6856871fef729fd8454a8ae8b593221ee011d37755b192c9e3a9}
+}]\index{Lifeform\+Show@{Lifeform\+Show}!Zeta\+::\+World\+Manager@{Zeta\+::\+World\+Manager}}\index{Zeta\+::\+World\+Manager@{Zeta\+::\+World\+Manager}!Lifeform\+Show@{Lifeform\+Show}}\item[{\em 
+\hypertarget{classZeta_1_1WorldManager_a196f5dc39fe2f6856871fef729fd8454a4b9fb8826787149b3c2f7ce8a50c15ee}{Lifeform\+Show}\label{classZeta_1_1WorldManager_a196f5dc39fe2f6856871fef729fd8454a4b9fb8826787149b3c2f7ce8a50c15ee}
+}]\index{Lifeform\+Hide@{Lifeform\+Hide}!Zeta\+::\+World\+Manager@{Zeta\+::\+World\+Manager}}\index{Zeta\+::\+World\+Manager@{Zeta\+::\+World\+Manager}!Lifeform\+Hide@{Lifeform\+Hide}}\item[{\em 
+\hypertarget{classZeta_1_1WorldManager_a196f5dc39fe2f6856871fef729fd8454a4c9a6f5b49e21d29060d50c07a9dbe69}{Lifeform\+Hide}\label{classZeta_1_1WorldManager_a196f5dc39fe2f6856871fef729fd8454a4c9a6f5b49e21d29060d50c07a9dbe69}
+}]\end{description}
+\end{Desc}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classZeta_1_1WorldManager_a29467359dc0134b3d60f1f88bd820e63}{\index{Zeta\+::\+World\+Manager@{Zeta\+::\+World\+Manager}!````~World\+Manager@{$\sim$\+World\+Manager}}
+\index{````~World\+Manager@{$\sim$\+World\+Manager}!Zeta\+::\+World\+Manager@{Zeta\+::\+World\+Manager}}
+\subsubsection[{$\sim$\+World\+Manager}]{\setlength{\rightskip}{0pt plus 5cm}Zeta\+::\+World\+Manager\+::$\sim$\+World\+Manager (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classZeta_1_1WorldManager_a29467359dc0134b3d60f1f88bd820e63}
+\hypertarget{classZeta_1_1WorldManager_af20bcdad4b701dd084d1fec3b6f76548}{\index{Zeta\+::\+World\+Manager@{Zeta\+::\+World\+Manager}!World\+Manager@{World\+Manager}}
+\index{World\+Manager@{World\+Manager}!Zeta\+::\+World\+Manager@{Zeta\+::\+World\+Manager}}
+\subsubsection[{World\+Manager}]{\setlength{\rightskip}{0pt plus 5cm}Zeta\+::\+World\+Manager\+::\+World\+Manager (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classZeta_1_1WorldManager_af20bcdad4b701dd084d1fec3b6f76548}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classZeta_1_1WorldManager_af27c2652f615e62ee9d3cbb28756b742}{\index{Zeta\+::\+World\+Manager@{Zeta\+::\+World\+Manager}!add\+Frame\+Listener@{add\+Frame\+Listener}}
+\index{add\+Frame\+Listener@{add\+Frame\+Listener}!Zeta\+::\+World\+Manager@{Zeta\+::\+World\+Manager}}
+\subsubsection[{add\+Frame\+Listener}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+World\+Manager\+::add\+Frame\+Listener (
+\begin{DoxyParamCaption}
+\item[{{\bf Updateable} $\ast$}]{listener}
+\end{DoxyParamCaption}
+)}}\label{classZeta_1_1WorldManager_af27c2652f615e62ee9d3cbb28756b742}
+\hypertarget{classZeta_1_1WorldManager_a4d71d05f9f5d6b46744abc0cd973630d}{\index{Zeta\+::\+World\+Manager@{Zeta\+::\+World\+Manager}!add\+Listener@{add\+Listener}}
+\index{add\+Listener@{add\+Listener}!Zeta\+::\+World\+Manager@{Zeta\+::\+World\+Manager}}
+\subsubsection[{add\+Listener}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+World\+Manager\+::add\+Listener (
+\begin{DoxyParamCaption}
+\item[{{\bf World\+Listener} $\ast$}]{listener, }
+\item[{{\bf World\+Event\+::\+Type}}]{event\+Type}
+\end{DoxyParamCaption}
+)}}\label{classZeta_1_1WorldManager_a4d71d05f9f5d6b46744abc0cd973630d}
+\hypertarget{classZeta_1_1WorldManager_aca6da0cf43ee96f88b818ccc1afaf764}{\index{Zeta\+::\+World\+Manager@{Zeta\+::\+World\+Manager}!add\+Listener@{add\+Listener}}
+\index{add\+Listener@{add\+Listener}!Zeta\+::\+World\+Manager@{Zeta\+::\+World\+Manager}}
+\subsubsection[{add\+Listener}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+World\+Manager\+::add\+Listener (
+\begin{DoxyParamCaption}
+\item[{{\bf World\+Listener} $\ast$}]{listener, }
+\item[{const std\+::string \&}]{channel}
+\end{DoxyParamCaption}
+)}}\label{classZeta_1_1WorldManager_aca6da0cf43ee96f88b818ccc1afaf764}
+\hypertarget{classZeta_1_1WorldManager_a6d43e79fd3eaa735fc80eec3dd992415}{\index{Zeta\+::\+World\+Manager@{Zeta\+::\+World\+Manager}!call\+Callback@{call\+Callback}}
+\index{call\+Callback@{call\+Callback}!Zeta\+::\+World\+Manager@{Zeta\+::\+World\+Manager}}
+\subsubsection[{call\+Callback}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+World\+Manager\+::call\+Callback (
+\begin{DoxyParamCaption}
+\item[{{\bf Callback}}]{call, }
+\item[{std\+::initializer\+\_\+list$<$ {\bf Lua\+Pushable} $\ast$ $>$}]{args}
+\end{DoxyParamCaption}
+)}}\label{classZeta_1_1WorldManager_a6d43e79fd3eaa735fc80eec3dd992415}
+\hypertarget{classZeta_1_1WorldManager_a29a3b95fb33eb3b4ed65e17c98e79692}{\index{Zeta\+::\+World\+Manager@{Zeta\+::\+World\+Manager}!change\+Map@{change\+Map}}
+\index{change\+Map@{change\+Map}!Zeta\+::\+World\+Manager@{Zeta\+::\+World\+Manager}}
+\subsubsection[{change\+Map}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+World\+Manager\+::change\+Map (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{path}
+\end{DoxyParamCaption}
+)}}\label{classZeta_1_1WorldManager_a29a3b95fb33eb3b4ed65e17c98e79692}
+\hypertarget{classZeta_1_1WorldManager_acf3dd4329089cbc1115bfabb6957c5ef}{\index{Zeta\+::\+World\+Manager@{Zeta\+::\+World\+Manager}!change\+Map\+With\+Callback@{change\+Map\+With\+Callback}}
+\index{change\+Map\+With\+Callback@{change\+Map\+With\+Callback}!Zeta\+::\+World\+Manager@{Zeta\+::\+World\+Manager}}
+\subsubsection[{change\+Map\+With\+Callback}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+World\+Manager\+::change\+Map\+With\+Callback (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{path}
+\end{DoxyParamCaption}
+)}}\label{classZeta_1_1WorldManager_acf3dd4329089cbc1115bfabb6957c5ef}
+\hypertarget{classZeta_1_1WorldManager_a7d59c68fff6d102540a05dade8672c99}{\index{Zeta\+::\+World\+Manager@{Zeta\+::\+World\+Manager}!create\+Player@{create\+Player}}
+\index{create\+Player@{create\+Player}!Zeta\+::\+World\+Manager@{Zeta\+::\+World\+Manager}}
+\subsubsection[{create\+Player}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+World\+Manager\+::create\+Player (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classZeta_1_1WorldManager_a7d59c68fff6d102540a05dade8672c99}
+\hypertarget{classZeta_1_1WorldManager_a65ddaf0bc1c23045fae585c175f3aeaf}{\index{Zeta\+::\+World\+Manager@{Zeta\+::\+World\+Manager}!destroy\+Player@{destroy\+Player}}
+\index{destroy\+Player@{destroy\+Player}!Zeta\+::\+World\+Manager@{Zeta\+::\+World\+Manager}}
+\subsubsection[{destroy\+Player}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+World\+Manager\+::destroy\+Player (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classZeta_1_1WorldManager_a65ddaf0bc1c23045fae585c175f3aeaf}
+\hypertarget{classZeta_1_1WorldManager_a695f5b869c76518c338529caa44538db}{\index{Zeta\+::\+World\+Manager@{Zeta\+::\+World\+Manager}!draw@{draw}}
+\index{draw@{draw}!Zeta\+::\+World\+Manager@{Zeta\+::\+World\+Manager}}
+\subsubsection[{draw}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+World\+Manager\+::draw (
+\begin{DoxyParamCaption}
+\item[{{\bf Float}}]{x, }
+\item[{{\bf Float}}]{y, }
+\item[{{\bf Float}}]{rotation = {\ttfamily 0.0f}, }
+\item[{{\bf Float}}]{scale = {\ttfamily 1.0f}}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classZeta_1_1WorldManager_a695f5b869c76518c338529caa44538db}
+Draws the \hyperlink{classZeta_1_1Object}{Object} on screen. Be advised, the x,y, offsets might have different meaning on different implementations. 
+\begin{DoxyParams}{Parameters}
+{\em x} & X offset to be applied on the drawing \\
+\hline
+{\em y} & Y offset to be applied on the drawing \\
+\hline
+{\em rotation} & the rotation to be applied on the drawing \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classZeta_1_1Drawable_a3f453a7a971b7eeba1768be3eaedc192}{Zeta\+::\+Drawable}.
+
+\hypertarget{classZeta_1_1WorldManager_a46b2e31355813dcf4ad1900c65f64ab9}{\index{Zeta\+::\+World\+Manager@{Zeta\+::\+World\+Manager}!get\+Callback@{get\+Callback}}
+\index{get\+Callback@{get\+Callback}!Zeta\+::\+World\+Manager@{Zeta\+::\+World\+Manager}}
+\subsubsection[{get\+Callback}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Lua\+Functor}\& Zeta\+::\+World\+Manager\+::get\+Callback (
+\begin{DoxyParamCaption}
+\item[{{\bf Callback}}]{call}
+\end{DoxyParamCaption}
+) const}}\label{classZeta_1_1WorldManager_a46b2e31355813dcf4ad1900c65f64ab9}
+\hypertarget{classZeta_1_1WorldManager_a0964944ead294c9d71599e1291b2aa07}{\index{Zeta\+::\+World\+Manager@{Zeta\+::\+World\+Manager}!get\+Current\+Map@{get\+Current\+Map}}
+\index{get\+Current\+Map@{get\+Current\+Map}!Zeta\+::\+World\+Manager@{Zeta\+::\+World\+Manager}}
+\subsubsection[{get\+Current\+Map}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Map}\& Zeta\+::\+World\+Manager\+::get\+Current\+Map (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1WorldManager_a0964944ead294c9d71599e1291b2aa07}
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classZeta_1_1WorldManager_a0964944ead294c9d71599e1291b2aa07_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classZeta_1_1WorldManager_aca449116d0f397380766bea8999c23ad}{\index{Zeta\+::\+World\+Manager@{Zeta\+::\+World\+Manager}!get\+Func\+Call\+Back@{get\+Func\+Call\+Back}}
+\index{get\+Func\+Call\+Back@{get\+Func\+Call\+Back}!Zeta\+::\+World\+Manager@{Zeta\+::\+World\+Manager}}
+\subsubsection[{get\+Func\+Call\+Back}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+World\+Manager\+::get\+Func\+Call\+Back (
+\begin{DoxyParamCaption}
+\item[{{\bf lua\+\_\+\+Object}}]{func, }
+\item[{int \&}]{var}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classZeta_1_1WorldManager_aca449116d0f397380766bea8999c23ad}
+\hypertarget{classZeta_1_1WorldManager_abfb5cbf7a6c7182497cbd87d2981b84b}{\index{Zeta\+::\+World\+Manager@{Zeta\+::\+World\+Manager}!get\+Player@{get\+Player}}
+\index{get\+Player@{get\+Player}!Zeta\+::\+World\+Manager@{Zeta\+::\+World\+Manager}}
+\subsubsection[{get\+Player}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Player}\& Zeta\+::\+World\+Manager\+::get\+Player (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1WorldManager_abfb5cbf7a6c7182497cbd87d2981b84b}
+\hypertarget{classZeta_1_1WorldManager_aa0d5cfadc1b453dee71185e07f9faa66}{\index{Zeta\+::\+World\+Manager@{Zeta\+::\+World\+Manager}!get\+String\+Callback@{get\+String\+Callback}}
+\index{get\+String\+Callback@{get\+String\+Callback}!Zeta\+::\+World\+Manager@{Zeta\+::\+World\+Manager}}
+\subsubsection[{get\+String\+Callback}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+World\+Manager\+::get\+String\+Callback (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{name, }
+\item[{int \&}]{var}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classZeta_1_1WorldManager_aa0d5cfadc1b453dee71185e07f9faa66}
+\hypertarget{classZeta_1_1WorldManager_a6e3c639b3e1590fea2b80f472c939aff}{\index{Zeta\+::\+World\+Manager@{Zeta\+::\+World\+Manager}!get\+View@{get\+View}}
+\index{get\+View@{get\+View}!Zeta\+::\+World\+Manager@{Zeta\+::\+World\+Manager}}
+\subsubsection[{get\+View}]{\setlength{\rightskip}{0pt plus 5cm}{\bf View}\& Zeta\+::\+World\+Manager\+::get\+View (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1WorldManager_a6e3c639b3e1590fea2b80f472c939aff}
+\hypertarget{classZeta_1_1WorldManager_a7858c75a716e69474d9d21e0cd41f5fe}{\index{Zeta\+::\+World\+Manager@{Zeta\+::\+World\+Manager}!hide@{hide}}
+\index{hide@{hide}!Zeta\+::\+World\+Manager@{Zeta\+::\+World\+Manager}}
+\subsubsection[{hide}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+World\+Manager\+::hide (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1WorldManager_a7858c75a716e69474d9d21e0cd41f5fe}
+\hypertarget{classZeta_1_1WorldManager_a5a9401c91d123282504348d32ecbf97d}{\index{Zeta\+::\+World\+Manager@{Zeta\+::\+World\+Manager}!is\+Visible@{is\+Visible}}
+\index{is\+Visible@{is\+Visible}!Zeta\+::\+World\+Manager@{Zeta\+::\+World\+Manager}}
+\subsubsection[{is\+Visible}]{\setlength{\rightskip}{0pt plus 5cm}bool Zeta\+::\+World\+Manager\+::is\+Visible (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1WorldManager_a5a9401c91d123282504348d32ecbf97d}
+\hypertarget{classZeta_1_1WorldManager_a8ca30f060db7d05295164b518c1e885d}{\index{Zeta\+::\+World\+Manager@{Zeta\+::\+World\+Manager}!pause@{pause}}
+\index{pause@{pause}!Zeta\+::\+World\+Manager@{Zeta\+::\+World\+Manager}}
+\subsubsection[{pause}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+World\+Manager\+::pause (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1WorldManager_a8ca30f060db7d05295164b518c1e885d}
+\hypertarget{classZeta_1_1WorldManager_a3a267423a70758aa2b72ad311e19e8d7}{\index{Zeta\+::\+World\+Manager@{Zeta\+::\+World\+Manager}!push\+To\+Lua@{push\+To\+Lua}}
+\index{push\+To\+Lua@{push\+To\+Lua}!Zeta\+::\+World\+Manager@{Zeta\+::\+World\+Manager}}
+\subsubsection[{push\+To\+Lua}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+World\+Manager\+::push\+To\+Lua (
+\begin{DoxyParamCaption}
+\item[{lua\+\_\+\+State $\ast$}]{lstate}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classZeta_1_1WorldManager_a3a267423a70758aa2b72ad311e19e8d7}
+
+
+Implements \hyperlink{classZeta_1_1LuaPushable_a0380ec9cff11f749e8eb67b51b8f82fc}{Zeta\+::\+Lua\+Pushable}.
+
+\hypertarget{classZeta_1_1WorldManager_acfab878b37b6008578c71bada4245631}{\index{Zeta\+::\+World\+Manager@{Zeta\+::\+World\+Manager}!raise\+Event@{raise\+Event}}
+\index{raise\+Event@{raise\+Event}!Zeta\+::\+World\+Manager@{Zeta\+::\+World\+Manager}}
+\subsubsection[{raise\+Event}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+World\+Manager\+::raise\+Event (
+\begin{DoxyParamCaption}
+\item[{const {\bf World\+Event} \&}]{event}
+\end{DoxyParamCaption}
+)}}\label{classZeta_1_1WorldManager_acfab878b37b6008578c71bada4245631}
+\hypertarget{classZeta_1_1WorldManager_ab444e385222889cf97a06463f71e5779}{\index{Zeta\+::\+World\+Manager@{Zeta\+::\+World\+Manager}!remove\+Frame\+Listener@{remove\+Frame\+Listener}}
+\index{remove\+Frame\+Listener@{remove\+Frame\+Listener}!Zeta\+::\+World\+Manager@{Zeta\+::\+World\+Manager}}
+\subsubsection[{remove\+Frame\+Listener}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+World\+Manager\+::remove\+Frame\+Listener (
+\begin{DoxyParamCaption}
+\item[{{\bf Updateable} $\ast$}]{listener}
+\end{DoxyParamCaption}
+)}}\label{classZeta_1_1WorldManager_ab444e385222889cf97a06463f71e5779}
+\hypertarget{classZeta_1_1WorldManager_a8e2ad66bc6420d386471cf1a4bfc1de8}{\index{Zeta\+::\+World\+Manager@{Zeta\+::\+World\+Manager}!remove\+Listener@{remove\+Listener}}
+\index{remove\+Listener@{remove\+Listener}!Zeta\+::\+World\+Manager@{Zeta\+::\+World\+Manager}}
+\subsubsection[{remove\+Listener}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+World\+Manager\+::remove\+Listener (
+\begin{DoxyParamCaption}
+\item[{{\bf World\+Listener} $\ast$}]{listener, }
+\item[{{\bf World\+Event\+::\+Type}}]{event\+Type}
+\end{DoxyParamCaption}
+)}}\label{classZeta_1_1WorldManager_a8e2ad66bc6420d386471cf1a4bfc1de8}
+\hypertarget{classZeta_1_1WorldManager_a64f450d494c1610d6f170adcc5fc7868}{\index{Zeta\+::\+World\+Manager@{Zeta\+::\+World\+Manager}!remove\+Listener@{remove\+Listener}}
+\index{remove\+Listener@{remove\+Listener}!Zeta\+::\+World\+Manager@{Zeta\+::\+World\+Manager}}
+\subsubsection[{remove\+Listener}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+World\+Manager\+::remove\+Listener (
+\begin{DoxyParamCaption}
+\item[{{\bf World\+Listener} $\ast$}]{listener, }
+\item[{const std\+::string \&}]{channel}
+\end{DoxyParamCaption}
+)}}\label{classZeta_1_1WorldManager_a64f450d494c1610d6f170adcc5fc7868}
+\hypertarget{classZeta_1_1WorldManager_a3faed000bf683263268010617dae724f}{\index{Zeta\+::\+World\+Manager@{Zeta\+::\+World\+Manager}!resume@{resume}}
+\index{resume@{resume}!Zeta\+::\+World\+Manager@{Zeta\+::\+World\+Manager}}
+\subsubsection[{resume}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+World\+Manager\+::resume (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1WorldManager_a3faed000bf683263268010617dae724f}
+\hypertarget{classZeta_1_1WorldManager_a992cadb0cf1843f58e7596945c8a7c6b}{\index{Zeta\+::\+World\+Manager@{Zeta\+::\+World\+Manager}!set\+Callback@{set\+Callback}}
+\index{set\+Callback@{set\+Callback}!Zeta\+::\+World\+Manager@{Zeta\+::\+World\+Manager}}
+\subsubsection[{set\+Callback}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+World\+Manager\+::set\+Callback (
+\begin{DoxyParamCaption}
+\item[{{\bf Callback}}]{call, }
+\item[{const std\+::string \&}]{name}
+\end{DoxyParamCaption}
+)}}\label{classZeta_1_1WorldManager_a992cadb0cf1843f58e7596945c8a7c6b}
+\hypertarget{classZeta_1_1WorldManager_ad595ba816d78c0c65f8407b66e384c1b}{\index{Zeta\+::\+World\+Manager@{Zeta\+::\+World\+Manager}!set\+Callback@{set\+Callback}}
+\index{set\+Callback@{set\+Callback}!Zeta\+::\+World\+Manager@{Zeta\+::\+World\+Manager}}
+\subsubsection[{set\+Callback}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+World\+Manager\+::set\+Callback (
+\begin{DoxyParamCaption}
+\item[{{\bf Callback}}]{call, }
+\item[{{\bf lua\+\_\+\+Object}}]{func}
+\end{DoxyParamCaption}
+)}}\label{classZeta_1_1WorldManager_ad595ba816d78c0c65f8407b66e384c1b}
+\hypertarget{classZeta_1_1WorldManager_a59601c687f891b38fab7c0b1fbaa81eb}{\index{Zeta\+::\+World\+Manager@{Zeta\+::\+World\+Manager}!show@{show}}
+\index{show@{show}!Zeta\+::\+World\+Manager@{Zeta\+::\+World\+Manager}}
+\subsubsection[{show}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+World\+Manager\+::show (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1WorldManager_a59601c687f891b38fab7c0b1fbaa81eb}
+\hypertarget{classZeta_1_1WorldManager_ad6eec6454808f4d8c7aa1110087d55e6}{\index{Zeta\+::\+World\+Manager@{Zeta\+::\+World\+Manager}!update@{update}}
+\index{update@{update}!Zeta\+::\+World\+Manager@{Zeta\+::\+World\+Manager}}
+\subsubsection[{update}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+World\+Manager\+::update (
+\begin{DoxyParamCaption}
+\item[{{\bf Float}}]{elapsed\+Time}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classZeta_1_1WorldManager_ad6eec6454808f4d8c7aa1110087d55e6}
+
+
+Implements \hyperlink{classZeta_1_1Updateable_af4006bfccb762454b4da08786ad93de0}{Zeta\+::\+Updateable}.
+
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{classZeta_1_1WorldManager_a2fa95d69b32a77fffa4b730679a8b08c}{\index{Zeta\+::\+World\+Manager@{Zeta\+::\+World\+Manager}!Single\+Instanced@{Single\+Instanced}}
+\index{Single\+Instanced@{Single\+Instanced}!Zeta\+::\+World\+Manager@{Zeta\+::\+World\+Manager}}
+\subsubsection[{Single\+Instanced}]{\setlength{\rightskip}{0pt plus 5cm}friend class {\bf Single\+Instanced}\hspace{0.3cm}{\ttfamily [friend]}}}\label{classZeta_1_1WorldManager_a2fa95d69b32a77fffa4b730679a8b08c}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classZeta_1_1WorldManager_ad7cd870adcdb916ad11ebd770e7e17bf}{\index{Zeta\+::\+World\+Manager@{Zeta\+::\+World\+Manager}!callbacks@{callbacks}}
+\index{callbacks@{callbacks}!Zeta\+::\+World\+Manager@{Zeta\+::\+World\+Manager}}
+\subsubsection[{callbacks}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Lua\+Functor} Zeta\+::\+World\+Manager\+::callbacks\mbox{[}12\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}}\label{classZeta_1_1WorldManager_ad7cd870adcdb916ad11ebd770e7e17bf}
+\hypertarget{classZeta_1_1WorldManager_a66357a14540415262464a5fc35ae75fd}{\index{Zeta\+::\+World\+Manager@{Zeta\+::\+World\+Manager}!camera@{camera}}
+\index{camera@{camera}!Zeta\+::\+World\+Manager@{Zeta\+::\+World\+Manager}}
+\subsubsection[{camera}]{\setlength{\rightskip}{0pt plus 5cm}{\bf View} Zeta\+::\+World\+Manager\+::camera\hspace{0.3cm}{\ttfamily [private]}}}\label{classZeta_1_1WorldManager_a66357a14540415262464a5fc35ae75fd}
+\hypertarget{classZeta_1_1WorldManager_ab268372a957917e58c113083087fb4a5}{\index{Zeta\+::\+World\+Manager@{Zeta\+::\+World\+Manager}!custom\+Channel@{custom\+Channel}}
+\index{custom\+Channel@{custom\+Channel}!Zeta\+::\+World\+Manager@{Zeta\+::\+World\+Manager}}
+\subsubsection[{custom\+Channel}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Z\+Small\+Map}$<$std\+::string, {\bf Listener\+Set}$>$ Zeta\+::\+World\+Manager\+::custom\+Channel\hspace{0.3cm}{\ttfamily [private]}}}\label{classZeta_1_1WorldManager_ab268372a957917e58c113083087fb4a5}
+\hypertarget{classZeta_1_1WorldManager_a4737df2046668caffa598cf1e2b7e153}{\index{Zeta\+::\+World\+Manager@{Zeta\+::\+World\+Manager}!custom\+Listeners\+To\+Be\+Erased@{custom\+Listeners\+To\+Be\+Erased}}
+\index{custom\+Listeners\+To\+Be\+Erased@{custom\+Listeners\+To\+Be\+Erased}!Zeta\+::\+World\+Manager@{Zeta\+::\+World\+Manager}}
+\subsubsection[{custom\+Listeners\+To\+Be\+Erased}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<${\bf Custom\+Listener\+Pair}$>$ Zeta\+::\+World\+Manager\+::custom\+Listeners\+To\+Be\+Erased\hspace{0.3cm}{\ttfamily [private]}}}\label{classZeta_1_1WorldManager_a4737df2046668caffa598cf1e2b7e153}
+\hypertarget{classZeta_1_1WorldManager_a0fe0b18ba1b0254d5422fb1b213211e4}{\index{Zeta\+::\+World\+Manager@{Zeta\+::\+World\+Manager}!event\+Channel@{event\+Channel}}
+\index{event\+Channel@{event\+Channel}!Zeta\+::\+World\+Manager@{Zeta\+::\+World\+Manager}}
+\subsubsection[{event\+Channel}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Listener\+Set} Zeta\+::\+World\+Manager\+::event\+Channel\mbox{[}10\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}}\label{classZeta_1_1WorldManager_a0fe0b18ba1b0254d5422fb1b213211e4}
+\hypertarget{classZeta_1_1WorldManager_a9806e16597676563228f8f6c06a85e54}{\index{Zeta\+::\+World\+Manager@{Zeta\+::\+World\+Manager}!frame\+Listeners@{frame\+Listeners}}
+\index{frame\+Listeners@{frame\+Listeners}!Zeta\+::\+World\+Manager@{Zeta\+::\+World\+Manager}}
+\subsubsection[{frame\+Listeners}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Z\+Set}$<${\bf Updateable}$\ast$$>$ Zeta\+::\+World\+Manager\+::frame\+Listeners\hspace{0.3cm}{\ttfamily [private]}}}\label{classZeta_1_1WorldManager_a9806e16597676563228f8f6c06a85e54}
+\hypertarget{classZeta_1_1WorldManager_a3910bb75091f95c5b8e8d04550bc4eae}{\index{Zeta\+::\+World\+Manager@{Zeta\+::\+World\+Manager}!frame\+Listeners\+To\+Be\+Removed@{frame\+Listeners\+To\+Be\+Removed}}
+\index{frame\+Listeners\+To\+Be\+Removed@{frame\+Listeners\+To\+Be\+Removed}!Zeta\+::\+World\+Manager@{Zeta\+::\+World\+Manager}}
+\subsubsection[{frame\+Listeners\+To\+Be\+Removed}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<${\bf Updateable}$\ast$$>$ Zeta\+::\+World\+Manager\+::frame\+Listeners\+To\+Be\+Removed\hspace{0.3cm}{\ttfamily [private]}}}\label{classZeta_1_1WorldManager_a3910bb75091f95c5b8e8d04550bc4eae}
+\hypertarget{classZeta_1_1WorldManager_aa74c8d0807809445d3dbae2d6ec6281f}{\index{Zeta\+::\+World\+Manager@{Zeta\+::\+World\+Manager}!map\+Loader@{map\+Loader}}
+\index{map\+Loader@{map\+Loader}!Zeta\+::\+World\+Manager@{Zeta\+::\+World\+Manager}}
+\subsubsection[{map\+Loader}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Map\+Loader} Zeta\+::\+World\+Manager\+::map\+Loader\hspace{0.3cm}{\ttfamily [private]}}}\label{classZeta_1_1WorldManager_aa74c8d0807809445d3dbae2d6ec6281f}
+\hypertarget{classZeta_1_1WorldManager_abf8ed0d3fbc48096ac16edfdce8c14f7}{\index{Zeta\+::\+World\+Manager@{Zeta\+::\+World\+Manager}!player@{player}}
+\index{player@{player}!Zeta\+::\+World\+Manager@{Zeta\+::\+World\+Manager}}
+\subsubsection[{player}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Player}$\ast$ Zeta\+::\+World\+Manager\+::player\hspace{0.3cm}{\ttfamily [private]}}}\label{classZeta_1_1WorldManager_abf8ed0d3fbc48096ac16edfdce8c14f7}
+\hypertarget{classZeta_1_1WorldManager_af613bcf59a48f527ae8ad965ac325bfc}{\index{Zeta\+::\+World\+Manager@{Zeta\+::\+World\+Manager}!running@{running}}
+\index{running@{running}!Zeta\+::\+World\+Manager@{Zeta\+::\+World\+Manager}}
+\subsubsection[{running}]{\setlength{\rightskip}{0pt plus 5cm}bool Zeta\+::\+World\+Manager\+::running\hspace{0.3cm}{\ttfamily [private]}}}\label{classZeta_1_1WorldManager_af613bcf59a48f527ae8ad965ac325bfc}
+\hypertarget{classZeta_1_1WorldManager_a047253e00257f247919a2d075baafc34}{\index{Zeta\+::\+World\+Manager@{Zeta\+::\+World\+Manager}!visible@{visible}}
+\index{visible@{visible}!Zeta\+::\+World\+Manager@{Zeta\+::\+World\+Manager}}
+\subsubsection[{visible}]{\setlength{\rightskip}{0pt plus 5cm}bool Zeta\+::\+World\+Manager\+::visible\hspace{0.3cm}{\ttfamily [private]}}}\label{classZeta_1_1WorldManager_a047253e00257f247919a2d075baafc34}
+\hypertarget{classZeta_1_1WorldManager_a9d5daaf5fd9db8f35b52e9606c6d9ede}{\index{Zeta\+::\+World\+Manager@{Zeta\+::\+World\+Manager}!world\+Listeners\+To\+Be\+Erased@{world\+Listeners\+To\+Be\+Erased}}
+\index{world\+Listeners\+To\+Be\+Erased@{world\+Listeners\+To\+Be\+Erased}!Zeta\+::\+World\+Manager@{Zeta\+::\+World\+Manager}}
+\subsubsection[{world\+Listeners\+To\+Be\+Erased}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<${\bf World\+Listener\+Pair}$>$ Zeta\+::\+World\+Manager\+::world\+Listeners\+To\+Be\+Erased\hspace{0.3cm}{\ttfamily [private]}}}\label{classZeta_1_1WorldManager_a9d5daaf5fd9db8f35b52e9606c6d9ede}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Zeta/\+Core/\+R\+P\+G\+Classes/\hyperlink{WorldManager_8hpp}{World\+Manager.\+hpp}\end{DoxyCompactItemize}

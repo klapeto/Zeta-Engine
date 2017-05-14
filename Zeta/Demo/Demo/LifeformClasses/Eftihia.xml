@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LifeformClass name="Eftihia" faction="Allies">
+
+	<AnimationClass filename="Demo/AnimationClasses/Female_NPC_3.xml" />
+
+	<Stats level="1">
+		<Stat name="Speed" value="250" />
+		<Stat name="HP5" value="1" />
+		<Stat name="MP5" value="5" />
+		<Levelize lowBound="+2" mul="100" upBound="+3">
+			<Stat name="MaxHP" />
+			<Stat name="MaxMana" />
+		</Levelize>
+		<Levelize lowBound="+2" mul="10" upBound="+3">
+			<Stat name="Patk" />
+			<Stat name="Mdef" />
+			<Stat name="Matk" />
+			<Stat name="Pdef" />
+		</Levelize>
+	</Stats>
+</LifeformClass>

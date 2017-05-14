@@ -1,0 +1,252 @@
+\hypertarget{classZeta_1_1LifeformState}{\section{Zeta\+:\+:Lifeform\+State Class Reference}
+\label{classZeta_1_1LifeformState}\index{Zeta\+::\+Lifeform\+State@{Zeta\+::\+Lifeform\+State}}
+}
+
+
+{\ttfamily \#include $<$Lifeform\+State.\+hpp$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{classZeta_1_1LifeformState_a63f770b2fa2c1d9b86b59108888d2806}{Direction} \{ \hyperlink{classZeta_1_1LifeformState_a63f770b2fa2c1d9b86b59108888d2806a29a5961497126fb4f6461866d5729b85}{Down} = 1, 
+\hyperlink{classZeta_1_1LifeformState_a63f770b2fa2c1d9b86b59108888d2806a57307df8aa928d6f8c41590fde9ed200}{Up}, 
+\hyperlink{classZeta_1_1LifeformState_a63f770b2fa2c1d9b86b59108888d2806aa68660fe7c8c1290263f4730ef614b05}{Left}, 
+\hyperlink{classZeta_1_1LifeformState_a63f770b2fa2c1d9b86b59108888d2806ab000dd815e34d2ef6ce88493b1a1f5eb}{Right}
+ \}
+\item 
+enum \hyperlink{classZeta_1_1LifeformState_a965add1b0f9a548c9f3f9147b34b4816}{Action} \{ \\*
+\hyperlink{classZeta_1_1LifeformState_a965add1b0f9a548c9f3f9147b34b4816ad01637e23e43aad62b74fae8f549e596}{Idle} = (1 $<$$<$ 4), 
+\hyperlink{classZeta_1_1LifeformState_a965add1b0f9a548c9f3f9147b34b4816a52953f7bff45d440cd6397305b714e7d}{Moving} = (2 $<$$<$ 4), 
+\hyperlink{classZeta_1_1LifeformState_a965add1b0f9a548c9f3f9147b34b4816a141e153e6f7481678ab57e7f408edb03}{Dying} = (3 $<$$<$ 4), 
+\hyperlink{classZeta_1_1LifeformState_a965add1b0f9a548c9f3f9147b34b4816af1c88975cad85dc039c4e2bff23c9dee}{Dead} = (4 $<$$<$ 4), 
+\\*
+\hyperlink{classZeta_1_1LifeformState_a965add1b0f9a548c9f3f9147b34b4816a817d466cbf3364cadb5310208800701c}{Casting} = (5 $<$$<$ 4)
+ \}
+\item 
+typedef int \hyperlink{classZeta_1_1LifeformState_a877fbe4e8efefd0a5323f950909181b6}{Combined\+State}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classZeta_1_1LifeformState_adcf9a8412c09be44bced238d79cba407}{set} (int combined\+State)
+\item 
+\hyperlink{classZeta_1_1LifeformState_a877fbe4e8efefd0a5323f950909181b6}{Combined\+State} \hyperlink{classZeta_1_1LifeformState_a95038676dc5242b76ab976c0fb8455e6}{get\+Combined\+State} () const 
+\item 
+void \hyperlink{classZeta_1_1LifeformState_ab43573f2b2577534a0e62114b5eb1c53}{set\+Action} (\hyperlink{classZeta_1_1LifeformState_a965add1b0f9a548c9f3f9147b34b4816}{Action} action)
+\item 
+void \hyperlink{classZeta_1_1LifeformState_aeb54cf32de83f687d291bc3c19259f28}{set\+Direction} (\hyperlink{classZeta_1_1LifeformState_a63f770b2fa2c1d9b86b59108888d2806}{Direction} direction)
+\item 
+\hyperlink{classZeta_1_1LifeformState_a965add1b0f9a548c9f3f9147b34b4816}{Action} \hyperlink{classZeta_1_1LifeformState_a513bee67924829cce8715f68df29a413}{get\+Action} () const 
+\item 
+\hyperlink{classZeta_1_1LifeformState_a63f770b2fa2c1d9b86b59108888d2806}{Direction} \hyperlink{classZeta_1_1LifeformState_a2fd48dd5ca23ef0b381aa44574fb64c3}{get\+Direction} () const 
+\item 
+void \hyperlink{classZeta_1_1LifeformState_afdda73f560b7c74750e80a55c002e9df}{operator=} (int combined\+State)
+\item 
+\hyperlink{classZeta_1_1LifeformState_accac9f491141ee845e142142ae423d2c}{Lifeform\+State} ()
+\item 
+\hyperlink{classZeta_1_1LifeformState_a99f4f177a56da799393c6d7d0fe072d3}{Lifeform\+State} (int combined\+State)
+\item 
+\hyperlink{classZeta_1_1LifeformState_adee7dc3255716a6623c32072f80a98b7}{Lifeform\+State} (const \hyperlink{classZeta_1_1LifeformState}{Lifeform\+State} \&)=default
+\item 
+\hyperlink{classZeta_1_1LifeformState_a129c1cbe089d1ddb8fc0eee876b8526f}{Lifeform\+State} (\hyperlink{classZeta_1_1LifeformState}{Lifeform\+State} \&\&)=default
+\item 
+\hyperlink{classZeta_1_1LifeformState}{Lifeform\+State} \& \hyperlink{classZeta_1_1LifeformState_ac4d8d23ce382bf1a46004f38b4be003c}{operator=} (const \hyperlink{classZeta_1_1LifeformState}{Lifeform\+State} \&)=default
+\item 
+\hyperlink{classZeta_1_1LifeformState_a4d71acd0fb41d88f38c7bdccbef06038}{$\sim$\+Lifeform\+State} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const int \hyperlink{classZeta_1_1LifeformState_a1d7a962e39e64266d685cce63e94774f}{max\+Direction\+Value} = \hyperlink{classZeta_1_1LifeformState_a63f770b2fa2c1d9b86b59108888d2806ab000dd815e34d2ef6ce88493b1a1f5eb}{Right}
+\item 
+static const int \hyperlink{classZeta_1_1LifeformState_a89d30f2c8086821c2d0346fcf867f473}{max\+Action\+Value} = \hyperlink{classZeta_1_1LifeformState_a965add1b0f9a548c9f3f9147b34b4816a817d466cbf3364cadb5310208800701c}{Casting} $>$$>$ 4
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classZeta_1_1LifeformState_a63f770b2fa2c1d9b86b59108888d2806}{Direction} \hyperlink{classZeta_1_1LifeformState_a9d68e33fdffc2a4b3c9aded59895041f}{m\+\_\+direction}
+\item 
+\hyperlink{classZeta_1_1LifeformState_a965add1b0f9a548c9f3f9147b34b4816}{Action} \hyperlink{classZeta_1_1LifeformState_ae7fa763bada25f73ce0eb41995600ce1}{m\+\_\+action}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Typedef Documentation}
+\hypertarget{classZeta_1_1LifeformState_a877fbe4e8efefd0a5323f950909181b6}{\index{Zeta\+::\+Lifeform\+State@{Zeta\+::\+Lifeform\+State}!Combined\+State@{Combined\+State}}
+\index{Combined\+State@{Combined\+State}!Zeta\+::\+Lifeform\+State@{Zeta\+::\+Lifeform\+State}}
+\subsubsection[{Combined\+State}]{\setlength{\rightskip}{0pt plus 5cm}typedef int {\bf Zeta\+::\+Lifeform\+State\+::\+Combined\+State}}}\label{classZeta_1_1LifeformState_a877fbe4e8efefd0a5323f950909181b6}
+
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{classZeta_1_1LifeformState_a965add1b0f9a548c9f3f9147b34b4816}{\index{Zeta\+::\+Lifeform\+State@{Zeta\+::\+Lifeform\+State}!Action@{Action}}
+\index{Action@{Action}!Zeta\+::\+Lifeform\+State@{Zeta\+::\+Lifeform\+State}}
+\subsubsection[{Action}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Zeta\+::\+Lifeform\+State\+::\+Action}}}\label{classZeta_1_1LifeformState_a965add1b0f9a548c9f3f9147b34b4816}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{Idle@{Idle}!Zeta\+::\+Lifeform\+State@{Zeta\+::\+Lifeform\+State}}\index{Zeta\+::\+Lifeform\+State@{Zeta\+::\+Lifeform\+State}!Idle@{Idle}}\item[{\em 
+\hypertarget{classZeta_1_1LifeformState_a965add1b0f9a548c9f3f9147b34b4816ad01637e23e43aad62b74fae8f549e596}{Idle}\label{classZeta_1_1LifeformState_a965add1b0f9a548c9f3f9147b34b4816ad01637e23e43aad62b74fae8f549e596}
+}]\index{Moving@{Moving}!Zeta\+::\+Lifeform\+State@{Zeta\+::\+Lifeform\+State}}\index{Zeta\+::\+Lifeform\+State@{Zeta\+::\+Lifeform\+State}!Moving@{Moving}}\item[{\em 
+\hypertarget{classZeta_1_1LifeformState_a965add1b0f9a548c9f3f9147b34b4816a52953f7bff45d440cd6397305b714e7d}{Moving}\label{classZeta_1_1LifeformState_a965add1b0f9a548c9f3f9147b34b4816a52953f7bff45d440cd6397305b714e7d}
+}]\index{Dying@{Dying}!Zeta\+::\+Lifeform\+State@{Zeta\+::\+Lifeform\+State}}\index{Zeta\+::\+Lifeform\+State@{Zeta\+::\+Lifeform\+State}!Dying@{Dying}}\item[{\em 
+\hypertarget{classZeta_1_1LifeformState_a965add1b0f9a548c9f3f9147b34b4816a141e153e6f7481678ab57e7f408edb03}{Dying}\label{classZeta_1_1LifeformState_a965add1b0f9a548c9f3f9147b34b4816a141e153e6f7481678ab57e7f408edb03}
+}]\index{Dead@{Dead}!Zeta\+::\+Lifeform\+State@{Zeta\+::\+Lifeform\+State}}\index{Zeta\+::\+Lifeform\+State@{Zeta\+::\+Lifeform\+State}!Dead@{Dead}}\item[{\em 
+\hypertarget{classZeta_1_1LifeformState_a965add1b0f9a548c9f3f9147b34b4816af1c88975cad85dc039c4e2bff23c9dee}{Dead}\label{classZeta_1_1LifeformState_a965add1b0f9a548c9f3f9147b34b4816af1c88975cad85dc039c4e2bff23c9dee}
+}]\index{Casting@{Casting}!Zeta\+::\+Lifeform\+State@{Zeta\+::\+Lifeform\+State}}\index{Zeta\+::\+Lifeform\+State@{Zeta\+::\+Lifeform\+State}!Casting@{Casting}}\item[{\em 
+\hypertarget{classZeta_1_1LifeformState_a965add1b0f9a548c9f3f9147b34b4816a817d466cbf3364cadb5310208800701c}{Casting}\label{classZeta_1_1LifeformState_a965add1b0f9a548c9f3f9147b34b4816a817d466cbf3364cadb5310208800701c}
+}]\end{description}
+\end{Desc}
+\hypertarget{classZeta_1_1LifeformState_a63f770b2fa2c1d9b86b59108888d2806}{\index{Zeta\+::\+Lifeform\+State@{Zeta\+::\+Lifeform\+State}!Direction@{Direction}}
+\index{Direction@{Direction}!Zeta\+::\+Lifeform\+State@{Zeta\+::\+Lifeform\+State}}
+\subsubsection[{Direction}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Zeta\+::\+Lifeform\+State\+::\+Direction}}}\label{classZeta_1_1LifeformState_a63f770b2fa2c1d9b86b59108888d2806}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{Down@{Down}!Zeta\+::\+Lifeform\+State@{Zeta\+::\+Lifeform\+State}}\index{Zeta\+::\+Lifeform\+State@{Zeta\+::\+Lifeform\+State}!Down@{Down}}\item[{\em 
+\hypertarget{classZeta_1_1LifeformState_a63f770b2fa2c1d9b86b59108888d2806a29a5961497126fb4f6461866d5729b85}{Down}\label{classZeta_1_1LifeformState_a63f770b2fa2c1d9b86b59108888d2806a29a5961497126fb4f6461866d5729b85}
+}]\index{Up@{Up}!Zeta\+::\+Lifeform\+State@{Zeta\+::\+Lifeform\+State}}\index{Zeta\+::\+Lifeform\+State@{Zeta\+::\+Lifeform\+State}!Up@{Up}}\item[{\em 
+\hypertarget{classZeta_1_1LifeformState_a63f770b2fa2c1d9b86b59108888d2806a57307df8aa928d6f8c41590fde9ed200}{Up}\label{classZeta_1_1LifeformState_a63f770b2fa2c1d9b86b59108888d2806a57307df8aa928d6f8c41590fde9ed200}
+}]\index{Left@{Left}!Zeta\+::\+Lifeform\+State@{Zeta\+::\+Lifeform\+State}}\index{Zeta\+::\+Lifeform\+State@{Zeta\+::\+Lifeform\+State}!Left@{Left}}\item[{\em 
+\hypertarget{classZeta_1_1LifeformState_a63f770b2fa2c1d9b86b59108888d2806aa68660fe7c8c1290263f4730ef614b05}{Left}\label{classZeta_1_1LifeformState_a63f770b2fa2c1d9b86b59108888d2806aa68660fe7c8c1290263f4730ef614b05}
+}]\index{Right@{Right}!Zeta\+::\+Lifeform\+State@{Zeta\+::\+Lifeform\+State}}\index{Zeta\+::\+Lifeform\+State@{Zeta\+::\+Lifeform\+State}!Right@{Right}}\item[{\em 
+\hypertarget{classZeta_1_1LifeformState_a63f770b2fa2c1d9b86b59108888d2806ab000dd815e34d2ef6ce88493b1a1f5eb}{Right}\label{classZeta_1_1LifeformState_a63f770b2fa2c1d9b86b59108888d2806ab000dd815e34d2ef6ce88493b1a1f5eb}
+}]\end{description}
+\end{Desc}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classZeta_1_1LifeformState_accac9f491141ee845e142142ae423d2c}{\index{Zeta\+::\+Lifeform\+State@{Zeta\+::\+Lifeform\+State}!Lifeform\+State@{Lifeform\+State}}
+\index{Lifeform\+State@{Lifeform\+State}!Zeta\+::\+Lifeform\+State@{Zeta\+::\+Lifeform\+State}}
+\subsubsection[{Lifeform\+State}]{\setlength{\rightskip}{0pt plus 5cm}Zeta\+::\+Lifeform\+State\+::\+Lifeform\+State (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1LifeformState_accac9f491141ee845e142142ae423d2c}
+\hypertarget{classZeta_1_1LifeformState_a99f4f177a56da799393c6d7d0fe072d3}{\index{Zeta\+::\+Lifeform\+State@{Zeta\+::\+Lifeform\+State}!Lifeform\+State@{Lifeform\+State}}
+\index{Lifeform\+State@{Lifeform\+State}!Zeta\+::\+Lifeform\+State@{Zeta\+::\+Lifeform\+State}}
+\subsubsection[{Lifeform\+State}]{\setlength{\rightskip}{0pt plus 5cm}Zeta\+::\+Lifeform\+State\+::\+Lifeform\+State (
+\begin{DoxyParamCaption}
+\item[{int}]{combined\+State}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1LifeformState_a99f4f177a56da799393c6d7d0fe072d3}
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=338pt]{classZeta_1_1LifeformState_a99f4f177a56da799393c6d7d0fe072d3_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classZeta_1_1LifeformState_adee7dc3255716a6623c32072f80a98b7}{\index{Zeta\+::\+Lifeform\+State@{Zeta\+::\+Lifeform\+State}!Lifeform\+State@{Lifeform\+State}}
+\index{Lifeform\+State@{Lifeform\+State}!Zeta\+::\+Lifeform\+State@{Zeta\+::\+Lifeform\+State}}
+\subsubsection[{Lifeform\+State}]{\setlength{\rightskip}{0pt plus 5cm}Zeta\+::\+Lifeform\+State\+::\+Lifeform\+State (
+\begin{DoxyParamCaption}
+\item[{const {\bf Lifeform\+State} \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [default]}}}\label{classZeta_1_1LifeformState_adee7dc3255716a6623c32072f80a98b7}
+\hypertarget{classZeta_1_1LifeformState_a129c1cbe089d1ddb8fc0eee876b8526f}{\index{Zeta\+::\+Lifeform\+State@{Zeta\+::\+Lifeform\+State}!Lifeform\+State@{Lifeform\+State}}
+\index{Lifeform\+State@{Lifeform\+State}!Zeta\+::\+Lifeform\+State@{Zeta\+::\+Lifeform\+State}}
+\subsubsection[{Lifeform\+State}]{\setlength{\rightskip}{0pt plus 5cm}Zeta\+::\+Lifeform\+State\+::\+Lifeform\+State (
+\begin{DoxyParamCaption}
+\item[{{\bf Lifeform\+State} \&\&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [default]}}}\label{classZeta_1_1LifeformState_a129c1cbe089d1ddb8fc0eee876b8526f}
+\hypertarget{classZeta_1_1LifeformState_a4d71acd0fb41d88f38c7bdccbef06038}{\index{Zeta\+::\+Lifeform\+State@{Zeta\+::\+Lifeform\+State}!````~Lifeform\+State@{$\sim$\+Lifeform\+State}}
+\index{````~Lifeform\+State@{$\sim$\+Lifeform\+State}!Zeta\+::\+Lifeform\+State@{Zeta\+::\+Lifeform\+State}}
+\subsubsection[{$\sim$\+Lifeform\+State}]{\setlength{\rightskip}{0pt plus 5cm}Zeta\+::\+Lifeform\+State\+::$\sim$\+Lifeform\+State (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1LifeformState_a4d71acd0fb41d88f38c7bdccbef06038}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classZeta_1_1LifeformState_a513bee67924829cce8715f68df29a413}{\index{Zeta\+::\+Lifeform\+State@{Zeta\+::\+Lifeform\+State}!get\+Action@{get\+Action}}
+\index{get\+Action@{get\+Action}!Zeta\+::\+Lifeform\+State@{Zeta\+::\+Lifeform\+State}}
+\subsubsection[{get\+Action}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Action} Zeta\+::\+Lifeform\+State\+::get\+Action (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1LifeformState_a513bee67924829cce8715f68df29a413}
+\hypertarget{classZeta_1_1LifeformState_a95038676dc5242b76ab976c0fb8455e6}{\index{Zeta\+::\+Lifeform\+State@{Zeta\+::\+Lifeform\+State}!get\+Combined\+State@{get\+Combined\+State}}
+\index{get\+Combined\+State@{get\+Combined\+State}!Zeta\+::\+Lifeform\+State@{Zeta\+::\+Lifeform\+State}}
+\subsubsection[{get\+Combined\+State}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Combined\+State} Zeta\+::\+Lifeform\+State\+::get\+Combined\+State (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1LifeformState_a95038676dc5242b76ab976c0fb8455e6}
+\hypertarget{classZeta_1_1LifeformState_a2fd48dd5ca23ef0b381aa44574fb64c3}{\index{Zeta\+::\+Lifeform\+State@{Zeta\+::\+Lifeform\+State}!get\+Direction@{get\+Direction}}
+\index{get\+Direction@{get\+Direction}!Zeta\+::\+Lifeform\+State@{Zeta\+::\+Lifeform\+State}}
+\subsubsection[{get\+Direction}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Direction} Zeta\+::\+Lifeform\+State\+::get\+Direction (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1LifeformState_a2fd48dd5ca23ef0b381aa44574fb64c3}
+\hypertarget{classZeta_1_1LifeformState_afdda73f560b7c74750e80a55c002e9df}{\index{Zeta\+::\+Lifeform\+State@{Zeta\+::\+Lifeform\+State}!operator=@{operator=}}
+\index{operator=@{operator=}!Zeta\+::\+Lifeform\+State@{Zeta\+::\+Lifeform\+State}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+Lifeform\+State\+::operator= (
+\begin{DoxyParamCaption}
+\item[{int}]{combined\+State}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1LifeformState_afdda73f560b7c74750e80a55c002e9df}
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=338pt]{classZeta_1_1LifeformState_afdda73f560b7c74750e80a55c002e9df_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classZeta_1_1LifeformState_ac4d8d23ce382bf1a46004f38b4be003c}{\index{Zeta\+::\+Lifeform\+State@{Zeta\+::\+Lifeform\+State}!operator=@{operator=}}
+\index{operator=@{operator=}!Zeta\+::\+Lifeform\+State@{Zeta\+::\+Lifeform\+State}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Lifeform\+State}\& Zeta\+::\+Lifeform\+State\+::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Lifeform\+State} \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [default]}}}\label{classZeta_1_1LifeformState_ac4d8d23ce382bf1a46004f38b4be003c}
+\hypertarget{classZeta_1_1LifeformState_adcf9a8412c09be44bced238d79cba407}{\index{Zeta\+::\+Lifeform\+State@{Zeta\+::\+Lifeform\+State}!set@{set}}
+\index{set@{set}!Zeta\+::\+Lifeform\+State@{Zeta\+::\+Lifeform\+State}}
+\subsubsection[{set}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+Lifeform\+State\+::set (
+\begin{DoxyParamCaption}
+\item[{int}]{combined\+State}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1LifeformState_adcf9a8412c09be44bced238d79cba407}
+\hypertarget{classZeta_1_1LifeformState_ab43573f2b2577534a0e62114b5eb1c53}{\index{Zeta\+::\+Lifeform\+State@{Zeta\+::\+Lifeform\+State}!set\+Action@{set\+Action}}
+\index{set\+Action@{set\+Action}!Zeta\+::\+Lifeform\+State@{Zeta\+::\+Lifeform\+State}}
+\subsubsection[{set\+Action}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+Lifeform\+State\+::set\+Action (
+\begin{DoxyParamCaption}
+\item[{{\bf Action}}]{action}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1LifeformState_ab43573f2b2577534a0e62114b5eb1c53}
+\hypertarget{classZeta_1_1LifeformState_aeb54cf32de83f687d291bc3c19259f28}{\index{Zeta\+::\+Lifeform\+State@{Zeta\+::\+Lifeform\+State}!set\+Direction@{set\+Direction}}
+\index{set\+Direction@{set\+Direction}!Zeta\+::\+Lifeform\+State@{Zeta\+::\+Lifeform\+State}}
+\subsubsection[{set\+Direction}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+Lifeform\+State\+::set\+Direction (
+\begin{DoxyParamCaption}
+\item[{{\bf Direction}}]{direction}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1LifeformState_aeb54cf32de83f687d291bc3c19259f28}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classZeta_1_1LifeformState_ae7fa763bada25f73ce0eb41995600ce1}{\index{Zeta\+::\+Lifeform\+State@{Zeta\+::\+Lifeform\+State}!m\+\_\+action@{m\+\_\+action}}
+\index{m\+\_\+action@{m\+\_\+action}!Zeta\+::\+Lifeform\+State@{Zeta\+::\+Lifeform\+State}}
+\subsubsection[{m\+\_\+action}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Action} Zeta\+::\+Lifeform\+State\+::m\+\_\+action\hspace{0.3cm}{\ttfamily [private]}}}\label{classZeta_1_1LifeformState_ae7fa763bada25f73ce0eb41995600ce1}
+\hypertarget{classZeta_1_1LifeformState_a9d68e33fdffc2a4b3c9aded59895041f}{\index{Zeta\+::\+Lifeform\+State@{Zeta\+::\+Lifeform\+State}!m\+\_\+direction@{m\+\_\+direction}}
+\index{m\+\_\+direction@{m\+\_\+direction}!Zeta\+::\+Lifeform\+State@{Zeta\+::\+Lifeform\+State}}
+\subsubsection[{m\+\_\+direction}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Direction} Zeta\+::\+Lifeform\+State\+::m\+\_\+direction\hspace{0.3cm}{\ttfamily [private]}}}\label{classZeta_1_1LifeformState_a9d68e33fdffc2a4b3c9aded59895041f}
+\hypertarget{classZeta_1_1LifeformState_a89d30f2c8086821c2d0346fcf867f473}{\index{Zeta\+::\+Lifeform\+State@{Zeta\+::\+Lifeform\+State}!max\+Action\+Value@{max\+Action\+Value}}
+\index{max\+Action\+Value@{max\+Action\+Value}!Zeta\+::\+Lifeform\+State@{Zeta\+::\+Lifeform\+State}}
+\subsubsection[{max\+Action\+Value}]{\setlength{\rightskip}{0pt plus 5cm}const int Zeta\+::\+Lifeform\+State\+::max\+Action\+Value = {\bf Casting} $>$$>$ 4\hspace{0.3cm}{\ttfamily [static]}}}\label{classZeta_1_1LifeformState_a89d30f2c8086821c2d0346fcf867f473}
+\hypertarget{classZeta_1_1LifeformState_a1d7a962e39e64266d685cce63e94774f}{\index{Zeta\+::\+Lifeform\+State@{Zeta\+::\+Lifeform\+State}!max\+Direction\+Value@{max\+Direction\+Value}}
+\index{max\+Direction\+Value@{max\+Direction\+Value}!Zeta\+::\+Lifeform\+State@{Zeta\+::\+Lifeform\+State}}
+\subsubsection[{max\+Direction\+Value}]{\setlength{\rightskip}{0pt plus 5cm}const int Zeta\+::\+Lifeform\+State\+::max\+Direction\+Value = {\bf Right}\hspace{0.3cm}{\ttfamily [static]}}}\label{classZeta_1_1LifeformState_a1d7a962e39e64266d685cce63e94774f}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Zeta/\+Core/\+R\+P\+G\+Classes/\hyperlink{LifeformState_8hpp}{Lifeform\+State.\+hpp}\end{DoxyCompactItemize}

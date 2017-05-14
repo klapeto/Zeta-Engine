@@ -1,0 +1,75 @@
+.TH "Zeta::OverTimeEffect" 3 "Wed Feb 10 2016" "Zeta" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Zeta::OverTimeEffect \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <OverTimeEffect\&.hpp>\fP
+.PP
+Inherits \fBZeta::DurableEffect\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBFloat\fP \fBgetTickEvery\fP () const "
+.br
+.ti -1c
+.RI "void \fBsetTickEvery\fP (\fBFloat\fP \fBtickEvery\fP)"
+.br
+.ti -1c
+.RI "void \fBupdate\fP (\fBFloat\fP elapsedTime)"
+.br
+.ti -1c
+.RI "void \fBpushToLua\fP (lua_State *lstate)"
+.br
+.ti -1c
+.RI "\fBOverTimeEffect\fP (const \fBEffectClass\fP &effCls, \fBLifeform\fP *target, int \fBlevel\fP)"
+.br
+.ti -1c
+.RI "virtual \fB~OverTimeEffect\fP ()"
+.br
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBFloat\fP \fBtickEvery\fP"
+.br
+.ti -1c
+.RI "\fBFloat\fP \fBtickCounter\fP"
+.br
+.in -1c
+.SS "Additional Inherited Members"
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Zeta::OverTimeEffect::OverTimeEffect (const \fBEffectClass\fP &effCls, \fBLifeform\fP *target, intlevel)"
+
+.SS "virtual Zeta::OverTimeEffect::~OverTimeEffect ()\fC [virtual]\fP"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "\fBFloat\fP Zeta::OverTimeEffect::getTickEvery () const\fC [inline]\fP"
+
+.SS "void Zeta::OverTimeEffect::pushToLua (lua_State *lstate)\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBZeta::DurableEffect\fP\&.
+.SS "void Zeta::OverTimeEffect::setTickEvery (\fBFloat\fPtickEvery)\fC [inline]\fP"
+
+.SS "void Zeta::OverTimeEffect::update (\fBFloat\fPelapsedTime)\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBZeta::DurableEffect\fP\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "\fBFloat\fP Zeta::OverTimeEffect::tickCounter\fC [private]\fP"
+
+.SS "\fBFloat\fP Zeta::OverTimeEffect::tickEvery\fC [private]\fP"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Zeta from the source code\&.

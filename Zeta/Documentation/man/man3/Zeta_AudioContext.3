@@ -1,0 +1,98 @@
+.TH "Zeta::AudioContext" 3 "Wed Feb 10 2016" "Zeta" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Zeta::AudioContext \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <AudioContext\&.hpp>\fP
+.PP
+Inherited by \fBZeta::AllegroAudioContext\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "virtual float \fBgetMainGain\fP () const =0"
+.br
+.ti -1c
+.RI "virtual void \fBsetMainGain\fP (float mainGain)=0"
+.br
+.ti -1c
+.RI "void \fBsetMusic\fP (const std::string &path)"
+.br
+.ti -1c
+.RI "void \fBstart\fP ()"
+.br
+.ti -1c
+.RI "void \fBstop\fP ()"
+.br
+.ti -1c
+.RI "\fBAudioContext\fP ()"
+.br
+.ti -1c
+.RI "virtual \fB~AudioContext\fP ()"
+.br
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBSoundInstance\fP * \fBmusic\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+\fBAudioContext\fP Base class Used to create Main \fBSound\fP Wrappers to connect to Engine's core 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Zeta::AudioContext::AudioContext ()"
+
+.SS "virtual Zeta::AudioContext::~AudioContext ()\fC [virtual]\fP"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "virtual float Zeta::AudioContext::getMainGain () const\fC [pure virtual]\fP"
+Gets the main \fBSound\fP gain\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+Float 0\&.0f-1\&.0f representing the Main Mixer Gain 
+.RE
+.PP
+
+.PP
+Implemented in \fBZeta::AllegroAudioContext\fP\&.
+.SS "virtual void Zeta::AudioContext::setMainGain (floatmainGain)\fC [pure virtual]\fP"
+Sets the main Soung Gain\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fImainGain\fP Float representing the mainGain 
+.RE
+.PP
+
+.PP
+Implemented in \fBZeta::AllegroAudioContext\fP\&.
+.SS "void Zeta::AudioContext::setMusic (const std::string &path)"
+Sets the music to be played when \fBstart()\fP is called 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIpath\fP The path of the sound file to be played 
+.RE
+.PP
+
+.SS "void Zeta::AudioContext::start ()"
+Starts playing (Looped) the sound file specified by \fBsetMusic()\fP\&. 
+.SS "void Zeta::AudioContext::stop ()"
+Stops playing the sound that is being played by calling \fBstart()\fP 
+.SH "Member Data Documentation"
+.PP 
+.SS "\fBSoundInstance\fP* Zeta::AudioContext::music\fC [private]\fP"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Zeta from the source code\&.

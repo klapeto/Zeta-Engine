@@ -1,0 +1,21 @@
+<map id="include/Zeta/Core/RPGClasses/LifeformState.hpp" name="include/Zeta/Core/RPGClasses/LifeformState.hpp">
+<area shape="rect" id="node2" href="$AnimationClass_8hpp.html" title="include/Zeta/Core/Resource\lClasses/AnimationClass.hpp" alt="" coords="1050,97,1240,138"/>
+<area shape="rect" id="node9" href="$Lifeform_8hpp.html" title="include/Zeta/Core/RPGClasses\l/Lifeform.hpp" alt="" coords="466,278,672,319"/>
+<area shape="rect" id="node14" href="$Projectile_8hpp.html" title="include/Zeta/Core/RPGClasses\l/Projectile.hpp" alt="" coords="697,278,903,319"/>
+<area shape="rect" id="node3" href="$AnimationHandler_8hpp.html" title="include/Zeta/Core/Animation\lClasses/AnimationHandler.hpp" alt="" coords="929,187,1132,229"/>
+<area shape="rect" id="node17" href="$ProjectileClass_8hpp.html" title="include/Zeta/Core/RPGClasses\l/ProjectileClass.hpp" alt="" coords="1157,187,1363,229"/>
+<area shape="rect" id="node20" href="$SynchronousResourceContext_8hpp.html" title="include/Zeta/Core/Synchronous\lResourceContext.hpp" alt="" coords="1388,187,1593,229"/>
+<area shape="rect" id="node4" href="$CEGUIObject_8hpp.html" title="include/Zeta/Core/RPGClasses\l/CEGUIObject.hpp" alt="" coords="1158,278,1364,319"/>
+<area shape="rect" id="node5" href="$ChildObject_8hpp.html" title="include/Zeta/Core/RPGClasses\l/ChildObject.hpp" alt="" coords="1389,278,1595,319"/>
+<area shape="rect" id="node8" href="$InteractObject_8hpp.html" title="include/Zeta/Core/RPGClasses\l/InteractObject.hpp" alt="" coords="927,278,1133,319"/>
+<area shape="rect" id="node6" href="$CEGUIChild_8hpp.html" title="include/Zeta/Core/RPGClasses\l/CEGUIChild.hpp" alt="" coords="1389,369,1595,410"/>
+<area shape="rect" id="node7" href="$StickyObject_8hpp.html" title="include/Zeta/Core/RPGClasses\l/StickyObject.hpp" alt="" coords="1158,369,1364,410"/>
+<area shape="rect" id="node10" href="$Enemy_8hpp.html" title="include/Zeta/Core/RPGClasses\l/Enemy.hpp" alt="" coords="466,369,672,410"/>
+<area shape="rect" id="node11" href="$Npc_8hpp.html" title="include/Zeta/Core/RPGClasses\l/Npc.hpp" alt="" coords="5,369,211,410"/>
+<area shape="rect" id="node12" href="$Player_8hpp.html" title="include/Zeta/Core/RPGClasses\l/Player.hpp" alt="" coords="235,369,441,410"/>
+<area shape="rect" id="node13" href="$WorldManager_8hpp.html" title="include/Zeta/Core/RPGClasses\l/WorldManager.hpp" alt="" coords="235,459,441,501"/>
+<area shape="rect" id="node15" href="$DirectionalProjectile_8hpp.html" title="include/Zeta/Core/RPGClasses\l/DirectionalProjectile.hpp" alt="" coords="927,369,1133,410"/>
+<area shape="rect" id="node16" href="$SeekingProjectile_8hpp.html" title="include/Zeta/Core/RPGClasses\l/SeekingProjectile.hpp" alt="" coords="697,369,903,410"/>
+<area shape="rect" id="node18" href="$ActiveAbilityClass_8hpp.html" title="include/Zeta/Core/RPGClasses\l/ActiveAbilityClass.hpp" alt="" coords="1619,278,1825,319"/>
+<area shape="rect" id="node19" href="$ActiveAbility_8hpp.html" title="include/Zeta/Core/RPGClasses\l/ActiveAbility.hpp" alt="" coords="1619,369,1825,410"/>
+</map>

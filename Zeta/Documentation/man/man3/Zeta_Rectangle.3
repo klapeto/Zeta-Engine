@@ -1,0 +1,169 @@
+.TH "Zeta::Rectangle" 3 "Wed Feb 10 2016" "Zeta" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Zeta::Rectangle \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Rectangle\&.hpp>\fP
+.PP
+Inherits \fBZeta::Shape\fP, and \fBZeta::LuaPushable\fP\&.
+.SS "Public Types"
+
+.in +1c
+.ti -1c
+.RI "enum \fBSurface\fP { \fBSurface::Top\fP, \fBSurface::Left\fP, \fBSurface::Right\fP, \fBSurface::Bottom\fP, \fBSurface::Every\fP }"
+.br
+.in -1c
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBFloat\fP \fBgetWidth\fP () const "
+.br
+.ti -1c
+.RI "\fBFloat\fP \fBgetHeight\fP () const "
+.br
+.ti -1c
+.RI "void \fBsetHeight\fP (\fBFloat\fP \fBheight\fP)"
+.br
+.ti -1c
+.RI "void \fBsetWidth\fP (\fBFloat\fP \fBwidth\fP)"
+.br
+.ti -1c
+.RI "void \fBsetSize\fP (\fBFloat\fP \fBwidth\fP, \fBFloat\fP \fBheight\fP)"
+.br
+.ti -1c
+.RI "bool \fBoverlapsPoint\fP (\fBFloat\fP x, \fBFloat\fP y) const "
+.br
+.ti -1c
+.RI "bool \fBoverlapsPoint\fP (const \fBVector2\fP &point) const "
+.br
+.ti -1c
+.RI "bool \fBoverlapsRectangle\fP (const \fBRectangle\fP &other) const "
+.br
+.ti -1c
+.RI "bool \fBoverlapsWholeRectangle\fP (const \fBRectangle\fP &other) const "
+.br
+.ti -1c
+.RI "\fBRectangle\fP & \fBoperator=\fP (const \fBRectangle\fP &other)=default"
+.br
+.ti -1c
+.RI "\fBRectangle\fP (const \fBRectangle\fP &other)=default"
+.br
+.ti -1c
+.RI "\fBRectangle\fP (\fBRectangle\fP &&other)=default"
+.br
+.ti -1c
+.RI "virtual void \fBdraw\fP (\fBFloat\fP x, \fBFloat\fP y, \fBFloat\fP rotation=0\&.0f, Float scale=1\&.0f) const "
+.br
+.ti -1c
+.RI "void \fBpushToLua\fP (lua_State *lstate)"
+.br
+.ti -1c
+.RI "\fBRectangle\fP ()"
+.br
+.ti -1c
+.RI "\fBRectangle\fP (const \fBVector2\fP &location, \fBFloat\fP \fBwidth\fP, \fBFloat\fP \fBheight\fP)"
+.br
+.ti -1c
+.RI "\fBRectangle\fP (\fBFloat\fP x, \fBFloat\fP y, \fBFloat\fP \fBwidth\fP, \fBFloat\fP \fBheight\fP)"
+.br
+.ti -1c
+.RI "\fB~Rectangle\fP ()"
+.br
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBFloat\fP \fBwidth\fP"
+.br
+.ti -1c
+.RI "\fBFloat\fP \fBheight\fP"
+.br
+.in -1c
+.SH "Member Enumeration Documentation"
+.PP 
+.SS "enum \fBZeta::Rectangle::Surface\fP\fC [strong]\fP"
+
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fITop \fP\fP
+.TP
+\fB\fILeft \fP\fP
+.TP
+\fB\fIRight \fP\fP
+.TP
+\fB\fIBottom \fP\fP
+.TP
+\fB\fIEvery \fP\fP
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Zeta::Rectangle::Rectangle (const \fBRectangle\fP &other)\fC [default]\fP"
+
+.SS "Zeta::Rectangle::Rectangle (\fBRectangle\fP &&other)\fC [default]\fP"
+
+.SS "Zeta::Rectangle::Rectangle ()\fC [inline]\fP"
+
+.SS "Zeta::Rectangle::Rectangle (const \fBVector2\fP &location, \fBFloat\fPwidth, \fBFloat\fPheight)\fC [inline]\fP"
+
+.SS "Zeta::Rectangle::Rectangle (\fBFloat\fPx, \fBFloat\fPy, \fBFloat\fPwidth, \fBFloat\fPheight)\fC [inline]\fP"
+
+.SS "Zeta::Rectangle::~Rectangle ()\fC [inline]\fP"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "virtual void Zeta::Rectangle::draw (\fBFloat\fPx, \fBFloat\fPy, \fBFloat\fProtation = \fC0\&.0f\fP, \fBFloat\fPscale = \fC1\&.0f\fP) const\fC [virtual]\fP"
+Draws the \fBObject\fP on screen\&. Be advised, the x,y, offsets might have different meaning on different implementations\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIx\fP X offset to be applied on the drawing 
+.br
+\fIy\fP Y offset to be applied on the drawing 
+.br
+\fIrotation\fP the rotation to be applied on the drawing 
+.RE
+.PP
+
+.PP
+Implements \fBZeta::Drawable\fP\&.
+.SS "\fBFloat\fP Zeta::Rectangle::getHeight () const\fC [inline]\fP"
+
+.SS "\fBFloat\fP Zeta::Rectangle::getWidth () const\fC [inline]\fP"
+
+.SS "\fBRectangle\fP& Zeta::Rectangle::operator= (const \fBRectangle\fP &other)\fC [default]\fP"
+
+.SS "bool Zeta::Rectangle::overlapsPoint (\fBFloat\fPx, \fBFloat\fPy) const\fC [inline]\fP"
+
+.SS "bool Zeta::Rectangle::overlapsPoint (const \fBVector2\fP &point) const\fC [inline]\fP"
+
+.SS "bool Zeta::Rectangle::overlapsRectangle (const \fBRectangle\fP &other) const\fC [inline]\fP"
+
+.SS "bool Zeta::Rectangle::overlapsWholeRectangle (const \fBRectangle\fP &other) const\fC [inline]\fP"
+
+.SS "void Zeta::Rectangle::pushToLua (lua_State *lstate)\fC [virtual]\fP"
+
+.PP
+Implements \fBZeta::LuaPushable\fP\&.
+.SS "void Zeta::Rectangle::setHeight (\fBFloat\fPheight)\fC [inline]\fP"
+
+.SS "void Zeta::Rectangle::setSize (\fBFloat\fPwidth, \fBFloat\fPheight)\fC [inline]\fP"
+
+.SS "void Zeta::Rectangle::setWidth (\fBFloat\fPwidth)\fC [inline]\fP"
+
+.SH "Member Data Documentation"
+.PP 
+.SS "\fBFloat\fP Zeta::Rectangle::height\fC [protected]\fP"
+
+.SS "\fBFloat\fP Zeta::Rectangle::width\fC [protected]\fP"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Zeta from the source code\&.

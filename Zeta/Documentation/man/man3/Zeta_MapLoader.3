@@ -1,0 +1,127 @@
+.TH "Zeta::MapLoader" 3 "Wed Feb 10 2016" "Zeta" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Zeta::MapLoader \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <MapLoader\&.hpp>\fP
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "class \fBLoadBeginCall\fP"
+.br
+.ti -1c
+.RI "class \fBLoadEndCall\fP"
+.br
+.in -1c
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "bool \fBisReady\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetNextMap\fP (const std::string &path)"
+.br
+.ti -1c
+.RI "\fBMap\fP & \fBgetMap\fP ()"
+.br
+.ti -1c
+.RI "const \fBMap\fP & \fBgetMap\fP () const "
+.br
+.ti -1c
+.RI "void \fBstartLoad\fP ()"
+.br
+.ti -1c
+.RI "\fBMapLoader\fP (const \fBMapLoader\fP &)=default"
+.br
+.ti -1c
+.RI "\fBMapLoader\fP & \fBoperator=\fP (const \fBMapLoader\fP &)=default"
+.br
+.ti -1c
+.RI "\fBMapLoader\fP ()"
+.br
+.ti -1c
+.RI "\fB~MapLoader\fP ()"
+.br
+.in -1c
+.SS "Private Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBdoLoad\fP ()"
+.br
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBMap\fP \fBmap\fP"
+.br
+.ti -1c
+.RI "std::thread \fBworker\fP"
+.br
+.ti -1c
+.RI "std::mutex \fBmutex\fP"
+.br
+.ti -1c
+.RI "std::string \fBnextMap\fP"
+.br
+.ti -1c
+.RI "\fBLoadBeginCall\fP \fBonBegin\fP"
+.br
+.ti -1c
+.RI "\fBLoadEndCall\fP \fBonEnd\fP"
+.br
+.ti -1c
+.RI "bool \fBready\fP"
+.br
+.in -1c
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Zeta::MapLoader::MapLoader (const \fBMapLoader\fP &)\fC [default]\fP"
+
+.SS "Zeta::MapLoader::MapLoader ()"
+
+.SS "Zeta::MapLoader::~MapLoader ()"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "void Zeta::MapLoader::doLoad ()\fC [private]\fP"
+
+.SS "\fBMap\fP& Zeta::MapLoader::getMap ()\fC [inline]\fP"
+
+.SS "const \fBMap\fP& Zeta::MapLoader::getMap () const\fC [inline]\fP"
+
+.SS "bool Zeta::MapLoader::isReady ()\fC [inline]\fP"
+
+.SS "\fBMapLoader\fP& Zeta::MapLoader::operator= (const \fBMapLoader\fP &)\fC [default]\fP"
+
+.SS "void Zeta::MapLoader::setNextMap (const std::string &path)\fC [inline]\fP"
+
+.SS "void Zeta::MapLoader::startLoad ()"
+
+.SH "Member Data Documentation"
+.PP 
+.SS "\fBMap\fP Zeta::MapLoader::map\fC [private]\fP"
+
+.SS "std::mutex Zeta::MapLoader::mutex\fC [private]\fP"
+
+.SS "std::string Zeta::MapLoader::nextMap\fC [private]\fP"
+
+.SS "\fBLoadBeginCall\fP Zeta::MapLoader::onBegin\fC [private]\fP"
+
+.SS "\fBLoadEndCall\fP Zeta::MapLoader::onEnd\fC [private]\fP"
+
+.SS "bool Zeta::MapLoader::ready\fC [private]\fP"
+
+.SS "std::thread Zeta::MapLoader::worker\fC [private]\fP"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Zeta from the source code\&.

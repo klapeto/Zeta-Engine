@@ -1,0 +1,71 @@
+.TH "Zeta::FactionManager" 3 "Wed Feb 10 2016" "Zeta" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Zeta::FactionManager \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <FactionManager\&.hpp>\fP
+.PP
+Inherits \fBZeta::SingleInstanced< FactionManager >\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "const \fBFaction\fP & \fBgetFaction\fP (const std::string &name) const "
+.br
+.ti -1c
+.RI "void \fBparseFactionFile\fP (const std::string &path)"
+.br
+.in -1c
+.SS "Private Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBFactionManager\fP ()"
+.br
+.ti -1c
+.RI "\fB~FactionManager\fP ()"
+.br
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBZMap\fP< std::string, \fBFaction\fP > \fBfactions\fP"
+.br
+.in -1c
+.SS "Friends"
+
+.in +1c
+.ti -1c
+.RI "class \fBSingleInstanced\fP"
+.br
+.in -1c
+.SS "Additional Inherited Members"
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Zeta::FactionManager::FactionManager ()\fC [inline]\fP, \fC [private]\fP"
+
+.SS "Zeta::FactionManager::~FactionManager ()\fC [inline]\fP, \fC [private]\fP"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "const \fBFaction\fP& Zeta::FactionManager::getFaction (const std::string &name) const"
+
+.SS "void Zeta::FactionManager::parseFactionFile (const std::string &path)"
+
+.SH "Friends And Related Function Documentation"
+.PP 
+.SS "friend class \fBSingleInstanced\fP\fC [friend]\fP"
+
+.SH "Member Data Documentation"
+.PP 
+.SS "\fBZMap\fP<std::string, \fBFaction\fP> Zeta::FactionManager::factions\fC [private]\fP"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Zeta from the source code\&.

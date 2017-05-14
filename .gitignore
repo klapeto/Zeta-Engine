@@ -1,0 +1,9 @@
+## Eclipse CDT generated files
+/Zeta/.autotools
+/Zeta/.cproject
+/Zeta/config.log
+/Zeta/.settings
+/Zeta/.project
+/Zeta/autom4te.cache
+.deps
+*.o

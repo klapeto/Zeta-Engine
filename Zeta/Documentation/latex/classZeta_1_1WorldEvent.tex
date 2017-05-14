@@ -1,0 +1,262 @@
+\hypertarget{classZeta_1_1WorldEvent}{\section{Zeta\+:\+:World\+Event Class Reference}
+\label{classZeta_1_1WorldEvent}\index{Zeta\+::\+World\+Event@{Zeta\+::\+World\+Event}}
+}
+
+
+{\ttfamily \#include $<$World\+Event.\+hpp$>$}
+
+
+
+Inheritance diagram for Zeta\+:\+:World\+Event\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=176pt]{classZeta_1_1WorldEvent__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Zeta\+:\+:World\+Event\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classZeta_1_1WorldEvent__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structZeta_1_1WorldEvent_1_1AbilityUseEvent}{Ability\+Use\+Event}
+\item 
+struct \hyperlink{structZeta_1_1WorldEvent_1_1CollisionEvent}{Collision\+Event}
+\item 
+struct \hyperlink{structZeta_1_1WorldEvent_1_1CustomEvent}{Custom\+Event}
+\item 
+struct \hyperlink{structZeta_1_1WorldEvent_1_1DamageEvent}{Damage\+Event}
+\item 
+struct \hyperlink{structZeta_1_1WorldEvent_1_1DeathEvent}{Death\+Event}
+\item 
+union \hyperlink{unionZeta_1_1WorldEvent_1_1Event}{Event}
+\item 
+struct \hyperlink{structZeta_1_1WorldEvent_1_1InteractEvent}{Interact\+Event}
+\item 
+struct \hyperlink{structZeta_1_1WorldEvent_1_1WorldExitEvent}{World\+Exit\+Event}
+\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{classZeta_1_1WorldEvent_a92adb82c22c6f59afec5911098f85158}{Type} \{ \\*
+\hyperlink{classZeta_1_1WorldEvent_a92adb82c22c6f59afec5911098f85158ab9f24e83531326204197015b2f43a93f}{Type\+::\+Damage}, 
+\hyperlink{classZeta_1_1WorldEvent_a92adb82c22c6f59afec5911098f85158a6097f89e3092d4ccd249c9d479785c1f}{Type\+::\+Death}, 
+\hyperlink{classZeta_1_1WorldEvent_a92adb82c22c6f59afec5911098f85158aefbc873e4634f3db63d62377d36e5f56}{Type\+::\+Interact}, 
+\hyperlink{classZeta_1_1WorldEvent_a92adb82c22c6f59afec5911098f85158a5dadddcab7b632bf2e8a293c2ec38b9f}{Type\+::\+Ability\+Use}, 
+\\*
+\hyperlink{classZeta_1_1WorldEvent_a92adb82c22c6f59afec5911098f85158a57d7a10e34033a07b2b9dc1f89632ffa}{Type\+::\+World\+Exit}, 
+\hyperlink{classZeta_1_1WorldEvent_a92adb82c22c6f59afec5911098f85158a15fb6ccbd11ebebcea2b48dc477f3561}{Type\+::\+Collision}, 
+\hyperlink{classZeta_1_1WorldEvent_a92adb82c22c6f59afec5911098f85158a90589c47f06eb971d548591f23c285af}{Type\+::\+Custom}, 
+\hyperlink{classZeta_1_1WorldEvent_a92adb82c22c6f59afec5911098f85158af80a4ad87fee7c9fdc19b7769495fdb5}{Type\+::\+Nothing}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classZeta_1_1WorldEvent_a80eaba833d7b3a51c43c23e4be64a01f}{broadcast} ()
+\item 
+void \hyperlink{classZeta_1_1WorldEvent_a99dd6dbb749c49512b51737c29e44bd6}{set\+As\+Damage\+Event} (\hyperlink{classZeta_1_1Lifeform}{Lifeform} $\ast$victim, \hyperlink{classZeta_1_1Lifeform}{Lifeform} $\ast$dealer, unsigned amount)
+\item 
+void \hyperlink{classZeta_1_1WorldEvent_aa21286b7c3746bd48615532915d072fa}{set\+As\+Death\+Event} (\hyperlink{classZeta_1_1Lifeform}{Lifeform} $\ast$victim)
+\item 
+void \hyperlink{classZeta_1_1WorldEvent_a1e107c9042ff59ac7940c21722ce5b9d}{set\+As\+Interact\+Event} (\hyperlink{classZeta_1_1Lifeform}{Lifeform} $\ast$user1, \hyperlink{classZeta_1_1Lifeform}{Lifeform} $\ast$user2)
+\item 
+void \hyperlink{classZeta_1_1WorldEvent_ac127950f8b62c905c31816619edef2e9}{set\+As\+Ability\+Use\+Event} (\hyperlink{classZeta_1_1Lifeform}{Lifeform} $\ast$user, \hyperlink{classZeta_1_1Ability}{Ability} $\ast$ability)
+\item 
+void \hyperlink{classZeta_1_1WorldEvent_af8ff7519a3e57679765b316a42c2b1e4}{set\+As\+World\+Exit\+Event} (\hyperlink{classZeta_1_1Lifeform}{Lifeform} $\ast$invoker)
+\item 
+void \hyperlink{classZeta_1_1WorldEvent_a99a76018a510e85422b6bddef7aa3108}{set\+As\+Collision\+Event} (\hyperlink{classZeta_1_1Lifeform}{Lifeform} $\ast$invoker, \hyperlink{classZeta_1_1Object}{Object} $\ast$other)
+\item 
+void \hyperlink{classZeta_1_1WorldEvent_a7e168db7b20e4307712a9371c14b637b}{set\+As\+Custom\+Event} (const std\+::string \&channel, \hyperlink{ZetaConfig_8hpp_ae7be32b73848041a60f2412f72bbb221}{lua\+\_\+\+Object} table)
+\item 
+void \hyperlink{classZeta_1_1WorldEvent_a4896beb135bfca13676d749d40b5f9d9}{push\+To\+Lua} (lua\+\_\+\+State $\ast$lstate)
+\item 
+\hyperlink{classZeta_1_1WorldEvent_a92adb82c22c6f59afec5911098f85158}{Type} \hyperlink{classZeta_1_1WorldEvent_ac96c18b43e75af4bf37b49f93bd42f92}{get\+Type} () const 
+\item 
+\hyperlink{classZeta_1_1WorldEvent_ac5f6eb48fe8443c361b4e6294b8d77d2}{World\+Event} ()
+\item 
+\hyperlink{classZeta_1_1WorldEvent_afc72f9c59b62905af62d72a3d7508d2b}{World\+Event} (\hyperlink{classZeta_1_1WorldEvent_a92adb82c22c6f59afec5911098f85158}{Type} \hyperlink{classZeta_1_1WorldEvent_a67ce954f9d4c03e0525640125068dfef}{type})
+\item 
+\hyperlink{classZeta_1_1WorldEvent_a8bcb2ac614cd7ad85f8f23f2f0305960}{$\sim$\+World\+Event} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classZeta_1_1WorldEvent_a92adb82c22c6f59afec5911098f85158}{Type} \hyperlink{classZeta_1_1WorldEvent_ac42425a769a73b6e3c7beb4d9a7846fa}{to\+Event\+Type} (int num)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+union \hyperlink{unionZeta_1_1WorldEvent_1_1Event}{Zeta\+::\+World\+Event\+::\+Event} \hyperlink{classZeta_1_1WorldEvent_ac1d7d4643296098531c46b737eed053d}{data}
+\item 
+\hyperlink{classZeta_1_1WorldEvent_a92adb82c22c6f59afec5911098f85158}{Type} \hyperlink{classZeta_1_1WorldEvent_a67ce954f9d4c03e0525640125068dfef}{type}
+\item 
+struct \\*
+\hyperlink{structZeta_1_1WorldEvent_1_1CustomEvent}{Zeta\+::\+World\+Event\+::\+Custom\+Event} \hyperlink{classZeta_1_1WorldEvent_af5a8141d88420a5b1422db410719726b}{custom\+Data}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{classZeta_1_1WorldEvent_a92adb82c22c6f59afec5911098f85158}{\index{Zeta\+::\+World\+Event@{Zeta\+::\+World\+Event}!Type@{Type}}
+\index{Type@{Type}!Zeta\+::\+World\+Event@{Zeta\+::\+World\+Event}}
+\subsubsection[{Type}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Zeta\+::\+World\+Event\+::\+Type}\hspace{0.3cm}{\ttfamily [strong]}}}\label{classZeta_1_1WorldEvent_a92adb82c22c6f59afec5911098f85158}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{Damage@{Damage}!Zeta\+::\+World\+Event@{Zeta\+::\+World\+Event}}\index{Zeta\+::\+World\+Event@{Zeta\+::\+World\+Event}!Damage@{Damage}}\item[{\em 
+\hypertarget{classZeta_1_1WorldEvent_a92adb82c22c6f59afec5911098f85158ab9f24e83531326204197015b2f43a93f}{Damage}\label{classZeta_1_1WorldEvent_a92adb82c22c6f59afec5911098f85158ab9f24e83531326204197015b2f43a93f}
+}]\index{Death@{Death}!Zeta\+::\+World\+Event@{Zeta\+::\+World\+Event}}\index{Zeta\+::\+World\+Event@{Zeta\+::\+World\+Event}!Death@{Death}}\item[{\em 
+\hypertarget{classZeta_1_1WorldEvent_a92adb82c22c6f59afec5911098f85158a6097f89e3092d4ccd249c9d479785c1f}{Death}\label{classZeta_1_1WorldEvent_a92adb82c22c6f59afec5911098f85158a6097f89e3092d4ccd249c9d479785c1f}
+}]\index{Interact@{Interact}!Zeta\+::\+World\+Event@{Zeta\+::\+World\+Event}}\index{Zeta\+::\+World\+Event@{Zeta\+::\+World\+Event}!Interact@{Interact}}\item[{\em 
+\hypertarget{classZeta_1_1WorldEvent_a92adb82c22c6f59afec5911098f85158aefbc873e4634f3db63d62377d36e5f56}{Interact}\label{classZeta_1_1WorldEvent_a92adb82c22c6f59afec5911098f85158aefbc873e4634f3db63d62377d36e5f56}
+}]\index{Ability\+Use@{Ability\+Use}!Zeta\+::\+World\+Event@{Zeta\+::\+World\+Event}}\index{Zeta\+::\+World\+Event@{Zeta\+::\+World\+Event}!Ability\+Use@{Ability\+Use}}\item[{\em 
+\hypertarget{classZeta_1_1WorldEvent_a92adb82c22c6f59afec5911098f85158a5dadddcab7b632bf2e8a293c2ec38b9f}{Ability\+Use}\label{classZeta_1_1WorldEvent_a92adb82c22c6f59afec5911098f85158a5dadddcab7b632bf2e8a293c2ec38b9f}
+}]\index{World\+Exit@{World\+Exit}!Zeta\+::\+World\+Event@{Zeta\+::\+World\+Event}}\index{Zeta\+::\+World\+Event@{Zeta\+::\+World\+Event}!World\+Exit@{World\+Exit}}\item[{\em 
+\hypertarget{classZeta_1_1WorldEvent_a92adb82c22c6f59afec5911098f85158a57d7a10e34033a07b2b9dc1f89632ffa}{World\+Exit}\label{classZeta_1_1WorldEvent_a92adb82c22c6f59afec5911098f85158a57d7a10e34033a07b2b9dc1f89632ffa}
+}]\index{Collision@{Collision}!Zeta\+::\+World\+Event@{Zeta\+::\+World\+Event}}\index{Zeta\+::\+World\+Event@{Zeta\+::\+World\+Event}!Collision@{Collision}}\item[{\em 
+\hypertarget{classZeta_1_1WorldEvent_a92adb82c22c6f59afec5911098f85158a15fb6ccbd11ebebcea2b48dc477f3561}{Collision}\label{classZeta_1_1WorldEvent_a92adb82c22c6f59afec5911098f85158a15fb6ccbd11ebebcea2b48dc477f3561}
+}]\index{Custom@{Custom}!Zeta\+::\+World\+Event@{Zeta\+::\+World\+Event}}\index{Zeta\+::\+World\+Event@{Zeta\+::\+World\+Event}!Custom@{Custom}}\item[{\em 
+\hypertarget{classZeta_1_1WorldEvent_a92adb82c22c6f59afec5911098f85158a90589c47f06eb971d548591f23c285af}{Custom}\label{classZeta_1_1WorldEvent_a92adb82c22c6f59afec5911098f85158a90589c47f06eb971d548591f23c285af}
+}]\index{Nothing@{Nothing}!Zeta\+::\+World\+Event@{Zeta\+::\+World\+Event}}\index{Zeta\+::\+World\+Event@{Zeta\+::\+World\+Event}!Nothing@{Nothing}}\item[{\em 
+\hypertarget{classZeta_1_1WorldEvent_a92adb82c22c6f59afec5911098f85158af80a4ad87fee7c9fdc19b7769495fdb5}{Nothing}\label{classZeta_1_1WorldEvent_a92adb82c22c6f59afec5911098f85158af80a4ad87fee7c9fdc19b7769495fdb5}
+}]\end{description}
+\end{Desc}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classZeta_1_1WorldEvent_ac5f6eb48fe8443c361b4e6294b8d77d2}{\index{Zeta\+::\+World\+Event@{Zeta\+::\+World\+Event}!World\+Event@{World\+Event}}
+\index{World\+Event@{World\+Event}!Zeta\+::\+World\+Event@{Zeta\+::\+World\+Event}}
+\subsubsection[{World\+Event}]{\setlength{\rightskip}{0pt plus 5cm}Zeta\+::\+World\+Event\+::\+World\+Event (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1WorldEvent_ac5f6eb48fe8443c361b4e6294b8d77d2}
+\hypertarget{classZeta_1_1WorldEvent_afc72f9c59b62905af62d72a3d7508d2b}{\index{Zeta\+::\+World\+Event@{Zeta\+::\+World\+Event}!World\+Event@{World\+Event}}
+\index{World\+Event@{World\+Event}!Zeta\+::\+World\+Event@{Zeta\+::\+World\+Event}}
+\subsubsection[{World\+Event}]{\setlength{\rightskip}{0pt plus 5cm}Zeta\+::\+World\+Event\+::\+World\+Event (
+\begin{DoxyParamCaption}
+\item[{{\bf Type}}]{type}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1WorldEvent_afc72f9c59b62905af62d72a3d7508d2b}
+\hypertarget{classZeta_1_1WorldEvent_a8bcb2ac614cd7ad85f8f23f2f0305960}{\index{Zeta\+::\+World\+Event@{Zeta\+::\+World\+Event}!````~World\+Event@{$\sim$\+World\+Event}}
+\index{````~World\+Event@{$\sim$\+World\+Event}!Zeta\+::\+World\+Event@{Zeta\+::\+World\+Event}}
+\subsubsection[{$\sim$\+World\+Event}]{\setlength{\rightskip}{0pt plus 5cm}Zeta\+::\+World\+Event\+::$\sim$\+World\+Event (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1WorldEvent_a8bcb2ac614cd7ad85f8f23f2f0305960}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classZeta_1_1WorldEvent_a80eaba833d7b3a51c43c23e4be64a01f}{\index{Zeta\+::\+World\+Event@{Zeta\+::\+World\+Event}!broadcast@{broadcast}}
+\index{broadcast@{broadcast}!Zeta\+::\+World\+Event@{Zeta\+::\+World\+Event}}
+\subsubsection[{broadcast}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+World\+Event\+::broadcast (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classZeta_1_1WorldEvent_a80eaba833d7b3a51c43c23e4be64a01f}
+\hypertarget{classZeta_1_1WorldEvent_ac96c18b43e75af4bf37b49f93bd42f92}{\index{Zeta\+::\+World\+Event@{Zeta\+::\+World\+Event}!get\+Type@{get\+Type}}
+\index{get\+Type@{get\+Type}!Zeta\+::\+World\+Event@{Zeta\+::\+World\+Event}}
+\subsubsection[{get\+Type}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Type} Zeta\+::\+World\+Event\+::get\+Type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1WorldEvent_ac96c18b43e75af4bf37b49f93bd42f92}
+\hypertarget{classZeta_1_1WorldEvent_a4896beb135bfca13676d749d40b5f9d9}{\index{Zeta\+::\+World\+Event@{Zeta\+::\+World\+Event}!push\+To\+Lua@{push\+To\+Lua}}
+\index{push\+To\+Lua@{push\+To\+Lua}!Zeta\+::\+World\+Event@{Zeta\+::\+World\+Event}}
+\subsubsection[{push\+To\+Lua}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+World\+Event\+::push\+To\+Lua (
+\begin{DoxyParamCaption}
+\item[{lua\+\_\+\+State $\ast$}]{lstate}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classZeta_1_1WorldEvent_a4896beb135bfca13676d749d40b5f9d9}
+
+
+Implements \hyperlink{classZeta_1_1LuaPushable_a0380ec9cff11f749e8eb67b51b8f82fc}{Zeta\+::\+Lua\+Pushable}.
+
+\hypertarget{classZeta_1_1WorldEvent_ac127950f8b62c905c31816619edef2e9}{\index{Zeta\+::\+World\+Event@{Zeta\+::\+World\+Event}!set\+As\+Ability\+Use\+Event@{set\+As\+Ability\+Use\+Event}}
+\index{set\+As\+Ability\+Use\+Event@{set\+As\+Ability\+Use\+Event}!Zeta\+::\+World\+Event@{Zeta\+::\+World\+Event}}
+\subsubsection[{set\+As\+Ability\+Use\+Event}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+World\+Event\+::set\+As\+Ability\+Use\+Event (
+\begin{DoxyParamCaption}
+\item[{{\bf Lifeform} $\ast$}]{user, }
+\item[{{\bf Ability} $\ast$}]{ability}
+\end{DoxyParamCaption}
+)}}\label{classZeta_1_1WorldEvent_ac127950f8b62c905c31816619edef2e9}
+\hypertarget{classZeta_1_1WorldEvent_a99a76018a510e85422b6bddef7aa3108}{\index{Zeta\+::\+World\+Event@{Zeta\+::\+World\+Event}!set\+As\+Collision\+Event@{set\+As\+Collision\+Event}}
+\index{set\+As\+Collision\+Event@{set\+As\+Collision\+Event}!Zeta\+::\+World\+Event@{Zeta\+::\+World\+Event}}
+\subsubsection[{set\+As\+Collision\+Event}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+World\+Event\+::set\+As\+Collision\+Event (
+\begin{DoxyParamCaption}
+\item[{{\bf Lifeform} $\ast$}]{invoker, }
+\item[{{\bf Object} $\ast$}]{other}
+\end{DoxyParamCaption}
+)}}\label{classZeta_1_1WorldEvent_a99a76018a510e85422b6bddef7aa3108}
+\hypertarget{classZeta_1_1WorldEvent_a7e168db7b20e4307712a9371c14b637b}{\index{Zeta\+::\+World\+Event@{Zeta\+::\+World\+Event}!set\+As\+Custom\+Event@{set\+As\+Custom\+Event}}
+\index{set\+As\+Custom\+Event@{set\+As\+Custom\+Event}!Zeta\+::\+World\+Event@{Zeta\+::\+World\+Event}}
+\subsubsection[{set\+As\+Custom\+Event}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+World\+Event\+::set\+As\+Custom\+Event (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{channel, }
+\item[{{\bf lua\+\_\+\+Object}}]{table}
+\end{DoxyParamCaption}
+)}}\label{classZeta_1_1WorldEvent_a7e168db7b20e4307712a9371c14b637b}
+\hypertarget{classZeta_1_1WorldEvent_a99dd6dbb749c49512b51737c29e44bd6}{\index{Zeta\+::\+World\+Event@{Zeta\+::\+World\+Event}!set\+As\+Damage\+Event@{set\+As\+Damage\+Event}}
+\index{set\+As\+Damage\+Event@{set\+As\+Damage\+Event}!Zeta\+::\+World\+Event@{Zeta\+::\+World\+Event}}
+\subsubsection[{set\+As\+Damage\+Event}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+World\+Event\+::set\+As\+Damage\+Event (
+\begin{DoxyParamCaption}
+\item[{{\bf Lifeform} $\ast$}]{victim, }
+\item[{{\bf Lifeform} $\ast$}]{dealer, }
+\item[{unsigned}]{amount}
+\end{DoxyParamCaption}
+)}}\label{classZeta_1_1WorldEvent_a99dd6dbb749c49512b51737c29e44bd6}
+\hypertarget{classZeta_1_1WorldEvent_aa21286b7c3746bd48615532915d072fa}{\index{Zeta\+::\+World\+Event@{Zeta\+::\+World\+Event}!set\+As\+Death\+Event@{set\+As\+Death\+Event}}
+\index{set\+As\+Death\+Event@{set\+As\+Death\+Event}!Zeta\+::\+World\+Event@{Zeta\+::\+World\+Event}}
+\subsubsection[{set\+As\+Death\+Event}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+World\+Event\+::set\+As\+Death\+Event (
+\begin{DoxyParamCaption}
+\item[{{\bf Lifeform} $\ast$}]{victim}
+\end{DoxyParamCaption}
+)}}\label{classZeta_1_1WorldEvent_aa21286b7c3746bd48615532915d072fa}
+\hypertarget{classZeta_1_1WorldEvent_a1e107c9042ff59ac7940c21722ce5b9d}{\index{Zeta\+::\+World\+Event@{Zeta\+::\+World\+Event}!set\+As\+Interact\+Event@{set\+As\+Interact\+Event}}
+\index{set\+As\+Interact\+Event@{set\+As\+Interact\+Event}!Zeta\+::\+World\+Event@{Zeta\+::\+World\+Event}}
+\subsubsection[{set\+As\+Interact\+Event}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+World\+Event\+::set\+As\+Interact\+Event (
+\begin{DoxyParamCaption}
+\item[{{\bf Lifeform} $\ast$}]{user1, }
+\item[{{\bf Lifeform} $\ast$}]{user2}
+\end{DoxyParamCaption}
+)}}\label{classZeta_1_1WorldEvent_a1e107c9042ff59ac7940c21722ce5b9d}
+\hypertarget{classZeta_1_1WorldEvent_af8ff7519a3e57679765b316a42c2b1e4}{\index{Zeta\+::\+World\+Event@{Zeta\+::\+World\+Event}!set\+As\+World\+Exit\+Event@{set\+As\+World\+Exit\+Event}}
+\index{set\+As\+World\+Exit\+Event@{set\+As\+World\+Exit\+Event}!Zeta\+::\+World\+Event@{Zeta\+::\+World\+Event}}
+\subsubsection[{set\+As\+World\+Exit\+Event}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+World\+Event\+::set\+As\+World\+Exit\+Event (
+\begin{DoxyParamCaption}
+\item[{{\bf Lifeform} $\ast$}]{invoker}
+\end{DoxyParamCaption}
+)}}\label{classZeta_1_1WorldEvent_af8ff7519a3e57679765b316a42c2b1e4}
+\hypertarget{classZeta_1_1WorldEvent_ac42425a769a73b6e3c7beb4d9a7846fa}{\index{Zeta\+::\+World\+Event@{Zeta\+::\+World\+Event}!to\+Event\+Type@{to\+Event\+Type}}
+\index{to\+Event\+Type@{to\+Event\+Type}!Zeta\+::\+World\+Event@{Zeta\+::\+World\+Event}}
+\subsubsection[{to\+Event\+Type}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Type} Zeta\+::\+World\+Event\+::to\+Event\+Type (
+\begin{DoxyParamCaption}
+\item[{int}]{num}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{classZeta_1_1WorldEvent_ac42425a769a73b6e3c7beb4d9a7846fa}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classZeta_1_1WorldEvent_af5a8141d88420a5b1422db410719726b}{\index{Zeta\+::\+World\+Event@{Zeta\+::\+World\+Event}!custom\+Data@{custom\+Data}}
+\index{custom\+Data@{custom\+Data}!Zeta\+::\+World\+Event@{Zeta\+::\+World\+Event}}
+\subsubsection[{custom\+Data}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf Zeta\+::\+World\+Event\+::\+Custom\+Event}  Zeta\+::\+World\+Event\+::custom\+Data}}\label{classZeta_1_1WorldEvent_af5a8141d88420a5b1422db410719726b}
+\hypertarget{classZeta_1_1WorldEvent_ac1d7d4643296098531c46b737eed053d}{\index{Zeta\+::\+World\+Event@{Zeta\+::\+World\+Event}!data@{data}}
+\index{data@{data}!Zeta\+::\+World\+Event@{Zeta\+::\+World\+Event}}
+\subsubsection[{data}]{\setlength{\rightskip}{0pt plus 5cm}union {\bf Zeta\+::\+World\+Event\+::\+Event}  Zeta\+::\+World\+Event\+::data}}\label{classZeta_1_1WorldEvent_ac1d7d4643296098531c46b737eed053d}
+\hypertarget{classZeta_1_1WorldEvent_a67ce954f9d4c03e0525640125068dfef}{\index{Zeta\+::\+World\+Event@{Zeta\+::\+World\+Event}!type@{type}}
+\index{type@{type}!Zeta\+::\+World\+Event@{Zeta\+::\+World\+Event}}
+\subsubsection[{type}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Type} Zeta\+::\+World\+Event\+::type}}\label{classZeta_1_1WorldEvent_a67ce954f9d4c03e0525640125068dfef}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Zeta/\+Core/\+R\+P\+G\+Classes/\hyperlink{WorldEvent_8hpp}{World\+Event.\+hpp}\end{DoxyCompactItemize}

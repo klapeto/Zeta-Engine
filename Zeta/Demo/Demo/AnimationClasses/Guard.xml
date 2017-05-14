@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AnimationClass>
+	<Bounding>
+		<Rectangle x="-19" y="-15" width="38" height="30" />
+	</Bounding>
+	<TargetArea>
+		<Rectangle x="-24" y="-85" width="48" height="98" />
+	</TargetArea>
+	<Shadow>
+		<Ellipsis centreX="0" centreY="20" radiusX="28" radiusY="15" />
+	</Shadow>
+	<Action name="__Movement__">
+		<Up file="Sprites/Guard/Guard.anim" animation="Walk_Up" />
+		<Down file="Sprites/Guard/Guard.anim" animation="Walk_Down" />
+		<Left file="Sprites/Guard/Guard.anim" animation="Walk_Left" />
+		<Right file="Sprites/Guard/Guard.anim" animation="Walk_Right" />
+	</Action>
+	<Action name="__Idle__">
+		<Up file="Sprites/Guard/Guard.anim" animation="Stand_Up" />
+		<Down file="Sprites/Guard/Guard.anim" animation="Stand_Down" />
+		<Left file="Sprites/Guard/Guard.anim" animation="Stand_Left" />
+		<Right file="Sprites/Guard/Guard.anim" animation="Stand_Right" />
+	</Action>
+	<Action name="__Death__">
+		<Up file="Sprites/Guard/Guard.anim" animation="Death" />
+		<Down file="Sprites/Guard/Guard.anim" animation="Death" />
+		<Left file="Sprites/Guard/Guard.anim" animation="Death" />
+		<Right file="Sprites/Guard/Guard.anim" animation="Death" />
+	</Action>
+	<Action name="__Dead__">
+		<Up file="Sprites/Guard/Guard.anim" animation="Dead" />
+		<Down file="Sprites/Guard/Guard.anim" animation="Dead" />
+		<Left file="Sprites/Guard/Guard.anim" animation="Dead" />
+		<Right file="Sprites/Guard/Guard.anim" animation="Dead" />
+	</Action>
+	<Action name="Slash">
+		<Up file="Sprites/Guard/Guard.anim" animation="Slash_Up" />
+		<Down file="Sprites/Guard/Guard.anim" animation="Slash_Down" />
+		<Left file="Sprites/Guard/Guard.anim" animation="Slash_Left" />
+		<Right file="Sprites/Guard/Guard.anim" animation="Slash_Right" />
+	</Action>
+	<Action name="Thurst">
+		<Up file="Sprites/Guard/Guard.anim" animation="Thurst_Up" />
+		<Down file="Sprites/Guard/Guard.anim" animation="Thurst_Down" />
+		<Left file="Sprites/Guard/Guard.anim" animation="Thurst_Left" />
+		<Right file="Sprites/Guard/Guard.anim" animation="Thurst_Right" />
+	</Action>
+	<Action name="Shoot">
+		<Up file="Sprites/Guard/Guard.anim" animation="Shoot_Up" />
+		<Down file="Sprites/Guard/Guard.anim" animation="Shoot_Down" />
+		<Left file="Sprites/Guard/Guard.anim" animation="Shoot_Left" />
+		<Right file="Sprites/Guard/Guard.anim" animation="Shoot_Right" />
+	</Action>
+</AnimationClass>

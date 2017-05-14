@@ -1,0 +1,250 @@
+\hypertarget{classZeta_1_1System}{\section{Zeta\+:\+:System Class Reference}
+\label{classZeta_1_1System}\index{Zeta\+::\+System@{Zeta\+::\+System}}
+}
+
+
+{\ttfamily \#include $<$System.\+hpp$>$}
+
+
+
+Inheritance diagram for Zeta\+:\+:System\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=176pt]{classZeta_1_1System__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Zeta\+:\+:System\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classZeta_1_1System__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classZeta_1_1System_a4df15bace1765af483b834f0a532005a}{start} ()
+\item 
+\hyperlink{classZeta_1_1RenderingContext}{Rendering\+Context} \& \hyperlink{classZeta_1_1System_a16bf408e9f5a74af163f2b5ce3b281f3}{get\+Rendering\+Context} ()
+\item 
+\hyperlink{classZeta_1_1ResourceContext}{Resource\+Context} \& \hyperlink{classZeta_1_1System_a2569e9f3aa3c3d1cfe9c1ceab9c58a99}{get\+Resources\+Manager} ()
+\item 
+\hyperlink{classZeta_1_1AudioContext}{Audio\+Context} \& \hyperlink{classZeta_1_1System_a3c1029b0c434eac250a4639d4e1dbdf6}{get\+Audio\+Context} ()
+\item 
+\hyperlink{classZeta_1_1ShapeRenderer}{Shape\+Renderer} \& \hyperlink{classZeta_1_1System_a3cfcb9cf93c2078f87a221ff5b9b8eaf}{get\+Shape\+Renderer} ()
+\item 
+void \hyperlink{classZeta_1_1System_ae54c4f75c927b0aa423286718d51fb9f}{shutdown} ()
+\item 
+void \hyperlink{classZeta_1_1System_a9c331697b7f1c90e298c426d77bff4f8}{abort} (const std\+::string \&error)
+\item 
+void \hyperlink{classZeta_1_1System_aa254f4b483da23f65037862c84ad4fdb}{push\+To\+Lua} (lua\+\_\+\+State $\ast$lstate)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classZeta_1_1System}{System} \& \hyperlink{classZeta_1_1System_a092ead3475d9f6696020001e9fe53da9}{get\+Instance} ()
+\item 
+static \hyperlink{classZeta_1_1System}{System} \& \hyperlink{classZeta_1_1System_aa32e4541ea4281b76834c7e6f94f0a74}{create} (\hyperlink{classZeta_1_1RenderingContext}{Rendering\+Context} $\ast$\hyperlink{classZeta_1_1System_ab9e2c432557b97211aa16f7dbe141935}{rendering\+Context}, \hyperlink{classZeta_1_1ResourceContext}{Resource\+Context} $\ast$\hyperlink{classZeta_1_1System_a303ac11860bb3d3739841d28d067a585}{res\+Manager}, \hyperlink{classZeta_1_1AudioContext}{Audio\+Context} $\ast$\hyperlink{classZeta_1_1System_a61f585e0dc227e82f965dbdb5537e60c}{audio}, \hyperlink{classZeta_1_1ShapeRenderer}{Shape\+Renderer} $\ast$\hyperlink{classZeta_1_1System_a1be4cf982a5738ac3787ed01faed74ab}{renderer})
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classZeta_1_1System_a5d071efafa2bc4581217ee803bf437d4}{System} (\hyperlink{classZeta_1_1ResourceContext}{Resource\+Context} $\ast$\hyperlink{classZeta_1_1System_a303ac11860bb3d3739841d28d067a585}{res\+Manager}, \hyperlink{classZeta_1_1RenderingContext}{Rendering\+Context} $\ast$\hyperlink{classZeta_1_1System_ab9e2c432557b97211aa16f7dbe141935}{rendering\+Context}, \hyperlink{classZeta_1_1AudioContext}{Audio\+Context} $\ast$\hyperlink{classZeta_1_1System_a61f585e0dc227e82f965dbdb5537e60c}{audio}, \hyperlink{classZeta_1_1ShapeRenderer}{Shape\+Renderer} $\ast$\hyperlink{classZeta_1_1System_a1be4cf982a5738ac3787ed01faed74ab}{renderer})
+\item 
+\hyperlink{classZeta_1_1System_ab8cec5a111594ec68990549ff98b66d1}{$\sim$\+System} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classZeta_1_1ResourceContext}{Resource\+Context} $\ast$ \hyperlink{classZeta_1_1System_a303ac11860bb3d3739841d28d067a585}{res\+Manager}
+\item 
+\hyperlink{classZeta_1_1RenderingContext}{Rendering\+Context} $\ast$ \hyperlink{classZeta_1_1System_ab9e2c432557b97211aa16f7dbe141935}{rendering\+Context}
+\item 
+\hyperlink{classZeta_1_1AudioContext}{Audio\+Context} $\ast$ \hyperlink{classZeta_1_1System_a61f585e0dc227e82f965dbdb5537e60c}{audio}
+\item 
+\hyperlink{classZeta_1_1ShapeRenderer}{Shape\+Renderer} $\ast$ \hyperlink{classZeta_1_1System_a1be4cf982a5738ac3787ed01faed74ab}{renderer}
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classZeta_1_1System}{System} $\ast$ \hyperlink{classZeta_1_1System_a4b6738bd3000082341fa756ad4b474c5}{instance}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The main \hyperlink{classZeta_1_1System}{System} Class This Singleton \hyperlink{classZeta_1_1Object}{Object} contains all the main Modules of the Engine 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classZeta_1_1System_a5d071efafa2bc4581217ee803bf437d4}{\index{Zeta\+::\+System@{Zeta\+::\+System}!System@{System}}
+\index{System@{System}!Zeta\+::\+System@{Zeta\+::\+System}}
+\subsubsection[{System}]{\setlength{\rightskip}{0pt plus 5cm}Zeta\+::\+System\+::\+System (
+\begin{DoxyParamCaption}
+\item[{{\bf Resource\+Context} $\ast$}]{res\+Manager, }
+\item[{{\bf Rendering\+Context} $\ast$}]{rendering\+Context, }
+\item[{{\bf Audio\+Context} $\ast$}]{audio, }
+\item[{{\bf Shape\+Renderer} $\ast$}]{renderer}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classZeta_1_1System_a5d071efafa2bc4581217ee803bf437d4}
+\hypertarget{classZeta_1_1System_ab8cec5a111594ec68990549ff98b66d1}{\index{Zeta\+::\+System@{Zeta\+::\+System}!````~System@{$\sim$\+System}}
+\index{````~System@{$\sim$\+System}!Zeta\+::\+System@{Zeta\+::\+System}}
+\subsubsection[{$\sim$\+System}]{\setlength{\rightskip}{0pt plus 5cm}Zeta\+::\+System\+::$\sim$\+System (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classZeta_1_1System_ab8cec5a111594ec68990549ff98b66d1}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classZeta_1_1System_a9c331697b7f1c90e298c426d77bff4f8}{\index{Zeta\+::\+System@{Zeta\+::\+System}!abort@{abort}}
+\index{abort@{abort}!Zeta\+::\+System@{Zeta\+::\+System}}
+\subsubsection[{abort}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+System\+::abort (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{error}
+\end{DoxyParamCaption}
+)}}\label{classZeta_1_1System_a9c331697b7f1c90e298c426d77bff4f8}
+Shutdowns and terminates the execution of the program writing a message to the Log \hyperlink{classZeta_1_1File}{File} All the modules are destroyed and the resources are freed before termination with exception the static allocated objects. The message is written to the Log\+File before terminating 
+\begin{DoxyParams}{Parameters}
+{\em error} & The message to write on the Log \hyperlink{classZeta_1_1File}{File} \\
+\hline
+\end{DoxyParams}
+\hypertarget{classZeta_1_1System_aa32e4541ea4281b76834c7e6f94f0a74}{\index{Zeta\+::\+System@{Zeta\+::\+System}!create@{create}}
+\index{create@{create}!Zeta\+::\+System@{Zeta\+::\+System}}
+\subsubsection[{create}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf System}\& Zeta\+::\+System\+::create (
+\begin{DoxyParamCaption}
+\item[{{\bf Rendering\+Context} $\ast$}]{rendering\+Context, }
+\item[{{\bf Resource\+Context} $\ast$}]{res\+Manager, }
+\item[{{\bf Audio\+Context} $\ast$}]{audio, }
+\item[{{\bf Shape\+Renderer} $\ast$}]{renderer}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{classZeta_1_1System_aa32e4541ea4281b76834c7e6f94f0a74}
+Creates the \hyperlink{classZeta_1_1System}{System} \hyperlink{classZeta_1_1Object}{Object} and assigns the Modules defined The modules will be destroyed by the \hyperlink{classZeta_1_1System}{System} when it will shutdown If there is already a \hyperlink{classZeta_1_1System}{System} \hyperlink{classZeta_1_1Object}{Object} created, the old one will be destroyed and its modules will be destroyed too. 
+\begin{DoxyParams}{Parameters}
+{\em rendering\+Context} & The \hyperlink{classZeta_1_1RenderingContext}{Rendering\+Context} to assign \\
+\hline
+{\em res\+Manager} & The \hyperlink{classZeta_1_1ResourceContext}{Resource\+Context} to assign \\
+\hline
+{\em audio} & The \hyperlink{classZeta_1_1AudioContext}{Audio\+Context} to assign \\
+\hline
+{\em renderer} & The \hyperlink{classZeta_1_1ShapeRenderer}{Shape\+Renderer} to assign \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The created \hyperlink{classZeta_1_1Object}{Object} 
+\end{DoxyReturn}
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=342pt]{classZeta_1_1System_aa32e4541ea4281b76834c7e6f94f0a74_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classZeta_1_1System_a3c1029b0c434eac250a4639d4e1dbdf6}{\index{Zeta\+::\+System@{Zeta\+::\+System}!get\+Audio\+Context@{get\+Audio\+Context}}
+\index{get\+Audio\+Context@{get\+Audio\+Context}!Zeta\+::\+System@{Zeta\+::\+System}}
+\subsubsection[{get\+Audio\+Context}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Audio\+Context}\& Zeta\+::\+System\+::get\+Audio\+Context (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1System_a3c1029b0c434eac250a4639d4e1dbdf6}
+Returns the assigned \hyperlink{classZeta_1_1AudioContext}{Audio\+Context} \begin{DoxyReturn}{Returns}
+The assigned \hyperlink{classZeta_1_1AudioContext}{Audio\+Context} 
+\end{DoxyReturn}
+\hypertarget{classZeta_1_1System_a092ead3475d9f6696020001e9fe53da9}{\index{Zeta\+::\+System@{Zeta\+::\+System}!get\+Instance@{get\+Instance}}
+\index{get\+Instance@{get\+Instance}!Zeta\+::\+System@{Zeta\+::\+System}}
+\subsubsection[{get\+Instance}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf System}\& Zeta\+::\+System\+::get\+Instance (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{classZeta_1_1System_a092ead3475d9f6696020001e9fe53da9}
+Returns the \hyperlink{classZeta_1_1System}{System} Object(\+Singleton) \begin{DoxyReturn}{Returns}
+The \hyperlink{classZeta_1_1System}{System} \hyperlink{classZeta_1_1Object}{Object} 
+\end{DoxyReturn}
+\hypertarget{classZeta_1_1System_a16bf408e9f5a74af163f2b5ce3b281f3}{\index{Zeta\+::\+System@{Zeta\+::\+System}!get\+Rendering\+Context@{get\+Rendering\+Context}}
+\index{get\+Rendering\+Context@{get\+Rendering\+Context}!Zeta\+::\+System@{Zeta\+::\+System}}
+\subsubsection[{get\+Rendering\+Context}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Rendering\+Context}\& Zeta\+::\+System\+::get\+Rendering\+Context (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1System_a16bf408e9f5a74af163f2b5ce3b281f3}
+Returns the assigned \hyperlink{classZeta_1_1RenderingContext}{Rendering\+Context} \begin{DoxyReturn}{Returns}
+The assigned \hyperlink{classZeta_1_1RenderingContext}{Rendering\+Context} 
+\end{DoxyReturn}
+\hypertarget{classZeta_1_1System_a2569e9f3aa3c3d1cfe9c1ceab9c58a99}{\index{Zeta\+::\+System@{Zeta\+::\+System}!get\+Resources\+Manager@{get\+Resources\+Manager}}
+\index{get\+Resources\+Manager@{get\+Resources\+Manager}!Zeta\+::\+System@{Zeta\+::\+System}}
+\subsubsection[{get\+Resources\+Manager}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Resource\+Context}\& Zeta\+::\+System\+::get\+Resources\+Manager (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1System_a2569e9f3aa3c3d1cfe9c1ceab9c58a99}
+Returns the assigned \hyperlink{classZeta_1_1ResourceContext}{Resource\+Context} \begin{DoxyReturn}{Returns}
+The assigned \hyperlink{classZeta_1_1ResourceContext}{Resource\+Context} 
+\end{DoxyReturn}
+\hypertarget{classZeta_1_1System_a3cfcb9cf93c2078f87a221ff5b9b8eaf}{\index{Zeta\+::\+System@{Zeta\+::\+System}!get\+Shape\+Renderer@{get\+Shape\+Renderer}}
+\index{get\+Shape\+Renderer@{get\+Shape\+Renderer}!Zeta\+::\+System@{Zeta\+::\+System}}
+\subsubsection[{get\+Shape\+Renderer}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Shape\+Renderer}\& Zeta\+::\+System\+::get\+Shape\+Renderer (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1System_a3cfcb9cf93c2078f87a221ff5b9b8eaf}
+Returns the assigned \hyperlink{classZeta_1_1ShapeRenderer}{Shape\+Renderer} \begin{DoxyReturn}{Returns}
+The assigned \hyperlink{classZeta_1_1ShapeRenderer}{Shape\+Renderer} 
+\end{DoxyReturn}
+\hypertarget{classZeta_1_1System_aa254f4b483da23f65037862c84ad4fdb}{\index{Zeta\+::\+System@{Zeta\+::\+System}!push\+To\+Lua@{push\+To\+Lua}}
+\index{push\+To\+Lua@{push\+To\+Lua}!Zeta\+::\+System@{Zeta\+::\+System}}
+\subsubsection[{push\+To\+Lua}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+System\+::push\+To\+Lua (
+\begin{DoxyParamCaption}
+\item[{lua\+\_\+\+State $\ast$}]{lstate}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classZeta_1_1System_aa254f4b483da23f65037862c84ad4fdb}
+Pushes the \hyperlink{classZeta_1_1Object}{Object} to the Lua Environment 
+\begin{DoxyParams}{Parameters}
+{\em lstate} & The Lua Environment to push to. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classZeta_1_1LuaPushable_a0380ec9cff11f749e8eb67b51b8f82fc}{Zeta\+::\+Lua\+Pushable}.
+
+\hypertarget{classZeta_1_1System_ae54c4f75c927b0aa423286718d51fb9f}{\index{Zeta\+::\+System@{Zeta\+::\+System}!shutdown@{shutdown}}
+\index{shutdown@{shutdown}!Zeta\+::\+System@{Zeta\+::\+System}}
+\subsubsection[{shutdown}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+System\+::shutdown (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classZeta_1_1System_ae54c4f75c927b0aa423286718d51fb9f}
+Shutdowns and terminates the execution of the program All the modules are destroyed and the resources are freed before termination with exception the static allocated objects. \hypertarget{classZeta_1_1System_a4df15bace1765af483b834f0a532005a}{\index{Zeta\+::\+System@{Zeta\+::\+System}!start@{start}}
+\index{start@{start}!Zeta\+::\+System@{Zeta\+::\+System}}
+\subsubsection[{start}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+System\+::start (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classZeta_1_1System_a4df15bace1765af483b834f0a532005a}
+Causes the Main Loop to start Running 
+
+\subsection{Member Data Documentation}
+\hypertarget{classZeta_1_1System_a61f585e0dc227e82f965dbdb5537e60c}{\index{Zeta\+::\+System@{Zeta\+::\+System}!audio@{audio}}
+\index{audio@{audio}!Zeta\+::\+System@{Zeta\+::\+System}}
+\subsubsection[{audio}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Audio\+Context}$\ast$ Zeta\+::\+System\+::audio\hspace{0.3cm}{\ttfamily [private]}}}\label{classZeta_1_1System_a61f585e0dc227e82f965dbdb5537e60c}
+\hypertarget{classZeta_1_1System_a4b6738bd3000082341fa756ad4b474c5}{\index{Zeta\+::\+System@{Zeta\+::\+System}!instance@{instance}}
+\index{instance@{instance}!Zeta\+::\+System@{Zeta\+::\+System}}
+\subsubsection[{instance}]{\setlength{\rightskip}{0pt plus 5cm}{\bf System}$\ast$ Zeta\+::\+System\+::instance\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}}\label{classZeta_1_1System_a4b6738bd3000082341fa756ad4b474c5}
+\hypertarget{classZeta_1_1System_a1be4cf982a5738ac3787ed01faed74ab}{\index{Zeta\+::\+System@{Zeta\+::\+System}!renderer@{renderer}}
+\index{renderer@{renderer}!Zeta\+::\+System@{Zeta\+::\+System}}
+\subsubsection[{renderer}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Shape\+Renderer}$\ast$ Zeta\+::\+System\+::renderer\hspace{0.3cm}{\ttfamily [private]}}}\label{classZeta_1_1System_a1be4cf982a5738ac3787ed01faed74ab}
+\hypertarget{classZeta_1_1System_ab9e2c432557b97211aa16f7dbe141935}{\index{Zeta\+::\+System@{Zeta\+::\+System}!rendering\+Context@{rendering\+Context}}
+\index{rendering\+Context@{rendering\+Context}!Zeta\+::\+System@{Zeta\+::\+System}}
+\subsubsection[{rendering\+Context}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Rendering\+Context}$\ast$ Zeta\+::\+System\+::rendering\+Context\hspace{0.3cm}{\ttfamily [private]}}}\label{classZeta_1_1System_ab9e2c432557b97211aa16f7dbe141935}
+\hypertarget{classZeta_1_1System_a303ac11860bb3d3739841d28d067a585}{\index{Zeta\+::\+System@{Zeta\+::\+System}!res\+Manager@{res\+Manager}}
+\index{res\+Manager@{res\+Manager}!Zeta\+::\+System@{Zeta\+::\+System}}
+\subsubsection[{res\+Manager}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Resource\+Context}$\ast$ Zeta\+::\+System\+::res\+Manager\hspace{0.3cm}{\ttfamily [private]}}}\label{classZeta_1_1System_a303ac11860bb3d3739841d28d067a585}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Zeta/\+Core/\hyperlink{System_8hpp}{System.\+hpp}\end{DoxyCompactItemize}

@@ -1,0 +1,113 @@
+.TH "Zeta::Animation" 3 "Wed Feb 10 2016" "Zeta" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Zeta::Animation \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Animation\&.hpp>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "const std::string & \fBgetName\fP () const "
+.br
+.ti -1c
+.RI "void \fBsetName\fP (const std::string &\fBname\fP)"
+.br
+.ti -1c
+.RI "bool \fBisLooping\fP () const "
+.br
+.ti -1c
+.RI "const \fBAnimationPack\fP & \fBgetAnimationPack\fP () const "
+.br
+.ti -1c
+.RI "int \fBgetNumFrames\fP () const "
+.br
+.ti -1c
+.RI "const \fBCell\fP & \fBgetFrame\fP (unsigned int index) const "
+.br
+.ti -1c
+.RI "void \fBset\fP (xmlpp::Node *node, const \fBAnimationPack\fP &parent)"
+.br
+.ti -1c
+.RI "\fBAnimation\fP (\fBAnimation\fP &&)=default"
+.br
+.ti -1c
+.RI "\fBAnimation\fP & \fBoperator=\fP (\fBAnimation\fP &&)=default"
+.br
+.ti -1c
+.RI "\fBAnimation\fP ()"
+.br
+.ti -1c
+.RI "\fBAnimation\fP (xmlpp::Node *node, const \fBAnimationPack\fP &parent)"
+.br
+.ti -1c
+.RI "virtual \fB~Animation\fP ()"
+.br
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "std::string \fBname\fP"
+.br
+.ti -1c
+.RI "std::vector< \fBCell\fP > \fBcells\fP"
+.br
+.ti -1c
+.RI "const \fBAnimationPack\fP * \fBparentPack\fP"
+.br
+.ti -1c
+.RI "int \fBnum_Cells\fP"
+.br
+.ti -1c
+.RI "bool \fBloops\fP"
+.br
+.in -1c
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Zeta::Animation::Animation (\fBAnimation\fP &&)\fC [default]\fP"
+
+.SS "Zeta::Animation::Animation ()"
+
+.SS "Zeta::Animation::Animation (xmlpp::Node *node, const \fBAnimationPack\fP &parent)"
+
+.SS "virtual Zeta::Animation::~Animation ()\fC [virtual]\fP"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "const \fBAnimationPack\fP& Zeta::Animation::getAnimationPack () const\fC [inline]\fP"
+
+.SS "const \fBCell\fP& Zeta::Animation::getFrame (unsigned intindex) const\fC [inline]\fP"
+
+.SS "const std::string& Zeta::Animation::getName () const\fC [inline]\fP"
+
+.SS "int Zeta::Animation::getNumFrames () const\fC [inline]\fP"
+
+.SS "bool Zeta::Animation::isLooping () const\fC [inline]\fP"
+
+.SS "\fBAnimation\fP& Zeta::Animation::operator= (\fBAnimation\fP &&)\fC [default]\fP"
+
+.SS "void Zeta::Animation::set (xmlpp::Node *node, const \fBAnimationPack\fP &parent)"
+
+.SS "void Zeta::Animation::setName (const std::string &name)\fC [inline]\fP"
+
+.SH "Member Data Documentation"
+.PP 
+.SS "std::vector<\fBCell\fP> Zeta::Animation::cells\fC [protected]\fP"
+
+.SS "bool Zeta::Animation::loops\fC [protected]\fP"
+
+.SS "std::string Zeta::Animation::name\fC [protected]\fP"
+
+.SS "int Zeta::Animation::num_Cells\fC [protected]\fP"
+
+.SS "const \fBAnimationPack\fP* Zeta::Animation::parentPack\fC [protected]\fP"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Zeta from the source code\&.

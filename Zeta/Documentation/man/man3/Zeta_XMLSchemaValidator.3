@@ -1,0 +1,84 @@
+.TH "Zeta::XMLSchemaValidator" 3 "Wed Feb 10 2016" "Zeta" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Zeta::XMLSchemaValidator \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <XMLSchemaValidator\&.hpp>\fP
+.PP
+Inherits \fBZeta::SingleInstanced< XMLSchemaValidator >\fP\&.
+.SS "Public Types"
+
+.in +1c
+.ti -1c
+.RI "enum \fBResourceValidator\fP { \fBResourceValidator::Sprites\fP, \fBResourceValidator::Animations\fP, \fBResourceValidator::Map\fP, \fBResourceValidator::Tileset\fP, \fBResourceValidator::AnimationClass\fP, \fBResourceValidator::LifeformClass\fP, \fBResourceValidator::Faction\fP }"
+.br
+.in -1c
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "xmlpp::SchemaValidator & \fBgetValidator\fP (\fBResourceValidator\fP validator)"
+.br
+.ti -1c
+.RI "void \fBsetSchemaFile\fP (const std::string &path, \fBResourceValidator\fP validator)"
+.br
+.ti -1c
+.RI "\fBXMLSchemaValidator\fP ()"
+.br
+.ti -1c
+.RI "\fB~XMLSchemaValidator\fP ()"
+.br
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "xmlpp::SchemaValidator * \fBvalidators\fP"
+.br
+.in -1c
+.SS "Additional Inherited Members"
+.SH "Member Enumeration Documentation"
+.PP 
+.SS "enum \fBZeta::XMLSchemaValidator::ResourceValidator\fP\fC [strong]\fP"
+
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fISprites \fP\fP
+.TP
+\fB\fIAnimations \fP\fP
+.TP
+\fB\fIMap \fP\fP
+.TP
+\fB\fITileset \fP\fP
+.TP
+\fB\fIAnimationClass \fP\fP
+.TP
+\fB\fILifeformClass \fP\fP
+.TP
+\fB\fIFaction \fP\fP
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Zeta::XMLSchemaValidator::XMLSchemaValidator ()"
+
+.SS "Zeta::XMLSchemaValidator::~XMLSchemaValidator ()"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "xmlpp::SchemaValidator& Zeta::XMLSchemaValidator::getValidator (\fBResourceValidator\fPvalidator)"
+
+.SS "void Zeta::XMLSchemaValidator::setSchemaFile (const std::string &path, \fBResourceValidator\fPvalidator)"
+
+.SH "Member Data Documentation"
+.PP 
+.SS "xmlpp::SchemaValidator* Zeta::XMLSchemaValidator::validators\fC [private]\fP"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Zeta from the source code\&.

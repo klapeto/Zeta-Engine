@@ -1,0 +1,70 @@
+.TH "Zeta::Modifier" 3 "Wed Feb 10 2016" "Zeta" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Zeta::Modifier \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Modifier\&.hpp>\fP
+.PP
+Inherited by \fBZeta::FlatModifier\fP, and \fBZeta::MulModifier\fP\&.
+.SS "Public Types"
+
+.in +1c
+.ti -1c
+.RI "enum \fBType\fP { \fBType::Flat\fP, \fBType::Scalar\fP }"
+.br
+.in -1c
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "virtual void \fBcalculate\fP (\fBAttributeValue\fP &value) const =0"
+.br
+.ti -1c
+.RI "\fBModifier\fP (\fBAttributeValue\fP \fBmodValue\fP)"
+.br
+.ti -1c
+.RI "virtual \fB~Modifier\fP ()"
+.br
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBAttributeValue\fP \fBmodValue\fP"
+.br
+.in -1c
+.SH "Member Enumeration Documentation"
+.PP 
+.SS "enum \fBZeta::Modifier::Type\fP\fC [strong]\fP"
+
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fIFlat \fP\fP
+.TP
+\fB\fIScalar \fP\fP
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Zeta::Modifier::Modifier (\fBAttributeValue\fPmodValue)\fC [inline]\fP"
+
+.SS "virtual Zeta::Modifier::~Modifier ()\fC [inline]\fP, \fC [virtual]\fP"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "virtual void Zeta::Modifier::calculate (\fBAttributeValue\fP &value) const\fC [pure virtual]\fP"
+
+.PP
+Implemented in \fBZeta::FlatModifier\fP, and \fBZeta::MulModifier\fP\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "\fBAttributeValue\fP Zeta::Modifier::modValue\fC [protected]\fP"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Zeta from the source code\&.

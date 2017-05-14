@@ -1,0 +1,183 @@
+\hypertarget{classZeta_1_1GUIManager}{\section{Zeta\+:\+:G\+U\+I\+Manager Class Reference}
+\label{classZeta_1_1GUIManager}\index{Zeta\+::\+G\+U\+I\+Manager@{Zeta\+::\+G\+U\+I\+Manager}}
+}
+
+
+{\ttfamily \#include $<$G\+U\+I\+Manager.\+hpp$>$}
+
+
+
+Inheritance diagram for Zeta\+:\+:G\+U\+I\+Manager\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classZeta_1_1GUIManager__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Zeta\+:\+:G\+U\+I\+Manager\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classZeta_1_1GUIManager__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classZeta_1_1GUIManager_a2d19f5a925049f6ce166e223442834c6}{handle\+Event} (\hyperlink{classZeta_1_1Event}{Event} \&event)
+\item 
+void \hyperlink{classZeta_1_1GUIManager_af33fc7fef32ac295497ca989b9e90a34}{update} (\hyperlink{namespaceZeta_a1e0a1265f9b3bd3075fb0fabd39088ba}{Float} elapsed\+Time)
+\item 
+void \hyperlink{classZeta_1_1GUIManager_ad7015380f8d03224a633b3a644087b29}{draw} (\hyperlink{namespaceZeta_a1e0a1265f9b3bd3075fb0fabd39088ba}{Float} x, \hyperlink{namespaceZeta_a1e0a1265f9b3bd3075fb0fabd39088ba}{Float} y, \hyperlink{namespaceZeta_a1e0a1265f9b3bd3075fb0fabd39088ba}{Float} rotation=0.\+0f, Float scale=1.\+0f) const 
+\item 
+void \hyperlink{classZeta_1_1GUIManager_ad36444b67147a64dead1f1a428b1bba2}{display\+Resized} (int width, int height)
+\item 
+void \hyperlink{classZeta_1_1GUIManager_a48a024b48e5abc5a945a22b5e85fc482}{initialize\+Context} (const std\+::string \&settings\+Path)
+\item 
+void \hyperlink{classZeta_1_1GUIManager_add2c26747f77b95ffacf62a7480faeac}{destroy\+Context} ()
+\item 
+\hyperlink{classZeta_1_1GUIManager_a8f92825b38fb25547d86b638880ba634}{$\sim$\+G\+U\+I\+Manager} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classZeta_1_1GUIManager_a79d3d3506109b9d4039f26f2ba87fbba}{G\+U\+I\+Manager} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+C\+E\+G\+U\+I\+::\+G\+U\+I\+Context $\ast$ \hyperlink{classZeta_1_1GUIManager_a3b8922a1be0f73ace046033806c6e142}{context}
+\item 
+C\+E\+G\+U\+I\+::\+System $\ast$ \hyperlink{classZeta_1_1GUIManager_a670884c848cec41b709da2643da97772}{sys}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classZeta_1_1GUIManager_a2fa95d69b32a77fffa4b730679a8b08c}{Single\+Instanced}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Singleton Class to handle the G\+U\+I \hyperlink{classZeta_1_1System}{System} 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classZeta_1_1GUIManager_a8f92825b38fb25547d86b638880ba634}{\index{Zeta\+::\+G\+U\+I\+Manager@{Zeta\+::\+G\+U\+I\+Manager}!````~G\+U\+I\+Manager@{$\sim$\+G\+U\+I\+Manager}}
+\index{````~G\+U\+I\+Manager@{$\sim$\+G\+U\+I\+Manager}!Zeta\+::\+G\+U\+I\+Manager@{Zeta\+::\+G\+U\+I\+Manager}}
+\subsubsection[{$\sim$\+G\+U\+I\+Manager}]{\setlength{\rightskip}{0pt plus 5cm}Zeta\+::\+G\+U\+I\+Manager\+::$\sim$\+G\+U\+I\+Manager (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classZeta_1_1GUIManager_a8f92825b38fb25547d86b638880ba634}
+\hypertarget{classZeta_1_1GUIManager_a79d3d3506109b9d4039f26f2ba87fbba}{\index{Zeta\+::\+G\+U\+I\+Manager@{Zeta\+::\+G\+U\+I\+Manager}!G\+U\+I\+Manager@{G\+U\+I\+Manager}}
+\index{G\+U\+I\+Manager@{G\+U\+I\+Manager}!Zeta\+::\+G\+U\+I\+Manager@{Zeta\+::\+G\+U\+I\+Manager}}
+\subsubsection[{G\+U\+I\+Manager}]{\setlength{\rightskip}{0pt plus 5cm}Zeta\+::\+G\+U\+I\+Manager\+::\+G\+U\+I\+Manager (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classZeta_1_1GUIManager_a79d3d3506109b9d4039f26f2ba87fbba}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classZeta_1_1GUIManager_add2c26747f77b95ffacf62a7480faeac}{\index{Zeta\+::\+G\+U\+I\+Manager@{Zeta\+::\+G\+U\+I\+Manager}!destroy\+Context@{destroy\+Context}}
+\index{destroy\+Context@{destroy\+Context}!Zeta\+::\+G\+U\+I\+Manager@{Zeta\+::\+G\+U\+I\+Manager}}
+\subsubsection[{destroy\+Context}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+G\+U\+I\+Manager\+::destroy\+Context (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classZeta_1_1GUIManager_add2c26747f77b95ffacf62a7480faeac}
+\hypertarget{classZeta_1_1GUIManager_ad36444b67147a64dead1f1a428b1bba2}{\index{Zeta\+::\+G\+U\+I\+Manager@{Zeta\+::\+G\+U\+I\+Manager}!display\+Resized@{display\+Resized}}
+\index{display\+Resized@{display\+Resized}!Zeta\+::\+G\+U\+I\+Manager@{Zeta\+::\+G\+U\+I\+Manager}}
+\subsubsection[{display\+Resized}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+G\+U\+I\+Manager\+::display\+Resized (
+\begin{DoxyParamCaption}
+\item[{int}]{width, }
+\item[{int}]{height}
+\end{DoxyParamCaption}
+)}}\label{classZeta_1_1GUIManager_ad36444b67147a64dead1f1a428b1bba2}
+Notifies the G\+U\+I that Main Window Size has changed 
+\begin{DoxyParams}{Parameters}
+{\em width} & the New Width \\
+\hline
+{\em height} & the New Height \\
+\hline
+\end{DoxyParams}
+\hypertarget{classZeta_1_1GUIManager_ad7015380f8d03224a633b3a644087b29}{\index{Zeta\+::\+G\+U\+I\+Manager@{Zeta\+::\+G\+U\+I\+Manager}!draw@{draw}}
+\index{draw@{draw}!Zeta\+::\+G\+U\+I\+Manager@{Zeta\+::\+G\+U\+I\+Manager}}
+\subsubsection[{draw}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+G\+U\+I\+Manager\+::draw (
+\begin{DoxyParamCaption}
+\item[{{\bf Float}}]{x, }
+\item[{{\bf Float}}]{y, }
+\item[{{\bf Float}}]{rotation = {\ttfamily 0.0f}, }
+\item[{{\bf Float}}]{scale = {\ttfamily 1.0f}}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classZeta_1_1GUIManager_ad7015380f8d03224a633b3a644087b29}
+Requests the G\+U\+I \hyperlink{classZeta_1_1System}{System} to draw on screen 
+
+Implements \hyperlink{classZeta_1_1Drawable_a3f453a7a971b7eeba1768be3eaedc192}{Zeta\+::\+Drawable}.
+
+\hypertarget{classZeta_1_1GUIManager_a2d19f5a925049f6ce166e223442834c6}{\index{Zeta\+::\+G\+U\+I\+Manager@{Zeta\+::\+G\+U\+I\+Manager}!handle\+Event@{handle\+Event}}
+\index{handle\+Event@{handle\+Event}!Zeta\+::\+G\+U\+I\+Manager@{Zeta\+::\+G\+U\+I\+Manager}}
+\subsubsection[{handle\+Event}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+G\+U\+I\+Manager\+::handle\+Event (
+\begin{DoxyParamCaption}
+\item[{{\bf Event} \&}]{event}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classZeta_1_1GUIManager_a2d19f5a925049f6ce166e223442834c6}
+Forward the \hyperlink{classZeta_1_1Event}{Event} to G\+U\+I to handle it 
+\begin{DoxyParams}{Parameters}
+{\em event} & the \hyperlink{classZeta_1_1Event}{Event} to forward. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classZeta_1_1SystemEventListener_ad2436f151ef1cbb4cc94962a2211b131}{Zeta\+::\+System\+Event\+Listener}.
+
+\hypertarget{classZeta_1_1GUIManager_a48a024b48e5abc5a945a22b5e85fc482}{\index{Zeta\+::\+G\+U\+I\+Manager@{Zeta\+::\+G\+U\+I\+Manager}!initialize\+Context@{initialize\+Context}}
+\index{initialize\+Context@{initialize\+Context}!Zeta\+::\+G\+U\+I\+Manager@{Zeta\+::\+G\+U\+I\+Manager}}
+\subsubsection[{initialize\+Context}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+G\+U\+I\+Manager\+::initialize\+Context (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{settings\+Path}
+\end{DoxyParamCaption}
+)}}\label{classZeta_1_1GUIManager_a48a024b48e5abc5a945a22b5e85fc482}
+Initializes the G\+U\+I with the provided settings file 
+\begin{DoxyParams}{Parameters}
+{\em settings\+Path} & the Configuration \hyperlink{classZeta_1_1File}{File} \\
+\hline
+\end{DoxyParams}
+\hypertarget{classZeta_1_1GUIManager_af33fc7fef32ac295497ca989b9e90a34}{\index{Zeta\+::\+G\+U\+I\+Manager@{Zeta\+::\+G\+U\+I\+Manager}!update@{update}}
+\index{update@{update}!Zeta\+::\+G\+U\+I\+Manager@{Zeta\+::\+G\+U\+I\+Manager}}
+\subsubsection[{update}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+G\+U\+I\+Manager\+::update (
+\begin{DoxyParamCaption}
+\item[{{\bf Float}}]{elapsed\+Time}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classZeta_1_1GUIManager_af33fc7fef32ac295497ca989b9e90a34}
+Notifies the G\+U\+I that time has passes since last call of this function 
+\begin{DoxyParams}{Parameters}
+{\em time} & the time passed. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classZeta_1_1Updateable_af4006bfccb762454b4da08786ad93de0}{Zeta\+::\+Updateable}.
+
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{classZeta_1_1GUIManager_a2fa95d69b32a77fffa4b730679a8b08c}{\index{Zeta\+::\+G\+U\+I\+Manager@{Zeta\+::\+G\+U\+I\+Manager}!Single\+Instanced@{Single\+Instanced}}
+\index{Single\+Instanced@{Single\+Instanced}!Zeta\+::\+G\+U\+I\+Manager@{Zeta\+::\+G\+U\+I\+Manager}}
+\subsubsection[{Single\+Instanced}]{\setlength{\rightskip}{0pt plus 5cm}friend class {\bf Single\+Instanced}\hspace{0.3cm}{\ttfamily [friend]}}}\label{classZeta_1_1GUIManager_a2fa95d69b32a77fffa4b730679a8b08c}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classZeta_1_1GUIManager_a3b8922a1be0f73ace046033806c6e142}{\index{Zeta\+::\+G\+U\+I\+Manager@{Zeta\+::\+G\+U\+I\+Manager}!context@{context}}
+\index{context@{context}!Zeta\+::\+G\+U\+I\+Manager@{Zeta\+::\+G\+U\+I\+Manager}}
+\subsubsection[{context}]{\setlength{\rightskip}{0pt plus 5cm}C\+E\+G\+U\+I\+::\+G\+U\+I\+Context$\ast$ Zeta\+::\+G\+U\+I\+Manager\+::context\hspace{0.3cm}{\ttfamily [private]}}}\label{classZeta_1_1GUIManager_a3b8922a1be0f73ace046033806c6e142}
+\hypertarget{classZeta_1_1GUIManager_a670884c848cec41b709da2643da97772}{\index{Zeta\+::\+G\+U\+I\+Manager@{Zeta\+::\+G\+U\+I\+Manager}!sys@{sys}}
+\index{sys@{sys}!Zeta\+::\+G\+U\+I\+Manager@{Zeta\+::\+G\+U\+I\+Manager}}
+\subsubsection[{sys}]{\setlength{\rightskip}{0pt plus 5cm}C\+E\+G\+U\+I\+::\+System$\ast$ Zeta\+::\+G\+U\+I\+Manager\+::sys\hspace{0.3cm}{\ttfamily [private]}}}\label{classZeta_1_1GUIManager_a670884c848cec41b709da2643da97772}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Zeta/\+Core/\hyperlink{GUIManager_8hpp}{G\+U\+I\+Manager.\+hpp}\end{DoxyCompactItemize}

@@ -1,0 +1,177 @@
+\hypertarget{classZeta_1_1Cell}{\section{Zeta\+:\+:Cell Class Reference}
+\label{classZeta_1_1Cell}\index{Zeta\+::\+Cell@{Zeta\+::\+Cell}}
+}
+
+
+{\ttfamily \#include $<$Cell.\+hpp$>$}
+
+
+
+Inheritance diagram for Zeta\+:\+:Cell\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=162pt]{classZeta_1_1Cell__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Zeta\+:\+:Cell\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=162pt]{classZeta_1_1Cell__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classZeta_1_1Cell_1_1Sprite}{Sprite}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classZeta_1_1Cell_ad9f006fa7d204493878e288f1ba35b75}{draw} (\hyperlink{namespaceZeta_a1e0a1265f9b3bd3075fb0fabd39088ba}{Float} x, \hyperlink{namespaceZeta_a1e0a1265f9b3bd3075fb0fabd39088ba}{Float} y, \hyperlink{namespaceZeta_a1e0a1265f9b3bd3075fb0fabd39088ba}{Float} rotation=0.\+0f, Float scale=1.\+0f) const 
+\item 
+void \hyperlink{classZeta_1_1Cell_ae2d0f2242819da0a814872d19333ebc4}{add\+Sprite} (const \hyperlink{classZeta_1_1Cell_1_1Sprite}{Sprite} \&spr)
+\item 
+void \hyperlink{classZeta_1_1Cell_a79565540268e51b526f6f9cae67d443c}{add\+Sprite} (xmlpp\+::\+Node $\ast$spr\+Node, const \hyperlink{classZeta_1_1SpriteSheet}{Sprite\+Sheet} \&sprite\+Sheet)
+\item 
+\hyperlink{namespaceZeta_a1e0a1265f9b3bd3075fb0fabd39088ba}{Float} \hyperlink{classZeta_1_1Cell_a6b6b39710a29aeacf0a8546044bb0abb}{get\+Delay} () const 
+\item 
+void \hyperlink{classZeta_1_1Cell_a3c6553cf74e7ea8f6e6a44371fe244aa}{clear\+Sprites} ()
+\item 
+\hyperlink{classZeta_1_1Cell_a96ba2d0bcbd286fb3c2921f100bb769a}{Cell} (\hyperlink{classZeta_1_1Cell}{Cell} \&\&)=default
+\item 
+\hyperlink{classZeta_1_1Cell}{Cell} \& \hyperlink{classZeta_1_1Cell_a6d143f1384be8587876e13f825d6fb5f}{operator=} (\hyperlink{classZeta_1_1Cell}{Cell} \&\&)=default
+\item 
+\hyperlink{classZeta_1_1Cell_a8fdaa0f6790d19175af373611ac93dfc}{Cell} ()
+\item 
+\hyperlink{classZeta_1_1Cell_a319638156f2ebb8c12148036a756ed3b}{Cell} (\hyperlink{namespaceZeta_a1e0a1265f9b3bd3075fb0fabd39088ba}{Float} \hyperlink{classZeta_1_1Cell_a04e89b75d1e55f552f18b0b99d5340ae}{delay})
+\item 
+\hyperlink{classZeta_1_1Cell_a24e7d7a65465d35eb418c8ac80166f65}{Cell} (\hyperlink{namespaceZeta_a1e0a1265f9b3bd3075fb0fabd39088ba}{Float} \hyperlink{classZeta_1_1Cell_a04e89b75d1e55f552f18b0b99d5340ae}{delay}, const \hyperlink{classZeta_1_1Cell_1_1Sprite}{Sprite} \&sprite)
+\item 
+\hyperlink{classZeta_1_1Cell_aa31e8a72a07450e3f2d18d5fdced5463}{$\sim$\+Cell} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::list$<$ \hyperlink{classZeta_1_1Cell_1_1Sprite}{Sprite} $>$ \hyperlink{classZeta_1_1Cell_aa14a04a512b4577d3af71f9bf0b54731}{sprites}
+\item 
+\hyperlink{namespaceZeta_a1e0a1265f9b3bd3075fb0fabd39088ba}{Float} \hyperlink{classZeta_1_1Cell_a04e89b75d1e55f552f18b0b99d5340ae}{delay}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classZeta_1_1Cell_a96ba2d0bcbd286fb3c2921f100bb769a}{\index{Zeta\+::\+Cell@{Zeta\+::\+Cell}!Cell@{Cell}}
+\index{Cell@{Cell}!Zeta\+::\+Cell@{Zeta\+::\+Cell}}
+\subsubsection[{Cell}]{\setlength{\rightskip}{0pt plus 5cm}Zeta\+::\+Cell\+::\+Cell (
+\begin{DoxyParamCaption}
+\item[{{\bf Cell} \&\&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [default]}}}\label{classZeta_1_1Cell_a96ba2d0bcbd286fb3c2921f100bb769a}
+\hypertarget{classZeta_1_1Cell_a8fdaa0f6790d19175af373611ac93dfc}{\index{Zeta\+::\+Cell@{Zeta\+::\+Cell}!Cell@{Cell}}
+\index{Cell@{Cell}!Zeta\+::\+Cell@{Zeta\+::\+Cell}}
+\subsubsection[{Cell}]{\setlength{\rightskip}{0pt plus 5cm}Zeta\+::\+Cell\+::\+Cell (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1Cell_a8fdaa0f6790d19175af373611ac93dfc}
+\hypertarget{classZeta_1_1Cell_a319638156f2ebb8c12148036a756ed3b}{\index{Zeta\+::\+Cell@{Zeta\+::\+Cell}!Cell@{Cell}}
+\index{Cell@{Cell}!Zeta\+::\+Cell@{Zeta\+::\+Cell}}
+\subsubsection[{Cell}]{\setlength{\rightskip}{0pt plus 5cm}Zeta\+::\+Cell\+::\+Cell (
+\begin{DoxyParamCaption}
+\item[{{\bf Float}}]{delay}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1Cell_a319638156f2ebb8c12148036a756ed3b}
+\hypertarget{classZeta_1_1Cell_a24e7d7a65465d35eb418c8ac80166f65}{\index{Zeta\+::\+Cell@{Zeta\+::\+Cell}!Cell@{Cell}}
+\index{Cell@{Cell}!Zeta\+::\+Cell@{Zeta\+::\+Cell}}
+\subsubsection[{Cell}]{\setlength{\rightskip}{0pt plus 5cm}Zeta\+::\+Cell\+::\+Cell (
+\begin{DoxyParamCaption}
+\item[{{\bf Float}}]{delay, }
+\item[{const {\bf Sprite} \&}]{sprite}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1Cell_a24e7d7a65465d35eb418c8ac80166f65}
+\hypertarget{classZeta_1_1Cell_aa31e8a72a07450e3f2d18d5fdced5463}{\index{Zeta\+::\+Cell@{Zeta\+::\+Cell}!````~Cell@{$\sim$\+Cell}}
+\index{````~Cell@{$\sim$\+Cell}!Zeta\+::\+Cell@{Zeta\+::\+Cell}}
+\subsubsection[{$\sim$\+Cell}]{\setlength{\rightskip}{0pt plus 5cm}Zeta\+::\+Cell\+::$\sim$\+Cell (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1Cell_aa31e8a72a07450e3f2d18d5fdced5463}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classZeta_1_1Cell_ae2d0f2242819da0a814872d19333ebc4}{\index{Zeta\+::\+Cell@{Zeta\+::\+Cell}!add\+Sprite@{add\+Sprite}}
+\index{add\+Sprite@{add\+Sprite}!Zeta\+::\+Cell@{Zeta\+::\+Cell}}
+\subsubsection[{add\+Sprite}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+Cell\+::add\+Sprite (
+\begin{DoxyParamCaption}
+\item[{const {\bf Sprite} \&}]{spr}
+\end{DoxyParamCaption}
+)}}\label{classZeta_1_1Cell_ae2d0f2242819da0a814872d19333ebc4}
+\hypertarget{classZeta_1_1Cell_a79565540268e51b526f6f9cae67d443c}{\index{Zeta\+::\+Cell@{Zeta\+::\+Cell}!add\+Sprite@{add\+Sprite}}
+\index{add\+Sprite@{add\+Sprite}!Zeta\+::\+Cell@{Zeta\+::\+Cell}}
+\subsubsection[{add\+Sprite}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+Cell\+::add\+Sprite (
+\begin{DoxyParamCaption}
+\item[{xmlpp\+::\+Node $\ast$}]{spr\+Node, }
+\item[{const {\bf Sprite\+Sheet} \&}]{sprite\+Sheet}
+\end{DoxyParamCaption}
+)}}\label{classZeta_1_1Cell_a79565540268e51b526f6f9cae67d443c}
+\hypertarget{classZeta_1_1Cell_a3c6553cf74e7ea8f6e6a44371fe244aa}{\index{Zeta\+::\+Cell@{Zeta\+::\+Cell}!clear\+Sprites@{clear\+Sprites}}
+\index{clear\+Sprites@{clear\+Sprites}!Zeta\+::\+Cell@{Zeta\+::\+Cell}}
+\subsubsection[{clear\+Sprites}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+Cell\+::clear\+Sprites (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1Cell_a3c6553cf74e7ea8f6e6a44371fe244aa}
+\hypertarget{classZeta_1_1Cell_ad9f006fa7d204493878e288f1ba35b75}{\index{Zeta\+::\+Cell@{Zeta\+::\+Cell}!draw@{draw}}
+\index{draw@{draw}!Zeta\+::\+Cell@{Zeta\+::\+Cell}}
+\subsubsection[{draw}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+Cell\+::draw (
+\begin{DoxyParamCaption}
+\item[{{\bf Float}}]{x, }
+\item[{{\bf Float}}]{y, }
+\item[{{\bf Float}}]{rotation = {\ttfamily 0.0f}, }
+\item[{{\bf Float}}]{scale = {\ttfamily 1.0f}}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classZeta_1_1Cell_ad9f006fa7d204493878e288f1ba35b75}
+Draws the \hyperlink{classZeta_1_1Object}{Object} on screen. Be advised, the x,y, offsets might have different meaning on different implementations. 
+\begin{DoxyParams}{Parameters}
+{\em x} & X offset to be applied on the drawing \\
+\hline
+{\em y} & Y offset to be applied on the drawing \\
+\hline
+{\em rotation} & the rotation to be applied on the drawing \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classZeta_1_1Drawable_a3f453a7a971b7eeba1768be3eaedc192}{Zeta\+::\+Drawable}.
+
+\hypertarget{classZeta_1_1Cell_a6b6b39710a29aeacf0a8546044bb0abb}{\index{Zeta\+::\+Cell@{Zeta\+::\+Cell}!get\+Delay@{get\+Delay}}
+\index{get\+Delay@{get\+Delay}!Zeta\+::\+Cell@{Zeta\+::\+Cell}}
+\subsubsection[{get\+Delay}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Float} Zeta\+::\+Cell\+::get\+Delay (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1Cell_a6b6b39710a29aeacf0a8546044bb0abb}
+\hypertarget{classZeta_1_1Cell_a6d143f1384be8587876e13f825d6fb5f}{\index{Zeta\+::\+Cell@{Zeta\+::\+Cell}!operator=@{operator=}}
+\index{operator=@{operator=}!Zeta\+::\+Cell@{Zeta\+::\+Cell}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Cell}\& Zeta\+::\+Cell\+::operator= (
+\begin{DoxyParamCaption}
+\item[{{\bf Cell} \&\&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [default]}}}\label{classZeta_1_1Cell_a6d143f1384be8587876e13f825d6fb5f}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classZeta_1_1Cell_a04e89b75d1e55f552f18b0b99d5340ae}{\index{Zeta\+::\+Cell@{Zeta\+::\+Cell}!delay@{delay}}
+\index{delay@{delay}!Zeta\+::\+Cell@{Zeta\+::\+Cell}}
+\subsubsection[{delay}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Float} Zeta\+::\+Cell\+::delay\hspace{0.3cm}{\ttfamily [protected]}}}\label{classZeta_1_1Cell_a04e89b75d1e55f552f18b0b99d5340ae}
+\hypertarget{classZeta_1_1Cell_aa14a04a512b4577d3af71f9bf0b54731}{\index{Zeta\+::\+Cell@{Zeta\+::\+Cell}!sprites@{sprites}}
+\index{sprites@{sprites}!Zeta\+::\+Cell@{Zeta\+::\+Cell}}
+\subsubsection[{sprites}]{\setlength{\rightskip}{0pt plus 5cm}std\+::list$<${\bf Sprite}$>$ Zeta\+::\+Cell\+::sprites\hspace{0.3cm}{\ttfamily [protected]}}}\label{classZeta_1_1Cell_aa14a04a512b4577d3af71f9bf0b54731}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Zeta/\+Core/\+Animation\+Classes/\hyperlink{Cell_8hpp}{Cell.\+hpp}\end{DoxyCompactItemize}

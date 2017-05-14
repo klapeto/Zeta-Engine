@@ -1,0 +1,11 @@
+
+$#include <Zeta/Core/AnimationClasses/OffAnimation.hpp>
+
+class OffAnimation: public AnimationPlayer {
+public:
+	Float getDx() const;
+	void setDx(Float dx);
+	Float getDy() const;
+	void setDy(Float dy);
+	void setOffsets(Float dx, Float dy);
+};

@@ -1,0 +1,232 @@
+\hypertarget{classZeta_1_1Display}{\section{Zeta\+:\+:Display Class Reference}
+\label{classZeta_1_1Display}\index{Zeta\+::\+Display@{Zeta\+::\+Display}}
+}
+
+
+{\ttfamily \#include $<$Display.\+hpp$>$}
+
+
+
+Inheritance diagram for Zeta\+:\+:Display\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=184pt]{classZeta_1_1Display__inherit__graph}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classZeta_1_1Display_1_1Resolution}{Resolution}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classZeta_1_1Display_aa2b1d08b26f25efe5864d950ce3bec61}{resize} (const \hyperlink{classZeta_1_1Display_1_1Resolution}{Resolution} \&res)
+\item 
+virtual int \hyperlink{classZeta_1_1Display_ac1ac8b765b5bc2589c4f8e01943e41eb}{get\+Width} () const =0
+\item 
+virtual int \hyperlink{classZeta_1_1Display_ac8b58d29e59ee15c40523dc6661e7c9a}{get\+Height} () const =0
+\item 
+virtual void \hyperlink{classZeta_1_1Display_a42a19d96e61bac76216071efe61bf8e6}{resize} (int width, int height)=0
+\item 
+virtual void \hyperlink{classZeta_1_1Display_a07ba98d5a7accc4cad08923e65286912}{set\+Full\+Screen} (bool value)=0
+\item 
+virtual std\+::vector$<$ \hyperlink{classZeta_1_1Display_1_1Resolution}{Resolution} $>$ \hyperlink{classZeta_1_1Display_ae7ebedea6e6ed113e847e426d6697bb9}{get\+Available\+Resolutions} () const =0
+\item 
+virtual void \hyperlink{classZeta_1_1Display_a727a7d347a8145029975ec8eef5339d3}{switch\+Framebuffer} ()=0
+\item 
+\hyperlink{classZeta_1_1Display_a57910f8212688724529fa29b037aa278}{Display} (const \hyperlink{classZeta_1_1Display}{Display} \&)=delete
+\item 
+\hyperlink{classZeta_1_1Display}{Display} \& \hyperlink{classZeta_1_1Display_ae936382a172e74c4122926862d208b7d}{operator=} (const \hyperlink{classZeta_1_1Display}{Display} \&)=delete
+\item 
+\hyperlink{classZeta_1_1Display_ada90ecc8f24c9d373a226d64793bfde3}{Display} (\hyperlink{classZeta_1_1Display}{Display} \&\&)=default
+\item 
+\hyperlink{classZeta_1_1Display}{Display} \& \hyperlink{classZeta_1_1Display_a22b011a76fa73de9f697d78ba1845ea9}{operator=} (\hyperlink{classZeta_1_1Display}{Display} \&\&)=default
+\item 
+\hyperlink{classZeta_1_1Display_a8908c7b5af77a9ac397e02576da8a78a}{Display} ()
+\item 
+virtual \hyperlink{classZeta_1_1Display_a92108116b5647ceed7e2aecb97518d01}{$\sim$\+Display} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool \hyperlink{classZeta_1_1Display_adbe20015304e9c656029feef77bdb78d}{is\+Rendering\+Thread} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static thread\+\_\+local bool \hyperlink{classZeta_1_1Display_a6c38447130075602f29a3ab3ba7c5d5c}{rendering\+Thread}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classZeta_1_1Display}{Display} Base class Used to create Library-\/\+Specific Wrappers to be used inside the Engine's Core 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classZeta_1_1Display_a57910f8212688724529fa29b037aa278}{\index{Zeta\+::\+Display@{Zeta\+::\+Display}!Display@{Display}}
+\index{Display@{Display}!Zeta\+::\+Display@{Zeta\+::\+Display}}
+\subsubsection[{Display}]{\setlength{\rightskip}{0pt plus 5cm}Zeta\+::\+Display\+::\+Display (
+\begin{DoxyParamCaption}
+\item[{const {\bf Display} \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [delete]}}}\label{classZeta_1_1Display_a57910f8212688724529fa29b037aa278}
+No Copy Constructor \hypertarget{classZeta_1_1Display_ada90ecc8f24c9d373a226d64793bfde3}{\index{Zeta\+::\+Display@{Zeta\+::\+Display}!Display@{Display}}
+\index{Display@{Display}!Zeta\+::\+Display@{Zeta\+::\+Display}}
+\subsubsection[{Display}]{\setlength{\rightskip}{0pt plus 5cm}Zeta\+::\+Display\+::\+Display (
+\begin{DoxyParamCaption}
+\item[{{\bf Display} \&\&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [default]}}}\label{classZeta_1_1Display_ada90ecc8f24c9d373a226d64793bfde3}
+Move Constructor \hypertarget{classZeta_1_1Display_a8908c7b5af77a9ac397e02576da8a78a}{\index{Zeta\+::\+Display@{Zeta\+::\+Display}!Display@{Display}}
+\index{Display@{Display}!Zeta\+::\+Display@{Zeta\+::\+Display}}
+\subsubsection[{Display}]{\setlength{\rightskip}{0pt plus 5cm}Zeta\+::\+Display\+::\+Display (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1Display_a8908c7b5af77a9ac397e02576da8a78a}
+Creates a \hyperlink{classZeta_1_1Display}{Display}. Created displays set the Thread-\/\+Specific flag rendering\+Thread to true. \hypertarget{classZeta_1_1Display_a92108116b5647ceed7e2aecb97518d01}{\index{Zeta\+::\+Display@{Zeta\+::\+Display}!````~Display@{$\sim$\+Display}}
+\index{````~Display@{$\sim$\+Display}!Zeta\+::\+Display@{Zeta\+::\+Display}}
+\subsubsection[{$\sim$\+Display}]{\setlength{\rightskip}{0pt plus 5cm}virtual Zeta\+::\+Display\+::$\sim$\+Display (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classZeta_1_1Display_a92108116b5647ceed7e2aecb97518d01}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classZeta_1_1Display_ae7ebedea6e6ed113e847e426d6697bb9}{\index{Zeta\+::\+Display@{Zeta\+::\+Display}!get\+Available\+Resolutions@{get\+Available\+Resolutions}}
+\index{get\+Available\+Resolutions@{get\+Available\+Resolutions}!Zeta\+::\+Display@{Zeta\+::\+Display}}
+\subsubsection[{get\+Available\+Resolutions}]{\setlength{\rightskip}{0pt plus 5cm}virtual std\+::vector$<${\bf Resolution}$>$ Zeta\+::\+Display\+::get\+Available\+Resolutions (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classZeta_1_1Display_ae7ebedea6e6ed113e847e426d6697bb9}
+Gets the available Resolutions for this \hyperlink{classZeta_1_1Display}{Display} \begin{DoxyReturn}{Returns}
+A std\+::vector$<$\+Zeta\+::\+Display\+::\+Resoultion$>$ contain all Resolutions 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classZeta_1_1AllegroDisplay_a3e6075814fc06dd14c99f95f6981d46c}{Zeta\+::\+Allegro\+Display}.
+
+\hypertarget{classZeta_1_1Display_ac8b58d29e59ee15c40523dc6661e7c9a}{\index{Zeta\+::\+Display@{Zeta\+::\+Display}!get\+Height@{get\+Height}}
+\index{get\+Height@{get\+Height}!Zeta\+::\+Display@{Zeta\+::\+Display}}
+\subsubsection[{get\+Height}]{\setlength{\rightskip}{0pt plus 5cm}virtual int Zeta\+::\+Display\+::get\+Height (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classZeta_1_1Display_ac8b58d29e59ee15c40523dc6661e7c9a}
+Gets the Main Window Height \begin{DoxyReturn}{Returns}
+The main window height; 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classZeta_1_1AllegroDisplay_a9b876ad99147faae16f98ddfa44edf90}{Zeta\+::\+Allegro\+Display}.
+
+\hypertarget{classZeta_1_1Display_ac1ac8b765b5bc2589c4f8e01943e41eb}{\index{Zeta\+::\+Display@{Zeta\+::\+Display}!get\+Width@{get\+Width}}
+\index{get\+Width@{get\+Width}!Zeta\+::\+Display@{Zeta\+::\+Display}}
+\subsubsection[{get\+Width}]{\setlength{\rightskip}{0pt plus 5cm}virtual int Zeta\+::\+Display\+::get\+Width (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classZeta_1_1Display_ac1ac8b765b5bc2589c4f8e01943e41eb}
+Gets the Main Window Width \begin{DoxyReturn}{Returns}
+The main window Width; 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classZeta_1_1AllegroDisplay_a235298ad063c22b30a1086d5cd442ad9}{Zeta\+::\+Allegro\+Display}.
+
+\hypertarget{classZeta_1_1Display_adbe20015304e9c656029feef77bdb78d}{\index{Zeta\+::\+Display@{Zeta\+::\+Display}!is\+Rendering\+Thread@{is\+Rendering\+Thread}}
+\index{is\+Rendering\+Thread@{is\+Rendering\+Thread}!Zeta\+::\+Display@{Zeta\+::\+Display}}
+\subsubsection[{is\+Rendering\+Thread}]{\setlength{\rightskip}{0pt plus 5cm}static bool Zeta\+::\+Display\+::is\+Rendering\+Thread (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{classZeta_1_1Display_adbe20015304e9c656029feef77bdb78d}
+Get's if the calling thread is the same with the Rendering. This is used by the \hyperlink{classZeta_1_1ResourceContext}{Resource\+Context} to distinguish if the caller thread can load V\+R\+A\+M Textures. \begin{DoxyReturn}{Returns}
+true if the calling thread is the rendering Thread 
+\end{DoxyReturn}
+\hypertarget{classZeta_1_1Display_ae936382a172e74c4122926862d208b7d}{\index{Zeta\+::\+Display@{Zeta\+::\+Display}!operator=@{operator=}}
+\index{operator=@{operator=}!Zeta\+::\+Display@{Zeta\+::\+Display}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Display}\& Zeta\+::\+Display\+::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Display} \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [delete]}}}\label{classZeta_1_1Display_ae936382a172e74c4122926862d208b7d}
+No Copy Assignment operator \hypertarget{classZeta_1_1Display_a22b011a76fa73de9f697d78ba1845ea9}{\index{Zeta\+::\+Display@{Zeta\+::\+Display}!operator=@{operator=}}
+\index{operator=@{operator=}!Zeta\+::\+Display@{Zeta\+::\+Display}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Display}\& Zeta\+::\+Display\+::operator= (
+\begin{DoxyParamCaption}
+\item[{{\bf Display} \&\&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [default]}}}\label{classZeta_1_1Display_a22b011a76fa73de9f697d78ba1845ea9}
+Move assignment operator \hypertarget{classZeta_1_1Display_aa2b1d08b26f25efe5864d950ce3bec61}{\index{Zeta\+::\+Display@{Zeta\+::\+Display}!resize@{resize}}
+\index{resize@{resize}!Zeta\+::\+Display@{Zeta\+::\+Display}}
+\subsubsection[{resize}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+Display\+::resize (
+\begin{DoxyParamCaption}
+\item[{const {\bf Resolution} \&}]{res}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1Display_aa2b1d08b26f25efe5864d950ce3bec61}
+Resize overload to accept \hyperlink{classZeta_1_1Display_1_1Resolution}{Resolution} Objects 
+\begin{DoxyParams}{Parameters}
+{\em res} & The resolution to resize the Main Window. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classZeta_1_1Display_a42a19d96e61bac76216071efe61bf8e6}{\index{Zeta\+::\+Display@{Zeta\+::\+Display}!resize@{resize}}
+\index{resize@{resize}!Zeta\+::\+Display@{Zeta\+::\+Display}}
+\subsubsection[{resize}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Zeta\+::\+Display\+::resize (
+\begin{DoxyParamCaption}
+\item[{int}]{width, }
+\item[{int}]{height}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classZeta_1_1Display_a42a19d96e61bac76216071efe61bf8e6}
+Resizes the Main Window to the specified Dimensions 
+\begin{DoxyParams}{Parameters}
+{\em width} & the target width \\
+\hline
+{\em height} & the target Height \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{classZeta_1_1AllegroDisplay_a0eec86886654b8c7fa824e0f1a60c666}{Zeta\+::\+Allegro\+Display}.
+
+\hypertarget{classZeta_1_1Display_a07ba98d5a7accc4cad08923e65286912}{\index{Zeta\+::\+Display@{Zeta\+::\+Display}!set\+Full\+Screen@{set\+Full\+Screen}}
+\index{set\+Full\+Screen@{set\+Full\+Screen}!Zeta\+::\+Display@{Zeta\+::\+Display}}
+\subsubsection[{set\+Full\+Screen}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Zeta\+::\+Display\+::set\+Full\+Screen (
+\begin{DoxyParamCaption}
+\item[{bool}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classZeta_1_1Display_a07ba98d5a7accc4cad08923e65286912}
+Toggles the Main Window Full-\/screen Mode 
+\begin{DoxyParams}{Parameters}
+{\em value} & True for Fullscreen \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{classZeta_1_1AllegroDisplay_a66c5cff25c281458c26e62e2a4298a9f}{Zeta\+::\+Allegro\+Display}.
+
+\hypertarget{classZeta_1_1Display_a727a7d347a8145029975ec8eef5339d3}{\index{Zeta\+::\+Display@{Zeta\+::\+Display}!switch\+Framebuffer@{switch\+Framebuffer}}
+\index{switch\+Framebuffer@{switch\+Framebuffer}!Zeta\+::\+Display@{Zeta\+::\+Display}}
+\subsubsection[{switch\+Framebuffer}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Zeta\+::\+Display\+::switch\+Framebuffer (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classZeta_1_1Display_a727a7d347a8145029975ec8eef5339d3}
+Switches the framebuffer. It should be used on Double or Triple Buffering implementations 
+
+Implemented in \hyperlink{classZeta_1_1AllegroDisplay_ab008d06f28f31d2cda41622eb7d60c43}{Zeta\+::\+Allegro\+Display}.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classZeta_1_1Display_a6c38447130075602f29a3ab3ba7c5d5c}{\index{Zeta\+::\+Display@{Zeta\+::\+Display}!rendering\+Thread@{rendering\+Thread}}
+\index{rendering\+Thread@{rendering\+Thread}!Zeta\+::\+Display@{Zeta\+::\+Display}}
+\subsubsection[{rendering\+Thread}]{\setlength{\rightskip}{0pt plus 5cm}thread\+\_\+local bool Zeta\+::\+Display\+::rendering\+Thread\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}}\label{classZeta_1_1Display_a6c38447130075602f29a3ab3ba7c5d5c}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Zeta/\+Core/\hyperlink{Display_8hpp}{Display.\+hpp}\end{DoxyCompactItemize}

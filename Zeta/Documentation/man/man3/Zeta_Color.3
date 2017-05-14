@@ -1,0 +1,172 @@
+.TH "Zeta::Color" 3 "Wed Feb 10 2016" "Zeta" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Zeta::Color \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Color\&.hpp>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBColor\fP & \fBoperator=\fP (unsigned int RGBA)"
+.br
+.ti -1c
+.RI "constexpr \fBColor\fP ()"
+.br
+.ti -1c
+.RI "constexpr \fBColor\fP (unsigned char \fBr\fP, unsigned char \fBg\fP, unsigned char \fBb\fP, unsigned char \fBa\fP)"
+.br
+.ti -1c
+.RI "constexpr \fBColor\fP (unsigned int RGBA)"
+.br
+.ti -1c
+.RI "\fBColor\fP & \fBoperator=\fP (const \fBColor\fP &other)=default"
+.br
+.ti -1c
+.RI "\fBColor\fP & \fBoperator=\fP (\fBColor\fP &&other)=default"
+.br
+.ti -1c
+.RI "\fBColor\fP (const \fBColor\fP &other)=default"
+.br
+.ti -1c
+.RI "\fBColor\fP (\fBColor\fP &&other)=default"
+.br
+.ti -1c
+.RI "\fB~Color\fP ()"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "unsigned char \fBa\fP"
+.br
+.ti -1c
+.RI "unsigned char \fBb\fP"
+.br
+.ti -1c
+.RI "unsigned char \fBg\fP"
+.br
+.ti -1c
+.RI "unsigned char \fBr\fP"
+.br
+.in -1c
+.SS "Static Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "static const \fBColor\fP \fBTransperancy\fP"
+.br
+.ti -1c
+.RI "static const \fBColor\fP \fBWhite\fP"
+.br
+.ti -1c
+.RI "static const \fBColor\fP \fBBlack\fP"
+.br
+.ti -1c
+.RI "static const \fBColor\fP \fBRed\fP"
+.br
+.ti -1c
+.RI "static const \fBColor\fP \fBGreen\fP"
+.br
+.ti -1c
+.RI "static const \fBColor\fP \fBBlue\fP"
+.br
+.ti -1c
+.RI "static const \fBColor\fP \fBYellow\fP"
+.br
+.ti -1c
+.RI "static const \fBColor\fP \fBCyan\fP"
+.br
+.ti -1c
+.RI "static const \fBColor\fP \fBMagenta\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+\fBColor\fP helper Class to be used inside the Core\&. 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "constexpr Zeta::Color::Color ()\fC [inline]\fP"
+Constructs a default color The color is 0xFFFFFFFF (White) 
+.SS "constexpr Zeta::Color::Color (unsigned charr, unsigned charg, unsigned charb, unsigned chara)\fC [inline]\fP"
+Constructs a \fBColor\fP 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIr\fP Red number 
+.br
+\fIg\fP Green Number 
+.br
+\fIb\fP Blue Number 
+.br
+\fIa\fP Alpha Number 
+.RE
+.PP
+
+.SS "constexpr Zeta::Color::Color (unsigned intRGBA)\fC [inline]\fP"
+Constructs the color represented by the integer E\&.g \fBColor\fP c(0xED12CAFF); Will set R=ED, G=12, B=CA, Alpha=FF 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIRGBA\fP the number to be assigned 
+.RE
+.PP
+
+.SS "Zeta::Color::Color (const \fBColor\fP &other)\fC [default]\fP"
+Copy Constructor 
+.SS "Zeta::Color::Color (\fBColor\fP &&other)\fC [default]\fP"
+Move Constructor 
+.SS "Zeta::Color::~Color ()\fC [inline]\fP"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "\fBColor\fP& Zeta::Color::operator= (unsigned intRGBA)\fC [inline]\fP"
+Assigns the color represented by the integer E\&.g \fBColor\fP c = 0xED12CAFF; Will set R=ED, G=12, B=CA, Alpha=FF 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIRGBA\fP the number to be assigned 
+.RE
+.PP
+
+.SS "\fBColor\fP& Zeta::Color::operator= (const \fBColor\fP &other)\fC [default]\fP"
+Copy assignment operator 
+.SS "\fBColor\fP& Zeta::Color::operator= (\fBColor\fP &&other)\fC [default]\fP"
+Move assignment operator 
+.SH "Member Data Documentation"
+.PP 
+.SS "unsigned char Zeta::Color::a"
+The color channels 
+.SS "unsigned char Zeta::Color::b"
+
+.SS "const \fBColor\fP Zeta::Color::Black\fC [static]\fP"
+
+.SS "const \fBColor\fP Zeta::Color::Blue\fC [static]\fP"
+
+.SS "const \fBColor\fP Zeta::Color::Cyan\fC [static]\fP"
+
+.SS "unsigned char Zeta::Color::g"
+
+.SS "const \fBColor\fP Zeta::Color::Green\fC [static]\fP"
+
+.SS "const \fBColor\fP Zeta::Color::Magenta\fC [static]\fP"
+
+.SS "unsigned char Zeta::Color::r"
+
+.SS "const \fBColor\fP Zeta::Color::Red\fC [static]\fP"
+
+.SS "const \fBColor\fP Zeta::Color::Transperancy\fC [static]\fP"
+Helper pre-Defined colors 
+.SS "const \fBColor\fP Zeta::Color::White\fC [static]\fP"
+
+.SS "const \fBColor\fP Zeta::Color::Yellow\fC [static]\fP"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Zeta from the source code\&.

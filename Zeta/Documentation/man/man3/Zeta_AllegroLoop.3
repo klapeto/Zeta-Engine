@@ -1,0 +1,86 @@
+.TH "Zeta::AllegroLoop" 3 "Wed Feb 10 2016" "Zeta" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Zeta::AllegroLoop \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <AllegroLoop\&.hpp>\fP
+.PP
+Inherits \fBZeta::LoopRunner\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBstart\fP ()"
+.br
+.ti -1c
+.RI "int \fBgetTargetFps\fP () const "
+.br
+.ti -1c
+.RI "void \fBsetTargetFps\fP (int \fBtargetFps\fP)"
+.br
+.ti -1c
+.RI "\fBAllegroLoop\fP (int \fBtargetFps\fP)"
+.br
+.ti -1c
+.RI "\fB~AllegroLoop\fP ()"
+.br
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "ALLEGRO_TIMER * \fBframe_timer\fP"
+.br
+.ti -1c
+.RI "int \fBtargetFps\fP"
+.br
+.in -1c
+.SS "Additional Inherited Members"
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Zeta::AllegroLoop::AllegroLoop (inttargetFps)"
+
+.SS "Zeta::AllegroLoop::~AllegroLoop ()"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "int Zeta::AllegroLoop::getTargetFps () const\fC [inline]\fP, \fC [virtual]\fP"
+Gets the Loops target FPS Warning this is not the Current Engine's FPS 
+.PP
+\fBReturns:\fP
+.RS 4
+the target FPS 
+.RE
+.PP
+
+.PP
+Implements \fBZeta::LoopRunner\fP\&.
+.SS "void Zeta::AllegroLoop::setTargetFps (inttargetFps)\fC [virtual]\fP"
+Sets the Loops target FPS Warning this is not the Current Engine's FPS 
+.PP
+\fBParameters:\fP
+.RS 4
+\fItargetFps\fP the target FPS 
+.RE
+.PP
+
+.PP
+Implements \fBZeta::LoopRunner\fP\&.
+.SS "void Zeta::AllegroLoop::start ()\fC [virtual]\fP"
+Causes the Main Loop to start 
+.PP
+Implements \fBZeta::LoopRunner\fP\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "ALLEGRO_TIMER* Zeta::AllegroLoop::frame_timer\fC [private]\fP"
+
+.SS "int Zeta::AllegroLoop::targetFps\fC [private]\fP"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Zeta from the source code\&.

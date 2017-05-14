@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:complexType name="coreFilesType">
+        <xsd:sequence>
+        	<xsd:element name="XMLFile" maxOccurs="1"
+        		minOccurs="1">
+                <xsd:complexType>
+                	<xsd:complexContent>
+                        <xsd:restriction base="XMLFileType">
+                			<xsd:attribute name="targetModule" type="xsd:string" use="required" fixed="MapList">
+                			</xsd:attribute>
+                		</xsd:restriction>
+                	</xsd:complexContent>
+                </xsd:complexType>
+        	</xsd:element>
+        </xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="ResourceSchemasType">
+        <xsd:sequence>
+        	<xsd:element name="Sprite" type="schemaType" maxOccurs="1"
+        		minOccurs="1">
+        	</xsd:element>
+        	<xsd:element name="Animation" type="schemaType"
+        		maxOccurs="1" minOccurs="1">
+        	</xsd:element>
+        	<xsd:element name="Map" type="schemaType" maxOccurs="1"
+        		minOccurs="1">
+        	</xsd:element>
+        	<xsd:element name="Tileset" type="schemaType" maxOccurs="1"
+        		minOccurs="1">
+        	</xsd:element>
+        	<xsd:element name="AnimationClass" type="schemaType"
+        		maxOccurs="1" minOccurs="1">
+        	</xsd:element>
+        	<xsd:element name="LifeformClass" type="schemaType"
+        		maxOccurs="1" minOccurs="1">
+        	</xsd:element>
+        	<xsd:element name="Quest" type="schemaType" maxOccurs="1" minOccurs="1"></xsd:element>
+        </xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="systemType">
+		<xsd:sequence>
+			<xsd:element name="CoreFiles" type="coreFilesType"
+				maxOccurs="1" minOccurs="1">
+			</xsd:element>
+			<xsd:element name="ResourceSchemas"
+				type="ResourceSchemasType" maxOccurs="1" minOccurs="1">
+			</xsd:element>
+			<xsd:element name="CEGUI">
+				<xsd:complexType>
+					<xsd:sequence>
+                        <xsd:element name="Script" maxOccurs="1" minOccurs="1">
+                            <xsd:complexType>
+                            	<xsd:attribute name="group" type="xsd:string" use="required">
+                            	</xsd:attribute>
+                            	<xsd:attribute name="file" type="xsd:string" use="required">
+                            	</xsd:attribute>
+                            </xsd:complexType>
+						</xsd:element>
+                        <xsd:element name="ResourceGroup"
+							maxOccurs="unbounded" minOccurs="1">
+							<xsd:complexType>
+								<xsd:attribute name="name"
+									type="xsd:string" use="required">
+								</xsd:attribute>
+								<xsd:attribute name="path"
+									type="xsd:string" use="required">
+								</xsd:attribute>
+							</xsd:complexType>
+						</xsd:element>
+					</xsd:sequence>
+				</xsd:complexType></xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:element name="System" type="systemType"></xsd:element>
+	<xsd:complexType name="XMLFileType">
+		<xsd:attribute name="targetModule" type="xsd:string" use="required"></xsd:attribute>
+		<xsd:attribute name="filename" type="xsd:string" use="required"></xsd:attribute>
+		<xsd:attribute name="schema" type="xsd:string" use="required"></xsd:attribute>
+	</xsd:complexType>
+	<xsd:complexType name="SchemaFileType">
+		<xsd:attribute name="targetXML" type="xsd:string"
+			use="required">
+		</xsd:attribute>
+		<xsd:attribute name="filename" type="xsd:string" use="required"></xsd:attribute>
+	</xsd:complexType>
+
+	<xsd:complexType name="schemaType">
+		<xsd:attribute name="filename" type="xsd:string" use="required"></xsd:attribute>
+	</xsd:complexType>
+</xsd:schema>

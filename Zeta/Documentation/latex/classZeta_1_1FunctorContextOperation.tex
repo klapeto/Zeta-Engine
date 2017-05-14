@@ -1,0 +1,100 @@
+\hypertarget{classZeta_1_1FunctorContextOperation}{\section{Zeta\+:\+:Functor\+Context\+Operation$<$ Context\+Type $>$ Class Template Reference}
+\label{classZeta_1_1FunctorContextOperation}\index{Zeta\+::\+Functor\+Context\+Operation$<$ Context\+Type $>$@{Zeta\+::\+Functor\+Context\+Operation$<$ Context\+Type $>$}}
+}
+
+
+{\ttfamily \#include $<$Functor\+Context\+Operation.\+hpp$>$}
+
+
+
+Inheritance diagram for Zeta\+:\+:Functor\+Context\+Operation$<$ Context\+Type $>$\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=232pt]{classZeta_1_1FunctorContextOperation__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Zeta\+:\+:Functor\+Context\+Operation$<$ Context\+Type $>$\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=232pt]{classZeta_1_1FunctorContextOperation__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classZeta_1_1FunctorContextOperation_aaddb1910026a9c905afb14b5cfc2000e}{handle} (Context\+Type \&context)
+\item 
+\hyperlink{classZeta_1_1FunctorContextOperation_a24b3a5fd20f5fdec75904615f4fe0edb}{Functor\+Context\+Operation} (std\+::function$<$ void(Context\+Type \&)$>$ \hyperlink{classZeta_1_1FunctorContextOperation_a082fe8d9aa9f4e2689fcf809fd7c218c}{func}, bool \hyperlink{classZeta_1_1ContextOperation_a74d249e9f1614a29999b811772a41c1b}{to\+Be\+Deleted}=true)
+\item 
+\hyperlink{classZeta_1_1FunctorContextOperation_af23ff142b1cde19d64715065477c5145}{$\sim$\+Functor\+Context\+Operation} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::function$<$ void(Context\+Type \&)$>$ \hyperlink{classZeta_1_1FunctorContextOperation_a082fe8d9aa9f4e2689fcf809fd7c218c}{func}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename Context\+Type$>$class Zeta\+::\+Functor\+Context\+Operation$<$ Context\+Type $>$}
+
+Captures a Lambda function and the \hyperlink{classZeta_1_1Context}{Context} Executes it. The most fast (in terms of code writing) \hyperlink{classZeta_1_1ContextOperation}{Context\+Operation} Type 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classZeta_1_1FunctorContextOperation_a24b3a5fd20f5fdec75904615f4fe0edb}{\index{Zeta\+::\+Functor\+Context\+Operation@{Zeta\+::\+Functor\+Context\+Operation}!Functor\+Context\+Operation@{Functor\+Context\+Operation}}
+\index{Functor\+Context\+Operation@{Functor\+Context\+Operation}!Zeta\+::\+Functor\+Context\+Operation@{Zeta\+::\+Functor\+Context\+Operation}}
+\subsubsection[{Functor\+Context\+Operation}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Context\+Type $>$ {\bf Zeta\+::\+Functor\+Context\+Operation}$<$ Context\+Type $>$\+::{\bf Functor\+Context\+Operation} (
+\begin{DoxyParamCaption}
+\item[{std\+::function$<$ void(Context\+Type \&)$>$}]{func, }
+\item[{bool}]{to\+Be\+Deleted = {\ttfamily true}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1FunctorContextOperation_a24b3a5fd20f5fdec75904615f4fe0edb}
+Creates a \hyperlink{classZeta_1_1ContextOperation}{Context\+Operation} with the lambda function provided Warning! This is by default deallocated by the \hyperlink{classZeta_1_1Context}{Context}. Set the to\+Be\+Deleted flag if you want otherwise. 
+\begin{DoxyParams}{Parameters}
+{\em func} & The lambda Function to be executed by the \hyperlink{classZeta_1_1Context}{Context} \\
+\hline
+{\em to\+Be\+Deleted} & if the \hyperlink{classZeta_1_1Context}{Context} should deallocate the Operation (Default = true) \\
+\hline
+\end{DoxyParams}
+\hypertarget{classZeta_1_1FunctorContextOperation_af23ff142b1cde19d64715065477c5145}{\index{Zeta\+::\+Functor\+Context\+Operation@{Zeta\+::\+Functor\+Context\+Operation}!````~Functor\+Context\+Operation@{$\sim$\+Functor\+Context\+Operation}}
+\index{````~Functor\+Context\+Operation@{$\sim$\+Functor\+Context\+Operation}!Zeta\+::\+Functor\+Context\+Operation@{Zeta\+::\+Functor\+Context\+Operation}}
+\subsubsection[{$\sim$\+Functor\+Context\+Operation}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Context\+Type $>$ {\bf Zeta\+::\+Functor\+Context\+Operation}$<$ Context\+Type $>$\+::$\sim${\bf Functor\+Context\+Operation} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1FunctorContextOperation_af23ff142b1cde19d64715065477c5145}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classZeta_1_1FunctorContextOperation_aaddb1910026a9c905afb14b5cfc2000e}{\index{Zeta\+::\+Functor\+Context\+Operation@{Zeta\+::\+Functor\+Context\+Operation}!handle@{handle}}
+\index{handle@{handle}!Zeta\+::\+Functor\+Context\+Operation@{Zeta\+::\+Functor\+Context\+Operation}}
+\subsubsection[{handle}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Context\+Type $>$ void {\bf Zeta\+::\+Functor\+Context\+Operation}$<$ Context\+Type $>$\+::handle (
+\begin{DoxyParamCaption}
+\item[{Context\+Type \&}]{context}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classZeta_1_1FunctorContextOperation_aaddb1910026a9c905afb14b5cfc2000e}
+Calls the lambda function provided 
+\begin{DoxyParams}{Parameters}
+{\em context} & the context that called it. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classZeta_1_1ContextOperation_a3e7286287026324335d352933fb62a78}{Zeta\+::\+Context\+Operation$<$ Context\+Type $>$}.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classZeta_1_1FunctorContextOperation_a082fe8d9aa9f4e2689fcf809fd7c218c}{\index{Zeta\+::\+Functor\+Context\+Operation@{Zeta\+::\+Functor\+Context\+Operation}!func@{func}}
+\index{func@{func}!Zeta\+::\+Functor\+Context\+Operation@{Zeta\+::\+Functor\+Context\+Operation}}
+\subsubsection[{func}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Context\+Type $>$ std\+::function$<$void(Context\+Type\&)$>$ {\bf Zeta\+::\+Functor\+Context\+Operation}$<$ Context\+Type $>$\+::func\hspace{0.3cm}{\ttfamily [private]}}}\label{classZeta_1_1FunctorContextOperation_a082fe8d9aa9f4e2689fcf809fd7c218c}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Zeta/\+Core/\hyperlink{FunctorContextOperation_8hpp}{Functor\+Context\+Operation.\+hpp}\end{DoxyCompactItemize}

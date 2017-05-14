@@ -1,0 +1,92 @@
+\hypertarget{classZeta_1_1Context}{\section{Zeta\+:\+:Context$<$ Context\+Type $>$ Class Template Reference}
+\label{classZeta_1_1Context}\index{Zeta\+::\+Context$<$ Context\+Type $>$@{Zeta\+::\+Context$<$ Context\+Type $>$}}
+}
+
+
+{\ttfamily \#include $<$Context.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{classZeta_1_1Context_a67df6157eb24688cc02a33b6f02b458d}{add\+Operation\+To\+Queue} (\hyperlink{classZeta_1_1ContextOperation}{Context\+Operation}$<$ Context\+Type $>$ \&operation)
+\item 
+virtual void \hyperlink{classZeta_1_1Context_ac6162b04dc1fc87cab6bc754b9ef9f0b}{execute\+Operations} ()
+\item 
+\hyperlink{classZeta_1_1Context_acc478d1a08452c3ad34b7d439163dbb1}{Context} ()
+\item 
+virtual \hyperlink{classZeta_1_1Context_a9abaabfd04b805c0e397f6cc7198d784}{$\sim$\+Context} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::queue$<$ \hyperlink{classZeta_1_1ContextOperation}{Context\+Operation}\\*
+$<$ Context\+Type $>$ $\ast$ $>$ \hyperlink{classZeta_1_1Context_a6861c96e000f7ada4f5ca007defbe9a8}{operations}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename Context\+Type$>$class Zeta\+::\+Context$<$ Context\+Type $>$}
+
+Template to create Contextes 
+\begin{DoxyParams}{Parameters}
+{\em Context\+Type} & the Context-\/\+Derived class to be used \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classZeta_1_1Context_acc478d1a08452c3ad34b7d439163dbb1}{\index{Zeta\+::\+Context@{Zeta\+::\+Context}!Context@{Context}}
+\index{Context@{Context}!Zeta\+::\+Context@{Zeta\+::\+Context}}
+\subsubsection[{Context}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Context\+Type$>$ {\bf Zeta\+::\+Context}$<$ Context\+Type $>$\+::{\bf Context} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1Context_acc478d1a08452c3ad34b7d439163dbb1}
+\hypertarget{classZeta_1_1Context_a9abaabfd04b805c0e397f6cc7198d784}{\index{Zeta\+::\+Context@{Zeta\+::\+Context}!````~Context@{$\sim$\+Context}}
+\index{````~Context@{$\sim$\+Context}!Zeta\+::\+Context@{Zeta\+::\+Context}}
+\subsubsection[{$\sim$\+Context}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Context\+Type$>$ virtual {\bf Zeta\+::\+Context}$<$ Context\+Type $>$\+::$\sim${\bf Context} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classZeta_1_1Context_a9abaabfd04b805c0e397f6cc7198d784}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classZeta_1_1Context_a67df6157eb24688cc02a33b6f02b458d}{\index{Zeta\+::\+Context@{Zeta\+::\+Context}!add\+Operation\+To\+Queue@{add\+Operation\+To\+Queue}}
+\index{add\+Operation\+To\+Queue@{add\+Operation\+To\+Queue}!Zeta\+::\+Context@{Zeta\+::\+Context}}
+\subsubsection[{add\+Operation\+To\+Queue}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Context\+Type$>$ virtual void {\bf Zeta\+::\+Context}$<$ Context\+Type $>$\+::add\+Operation\+To\+Queue (
+\begin{DoxyParamCaption}
+\item[{{\bf Context\+Operation}$<$ Context\+Type $>$ \&}]{operation}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classZeta_1_1Context_a67df6157eb24688cc02a33b6f02b458d}
+Pushes a \hyperlink{classZeta_1_1ContextOperation}{Context\+Operation} to the contexte's Queue 
+\begin{DoxyParams}{Parameters}
+{\em operation} & The context to be added \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \hyperlink{classZeta_1_1SynchronousRenderingContext_a7bf5cc95e195b09df8d75f75e771115a}{Zeta\+::\+Synchronous\+Rendering\+Context$<$ Display\+T $>$}.
+
+\hypertarget{classZeta_1_1Context_ac6162b04dc1fc87cab6bc754b9ef9f0b}{\index{Zeta\+::\+Context@{Zeta\+::\+Context}!execute\+Operations@{execute\+Operations}}
+\index{execute\+Operations@{execute\+Operations}!Zeta\+::\+Context@{Zeta\+::\+Context}}
+\subsubsection[{execute\+Operations}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Context\+Type$>$ virtual void {\bf Zeta\+::\+Context}$<$ Context\+Type $>$\+::execute\+Operations (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classZeta_1_1Context_ac6162b04dc1fc87cab6bc754b9ef9f0b}
+Executes all the operations on the \hyperlink{classZeta_1_1Context}{Context}'s Queue if an Operation should be deallocated, it will be done. All waiters will be notified when Handled. 
+
+Reimplemented in \hyperlink{classZeta_1_1SynchronousRenderingContext_afe8b238d3302e2bdb0f2fcc0735c24e3}{Zeta\+::\+Synchronous\+Rendering\+Context$<$ Display\+T $>$}.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classZeta_1_1Context_a6861c96e000f7ada4f5ca007defbe9a8}{\index{Zeta\+::\+Context@{Zeta\+::\+Context}!operations@{operations}}
+\index{operations@{operations}!Zeta\+::\+Context@{Zeta\+::\+Context}}
+\subsubsection[{operations}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Context\+Type$>$ std\+::queue$<${\bf Context\+Operation}$<$Context\+Type$>$$\ast$$>$ {\bf Zeta\+::\+Context}$<$ Context\+Type $>$\+::operations\hspace{0.3cm}{\ttfamily [protected]}}}\label{classZeta_1_1Context_a6861c96e000f7ada4f5ca007defbe9a8}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Zeta/\+Core/\hyperlink{Context_8hpp}{Context.\+hpp}\end{DoxyCompactItemize}

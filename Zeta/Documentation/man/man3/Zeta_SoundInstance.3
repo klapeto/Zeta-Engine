@@ -1,0 +1,181 @@
+.TH "Zeta::SoundInstance" 3 "Wed Feb 10 2016" "Zeta" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Zeta::SoundInstance \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <SoundInstance\&.hpp>\fP
+.PP
+Inherits \fBZeta::LuaPushable\fP, and \fBZeta::NonCopyable\fP\&.
+.PP
+Inherited by \fBZeta::AllegroSoundInstance\fP, and \fBZeta::MusicManager\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "virtual void \fBplay\fP ()=0"
+.br
+.ti -1c
+.RI "virtual void \fBstop\fP ()=0"
+.br
+.ti -1c
+.RI "virtual void \fBsetLoop\fP (bool value)=0"
+.br
+.ti -1c
+.RI "virtual void \fBsetGain\fP (float value)=0"
+.br
+.ti -1c
+.RI "virtual void \fBsetPan\fP (float value)=0"
+.br
+.ti -1c
+.RI "float \fBgetPan\fP () const "
+.br
+.ti -1c
+.RI "bool \fBgetLoop\fP () const "
+.br
+.ti -1c
+.RI "float \fBgetGain\fP () const "
+.br
+.ti -1c
+.RI "\fBSoundInstance\fP (\fBSoundInstance\fP &&)=default"
+.br
+.ti -1c
+.RI "\fBSoundInstance\fP & \fBoperator=\fP (\fBSoundInstance\fP &&)=default"
+.br
+.ti -1c
+.RI "void \fBpushToLua\fP (lua_State *lstate)"
+.br
+.ti -1c
+.RI "\fBSoundInstance\fP ()"
+.br
+.ti -1c
+.RI "virtual \fB~SoundInstance\fP ()"
+.br
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "const \fBSound\fP * \fBparentSound\fP"
+.br
+.ti -1c
+.RI "float \fBgain\fP"
+.br
+.ti -1c
+.RI "float \fBpan\fP"
+.br
+.ti -1c
+.RI "bool \fBloops\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+The \fBSoundInstance\fP Class These objects are created by Sounds to distribute the control to the rest parts of the Engine where they need this \fBSound\fP, rather control the \fBSound\fP itself and create Havoc when many parts need it at the same time\&. It sound behave as a copy of the sound\&. 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Zeta::SoundInstance::SoundInstance (\fBSoundInstance\fP &&)\fC [default]\fP"
+
+.SS "Zeta::SoundInstance::SoundInstance ()"
+
+.SS "virtual Zeta::SoundInstance::~SoundInstance ()\fC [virtual]\fP"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "float Zeta::SoundInstance::getGain () const\fC [inline]\fP"
+Returns the value of the Gain 
+.PP
+\fBReturns:\fP
+.RS 4
+The Current gain 
+.RE
+.PP
+
+.SS "bool Zeta::SoundInstance::getLoop () const\fC [inline]\fP"
+Returns if the sound will Loop 
+.PP
+\fBReturns:\fP
+.RS 4
+true if the sound will Loop 
+.RE
+.PP
+
+.SS "float Zeta::SoundInstance::getPan () const\fC [inline]\fP"
+Returns the value of the Pan 
+.PP
+\fBReturns:\fP
+.RS 4
+The Current pan 
+.RE
+.PP
+
+.SS "\fBSoundInstance\fP& Zeta::SoundInstance::operator= (\fBSoundInstance\fP &&)\fC [default]\fP"
+
+.SS "virtual void Zeta::SoundInstance::play ()\fC [pure virtual]\fP"
+Plays the sound 
+.PP
+Implemented in \fBZeta::AllegroSoundInstance\fP\&.
+.SS "void Zeta::SoundInstance::pushToLua (lua_State *lstate)\fC [virtual]\fP"
+Pushes the \fBObject\fP to the Lua Environment 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIlstate\fP The Lua Environment to push to\&. 
+.RE
+.PP
+
+.PP
+Implements \fBZeta::LuaPushable\fP\&.
+.SS "virtual void Zeta::SoundInstance::setGain (floatvalue)\fC [pure virtual]\fP"
+Sets the gain of the sound (Right of left) IMPORTANT! The field gain should set too! 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIvalue\fP the gain of the sound to set 
+.RE
+.PP
+
+.PP
+Implemented in \fBZeta::AllegroSoundInstance\fP\&.
+.SS "virtual void Zeta::SoundInstance::setLoop (boolvalue)\fC [pure virtual]\fP"
+Sets if the sound should repeat after it ended IMPORTANT! The field loops should set too! 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIvalue\fP true if the sound should loop, otherwise false 
+.RE
+.PP
+
+.PP
+Implemented in \fBZeta::AllegroSoundInstance\fP\&.
+.SS "virtual void Zeta::SoundInstance::setPan (floatvalue)\fC [pure virtual]\fP"
+Sets the pan of the sound The pan takes a value between -1 to 1 where -1=Left, 0=Center, 1=Right IMPORTANT! The field pan should set too! 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIvalue\fP the pan of the sound to set 
+.RE
+.PP
+
+.PP
+Implemented in \fBZeta::AllegroSoundInstance\fP\&.
+.SS "virtual void Zeta::SoundInstance::stop ()\fC [pure virtual]\fP"
+Stops the sound if playing 
+.PP
+Implemented in \fBZeta::AllegroSoundInstance\fP\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "float Zeta::SoundInstance::gain\fC [protected]\fP"
+
+.SS "bool Zeta::SoundInstance::loops\fC [protected]\fP"
+
+.SS "float Zeta::SoundInstance::pan\fC [protected]\fP"
+
+.SS "const \fBSound\fP* Zeta::SoundInstance::parentSound\fC [protected]\fP"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Zeta from the source code\&.

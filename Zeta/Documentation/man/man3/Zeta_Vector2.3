@@ -1,0 +1,152 @@
+.TH "Zeta::Vector2" 3 "Wed Feb 10 2016" "Zeta" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Zeta::Vector2 \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Vector2\&.hpp>\fP
+.PP
+Inherits \fBZeta::LuaPushable\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBFloat\fP \fBgetX\fP () const "
+.br
+.ti -1c
+.RI "void \fBsetX\fP (\fBFloat\fP \fBx\fP)"
+.br
+.ti -1c
+.RI "\fBFloat\fP \fBgetY\fP () const "
+.br
+.ti -1c
+.RI "void \fBsetY\fP (\fBFloat\fP \fBy\fP)"
+.br
+.ti -1c
+.RI "void \fBset\fP (\fBFloat\fP \fBx\fP, \fBFloat\fP \fBy\fP)"
+.br
+.ti -1c
+.RI "void \fBoffset\fP (\fBFloat\fP dx, \fBFloat\fP dy)"
+.br
+.ti -1c
+.RI "void \fBoffset\fP (const \fBVector2\fP other)"
+.br
+.ti -1c
+.RI "\fBVector2\fP \fBoperator+\fP (const \fBVector2\fP &other) const "
+.br
+.ti -1c
+.RI "\fBVector2\fP \fBoperator-\fP (const \fBVector2\fP &other) const "
+.br
+.ti -1c
+.RI "\fBVector2\fP \fBoperator*\fP (\fBFloat\fP m) const "
+.br
+.ti -1c
+.RI "\fBVector2\fP & \fBoperator*=\fP (\fBFloat\fP m)"
+.br
+.ti -1c
+.RI "\fBFloat\fP \fBgetLength\fP () const "
+.br
+.ti -1c
+.RI "\fBFloat\fP \fBgetDistance\fP (const \fBVector2\fP &other) const "
+.br
+.ti -1c
+.RI "void \fBnormalize\fP ()"
+.br
+.ti -1c
+.RI "void \fBround\fP ()"
+.br
+.ti -1c
+.RI "void \fBpushToLua\fP (lua_State *lstate)"
+.br
+.ti -1c
+.RI "\fBVector2\fP ()"
+.br
+.ti -1c
+.RI "\fBVector2\fP (\fBFloat\fP \fBx\fP, \fBFloat\fP \fBy\fP)"
+.br
+.ti -1c
+.RI "\fBVector2\fP (const \fBVector2\fP &other)=default"
+.br
+.ti -1c
+.RI "\fBVector2\fP (\fBVector2\fP &&other)=default"
+.br
+.ti -1c
+.RI "\fBVector2\fP & \fBoperator=\fP (const \fBVector2\fP &other)=default"
+.br
+.ti -1c
+.RI "\fB~Vector2\fP ()"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBFloat\fP \fBx\fP"
+.br
+.ti -1c
+.RI "\fBFloat\fP \fBy\fP"
+.br
+.in -1c
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Zeta::Vector2::Vector2 ()\fC [inline]\fP"
+
+.SS "Zeta::Vector2::Vector2 (\fBFloat\fPx, \fBFloat\fPy)\fC [inline]\fP"
+
+.SS "Zeta::Vector2::Vector2 (const \fBVector2\fP &other)\fC [default]\fP"
+
+.SS "Zeta::Vector2::Vector2 (\fBVector2\fP &&other)\fC [default]\fP"
+
+.SS "Zeta::Vector2::~Vector2 ()\fC [inline]\fP"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "\fBFloat\fP Zeta::Vector2::getDistance (const \fBVector2\fP &other) const\fC [inline]\fP"
+
+.SS "\fBFloat\fP Zeta::Vector2::getLength () const\fC [inline]\fP"
+
+.SS "\fBFloat\fP Zeta::Vector2::getX () const\fC [inline]\fP"
+
+.SS "\fBFloat\fP Zeta::Vector2::getY () const\fC [inline]\fP"
+
+.SS "void Zeta::Vector2::normalize ()\fC [inline]\fP"
+
+.SS "void Zeta::Vector2::offset (\fBFloat\fPdx, \fBFloat\fPdy)\fC [inline]\fP"
+
+.SS "void Zeta::Vector2::offset (const \fBVector2\fPother)\fC [inline]\fP"
+
+.SS "\fBVector2\fP Zeta::Vector2::operator* (\fBFloat\fPm) const\fC [inline]\fP"
+
+.SS "\fBVector2\fP& Zeta::Vector2::operator*= (\fBFloat\fPm)\fC [inline]\fP"
+
+.SS "\fBVector2\fP Zeta::Vector2::operator+ (const \fBVector2\fP &other) const\fC [inline]\fP"
+
+.SS "\fBVector2\fP Zeta::Vector2::operator- (const \fBVector2\fP &other) const\fC [inline]\fP"
+
+.SS "\fBVector2\fP& Zeta::Vector2::operator= (const \fBVector2\fP &other)\fC [default]\fP"
+
+.SS "void Zeta::Vector2::pushToLua (lua_State *lstate)\fC [virtual]\fP"
+
+.PP
+Implements \fBZeta::LuaPushable\fP\&.
+.SS "void Zeta::Vector2::round ()\fC [inline]\fP"
+
+.SS "void Zeta::Vector2::set (\fBFloat\fPx, \fBFloat\fPy)\fC [inline]\fP"
+
+.SS "void Zeta::Vector2::setX (\fBFloat\fPx)\fC [inline]\fP"
+
+.SS "void Zeta::Vector2::setY (\fBFloat\fPy)\fC [inline]\fP"
+
+.SH "Member Data Documentation"
+.PP 
+.SS "\fBFloat\fP Zeta::Vector2::x"
+
+.SS "\fBFloat\fP Zeta::Vector2::y"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Zeta from the source code\&.

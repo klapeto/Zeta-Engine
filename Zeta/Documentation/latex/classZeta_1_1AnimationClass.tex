@@ -1,0 +1,209 @@
+\hypertarget{classZeta_1_1AnimationClass}{\section{Zeta\+:\+:Animation\+Class Class Reference}
+\label{classZeta_1_1AnimationClass}\index{Zeta\+::\+Animation\+Class@{Zeta\+::\+Animation\+Class}}
+}
+
+
+{\ttfamily \#include $<$Animation\+Class.\+hpp$>$}
+
+
+
+Inheritance diagram for Zeta\+:\+:Animation\+Class\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=190pt]{classZeta_1_1AnimationClass__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Zeta\+:\+:Animation\+Class\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classZeta_1_1AnimationClass__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+const \hyperlink{classZeta_1_1Animation}{Animation} \& \hyperlink{classZeta_1_1AnimationClass_a08189e19359afd81fbfc326ddbf4df67}{get\+Animation} (const std\+::string \&\hyperlink{classZeta_1_1Resource_a44c5721216f4beb31c0b3d2ef2aecf1d}{name}, \hyperlink{classZeta_1_1LifeformState_a877fbe4e8efefd0a5323f950909181b6}{Lifeform\+State\+::\+Combined\+State} fallback\+Animation=Lifeform\+State\+::\+Action\+::\+Idle$\vert$Lifeform\+State\+::\+Direction\+::\+Down) const 
+\item 
+const \hyperlink{classZeta_1_1Animation}{Animation} \& \hyperlink{classZeta_1_1AnimationClass_a83d5eab51620488465f3cc855ce63c81}{get\+Animation} (\hyperlink{classZeta_1_1LifeformState_a877fbe4e8efefd0a5323f950909181b6}{Lifeform\+State\+::\+Combined\+State} state) const 
+\item 
+const \hyperlink{classZeta_1_1Rectangle}{Rectangle} \& \hyperlink{classZeta_1_1AnimationClass_ade1b42c7e1174a6a0996c5d565178e58}{get\+Bound\+Box} () const 
+\item 
+const \hyperlink{classZeta_1_1Rectangle}{Rectangle} \& \hyperlink{classZeta_1_1AnimationClass_a49da6527fe78be2ea9960521791ee103}{get\+Target\+Box} () const 
+\item 
+const \hyperlink{classZeta_1_1Ellipsis}{Ellipsis} \& \hyperlink{classZeta_1_1AnimationClass_aee9e50033789d54b124747fc0148a7cf}{get\+Shadow} () const 
+\item 
+bool \hyperlink{classZeta_1_1AnimationClass_a5d0eab997f120d86e55fa81738935187}{has\+Shadow} () const 
+\item 
+\hyperlink{classZeta_1_1AnimationClass_a1f7a167d864f4699a52de6fe6d959615}{Animation\+Class} ()
+\item 
+\hyperlink{classZeta_1_1AnimationClass_a14cb2ae834895163a353e22e3ccefb30}{Animation\+Class} (const std\+::string \&path)
+\item 
+virtual \hyperlink{classZeta_1_1AnimationClass_ad30602ed6077999bc479e05e8fa4a689}{$\sim$\+Animation\+Class} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classZeta_1_1AnimationClass_ab25150bb5125a485174e6bc1b2968216}{retrive\+Primitives} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespaceZeta_a4c11e23ddc559dccdb5e85901d7dfb84}{Z\+Small\+Map}$<$ std\+::string, const \\*
+\hyperlink{classZeta_1_1Animation}{Animation} $\ast$ $>$ \hyperlink{classZeta_1_1AnimationClass_a8b61708081d2967f65f4d3a34048dd36}{animations}
+\item 
+\hyperlink{classZeta_1_1Vector2D}{Vector2\+D}$<$ const \hyperlink{classZeta_1_1Animation}{Animation} $\ast$ $>$ \hyperlink{classZeta_1_1AnimationClass_a75ec3cd5a2fe104b9e8ac92858faca4c}{prim\+Animations}
+\item 
+\hyperlink{classZeta_1_1Rectangle}{Rectangle} \hyperlink{classZeta_1_1AnimationClass_a4e11683656c6f0648464c5b9b4e630c4}{bound\+Box}
+\item 
+\hyperlink{classZeta_1_1Rectangle}{Rectangle} \hyperlink{classZeta_1_1AnimationClass_a5d9cf5c7819f3f1bc9addadba989e96c}{target\+Box}
+\item 
+\hyperlink{classZeta_1_1Ellipsis}{Ellipsis} \hyperlink{classZeta_1_1AnimationClass_a5a1c48380989f66dfc1d90caa615ff55}{shadow}
+\item 
+const \hyperlink{classZeta_1_1Animation}{Animation} $\ast$ \hyperlink{classZeta_1_1AnimationClass_aa74a96c176531b81900c8568f77f966c}{null\+Animation}
+\item 
+bool \hyperlink{classZeta_1_1AnimationClass_a24192e217829955ac2f97a940be58922}{has\+\_\+\+Shadow}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class for \hyperlink{classZeta_1_1Animation}{Animation} Classes \hyperlink{classZeta_1_1Animation}{Animation} Classes are a group of Animations that can be assigned to a \hyperlink{classZeta_1_1Lifeform}{Lifeform}. Usually the animations are related 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classZeta_1_1AnimationClass_a1f7a167d864f4699a52de6fe6d959615}{\index{Zeta\+::\+Animation\+Class@{Zeta\+::\+Animation\+Class}!Animation\+Class@{Animation\+Class}}
+\index{Animation\+Class@{Animation\+Class}!Zeta\+::\+Animation\+Class@{Zeta\+::\+Animation\+Class}}
+\subsubsection[{Animation\+Class}]{\setlength{\rightskip}{0pt plus 5cm}Zeta\+::\+Animation\+Class\+::\+Animation\+Class (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classZeta_1_1AnimationClass_a1f7a167d864f4699a52de6fe6d959615}
+Default Constructor Constructs a Null \hyperlink{classZeta_1_1AnimationClass}{Animation\+Class} that contains no Animations and all State Animations are Null\+Animations \hypertarget{classZeta_1_1AnimationClass_a14cb2ae834895163a353e22e3ccefb30}{\index{Zeta\+::\+Animation\+Class@{Zeta\+::\+Animation\+Class}!Animation\+Class@{Animation\+Class}}
+\index{Animation\+Class@{Animation\+Class}!Zeta\+::\+Animation\+Class@{Zeta\+::\+Animation\+Class}}
+\subsubsection[{Animation\+Class}]{\setlength{\rightskip}{0pt plus 5cm}Zeta\+::\+Animation\+Class\+::\+Animation\+Class (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{path}
+\end{DoxyParamCaption}
+)}}\label{classZeta_1_1AnimationClass_a14cb2ae834895163a353e22e3ccefb30}
+Loads the \hyperlink{classZeta_1_1Animation}{Animation} Class \hyperlink{classZeta_1_1File}{File} \hypertarget{classZeta_1_1AnimationClass_ad30602ed6077999bc479e05e8fa4a689}{\index{Zeta\+::\+Animation\+Class@{Zeta\+::\+Animation\+Class}!````~Animation\+Class@{$\sim$\+Animation\+Class}}
+\index{````~Animation\+Class@{$\sim$\+Animation\+Class}!Zeta\+::\+Animation\+Class@{Zeta\+::\+Animation\+Class}}
+\subsubsection[{$\sim$\+Animation\+Class}]{\setlength{\rightskip}{0pt plus 5cm}virtual Zeta\+::\+Animation\+Class\+::$\sim$\+Animation\+Class (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classZeta_1_1AnimationClass_ad30602ed6077999bc479e05e8fa4a689}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classZeta_1_1AnimationClass_a08189e19359afd81fbfc326ddbf4df67}{\index{Zeta\+::\+Animation\+Class@{Zeta\+::\+Animation\+Class}!get\+Animation@{get\+Animation}}
+\index{get\+Animation@{get\+Animation}!Zeta\+::\+Animation\+Class@{Zeta\+::\+Animation\+Class}}
+\subsubsection[{get\+Animation}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Animation}\& Zeta\+::\+Animation\+Class\+::get\+Animation (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{name, }
+\item[{{\bf Lifeform\+State\+::\+Combined\+State}}]{fallback\+Animation = {\ttfamily LifeformState\+:\+:Action\+:\+:Idle$\vert$LifeformState\+:\+:Direction\+:\+:Down}}
+\end{DoxyParamCaption}
+) const}}\label{classZeta_1_1AnimationClass_a08189e19359afd81fbfc326ddbf4df67}
+Gets the named animation If the animation does not exist, then the fallback animation will be returned. If not defined, the fallback is I\+D\+L\+E+\+D\+O\+W\+N. 
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the animation to return \\
+\hline
+{\em fallback\+Animation} & The animation State to return if the animation does not exist \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the \hyperlink{classZeta_1_1Animation}{Animation} to be returned 
+\end{DoxyReturn}
+\hypertarget{classZeta_1_1AnimationClass_a83d5eab51620488465f3cc855ce63c81}{\index{Zeta\+::\+Animation\+Class@{Zeta\+::\+Animation\+Class}!get\+Animation@{get\+Animation}}
+\index{get\+Animation@{get\+Animation}!Zeta\+::\+Animation\+Class@{Zeta\+::\+Animation\+Class}}
+\subsubsection[{get\+Animation}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Animation}\& Zeta\+::\+Animation\+Class\+::get\+Animation (
+\begin{DoxyParamCaption}
+\item[{{\bf Lifeform\+State\+::\+Combined\+State}}]{state}
+\end{DoxyParamCaption}
+) const}}\label{classZeta_1_1AnimationClass_a83d5eab51620488465f3cc855ce63c81}
+Gets the \hyperlink{classZeta_1_1Animation}{Animation} defined by the State 
+\begin{DoxyParams}{Parameters}
+{\em state} & The state that has the animation \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the \hyperlink{classZeta_1_1Animation}{Animation} to be returned 
+\end{DoxyReturn}
+\hypertarget{classZeta_1_1AnimationClass_ade1b42c7e1174a6a0996c5d565178e58}{\index{Zeta\+::\+Animation\+Class@{Zeta\+::\+Animation\+Class}!get\+Bound\+Box@{get\+Bound\+Box}}
+\index{get\+Bound\+Box@{get\+Bound\+Box}!Zeta\+::\+Animation\+Class@{Zeta\+::\+Animation\+Class}}
+\subsubsection[{get\+Bound\+Box}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Rectangle}\& Zeta\+::\+Animation\+Class\+::get\+Bound\+Box (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1AnimationClass_ade1b42c7e1174a6a0996c5d565178e58}
+Gets the Boundary \hyperlink{classZeta_1_1Rectangle}{Rectangle} of this Class This rectangle is used for Collision Detection \begin{DoxyReturn}{Returns}
+The Boundary \hyperlink{classZeta_1_1Rectangle}{Rectangle} 
+\end{DoxyReturn}
+\hypertarget{classZeta_1_1AnimationClass_aee9e50033789d54b124747fc0148a7cf}{\index{Zeta\+::\+Animation\+Class@{Zeta\+::\+Animation\+Class}!get\+Shadow@{get\+Shadow}}
+\index{get\+Shadow@{get\+Shadow}!Zeta\+::\+Animation\+Class@{Zeta\+::\+Animation\+Class}}
+\subsubsection[{get\+Shadow}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Ellipsis}\& Zeta\+::\+Animation\+Class\+::get\+Shadow (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1AnimationClass_aee9e50033789d54b124747fc0148a7cf}
+Gets the Shadow \hyperlink{classZeta_1_1Ellipsis}{Ellipsis} of this Class \begin{DoxyReturn}{Returns}
+The Shadow \hyperlink{classZeta_1_1Ellipsis}{Ellipsis} 
+\end{DoxyReturn}
+\hypertarget{classZeta_1_1AnimationClass_a49da6527fe78be2ea9960521791ee103}{\index{Zeta\+::\+Animation\+Class@{Zeta\+::\+Animation\+Class}!get\+Target\+Box@{get\+Target\+Box}}
+\index{get\+Target\+Box@{get\+Target\+Box}!Zeta\+::\+Animation\+Class@{Zeta\+::\+Animation\+Class}}
+\subsubsection[{get\+Target\+Box}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Rectangle}\& Zeta\+::\+Animation\+Class\+::get\+Target\+Box (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1AnimationClass_a49da6527fe78be2ea9960521791ee103}
+Gets the Target \hyperlink{classZeta_1_1Rectangle}{Rectangle} of this Class This rectangle is used for Targeting \begin{DoxyReturn}{Returns}
+The Target \hyperlink{classZeta_1_1Rectangle}{Rectangle} 
+\end{DoxyReturn}
+\hypertarget{classZeta_1_1AnimationClass_a5d0eab997f120d86e55fa81738935187}{\index{Zeta\+::\+Animation\+Class@{Zeta\+::\+Animation\+Class}!has\+Shadow@{has\+Shadow}}
+\index{has\+Shadow@{has\+Shadow}!Zeta\+::\+Animation\+Class@{Zeta\+::\+Animation\+Class}}
+\subsubsection[{has\+Shadow}]{\setlength{\rightskip}{0pt plus 5cm}bool Zeta\+::\+Animation\+Class\+::has\+Shadow (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1AnimationClass_a5d0eab997f120d86e55fa81738935187}
+Get whether this Class has a Shadow \begin{DoxyReturn}{Returns}
+true if it has Shadow 
+\end{DoxyReturn}
+\hypertarget{classZeta_1_1AnimationClass_ab25150bb5125a485174e6bc1b2968216}{\index{Zeta\+::\+Animation\+Class@{Zeta\+::\+Animation\+Class}!retrive\+Primitives@{retrive\+Primitives}}
+\index{retrive\+Primitives@{retrive\+Primitives}!Zeta\+::\+Animation\+Class@{Zeta\+::\+Animation\+Class}}
+\subsubsection[{retrive\+Primitives}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+Animation\+Class\+::retrive\+Primitives (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classZeta_1_1AnimationClass_ab25150bb5125a485174e6bc1b2968216}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classZeta_1_1AnimationClass_a8b61708081d2967f65f4d3a34048dd36}{\index{Zeta\+::\+Animation\+Class@{Zeta\+::\+Animation\+Class}!animations@{animations}}
+\index{animations@{animations}!Zeta\+::\+Animation\+Class@{Zeta\+::\+Animation\+Class}}
+\subsubsection[{animations}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Z\+Small\+Map}$<$std\+::string, const {\bf Animation}$\ast$$>$ Zeta\+::\+Animation\+Class\+::animations\hspace{0.3cm}{\ttfamily [protected]}}}\label{classZeta_1_1AnimationClass_a8b61708081d2967f65f4d3a34048dd36}
+\hypertarget{classZeta_1_1AnimationClass_a4e11683656c6f0648464c5b9b4e630c4}{\index{Zeta\+::\+Animation\+Class@{Zeta\+::\+Animation\+Class}!bound\+Box@{bound\+Box}}
+\index{bound\+Box@{bound\+Box}!Zeta\+::\+Animation\+Class@{Zeta\+::\+Animation\+Class}}
+\subsubsection[{bound\+Box}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Rectangle} Zeta\+::\+Animation\+Class\+::bound\+Box\hspace{0.3cm}{\ttfamily [protected]}}}\label{classZeta_1_1AnimationClass_a4e11683656c6f0648464c5b9b4e630c4}
+\hypertarget{classZeta_1_1AnimationClass_a24192e217829955ac2f97a940be58922}{\index{Zeta\+::\+Animation\+Class@{Zeta\+::\+Animation\+Class}!has\+\_\+\+Shadow@{has\+\_\+\+Shadow}}
+\index{has\+\_\+\+Shadow@{has\+\_\+\+Shadow}!Zeta\+::\+Animation\+Class@{Zeta\+::\+Animation\+Class}}
+\subsubsection[{has\+\_\+\+Shadow}]{\setlength{\rightskip}{0pt plus 5cm}bool Zeta\+::\+Animation\+Class\+::has\+\_\+\+Shadow\hspace{0.3cm}{\ttfamily [protected]}}}\label{classZeta_1_1AnimationClass_a24192e217829955ac2f97a940be58922}
+\hypertarget{classZeta_1_1AnimationClass_aa74a96c176531b81900c8568f77f966c}{\index{Zeta\+::\+Animation\+Class@{Zeta\+::\+Animation\+Class}!null\+Animation@{null\+Animation}}
+\index{null\+Animation@{null\+Animation}!Zeta\+::\+Animation\+Class@{Zeta\+::\+Animation\+Class}}
+\subsubsection[{null\+Animation}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Animation}$\ast$ Zeta\+::\+Animation\+Class\+::null\+Animation\hspace{0.3cm}{\ttfamily [protected]}}}\label{classZeta_1_1AnimationClass_aa74a96c176531b81900c8568f77f966c}
+\hypertarget{classZeta_1_1AnimationClass_a75ec3cd5a2fe104b9e8ac92858faca4c}{\index{Zeta\+::\+Animation\+Class@{Zeta\+::\+Animation\+Class}!prim\+Animations@{prim\+Animations}}
+\index{prim\+Animations@{prim\+Animations}!Zeta\+::\+Animation\+Class@{Zeta\+::\+Animation\+Class}}
+\subsubsection[{prim\+Animations}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector2\+D}$<$const {\bf Animation}$\ast$$>$ Zeta\+::\+Animation\+Class\+::prim\+Animations\hspace{0.3cm}{\ttfamily [protected]}}}\label{classZeta_1_1AnimationClass_a75ec3cd5a2fe104b9e8ac92858faca4c}
+\hypertarget{classZeta_1_1AnimationClass_a5a1c48380989f66dfc1d90caa615ff55}{\index{Zeta\+::\+Animation\+Class@{Zeta\+::\+Animation\+Class}!shadow@{shadow}}
+\index{shadow@{shadow}!Zeta\+::\+Animation\+Class@{Zeta\+::\+Animation\+Class}}
+\subsubsection[{shadow}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Ellipsis} Zeta\+::\+Animation\+Class\+::shadow\hspace{0.3cm}{\ttfamily [protected]}}}\label{classZeta_1_1AnimationClass_a5a1c48380989f66dfc1d90caa615ff55}
+\hypertarget{classZeta_1_1AnimationClass_a5d9cf5c7819f3f1bc9addadba989e96c}{\index{Zeta\+::\+Animation\+Class@{Zeta\+::\+Animation\+Class}!target\+Box@{target\+Box}}
+\index{target\+Box@{target\+Box}!Zeta\+::\+Animation\+Class@{Zeta\+::\+Animation\+Class}}
+\subsubsection[{target\+Box}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Rectangle} Zeta\+::\+Animation\+Class\+::target\+Box\hspace{0.3cm}{\ttfamily [protected]}}}\label{classZeta_1_1AnimationClass_a5d9cf5c7819f3f1bc9addadba989e96c}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Zeta/\+Core/\+Resource\+Classes/\hyperlink{AnimationClass_8hpp}{Animation\+Class.\+hpp}\end{DoxyCompactItemize}

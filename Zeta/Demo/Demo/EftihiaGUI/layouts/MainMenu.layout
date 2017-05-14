@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<GUILayout version="4" >
+    <Window type="Eftihia/StaticImage" name="MenuBackground" >
+        <Property name="Area" value="{{0,0},{0,0},{1,0},{1,0}}" />
+        <Property name="Image" value="MainMenuBack1080/Background" />
+        <Property name="MaxSize" value="{{1,0},{1,0}}" />
+        <Property name="FrameEnabled" value="False" />
+        <Property name="HorzFormatting" value="CentreAligned" />
+        <Property name="VertFormatting" value="CentreAligned" />
+        <Window type="DefaultWindow" name="Buttons" >
+            <Property name="Area" value="{{0,30},{0,0},{0,232},{0,415}}" />
+            <Property name="MaxSize" value="{{1,0},{1,0}}" />
+            <Property name="VerticalAlignment" value="Bottom" />
+            <Window type="Eftihia/MenuButton" name="Options" >
+                <Property name="Area" value="{{0,0},{0,160},{0,195},{0,238}}" />
+                <Property name="Font" value="Ubuntu-14" />
+                <Property name="Text" value="Επιλογές" />
+            </Window>
+            <Window type="Eftihia/MenuButton" name="Exit" >
+                <Property name="Area" value="{{0,0},{0,320},{0,195},{0,398}}" />
+                <Property name="Font" value="Ubuntu-14" />
+                <Property name="Text" value="Έξοδος" />
+            </Window>
+            <Window type="Eftihia/MenuButton" name="Start" >
+                <Property name="Area" value="{{0,0},{0,0},{0,195},{0,78}}" />
+                <Property name="Font" value="Ubuntu-14" />
+                <Property name="Text" value="Εκκίνηση" />
+            </Window>
+            <Window type="Eftihia/MenuButton" name="Load" >
+                <Property name="Area" value="{{0,0},{0,80.0003},{0,195},{0,158}}" />
+                <Property name="Font" value="Ubuntu-14" />
+                <Property name="Text" value="Φόρτωση" />
+            </Window>
+            <Window type="Eftihia/MenuButton" name="Attributions" >
+                <Property name="Area" value="{{0,0},{0,240},{0,195},{0,318}}" />
+                <Property name="Font" value="Ubuntu-14" />
+                <Property name="Text" value="Attributions" />
+            </Window>
+        </Window>
+        <Window type="Eftihia/MultiLineEditbox" name="AttributionsText" >
+            <Property name="Area" value="{{0,0},{0,0},{0.4,0},{0.4,0}}" />
+            <Property name="Text" >[LPC] Liberated Pixel Cup Base Assets
+  Tilesets:
+    Copyright: Lanea Zimmerman (AKA Sharm)
+  Character templates:
+    Copyright: Stephen Challener (AKA Redshrike)
+  Monsters:
+    Copyright: Charles Sanchez (AKA CharlesGabriel)
+  Female hair &apos;n&apos; Soldier
+    Copyright: Manuel Riecke (AKA MrBeast)
+  Castle Assets:
+    Copyright: Daniel Armstrong (AKA HughSpectrum)
+
+[LPC] Animated water and fire
+  Copyright: Sharm and Curt
+  http://opengameart.org/content/lpc-animated-water-and-fire
+
+LPC style farm animals
+  Copyright: Daniel Eddeland
+  http://opengameart.org/content/lpc-style-farm-animals
+
+[LPC] Farming tilesets, magic animations and UI elements
+  Copyright: Daniel Eddeland
+  http://opengameart.org/content/lpc-farming-tilesets-magic-animations-and-ui-elements
+
+Aria (Aria_2.ogg)
+  Copyright: Joseph Gilbert / Kistol
+  http://opengameart.org/content/aria
+
+Zeta Engine Demo Theme (MainV2.ogg)
+  Copyright: Ioannis G. Panagiotopoulos (AKA klapeto)
+  http://opengameart.org/content/zeta-engine-demo-theme-string-section
+
+Energy Ball
+  Copyright: Ioannis G. Panagiotopoulos (AKA klapeto)
+  http://opengameart.org/content/energy-ball
+
+Zeta Engine Ability Icons (Part1)
+  Copyright: Ioannis G. Panagiotopoulos (AKA klapeto)
+  http://opengameart.org/content/zeta-engine-ability-icons-part1
+
+Zeta Item Slot Icons
+  Copyright: Ioannis G. Panagiotopoulos (AKA klapeto)
+  http://opengameart.org/content/zeta-item-slot-icons
+
+Zeta Loading Screens
+  Copyright: Ioannis G. Panagiotopoulos (AKA klapeto)
+  http://17pounder.deviantart.com/
+
+All Demo Assets were up-scaled(2x) using xBR algorithm by Hylian (Sorry Dead link)
+</Property>
+            <Property name="Visible" value="False" />
+            <Property name="ReadOnly" value="True" />
+            <Property name="NormalTextColour" value="tl:FF000000 tr:FF000000 bl:FF000000 br:FF000000" />
+            <Property name="VerticalAlignment" value="Centre" />
+            <Property name="HorizontalAlignment" value="Centre" />
+        </Window>
+    </Window>
+</GUILayout>

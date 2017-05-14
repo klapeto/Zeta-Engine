@@ -1,0 +1,7 @@
+$#include <Zeta/Core/RPGClasses/Npc.hpp>
+
+class Npc: public Lifeform {
+public:
+	Npc(const std::string& classPath, Float x, Float y, lua_Object table);
+	~Npc();
+};

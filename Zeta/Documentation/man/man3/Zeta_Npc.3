@@ -1,0 +1,56 @@
+.TH "Zeta::Npc" 3 "Wed Feb 10 2016" "Zeta" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Zeta::Npc \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Npc\&.hpp>\fP
+.PP
+Inherits \fBZeta::Lifeform\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBonClick\fP (\fBObject\fP *other)"
+.br
+.ti -1c
+.RI "void \fBonCollidedWith\fP (\fBObject\fP *other)"
+.br
+.ti -1c
+.RI "void \fBpushToLua\fP (lua_State *lstate)"
+.br
+.ti -1c
+.RI "\fBNpc\fP (const std::string &classPath, \fBFloat\fP x, \fBFloat\fP y, \fBlua_Object\fP \fBtable\fP)"
+.br
+.ti -1c
+.RI "virtual \fB~Npc\fP ()"
+.br
+.in -1c
+.SS "Additional Inherited Members"
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Zeta::Npc::Npc (const std::string &classPath, \fBFloat\fPx, \fBFloat\fPy, \fBlua_Object\fPtable)"
+
+.SS "virtual Zeta::Npc::~Npc ()\fC [virtual]\fP"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "void Zeta::Npc::onClick (\fBObject\fP *other)\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBZeta::Lifeform\fP\&.
+.SS "void Zeta::Npc::onCollidedWith (\fBObject\fP *other)\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBZeta::Lifeform\fP\&.
+.SS "void Zeta::Npc::pushToLua (lua_State *lstate)\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBZeta::Lifeform\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Zeta from the source code\&.

@@ -1,0 +1,306 @@
+.TH "Zeta::LuaTable" 3 "Wed Feb 10 2016" "Zeta" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Zeta::LuaTable \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <LuaTable\&.hpp>\fP
+.PP
+Inherits \fBZeta::LuaReferenced\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "bool \fBgetField\fP (const std::string &fieldName, std::string &value) const "
+.br
+.ti -1c
+.RI "bool \fBgetField\fP (const std::string &fieldName, \fBFloat\fP &value) const "
+.br
+.ti -1c
+.RI "bool \fBgetField\fP (const std::string &fieldName, bool &value) const "
+.br
+.ti -1c
+.RI "bool \fBgetField\fP (const std::string &fieldName, int &value) const "
+.br
+.ti -1c
+.RI "bool \fBgetField\fP (const std::string &fieldName, \fBLuaTable\fP &value) const "
+.br
+.ti -1c
+.RI "bool \fBgetField\fP (const std::string &fieldName, \fBLuaFunctor\fP &value) const "
+.br
+.ti -1c
+.RI "bool \fBgetField\fP (int index, std::string &value) const "
+.br
+.ti -1c
+.RI "bool \fBgetField\fP (int index, \fBFloat\fP &value) const "
+.br
+.ti -1c
+.RI "bool \fBgetField\fP (int index, bool &value) const "
+.br
+.ti -1c
+.RI "bool \fBgetField\fP (int index, int &value) const "
+.br
+.ti -1c
+.RI "bool \fBgetField\fP (int index, \fBLuaTable\fP &value) const "
+.br
+.ti -1c
+.RI "bool \fBgetField\fP (int index, \fBLuaFunctor\fP &value) const "
+.br
+.ti -1c
+.RI "int \fBgetFieldReference\fP (const std::string &\fBname\fP) const "
+.br
+.ti -1c
+.RI "int \fBgetFieldReference\fP (int index) const "
+.br
+.ti -1c
+.RI "void \fBsetField\fP (const std::string &fieldName, \fBLuaPushable\fP &value)"
+.br
+.ti -1c
+.RI "void \fBsetField\fP (const std::string &fieldName, const std::string &value)"
+.br
+.ti -1c
+.RI "void \fBsetField\fP (const std::string &fieldName, \fBFloat\fP value)"
+.br
+.ti -1c
+.RI "void \fBsetField\fP (const std::string &fieldName, bool value)"
+.br
+.ti -1c
+.RI "void \fBsetField\fP (const std::string &fieldName, void *value, const std::string &typeName)"
+.br
+.ti -1c
+.RI "void \fBsetField\fP (int index, \fBLuaPushable\fP &value)"
+.br
+.ti -1c
+.RI "void \fBsetField\fP (int index, const std::string &value)"
+.br
+.ti -1c
+.RI "void \fBsetField\fP (int index, \fBFloat\fP value)"
+.br
+.ti -1c
+.RI "void \fBsetField\fP (int index, bool value)"
+.br
+.ti -1c
+.RI "void \fBsetField\fP (\fBLuaPushable\fP &value)"
+.br
+.ti -1c
+.RI "void \fBniliseField\fP (const std::string &fieldName)"
+.br
+.ti -1c
+.RI "void \fBniliseField\fP (int index)"
+.br
+.ti -1c
+.RI "void \fBniliseField\fP (\fBLuaPushable\fP &value)"
+.br
+.ti -1c
+.RI "void \fBforEach\fP (const std::function< void(lua_State *)> &func)"
+.br
+.ti -1c
+.RI "void \fBforEachI\fP (const std::function< void(lua_State *)> &func)"
+.br
+.ti -1c
+.RI "\fBLuaTable\fP (\fBLuaTable\fP &&other)=default"
+.br
+.ti -1c
+.RI "\fBLuaTable\fP (const \fBLuaTable\fP &other)=default"
+.br
+.ti -1c
+.RI "\fBLuaTable\fP & \fBoperator=\fP (const \fBLuaTable\fP &other)=default"
+.br
+.ti -1c
+.RI "\fBLuaTable\fP & \fBoperator=\fP (\fBLuaTable\fP &&other)=default"
+.br
+.ti -1c
+.RI "void \fBset\fP (int stackIndex)"
+.br
+.ti -1c
+.RI "void \fBsetLuaReference\fP (int reference)"
+.br
+.ti -1c
+.RI "void \fBprintContents\fP () const "
+.br
+.ti -1c
+.RI "void \fBcreate\fP (int reserve=0)"
+.br
+.ti -1c
+.RI "\fBLuaTable\fP ()"
+.br
+.ti -1c
+.RI "\fBLuaTable\fP (int stackIndex)"
+.br
+.ti -1c
+.RI "\fB~LuaTable\fP ()"
+.br
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "lua_State * \fBlstate\fP"
+.br
+.in -1c
+.SS "Additional Inherited Members"
+.SH "Detailed Description"
+.PP 
+\fBLuaTable\fP class for easy Lua table management in C++ Lua tables are used as References\&. 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Zeta::LuaTable::LuaTable (\fBLuaTable\fP &&other)\fC [default]\fP"
+
+.SS "Zeta::LuaTable::LuaTable (const \fBLuaTable\fP &other)\fC [default]\fP"
+
+.SS "Zeta::LuaTable::LuaTable ()"
+Constructs a default table with no reference\&. Until a reference is assigned, any member call will do nothing\&. 
+.SS "Zeta::LuaTable::LuaTable (intstackIndex)"
+Constructs a Table with the table at the Lua Stack at stackIntex This can throw \fBZeta::Exception\fP if the object at pointer is not a table\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIstackIndex\fP the index at stack the Table is\&. 
+.RE
+.PP
+
+.SS "Zeta::LuaTable::~LuaTable ()"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "void Zeta::LuaTable::create (intreserve = \fC0\fP)"
+
+.SS "void Zeta::LuaTable::forEach (const std::function< void(lua_State *)> &func)"
+Calls the provided lambda function for every table Element The function must has an argument(lua_State*) to access the key and element\&. The Element is on -1, and key on -2\&. WARNING! don't touch the Key! If you want to use it, push a copy with lua_pushvalue(lstate,-2) 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIfunc\fP the function to call\&. 
+.RE
+.PP
+
+.SS "void Zeta::LuaTable::forEachI (const std::function< void(lua_State *)> &func)"
+Same with \fBforEach()\fP but indexes table by integer Keys Eg\&. table[0], table[1] 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIfunc\fP the function to call 
+.RE
+.PP
+
+.SS "bool Zeta::LuaTable::getField (const std::string &fieldName, std::string &value) const"
+getField from the Lua Table this Function uses an overloaded version depending on what type you pass\&. Eg\&. if you call getField('tade', <std::string>) will check if the field exists\&. If exists, checks if it is string\&. If it is string, it assigns to the argument passed and returns true, else returns false\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIfieldName\fP the Field to get 
+.br
+\fIvalue\fP a reference to value to put the value got from FieldName 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+True if successful assigned value, or false if invalid FieldName or FieldType 
+.RE
+.PP
+
+.SS "bool Zeta::LuaTable::getField (const std::string &fieldName, \fBFloat\fP &value) const"
+
+.SS "bool Zeta::LuaTable::getField (const std::string &fieldName, bool &value) const"
+
+.SS "bool Zeta::LuaTable::getField (const std::string &fieldName, int &value) const"
+
+.SS "bool Zeta::LuaTable::getField (const std::string &fieldName, \fBLuaTable\fP &value) const"
+
+.SS "bool Zeta::LuaTable::getField (const std::string &fieldName, \fBLuaFunctor\fP &value) const"
+
+.SS "bool Zeta::LuaTable::getField (intindex, std::string &value) const"
+Same with getField(const std::string&) but instead of indexing string key to Table, it index an integer key\&. 
+.SS "bool Zeta::LuaTable::getField (intindex, \fBFloat\fP &value) const"
+
+.SS "bool Zeta::LuaTable::getField (intindex, bool &value) const"
+
+.SS "bool Zeta::LuaTable::getField (intindex, int &value) const"
+
+.SS "bool Zeta::LuaTable::getField (intindex, \fBLuaTable\fP &value) const"
+
+.SS "bool Zeta::LuaTable::getField (intindex, \fBLuaFunctor\fP &value) const"
+
+.SS "int Zeta::LuaTable::getFieldReference (const std::string &name) const"
+Gets a Lua Reference for the specified field 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIfield\fP the field to get the Reference 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+an Valid Integer referencing the field or LUA_NOREF in invalid index 
+.RE
+.PP
+
+.SS "int Zeta::LuaTable::getFieldReference (intindex) const"
+
+.SS "void Zeta::LuaTable::niliseField (const std::string &fieldName)"
+Sets the 'fieldName' field of the Lua Table to nil 
+.SS "void Zeta::LuaTable::niliseField (intindex)"
+
+.SS "void Zeta::LuaTable::niliseField (\fBLuaPushable\fP &value)"
+
+.SS "\fBLuaTable\fP& Zeta::LuaTable::operator= (const \fBLuaTable\fP &other)\fC [default]\fP"
+
+.SS "\fBLuaTable\fP& Zeta::LuaTable::operator= (\fBLuaTable\fP &&other)\fC [default]\fP"
+
+.SS "void Zeta::LuaTable::printContents () const"
+Prints all elements of the Table\&. It prints whatever can be printed\&. 
+.SS "void Zeta::LuaTable::set (intstackIndex)\fC [virtual]\fP"
+Implementation of \fBLuaReferenced\fP 
+.PP
+Implements \fBZeta::LuaReferenced\fP\&.
+.SS "void Zeta::LuaTable::setField (const std::string &fieldName, \fBLuaPushable\fP &value)"
+Sets the Table Field with the value provided 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIfieldName\fP the field to set the value 
+.br
+\fIvalue\fP the Value to set\&. 
+.RE
+.PP
+
+.SS "void Zeta::LuaTable::setField (const std::string &fieldName, const std::string &value)"
+
+.SS "void Zeta::LuaTable::setField (const std::string &fieldName, \fBFloat\fPvalue)"
+
+.SS "void Zeta::LuaTable::setField (const std::string &fieldName, boolvalue)"
+
+.SS "void Zeta::LuaTable::setField (const std::string &fieldName, void *value, const std::string &typeName)"
+
+.SS "void Zeta::LuaTable::setField (intindex, \fBLuaPushable\fP &value)"
+Same with setField(const std::string&) but instead of indexing string key to Table, it index an integer key\&. 
+.SS "void Zeta::LuaTable::setField (intindex, const std::string &value)"
+
+.SS "void Zeta::LuaTable::setField (intindex, \fBFloat\fPvalue)"
+
+.SS "void Zeta::LuaTable::setField (intindex, boolvalue)"
+
+.SS "void Zeta::LuaTable::setField (\fBLuaPushable\fP &value)"
+Sets Table[&value] = value 
+.SS "void Zeta::LuaTable::setLuaReference (intreference)\fC [virtual]\fP"
+Sets the Lua Reference directly 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIreference\fP the Reference int to set 
+.RE
+.PP
+
+.PP
+Implements \fBZeta::LuaReferenced\fP\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "lua_State* Zeta::LuaTable::lstate\fC [private]\fP"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Zeta from the source code\&.

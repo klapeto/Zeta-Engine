@@ -1,0 +1,69 @@
+.TH "Zeta::FileLoader" 3 "Wed Feb 10 2016" "Zeta" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Zeta::FileLoader \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <FileLoader\&.hpp>\fP
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "struct \fBFileStat\fP"
+.br
+.in -1c
+.SS "Static Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "static \fBFileStat\fP \fBLoad\fP (const char *path)"
+.br
+.ti -1c
+.RI "static bool \fBfileExists\fP (const char *path)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Interface for loading files 
+.SH "Member Function Documentation"
+.PP 
+.SS "static bool Zeta::FileLoader::fileExists (const char *path)\fC [static]\fP"
+Checks if the \fBFile\fP exits 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIThe\fP filename to check 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+True if the file exists 
+.RE
+.PP
+
+.SS "static \fBFileStat\fP Zeta::FileLoader::Load (const char *path)\fC [static]\fP"
+Static Function that Loads a \fBFile\fP to memory 
+.PP
+\fBSee also:\fP
+.RS 4
+\fBFileStat\fP 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIpath\fP The filename to load 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+The \fBFileStat\fP of the \fBFile\fP 
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Zeta from the source code\&.

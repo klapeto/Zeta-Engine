@@ -1,0 +1,405 @@
+\hypertarget{classZeta_1_1Projectile}{\section{Zeta\+:\+:Projectile Class Reference}
+\label{classZeta_1_1Projectile}\index{Zeta\+::\+Projectile@{Zeta\+::\+Projectile}}
+}
+
+
+{\ttfamily \#include $<$Projectile.\+hpp$>$}
+
+
+
+Inheritance diagram for Zeta\+:\+:Projectile\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classZeta_1_1Projectile__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Zeta\+:\+:Projectile\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classZeta_1_1Projectile__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{classZeta_1_1Projectile_aacad4e6f44c0a40539f4ec22ac93ee27}{Projectile\+State} \{ \\*
+\hyperlink{classZeta_1_1Projectile_aacad4e6f44c0a40539f4ec22ac93ee27ad7b54fc61b65b19c4694a29b6044aacd}{Projectile\+State\+::\+Charging}, 
+\hyperlink{classZeta_1_1Projectile_aacad4e6f44c0a40539f4ec22ac93ee27adefe967ad0373b2274fc298f19125ca7}{Projectile\+State\+::\+Moving}, 
+\hyperlink{classZeta_1_1Projectile_aacad4e6f44c0a40539f4ec22ac93ee27a2ef54119c1f0d131a1a60e7776fa78f0}{Projectile\+State\+::\+Dying}, 
+\hyperlink{classZeta_1_1Projectile_aacad4e6f44c0a40539f4ec22ac93ee27a183b62c7f067711f9c5a54913c054617}{Projectile\+State\+::\+Dead}, 
+\\*
+\hyperlink{classZeta_1_1Projectile_aacad4e6f44c0a40539f4ec22ac93ee27a3cab03c00dbd11bc3569afa0748013f0}{Projectile\+State\+::\+Inactive}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classZeta_1_1Projectile_a43eb183c50f2945ecf82cc4a8284abfa}{update} (\hyperlink{namespaceZeta_a1e0a1265f9b3bd3075fb0fabd39088ba}{Float} elapsed\+Time)
+\item 
+virtual void \hyperlink{classZeta_1_1Projectile_abc96b0d41f7f4e43dec4a30821bd67be}{on\+Collided\+With} (\hyperlink{classZeta_1_1Object}{Object} $\ast$other)
+\item 
+void \hyperlink{classZeta_1_1Projectile_aad582299efafe6e189c593b140f9e59b}{draw} (\hyperlink{namespaceZeta_a1e0a1265f9b3bd3075fb0fabd39088ba}{Float} x, \hyperlink{namespaceZeta_a1e0a1265f9b3bd3075fb0fabd39088ba}{Float} y, \hyperlink{namespaceZeta_a1e0a1265f9b3bd3075fb0fabd39088ba}{Float} \hyperlink{classZeta_1_1Projectile_ac8ea8a49b50c1e3ce011ca9e7a03ce3c}{rotation}=0.\+0f, Float scale=1.\+0f) const 
+\item 
+void \hyperlink{classZeta_1_1Projectile_acc983839b25b6f2722605b6d26f8de03}{accept} (\hyperlink{classZeta_1_1Visitor}{Visitor} \&visitor)
+\item 
+void \hyperlink{classZeta_1_1Projectile_a8fa00ff17b93b4a6073912e1e33da79a}{clear\+Collided\+Objects} ()
+\item 
+void \hyperlink{classZeta_1_1Projectile_af4c81d1a28f45fd5c54c9dd02f4d1282}{on\+Click} (\hyperlink{classZeta_1_1Object}{Object} $\ast$other)
+\item 
+void \hyperlink{classZeta_1_1Projectile_a9d12fc2a30bcabf19a87bef6d0ec4d0e}{destroy} ()
+\item 
+void \hyperlink{classZeta_1_1Projectile_ac261d2a8c2c8a1005f3848d231847ef7}{charge} ()
+\item 
+void \hyperlink{classZeta_1_1Projectile_a21ef4f7d9b80934bf4cfcac6cf0128f6}{release} ()
+\item 
+void \hyperlink{classZeta_1_1Projectile_ac24627f14ea0a0545b7113518bb9676e}{abort} ()
+\item 
+void \hyperlink{classZeta_1_1Projectile_a83f6af0f8bd17f89e95e388cdac9abad}{apply\+Offsets} ()
+\item 
+bool \hyperlink{classZeta_1_1Projectile_ad2a89d0808a541a372508812b4dfaf25}{is\+To\+Be\+Deleted} () const 
+\item 
+void \hyperlink{classZeta_1_1Projectile_ab87776cfb299513d683a5e2413884f6b}{set\+Target\+Location} (\hyperlink{namespaceZeta_a1e0a1265f9b3bd3075fb0fabd39088ba}{Float} x, \hyperlink{namespaceZeta_a1e0a1265f9b3bd3075fb0fabd39088ba}{Float} y)
+\item 
+\hyperlink{classZeta_1_1ActiveAbility}{Active\+Ability} $\ast$ \hyperlink{classZeta_1_1Projectile_a1e01ea4d15b0e693aa780e08ad64adc3}{get\+Parent\+Ability} ()
+\item 
+virtual void \hyperlink{classZeta_1_1Projectile_a3205782e632079d56a65ea165caa2932}{reset\+State} ()
+\item 
+virtual void \hyperlink{classZeta_1_1Projectile_aed223f728aa24c42953167f1b863fb77}{push\+To\+Lua} (lua\+\_\+\+State $\ast$lstate)
+\item 
+\hyperlink{classZeta_1_1Projectile_a15f8f3be24867d36b6f81cdccad86644}{Projectile} (const \hyperlink{classZeta_1_1ProjectileClass}{Projectile\+Class} $\ast$cls, \hyperlink{classZeta_1_1ActiveAbility}{Active\+Ability} $\ast$parent, \hyperlink{namespaceZeta_a1e0a1265f9b3bd3075fb0fabd39088ba}{Float} x, \hyperlink{namespaceZeta_a1e0a1265f9b3bd3075fb0fabd39088ba}{Float} y)
+\item 
+virtual \hyperlink{classZeta_1_1Projectile_a92cd7c083a8576938adcd72670d10507}{$\sim$\+Projectile} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{classZeta_1_1Projectile_a749ddf84f5e255f4c58d2fd37be8a566}{Animation\+Direction} \{ \hyperlink{classZeta_1_1Projectile_a749ddf84f5e255f4c58d2fd37be8a566a92b09c7c48c520c3c55e497875da437c}{Animation\+Direction\+::\+Right}, 
+\hyperlink{classZeta_1_1Projectile_a749ddf84f5e255f4c58d2fd37be8a566a945d5e233cf7d6240f6b783b36a374ff}{Animation\+Direction\+::\+Left}, 
+\hyperlink{classZeta_1_1Projectile_a749ddf84f5e255f4c58d2fd37be8a566a258f49887ef8d14ac268c92b02503aaa}{Animation\+Direction\+::\+Up}, 
+\hyperlink{classZeta_1_1Projectile_a749ddf84f5e255f4c58d2fd37be8a566a08a38277b0309070706f6652eeae9a53}{Animation\+Direction\+::\+Down}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{classZeta_1_1Projectile_a0d45fb8dac7385df02133b94ecfac5f5}{move} (\hyperlink{namespaceZeta_a1e0a1265f9b3bd3075fb0fabd39088ba}{Float} elapsed\+Time)
+\item 
+void \hyperlink{classZeta_1_1Projectile_acd286f924590421f7ac885dcd287c3cb}{calculate\+Animation\+Direction} (\hyperlink{classZeta_1_1LifeformState_a965add1b0f9a548c9f3f9147b34b4816}{Lifeform\+State\+::\+Action} action, bool change\+Animation=false)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespaceZeta_a92c229b4db6ab7275c2b7f32bdfabc87}{Z\+Set}$<$ \hyperlink{classZeta_1_1Object}{Object} $\ast$ $>$ \hyperlink{classZeta_1_1Projectile_a97d2d1a5090514b119db842ebec18cd7}{collided\+Objects}
+\item 
+\hyperlink{classZeta_1_1AnimationHandler}{Animation\+Handler} \hyperlink{classZeta_1_1Projectile_aefe42e3e404d48862671645fd79d19dd}{animation}
+\item 
+const \hyperlink{classZeta_1_1ProjectileClass}{Projectile\+Class} $\ast$ \hyperlink{classZeta_1_1Projectile_a21466c968ccab5bd82b9369f6445f094}{projectile\+Class}
+\item 
+\hyperlink{classZeta_1_1ActiveAbility}{Active\+Ability} $\ast$ \hyperlink{classZeta_1_1Projectile_adef774c425ee6c3af82e408269cfee08}{parent\+Ability}
+\item 
+\hyperlink{classZeta_1_1View}{View} $\ast$ \hyperlink{classZeta_1_1Projectile_a15208dfa71713b04823b1aa8d2a23a1e}{camera}
+\item 
+\hyperlink{classZeta_1_1Vector2}{Vector2} \hyperlink{classZeta_1_1Projectile_ac3e3496cf0700e62f7f3d54b782e07e1}{target\+Position}
+\item 
+\hyperlink{classZeta_1_1Vector2}{Vector2} \hyperlink{classZeta_1_1Projectile_aaf2edb8925817cb4647910eaf4e0c1d7}{direction}
+\item 
+\hyperlink{classZeta_1_1Projectile_aacad4e6f44c0a40539f4ec22ac93ee27}{Projectile\+State} \hyperlink{classZeta_1_1Projectile_ac6c490114f270934af7728c905d8b9fe}{state}
+\item 
+\hyperlink{classZeta_1_1LifeformState}{Lifeform\+State} \hyperlink{classZeta_1_1Projectile_a5b028ee3773dd1e5b7cb86dacc757907}{anim\+Dir}
+\item 
+\hyperlink{namespaceZeta_a1e0a1265f9b3bd3075fb0fabd39088ba}{Float} \hyperlink{classZeta_1_1Projectile_ac8ea8a49b50c1e3ce011ca9e7a03ce3c}{rotation}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{classZeta_1_1Projectile_a749ddf84f5e255f4c58d2fd37be8a566}{\index{Zeta\+::\+Projectile@{Zeta\+::\+Projectile}!Animation\+Direction@{Animation\+Direction}}
+\index{Animation\+Direction@{Animation\+Direction}!Zeta\+::\+Projectile@{Zeta\+::\+Projectile}}
+\subsubsection[{Animation\+Direction}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Zeta\+::\+Projectile\+::\+Animation\+Direction}\hspace{0.3cm}{\ttfamily [strong]}, {\ttfamily [protected]}}}\label{classZeta_1_1Projectile_a749ddf84f5e255f4c58d2fd37be8a566}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{Right@{Right}!Zeta\+::\+Projectile@{Zeta\+::\+Projectile}}\index{Zeta\+::\+Projectile@{Zeta\+::\+Projectile}!Right@{Right}}\item[{\em 
+\hypertarget{classZeta_1_1Projectile_a749ddf84f5e255f4c58d2fd37be8a566a92b09c7c48c520c3c55e497875da437c}{Right}\label{classZeta_1_1Projectile_a749ddf84f5e255f4c58d2fd37be8a566a92b09c7c48c520c3c55e497875da437c}
+}]\index{Left@{Left}!Zeta\+::\+Projectile@{Zeta\+::\+Projectile}}\index{Zeta\+::\+Projectile@{Zeta\+::\+Projectile}!Left@{Left}}\item[{\em 
+\hypertarget{classZeta_1_1Projectile_a749ddf84f5e255f4c58d2fd37be8a566a945d5e233cf7d6240f6b783b36a374ff}{Left}\label{classZeta_1_1Projectile_a749ddf84f5e255f4c58d2fd37be8a566a945d5e233cf7d6240f6b783b36a374ff}
+}]\index{Up@{Up}!Zeta\+::\+Projectile@{Zeta\+::\+Projectile}}\index{Zeta\+::\+Projectile@{Zeta\+::\+Projectile}!Up@{Up}}\item[{\em 
+\hypertarget{classZeta_1_1Projectile_a749ddf84f5e255f4c58d2fd37be8a566a258f49887ef8d14ac268c92b02503aaa}{Up}\label{classZeta_1_1Projectile_a749ddf84f5e255f4c58d2fd37be8a566a258f49887ef8d14ac268c92b02503aaa}
+}]\index{Down@{Down}!Zeta\+::\+Projectile@{Zeta\+::\+Projectile}}\index{Zeta\+::\+Projectile@{Zeta\+::\+Projectile}!Down@{Down}}\item[{\em 
+\hypertarget{classZeta_1_1Projectile_a749ddf84f5e255f4c58d2fd37be8a566a08a38277b0309070706f6652eeae9a53}{Down}\label{classZeta_1_1Projectile_a749ddf84f5e255f4c58d2fd37be8a566a08a38277b0309070706f6652eeae9a53}
+}]\end{description}
+\end{Desc}
+\hypertarget{classZeta_1_1Projectile_aacad4e6f44c0a40539f4ec22ac93ee27}{\index{Zeta\+::\+Projectile@{Zeta\+::\+Projectile}!Projectile\+State@{Projectile\+State}}
+\index{Projectile\+State@{Projectile\+State}!Zeta\+::\+Projectile@{Zeta\+::\+Projectile}}
+\subsubsection[{Projectile\+State}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Zeta\+::\+Projectile\+::\+Projectile\+State}\hspace{0.3cm}{\ttfamily [strong]}}}\label{classZeta_1_1Projectile_aacad4e6f44c0a40539f4ec22ac93ee27}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{Charging@{Charging}!Zeta\+::\+Projectile@{Zeta\+::\+Projectile}}\index{Zeta\+::\+Projectile@{Zeta\+::\+Projectile}!Charging@{Charging}}\item[{\em 
+\hypertarget{classZeta_1_1Projectile_aacad4e6f44c0a40539f4ec22ac93ee27ad7b54fc61b65b19c4694a29b6044aacd}{Charging}\label{classZeta_1_1Projectile_aacad4e6f44c0a40539f4ec22ac93ee27ad7b54fc61b65b19c4694a29b6044aacd}
+}]\index{Moving@{Moving}!Zeta\+::\+Projectile@{Zeta\+::\+Projectile}}\index{Zeta\+::\+Projectile@{Zeta\+::\+Projectile}!Moving@{Moving}}\item[{\em 
+\hypertarget{classZeta_1_1Projectile_aacad4e6f44c0a40539f4ec22ac93ee27adefe967ad0373b2274fc298f19125ca7}{Moving}\label{classZeta_1_1Projectile_aacad4e6f44c0a40539f4ec22ac93ee27adefe967ad0373b2274fc298f19125ca7}
+}]\index{Dying@{Dying}!Zeta\+::\+Projectile@{Zeta\+::\+Projectile}}\index{Zeta\+::\+Projectile@{Zeta\+::\+Projectile}!Dying@{Dying}}\item[{\em 
+\hypertarget{classZeta_1_1Projectile_aacad4e6f44c0a40539f4ec22ac93ee27a2ef54119c1f0d131a1a60e7776fa78f0}{Dying}\label{classZeta_1_1Projectile_aacad4e6f44c0a40539f4ec22ac93ee27a2ef54119c1f0d131a1a60e7776fa78f0}
+}]\index{Dead@{Dead}!Zeta\+::\+Projectile@{Zeta\+::\+Projectile}}\index{Zeta\+::\+Projectile@{Zeta\+::\+Projectile}!Dead@{Dead}}\item[{\em 
+\hypertarget{classZeta_1_1Projectile_aacad4e6f44c0a40539f4ec22ac93ee27a183b62c7f067711f9c5a54913c054617}{Dead}\label{classZeta_1_1Projectile_aacad4e6f44c0a40539f4ec22ac93ee27a183b62c7f067711f9c5a54913c054617}
+}]\index{Inactive@{Inactive}!Zeta\+::\+Projectile@{Zeta\+::\+Projectile}}\index{Zeta\+::\+Projectile@{Zeta\+::\+Projectile}!Inactive@{Inactive}}\item[{\em 
+\hypertarget{classZeta_1_1Projectile_aacad4e6f44c0a40539f4ec22ac93ee27a3cab03c00dbd11bc3569afa0748013f0}{Inactive}\label{classZeta_1_1Projectile_aacad4e6f44c0a40539f4ec22ac93ee27a3cab03c00dbd11bc3569afa0748013f0}
+}]\end{description}
+\end{Desc}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classZeta_1_1Projectile_a15f8f3be24867d36b6f81cdccad86644}{\index{Zeta\+::\+Projectile@{Zeta\+::\+Projectile}!Projectile@{Projectile}}
+\index{Projectile@{Projectile}!Zeta\+::\+Projectile@{Zeta\+::\+Projectile}}
+\subsubsection[{Projectile}]{\setlength{\rightskip}{0pt plus 5cm}Zeta\+::\+Projectile\+::\+Projectile (
+\begin{DoxyParamCaption}
+\item[{const {\bf Projectile\+Class} $\ast$}]{cls, }
+\item[{{\bf Active\+Ability} $\ast$}]{parent, }
+\item[{{\bf Float}}]{x, }
+\item[{{\bf Float}}]{y}
+\end{DoxyParamCaption}
+)}}\label{classZeta_1_1Projectile_a15f8f3be24867d36b6f81cdccad86644}
+\hypertarget{classZeta_1_1Projectile_a92cd7c083a8576938adcd72670d10507}{\index{Zeta\+::\+Projectile@{Zeta\+::\+Projectile}!````~Projectile@{$\sim$\+Projectile}}
+\index{````~Projectile@{$\sim$\+Projectile}!Zeta\+::\+Projectile@{Zeta\+::\+Projectile}}
+\subsubsection[{$\sim$\+Projectile}]{\setlength{\rightskip}{0pt plus 5cm}virtual Zeta\+::\+Projectile\+::$\sim$\+Projectile (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classZeta_1_1Projectile_a92cd7c083a8576938adcd72670d10507}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classZeta_1_1Projectile_ac24627f14ea0a0545b7113518bb9676e}{\index{Zeta\+::\+Projectile@{Zeta\+::\+Projectile}!abort@{abort}}
+\index{abort@{abort}!Zeta\+::\+Projectile@{Zeta\+::\+Projectile}}
+\subsubsection[{abort}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+Projectile\+::abort (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classZeta_1_1Projectile_ac24627f14ea0a0545b7113518bb9676e}
+\hypertarget{classZeta_1_1Projectile_acc983839b25b6f2722605b6d26f8de03}{\index{Zeta\+::\+Projectile@{Zeta\+::\+Projectile}!accept@{accept}}
+\index{accept@{accept}!Zeta\+::\+Projectile@{Zeta\+::\+Projectile}}
+\subsubsection[{accept}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+Projectile\+::accept (
+\begin{DoxyParamCaption}
+\item[{{\bf Visitor} \&}]{visitor}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classZeta_1_1Projectile_acc983839b25b6f2722605b6d26f8de03}
+
+
+Implements \hyperlink{classZeta_1_1Object_ab89312e192868609f745c27748a2e669}{Zeta\+::\+Object}.
+
+\hypertarget{classZeta_1_1Projectile_a83f6af0f8bd17f89e95e388cdac9abad}{\index{Zeta\+::\+Projectile@{Zeta\+::\+Projectile}!apply\+Offsets@{apply\+Offsets}}
+\index{apply\+Offsets@{apply\+Offsets}!Zeta\+::\+Projectile@{Zeta\+::\+Projectile}}
+\subsubsection[{apply\+Offsets}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+Projectile\+::apply\+Offsets (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classZeta_1_1Projectile_a83f6af0f8bd17f89e95e388cdac9abad}
+\hypertarget{classZeta_1_1Projectile_acd286f924590421f7ac885dcd287c3cb}{\index{Zeta\+::\+Projectile@{Zeta\+::\+Projectile}!calculate\+Animation\+Direction@{calculate\+Animation\+Direction}}
+\index{calculate\+Animation\+Direction@{calculate\+Animation\+Direction}!Zeta\+::\+Projectile@{Zeta\+::\+Projectile}}
+\subsubsection[{calculate\+Animation\+Direction}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+Projectile\+::calculate\+Animation\+Direction (
+\begin{DoxyParamCaption}
+\item[{{\bf Lifeform\+State\+::\+Action}}]{action, }
+\item[{bool}]{change\+Animation = {\ttfamily false}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classZeta_1_1Projectile_acd286f924590421f7ac885dcd287c3cb}
+\hypertarget{classZeta_1_1Projectile_ac261d2a8c2c8a1005f3848d231847ef7}{\index{Zeta\+::\+Projectile@{Zeta\+::\+Projectile}!charge@{charge}}
+\index{charge@{charge}!Zeta\+::\+Projectile@{Zeta\+::\+Projectile}}
+\subsubsection[{charge}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+Projectile\+::charge (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classZeta_1_1Projectile_ac261d2a8c2c8a1005f3848d231847ef7}
+\hypertarget{classZeta_1_1Projectile_a8fa00ff17b93b4a6073912e1e33da79a}{\index{Zeta\+::\+Projectile@{Zeta\+::\+Projectile}!clear\+Collided\+Objects@{clear\+Collided\+Objects}}
+\index{clear\+Collided\+Objects@{clear\+Collided\+Objects}!Zeta\+::\+Projectile@{Zeta\+::\+Projectile}}
+\subsubsection[{clear\+Collided\+Objects}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+Projectile\+::clear\+Collided\+Objects (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1Projectile_a8fa00ff17b93b4a6073912e1e33da79a}
+\hypertarget{classZeta_1_1Projectile_a9d12fc2a30bcabf19a87bef6d0ec4d0e}{\index{Zeta\+::\+Projectile@{Zeta\+::\+Projectile}!destroy@{destroy}}
+\index{destroy@{destroy}!Zeta\+::\+Projectile@{Zeta\+::\+Projectile}}
+\subsubsection[{destroy}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+Projectile\+::destroy (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classZeta_1_1Projectile_a9d12fc2a30bcabf19a87bef6d0ec4d0e}
+\hypertarget{classZeta_1_1Projectile_aad582299efafe6e189c593b140f9e59b}{\index{Zeta\+::\+Projectile@{Zeta\+::\+Projectile}!draw@{draw}}
+\index{draw@{draw}!Zeta\+::\+Projectile@{Zeta\+::\+Projectile}}
+\subsubsection[{draw}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+Projectile\+::draw (
+\begin{DoxyParamCaption}
+\item[{{\bf Float}}]{x, }
+\item[{{\bf Float}}]{y, }
+\item[{{\bf Float}}]{rotation = {\ttfamily 0.0f}, }
+\item[{{\bf Float}}]{scale = {\ttfamily 1.0f}}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classZeta_1_1Projectile_aad582299efafe6e189c593b140f9e59b}
+Draws the \hyperlink{classZeta_1_1Object}{Object} on screen. Be advised, the x,y, offsets might have different meaning on different implementations. 
+\begin{DoxyParams}{Parameters}
+{\em x} & X offset to be applied on the drawing \\
+\hline
+{\em y} & Y offset to be applied on the drawing \\
+\hline
+{\em rotation} & the rotation to be applied on the drawing \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classZeta_1_1Drawable_a3f453a7a971b7eeba1768be3eaedc192}{Zeta\+::\+Drawable}.
+
+\hypertarget{classZeta_1_1Projectile_a1e01ea4d15b0e693aa780e08ad64adc3}{\index{Zeta\+::\+Projectile@{Zeta\+::\+Projectile}!get\+Parent\+Ability@{get\+Parent\+Ability}}
+\index{get\+Parent\+Ability@{get\+Parent\+Ability}!Zeta\+::\+Projectile@{Zeta\+::\+Projectile}}
+\subsubsection[{get\+Parent\+Ability}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Active\+Ability}$\ast$ Zeta\+::\+Projectile\+::get\+Parent\+Ability (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1Projectile_a1e01ea4d15b0e693aa780e08ad64adc3}
+\hypertarget{classZeta_1_1Projectile_ad2a89d0808a541a372508812b4dfaf25}{\index{Zeta\+::\+Projectile@{Zeta\+::\+Projectile}!is\+To\+Be\+Deleted@{is\+To\+Be\+Deleted}}
+\index{is\+To\+Be\+Deleted@{is\+To\+Be\+Deleted}!Zeta\+::\+Projectile@{Zeta\+::\+Projectile}}
+\subsubsection[{is\+To\+Be\+Deleted}]{\setlength{\rightskip}{0pt plus 5cm}bool Zeta\+::\+Projectile\+::is\+To\+Be\+Deleted (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1Projectile_ad2a89d0808a541a372508812b4dfaf25}
+\hypertarget{classZeta_1_1Projectile_a0d45fb8dac7385df02133b94ecfac5f5}{\index{Zeta\+::\+Projectile@{Zeta\+::\+Projectile}!move@{move}}
+\index{move@{move}!Zeta\+::\+Projectile@{Zeta\+::\+Projectile}}
+\subsubsection[{move}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Zeta\+::\+Projectile\+::move (
+\begin{DoxyParamCaption}
+\item[{{\bf Float}}]{elapsed\+Time}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{classZeta_1_1Projectile_a0d45fb8dac7385df02133b94ecfac5f5}
+
+
+Reimplemented in \hyperlink{classZeta_1_1SeekingProjectile_af9aa108d70ecbaa9290fb267f5e5337c}{Zeta\+::\+Seeking\+Projectile}.
+
+\hypertarget{classZeta_1_1Projectile_af4c81d1a28f45fd5c54c9dd02f4d1282}{\index{Zeta\+::\+Projectile@{Zeta\+::\+Projectile}!on\+Click@{on\+Click}}
+\index{on\+Click@{on\+Click}!Zeta\+::\+Projectile@{Zeta\+::\+Projectile}}
+\subsubsection[{on\+Click}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+Projectile\+::on\+Click (
+\begin{DoxyParamCaption}
+\item[{{\bf Object} $\ast$}]{other}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classZeta_1_1Projectile_af4c81d1a28f45fd5c54c9dd02f4d1282}
+
+
+Implements \hyperlink{classZeta_1_1Object_a334f107411268cefd5d88a1ec40bb639}{Zeta\+::\+Object}.
+
+\hypertarget{classZeta_1_1Projectile_abc96b0d41f7f4e43dec4a30821bd67be}{\index{Zeta\+::\+Projectile@{Zeta\+::\+Projectile}!on\+Collided\+With@{on\+Collided\+With}}
+\index{on\+Collided\+With@{on\+Collided\+With}!Zeta\+::\+Projectile@{Zeta\+::\+Projectile}}
+\subsubsection[{on\+Collided\+With}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Zeta\+::\+Projectile\+::on\+Collided\+With (
+\begin{DoxyParamCaption}
+\item[{{\bf Object} $\ast$}]{other}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classZeta_1_1Projectile_abc96b0d41f7f4e43dec4a30821bd67be}
+
+
+Implements \hyperlink{classZeta_1_1Object_ae8d403a3bb343fb169347251b8eaa219}{Zeta\+::\+Object}.
+
+
+
+Reimplemented in \hyperlink{classZeta_1_1SeekingProjectile_afe1b12cde5fd78cd19e586088e225582}{Zeta\+::\+Seeking\+Projectile}.
+
+\hypertarget{classZeta_1_1Projectile_aed223f728aa24c42953167f1b863fb77}{\index{Zeta\+::\+Projectile@{Zeta\+::\+Projectile}!push\+To\+Lua@{push\+To\+Lua}}
+\index{push\+To\+Lua@{push\+To\+Lua}!Zeta\+::\+Projectile@{Zeta\+::\+Projectile}}
+\subsubsection[{push\+To\+Lua}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Zeta\+::\+Projectile\+::push\+To\+Lua (
+\begin{DoxyParamCaption}
+\item[{lua\+\_\+\+State $\ast$}]{lstate}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classZeta_1_1Projectile_aed223f728aa24c42953167f1b863fb77}
+
+
+Implements \hyperlink{classZeta_1_1LuaPushable_a0380ec9cff11f749e8eb67b51b8f82fc}{Zeta\+::\+Lua\+Pushable}.
+
+
+
+Reimplemented in \hyperlink{classZeta_1_1SeekingProjectile_a5ddeabc562a342aca955a69eba498ec3}{Zeta\+::\+Seeking\+Projectile}.
+
+\hypertarget{classZeta_1_1Projectile_a21ef4f7d9b80934bf4cfcac6cf0128f6}{\index{Zeta\+::\+Projectile@{Zeta\+::\+Projectile}!release@{release}}
+\index{release@{release}!Zeta\+::\+Projectile@{Zeta\+::\+Projectile}}
+\subsubsection[{release}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+Projectile\+::release (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classZeta_1_1Projectile_a21ef4f7d9b80934bf4cfcac6cf0128f6}
+\hypertarget{classZeta_1_1Projectile_a3205782e632079d56a65ea165caa2932}{\index{Zeta\+::\+Projectile@{Zeta\+::\+Projectile}!reset\+State@{reset\+State}}
+\index{reset\+State@{reset\+State}!Zeta\+::\+Projectile@{Zeta\+::\+Projectile}}
+\subsubsection[{reset\+State}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Zeta\+::\+Projectile\+::reset\+State (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classZeta_1_1Projectile_a3205782e632079d56a65ea165caa2932}
+
+
+Reimplemented in \hyperlink{classZeta_1_1SeekingProjectile_a7e6d4a3cff7871bda6c656988a9c34ce}{Zeta\+::\+Seeking\+Projectile}.
+
+\hypertarget{classZeta_1_1Projectile_ab87776cfb299513d683a5e2413884f6b}{\index{Zeta\+::\+Projectile@{Zeta\+::\+Projectile}!set\+Target\+Location@{set\+Target\+Location}}
+\index{set\+Target\+Location@{set\+Target\+Location}!Zeta\+::\+Projectile@{Zeta\+::\+Projectile}}
+\subsubsection[{set\+Target\+Location}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+Projectile\+::set\+Target\+Location (
+\begin{DoxyParamCaption}
+\item[{{\bf Float}}]{x, }
+\item[{{\bf Float}}]{y}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1Projectile_ab87776cfb299513d683a5e2413884f6b}
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=342pt]{classZeta_1_1Projectile_ab87776cfb299513d683a5e2413884f6b_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classZeta_1_1Projectile_a43eb183c50f2945ecf82cc4a8284abfa}{\index{Zeta\+::\+Projectile@{Zeta\+::\+Projectile}!update@{update}}
+\index{update@{update}!Zeta\+::\+Projectile@{Zeta\+::\+Projectile}}
+\subsubsection[{update}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+Projectile\+::update (
+\begin{DoxyParamCaption}
+\item[{{\bf Float}}]{elapsed\+Time}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classZeta_1_1Projectile_a43eb183c50f2945ecf82cc4a8284abfa}
+
+
+Implements \hyperlink{classZeta_1_1Updateable_af4006bfccb762454b4da08786ad93de0}{Zeta\+::\+Updateable}.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classZeta_1_1Projectile_aefe42e3e404d48862671645fd79d19dd}{\index{Zeta\+::\+Projectile@{Zeta\+::\+Projectile}!animation@{animation}}
+\index{animation@{animation}!Zeta\+::\+Projectile@{Zeta\+::\+Projectile}}
+\subsubsection[{animation}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Animation\+Handler} Zeta\+::\+Projectile\+::animation\hspace{0.3cm}{\ttfamily [protected]}}}\label{classZeta_1_1Projectile_aefe42e3e404d48862671645fd79d19dd}
+\hypertarget{classZeta_1_1Projectile_a5b028ee3773dd1e5b7cb86dacc757907}{\index{Zeta\+::\+Projectile@{Zeta\+::\+Projectile}!anim\+Dir@{anim\+Dir}}
+\index{anim\+Dir@{anim\+Dir}!Zeta\+::\+Projectile@{Zeta\+::\+Projectile}}
+\subsubsection[{anim\+Dir}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Lifeform\+State} Zeta\+::\+Projectile\+::anim\+Dir\hspace{0.3cm}{\ttfamily [protected]}}}\label{classZeta_1_1Projectile_a5b028ee3773dd1e5b7cb86dacc757907}
+\hypertarget{classZeta_1_1Projectile_a15208dfa71713b04823b1aa8d2a23a1e}{\index{Zeta\+::\+Projectile@{Zeta\+::\+Projectile}!camera@{camera}}
+\index{camera@{camera}!Zeta\+::\+Projectile@{Zeta\+::\+Projectile}}
+\subsubsection[{camera}]{\setlength{\rightskip}{0pt plus 5cm}{\bf View}$\ast$ Zeta\+::\+Projectile\+::camera\hspace{0.3cm}{\ttfamily [protected]}}}\label{classZeta_1_1Projectile_a15208dfa71713b04823b1aa8d2a23a1e}
+\hypertarget{classZeta_1_1Projectile_a97d2d1a5090514b119db842ebec18cd7}{\index{Zeta\+::\+Projectile@{Zeta\+::\+Projectile}!collided\+Objects@{collided\+Objects}}
+\index{collided\+Objects@{collided\+Objects}!Zeta\+::\+Projectile@{Zeta\+::\+Projectile}}
+\subsubsection[{collided\+Objects}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Z\+Set}$<${\bf Object}$\ast$$>$ Zeta\+::\+Projectile\+::collided\+Objects\hspace{0.3cm}{\ttfamily [protected]}}}\label{classZeta_1_1Projectile_a97d2d1a5090514b119db842ebec18cd7}
+\hypertarget{classZeta_1_1Projectile_aaf2edb8925817cb4647910eaf4e0c1d7}{\index{Zeta\+::\+Projectile@{Zeta\+::\+Projectile}!direction@{direction}}
+\index{direction@{direction}!Zeta\+::\+Projectile@{Zeta\+::\+Projectile}}
+\subsubsection[{direction}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector2} Zeta\+::\+Projectile\+::direction\hspace{0.3cm}{\ttfamily [protected]}}}\label{classZeta_1_1Projectile_aaf2edb8925817cb4647910eaf4e0c1d7}
+\hypertarget{classZeta_1_1Projectile_adef774c425ee6c3af82e408269cfee08}{\index{Zeta\+::\+Projectile@{Zeta\+::\+Projectile}!parent\+Ability@{parent\+Ability}}
+\index{parent\+Ability@{parent\+Ability}!Zeta\+::\+Projectile@{Zeta\+::\+Projectile}}
+\subsubsection[{parent\+Ability}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Active\+Ability}$\ast$ Zeta\+::\+Projectile\+::parent\+Ability\hspace{0.3cm}{\ttfamily [protected]}}}\label{classZeta_1_1Projectile_adef774c425ee6c3af82e408269cfee08}
+\hypertarget{classZeta_1_1Projectile_a21466c968ccab5bd82b9369f6445f094}{\index{Zeta\+::\+Projectile@{Zeta\+::\+Projectile}!projectile\+Class@{projectile\+Class}}
+\index{projectile\+Class@{projectile\+Class}!Zeta\+::\+Projectile@{Zeta\+::\+Projectile}}
+\subsubsection[{projectile\+Class}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Projectile\+Class}$\ast$ Zeta\+::\+Projectile\+::projectile\+Class\hspace{0.3cm}{\ttfamily [protected]}}}\label{classZeta_1_1Projectile_a21466c968ccab5bd82b9369f6445f094}
+\hypertarget{classZeta_1_1Projectile_ac8ea8a49b50c1e3ce011ca9e7a03ce3c}{\index{Zeta\+::\+Projectile@{Zeta\+::\+Projectile}!rotation@{rotation}}
+\index{rotation@{rotation}!Zeta\+::\+Projectile@{Zeta\+::\+Projectile}}
+\subsubsection[{rotation}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Float} Zeta\+::\+Projectile\+::rotation\hspace{0.3cm}{\ttfamily [protected]}}}\label{classZeta_1_1Projectile_ac8ea8a49b50c1e3ce011ca9e7a03ce3c}
+\hypertarget{classZeta_1_1Projectile_ac6c490114f270934af7728c905d8b9fe}{\index{Zeta\+::\+Projectile@{Zeta\+::\+Projectile}!state@{state}}
+\index{state@{state}!Zeta\+::\+Projectile@{Zeta\+::\+Projectile}}
+\subsubsection[{state}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Projectile\+State} Zeta\+::\+Projectile\+::state\hspace{0.3cm}{\ttfamily [protected]}}}\label{classZeta_1_1Projectile_ac6c490114f270934af7728c905d8b9fe}
+\hypertarget{classZeta_1_1Projectile_ac3e3496cf0700e62f7f3d54b782e07e1}{\index{Zeta\+::\+Projectile@{Zeta\+::\+Projectile}!target\+Position@{target\+Position}}
+\index{target\+Position@{target\+Position}!Zeta\+::\+Projectile@{Zeta\+::\+Projectile}}
+\subsubsection[{target\+Position}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector2} Zeta\+::\+Projectile\+::target\+Position\hspace{0.3cm}{\ttfamily [protected]}}}\label{classZeta_1_1Projectile_ac3e3496cf0700e62f7f3d54b782e07e1}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Zeta/\+Core/\+R\+P\+G\+Classes/\hyperlink{Projectile_8hpp}{Projectile.\+hpp}\end{DoxyCompactItemize}

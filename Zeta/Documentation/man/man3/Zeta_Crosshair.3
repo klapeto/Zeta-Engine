@@ -1,0 +1,133 @@
+.TH "Zeta::Crosshair" 3 "Wed Feb 10 2016" "Zeta" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Zeta::Crosshair \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Crosshair\&.hpp>\fP
+.PP
+Inherits \fBZeta::Shape\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBoffsetCrosshair\fP (\fBFloat\fP dx, \fBFloat\fP dy)"
+.br
+.ti -1c
+.RI "void \fBresetCrosshair\fP ()"
+.br
+.ti -1c
+.RI "int \fBgetHeight\fP () const "
+.br
+.ti -1c
+.RI "void \fBsetHeight\fP (int \fBheight\fP)"
+.br
+.ti -1c
+.RI "\fBFloat\fP \fBgetCrossY\fP () const "
+.br
+.ti -1c
+.RI "void \fBsetCrossY\fP (\fBFloat\fP crossY)"
+.br
+.ti -1c
+.RI "\fBFloat\fP \fBgetCrossX\fP () const "
+.br
+.ti -1c
+.RI "void \fBsetCrossX\fP (\fBFloat\fP crossX)"
+.br
+.ti -1c
+.RI "int \fBgetWidth\fP () const "
+.br
+.ti -1c
+.RI "void \fBsetWidth\fP (int \fBwidth\fP)"
+.br
+.ti -1c
+.RI "virtual void \fBdraw\fP (\fBFloat\fP x, \fBFloat\fP y, \fBFloat\fP rotation=0\&.0f, Float scale=1\&.0f) const "
+.br
+.ti -1c
+.RI "\fBCrosshair\fP ()"
+.br
+.ti -1c
+.RI "\fBCrosshair\fP (\fBFloat\fP x, \fBFloat\fP y, int \fBwidth\fP, int \fBheight\fP)"
+.br
+.ti -1c
+.RI "\fB~Crosshair\fP ()"
+.br
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBFloat\fP \fBcross_x\fP"
+.br
+.ti -1c
+.RI "\fBFloat\fP \fBcross_y\fP"
+.br
+.ti -1c
+.RI "int \fBwidth\fP"
+.br
+.ti -1c
+.RI "int \fBheight\fP"
+.br
+.in -1c
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Zeta::Crosshair::Crosshair ()\fC [inline]\fP"
+
+.SS "Zeta::Crosshair::Crosshair (\fBFloat\fPx, \fBFloat\fPy, intwidth, intheight)\fC [inline]\fP"
+
+.SS "Zeta::Crosshair::~Crosshair ()\fC [inline]\fP"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "virtual void Zeta::Crosshair::draw (\fBFloat\fPx, \fBFloat\fPy, \fBFloat\fProtation = \fC0\&.0f\fP, \fBFloat\fPscale = \fC1\&.0f\fP) const\fC [virtual]\fP"
+Draws the \fBObject\fP on screen\&. Be advised, the x,y, offsets might have different meaning on different implementations\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIx\fP X offset to be applied on the drawing 
+.br
+\fIy\fP Y offset to be applied on the drawing 
+.br
+\fIrotation\fP the rotation to be applied on the drawing 
+.RE
+.PP
+
+.PP
+Implements \fBZeta::Drawable\fP\&.
+.SS "\fBFloat\fP Zeta::Crosshair::getCrossX () const\fC [inline]\fP"
+
+.SS "\fBFloat\fP Zeta::Crosshair::getCrossY () const\fC [inline]\fP"
+
+.SS "int Zeta::Crosshair::getHeight () const\fC [inline]\fP"
+
+.SS "int Zeta::Crosshair::getWidth () const\fC [inline]\fP"
+
+.SS "void Zeta::Crosshair::offsetCrosshair (\fBFloat\fPdx, \fBFloat\fPdy)\fC [inline]\fP"
+
+.SS "void Zeta::Crosshair::resetCrosshair ()\fC [inline]\fP"
+
+.SS "void Zeta::Crosshair::setCrossX (\fBFloat\fPcrossX)\fC [inline]\fP"
+
+.SS "void Zeta::Crosshair::setCrossY (\fBFloat\fPcrossY)\fC [inline]\fP"
+
+.SS "void Zeta::Crosshair::setHeight (intheight)\fC [inline]\fP"
+
+.SS "void Zeta::Crosshair::setWidth (intwidth)\fC [inline]\fP"
+
+.SH "Member Data Documentation"
+.PP 
+.SS "\fBFloat\fP Zeta::Crosshair::cross_x\fC [protected]\fP"
+
+.SS "\fBFloat\fP Zeta::Crosshair::cross_y\fC [protected]\fP"
+
+.SS "int Zeta::Crosshair::height\fC [protected]\fP"
+
+.SS "int Zeta::Crosshair::width\fC [protected]\fP"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Zeta from the source code\&.

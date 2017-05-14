@@ -1,0 +1,49 @@
+.TH "Zeta::PassiveAbilityClass" 3 "Wed Feb 10 2016" "Zeta" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Zeta::PassiveAbilityClass \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <PassiveAbilityClass\&.hpp>\fP
+.PP
+Inherits \fBZeta::AbilityClass\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBAbility\fP * \fBgetNewAbility\fP (\fBLifeform\fP *caster, int level) const "
+.br
+.ti -1c
+.RI "void \fBpushToLua\fP (lua_State *lstate)"
+.br
+.ti -1c
+.RI "\fBPassiveAbilityClass\fP (\fBAbilityClass\fP &\fBparent\fP, \fBLuaTable\fP &\fBtable\fP)"
+.br
+.ti -1c
+.RI "\fB~PassiveAbilityClass\fP ()"
+.br
+.in -1c
+.SS "Additional Inherited Members"
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Zeta::PassiveAbilityClass::PassiveAbilityClass (\fBAbilityClass\fP &parent, \fBLuaTable\fP &table)"
+
+.SS "Zeta::PassiveAbilityClass::~PassiveAbilityClass ()"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "\fBAbility\fP* Zeta::PassiveAbilityClass::getNewAbility (\fBLifeform\fP *caster, intlevel) const\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBZeta::AbilityClass\fP\&.
+.SS "void Zeta::PassiveAbilityClass::pushToLua (lua_State *lstate)\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBZeta::AbilityClass\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Zeta from the source code\&.

@@ -1,0 +1,315 @@
+\hypertarget{classZeta_1_1LifeformClass}{\section{Zeta\+:\+:Lifeform\+Class Class Reference}
+\label{classZeta_1_1LifeformClass}\index{Zeta\+::\+Lifeform\+Class@{Zeta\+::\+Lifeform\+Class}}
+}
+
+
+{\ttfamily \#include $<$Lifeform\+Class.\+hpp$>$}
+
+
+
+Inheritance diagram for Zeta\+:\+:Lifeform\+Class\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=182pt]{classZeta_1_1LifeformClass__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Zeta\+:\+:Lifeform\+Class\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classZeta_1_1LifeformClass__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classZeta_1_1LifeformClass_1_1ChildParams}{Child\+Params}
+\item 
+struct \hyperlink{structZeta_1_1LifeformClass_1_1LifeformAbility}{Lifeform\+Ability}
+\item 
+struct \hyperlink{structZeta_1_1LifeformClass_1_1LuaAbility}{Lua\+Ability}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+const std\+::string \& \hyperlink{classZeta_1_1LifeformClass_a9fcea8174f8b84f648162ec3968dc2bc}{get\+Lifeform\+Name} () const 
+\item 
+void \hyperlink{classZeta_1_1LifeformClass_ab55b76b464c8df908b1fb79495fa5828}{get\+Stats} (\hyperlink{namespaceZeta_a9af2e12c4e432d2a1725f19e5a648a04}{Z\+Map}$<$ std\+::string, \hyperlink{classZeta_1_1Attribute}{Attribute} $>$ \&\hyperlink{classZeta_1_1LifeformClass_a4451d269f7dc4c5544d8b89b63a420ca}{stats}) const 
+\item 
+void \hyperlink{classZeta_1_1LifeformClass_a292adb3fb19fbca90235bf0b855a9306}{get\+Abilities} (\hyperlink{classZeta_1_1Lifeform}{Lifeform} $\ast$owner) const 
+\item 
+void \hyperlink{classZeta_1_1LifeformClass_a3368d8263af6c9af9ac6b78fcf10f924}{get\+Child\+Objets} (\hyperlink{classZeta_1_1Lifeform}{Lifeform} $\ast$owner) const 
+\item 
+const std\+::string \& \hyperlink{classZeta_1_1LifeformClass_a6ff99eb86e194319ab458c5052d2e27a}{get\+Animation\+Class\+Name} () const 
+\item 
+int \hyperlink{classZeta_1_1LifeformClass_a362d94718a6e35b0745555b3c8eba592}{get\+Level} () const 
+\item 
+const \hyperlink{classZeta_1_1LuaTable}{Lua\+Table} \& \hyperlink{classZeta_1_1LifeformClass_a924311bd77f7ce2432d6cdea75411f0b}{get\+Table} () const 
+\item 
+const \hyperlink{classZeta_1_1LuaFunctor}{Lua\+Functor} \& \hyperlink{classZeta_1_1LifeformClass_a1c4fec0e840f301224c3412f51046482}{get\+On\+Click} () const 
+\item 
+const \hyperlink{classZeta_1_1LuaFunctor}{Lua\+Functor} \& \hyperlink{classZeta_1_1LifeformClass_a9e113478f4a990860fe2de198f59f24a}{get\+On\+Collision} () const 
+\item 
+const \hyperlink{classZeta_1_1Faction}{Faction} \& \hyperlink{classZeta_1_1LifeformClass_a6f8697377531c7c68f5ae1000877757e}{get\+Faction} () const 
+\item 
+void \hyperlink{classZeta_1_1LifeformClass_aeb670ab1c93460280608ce915b899071}{set\+Table} (\hyperlink{ZetaConfig_8hpp_ae7be32b73848041a60f2412f72bbb221}{lua\+\_\+\+Object} \hyperlink{classZeta_1_1LifeformClass_aa8731df77ae7bd670fea69e182266dd3}{table})
+\item 
+void \hyperlink{classZeta_1_1LifeformClass_a138bb3ccc7206b6db397cb680ed37aba}{set\+On\+Click} (\hyperlink{ZetaConfig_8hpp_ae7be32b73848041a60f2412f72bbb221}{lua\+\_\+\+Object} func)
+\item 
+void \hyperlink{classZeta_1_1LifeformClass_a92551e5adaa9a0ee11b46e89e8045f80}{set\+On\+Collision} (\hyperlink{ZetaConfig_8hpp_ae7be32b73848041a60f2412f72bbb221}{lua\+\_\+\+Object} func)
+\item 
+\hyperlink{classZeta_1_1Behaviour}{Behaviour} $\ast$ \hyperlink{classZeta_1_1LifeformClass_a39369e2a337ae6d01dbd0a9ae3b38df3}{get\+General\+Behaviour} (\hyperlink{classZeta_1_1Lifeform}{Lifeform} \&owner) const 
+\item 
+\hyperlink{classZeta_1_1Behaviour}{Behaviour} $\ast$ \hyperlink{classZeta_1_1LifeformClass_a83a72d25a5124ca4160f55c84dc1a6e9}{get\+Movement\+Behaviour} (\hyperlink{classZeta_1_1Lifeform}{Lifeform} \&owner) const 
+\item 
+void \hyperlink{classZeta_1_1LifeformClass_abcb3777fac723d397f8c1574a3a05f20}{levelize\+Stats} (float level\+Multiplier=1.\+0f)
+\item 
+void \hyperlink{classZeta_1_1LifeformClass_a114502043e6f3740306a8a5dcf315d9b}{levelize\+Stats} (float multiplier, int lower\+Bound, int upper\+Bound)
+\item 
+void \hyperlink{classZeta_1_1LifeformClass_a9e08aa445c26953e8c22edf168cc633d}{add\+Ability} (const \hyperlink{classZeta_1_1AbilityClass}{Ability\+Class} \&ab\+Class, int \hyperlink{classZeta_1_1LifeformClass_ab00327ecb94395422bc02d9ff5c7bfb3}{level})
+\item 
+\hyperlink{classZeta_1_1LifeformClass_a7bd16a6d2e48cd98fdb0ab0551c4b025}{Lifeform\+Class} ()
+\item 
+\hyperlink{classZeta_1_1LifeformClass_ac713077ce7ce46f5398f63749d1e82af}{Lifeform\+Class} (const std\+::string \&path)
+\item 
+virtual \hyperlink{classZeta_1_1LifeformClass_aea0a4184fe494b04d1bd4f9551e02359}{$\sim$\+Lifeform\+Class} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespaceZeta_a9af2e12c4e432d2a1725f19e5a648a04}{Z\+Map}$<$ std\+::string, \\*
+\hyperlink{structZeta_1_1LifeformClass_1_1LifeformAbility}{Lifeform\+Ability} $>$ \hyperlink{classZeta_1_1LifeformClass_a002f20ed3a907ee996b35fbd79d6fb5d}{abilities}
+\item 
+std\+::vector$<$ \hyperlink{structZeta_1_1LifeformClass_1_1LuaAbility}{Lua\+Ability} $>$ \hyperlink{classZeta_1_1LifeformClass_af30b98b4fe2f81cb08c053539625ddca}{lua\+Abilities}
+\item 
+\hyperlink{namespaceZeta_a9af2e12c4e432d2a1725f19e5a648a04}{Z\+Map}$<$ std\+::string, \\*
+std\+::uniform\+\_\+int\+\_\+distribution\\*
+$<$ int $>$ $>$ \hyperlink{classZeta_1_1LifeformClass_a4451d269f7dc4c5544d8b89b63a420ca}{stats}
+\item 
+std\+::vector$<$ \hyperlink{classZeta_1_1LifeformClass_1_1ChildParams}{Child\+Params} $>$ \hyperlink{classZeta_1_1LifeformClass_abe8c654163027c7b4810c115ee40a928}{child\+Parameters}
+\item 
+std\+::string \hyperlink{classZeta_1_1LifeformClass_aea28cfcaa64c28804ca61c4a29916380}{lifeform\+\_\+name}
+\item 
+std\+::string \hyperlink{classZeta_1_1LifeformClass_a0857894140b809d306d5ae432988e859}{anim\+Class}
+\item 
+\hyperlink{classZeta_1_1LuaTable}{Lua\+Table} \hyperlink{classZeta_1_1LifeformClass_aa8731df77ae7bd670fea69e182266dd3}{table}
+\item 
+\hyperlink{classZeta_1_1LuaFunctor}{Lua\+Functor} \hyperlink{classZeta_1_1LifeformClass_a13a27238c6107f52ec96528a36e783b4}{on\+Collision\+F}
+\item 
+\hyperlink{classZeta_1_1LuaFunctor}{Lua\+Functor} \hyperlink{classZeta_1_1LifeformClass_a47cd54e7ddee3d1da5413b2d30f77b40}{on\+Click\+F}
+\item 
+const \hyperlink{classZeta_1_1Faction}{Faction} $\ast$ \hyperlink{classZeta_1_1LifeformClass_a9784dbf810a8da0ede8893bf5dc7f6ba}{faction}
+\item 
+\hyperlink{classZeta_1_1BehaviourClass}{Behaviour\+Class} $\ast$ \hyperlink{classZeta_1_1LifeformClass_a2a2d0934222b4115f89c295f31f43f09}{generic\+A\+I}
+\item 
+\hyperlink{classZeta_1_1BehaviourClass}{Behaviour\+Class} $\ast$ \hyperlink{classZeta_1_1LifeformClass_a2bb480c69b4b233f19ecc8e5b01c426e}{movement\+A\+I}
+\item 
+int \hyperlink{classZeta_1_1LifeformClass_ab00327ecb94395422bc02d9ff5c7bfb3}{level}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classZeta_1_1LifeformClass_a7bd16a6d2e48cd98fdb0ab0551c4b025}{\index{Zeta\+::\+Lifeform\+Class@{Zeta\+::\+Lifeform\+Class}!Lifeform\+Class@{Lifeform\+Class}}
+\index{Lifeform\+Class@{Lifeform\+Class}!Zeta\+::\+Lifeform\+Class@{Zeta\+::\+Lifeform\+Class}}
+\subsubsection[{Lifeform\+Class}]{\setlength{\rightskip}{0pt plus 5cm}Zeta\+::\+Lifeform\+Class\+::\+Lifeform\+Class (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classZeta_1_1LifeformClass_a7bd16a6d2e48cd98fdb0ab0551c4b025}
+\hypertarget{classZeta_1_1LifeformClass_ac713077ce7ce46f5398f63749d1e82af}{\index{Zeta\+::\+Lifeform\+Class@{Zeta\+::\+Lifeform\+Class}!Lifeform\+Class@{Lifeform\+Class}}
+\index{Lifeform\+Class@{Lifeform\+Class}!Zeta\+::\+Lifeform\+Class@{Zeta\+::\+Lifeform\+Class}}
+\subsubsection[{Lifeform\+Class}]{\setlength{\rightskip}{0pt plus 5cm}Zeta\+::\+Lifeform\+Class\+::\+Lifeform\+Class (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{path}
+\end{DoxyParamCaption}
+)}}\label{classZeta_1_1LifeformClass_ac713077ce7ce46f5398f63749d1e82af}
+\hypertarget{classZeta_1_1LifeformClass_aea0a4184fe494b04d1bd4f9551e02359}{\index{Zeta\+::\+Lifeform\+Class@{Zeta\+::\+Lifeform\+Class}!````~Lifeform\+Class@{$\sim$\+Lifeform\+Class}}
+\index{````~Lifeform\+Class@{$\sim$\+Lifeform\+Class}!Zeta\+::\+Lifeform\+Class@{Zeta\+::\+Lifeform\+Class}}
+\subsubsection[{$\sim$\+Lifeform\+Class}]{\setlength{\rightskip}{0pt plus 5cm}virtual Zeta\+::\+Lifeform\+Class\+::$\sim$\+Lifeform\+Class (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classZeta_1_1LifeformClass_aea0a4184fe494b04d1bd4f9551e02359}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classZeta_1_1LifeformClass_a9e08aa445c26953e8c22edf168cc633d}{\index{Zeta\+::\+Lifeform\+Class@{Zeta\+::\+Lifeform\+Class}!add\+Ability@{add\+Ability}}
+\index{add\+Ability@{add\+Ability}!Zeta\+::\+Lifeform\+Class@{Zeta\+::\+Lifeform\+Class}}
+\subsubsection[{add\+Ability}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+Lifeform\+Class\+::add\+Ability (
+\begin{DoxyParamCaption}
+\item[{const {\bf Ability\+Class} \&}]{ab\+Class, }
+\item[{int}]{level}
+\end{DoxyParamCaption}
+)}}\label{classZeta_1_1LifeformClass_a9e08aa445c26953e8c22edf168cc633d}
+\hypertarget{classZeta_1_1LifeformClass_a292adb3fb19fbca90235bf0b855a9306}{\index{Zeta\+::\+Lifeform\+Class@{Zeta\+::\+Lifeform\+Class}!get\+Abilities@{get\+Abilities}}
+\index{get\+Abilities@{get\+Abilities}!Zeta\+::\+Lifeform\+Class@{Zeta\+::\+Lifeform\+Class}}
+\subsubsection[{get\+Abilities}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+Lifeform\+Class\+::get\+Abilities (
+\begin{DoxyParamCaption}
+\item[{{\bf Lifeform} $\ast$}]{owner}
+\end{DoxyParamCaption}
+) const}}\label{classZeta_1_1LifeformClass_a292adb3fb19fbca90235bf0b855a9306}
+\hypertarget{classZeta_1_1LifeformClass_a6ff99eb86e194319ab458c5052d2e27a}{\index{Zeta\+::\+Lifeform\+Class@{Zeta\+::\+Lifeform\+Class}!get\+Animation\+Class\+Name@{get\+Animation\+Class\+Name}}
+\index{get\+Animation\+Class\+Name@{get\+Animation\+Class\+Name}!Zeta\+::\+Lifeform\+Class@{Zeta\+::\+Lifeform\+Class}}
+\subsubsection[{get\+Animation\+Class\+Name}]{\setlength{\rightskip}{0pt plus 5cm}const std\+::string\& Zeta\+::\+Lifeform\+Class\+::get\+Animation\+Class\+Name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1LifeformClass_a6ff99eb86e194319ab458c5052d2e27a}
+\hypertarget{classZeta_1_1LifeformClass_a3368d8263af6c9af9ac6b78fcf10f924}{\index{Zeta\+::\+Lifeform\+Class@{Zeta\+::\+Lifeform\+Class}!get\+Child\+Objets@{get\+Child\+Objets}}
+\index{get\+Child\+Objets@{get\+Child\+Objets}!Zeta\+::\+Lifeform\+Class@{Zeta\+::\+Lifeform\+Class}}
+\subsubsection[{get\+Child\+Objets}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+Lifeform\+Class\+::get\+Child\+Objets (
+\begin{DoxyParamCaption}
+\item[{{\bf Lifeform} $\ast$}]{owner}
+\end{DoxyParamCaption}
+) const}}\label{classZeta_1_1LifeformClass_a3368d8263af6c9af9ac6b78fcf10f924}
+\hypertarget{classZeta_1_1LifeformClass_a6f8697377531c7c68f5ae1000877757e}{\index{Zeta\+::\+Lifeform\+Class@{Zeta\+::\+Lifeform\+Class}!get\+Faction@{get\+Faction}}
+\index{get\+Faction@{get\+Faction}!Zeta\+::\+Lifeform\+Class@{Zeta\+::\+Lifeform\+Class}}
+\subsubsection[{get\+Faction}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Faction}\& Zeta\+::\+Lifeform\+Class\+::get\+Faction (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1LifeformClass_a6f8697377531c7c68f5ae1000877757e}
+\hypertarget{classZeta_1_1LifeformClass_a39369e2a337ae6d01dbd0a9ae3b38df3}{\index{Zeta\+::\+Lifeform\+Class@{Zeta\+::\+Lifeform\+Class}!get\+General\+Behaviour@{get\+General\+Behaviour}}
+\index{get\+General\+Behaviour@{get\+General\+Behaviour}!Zeta\+::\+Lifeform\+Class@{Zeta\+::\+Lifeform\+Class}}
+\subsubsection[{get\+General\+Behaviour}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Behaviour}$\ast$ Zeta\+::\+Lifeform\+Class\+::get\+General\+Behaviour (
+\begin{DoxyParamCaption}
+\item[{{\bf Lifeform} \&}]{owner}
+\end{DoxyParamCaption}
+) const}}\label{classZeta_1_1LifeformClass_a39369e2a337ae6d01dbd0a9ae3b38df3}
+\hypertarget{classZeta_1_1LifeformClass_a362d94718a6e35b0745555b3c8eba592}{\index{Zeta\+::\+Lifeform\+Class@{Zeta\+::\+Lifeform\+Class}!get\+Level@{get\+Level}}
+\index{get\+Level@{get\+Level}!Zeta\+::\+Lifeform\+Class@{Zeta\+::\+Lifeform\+Class}}
+\subsubsection[{get\+Level}]{\setlength{\rightskip}{0pt plus 5cm}int Zeta\+::\+Lifeform\+Class\+::get\+Level (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1LifeformClass_a362d94718a6e35b0745555b3c8eba592}
+\hypertarget{classZeta_1_1LifeformClass_a9fcea8174f8b84f648162ec3968dc2bc}{\index{Zeta\+::\+Lifeform\+Class@{Zeta\+::\+Lifeform\+Class}!get\+Lifeform\+Name@{get\+Lifeform\+Name}}
+\index{get\+Lifeform\+Name@{get\+Lifeform\+Name}!Zeta\+::\+Lifeform\+Class@{Zeta\+::\+Lifeform\+Class}}
+\subsubsection[{get\+Lifeform\+Name}]{\setlength{\rightskip}{0pt plus 5cm}const std\+::string\& Zeta\+::\+Lifeform\+Class\+::get\+Lifeform\+Name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1LifeformClass_a9fcea8174f8b84f648162ec3968dc2bc}
+\hypertarget{classZeta_1_1LifeformClass_a83a72d25a5124ca4160f55c84dc1a6e9}{\index{Zeta\+::\+Lifeform\+Class@{Zeta\+::\+Lifeform\+Class}!get\+Movement\+Behaviour@{get\+Movement\+Behaviour}}
+\index{get\+Movement\+Behaviour@{get\+Movement\+Behaviour}!Zeta\+::\+Lifeform\+Class@{Zeta\+::\+Lifeform\+Class}}
+\subsubsection[{get\+Movement\+Behaviour}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Behaviour}$\ast$ Zeta\+::\+Lifeform\+Class\+::get\+Movement\+Behaviour (
+\begin{DoxyParamCaption}
+\item[{{\bf Lifeform} \&}]{owner}
+\end{DoxyParamCaption}
+) const}}\label{classZeta_1_1LifeformClass_a83a72d25a5124ca4160f55c84dc1a6e9}
+\hypertarget{classZeta_1_1LifeformClass_a1c4fec0e840f301224c3412f51046482}{\index{Zeta\+::\+Lifeform\+Class@{Zeta\+::\+Lifeform\+Class}!get\+On\+Click@{get\+On\+Click}}
+\index{get\+On\+Click@{get\+On\+Click}!Zeta\+::\+Lifeform\+Class@{Zeta\+::\+Lifeform\+Class}}
+\subsubsection[{get\+On\+Click}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Lua\+Functor}\& Zeta\+::\+Lifeform\+Class\+::get\+On\+Click (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1LifeformClass_a1c4fec0e840f301224c3412f51046482}
+\hypertarget{classZeta_1_1LifeformClass_a9e113478f4a990860fe2de198f59f24a}{\index{Zeta\+::\+Lifeform\+Class@{Zeta\+::\+Lifeform\+Class}!get\+On\+Collision@{get\+On\+Collision}}
+\index{get\+On\+Collision@{get\+On\+Collision}!Zeta\+::\+Lifeform\+Class@{Zeta\+::\+Lifeform\+Class}}
+\subsubsection[{get\+On\+Collision}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Lua\+Functor}\& Zeta\+::\+Lifeform\+Class\+::get\+On\+Collision (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1LifeformClass_a9e113478f4a990860fe2de198f59f24a}
+\hypertarget{classZeta_1_1LifeformClass_ab55b76b464c8df908b1fb79495fa5828}{\index{Zeta\+::\+Lifeform\+Class@{Zeta\+::\+Lifeform\+Class}!get\+Stats@{get\+Stats}}
+\index{get\+Stats@{get\+Stats}!Zeta\+::\+Lifeform\+Class@{Zeta\+::\+Lifeform\+Class}}
+\subsubsection[{get\+Stats}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+Lifeform\+Class\+::get\+Stats (
+\begin{DoxyParamCaption}
+\item[{{\bf Z\+Map}$<$ std\+::string, {\bf Attribute} $>$ \&}]{stats}
+\end{DoxyParamCaption}
+) const}}\label{classZeta_1_1LifeformClass_ab55b76b464c8df908b1fb79495fa5828}
+\hypertarget{classZeta_1_1LifeformClass_a924311bd77f7ce2432d6cdea75411f0b}{\index{Zeta\+::\+Lifeform\+Class@{Zeta\+::\+Lifeform\+Class}!get\+Table@{get\+Table}}
+\index{get\+Table@{get\+Table}!Zeta\+::\+Lifeform\+Class@{Zeta\+::\+Lifeform\+Class}}
+\subsubsection[{get\+Table}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Lua\+Table}\& Zeta\+::\+Lifeform\+Class\+::get\+Table (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1LifeformClass_a924311bd77f7ce2432d6cdea75411f0b}
+\hypertarget{classZeta_1_1LifeformClass_abcb3777fac723d397f8c1574a3a05f20}{\index{Zeta\+::\+Lifeform\+Class@{Zeta\+::\+Lifeform\+Class}!levelize\+Stats@{levelize\+Stats}}
+\index{levelize\+Stats@{levelize\+Stats}!Zeta\+::\+Lifeform\+Class@{Zeta\+::\+Lifeform\+Class}}
+\subsubsection[{levelize\+Stats}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+Lifeform\+Class\+::levelize\+Stats (
+\begin{DoxyParamCaption}
+\item[{float}]{level\+Multiplier = {\ttfamily 1.0f}}
+\end{DoxyParamCaption}
+)}}\label{classZeta_1_1LifeformClass_abcb3777fac723d397f8c1574a3a05f20}
+\hypertarget{classZeta_1_1LifeformClass_a114502043e6f3740306a8a5dcf315d9b}{\index{Zeta\+::\+Lifeform\+Class@{Zeta\+::\+Lifeform\+Class}!levelize\+Stats@{levelize\+Stats}}
+\index{levelize\+Stats@{levelize\+Stats}!Zeta\+::\+Lifeform\+Class@{Zeta\+::\+Lifeform\+Class}}
+\subsubsection[{levelize\+Stats}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+Lifeform\+Class\+::levelize\+Stats (
+\begin{DoxyParamCaption}
+\item[{float}]{multiplier, }
+\item[{int}]{lower\+Bound, }
+\item[{int}]{upper\+Bound}
+\end{DoxyParamCaption}
+)}}\label{classZeta_1_1LifeformClass_a114502043e6f3740306a8a5dcf315d9b}
+\hypertarget{classZeta_1_1LifeformClass_a138bb3ccc7206b6db397cb680ed37aba}{\index{Zeta\+::\+Lifeform\+Class@{Zeta\+::\+Lifeform\+Class}!set\+On\+Click@{set\+On\+Click}}
+\index{set\+On\+Click@{set\+On\+Click}!Zeta\+::\+Lifeform\+Class@{Zeta\+::\+Lifeform\+Class}}
+\subsubsection[{set\+On\+Click}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+Lifeform\+Class\+::set\+On\+Click (
+\begin{DoxyParamCaption}
+\item[{{\bf lua\+\_\+\+Object}}]{func}
+\end{DoxyParamCaption}
+)}}\label{classZeta_1_1LifeformClass_a138bb3ccc7206b6db397cb680ed37aba}
+\hypertarget{classZeta_1_1LifeformClass_a92551e5adaa9a0ee11b46e89e8045f80}{\index{Zeta\+::\+Lifeform\+Class@{Zeta\+::\+Lifeform\+Class}!set\+On\+Collision@{set\+On\+Collision}}
+\index{set\+On\+Collision@{set\+On\+Collision}!Zeta\+::\+Lifeform\+Class@{Zeta\+::\+Lifeform\+Class}}
+\subsubsection[{set\+On\+Collision}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+Lifeform\+Class\+::set\+On\+Collision (
+\begin{DoxyParamCaption}
+\item[{{\bf lua\+\_\+\+Object}}]{func}
+\end{DoxyParamCaption}
+)}}\label{classZeta_1_1LifeformClass_a92551e5adaa9a0ee11b46e89e8045f80}
+\hypertarget{classZeta_1_1LifeformClass_aeb670ab1c93460280608ce915b899071}{\index{Zeta\+::\+Lifeform\+Class@{Zeta\+::\+Lifeform\+Class}!set\+Table@{set\+Table}}
+\index{set\+Table@{set\+Table}!Zeta\+::\+Lifeform\+Class@{Zeta\+::\+Lifeform\+Class}}
+\subsubsection[{set\+Table}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+Lifeform\+Class\+::set\+Table (
+\begin{DoxyParamCaption}
+\item[{{\bf lua\+\_\+\+Object}}]{table}
+\end{DoxyParamCaption}
+)}}\label{classZeta_1_1LifeformClass_aeb670ab1c93460280608ce915b899071}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classZeta_1_1LifeformClass_a002f20ed3a907ee996b35fbd79d6fb5d}{\index{Zeta\+::\+Lifeform\+Class@{Zeta\+::\+Lifeform\+Class}!abilities@{abilities}}
+\index{abilities@{abilities}!Zeta\+::\+Lifeform\+Class@{Zeta\+::\+Lifeform\+Class}}
+\subsubsection[{abilities}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Z\+Map}$<$std\+::string, {\bf Lifeform\+Ability}$>$ Zeta\+::\+Lifeform\+Class\+::abilities\hspace{0.3cm}{\ttfamily [mutable]}, {\ttfamily [private]}}}\label{classZeta_1_1LifeformClass_a002f20ed3a907ee996b35fbd79d6fb5d}
+\hypertarget{classZeta_1_1LifeformClass_a0857894140b809d306d5ae432988e859}{\index{Zeta\+::\+Lifeform\+Class@{Zeta\+::\+Lifeform\+Class}!anim\+Class@{anim\+Class}}
+\index{anim\+Class@{anim\+Class}!Zeta\+::\+Lifeform\+Class@{Zeta\+::\+Lifeform\+Class}}
+\subsubsection[{anim\+Class}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string Zeta\+::\+Lifeform\+Class\+::anim\+Class\hspace{0.3cm}{\ttfamily [private]}}}\label{classZeta_1_1LifeformClass_a0857894140b809d306d5ae432988e859}
+\hypertarget{classZeta_1_1LifeformClass_abe8c654163027c7b4810c115ee40a928}{\index{Zeta\+::\+Lifeform\+Class@{Zeta\+::\+Lifeform\+Class}!child\+Parameters@{child\+Parameters}}
+\index{child\+Parameters@{child\+Parameters}!Zeta\+::\+Lifeform\+Class@{Zeta\+::\+Lifeform\+Class}}
+\subsubsection[{child\+Parameters}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<${\bf Child\+Params}$>$ Zeta\+::\+Lifeform\+Class\+::child\+Parameters\hspace{0.3cm}{\ttfamily [private]}}}\label{classZeta_1_1LifeformClass_abe8c654163027c7b4810c115ee40a928}
+\hypertarget{classZeta_1_1LifeformClass_a9784dbf810a8da0ede8893bf5dc7f6ba}{\index{Zeta\+::\+Lifeform\+Class@{Zeta\+::\+Lifeform\+Class}!faction@{faction}}
+\index{faction@{faction}!Zeta\+::\+Lifeform\+Class@{Zeta\+::\+Lifeform\+Class}}
+\subsubsection[{faction}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Faction}$\ast$ Zeta\+::\+Lifeform\+Class\+::faction\hspace{0.3cm}{\ttfamily [private]}}}\label{classZeta_1_1LifeformClass_a9784dbf810a8da0ede8893bf5dc7f6ba}
+\hypertarget{classZeta_1_1LifeformClass_a2a2d0934222b4115f89c295f31f43f09}{\index{Zeta\+::\+Lifeform\+Class@{Zeta\+::\+Lifeform\+Class}!generic\+A\+I@{generic\+A\+I}}
+\index{generic\+A\+I@{generic\+A\+I}!Zeta\+::\+Lifeform\+Class@{Zeta\+::\+Lifeform\+Class}}
+\subsubsection[{generic\+A\+I}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Behaviour\+Class}$\ast$ Zeta\+::\+Lifeform\+Class\+::generic\+A\+I\hspace{0.3cm}{\ttfamily [private]}}}\label{classZeta_1_1LifeformClass_a2a2d0934222b4115f89c295f31f43f09}
+\hypertarget{classZeta_1_1LifeformClass_ab00327ecb94395422bc02d9ff5c7bfb3}{\index{Zeta\+::\+Lifeform\+Class@{Zeta\+::\+Lifeform\+Class}!level@{level}}
+\index{level@{level}!Zeta\+::\+Lifeform\+Class@{Zeta\+::\+Lifeform\+Class}}
+\subsubsection[{level}]{\setlength{\rightskip}{0pt plus 5cm}int Zeta\+::\+Lifeform\+Class\+::level\hspace{0.3cm}{\ttfamily [private]}}}\label{classZeta_1_1LifeformClass_ab00327ecb94395422bc02d9ff5c7bfb3}
+\hypertarget{classZeta_1_1LifeformClass_aea28cfcaa64c28804ca61c4a29916380}{\index{Zeta\+::\+Lifeform\+Class@{Zeta\+::\+Lifeform\+Class}!lifeform\+\_\+name@{lifeform\+\_\+name}}
+\index{lifeform\+\_\+name@{lifeform\+\_\+name}!Zeta\+::\+Lifeform\+Class@{Zeta\+::\+Lifeform\+Class}}
+\subsubsection[{lifeform\+\_\+name}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string Zeta\+::\+Lifeform\+Class\+::lifeform\+\_\+name\hspace{0.3cm}{\ttfamily [private]}}}\label{classZeta_1_1LifeformClass_aea28cfcaa64c28804ca61c4a29916380}
+\hypertarget{classZeta_1_1LifeformClass_af30b98b4fe2f81cb08c053539625ddca}{\index{Zeta\+::\+Lifeform\+Class@{Zeta\+::\+Lifeform\+Class}!lua\+Abilities@{lua\+Abilities}}
+\index{lua\+Abilities@{lua\+Abilities}!Zeta\+::\+Lifeform\+Class@{Zeta\+::\+Lifeform\+Class}}
+\subsubsection[{lua\+Abilities}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<${\bf Lua\+Ability}$>$ Zeta\+::\+Lifeform\+Class\+::lua\+Abilities\hspace{0.3cm}{\ttfamily [mutable]}, {\ttfamily [private]}}}\label{classZeta_1_1LifeformClass_af30b98b4fe2f81cb08c053539625ddca}
+\hypertarget{classZeta_1_1LifeformClass_a2bb480c69b4b233f19ecc8e5b01c426e}{\index{Zeta\+::\+Lifeform\+Class@{Zeta\+::\+Lifeform\+Class}!movement\+A\+I@{movement\+A\+I}}
+\index{movement\+A\+I@{movement\+A\+I}!Zeta\+::\+Lifeform\+Class@{Zeta\+::\+Lifeform\+Class}}
+\subsubsection[{movement\+A\+I}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Behaviour\+Class}$\ast$ Zeta\+::\+Lifeform\+Class\+::movement\+A\+I\hspace{0.3cm}{\ttfamily [private]}}}\label{classZeta_1_1LifeformClass_a2bb480c69b4b233f19ecc8e5b01c426e}
+\hypertarget{classZeta_1_1LifeformClass_a47cd54e7ddee3d1da5413b2d30f77b40}{\index{Zeta\+::\+Lifeform\+Class@{Zeta\+::\+Lifeform\+Class}!on\+Click\+F@{on\+Click\+F}}
+\index{on\+Click\+F@{on\+Click\+F}!Zeta\+::\+Lifeform\+Class@{Zeta\+::\+Lifeform\+Class}}
+\subsubsection[{on\+Click\+F}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Lua\+Functor} Zeta\+::\+Lifeform\+Class\+::on\+Click\+F\hspace{0.3cm}{\ttfamily [private]}}}\label{classZeta_1_1LifeformClass_a47cd54e7ddee3d1da5413b2d30f77b40}
+\hypertarget{classZeta_1_1LifeformClass_a13a27238c6107f52ec96528a36e783b4}{\index{Zeta\+::\+Lifeform\+Class@{Zeta\+::\+Lifeform\+Class}!on\+Collision\+F@{on\+Collision\+F}}
+\index{on\+Collision\+F@{on\+Collision\+F}!Zeta\+::\+Lifeform\+Class@{Zeta\+::\+Lifeform\+Class}}
+\subsubsection[{on\+Collision\+F}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Lua\+Functor} Zeta\+::\+Lifeform\+Class\+::on\+Collision\+F\hspace{0.3cm}{\ttfamily [private]}}}\label{classZeta_1_1LifeformClass_a13a27238c6107f52ec96528a36e783b4}
+\hypertarget{classZeta_1_1LifeformClass_a4451d269f7dc4c5544d8b89b63a420ca}{\index{Zeta\+::\+Lifeform\+Class@{Zeta\+::\+Lifeform\+Class}!stats@{stats}}
+\index{stats@{stats}!Zeta\+::\+Lifeform\+Class@{Zeta\+::\+Lifeform\+Class}}
+\subsubsection[{stats}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Z\+Map}$<$std\+::string, std\+::uniform\+\_\+int\+\_\+distribution$<$int$>$ $>$ Zeta\+::\+Lifeform\+Class\+::stats\hspace{0.3cm}{\ttfamily [mutable]}, {\ttfamily [private]}}}\label{classZeta_1_1LifeformClass_a4451d269f7dc4c5544d8b89b63a420ca}
+\hypertarget{classZeta_1_1LifeformClass_aa8731df77ae7bd670fea69e182266dd3}{\index{Zeta\+::\+Lifeform\+Class@{Zeta\+::\+Lifeform\+Class}!table@{table}}
+\index{table@{table}!Zeta\+::\+Lifeform\+Class@{Zeta\+::\+Lifeform\+Class}}
+\subsubsection[{table}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Lua\+Table} Zeta\+::\+Lifeform\+Class\+::table\hspace{0.3cm}{\ttfamily [private]}}}\label{classZeta_1_1LifeformClass_aa8731df77ae7bd670fea69e182266dd3}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Zeta/\+Core/\+R\+P\+G\+Classes/\hyperlink{LifeformClass_8hpp}{Lifeform\+Class.\+hpp}\end{DoxyCompactItemize}

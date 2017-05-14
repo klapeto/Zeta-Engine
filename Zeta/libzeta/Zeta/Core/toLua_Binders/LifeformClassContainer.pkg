@@ -1,0 +1,10 @@
+$#include <Zeta/Core/RPGClasses/LifeformClassContainer.hpp>
+
+class LifeformClassContainer {
+public:
+
+	LifeformClass& get();
+
+	LifeformClassContainer(const std::string& path);
+	~LifeformClassContainer();
+};

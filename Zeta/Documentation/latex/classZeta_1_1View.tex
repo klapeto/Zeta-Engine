@@ -1,0 +1,301 @@
+\hypertarget{classZeta_1_1View}{\section{Zeta\+:\+:View Class Reference}
+\label{classZeta_1_1View}\index{Zeta\+::\+View@{Zeta\+::\+View}}
+}
+
+
+{\ttfamily \#include $<$View.\+hpp$>$}
+
+
+
+Inheritance diagram for Zeta\+:\+:View\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=176pt]{classZeta_1_1View__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Zeta\+:\+:View\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classZeta_1_1View__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classZeta_1_1View_af4c0e58457aa46622246ddd7f465ccd6}{set\+Position} (\hyperlink{namespaceZeta_a1e0a1265f9b3bd3075fb0fabd39088ba}{Float} x, \hyperlink{namespaceZeta_a1e0a1265f9b3bd3075fb0fabd39088ba}{Float} y)
+\item 
+\hyperlink{classZeta_1_1Vector2}{Vector2} \& \hyperlink{classZeta_1_1View_a25dd04388b710e42f53549f18f5e5a90}{get\+Position} ()
+\item 
+void \hyperlink{classZeta_1_1View_a0a02a11d7f48361a35de1a61db622569}{offset\+Position} (\hyperlink{namespaceZeta_a1e0a1265f9b3bd3075fb0fabd39088ba}{Float} \hyperlink{classZeta_1_1View_adf5ca5e43a40a4632feffd60ce8d254d}{dx}, \hyperlink{namespaceZeta_a1e0a1265f9b3bd3075fb0fabd39088ba}{Float} \hyperlink{classZeta_1_1View_aceed4f0c37e9cd9a8a94aee93e3f4fbc}{dy})
+\item 
+void \hyperlink{classZeta_1_1View_ac297e2c57031f34b147e1550eebc3e50}{resize} (int width, int height)
+\item 
+\hyperlink{namespaceZeta_a1e0a1265f9b3bd3075fb0fabd39088ba}{Float} \hyperlink{classZeta_1_1View_a00bf63e3930cf0f9ff632488fa6788bc}{get\+X} () const 
+\item 
+\hyperlink{namespaceZeta_a1e0a1265f9b3bd3075fb0fabd39088ba}{Float} \hyperlink{classZeta_1_1View_a85b546983f9dabc964e3e727a29494c3}{get\+Y} () const 
+\item 
+int \hyperlink{classZeta_1_1View_a47bd2aa4ba6934688fe41bada087a718}{get\+Width} () const 
+\item 
+int \hyperlink{classZeta_1_1View_ac1f616a0eb0ca5c8bdff96cc4ddbb419}{get\+Height} () const 
+\item 
+bool \hyperlink{classZeta_1_1View_a9fed1802212e18237a44280c39071f8e}{is\+In\+View} (const \hyperlink{classZeta_1_1Object}{Object} \&obj) const 
+\item 
+\hyperlink{namespaceZeta_a1e0a1265f9b3bd3075fb0fabd39088ba}{Float} \hyperlink{classZeta_1_1View_a1abe87e74687ed7640eb315427a4db34}{get\+D\+X} () const 
+\item 
+\hyperlink{namespaceZeta_a1e0a1265f9b3bd3075fb0fabd39088ba}{Float} \hyperlink{classZeta_1_1View_a43152185d20ec0b21963f515505bcc2b}{get\+D\+Y} () const 
+\item 
+void \hyperlink{classZeta_1_1View_aee07f13e10c7f27af10e8fd8f0761201}{reset\+Offests} ()
+\item 
+void \hyperlink{classZeta_1_1View_ab607b1c586cf4060d0883cf82c8b9bc9}{push\+To\+Lua} (lua\+\_\+\+State $\ast$lstate)
+\item 
+\hyperlink{classZeta_1_1View_a6988bffe196af761a4501d0e43ce8e3f}{View} ()
+\item 
+\hyperlink{classZeta_1_1View_ab6dae38a92c2ee6af3bbe2b1f0f9ecfe}{$\sim$\+View} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classZeta_1_1Rectangle}{Rectangle} \hyperlink{classZeta_1_1View_ac851c9951abf6517e3d1d6f431ee9e24}{view\+Rect}
+\item 
+\hyperlink{namespaceZeta_a1e0a1265f9b3bd3075fb0fabd39088ba}{Float} \hyperlink{classZeta_1_1View_adf5ca5e43a40a4632feffd60ce8d254d}{dx}
+\item 
+\hyperlink{namespaceZeta_a1e0a1265f9b3bd3075fb0fabd39088ba}{Float} \hyperlink{classZeta_1_1View_aceed4f0c37e9cd9a8a94aee93e3f4fbc}{dy}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classZeta_1_1View_a6988bffe196af761a4501d0e43ce8e3f}{\index{Zeta\+::\+View@{Zeta\+::\+View}!View@{View}}
+\index{View@{View}!Zeta\+::\+View@{Zeta\+::\+View}}
+\subsubsection[{View}]{\setlength{\rightskip}{0pt plus 5cm}Zeta\+::\+View\+::\+View (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classZeta_1_1View_a6988bffe196af761a4501d0e43ce8e3f}
+\hypertarget{classZeta_1_1View_ab6dae38a92c2ee6af3bbe2b1f0f9ecfe}{\index{Zeta\+::\+View@{Zeta\+::\+View}!````~View@{$\sim$\+View}}
+\index{````~View@{$\sim$\+View}!Zeta\+::\+View@{Zeta\+::\+View}}
+\subsubsection[{$\sim$\+View}]{\setlength{\rightskip}{0pt plus 5cm}Zeta\+::\+View\+::$\sim$\+View (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classZeta_1_1View_ab6dae38a92c2ee6af3bbe2b1f0f9ecfe}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classZeta_1_1View_a1abe87e74687ed7640eb315427a4db34}{\index{Zeta\+::\+View@{Zeta\+::\+View}!get\+D\+X@{get\+D\+X}}
+\index{get\+D\+X@{get\+D\+X}!Zeta\+::\+View@{Zeta\+::\+View}}
+\subsubsection[{get\+D\+X}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Float} Zeta\+::\+View\+::get\+D\+X (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1View_a1abe87e74687ed7640eb315427a4db34}
+\hypertarget{classZeta_1_1View_a43152185d20ec0b21963f515505bcc2b}{\index{Zeta\+::\+View@{Zeta\+::\+View}!get\+D\+Y@{get\+D\+Y}}
+\index{get\+D\+Y@{get\+D\+Y}!Zeta\+::\+View@{Zeta\+::\+View}}
+\subsubsection[{get\+D\+Y}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Float} Zeta\+::\+View\+::get\+D\+Y (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1View_a43152185d20ec0b21963f515505bcc2b}
+\hypertarget{classZeta_1_1View_ac1f616a0eb0ca5c8bdff96cc4ddbb419}{\index{Zeta\+::\+View@{Zeta\+::\+View}!get\+Height@{get\+Height}}
+\index{get\+Height@{get\+Height}!Zeta\+::\+View@{Zeta\+::\+View}}
+\subsubsection[{get\+Height}]{\setlength{\rightskip}{0pt plus 5cm}int Zeta\+::\+View\+::get\+Height (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1View_ac1f616a0eb0ca5c8bdff96cc4ddbb419}
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classZeta_1_1View_ac1f616a0eb0ca5c8bdff96cc4ddbb419_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classZeta_1_1View_a25dd04388b710e42f53549f18f5e5a90}{\index{Zeta\+::\+View@{Zeta\+::\+View}!get\+Position@{get\+Position}}
+\index{get\+Position@{get\+Position}!Zeta\+::\+View@{Zeta\+::\+View}}
+\subsubsection[{get\+Position}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector2}\& Zeta\+::\+View\+::get\+Position (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1View_a25dd04388b710e42f53549f18f5e5a90}
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classZeta_1_1View_a25dd04388b710e42f53549f18f5e5a90_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classZeta_1_1View_a47bd2aa4ba6934688fe41bada087a718}{\index{Zeta\+::\+View@{Zeta\+::\+View}!get\+Width@{get\+Width}}
+\index{get\+Width@{get\+Width}!Zeta\+::\+View@{Zeta\+::\+View}}
+\subsubsection[{get\+Width}]{\setlength{\rightskip}{0pt plus 5cm}int Zeta\+::\+View\+::get\+Width (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1View_a47bd2aa4ba6934688fe41bada087a718}
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classZeta_1_1View_a47bd2aa4ba6934688fe41bada087a718_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classZeta_1_1View_a00bf63e3930cf0f9ff632488fa6788bc}{\index{Zeta\+::\+View@{Zeta\+::\+View}!get\+X@{get\+X}}
+\index{get\+X@{get\+X}!Zeta\+::\+View@{Zeta\+::\+View}}
+\subsubsection[{get\+X}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Float} Zeta\+::\+View\+::get\+X (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1View_a00bf63e3930cf0f9ff632488fa6788bc}
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classZeta_1_1View_a00bf63e3930cf0f9ff632488fa6788bc_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classZeta_1_1View_a85b546983f9dabc964e3e727a29494c3}{\index{Zeta\+::\+View@{Zeta\+::\+View}!get\+Y@{get\+Y}}
+\index{get\+Y@{get\+Y}!Zeta\+::\+View@{Zeta\+::\+View}}
+\subsubsection[{get\+Y}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Float} Zeta\+::\+View\+::get\+Y (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1View_a85b546983f9dabc964e3e727a29494c3}
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classZeta_1_1View_a85b546983f9dabc964e3e727a29494c3_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classZeta_1_1View_a9fed1802212e18237a44280c39071f8e}{\index{Zeta\+::\+View@{Zeta\+::\+View}!is\+In\+View@{is\+In\+View}}
+\index{is\+In\+View@{is\+In\+View}!Zeta\+::\+View@{Zeta\+::\+View}}
+\subsubsection[{is\+In\+View}]{\setlength{\rightskip}{0pt plus 5cm}bool Zeta\+::\+View\+::is\+In\+View (
+\begin{DoxyParamCaption}
+\item[{const {\bf Object} \&}]{obj}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1View_a9fed1802212e18237a44280c39071f8e}
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classZeta_1_1View_a9fed1802212e18237a44280c39071f8e_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classZeta_1_1View_a0a02a11d7f48361a35de1a61db622569}{\index{Zeta\+::\+View@{Zeta\+::\+View}!offset\+Position@{offset\+Position}}
+\index{offset\+Position@{offset\+Position}!Zeta\+::\+View@{Zeta\+::\+View}}
+\subsubsection[{offset\+Position}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+View\+::offset\+Position (
+\begin{DoxyParamCaption}
+\item[{{\bf Float}}]{dx, }
+\item[{{\bf Float}}]{dy}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1View_a0a02a11d7f48361a35de1a61db622569}
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classZeta_1_1View_a0a02a11d7f48361a35de1a61db622569_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classZeta_1_1View_ab607b1c586cf4060d0883cf82c8b9bc9}{\index{Zeta\+::\+View@{Zeta\+::\+View}!push\+To\+Lua@{push\+To\+Lua}}
+\index{push\+To\+Lua@{push\+To\+Lua}!Zeta\+::\+View@{Zeta\+::\+View}}
+\subsubsection[{push\+To\+Lua}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+View\+::push\+To\+Lua (
+\begin{DoxyParamCaption}
+\item[{lua\+\_\+\+State $\ast$}]{lstate}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classZeta_1_1View_ab607b1c586cf4060d0883cf82c8b9bc9}
+
+
+Implements \hyperlink{classZeta_1_1LuaPushable_a0380ec9cff11f749e8eb67b51b8f82fc}{Zeta\+::\+Lua\+Pushable}.
+
+\hypertarget{classZeta_1_1View_aee07f13e10c7f27af10e8fd8f0761201}{\index{Zeta\+::\+View@{Zeta\+::\+View}!reset\+Offests@{reset\+Offests}}
+\index{reset\+Offests@{reset\+Offests}!Zeta\+::\+View@{Zeta\+::\+View}}
+\subsubsection[{reset\+Offests}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+View\+::reset\+Offests (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1View_aee07f13e10c7f27af10e8fd8f0761201}
+\hypertarget{classZeta_1_1View_ac297e2c57031f34b147e1550eebc3e50}{\index{Zeta\+::\+View@{Zeta\+::\+View}!resize@{resize}}
+\index{resize@{resize}!Zeta\+::\+View@{Zeta\+::\+View}}
+\subsubsection[{resize}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+View\+::resize (
+\begin{DoxyParamCaption}
+\item[{int}]{width, }
+\item[{int}]{height}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1View_ac297e2c57031f34b147e1550eebc3e50}
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=338pt]{classZeta_1_1View_ac297e2c57031f34b147e1550eebc3e50_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classZeta_1_1View_af4c0e58457aa46622246ddd7f465ccd6}{\index{Zeta\+::\+View@{Zeta\+::\+View}!set\+Position@{set\+Position}}
+\index{set\+Position@{set\+Position}!Zeta\+::\+View@{Zeta\+::\+View}}
+\subsubsection[{set\+Position}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+View\+::set\+Position (
+\begin{DoxyParamCaption}
+\item[{{\bf Float}}]{x, }
+\item[{{\bf Float}}]{y}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1View_af4c0e58457aa46622246ddd7f465ccd6}
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classZeta_1_1View_af4c0e58457aa46622246ddd7f465ccd6_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classZeta_1_1View_adf5ca5e43a40a4632feffd60ce8d254d}{\index{Zeta\+::\+View@{Zeta\+::\+View}!dx@{dx}}
+\index{dx@{dx}!Zeta\+::\+View@{Zeta\+::\+View}}
+\subsubsection[{dx}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Float} Zeta\+::\+View\+::dx\hspace{0.3cm}{\ttfamily [protected]}}}\label{classZeta_1_1View_adf5ca5e43a40a4632feffd60ce8d254d}
+\hypertarget{classZeta_1_1View_aceed4f0c37e9cd9a8a94aee93e3f4fbc}{\index{Zeta\+::\+View@{Zeta\+::\+View}!dy@{dy}}
+\index{dy@{dy}!Zeta\+::\+View@{Zeta\+::\+View}}
+\subsubsection[{dy}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Float} Zeta\+::\+View\+::dy\hspace{0.3cm}{\ttfamily [protected]}}}\label{classZeta_1_1View_aceed4f0c37e9cd9a8a94aee93e3f4fbc}
+\hypertarget{classZeta_1_1View_ac851c9951abf6517e3d1d6f431ee9e24}{\index{Zeta\+::\+View@{Zeta\+::\+View}!view\+Rect@{view\+Rect}}
+\index{view\+Rect@{view\+Rect}!Zeta\+::\+View@{Zeta\+::\+View}}
+\subsubsection[{view\+Rect}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Rectangle} Zeta\+::\+View\+::view\+Rect\hspace{0.3cm}{\ttfamily [protected]}}}\label{classZeta_1_1View_ac851c9951abf6517e3d1d6f431ee9e24}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Zeta/\+Core/\hyperlink{View_8hpp}{View.\+hpp}\end{DoxyCompactItemize}

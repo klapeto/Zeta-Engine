@@ -1,0 +1,18 @@
+$#include <Zeta/Core/RPGClasses/ActiveAbility.hpp>
+
+class ActiveAbility: public Ability {
+public:
+
+	const ActiveAbilityClass& getClass() const;
+	void invokeProjectile(const std::string& name, Float x, Float y);
+	Float getRemainingCooldown() const;
+	Float getCastTime() const;
+	void setCastTime(Float castTime);
+	Float getCoolDown() const;
+	void setCoolDown(Float coolDown);
+	Float getManaCost() const;
+	void setManaCost(Float manaCost);
+	Float getRange() const;
+	void setRange(Float range);
+	void applyEffect(const std::string& name, Lifeform *target, int level);
+};

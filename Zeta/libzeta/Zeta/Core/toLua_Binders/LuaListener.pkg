@@ -1,0 +1,10 @@
+$#include <Zeta/Core/RPGClasses/LuaListener.hpp>
+
+class LuaListener {
+public:
+	void deactivate();
+	void activate();
+	LuaListener(lua_Object func, Zeta::WorldEvent::Type type);
+	LuaListener(const std::string& channel, lua_Object func);
+	~LuaListener();
+};

@@ -1,0 +1,172 @@
+\hypertarget{classZeta_1_1Animation}{\section{Zeta\+:\+:Animation Class Reference}
+\label{classZeta_1_1Animation}\index{Zeta\+::\+Animation@{Zeta\+::\+Animation}}
+}
+
+
+{\ttfamily \#include $<$Animation.\+hpp$>$}
+
+
+
+Collaboration diagram for Zeta\+:\+:Animation\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=269pt]{classZeta_1_1Animation__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+const std\+::string \& \hyperlink{classZeta_1_1Animation_a697aa8eb070668cec1f2e4d7b25df597}{get\+Name} () const 
+\item 
+void \hyperlink{classZeta_1_1Animation_a30ad50fa2e22482dcbaf3502376cc490}{set\+Name} (const std\+::string \&\hyperlink{classZeta_1_1Animation_ac532add4feb3dd5e33f722a8142aedd6}{name})
+\item 
+bool \hyperlink{classZeta_1_1Animation_aa57126967823aa208c75d84460caef3c}{is\+Looping} () const 
+\item 
+const \hyperlink{classZeta_1_1AnimationPack}{Animation\+Pack} \& \hyperlink{classZeta_1_1Animation_a076b235101d9accb1c700354a5d338a9}{get\+Animation\+Pack} () const 
+\item 
+int \hyperlink{classZeta_1_1Animation_a9db1e0875105a9ac926ffd6073c1e06c}{get\+Num\+Frames} () const 
+\item 
+const \hyperlink{classZeta_1_1Cell}{Cell} \& \hyperlink{classZeta_1_1Animation_abea6f68c17959f92e7c2ed184c1a8ba8}{get\+Frame} (unsigned int index) const 
+\item 
+void \hyperlink{classZeta_1_1Animation_a6c141b127a9d83d17959259dcb07c48b}{set} (xmlpp\+::\+Node $\ast$node, const \hyperlink{classZeta_1_1AnimationPack}{Animation\+Pack} \&parent)
+\item 
+\hyperlink{classZeta_1_1Animation_adb107c29b84109e5e6df6debc953acea}{Animation} (\hyperlink{classZeta_1_1Animation}{Animation} \&\&)=default
+\item 
+\hyperlink{classZeta_1_1Animation}{Animation} \& \hyperlink{classZeta_1_1Animation_a464caf337fc48417e1d0157cb8f98200}{operator=} (\hyperlink{classZeta_1_1Animation}{Animation} \&\&)=default
+\item 
+\hyperlink{classZeta_1_1Animation_a89a1e45fbeb6582448bcf878e1b20be7}{Animation} ()
+\item 
+\hyperlink{classZeta_1_1Animation_a7591b35b9b593b1f22316af9d1f081fb}{Animation} (xmlpp\+::\+Node $\ast$node, const \hyperlink{classZeta_1_1AnimationPack}{Animation\+Pack} \&parent)
+\item 
+virtual \hyperlink{classZeta_1_1Animation_a43a5f796d416cf2e8c3f5cd8153e4277}{$\sim$\+Animation} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \hyperlink{classZeta_1_1Animation_ac532add4feb3dd5e33f722a8142aedd6}{name}
+\item 
+std\+::vector$<$ \hyperlink{classZeta_1_1Cell}{Cell} $>$ \hyperlink{classZeta_1_1Animation_aa31ff21bcccd45e09ad6924087e9c1c7}{cells}
+\item 
+const \hyperlink{classZeta_1_1AnimationPack}{Animation\+Pack} $\ast$ \hyperlink{classZeta_1_1Animation_a2cbc0d0aac921dbc343ae864af112559}{parent\+Pack}
+\item 
+int \hyperlink{classZeta_1_1Animation_a6449ef440e5d9ce97187a00d32b637e5}{num\+\_\+\+Cells}
+\item 
+bool \hyperlink{classZeta_1_1Animation_af3097763657c74004f42843fdd6b577b}{loops}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classZeta_1_1Animation_adb107c29b84109e5e6df6debc953acea}{\index{Zeta\+::\+Animation@{Zeta\+::\+Animation}!Animation@{Animation}}
+\index{Animation@{Animation}!Zeta\+::\+Animation@{Zeta\+::\+Animation}}
+\subsubsection[{Animation}]{\setlength{\rightskip}{0pt plus 5cm}Zeta\+::\+Animation\+::\+Animation (
+\begin{DoxyParamCaption}
+\item[{{\bf Animation} \&\&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [default]}}}\label{classZeta_1_1Animation_adb107c29b84109e5e6df6debc953acea}
+\hypertarget{classZeta_1_1Animation_a89a1e45fbeb6582448bcf878e1b20be7}{\index{Zeta\+::\+Animation@{Zeta\+::\+Animation}!Animation@{Animation}}
+\index{Animation@{Animation}!Zeta\+::\+Animation@{Zeta\+::\+Animation}}
+\subsubsection[{Animation}]{\setlength{\rightskip}{0pt plus 5cm}Zeta\+::\+Animation\+::\+Animation (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classZeta_1_1Animation_a89a1e45fbeb6582448bcf878e1b20be7}
+\hypertarget{classZeta_1_1Animation_a7591b35b9b593b1f22316af9d1f081fb}{\index{Zeta\+::\+Animation@{Zeta\+::\+Animation}!Animation@{Animation}}
+\index{Animation@{Animation}!Zeta\+::\+Animation@{Zeta\+::\+Animation}}
+\subsubsection[{Animation}]{\setlength{\rightskip}{0pt plus 5cm}Zeta\+::\+Animation\+::\+Animation (
+\begin{DoxyParamCaption}
+\item[{xmlpp\+::\+Node $\ast$}]{node, }
+\item[{const {\bf Animation\+Pack} \&}]{parent}
+\end{DoxyParamCaption}
+)}}\label{classZeta_1_1Animation_a7591b35b9b593b1f22316af9d1f081fb}
+\hypertarget{classZeta_1_1Animation_a43a5f796d416cf2e8c3f5cd8153e4277}{\index{Zeta\+::\+Animation@{Zeta\+::\+Animation}!````~Animation@{$\sim$\+Animation}}
+\index{````~Animation@{$\sim$\+Animation}!Zeta\+::\+Animation@{Zeta\+::\+Animation}}
+\subsubsection[{$\sim$\+Animation}]{\setlength{\rightskip}{0pt plus 5cm}virtual Zeta\+::\+Animation\+::$\sim$\+Animation (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classZeta_1_1Animation_a43a5f796d416cf2e8c3f5cd8153e4277}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classZeta_1_1Animation_a076b235101d9accb1c700354a5d338a9}{\index{Zeta\+::\+Animation@{Zeta\+::\+Animation}!get\+Animation\+Pack@{get\+Animation\+Pack}}
+\index{get\+Animation\+Pack@{get\+Animation\+Pack}!Zeta\+::\+Animation@{Zeta\+::\+Animation}}
+\subsubsection[{get\+Animation\+Pack}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Animation\+Pack}\& Zeta\+::\+Animation\+::get\+Animation\+Pack (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1Animation_a076b235101d9accb1c700354a5d338a9}
+\hypertarget{classZeta_1_1Animation_abea6f68c17959f92e7c2ed184c1a8ba8}{\index{Zeta\+::\+Animation@{Zeta\+::\+Animation}!get\+Frame@{get\+Frame}}
+\index{get\+Frame@{get\+Frame}!Zeta\+::\+Animation@{Zeta\+::\+Animation}}
+\subsubsection[{get\+Frame}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Cell}\& Zeta\+::\+Animation\+::get\+Frame (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{index}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1Animation_abea6f68c17959f92e7c2ed184c1a8ba8}
+\hypertarget{classZeta_1_1Animation_a697aa8eb070668cec1f2e4d7b25df597}{\index{Zeta\+::\+Animation@{Zeta\+::\+Animation}!get\+Name@{get\+Name}}
+\index{get\+Name@{get\+Name}!Zeta\+::\+Animation@{Zeta\+::\+Animation}}
+\subsubsection[{get\+Name}]{\setlength{\rightskip}{0pt plus 5cm}const std\+::string\& Zeta\+::\+Animation\+::get\+Name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1Animation_a697aa8eb070668cec1f2e4d7b25df597}
+\hypertarget{classZeta_1_1Animation_a9db1e0875105a9ac926ffd6073c1e06c}{\index{Zeta\+::\+Animation@{Zeta\+::\+Animation}!get\+Num\+Frames@{get\+Num\+Frames}}
+\index{get\+Num\+Frames@{get\+Num\+Frames}!Zeta\+::\+Animation@{Zeta\+::\+Animation}}
+\subsubsection[{get\+Num\+Frames}]{\setlength{\rightskip}{0pt plus 5cm}int Zeta\+::\+Animation\+::get\+Num\+Frames (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1Animation_a9db1e0875105a9ac926ffd6073c1e06c}
+\hypertarget{classZeta_1_1Animation_aa57126967823aa208c75d84460caef3c}{\index{Zeta\+::\+Animation@{Zeta\+::\+Animation}!is\+Looping@{is\+Looping}}
+\index{is\+Looping@{is\+Looping}!Zeta\+::\+Animation@{Zeta\+::\+Animation}}
+\subsubsection[{is\+Looping}]{\setlength{\rightskip}{0pt plus 5cm}bool Zeta\+::\+Animation\+::is\+Looping (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1Animation_aa57126967823aa208c75d84460caef3c}
+\hypertarget{classZeta_1_1Animation_a464caf337fc48417e1d0157cb8f98200}{\index{Zeta\+::\+Animation@{Zeta\+::\+Animation}!operator=@{operator=}}
+\index{operator=@{operator=}!Zeta\+::\+Animation@{Zeta\+::\+Animation}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Animation}\& Zeta\+::\+Animation\+::operator= (
+\begin{DoxyParamCaption}
+\item[{{\bf Animation} \&\&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [default]}}}\label{classZeta_1_1Animation_a464caf337fc48417e1d0157cb8f98200}
+\hypertarget{classZeta_1_1Animation_a6c141b127a9d83d17959259dcb07c48b}{\index{Zeta\+::\+Animation@{Zeta\+::\+Animation}!set@{set}}
+\index{set@{set}!Zeta\+::\+Animation@{Zeta\+::\+Animation}}
+\subsubsection[{set}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+Animation\+::set (
+\begin{DoxyParamCaption}
+\item[{xmlpp\+::\+Node $\ast$}]{node, }
+\item[{const {\bf Animation\+Pack} \&}]{parent}
+\end{DoxyParamCaption}
+)}}\label{classZeta_1_1Animation_a6c141b127a9d83d17959259dcb07c48b}
+\hypertarget{classZeta_1_1Animation_a30ad50fa2e22482dcbaf3502376cc490}{\index{Zeta\+::\+Animation@{Zeta\+::\+Animation}!set\+Name@{set\+Name}}
+\index{set\+Name@{set\+Name}!Zeta\+::\+Animation@{Zeta\+::\+Animation}}
+\subsubsection[{set\+Name}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+Animation\+::set\+Name (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1Animation_a30ad50fa2e22482dcbaf3502376cc490}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classZeta_1_1Animation_aa31ff21bcccd45e09ad6924087e9c1c7}{\index{Zeta\+::\+Animation@{Zeta\+::\+Animation}!cells@{cells}}
+\index{cells@{cells}!Zeta\+::\+Animation@{Zeta\+::\+Animation}}
+\subsubsection[{cells}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<${\bf Cell}$>$ Zeta\+::\+Animation\+::cells\hspace{0.3cm}{\ttfamily [protected]}}}\label{classZeta_1_1Animation_aa31ff21bcccd45e09ad6924087e9c1c7}
+\hypertarget{classZeta_1_1Animation_af3097763657c74004f42843fdd6b577b}{\index{Zeta\+::\+Animation@{Zeta\+::\+Animation}!loops@{loops}}
+\index{loops@{loops}!Zeta\+::\+Animation@{Zeta\+::\+Animation}}
+\subsubsection[{loops}]{\setlength{\rightskip}{0pt plus 5cm}bool Zeta\+::\+Animation\+::loops\hspace{0.3cm}{\ttfamily [protected]}}}\label{classZeta_1_1Animation_af3097763657c74004f42843fdd6b577b}
+\hypertarget{classZeta_1_1Animation_ac532add4feb3dd5e33f722a8142aedd6}{\index{Zeta\+::\+Animation@{Zeta\+::\+Animation}!name@{name}}
+\index{name@{name}!Zeta\+::\+Animation@{Zeta\+::\+Animation}}
+\subsubsection[{name}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string Zeta\+::\+Animation\+::name\hspace{0.3cm}{\ttfamily [protected]}}}\label{classZeta_1_1Animation_ac532add4feb3dd5e33f722a8142aedd6}
+\hypertarget{classZeta_1_1Animation_a6449ef440e5d9ce97187a00d32b637e5}{\index{Zeta\+::\+Animation@{Zeta\+::\+Animation}!num\+\_\+\+Cells@{num\+\_\+\+Cells}}
+\index{num\+\_\+\+Cells@{num\+\_\+\+Cells}!Zeta\+::\+Animation@{Zeta\+::\+Animation}}
+\subsubsection[{num\+\_\+\+Cells}]{\setlength{\rightskip}{0pt plus 5cm}int Zeta\+::\+Animation\+::num\+\_\+\+Cells\hspace{0.3cm}{\ttfamily [protected]}}}\label{classZeta_1_1Animation_a6449ef440e5d9ce97187a00d32b637e5}
+\hypertarget{classZeta_1_1Animation_a2cbc0d0aac921dbc343ae864af112559}{\index{Zeta\+::\+Animation@{Zeta\+::\+Animation}!parent\+Pack@{parent\+Pack}}
+\index{parent\+Pack@{parent\+Pack}!Zeta\+::\+Animation@{Zeta\+::\+Animation}}
+\subsubsection[{parent\+Pack}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Animation\+Pack}$\ast$ Zeta\+::\+Animation\+::parent\+Pack\hspace{0.3cm}{\ttfamily [protected]}}}\label{classZeta_1_1Animation_a2cbc0d0aac921dbc343ae864af112559}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Zeta/\+Core/\+Animation\+Classes/\hyperlink{Animation_8hpp}{Animation.\+hpp}\end{DoxyCompactItemize}

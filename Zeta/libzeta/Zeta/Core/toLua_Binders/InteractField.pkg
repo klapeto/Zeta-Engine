@@ -1,0 +1,6 @@
+$#include <Zeta/Core/MapClasses/InteractField.hpp>
+
+class InteractField: public Object {
+public:
+
+};

@@ -1,0 +1,135 @@
+.TH "Zeta::GUIManager" 3 "Wed Feb 10 2016" "Zeta" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Zeta::GUIManager \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <GUIManager\&.hpp>\fP
+.PP
+Inherits \fBZeta::Updateable\fP, \fBZeta::Drawable\fP, \fBZeta::SystemEventListener\fP, and \fBZeta::SingleInstanced< GUIManager >\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBhandleEvent\fP (\fBEvent\fP &event)"
+.br
+.ti -1c
+.RI "void \fBupdate\fP (\fBFloat\fP elapsedTime)"
+.br
+.ti -1c
+.RI "void \fBdraw\fP (\fBFloat\fP x, \fBFloat\fP y, \fBFloat\fP rotation=0\&.0f, Float scale=1\&.0f) const "
+.br
+.ti -1c
+.RI "void \fBdisplayResized\fP (int width, int height)"
+.br
+.ti -1c
+.RI "void \fBinitializeContext\fP (const std::string &settingsPath)"
+.br
+.ti -1c
+.RI "void \fBdestroyContext\fP ()"
+.br
+.ti -1c
+.RI "\fB~GUIManager\fP ()"
+.br
+.in -1c
+.SS "Private Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBGUIManager\fP ()"
+.br
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "CEGUI::GUIContext * \fBcontext\fP"
+.br
+.ti -1c
+.RI "CEGUI::System * \fBsys\fP"
+.br
+.in -1c
+.SS "Friends"
+
+.in +1c
+.ti -1c
+.RI "class \fBSingleInstanced\fP"
+.br
+.in -1c
+.SS "Additional Inherited Members"
+.SH "Detailed Description"
+.PP 
+Singleton Class to handle the GUI \fBSystem\fP 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Zeta::GUIManager::~GUIManager ()"
+
+.SS "Zeta::GUIManager::GUIManager ()\fC [private]\fP"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "void Zeta::GUIManager::destroyContext ()"
+
+.SS "void Zeta::GUIManager::displayResized (intwidth, intheight)"
+Notifies the GUI that Main Window Size has changed 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIwidth\fP the New Width 
+.br
+\fIheight\fP the New Height 
+.RE
+.PP
+
+.SS "void Zeta::GUIManager::draw (\fBFloat\fPx, \fBFloat\fPy, \fBFloat\fProtation = \fC0\&.0f\fP, \fBFloat\fPscale = \fC1\&.0f\fP) const\fC [virtual]\fP"
+Requests the GUI \fBSystem\fP to draw on screen 
+.PP
+Implements \fBZeta::Drawable\fP\&.
+.SS "void Zeta::GUIManager::handleEvent (\fBEvent\fP &event)\fC [virtual]\fP"
+Forward the \fBEvent\fP to GUI to handle it 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIevent\fP the \fBEvent\fP to forward\&. 
+.RE
+.PP
+
+.PP
+Implements \fBZeta::SystemEventListener\fP\&.
+.SS "void Zeta::GUIManager::initializeContext (const std::string &settingsPath)"
+Initializes the GUI with the provided settings file 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIsettingsPath\fP the Configuration \fBFile\fP 
+.RE
+.PP
+
+.SS "void Zeta::GUIManager::update (\fBFloat\fPelapsedTime)\fC [virtual]\fP"
+Notifies the GUI that time has passes since last call of this function 
+.PP
+\fBParameters:\fP
+.RS 4
+\fItime\fP the time passed\&. 
+.RE
+.PP
+
+.PP
+Implements \fBZeta::Updateable\fP\&.
+.SH "Friends And Related Function Documentation"
+.PP 
+.SS "friend class \fBSingleInstanced\fP\fC [friend]\fP"
+
+.SH "Member Data Documentation"
+.PP 
+.SS "CEGUI::GUIContext* Zeta::GUIManager::context\fC [private]\fP"
+
+.SS "CEGUI::System* Zeta::GUIManager::sys\fC [private]\fP"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Zeta from the source code\&.

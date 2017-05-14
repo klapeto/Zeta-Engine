@@ -1,0 +1,55 @@
+.TH "Zeta::Drawable" 3 "Wed Feb 10 2016" "Zeta" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Zeta::Drawable \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Drawable\&.hpp>\fP
+.PP
+Inherited by \fBZeta::AnimationHandler\fP, \fBZeta::AnimationPlayer\fP, \fBZeta::Bitmap\fP, \fBZeta::Cell\fP, \fBZeta::Cell::Sprite\fP, \fBZeta::GUIManager\fP, \fBZeta::Object\fP, \fBZeta::Shape\fP, \fBZeta::StaticQuadtree\fP, \fBZeta::Tile\fP, and \fBZeta::WorldManager\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "virtual void \fBdraw\fP (\fBFloat\fP x, \fBFloat\fP y, \fBFloat\fP rotation=0\&.0f, Float scale=1\&.0f) const =0"
+.br
+.ti -1c
+.RI "\fBDrawable\fP ()"
+.br
+.ti -1c
+.RI "virtual \fB~Drawable\fP ()"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Abstract Class that ensures that derived classes can be drawn on Screen 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Zeta::Drawable::Drawable ()\fC [inline]\fP"
+
+.SS "virtual Zeta::Drawable::~Drawable ()\fC [inline]\fP, \fC [virtual]\fP"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "virtual void Zeta::Drawable::draw (\fBFloat\fPx, \fBFloat\fPy, \fBFloat\fProtation = \fC0\&.0f\fP, \fBFloat\fPscale = \fC1\&.0f\fP) const\fC [pure virtual]\fP"
+Draws the \fBObject\fP on screen\&. Be advised, the x,y, offsets might have different meaning on different implementations\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIx\fP X offset to be applied on the drawing 
+.br
+\fIy\fP Y offset to be applied on the drawing 
+.br
+\fIrotation\fP the rotation to be applied on the drawing 
+.RE
+.PP
+
+.PP
+Implemented in \fBZeta::WorldManager\fP, \fBZeta::Tile\fP, \fBZeta::CEGUIObject\fP, \fBZeta::Rectangle\fP, \fBZeta::CEGUIChild\fP, \fBZeta::ChildObject\fP, \fBZeta::Cell\fP, \fBZeta::GUIManager\fP, \fBZeta::Lifeform\fP, \fBZeta::AnimationHandler\fP, \fBZeta::AnimationPlayer\fP, \fBZeta::OffAnimation\fP, \fBZeta::Crosshair\fP, \fBZeta::StaticQuadtree\fP, \fBZeta::Projectile\fP, \fBZeta::Ellipsis\fP, \fBZeta::Cell::Sprite\fP, \fBZeta::StaticObject\fP, \fBZeta::InteractField\fP, \fBZeta::TeleportField\fP, \fBZeta::AllegroBitmap\fP, and \fBZeta::InteractObject\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Zeta from the source code\&.

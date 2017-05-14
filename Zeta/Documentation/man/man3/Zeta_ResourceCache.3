@@ -1,0 +1,100 @@
+.TH "Zeta::ResourceCache" 3 "Wed Feb 10 2016" "Zeta" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Zeta::ResourceCache \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <ResourceCache\&.hpp>\fP
+.PP
+Inherits \fBZeta::SingleInstanced< ResourceCache >\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "const \fBAbilityClass\fP & \fBgetAbilityClass\fP (const std::string &path)"
+.br
+.ti -1c
+.RI "const \fBLifeformClass\fP & \fBgetLifeformClass\fP (const std::string &path)"
+.br
+.ti -1c
+.RI "void \fBreleaseResource\fP (const \fBAbilityClass\fP &value)"
+.br
+.ti -1c
+.RI "void \fBreleaseResource\fP (const \fBLifeformClass\fP &value)"
+.br
+.in -1c
+.SS "Private Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBResourceCache\fP ()"
+.br
+.ti -1c
+.RI "\fB~ResourceCache\fP ()"
+.br
+.ti -1c
+.RI "template<typename RType > const RType & \fBgetResource\fP (const std::string &path, \fBZMap\fP< std::string, \fBSharedResource\fP< RType >> &map)"
+.br
+.ti -1c
+.RI "template<typename RType > void \fBreleaseMappedResource\fP (const std::string &path, \fBZMap\fP< std::string, \fBSharedResource\fP< RType >> &map)"
+.br
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBZMap\fP< std::string, 
+.br
+\fBSharedResource\fP< \fBAbilityClass\fP > > \fBabilityClasses\fP"
+.br
+.ti -1c
+.RI "\fBZMap\fP< std::string, 
+.br
+\fBSharedResource\fP< \fBLifeformClass\fP > > \fBlifeformClasses\fP"
+.br
+.in -1c
+.SS "Friends"
+
+.in +1c
+.ti -1c
+.RI "class \fBSingleInstanced\fP"
+.br
+.in -1c
+.SS "Additional Inherited Members"
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Zeta::ResourceCache::ResourceCache ()\fC [inline]\fP, \fC [private]\fP"
+
+.SS "Zeta::ResourceCache::~ResourceCache ()\fC [inline]\fP, \fC [private]\fP"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "const \fBAbilityClass\fP& Zeta::ResourceCache::getAbilityClass (const std::string &path)\fC [inline]\fP"
+
+.SS "const \fBLifeformClass\fP& Zeta::ResourceCache::getLifeformClass (const std::string &path)\fC [inline]\fP"
+
+.SS "template<typename RType > const RType& Zeta::ResourceCache::getResource (const std::string &path, \fBZMap\fP< std::string, \fBSharedResource\fP< RType >> &map)\fC [inline]\fP, \fC [private]\fP"
+
+.SS "template<typename RType > void Zeta::ResourceCache::releaseMappedResource (const std::string &path, \fBZMap\fP< std::string, \fBSharedResource\fP< RType >> &map)\fC [inline]\fP, \fC [private]\fP"
+
+.SS "void Zeta::ResourceCache::releaseResource (const \fBAbilityClass\fP &value)\fC [inline]\fP"
+
+.SS "void Zeta::ResourceCache::releaseResource (const \fBLifeformClass\fP &value)\fC [inline]\fP"
+
+.SH "Friends And Related Function Documentation"
+.PP 
+.SS "friend class \fBSingleInstanced\fP\fC [friend]\fP"
+
+.SH "Member Data Documentation"
+.PP 
+.SS "\fBZMap\fP<std::string, \fBSharedResource\fP<\fBAbilityClass\fP> > Zeta::ResourceCache::abilityClasses\fC [private]\fP"
+
+.SS "\fBZMap\fP<std::string, \fBSharedResource\fP<\fBLifeformClass\fP> > Zeta::ResourceCache::lifeformClasses\fC [private]\fP"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Zeta from the source code\&.

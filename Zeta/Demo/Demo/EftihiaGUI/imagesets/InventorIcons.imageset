@@ -1,0 +1,14 @@
+<Imageset autoScaled="" imagefile="Inventory.png" name="InventoryIcons" nativeHorzRes="1366" nativeVertRes="768" version="2">
+    <Image height="67" name="EmptySlot" width="66" xPos="81" yPos="6" />
+    <Image height="70" name="NeckSlot" width="70" xPos="6" yPos="6" />
+    <Image height="70" name="ShieldSlot" width="70" xPos="6" yPos="80" />
+    <Image height="70" name="BackSlot" width="70" xPos="6" yPos="154" />
+    <Image height="70" name="HeadSlot" width="70" xPos="80" yPos="80" />
+    <Image height="70" name="RingSlot" width="70" xPos="80" yPos="154" />
+    <Image height="70" name="WeaponSlot" width="70" xPos="154" yPos="154" />
+    <Image height="70" name="HandsSlot" width="70" xPos="154" yPos="80" />
+    <Image height="70" name="ChestSlot" width="70" xPos="154" yPos="6" />
+    <Image height="70" name="EmptySkill" width="70" xPos="229" yPos="6" />
+    <Image height="70" name="LegsSlot" width="70" xPos="228" yPos="80" />
+    <Image height="70" name="FeetSlot" width="70" xPos="228" yPos="154" />
+</Imageset>

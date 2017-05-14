@@ -1,0 +1,118 @@
+.TH "Zeta::OffAnimation" 3 "Wed Feb 10 2016" "Zeta" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Zeta::OffAnimation \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <OffAnimation\&.hpp>\fP
+.PP
+Inherits \fBZeta::AnimationPlayer\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBFloat\fP \fBgetDx\fP () const "
+.br
+.ti -1c
+.RI "void \fBsetDx\fP (\fBFloat\fP \fBdx\fP)"
+.br
+.ti -1c
+.RI "\fBFloat\fP \fBgetDy\fP () const "
+.br
+.ti -1c
+.RI "void \fBsetDy\fP (\fBFloat\fP \fBdy\fP)"
+.br
+.ti -1c
+.RI "void \fBsetOffsets\fP (\fBFloat\fP \fBdx\fP, \fBFloat\fP \fBdy\fP)"
+.br
+.ti -1c
+.RI "void \fBdraw\fP (\fBFloat\fP x, \fBFloat\fP y, \fBFloat\fP rotation=0\&.0f, Float scale=1\&.0f) const "
+.br
+.ti -1c
+.RI "\fBOffAnimation\fP ()"
+.br
+.ti -1c
+.RI "\fBOffAnimation\fP (const \fBAnimation\fP &\fBanimation\fP)"
+.br
+.ti -1c
+.RI "\fBOffAnimation\fP (\fBOffAnimation\fP &&)=default"
+.br
+.ti -1c
+.RI "\fBOffAnimation\fP (const \fBOffAnimation\fP &)=default"
+.br
+.ti -1c
+.RI "\fBOffAnimation\fP & \fBoperator=\fP (\fBOffAnimation\fP &&)=default"
+.br
+.ti -1c
+.RI "\fBOffAnimation\fP & \fBoperator=\fP (const \fBOffAnimation\fP &)=default"
+.br
+.ti -1c
+.RI "\fB~OffAnimation\fP ()"
+.br
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBFloat\fP \fBdx\fP"
+.br
+.ti -1c
+.RI "\fBFloat\fP \fBdy\fP"
+.br
+.in -1c
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Zeta::OffAnimation::OffAnimation ()\fC [inline]\fP"
+
+.SS "Zeta::OffAnimation::OffAnimation (const \fBAnimation\fP &animation)\fC [inline]\fP"
+
+.SS "Zeta::OffAnimation::OffAnimation (\fBOffAnimation\fP &&)\fC [default]\fP"
+
+.SS "Zeta::OffAnimation::OffAnimation (const \fBOffAnimation\fP &)\fC [default]\fP"
+
+.SS "Zeta::OffAnimation::~OffAnimation ()\fC [inline]\fP"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "void Zeta::OffAnimation::draw (\fBFloat\fPx, \fBFloat\fPy, \fBFloat\fProtation = \fC0\&.0f\fP, \fBFloat\fPscale = \fC1\&.0f\fP) const\fC [inline]\fP, \fC [virtual]\fP"
+Draws the \fBObject\fP on screen\&. Be advised, the x,y, offsets might have different meaning on different implementations\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIx\fP X offset to be applied on the drawing 
+.br
+\fIy\fP Y offset to be applied on the drawing 
+.br
+\fIrotation\fP the rotation to be applied on the drawing 
+.RE
+.PP
+
+.PP
+Reimplemented from \fBZeta::AnimationPlayer\fP\&.
+.SS "\fBFloat\fP Zeta::OffAnimation::getDx () const\fC [inline]\fP"
+
+.SS "\fBFloat\fP Zeta::OffAnimation::getDy () const\fC [inline]\fP"
+
+.SS "\fBOffAnimation\fP& Zeta::OffAnimation::operator= (\fBOffAnimation\fP &&)\fC [default]\fP"
+
+.SS "\fBOffAnimation\fP& Zeta::OffAnimation::operator= (const \fBOffAnimation\fP &)\fC [default]\fP"
+
+.SS "void Zeta::OffAnimation::setDx (\fBFloat\fPdx)\fC [inline]\fP"
+
+.SS "void Zeta::OffAnimation::setDy (\fBFloat\fPdy)\fC [inline]\fP"
+
+.SS "void Zeta::OffAnimation::setOffsets (\fBFloat\fPdx, \fBFloat\fPdy)\fC [inline]\fP"
+
+.SH "Member Data Documentation"
+.PP 
+.SS "\fBFloat\fP Zeta::OffAnimation::dx\fC [private]\fP"
+
+.SS "\fBFloat\fP Zeta::OffAnimation::dy\fC [private]\fP"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Zeta from the source code\&.

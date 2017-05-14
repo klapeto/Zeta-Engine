@@ -1,0 +1,4 @@
+<map id="Zeta::Lifeform::isInMeleeRange" name="Zeta::Lifeform::isInMeleeRange">
+<area shape="rect" id="node2" href="$classZeta_1_1Rectangle.html#af705894435b5bc4dacf3bc5a108f47af" title="Zeta::Rectangle::overlaps\lRectangle" alt="" coords="227,5,399,46"/>
+<area shape="rect" id="node3" href="$classZeta_1_1Object.html#a783dccb1e186f4bf199fd0b304a37aa1" title="Zeta::Object::getTargetArea" alt="" coords="221,71,405,97"/>
+</map>

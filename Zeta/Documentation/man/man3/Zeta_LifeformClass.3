@@ -1,0 +1,220 @@
+.TH "Zeta::LifeformClass" 3 "Wed Feb 10 2016" "Zeta" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Zeta::LifeformClass \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <LifeformClass\&.hpp>\fP
+.PP
+Inherits \fBZeta::Resource\fP\&.
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "class \fBChildParams\fP"
+.br
+.ti -1c
+.RI "struct \fBLifeformAbility\fP"
+.br
+.ti -1c
+.RI "struct \fBLuaAbility\fP"
+.br
+.in -1c
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "const std::string & \fBgetLifeformName\fP () const "
+.br
+.ti -1c
+.RI "void \fBgetStats\fP (\fBZMap\fP< std::string, \fBAttribute\fP > &\fBstats\fP) const "
+.br
+.ti -1c
+.RI "void \fBgetAbilities\fP (\fBLifeform\fP *owner) const "
+.br
+.ti -1c
+.RI "void \fBgetChildObjets\fP (\fBLifeform\fP *owner) const "
+.br
+.ti -1c
+.RI "const std::string & \fBgetAnimationClassName\fP () const "
+.br
+.ti -1c
+.RI "int \fBgetLevel\fP () const "
+.br
+.ti -1c
+.RI "const \fBLuaTable\fP & \fBgetTable\fP () const "
+.br
+.ti -1c
+.RI "const \fBLuaFunctor\fP & \fBgetOnClick\fP () const "
+.br
+.ti -1c
+.RI "const \fBLuaFunctor\fP & \fBgetOnCollision\fP () const "
+.br
+.ti -1c
+.RI "const \fBFaction\fP & \fBgetFaction\fP () const "
+.br
+.ti -1c
+.RI "void \fBsetTable\fP (\fBlua_Object\fP \fBtable\fP)"
+.br
+.ti -1c
+.RI "void \fBsetOnClick\fP (\fBlua_Object\fP func)"
+.br
+.ti -1c
+.RI "void \fBsetOnCollision\fP (\fBlua_Object\fP func)"
+.br
+.ti -1c
+.RI "\fBBehaviour\fP * \fBgetGeneralBehaviour\fP (\fBLifeform\fP &owner) const "
+.br
+.ti -1c
+.RI "\fBBehaviour\fP * \fBgetMovementBehaviour\fP (\fBLifeform\fP &owner) const "
+.br
+.ti -1c
+.RI "void \fBlevelizeStats\fP (float levelMultiplier=1\&.0f)"
+.br
+.ti -1c
+.RI "void \fBlevelizeStats\fP (float multiplier, int lowerBound, int upperBound)"
+.br
+.ti -1c
+.RI "void \fBaddAbility\fP (const \fBAbilityClass\fP &abClass, int \fBlevel\fP)"
+.br
+.ti -1c
+.RI "\fBLifeformClass\fP ()"
+.br
+.ti -1c
+.RI "\fBLifeformClass\fP (const std::string &path)"
+.br
+.ti -1c
+.RI "virtual \fB~LifeformClass\fP ()"
+.br
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBZMap\fP< std::string, 
+.br
+\fBLifeformAbility\fP > \fBabilities\fP"
+.br
+.ti -1c
+.RI "std::vector< \fBLuaAbility\fP > \fBluaAbilities\fP"
+.br
+.ti -1c
+.RI "\fBZMap\fP< std::string, 
+.br
+std::uniform_int_distribution
+.br
+< int > > \fBstats\fP"
+.br
+.ti -1c
+.RI "std::vector< \fBChildParams\fP > \fBchildParameters\fP"
+.br
+.ti -1c
+.RI "std::string \fBlifeform_name\fP"
+.br
+.ti -1c
+.RI "std::string \fBanimClass\fP"
+.br
+.ti -1c
+.RI "\fBLuaTable\fP \fBtable\fP"
+.br
+.ti -1c
+.RI "\fBLuaFunctor\fP \fBonCollisionF\fP"
+.br
+.ti -1c
+.RI "\fBLuaFunctor\fP \fBonClickF\fP"
+.br
+.ti -1c
+.RI "const \fBFaction\fP * \fBfaction\fP"
+.br
+.ti -1c
+.RI "\fBBehaviourClass\fP * \fBgenericAI\fP"
+.br
+.ti -1c
+.RI "\fBBehaviourClass\fP * \fBmovementAI\fP"
+.br
+.ti -1c
+.RI "int \fBlevel\fP"
+.br
+.in -1c
+.SS "Additional Inherited Members"
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Zeta::LifeformClass::LifeformClass ()"
+
+.SS "Zeta::LifeformClass::LifeformClass (const std::string &path)"
+
+.SS "virtual Zeta::LifeformClass::~LifeformClass ()\fC [virtual]\fP"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "void Zeta::LifeformClass::addAbility (const \fBAbilityClass\fP &abClass, intlevel)"
+
+.SS "void Zeta::LifeformClass::getAbilities (\fBLifeform\fP *owner) const"
+
+.SS "const std::string& Zeta::LifeformClass::getAnimationClassName () const\fC [inline]\fP"
+
+.SS "void Zeta::LifeformClass::getChildObjets (\fBLifeform\fP *owner) const"
+
+.SS "const \fBFaction\fP& Zeta::LifeformClass::getFaction () const\fC [inline]\fP"
+
+.SS "\fBBehaviour\fP* Zeta::LifeformClass::getGeneralBehaviour (\fBLifeform\fP &owner) const"
+
+.SS "int Zeta::LifeformClass::getLevel () const\fC [inline]\fP"
+
+.SS "const std::string& Zeta::LifeformClass::getLifeformName () const\fC [inline]\fP"
+
+.SS "\fBBehaviour\fP* Zeta::LifeformClass::getMovementBehaviour (\fBLifeform\fP &owner) const"
+
+.SS "const \fBLuaFunctor\fP& Zeta::LifeformClass::getOnClick () const\fC [inline]\fP"
+
+.SS "const \fBLuaFunctor\fP& Zeta::LifeformClass::getOnCollision () const\fC [inline]\fP"
+
+.SS "void Zeta::LifeformClass::getStats (\fBZMap\fP< std::string, \fBAttribute\fP > &stats) const"
+
+.SS "const \fBLuaTable\fP& Zeta::LifeformClass::getTable () const\fC [inline]\fP"
+
+.SS "void Zeta::LifeformClass::levelizeStats (floatlevelMultiplier = \fC1\&.0f\fP)"
+
+.SS "void Zeta::LifeformClass::levelizeStats (floatmultiplier, intlowerBound, intupperBound)"
+
+.SS "void Zeta::LifeformClass::setOnClick (\fBlua_Object\fPfunc)"
+
+.SS "void Zeta::LifeformClass::setOnCollision (\fBlua_Object\fPfunc)"
+
+.SS "void Zeta::LifeformClass::setTable (\fBlua_Object\fPtable)"
+
+.SH "Member Data Documentation"
+.PP 
+.SS "\fBZMap\fP<std::string, \fBLifeformAbility\fP> Zeta::LifeformClass::abilities\fC [mutable]\fP, \fC [private]\fP"
+
+.SS "std::string Zeta::LifeformClass::animClass\fC [private]\fP"
+
+.SS "std::vector<\fBChildParams\fP> Zeta::LifeformClass::childParameters\fC [private]\fP"
+
+.SS "const \fBFaction\fP* Zeta::LifeformClass::faction\fC [private]\fP"
+
+.SS "\fBBehaviourClass\fP* Zeta::LifeformClass::genericAI\fC [private]\fP"
+
+.SS "int Zeta::LifeformClass::level\fC [private]\fP"
+
+.SS "std::string Zeta::LifeformClass::lifeform_name\fC [private]\fP"
+
+.SS "std::vector<\fBLuaAbility\fP> Zeta::LifeformClass::luaAbilities\fC [mutable]\fP, \fC [private]\fP"
+
+.SS "\fBBehaviourClass\fP* Zeta::LifeformClass::movementAI\fC [private]\fP"
+
+.SS "\fBLuaFunctor\fP Zeta::LifeformClass::onClickF\fC [private]\fP"
+
+.SS "\fBLuaFunctor\fP Zeta::LifeformClass::onCollisionF\fC [private]\fP"
+
+.SS "\fBZMap\fP<std::string, std::uniform_int_distribution<int> > Zeta::LifeformClass::stats\fC [mutable]\fP, \fC [private]\fP"
+
+.SS "\fBLuaTable\fP Zeta::LifeformClass::table\fC [private]\fP"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Zeta from the source code\&.

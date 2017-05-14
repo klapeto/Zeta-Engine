@@ -1,0 +1,138 @@
+\hypertarget{classZeta_1_1LuaListener}{\section{Zeta\+:\+:Lua\+Listener Class Reference}
+\label{classZeta_1_1LuaListener}\index{Zeta\+::\+Lua\+Listener@{Zeta\+::\+Lua\+Listener}}
+}
+
+
+{\ttfamily \#include $<$Lua\+Listener.\+hpp$>$}
+
+
+
+Inheritance diagram for Zeta\+:\+:Lua\+Listener\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=298pt]{classZeta_1_1LuaListener__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Zeta\+:\+:Lua\+Listener\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=346pt]{classZeta_1_1LuaListener__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classZeta_1_1LuaListener_a2a146ab94f79bc94242e8f14d39fe11c}{accept\+Event} (const \hyperlink{classZeta_1_1WorldEvent}{World\+Event} \&event)
+\item 
+void \hyperlink{classZeta_1_1LuaListener_a4cd46326ef2704e9e8fbc1506509914a}{push\+To\+Lua} (lua\+\_\+\+State $\ast$lstate)
+\item 
+void \hyperlink{classZeta_1_1LuaListener_a504bb95fb6231769fbdc63fd5fdafc21}{deactivate} ()
+\item 
+void \hyperlink{classZeta_1_1LuaListener_ac57925d0b9780296c79cc39fcda24ebe}{activate} ()
+\item 
+\hyperlink{classZeta_1_1LuaListener_a7fd2cbabe7eff70aabff732f0da7e287}{Lua\+Listener} (\hyperlink{ZetaConfig_8hpp_ae7be32b73848041a60f2412f72bbb221}{lua\+\_\+\+Object} func, \hyperlink{classZeta_1_1WorldEvent_a92adb82c22c6f59afec5911098f85158}{World\+Event\+::\+Type} \hyperlink{classZeta_1_1LuaListener_acec59aa6dc0dcec125e577da5b2c42b5}{type})
+\item 
+\hyperlink{classZeta_1_1LuaListener_afb6eee0ff7b104acfbc9f298195f4524}{Lua\+Listener} (const std\+::string \&channel, \hyperlink{ZetaConfig_8hpp_ae7be32b73848041a60f2412f72bbb221}{lua\+\_\+\+Object} func)
+\item 
+\hyperlink{classZeta_1_1LuaListener_ac7e40cd001c0c272ecf2bb3d21856363}{$\sim$\+Lua\+Listener} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \hyperlink{classZeta_1_1LuaListener_a54cdfbad704945bc74e36ef3af9eaaed}{custom\+Channel}
+\item 
+\hyperlink{classZeta_1_1LuaFunctor}{Lua\+Functor} \hyperlink{classZeta_1_1LuaListener_a5ed6fcdda5ab83eeb8a3fea904f22aaf}{callback}
+\item 
+\hyperlink{classZeta_1_1WorldEvent_a92adb82c22c6f59afec5911098f85158}{World\+Event\+::\+Type} \hyperlink{classZeta_1_1LuaListener_acec59aa6dc0dcec125e577da5b2c42b5}{type}
+\item 
+bool \hyperlink{classZeta_1_1LuaListener_a6e7d565c03b9774a1c8222abaa88a37b}{active}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classZeta_1_1LuaListener_a7fd2cbabe7eff70aabff732f0da7e287}{\index{Zeta\+::\+Lua\+Listener@{Zeta\+::\+Lua\+Listener}!Lua\+Listener@{Lua\+Listener}}
+\index{Lua\+Listener@{Lua\+Listener}!Zeta\+::\+Lua\+Listener@{Zeta\+::\+Lua\+Listener}}
+\subsubsection[{Lua\+Listener}]{\setlength{\rightskip}{0pt plus 5cm}Zeta\+::\+Lua\+Listener\+::\+Lua\+Listener (
+\begin{DoxyParamCaption}
+\item[{{\bf lua\+\_\+\+Object}}]{func, }
+\item[{{\bf World\+Event\+::\+Type}}]{type}
+\end{DoxyParamCaption}
+)}}\label{classZeta_1_1LuaListener_a7fd2cbabe7eff70aabff732f0da7e287}
+\hypertarget{classZeta_1_1LuaListener_afb6eee0ff7b104acfbc9f298195f4524}{\index{Zeta\+::\+Lua\+Listener@{Zeta\+::\+Lua\+Listener}!Lua\+Listener@{Lua\+Listener}}
+\index{Lua\+Listener@{Lua\+Listener}!Zeta\+::\+Lua\+Listener@{Zeta\+::\+Lua\+Listener}}
+\subsubsection[{Lua\+Listener}]{\setlength{\rightskip}{0pt plus 5cm}Zeta\+::\+Lua\+Listener\+::\+Lua\+Listener (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{channel, }
+\item[{{\bf lua\+\_\+\+Object}}]{func}
+\end{DoxyParamCaption}
+)}}\label{classZeta_1_1LuaListener_afb6eee0ff7b104acfbc9f298195f4524}
+\hypertarget{classZeta_1_1LuaListener_ac7e40cd001c0c272ecf2bb3d21856363}{\index{Zeta\+::\+Lua\+Listener@{Zeta\+::\+Lua\+Listener}!````~Lua\+Listener@{$\sim$\+Lua\+Listener}}
+\index{````~Lua\+Listener@{$\sim$\+Lua\+Listener}!Zeta\+::\+Lua\+Listener@{Zeta\+::\+Lua\+Listener}}
+\subsubsection[{$\sim$\+Lua\+Listener}]{\setlength{\rightskip}{0pt plus 5cm}Zeta\+::\+Lua\+Listener\+::$\sim$\+Lua\+Listener (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classZeta_1_1LuaListener_ac7e40cd001c0c272ecf2bb3d21856363}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classZeta_1_1LuaListener_a2a146ab94f79bc94242e8f14d39fe11c}{\index{Zeta\+::\+Lua\+Listener@{Zeta\+::\+Lua\+Listener}!accept\+Event@{accept\+Event}}
+\index{accept\+Event@{accept\+Event}!Zeta\+::\+Lua\+Listener@{Zeta\+::\+Lua\+Listener}}
+\subsubsection[{accept\+Event}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+Lua\+Listener\+::accept\+Event (
+\begin{DoxyParamCaption}
+\item[{const {\bf World\+Event} \&}]{event}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classZeta_1_1LuaListener_a2a146ab94f79bc94242e8f14d39fe11c}
+
+
+Implements \hyperlink{classZeta_1_1WorldListener_a8a8236575671cb7cd40c5e7eb6991080}{Zeta\+::\+World\+Listener}.
+
+\hypertarget{classZeta_1_1LuaListener_ac57925d0b9780296c79cc39fcda24ebe}{\index{Zeta\+::\+Lua\+Listener@{Zeta\+::\+Lua\+Listener}!activate@{activate}}
+\index{activate@{activate}!Zeta\+::\+Lua\+Listener@{Zeta\+::\+Lua\+Listener}}
+\subsubsection[{activate}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+Lua\+Listener\+::activate (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classZeta_1_1LuaListener_ac57925d0b9780296c79cc39fcda24ebe}
+\hypertarget{classZeta_1_1LuaListener_a504bb95fb6231769fbdc63fd5fdafc21}{\index{Zeta\+::\+Lua\+Listener@{Zeta\+::\+Lua\+Listener}!deactivate@{deactivate}}
+\index{deactivate@{deactivate}!Zeta\+::\+Lua\+Listener@{Zeta\+::\+Lua\+Listener}}
+\subsubsection[{deactivate}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+Lua\+Listener\+::deactivate (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classZeta_1_1LuaListener_a504bb95fb6231769fbdc63fd5fdafc21}
+\hypertarget{classZeta_1_1LuaListener_a4cd46326ef2704e9e8fbc1506509914a}{\index{Zeta\+::\+Lua\+Listener@{Zeta\+::\+Lua\+Listener}!push\+To\+Lua@{push\+To\+Lua}}
+\index{push\+To\+Lua@{push\+To\+Lua}!Zeta\+::\+Lua\+Listener@{Zeta\+::\+Lua\+Listener}}
+\subsubsection[{push\+To\+Lua}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+Lua\+Listener\+::push\+To\+Lua (
+\begin{DoxyParamCaption}
+\item[{lua\+\_\+\+State $\ast$}]{lstate}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classZeta_1_1LuaListener_a4cd46326ef2704e9e8fbc1506509914a}
+
+
+Implements \hyperlink{classZeta_1_1LuaPushable_a0380ec9cff11f749e8eb67b51b8f82fc}{Zeta\+::\+Lua\+Pushable}.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classZeta_1_1LuaListener_a6e7d565c03b9774a1c8222abaa88a37b}{\index{Zeta\+::\+Lua\+Listener@{Zeta\+::\+Lua\+Listener}!active@{active}}
+\index{active@{active}!Zeta\+::\+Lua\+Listener@{Zeta\+::\+Lua\+Listener}}
+\subsubsection[{active}]{\setlength{\rightskip}{0pt plus 5cm}bool Zeta\+::\+Lua\+Listener\+::active\hspace{0.3cm}{\ttfamily [private]}}}\label{classZeta_1_1LuaListener_a6e7d565c03b9774a1c8222abaa88a37b}
+\hypertarget{classZeta_1_1LuaListener_a5ed6fcdda5ab83eeb8a3fea904f22aaf}{\index{Zeta\+::\+Lua\+Listener@{Zeta\+::\+Lua\+Listener}!callback@{callback}}
+\index{callback@{callback}!Zeta\+::\+Lua\+Listener@{Zeta\+::\+Lua\+Listener}}
+\subsubsection[{callback}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Lua\+Functor} Zeta\+::\+Lua\+Listener\+::callback\hspace{0.3cm}{\ttfamily [private]}}}\label{classZeta_1_1LuaListener_a5ed6fcdda5ab83eeb8a3fea904f22aaf}
+\hypertarget{classZeta_1_1LuaListener_a54cdfbad704945bc74e36ef3af9eaaed}{\index{Zeta\+::\+Lua\+Listener@{Zeta\+::\+Lua\+Listener}!custom\+Channel@{custom\+Channel}}
+\index{custom\+Channel@{custom\+Channel}!Zeta\+::\+Lua\+Listener@{Zeta\+::\+Lua\+Listener}}
+\subsubsection[{custom\+Channel}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string Zeta\+::\+Lua\+Listener\+::custom\+Channel\hspace{0.3cm}{\ttfamily [private]}}}\label{classZeta_1_1LuaListener_a54cdfbad704945bc74e36ef3af9eaaed}
+\hypertarget{classZeta_1_1LuaListener_acec59aa6dc0dcec125e577da5b2c42b5}{\index{Zeta\+::\+Lua\+Listener@{Zeta\+::\+Lua\+Listener}!type@{type}}
+\index{type@{type}!Zeta\+::\+Lua\+Listener@{Zeta\+::\+Lua\+Listener}}
+\subsubsection[{type}]{\setlength{\rightskip}{0pt plus 5cm}{\bf World\+Event\+::\+Type} Zeta\+::\+Lua\+Listener\+::type\hspace{0.3cm}{\ttfamily [private]}}}\label{classZeta_1_1LuaListener_acec59aa6dc0dcec125e577da5b2c42b5}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Zeta/\+Core/\+R\+P\+G\+Classes/\hyperlink{LuaListener_8hpp}{Lua\+Listener.\+hpp}\end{DoxyCompactItemize}

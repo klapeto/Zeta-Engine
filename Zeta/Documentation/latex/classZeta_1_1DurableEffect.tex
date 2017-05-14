@@ -1,0 +1,176 @@
+\hypertarget{classZeta_1_1DurableEffect}{\section{Zeta\+:\+:Durable\+Effect Class Reference}
+\label{classZeta_1_1DurableEffect}\index{Zeta\+::\+Durable\+Effect@{Zeta\+::\+Durable\+Effect}}
+}
+
+
+{\ttfamily \#include $<$Durable\+Effect.\+hpp$>$}
+
+
+
+Inheritance diagram for Zeta\+:\+:Durable\+Effect\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=288pt]{classZeta_1_1DurableEffect__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Zeta\+:\+:Durable\+Effect\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classZeta_1_1DurableEffect__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespaceZeta_a1e0a1265f9b3bd3075fb0fabd39088ba}{Float} \hyperlink{classZeta_1_1DurableEffect_a7c79f9b9ccbff3e835205a9bc64396ab}{get\+Remaining\+Time} () const 
+\item 
+\hyperlink{namespaceZeta_a1e0a1265f9b3bd3075fb0fabd39088ba}{Float} \hyperlink{classZeta_1_1DurableEffect_ae8b0278a05521d23487df0344a4150b3}{get\+Up\+Time} () const 
+\item 
+void \hyperlink{classZeta_1_1DurableEffect_aca458dc1f813daa173b2ee947a2ea5dd}{set\+Up\+Time} (\hyperlink{namespaceZeta_a1e0a1265f9b3bd3075fb0fabd39088ba}{Float} \hyperlink{classZeta_1_1DurableEffect_ab8ee9c3e4b0a65c2c150b3baadd2ca5c}{up\+Time})
+\item 
+void \hyperlink{classZeta_1_1DurableEffect_af248002385f1ae31a3f053bd74748a23}{reset} ()
+\item 
+virtual void \hyperlink{classZeta_1_1DurableEffect_a307aa900d5ab1f188cd4bc0c706bd910}{push\+To\+Lua} (lua\+\_\+\+State $\ast$lstate)
+\item 
+virtual void \hyperlink{classZeta_1_1DurableEffect_aa9ebe74ba0c6c7b724473f3ab81b08f0}{update} (\hyperlink{namespaceZeta_a1e0a1265f9b3bd3075fb0fabd39088ba}{Float} elapsed\+Time)
+\item 
+\hyperlink{classZeta_1_1DurableEffect_ab3fa069cf8c745ad238cedb5c89b7720}{Durable\+Effect} (const \hyperlink{classZeta_1_1EffectClass}{Effect\+Class} \&eff\+Cls, \hyperlink{classZeta_1_1Lifeform}{Lifeform} $\ast$target, int \hyperlink{classZeta_1_1Effect_aec101c1a7eda022328a0b0ebb1b10c77}{level})
+\item 
+virtual \hyperlink{classZeta_1_1DurableEffect_af38f16c0189ad5dae484b4e722250468}{$\sim$\+Durable\+Effect} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{classZeta_1_1DurableEffect_abcf4ec499ab94dbad5b1e6aeb45d6ba4}{Effect\+State} \{ \hyperlink{classZeta_1_1DurableEffect_abcf4ec499ab94dbad5b1e6aeb45d6ba4a1a06729125544cab7cee73195fc044f0}{Effect\+State\+::\+Begin}, 
+\hyperlink{classZeta_1_1DurableEffect_abcf4ec499ab94dbad5b1e6aeb45d6ba4a5bda814c4aedb126839228f1a3d92f09}{Effect\+State\+::\+Running}, 
+\hyperlink{classZeta_1_1DurableEffect_abcf4ec499ab94dbad5b1e6aeb45d6ba4a87557f11575c0ad78e4e28abedc13b6e}{Effect\+State\+::\+End}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespaceZeta_a1e0a1265f9b3bd3075fb0fabd39088ba}{Float} \hyperlink{classZeta_1_1DurableEffect_ae4d3f95cb12a14ab8b592e3344643b9d}{frame\+Counter}
+\item 
+\hyperlink{namespaceZeta_a1e0a1265f9b3bd3075fb0fabd39088ba}{Float} \hyperlink{classZeta_1_1DurableEffect_ab8ee9c3e4b0a65c2c150b3baadd2ca5c}{up\+Time}
+\item 
+\hyperlink{classZeta_1_1DurableEffect_abcf4ec499ab94dbad5b1e6aeb45d6ba4}{Effect\+State} \hyperlink{classZeta_1_1DurableEffect_a4ab32aaf7391e368086aba8e2030d9f6}{state}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{classZeta_1_1DurableEffect_abcf4ec499ab94dbad5b1e6aeb45d6ba4}{\index{Zeta\+::\+Durable\+Effect@{Zeta\+::\+Durable\+Effect}!Effect\+State@{Effect\+State}}
+\index{Effect\+State@{Effect\+State}!Zeta\+::\+Durable\+Effect@{Zeta\+::\+Durable\+Effect}}
+\subsubsection[{Effect\+State}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Zeta\+::\+Durable\+Effect\+::\+Effect\+State}\hspace{0.3cm}{\ttfamily [strong]}, {\ttfamily [protected]}}}\label{classZeta_1_1DurableEffect_abcf4ec499ab94dbad5b1e6aeb45d6ba4}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{Begin@{Begin}!Zeta\+::\+Durable\+Effect@{Zeta\+::\+Durable\+Effect}}\index{Zeta\+::\+Durable\+Effect@{Zeta\+::\+Durable\+Effect}!Begin@{Begin}}\item[{\em 
+\hypertarget{classZeta_1_1DurableEffect_abcf4ec499ab94dbad5b1e6aeb45d6ba4a1a06729125544cab7cee73195fc044f0}{Begin}\label{classZeta_1_1DurableEffect_abcf4ec499ab94dbad5b1e6aeb45d6ba4a1a06729125544cab7cee73195fc044f0}
+}]\index{Running@{Running}!Zeta\+::\+Durable\+Effect@{Zeta\+::\+Durable\+Effect}}\index{Zeta\+::\+Durable\+Effect@{Zeta\+::\+Durable\+Effect}!Running@{Running}}\item[{\em 
+\hypertarget{classZeta_1_1DurableEffect_abcf4ec499ab94dbad5b1e6aeb45d6ba4a5bda814c4aedb126839228f1a3d92f09}{Running}\label{classZeta_1_1DurableEffect_abcf4ec499ab94dbad5b1e6aeb45d6ba4a5bda814c4aedb126839228f1a3d92f09}
+}]\index{End@{End}!Zeta\+::\+Durable\+Effect@{Zeta\+::\+Durable\+Effect}}\index{Zeta\+::\+Durable\+Effect@{Zeta\+::\+Durable\+Effect}!End@{End}}\item[{\em 
+\hypertarget{classZeta_1_1DurableEffect_abcf4ec499ab94dbad5b1e6aeb45d6ba4a87557f11575c0ad78e4e28abedc13b6e}{End}\label{classZeta_1_1DurableEffect_abcf4ec499ab94dbad5b1e6aeb45d6ba4a87557f11575c0ad78e4e28abedc13b6e}
+}]\end{description}
+\end{Desc}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classZeta_1_1DurableEffect_ab3fa069cf8c745ad238cedb5c89b7720}{\index{Zeta\+::\+Durable\+Effect@{Zeta\+::\+Durable\+Effect}!Durable\+Effect@{Durable\+Effect}}
+\index{Durable\+Effect@{Durable\+Effect}!Zeta\+::\+Durable\+Effect@{Zeta\+::\+Durable\+Effect}}
+\subsubsection[{Durable\+Effect}]{\setlength{\rightskip}{0pt plus 5cm}Zeta\+::\+Durable\+Effect\+::\+Durable\+Effect (
+\begin{DoxyParamCaption}
+\item[{const {\bf Effect\+Class} \&}]{eff\+Cls, }
+\item[{{\bf Lifeform} $\ast$}]{target, }
+\item[{int}]{level}
+\end{DoxyParamCaption}
+)}}\label{classZeta_1_1DurableEffect_ab3fa069cf8c745ad238cedb5c89b7720}
+\hypertarget{classZeta_1_1DurableEffect_af38f16c0189ad5dae484b4e722250468}{\index{Zeta\+::\+Durable\+Effect@{Zeta\+::\+Durable\+Effect}!````~Durable\+Effect@{$\sim$\+Durable\+Effect}}
+\index{````~Durable\+Effect@{$\sim$\+Durable\+Effect}!Zeta\+::\+Durable\+Effect@{Zeta\+::\+Durable\+Effect}}
+\subsubsection[{$\sim$\+Durable\+Effect}]{\setlength{\rightskip}{0pt plus 5cm}virtual Zeta\+::\+Durable\+Effect\+::$\sim$\+Durable\+Effect (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classZeta_1_1DurableEffect_af38f16c0189ad5dae484b4e722250468}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classZeta_1_1DurableEffect_a7c79f9b9ccbff3e835205a9bc64396ab}{\index{Zeta\+::\+Durable\+Effect@{Zeta\+::\+Durable\+Effect}!get\+Remaining\+Time@{get\+Remaining\+Time}}
+\index{get\+Remaining\+Time@{get\+Remaining\+Time}!Zeta\+::\+Durable\+Effect@{Zeta\+::\+Durable\+Effect}}
+\subsubsection[{get\+Remaining\+Time}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Float} Zeta\+::\+Durable\+Effect\+::get\+Remaining\+Time (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1DurableEffect_a7c79f9b9ccbff3e835205a9bc64396ab}
+\hypertarget{classZeta_1_1DurableEffect_ae8b0278a05521d23487df0344a4150b3}{\index{Zeta\+::\+Durable\+Effect@{Zeta\+::\+Durable\+Effect}!get\+Up\+Time@{get\+Up\+Time}}
+\index{get\+Up\+Time@{get\+Up\+Time}!Zeta\+::\+Durable\+Effect@{Zeta\+::\+Durable\+Effect}}
+\subsubsection[{get\+Up\+Time}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Float} Zeta\+::\+Durable\+Effect\+::get\+Up\+Time (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1DurableEffect_ae8b0278a05521d23487df0344a4150b3}
+\hypertarget{classZeta_1_1DurableEffect_a307aa900d5ab1f188cd4bc0c706bd910}{\index{Zeta\+::\+Durable\+Effect@{Zeta\+::\+Durable\+Effect}!push\+To\+Lua@{push\+To\+Lua}}
+\index{push\+To\+Lua@{push\+To\+Lua}!Zeta\+::\+Durable\+Effect@{Zeta\+::\+Durable\+Effect}}
+\subsubsection[{push\+To\+Lua}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Zeta\+::\+Durable\+Effect\+::push\+To\+Lua (
+\begin{DoxyParamCaption}
+\item[{lua\+\_\+\+State $\ast$}]{lstate}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classZeta_1_1DurableEffect_a307aa900d5ab1f188cd4bc0c706bd910}
+
+
+Reimplemented from \hyperlink{classZeta_1_1Effect_a48281d13dac1e240278ac7588762b8c7}{Zeta\+::\+Effect}.
+
+
+
+Reimplemented in \hyperlink{classZeta_1_1OverTimeEffect_aa8dbf53cae3c9a1b92591d209bc37320}{Zeta\+::\+Over\+Time\+Effect}.
+
+\hypertarget{classZeta_1_1DurableEffect_af248002385f1ae31a3f053bd74748a23}{\index{Zeta\+::\+Durable\+Effect@{Zeta\+::\+Durable\+Effect}!reset@{reset}}
+\index{reset@{reset}!Zeta\+::\+Durable\+Effect@{Zeta\+::\+Durable\+Effect}}
+\subsubsection[{reset}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+Durable\+Effect\+::reset (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classZeta_1_1DurableEffect_af248002385f1ae31a3f053bd74748a23}
+\hypertarget{classZeta_1_1DurableEffect_aca458dc1f813daa173b2ee947a2ea5dd}{\index{Zeta\+::\+Durable\+Effect@{Zeta\+::\+Durable\+Effect}!set\+Up\+Time@{set\+Up\+Time}}
+\index{set\+Up\+Time@{set\+Up\+Time}!Zeta\+::\+Durable\+Effect@{Zeta\+::\+Durable\+Effect}}
+\subsubsection[{set\+Up\+Time}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+Durable\+Effect\+::set\+Up\+Time (
+\begin{DoxyParamCaption}
+\item[{{\bf Float}}]{up\+Time}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1DurableEffect_aca458dc1f813daa173b2ee947a2ea5dd}
+\hypertarget{classZeta_1_1DurableEffect_aa9ebe74ba0c6c7b724473f3ab81b08f0}{\index{Zeta\+::\+Durable\+Effect@{Zeta\+::\+Durable\+Effect}!update@{update}}
+\index{update@{update}!Zeta\+::\+Durable\+Effect@{Zeta\+::\+Durable\+Effect}}
+\subsubsection[{update}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Zeta\+::\+Durable\+Effect\+::update (
+\begin{DoxyParamCaption}
+\item[{{\bf Float}}]{elapsed\+Time}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classZeta_1_1DurableEffect_aa9ebe74ba0c6c7b724473f3ab81b08f0}
+
+
+Reimplemented from \hyperlink{classZeta_1_1Effect_a85a3bc561d4280c6dc042f898e2f620e}{Zeta\+::\+Effect}.
+
+
+
+Reimplemented in \hyperlink{classZeta_1_1OverTimeEffect_aedb8e15db2f8320f951fed874cdb0c4c}{Zeta\+::\+Over\+Time\+Effect}.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classZeta_1_1DurableEffect_ae4d3f95cb12a14ab8b592e3344643b9d}{\index{Zeta\+::\+Durable\+Effect@{Zeta\+::\+Durable\+Effect}!frame\+Counter@{frame\+Counter}}
+\index{frame\+Counter@{frame\+Counter}!Zeta\+::\+Durable\+Effect@{Zeta\+::\+Durable\+Effect}}
+\subsubsection[{frame\+Counter}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Float} Zeta\+::\+Durable\+Effect\+::frame\+Counter\hspace{0.3cm}{\ttfamily [protected]}}}\label{classZeta_1_1DurableEffect_ae4d3f95cb12a14ab8b592e3344643b9d}
+\hypertarget{classZeta_1_1DurableEffect_a4ab32aaf7391e368086aba8e2030d9f6}{\index{Zeta\+::\+Durable\+Effect@{Zeta\+::\+Durable\+Effect}!state@{state}}
+\index{state@{state}!Zeta\+::\+Durable\+Effect@{Zeta\+::\+Durable\+Effect}}
+\subsubsection[{state}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Effect\+State} Zeta\+::\+Durable\+Effect\+::state\hspace{0.3cm}{\ttfamily [protected]}}}\label{classZeta_1_1DurableEffect_a4ab32aaf7391e368086aba8e2030d9f6}
+\hypertarget{classZeta_1_1DurableEffect_ab8ee9c3e4b0a65c2c150b3baadd2ca5c}{\index{Zeta\+::\+Durable\+Effect@{Zeta\+::\+Durable\+Effect}!up\+Time@{up\+Time}}
+\index{up\+Time@{up\+Time}!Zeta\+::\+Durable\+Effect@{Zeta\+::\+Durable\+Effect}}
+\subsubsection[{up\+Time}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Float} Zeta\+::\+Durable\+Effect\+::up\+Time\hspace{0.3cm}{\ttfamily [protected]}}}\label{classZeta_1_1DurableEffect_ab8ee9c3e4b0a65c2c150b3baadd2ca5c}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Zeta/\+Core/\+R\+P\+G\+Classes/\hyperlink{DurableEffect_8hpp}{Durable\+Effect.\+hpp}\end{DoxyCompactItemize}

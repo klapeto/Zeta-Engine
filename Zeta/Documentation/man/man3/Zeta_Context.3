@@ -1,0 +1,78 @@
+.TH "Zeta::Context< ContextType >" 3 "Wed Feb 10 2016" "Zeta" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Zeta::Context< ContextType > \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Context\&.hpp>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "virtual void \fBaddOperationToQueue\fP (\fBContextOperation\fP< ContextType > &operation)"
+.br
+.ti -1c
+.RI "virtual void \fBexecuteOperations\fP ()"
+.br
+.ti -1c
+.RI "\fBContext\fP ()"
+.br
+.ti -1c
+.RI "virtual \fB~Context\fP ()"
+.br
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "std::queue< \fBContextOperation\fP
+.br
+< ContextType > * > \fBoperations\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SS "template<typename ContextType>class Zeta::Context< ContextType >"
+Template to create Contextes 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIContextType\fP the Context-Derived class to be used 
+.RE
+.PP
+
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "template<typename ContextType> \fBZeta::Context\fP< ContextType >::\fBContext\fP ()\fC [inline]\fP"
+
+.SS "template<typename ContextType> virtual \fBZeta::Context\fP< ContextType >::~\fBContext\fP ()\fC [inline]\fP, \fC [virtual]\fP"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "template<typename ContextType> virtual void \fBZeta::Context\fP< ContextType >::addOperationToQueue (\fBContextOperation\fP< ContextType > &operation)\fC [inline]\fP, \fC [virtual]\fP"
+Pushes a \fBContextOperation\fP to the contexte's Queue 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIoperation\fP The context to be added 
+.RE
+.PP
+
+.PP
+Reimplemented in \fBZeta::SynchronousRenderingContext< DisplayT >\fP\&.
+.SS "template<typename ContextType> virtual void \fBZeta::Context\fP< ContextType >::executeOperations ()\fC [inline]\fP, \fC [virtual]\fP"
+Executes all the operations on the \fBContext\fP's Queue if an Operation should be deallocated, it will be done\&. All waiters will be notified when Handled\&. 
+.PP
+Reimplemented in \fBZeta::SynchronousRenderingContext< DisplayT >\fP\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "template<typename ContextType> std::queue<\fBContextOperation\fP<ContextType>*> \fBZeta::Context\fP< ContextType >::operations\fC [protected]\fP"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Zeta from the source code\&.

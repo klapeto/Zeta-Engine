@@ -1,0 +1,94 @@
+.TH "Zeta::AsynchronousWorker" 3 "Wed Feb 10 2016" "Zeta" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Zeta::AsynchronousWorker \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <AsynchronousWorker\&.hpp>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBperformCycle\fP ()"
+.br
+.RI "\fIMakes the runner thread to call the \fBrunCycleOperations()\fP \fP"
+.ti -1c
+.RI "\fBAsynchronousWorker\fP ()"
+.br
+.RI "\fIConstructs a runner thread\&. \fP"
+.ti -1c
+.RI "virtual \fB~AsynchronousWorker\fP ()"
+.br
+.in -1c
+.SS "Protected Member Functions"
+
+.in +1c
+.ti -1c
+.RI "virtual void \fBrunCycleOperations\fP ()=0"
+.br
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "std::mutex \fBmutex\fP"
+.br
+.in -1c
+.SS "Private Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBloop\fP ()"
+.br
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "std::thread \fBworker\fP"
+.br
+.ti -1c
+.RI "std::condition_variable \fBcycle\fP"
+.br
+.ti -1c
+.RI "bool \fBrunning\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+\fBAsynchronousWorker\fP base class\&. Used for the derived classes to create objects that execute actions on a unique separate thread\&. 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Zeta::AsynchronousWorker::AsynchronousWorker ()\fC [inline]\fP"
+
+.PP
+Constructs a runner thread\&. 
+.SS "virtual Zeta::AsynchronousWorker::~AsynchronousWorker ()\fC [inline]\fP, \fC [virtual]\fP"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "void Zeta::AsynchronousWorker::loop ()\fC [inline]\fP, \fC [private]\fP"
+
+.SS "void Zeta::AsynchronousWorker::performCycle ()\fC [inline]\fP"
+
+.PP
+Makes the runner thread to call the \fBrunCycleOperations()\fP 
+.SS "virtual void Zeta::AsynchronousWorker::runCycleOperations ()\fC [protected]\fP, \fC [pure virtual]\fP"
+/brief Pure virtual member function to be implemented by derived classes It should contain any actions that should be executed by the object's runner thread 
+.SH "Member Data Documentation"
+.PP 
+.SS "std::condition_variable Zeta::AsynchronousWorker::cycle\fC [private]\fP"
+
+.SS "std::mutex Zeta::AsynchronousWorker::mutex\fC [protected]\fP"
+
+.SS "bool Zeta::AsynchronousWorker::running\fC [private]\fP"
+
+.SS "std::thread Zeta::AsynchronousWorker::worker\fC [private]\fP"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Zeta from the source code\&.

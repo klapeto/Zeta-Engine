@@ -1,0 +1,256 @@
+\hypertarget{classZeta_1_1ActiveAbilityClass}{\section{Zeta\+:\+:Active\+Ability\+Class Class Reference}
+\label{classZeta_1_1ActiveAbilityClass}\index{Zeta\+::\+Active\+Ability\+Class@{Zeta\+::\+Active\+Ability\+Class}}
+}
+
+
+{\ttfamily \#include $<$Active\+Ability\+Class.\+hpp$>$}
+
+
+
+Inheritance diagram for Zeta\+:\+:Active\+Ability\+Class\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=280pt]{classZeta_1_1ActiveAbilityClass__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Zeta\+:\+:Active\+Ability\+Class\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classZeta_1_1ActiveAbilityClass__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespaceZeta_a1e0a1265f9b3bd3075fb0fabd39088ba}{Float} \hyperlink{classZeta_1_1ActiveAbilityClass_af6927e9b8b25c44539a5e1f563f8ec7d}{get\+Cooldown} () const 
+\item 
+\hyperlink{namespaceZeta_a1e0a1265f9b3bd3075fb0fabd39088ba}{Float} \hyperlink{classZeta_1_1ActiveAbilityClass_aad91e6ee0b80697e2012e9973231ff19}{get\+Mana\+Cost} () const 
+\item 
+\hyperlink{namespaceZeta_a1e0a1265f9b3bd3075fb0fabd39088ba}{Float} \hyperlink{classZeta_1_1ActiveAbilityClass_afda1ffbd0f535675ac77a6d77f3e52eb}{get\+Cast\+Time} () const 
+\item 
+\hyperlink{namespaceZeta_a1e0a1265f9b3bd3075fb0fabd39088ba}{Float} \hyperlink{classZeta_1_1ActiveAbilityClass_a74c2f5b18dcff1dde6e66b6e3cde6985}{get\+Range} () const 
+\item 
+const std\+::string \& \hyperlink{classZeta_1_1ActiveAbilityClass_ab0346d994703ba5a12bdef64024ea9bd}{get\+Cast\+Animation} () const 
+\item 
+const std\+::string \& \hyperlink{classZeta_1_1ActiveAbilityClass_a15910a91b272b272b2e5baff4b4d7d9e}{get\+Release\+Animation} () const 
+\item 
+const std\+::string \& \hyperlink{classZeta_1_1ActiveAbilityClass_a87de08ce87355e4c9ee4cbb75d25abcf}{get\+Cast\+Sound} () const 
+\item 
+const std\+::string \& \hyperlink{classZeta_1_1ActiveAbilityClass_a61f29173a1b156cedbbe5928d9e74aa7}{get\+Release\+Sound} () const 
+\item 
+const \hyperlink{classZeta_1_1ProjectileClass}{Projectile\+Class} $\ast$ \hyperlink{classZeta_1_1ActiveAbilityClass_a180f0054f453213eb15e925fa919a01a}{get\+Projectile\+Class} (const std\+::string \&\hyperlink{classZeta_1_1Resource_a44c5721216f4beb31c0b3d2ef2aecf1d}{name}) const 
+\item 
+\hyperlink{classZeta_1_1Ability}{Ability} $\ast$ \hyperlink{classZeta_1_1ActiveAbilityClass_a7bc4309f792992dd7fb24bd9f1153b01}{get\+New\+Ability} (\hyperlink{classZeta_1_1Lifeform}{Lifeform} $\ast$caster, int level) const 
+\item 
+const \hyperlink{namespaceZeta_a9af2e12c4e432d2a1725f19e5a648a04}{Z\+Map}$<$ std\+::string, \\*
+\hyperlink{classZeta_1_1ProjectileClass}{Projectile\+Class} $>$ \& \hyperlink{classZeta_1_1ActiveAbilityClass_ada3442d70e784a20c2ce9a19df2c0cb2}{get\+Projectile\+Classes} () const 
+\item 
+const \hyperlink{namespaceZeta_a9af2e12c4e432d2a1725f19e5a648a04}{Z\+Map}$<$ std\+::string, \\*
+\hyperlink{classZeta_1_1EffectClass}{Effect\+Class} $>$ \& \hyperlink{classZeta_1_1ActiveAbilityClass_a5adaf78b13d013b38004f72c3b90bc5f}{get\+Effect\+Classes} () const 
+\item 
+void \hyperlink{classZeta_1_1ActiveAbilityClass_ad4916e9a102c5300d1eddb1723fd0298}{apply\+Effect} (const std\+::string \&\hyperlink{classZeta_1_1Resource_a44c5721216f4beb31c0b3d2ef2aecf1d}{name}, \hyperlink{classZeta_1_1Lifeform}{Lifeform} $\ast$target, int level, \hyperlink{classZeta_1_1ActiveAbility}{Active\+Ability} $\ast$ability=nullptr) const 
+\item 
+void \hyperlink{classZeta_1_1ActiveAbilityClass_aee8c5ff9d2858223e36758a36058cbe9}{push\+To\+Lua} (lua\+\_\+\+State $\ast$lstate)
+\item 
+\hyperlink{classZeta_1_1ActiveAbilityClass_ab1c8e4fd674f08755a3312eaa3f7ef8a}{Active\+Ability\+Class} (\hyperlink{classZeta_1_1AbilityClass}{Ability\+Class} \&\hyperlink{classZeta_1_1AbilityClass_ad862e9ba14d23afb20786a1eeb2ca872}{parent}, \hyperlink{classZeta_1_1LuaTable}{Lua\+Table} \&\hyperlink{classZeta_1_1AbilityClass_a58065ca9d19ff9366c09bfc8d81abbac}{table})
+\item 
+\hyperlink{classZeta_1_1ActiveAbilityClass_afb0d7c65437fbab71a9047562048ae8f}{$\sim$\+Active\+Ability\+Class} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespaceZeta_a9af2e12c4e432d2a1725f19e5a648a04}{Z\+Map}$<$ std\+::string, \hyperlink{classZeta_1_1EffectClass}{Effect\+Class} $>$ \hyperlink{classZeta_1_1ActiveAbilityClass_a788c0ef48061e2a7e8906c0a93ca3d69}{effects}
+\item 
+\hyperlink{namespaceZeta_a9af2e12c4e432d2a1725f19e5a648a04}{Z\+Map}$<$ std\+::string, \\*
+\hyperlink{classZeta_1_1ProjectileClass}{Projectile\+Class} $>$ \hyperlink{classZeta_1_1ActiveAbilityClass_a113456627f82c54c0f24569817f47867}{projectiles}
+\item 
+std\+::string \hyperlink{classZeta_1_1ActiveAbilityClass_a0571f13949f9bbdcf09b23ee645fda98}{cast\+Animation}
+\item 
+std\+::string \hyperlink{classZeta_1_1ActiveAbilityClass_a1cc52858da7286705d8aa755790cddc1}{release\+Animation}
+\item 
+std\+::string \hyperlink{classZeta_1_1ActiveAbilityClass_af7987f069a6f1f166ba58bb181926752}{cast\+Sound}
+\item 
+std\+::string \hyperlink{classZeta_1_1ActiveAbilityClass_ad7c34fbf83b75f826243df751de480a0}{release\+Sound}
+\item 
+\hyperlink{namespaceZeta_a1e0a1265f9b3bd3075fb0fabd39088ba}{Float} \hyperlink{classZeta_1_1ActiveAbilityClass_a592c33c2febef27c1db7eb3c6569f4f6}{range}
+\item 
+\hyperlink{namespaceZeta_a1e0a1265f9b3bd3075fb0fabd39088ba}{Float} \hyperlink{classZeta_1_1ActiveAbilityClass_aaff991d71ec034fcd902f720d3f5136a}{mana\+Cost}
+\item 
+\hyperlink{namespaceZeta_a1e0a1265f9b3bd3075fb0fabd39088ba}{Float} \hyperlink{classZeta_1_1ActiveAbilityClass_a7aceb1c38d3a0aa9796903f5d32d750f}{cast\+Time}
+\item 
+\hyperlink{namespaceZeta_a1e0a1265f9b3bd3075fb0fabd39088ba}{Float} \hyperlink{classZeta_1_1ActiveAbilityClass_a2f97b3b77b0a02adf554af6e59fa81fb}{cooldown}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classZeta_1_1ActiveAbilityClass_ab1c8e4fd674f08755a3312eaa3f7ef8a}{\index{Zeta\+::\+Active\+Ability\+Class@{Zeta\+::\+Active\+Ability\+Class}!Active\+Ability\+Class@{Active\+Ability\+Class}}
+\index{Active\+Ability\+Class@{Active\+Ability\+Class}!Zeta\+::\+Active\+Ability\+Class@{Zeta\+::\+Active\+Ability\+Class}}
+\subsubsection[{Active\+Ability\+Class}]{\setlength{\rightskip}{0pt plus 5cm}Zeta\+::\+Active\+Ability\+Class\+::\+Active\+Ability\+Class (
+\begin{DoxyParamCaption}
+\item[{{\bf Ability\+Class} \&}]{parent, }
+\item[{{\bf Lua\+Table} \&}]{table}
+\end{DoxyParamCaption}
+)}}\label{classZeta_1_1ActiveAbilityClass_ab1c8e4fd674f08755a3312eaa3f7ef8a}
+\hypertarget{classZeta_1_1ActiveAbilityClass_afb0d7c65437fbab71a9047562048ae8f}{\index{Zeta\+::\+Active\+Ability\+Class@{Zeta\+::\+Active\+Ability\+Class}!````~Active\+Ability\+Class@{$\sim$\+Active\+Ability\+Class}}
+\index{````~Active\+Ability\+Class@{$\sim$\+Active\+Ability\+Class}!Zeta\+::\+Active\+Ability\+Class@{Zeta\+::\+Active\+Ability\+Class}}
+\subsubsection[{$\sim$\+Active\+Ability\+Class}]{\setlength{\rightskip}{0pt plus 5cm}Zeta\+::\+Active\+Ability\+Class\+::$\sim$\+Active\+Ability\+Class (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classZeta_1_1ActiveAbilityClass_afb0d7c65437fbab71a9047562048ae8f}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classZeta_1_1ActiveAbilityClass_ad4916e9a102c5300d1eddb1723fd0298}{\index{Zeta\+::\+Active\+Ability\+Class@{Zeta\+::\+Active\+Ability\+Class}!apply\+Effect@{apply\+Effect}}
+\index{apply\+Effect@{apply\+Effect}!Zeta\+::\+Active\+Ability\+Class@{Zeta\+::\+Active\+Ability\+Class}}
+\subsubsection[{apply\+Effect}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+Active\+Ability\+Class\+::apply\+Effect (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{name, }
+\item[{{\bf Lifeform} $\ast$}]{target, }
+\item[{int}]{level, }
+\item[{{\bf Active\+Ability} $\ast$}]{ability = {\ttfamily nullptr}}
+\end{DoxyParamCaption}
+) const}}\label{classZeta_1_1ActiveAbilityClass_ad4916e9a102c5300d1eddb1723fd0298}
+\hypertarget{classZeta_1_1ActiveAbilityClass_ab0346d994703ba5a12bdef64024ea9bd}{\index{Zeta\+::\+Active\+Ability\+Class@{Zeta\+::\+Active\+Ability\+Class}!get\+Cast\+Animation@{get\+Cast\+Animation}}
+\index{get\+Cast\+Animation@{get\+Cast\+Animation}!Zeta\+::\+Active\+Ability\+Class@{Zeta\+::\+Active\+Ability\+Class}}
+\subsubsection[{get\+Cast\+Animation}]{\setlength{\rightskip}{0pt plus 5cm}const std\+::string\& Zeta\+::\+Active\+Ability\+Class\+::get\+Cast\+Animation (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1ActiveAbilityClass_ab0346d994703ba5a12bdef64024ea9bd}
+\hypertarget{classZeta_1_1ActiveAbilityClass_a87de08ce87355e4c9ee4cbb75d25abcf}{\index{Zeta\+::\+Active\+Ability\+Class@{Zeta\+::\+Active\+Ability\+Class}!get\+Cast\+Sound@{get\+Cast\+Sound}}
+\index{get\+Cast\+Sound@{get\+Cast\+Sound}!Zeta\+::\+Active\+Ability\+Class@{Zeta\+::\+Active\+Ability\+Class}}
+\subsubsection[{get\+Cast\+Sound}]{\setlength{\rightskip}{0pt plus 5cm}const std\+::string\& Zeta\+::\+Active\+Ability\+Class\+::get\+Cast\+Sound (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1ActiveAbilityClass_a87de08ce87355e4c9ee4cbb75d25abcf}
+\hypertarget{classZeta_1_1ActiveAbilityClass_afda1ffbd0f535675ac77a6d77f3e52eb}{\index{Zeta\+::\+Active\+Ability\+Class@{Zeta\+::\+Active\+Ability\+Class}!get\+Cast\+Time@{get\+Cast\+Time}}
+\index{get\+Cast\+Time@{get\+Cast\+Time}!Zeta\+::\+Active\+Ability\+Class@{Zeta\+::\+Active\+Ability\+Class}}
+\subsubsection[{get\+Cast\+Time}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Float} Zeta\+::\+Active\+Ability\+Class\+::get\+Cast\+Time (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1ActiveAbilityClass_afda1ffbd0f535675ac77a6d77f3e52eb}
+\hypertarget{classZeta_1_1ActiveAbilityClass_af6927e9b8b25c44539a5e1f563f8ec7d}{\index{Zeta\+::\+Active\+Ability\+Class@{Zeta\+::\+Active\+Ability\+Class}!get\+Cooldown@{get\+Cooldown}}
+\index{get\+Cooldown@{get\+Cooldown}!Zeta\+::\+Active\+Ability\+Class@{Zeta\+::\+Active\+Ability\+Class}}
+\subsubsection[{get\+Cooldown}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Float} Zeta\+::\+Active\+Ability\+Class\+::get\+Cooldown (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1ActiveAbilityClass_af6927e9b8b25c44539a5e1f563f8ec7d}
+\hypertarget{classZeta_1_1ActiveAbilityClass_a5adaf78b13d013b38004f72c3b90bc5f}{\index{Zeta\+::\+Active\+Ability\+Class@{Zeta\+::\+Active\+Ability\+Class}!get\+Effect\+Classes@{get\+Effect\+Classes}}
+\index{get\+Effect\+Classes@{get\+Effect\+Classes}!Zeta\+::\+Active\+Ability\+Class@{Zeta\+::\+Active\+Ability\+Class}}
+\subsubsection[{get\+Effect\+Classes}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Z\+Map}$<$std\+::string, {\bf Effect\+Class}$>$\& Zeta\+::\+Active\+Ability\+Class\+::get\+Effect\+Classes (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1ActiveAbilityClass_a5adaf78b13d013b38004f72c3b90bc5f}
+\hypertarget{classZeta_1_1ActiveAbilityClass_aad91e6ee0b80697e2012e9973231ff19}{\index{Zeta\+::\+Active\+Ability\+Class@{Zeta\+::\+Active\+Ability\+Class}!get\+Mana\+Cost@{get\+Mana\+Cost}}
+\index{get\+Mana\+Cost@{get\+Mana\+Cost}!Zeta\+::\+Active\+Ability\+Class@{Zeta\+::\+Active\+Ability\+Class}}
+\subsubsection[{get\+Mana\+Cost}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Float} Zeta\+::\+Active\+Ability\+Class\+::get\+Mana\+Cost (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1ActiveAbilityClass_aad91e6ee0b80697e2012e9973231ff19}
+\hypertarget{classZeta_1_1ActiveAbilityClass_a7bc4309f792992dd7fb24bd9f1153b01}{\index{Zeta\+::\+Active\+Ability\+Class@{Zeta\+::\+Active\+Ability\+Class}!get\+New\+Ability@{get\+New\+Ability}}
+\index{get\+New\+Ability@{get\+New\+Ability}!Zeta\+::\+Active\+Ability\+Class@{Zeta\+::\+Active\+Ability\+Class}}
+\subsubsection[{get\+New\+Ability}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Ability}$\ast$ Zeta\+::\+Active\+Ability\+Class\+::get\+New\+Ability (
+\begin{DoxyParamCaption}
+\item[{{\bf Lifeform} $\ast$}]{caster, }
+\item[{int}]{level}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classZeta_1_1ActiveAbilityClass_a7bc4309f792992dd7fb24bd9f1153b01}
+
+
+Reimplemented from \hyperlink{classZeta_1_1AbilityClass_a15470bcd0795b12410e6f138a1b1a804}{Zeta\+::\+Ability\+Class}.
+
+\hypertarget{classZeta_1_1ActiveAbilityClass_a180f0054f453213eb15e925fa919a01a}{\index{Zeta\+::\+Active\+Ability\+Class@{Zeta\+::\+Active\+Ability\+Class}!get\+Projectile\+Class@{get\+Projectile\+Class}}
+\index{get\+Projectile\+Class@{get\+Projectile\+Class}!Zeta\+::\+Active\+Ability\+Class@{Zeta\+::\+Active\+Ability\+Class}}
+\subsubsection[{get\+Projectile\+Class}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Projectile\+Class}$\ast$ Zeta\+::\+Active\+Ability\+Class\+::get\+Projectile\+Class (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{name}
+\end{DoxyParamCaption}
+) const}}\label{classZeta_1_1ActiveAbilityClass_a180f0054f453213eb15e925fa919a01a}
+\hypertarget{classZeta_1_1ActiveAbilityClass_ada3442d70e784a20c2ce9a19df2c0cb2}{\index{Zeta\+::\+Active\+Ability\+Class@{Zeta\+::\+Active\+Ability\+Class}!get\+Projectile\+Classes@{get\+Projectile\+Classes}}
+\index{get\+Projectile\+Classes@{get\+Projectile\+Classes}!Zeta\+::\+Active\+Ability\+Class@{Zeta\+::\+Active\+Ability\+Class}}
+\subsubsection[{get\+Projectile\+Classes}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Z\+Map}$<$std\+::string, {\bf Projectile\+Class}$>$\& Zeta\+::\+Active\+Ability\+Class\+::get\+Projectile\+Classes (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1ActiveAbilityClass_ada3442d70e784a20c2ce9a19df2c0cb2}
+\hypertarget{classZeta_1_1ActiveAbilityClass_a74c2f5b18dcff1dde6e66b6e3cde6985}{\index{Zeta\+::\+Active\+Ability\+Class@{Zeta\+::\+Active\+Ability\+Class}!get\+Range@{get\+Range}}
+\index{get\+Range@{get\+Range}!Zeta\+::\+Active\+Ability\+Class@{Zeta\+::\+Active\+Ability\+Class}}
+\subsubsection[{get\+Range}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Float} Zeta\+::\+Active\+Ability\+Class\+::get\+Range (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1ActiveAbilityClass_a74c2f5b18dcff1dde6e66b6e3cde6985}
+\hypertarget{classZeta_1_1ActiveAbilityClass_a15910a91b272b272b2e5baff4b4d7d9e}{\index{Zeta\+::\+Active\+Ability\+Class@{Zeta\+::\+Active\+Ability\+Class}!get\+Release\+Animation@{get\+Release\+Animation}}
+\index{get\+Release\+Animation@{get\+Release\+Animation}!Zeta\+::\+Active\+Ability\+Class@{Zeta\+::\+Active\+Ability\+Class}}
+\subsubsection[{get\+Release\+Animation}]{\setlength{\rightskip}{0pt plus 5cm}const std\+::string\& Zeta\+::\+Active\+Ability\+Class\+::get\+Release\+Animation (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1ActiveAbilityClass_a15910a91b272b272b2e5baff4b4d7d9e}
+\hypertarget{classZeta_1_1ActiveAbilityClass_a61f29173a1b156cedbbe5928d9e74aa7}{\index{Zeta\+::\+Active\+Ability\+Class@{Zeta\+::\+Active\+Ability\+Class}!get\+Release\+Sound@{get\+Release\+Sound}}
+\index{get\+Release\+Sound@{get\+Release\+Sound}!Zeta\+::\+Active\+Ability\+Class@{Zeta\+::\+Active\+Ability\+Class}}
+\subsubsection[{get\+Release\+Sound}]{\setlength{\rightskip}{0pt plus 5cm}const std\+::string\& Zeta\+::\+Active\+Ability\+Class\+::get\+Release\+Sound (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1ActiveAbilityClass_a61f29173a1b156cedbbe5928d9e74aa7}
+\hypertarget{classZeta_1_1ActiveAbilityClass_aee8c5ff9d2858223e36758a36058cbe9}{\index{Zeta\+::\+Active\+Ability\+Class@{Zeta\+::\+Active\+Ability\+Class}!push\+To\+Lua@{push\+To\+Lua}}
+\index{push\+To\+Lua@{push\+To\+Lua}!Zeta\+::\+Active\+Ability\+Class@{Zeta\+::\+Active\+Ability\+Class}}
+\subsubsection[{push\+To\+Lua}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+Active\+Ability\+Class\+::push\+To\+Lua (
+\begin{DoxyParamCaption}
+\item[{lua\+\_\+\+State $\ast$}]{lstate}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classZeta_1_1ActiveAbilityClass_aee8c5ff9d2858223e36758a36058cbe9}
+
+
+Reimplemented from \hyperlink{classZeta_1_1AbilityClass_a3535ae18fef8d447febab98c85e169f3}{Zeta\+::\+Ability\+Class}.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classZeta_1_1ActiveAbilityClass_a0571f13949f9bbdcf09b23ee645fda98}{\index{Zeta\+::\+Active\+Ability\+Class@{Zeta\+::\+Active\+Ability\+Class}!cast\+Animation@{cast\+Animation}}
+\index{cast\+Animation@{cast\+Animation}!Zeta\+::\+Active\+Ability\+Class@{Zeta\+::\+Active\+Ability\+Class}}
+\subsubsection[{cast\+Animation}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string Zeta\+::\+Active\+Ability\+Class\+::cast\+Animation\hspace{0.3cm}{\ttfamily [private]}}}\label{classZeta_1_1ActiveAbilityClass_a0571f13949f9bbdcf09b23ee645fda98}
+\hypertarget{classZeta_1_1ActiveAbilityClass_af7987f069a6f1f166ba58bb181926752}{\index{Zeta\+::\+Active\+Ability\+Class@{Zeta\+::\+Active\+Ability\+Class}!cast\+Sound@{cast\+Sound}}
+\index{cast\+Sound@{cast\+Sound}!Zeta\+::\+Active\+Ability\+Class@{Zeta\+::\+Active\+Ability\+Class}}
+\subsubsection[{cast\+Sound}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string Zeta\+::\+Active\+Ability\+Class\+::cast\+Sound\hspace{0.3cm}{\ttfamily [private]}}}\label{classZeta_1_1ActiveAbilityClass_af7987f069a6f1f166ba58bb181926752}
+\hypertarget{classZeta_1_1ActiveAbilityClass_a7aceb1c38d3a0aa9796903f5d32d750f}{\index{Zeta\+::\+Active\+Ability\+Class@{Zeta\+::\+Active\+Ability\+Class}!cast\+Time@{cast\+Time}}
+\index{cast\+Time@{cast\+Time}!Zeta\+::\+Active\+Ability\+Class@{Zeta\+::\+Active\+Ability\+Class}}
+\subsubsection[{cast\+Time}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Float} Zeta\+::\+Active\+Ability\+Class\+::cast\+Time\hspace{0.3cm}{\ttfamily [private]}}}\label{classZeta_1_1ActiveAbilityClass_a7aceb1c38d3a0aa9796903f5d32d750f}
+\hypertarget{classZeta_1_1ActiveAbilityClass_a2f97b3b77b0a02adf554af6e59fa81fb}{\index{Zeta\+::\+Active\+Ability\+Class@{Zeta\+::\+Active\+Ability\+Class}!cooldown@{cooldown}}
+\index{cooldown@{cooldown}!Zeta\+::\+Active\+Ability\+Class@{Zeta\+::\+Active\+Ability\+Class}}
+\subsubsection[{cooldown}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Float} Zeta\+::\+Active\+Ability\+Class\+::cooldown\hspace{0.3cm}{\ttfamily [private]}}}\label{classZeta_1_1ActiveAbilityClass_a2f97b3b77b0a02adf554af6e59fa81fb}
+\hypertarget{classZeta_1_1ActiveAbilityClass_a788c0ef48061e2a7e8906c0a93ca3d69}{\index{Zeta\+::\+Active\+Ability\+Class@{Zeta\+::\+Active\+Ability\+Class}!effects@{effects}}
+\index{effects@{effects}!Zeta\+::\+Active\+Ability\+Class@{Zeta\+::\+Active\+Ability\+Class}}
+\subsubsection[{effects}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Z\+Map}$<$std\+::string, {\bf Effect\+Class}$>$ Zeta\+::\+Active\+Ability\+Class\+::effects\hspace{0.3cm}{\ttfamily [private]}}}\label{classZeta_1_1ActiveAbilityClass_a788c0ef48061e2a7e8906c0a93ca3d69}
+\hypertarget{classZeta_1_1ActiveAbilityClass_aaff991d71ec034fcd902f720d3f5136a}{\index{Zeta\+::\+Active\+Ability\+Class@{Zeta\+::\+Active\+Ability\+Class}!mana\+Cost@{mana\+Cost}}
+\index{mana\+Cost@{mana\+Cost}!Zeta\+::\+Active\+Ability\+Class@{Zeta\+::\+Active\+Ability\+Class}}
+\subsubsection[{mana\+Cost}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Float} Zeta\+::\+Active\+Ability\+Class\+::mana\+Cost\hspace{0.3cm}{\ttfamily [private]}}}\label{classZeta_1_1ActiveAbilityClass_aaff991d71ec034fcd902f720d3f5136a}
+\hypertarget{classZeta_1_1ActiveAbilityClass_a113456627f82c54c0f24569817f47867}{\index{Zeta\+::\+Active\+Ability\+Class@{Zeta\+::\+Active\+Ability\+Class}!projectiles@{projectiles}}
+\index{projectiles@{projectiles}!Zeta\+::\+Active\+Ability\+Class@{Zeta\+::\+Active\+Ability\+Class}}
+\subsubsection[{projectiles}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Z\+Map}$<$std\+::string, {\bf Projectile\+Class}$>$ Zeta\+::\+Active\+Ability\+Class\+::projectiles\hspace{0.3cm}{\ttfamily [private]}}}\label{classZeta_1_1ActiveAbilityClass_a113456627f82c54c0f24569817f47867}
+\hypertarget{classZeta_1_1ActiveAbilityClass_a592c33c2febef27c1db7eb3c6569f4f6}{\index{Zeta\+::\+Active\+Ability\+Class@{Zeta\+::\+Active\+Ability\+Class}!range@{range}}
+\index{range@{range}!Zeta\+::\+Active\+Ability\+Class@{Zeta\+::\+Active\+Ability\+Class}}
+\subsubsection[{range}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Float} Zeta\+::\+Active\+Ability\+Class\+::range\hspace{0.3cm}{\ttfamily [private]}}}\label{classZeta_1_1ActiveAbilityClass_a592c33c2febef27c1db7eb3c6569f4f6}
+\hypertarget{classZeta_1_1ActiveAbilityClass_a1cc52858da7286705d8aa755790cddc1}{\index{Zeta\+::\+Active\+Ability\+Class@{Zeta\+::\+Active\+Ability\+Class}!release\+Animation@{release\+Animation}}
+\index{release\+Animation@{release\+Animation}!Zeta\+::\+Active\+Ability\+Class@{Zeta\+::\+Active\+Ability\+Class}}
+\subsubsection[{release\+Animation}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string Zeta\+::\+Active\+Ability\+Class\+::release\+Animation\hspace{0.3cm}{\ttfamily [private]}}}\label{classZeta_1_1ActiveAbilityClass_a1cc52858da7286705d8aa755790cddc1}
+\hypertarget{classZeta_1_1ActiveAbilityClass_ad7c34fbf83b75f826243df751de480a0}{\index{Zeta\+::\+Active\+Ability\+Class@{Zeta\+::\+Active\+Ability\+Class}!release\+Sound@{release\+Sound}}
+\index{release\+Sound@{release\+Sound}!Zeta\+::\+Active\+Ability\+Class@{Zeta\+::\+Active\+Ability\+Class}}
+\subsubsection[{release\+Sound}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string Zeta\+::\+Active\+Ability\+Class\+::release\+Sound\hspace{0.3cm}{\ttfamily [private]}}}\label{classZeta_1_1ActiveAbilityClass_ad7c34fbf83b75f826243df751de480a0}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Zeta/\+Core/\+R\+P\+G\+Classes/\hyperlink{ActiveAbilityClass_8hpp}{Active\+Ability\+Class.\+hpp}\end{DoxyCompactItemize}

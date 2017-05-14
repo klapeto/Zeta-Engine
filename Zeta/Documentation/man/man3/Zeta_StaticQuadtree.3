@@ -1,0 +1,223 @@
+.TH "Zeta::StaticQuadtree" 3 "Wed Feb 10 2016" "Zeta" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Zeta::StaticQuadtree \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <StaticQuadtree\&.hpp>\fP
+.PP
+Inherits \fBZeta::Drawable\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "bool \fBisLeaf\fP () const "
+.br
+.ti -1c
+.RI "void \fBsetLeaf\fP (bool \fBleaf\fP)"
+.br
+.ti -1c
+.RI "int \fBinsert\fP (\fBObject\fP *obj)"
+.br
+.ti -1c
+.RI "std::vector< \fBObject\fP * > \fBgetObjectsAt\fP (\fBFloat\fP x, \fBFloat\fP y) const "
+.br
+.ti -1c
+.RI "std::vector< \fBObject\fP * > \fBgetObjectsAt\fP (const \fBRectangle\fP &rect) const "
+.br
+.ti -1c
+.RI "void \fBdraw\fP (\fBFloat\fP x, \fBFloat\fP y, \fBFloat\fP rotation=0\&.0f, Float scale=1\&.0f) const "
+.br
+.ti -1c
+.RI "void \fBclear\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetBounds\fP (\fBFloat\fP x, \fBFloat\fP y, \fBFloat\fP width, \fBFloat\fP height)"
+.br
+.ti -1c
+.RI "void \fBoffset\fP (\fBFloat\fP dx, \fBFloat\fP dy)"
+.br
+.ti -1c
+.RI "void \fBresetPosition\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetSize\fP (\fBFloat\fP width, \fBFloat\fP height)"
+.br
+.ti -1c
+.RI "void \fBsetPosition\fP (\fBFloat\fP x, \fBFloat\fP y)"
+.br
+.ti -1c
+.RI "\fBFloat\fP \fBgetWidth\fP () const "
+.br
+.ti -1c
+.RI "\fBFloat\fP \fBgetHeight\fP () const "
+.br
+.ti -1c
+.RI "\fBStaticQuadtree\fP ()"
+.br
+.ti -1c
+.RI "\fBStaticQuadtree\fP (\fBStaticQuadtree\fP *\fBparent\fP, int \fBlevel\fP)"
+.br
+.ti -1c
+.RI "\fB~StaticQuadtree\fP ()"
+.br
+.in -1c
+.SS "Private Types"
+
+.in +1c
+.ti -1c
+.RI "enum \fBNode\fP { \fBNW\fP, \fBNE\fP, \fBSW\fP, \fBSE\fP }"
+.br
+.ti -1c
+.RI "enum \fBInsert_Out\fP { \fBNo_Contact\fP = -2, \fBChild_Handles\fP = -1, \fBParent_Handles\fP = 0 }"
+.br
+.in -1c
+.SS "Private Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBsubDivide\fP ()"
+.br
+.ti -1c
+.RI "bool \fBisInside\fP (\fBObject\fP *obj)"
+.br
+.ti -1c
+.RI "bool \fBtouches\fP (\fBObject\fP *obj)"
+.br
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "std::vector< \fBObject\fP * > \fBobjects\fP"
+.br
+.ti -1c
+.RI "\fBStaticQuadtree\fP * \fBchilds\fP [4]"
+.br
+.ti -1c
+.RI "\fBStaticQuadtree\fP * \fBparent\fP"
+.br
+.ti -1c
+.RI "\fBRectangle\fP \fBbounds\fP"
+.br
+.ti -1c
+.RI "int \fBlevel\fP"
+.br
+.ti -1c
+.RI "const int \fBmaxLevel\fP = 5"
+.br
+.ti -1c
+.RI "const unsigned int \fBmaxObjects\fP = 10"
+.br
+.ti -1c
+.RI "bool \fBleaf\fP"
+.br
+.in -1c
+.SH "Member Enumeration Documentation"
+.PP 
+.SS "enum \fBZeta::StaticQuadtree::Insert_Out\fP\fC [private]\fP"
+
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fINo_Contact \fP\fP
+.TP
+\fB\fIChild_Handles \fP\fP
+.TP
+\fB\fIParent_Handles \fP\fP
+.SS "enum \fBZeta::StaticQuadtree::Node\fP\fC [private]\fP"
+
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fINW \fP\fP
+.TP
+\fB\fINE \fP\fP
+.TP
+\fB\fISW \fP\fP
+.TP
+\fB\fISE \fP\fP
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Zeta::StaticQuadtree::StaticQuadtree ()"
+
+.SS "Zeta::StaticQuadtree::StaticQuadtree (\fBStaticQuadtree\fP *parent, intlevel)"
+
+.SS "Zeta::StaticQuadtree::~StaticQuadtree ()"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "void Zeta::StaticQuadtree::clear ()"
+
+.SS "void Zeta::StaticQuadtree::draw (\fBFloat\fPx, \fBFloat\fPy, \fBFloat\fProtation = \fC0\&.0f\fP, \fBFloat\fPscale = \fC1\&.0f\fP) const\fC [virtual]\fP"
+Draws the \fBObject\fP on screen\&. Be advised, the x,y, offsets might have different meaning on different implementations\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIx\fP X offset to be applied on the drawing 
+.br
+\fIy\fP Y offset to be applied on the drawing 
+.br
+\fIrotation\fP the rotation to be applied on the drawing 
+.RE
+.PP
+
+.PP
+Implements \fBZeta::Drawable\fP\&.
+.SS "\fBFloat\fP Zeta::StaticQuadtree::getHeight () const\fC [inline]\fP"
+
+.SS "std::vector<\fBObject\fP*> Zeta::StaticQuadtree::getObjectsAt (\fBFloat\fPx, \fBFloat\fPy) const"
+
+.SS "std::vector<\fBObject\fP*> Zeta::StaticQuadtree::getObjectsAt (const \fBRectangle\fP &rect) const"
+
+.SS "\fBFloat\fP Zeta::StaticQuadtree::getWidth () const\fC [inline]\fP"
+
+.SS "int Zeta::StaticQuadtree::insert (\fBObject\fP *obj)"
+
+.SS "bool Zeta::StaticQuadtree::isInside (\fBObject\fP *obj)\fC [private]\fP"
+
+.SS "bool Zeta::StaticQuadtree::isLeaf () const\fC [inline]\fP"
+
+.SS "void Zeta::StaticQuadtree::offset (\fBFloat\fPdx, \fBFloat\fPdy)"
+
+.SS "void Zeta::StaticQuadtree::resetPosition ()"
+
+.SS "void Zeta::StaticQuadtree::setBounds (\fBFloat\fPx, \fBFloat\fPy, \fBFloat\fPwidth, \fBFloat\fPheight)"
+
+.SS "void Zeta::StaticQuadtree::setLeaf (boolleaf)\fC [inline]\fP"
+
+.SS "void Zeta::StaticQuadtree::setPosition (\fBFloat\fPx, \fBFloat\fPy)"
+
+.SS "void Zeta::StaticQuadtree::setSize (\fBFloat\fPwidth, \fBFloat\fPheight)"
+
+.SS "void Zeta::StaticQuadtree::subDivide ()\fC [private]\fP"
+
+.SS "bool Zeta::StaticQuadtree::touches (\fBObject\fP *obj)\fC [private]\fP"
+
+.SH "Member Data Documentation"
+.PP 
+.SS "\fBRectangle\fP Zeta::StaticQuadtree::bounds\fC [private]\fP"
+
+.SS "\fBStaticQuadtree\fP* Zeta::StaticQuadtree::childs[4]\fC [private]\fP"
+
+.SS "bool Zeta::StaticQuadtree::leaf\fC [private]\fP"
+
+.SS "int Zeta::StaticQuadtree::level\fC [private]\fP"
+
+.SS "const int Zeta::StaticQuadtree::maxLevel = 5\fC [private]\fP"
+
+.SS "const unsigned int Zeta::StaticQuadtree::maxObjects = 10\fC [private]\fP"
+
+.SS "std::vector<\fBObject\fP*> Zeta::StaticQuadtree::objects\fC [private]\fP"
+
+.SS "\fBStaticQuadtree\fP* Zeta::StaticQuadtree::parent\fC [private]\fP"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Zeta from the source code\&.

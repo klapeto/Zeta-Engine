@@ -1,0 +1,6 @@
+$#include <Zeta/Core/RPGClasses/SeekingProjectile.hpp>
+
+class SeekingProjectile: public Projectile {
+public:
+void setTarget(Lifeform* target);
+};

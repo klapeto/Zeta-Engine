@@ -1,0 +1,8 @@
+
+$#include <Zeta/Core/Logger.hpp>
+
+class Logger {
+public:
+	static Logger& getInstance();
+	void write(const std::string& message);
+};

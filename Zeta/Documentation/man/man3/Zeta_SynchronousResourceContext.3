@@ -1,0 +1,305 @@
+.TH "Zeta::SynchronousResourceContext< BitmapT, SoundT >" 3 "Wed Feb 10 2016" "Zeta" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Zeta::SynchronousResourceContext< BitmapT, SoundT > \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <SynchronousResourceContext\&.hpp>\fP
+.PP
+Inherits \fBZeta::ResourceContext\fP\&.
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "class \fBBitmapLoadRequest\fP"
+.br
+.in -1c
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBSoundInstance\fP & \fBgetSound\fP (const std::string &path)"
+.br
+.ti -1c
+.RI "const \fBBitmap\fP & \fBgetBitmap\fP (const std::string &path)"
+.br
+.ti -1c
+.RI "const \fBAnimationClass\fP & \fBgetAnimationClass\fP (const std::string &path)"
+.br
+.ti -1c
+.RI "const \fBFile\fP & \fBgetFile\fP (const std::string &path)"
+.br
+.ti -1c
+.RI "const \fBSpriteSheet\fP & \fBgetSpriteSheet\fP (const std::string &path)"
+.br
+.ti -1c
+.RI "const \fBAnimationPack\fP & \fBgetAnimationPack\fP (const std::string &path)"
+.br
+.ti -1c
+.RI "const \fBAbilityClass\fP & \fBgetAbilityClass\fP (const std::string &path)"
+.br
+.ti -1c
+.RI "const \fBLifeformClass\fP & \fBgetLifeformClass\fP (const std::string &path)"
+.br
+.ti -1c
+.RI "void \fBreleaseResource\fP (const \fBBitmap\fP &value)"
+.br
+.ti -1c
+.RI "void \fBreleaseResource\fP (const \fBSound\fP &value)"
+.br
+.ti -1c
+.RI "void \fBreleaseResource\fP (const \fBAnimationClass\fP &value)"
+.br
+.ti -1c
+.RI "void \fBreleaseResource\fP (const \fBFile\fP &value)"
+.br
+.ti -1c
+.RI "void \fBreleaseResource\fP (const \fBSpriteSheet\fP &value)"
+.br
+.ti -1c
+.RI "void \fBreleaseResource\fP (const \fBAnimationPack\fP &value)"
+.br
+.ti -1c
+.RI "void \fBreleaseResource\fP (const \fBAbilityClass\fP &value)"
+.br
+.ti -1c
+.RI "void \fBreleaseResource\fP (const \fBLifeformClass\fP &value)"
+.br
+.ti -1c
+.RI "const \fBBitmap\fP & \fBgetNullBitmap\fP ()"
+.br
+.ti -1c
+.RI "const \fBSound\fP & \fBgetNullSound\fP ()"
+.br
+.ti -1c
+.RI "\fBSynchronousResourceContext\fP ()"
+.br
+.ti -1c
+.RI "\fB~SynchronousResourceContext\fP ()"
+.br
+.in -1c
+.SS "Private Member Functions"
+
+.in +1c
+.ti -1c
+.RI "template<typename RType > const RType & \fBgetResource\fP (const std::string &path, std::unordered_map< std::string, \fBSharedResource\fP< RType >> &map, std::mutex &mutex)"
+.br
+.ti -1c
+.RI "template<typename RType > void \fBreleaseMappedResource\fP (const std::string &path, std::unordered_map< std::string, \fBSharedResource\fP< RType >> &map, std::mutex &mutex)"
+.br
+.ti -1c
+.RI "const \fBBitmap\fP & \fBgetBitmapImpl\fP (const std::string &path)"
+.br
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "std::mutex \fBbitmapMutex\fP"
+.br
+.ti -1c
+.RI "std::mutex \fBsoundMutex\fP"
+.br
+.ti -1c
+.RI "std::mutex \fBanimationClassMutex\fP"
+.br
+.ti -1c
+.RI "std::mutex \fBfileMutex\fP"
+.br
+.ti -1c
+.RI "std::mutex \fBspriteSheetMutex\fP"
+.br
+.ti -1c
+.RI "std::mutex \fBanimationPackMutex\fP"
+.br
+.ti -1c
+.RI "std::mutex \fBabilityClassMutex\fP"
+.br
+.ti -1c
+.RI "std::mutex \fBlifeformClassMutex\fP"
+.br
+.ti -1c
+.RI "std::unordered_map
+.br
+< std::string, \fBSharedResource\fP
+.br
+< BitmapT > > \fBbitmaps\fP"
+.br
+.ti -1c
+.RI "std::unordered_map
+.br
+< std::string, \fBSharedResource\fP
+.br
+< SoundT > > \fBsounds\fP"
+.br
+.ti -1c
+.RI "std::unordered_map
+.br
+< std::string, \fBSharedResource\fP
+.br
+< \fBAnimationClass\fP > > \fBanimationClasses\fP"
+.br
+.ti -1c
+.RI "std::unordered_map
+.br
+< std::string, \fBSharedResource\fP
+.br
+< \fBFile\fP > > \fBfiles\fP"
+.br
+.ti -1c
+.RI "std::unordered_map
+.br
+< std::string, \fBSharedResource\fP
+.br
+< \fBSpriteSheet\fP > > \fBspriteSheets\fP"
+.br
+.ti -1c
+.RI "std::unordered_map
+.br
+< std::string, \fBSharedResource\fP
+.br
+< \fBAnimationPack\fP > > \fBanimationPacks\fP"
+.br
+.ti -1c
+.RI "std::unordered_map
+.br
+< std::string, \fBSharedResource\fP
+.br
+< \fBAbilityClass\fP > > \fBabilityClasses\fP"
+.br
+.ti -1c
+.RI "std::unordered_map
+.br
+< std::string, \fBSharedResource\fP
+.br
+< \fBLifeformClass\fP > > \fBlifeformClasses\fP"
+.br
+.in -1c
+.SS "Additional Inherited Members"
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "template<typename BitmapT , typename SoundT > \fBZeta::SynchronousResourceContext\fP< BitmapT, SoundT >::\fBSynchronousResourceContext\fP ()\fC [inline]\fP"
+
+.SS "template<typename BitmapT , typename SoundT > \fBZeta::SynchronousResourceContext\fP< BitmapT, SoundT >::~\fBSynchronousResourceContext\fP ()\fC [inline]\fP"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "template<typename BitmapT , typename SoundT > const \fBAbilityClass\fP& \fBZeta::SynchronousResourceContext\fP< BitmapT, SoundT >::getAbilityClass (const std::string &path)\fC [inline]\fP, \fC [virtual]\fP"
+
+.PP
+Implements \fBZeta::ResourceContext\fP\&.
+.SS "template<typename BitmapT , typename SoundT > const \fBAnimationClass\fP& \fBZeta::SynchronousResourceContext\fP< BitmapT, SoundT >::getAnimationClass (const std::string &path)\fC [inline]\fP, \fC [virtual]\fP"
+
+.PP
+Implements \fBZeta::ResourceContext\fP\&.
+.SS "template<typename BitmapT , typename SoundT > const \fBAnimationPack\fP& \fBZeta::SynchronousResourceContext\fP< BitmapT, SoundT >::getAnimationPack (const std::string &path)\fC [inline]\fP, \fC [virtual]\fP"
+
+.PP
+Implements \fBZeta::ResourceContext\fP\&.
+.SS "template<typename BitmapT , typename SoundT > const \fBBitmap\fP& \fBZeta::SynchronousResourceContext\fP< BitmapT, SoundT >::getBitmap (const std::string &path)\fC [inline]\fP, \fC [virtual]\fP"
+
+.PP
+Implements \fBZeta::ResourceContext\fP\&.
+.SS "template<typename BitmapT , typename SoundT > const \fBBitmap\fP& \fBZeta::SynchronousResourceContext\fP< BitmapT, SoundT >::getBitmapImpl (const std::string &path)\fC [inline]\fP, \fC [private]\fP"
+
+.SS "template<typename BitmapT , typename SoundT > const \fBFile\fP& \fBZeta::SynchronousResourceContext\fP< BitmapT, SoundT >::getFile (const std::string &path)\fC [inline]\fP, \fC [virtual]\fP"
+
+.PP
+Implements \fBZeta::ResourceContext\fP\&.
+.SS "template<typename BitmapT , typename SoundT > const \fBLifeformClass\fP& \fBZeta::SynchronousResourceContext\fP< BitmapT, SoundT >::getLifeformClass (const std::string &path)\fC [inline]\fP, \fC [virtual]\fP"
+
+.PP
+Implements \fBZeta::ResourceContext\fP\&.
+.SS "template<typename BitmapT , typename SoundT > const \fBBitmap\fP& \fBZeta::SynchronousResourceContext\fP< BitmapT, SoundT >::getNullBitmap ()\fC [inline]\fP, \fC [virtual]\fP"
+
+.PP
+Implements \fBZeta::ResourceContext\fP\&.
+.SS "template<typename BitmapT , typename SoundT > const \fBSound\fP& \fBZeta::SynchronousResourceContext\fP< BitmapT, SoundT >::getNullSound ()\fC [inline]\fP, \fC [virtual]\fP"
+
+.PP
+Implements \fBZeta::ResourceContext\fP\&.
+.SS "template<typename BitmapT , typename SoundT > template<typename RType > const RType& \fBZeta::SynchronousResourceContext\fP< BitmapT, SoundT >::getResource (const std::string &path, std::unordered_map< std::string, \fBSharedResource\fP< RType >> &map, std::mutex &mutex)\fC [inline]\fP, \fC [private]\fP"
+
+.SS "template<typename BitmapT , typename SoundT > \fBSoundInstance\fP& \fBZeta::SynchronousResourceContext\fP< BitmapT, SoundT >::getSound (const std::string &path)\fC [inline]\fP, \fC [virtual]\fP"
+
+.PP
+Implements \fBZeta::ResourceContext\fP\&.
+.SS "template<typename BitmapT , typename SoundT > const \fBSpriteSheet\fP& \fBZeta::SynchronousResourceContext\fP< BitmapT, SoundT >::getSpriteSheet (const std::string &path)\fC [inline]\fP, \fC [virtual]\fP"
+
+.PP
+Implements \fBZeta::ResourceContext\fP\&.
+.SS "template<typename BitmapT , typename SoundT > template<typename RType > void \fBZeta::SynchronousResourceContext\fP< BitmapT, SoundT >::releaseMappedResource (const std::string &path, std::unordered_map< std::string, \fBSharedResource\fP< RType >> &map, std::mutex &mutex)\fC [inline]\fP, \fC [private]\fP"
+
+.SS "template<typename BitmapT , typename SoundT > void \fBZeta::SynchronousResourceContext\fP< BitmapT, SoundT >::releaseResource (const \fBBitmap\fP &value)\fC [inline]\fP, \fC [virtual]\fP"
+
+.PP
+Implements \fBZeta::ResourceContext\fP\&.
+.SS "template<typename BitmapT , typename SoundT > void \fBZeta::SynchronousResourceContext\fP< BitmapT, SoundT >::releaseResource (const \fBSound\fP &value)\fC [inline]\fP, \fC [virtual]\fP"
+
+.PP
+Implements \fBZeta::ResourceContext\fP\&.
+.SS "template<typename BitmapT , typename SoundT > void \fBZeta::SynchronousResourceContext\fP< BitmapT, SoundT >::releaseResource (const \fBAnimationClass\fP &value)\fC [inline]\fP, \fC [virtual]\fP"
+
+.PP
+Implements \fBZeta::ResourceContext\fP\&.
+.SS "template<typename BitmapT , typename SoundT > void \fBZeta::SynchronousResourceContext\fP< BitmapT, SoundT >::releaseResource (const \fBFile\fP &value)\fC [inline]\fP, \fC [virtual]\fP"
+
+.PP
+Implements \fBZeta::ResourceContext\fP\&.
+.SS "template<typename BitmapT , typename SoundT > void \fBZeta::SynchronousResourceContext\fP< BitmapT, SoundT >::releaseResource (const \fBSpriteSheet\fP &value)\fC [inline]\fP, \fC [virtual]\fP"
+
+.PP
+Implements \fBZeta::ResourceContext\fP\&.
+.SS "template<typename BitmapT , typename SoundT > void \fBZeta::SynchronousResourceContext\fP< BitmapT, SoundT >::releaseResource (const \fBAnimationPack\fP &value)\fC [inline]\fP, \fC [virtual]\fP"
+
+.PP
+Implements \fBZeta::ResourceContext\fP\&.
+.SS "template<typename BitmapT , typename SoundT > void \fBZeta::SynchronousResourceContext\fP< BitmapT, SoundT >::releaseResource (const \fBAbilityClass\fP &value)\fC [inline]\fP, \fC [virtual]\fP"
+
+.PP
+Implements \fBZeta::ResourceContext\fP\&.
+.SS "template<typename BitmapT , typename SoundT > void \fBZeta::SynchronousResourceContext\fP< BitmapT, SoundT >::releaseResource (const \fBLifeformClass\fP &value)\fC [inline]\fP, \fC [virtual]\fP"
+
+.PP
+Implements \fBZeta::ResourceContext\fP\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "template<typename BitmapT , typename SoundT > std::unordered_map<std::string, \fBSharedResource\fP<\fBAbilityClass\fP> > \fBZeta::SynchronousResourceContext\fP< BitmapT, SoundT >::abilityClasses\fC [private]\fP"
+
+.SS "template<typename BitmapT , typename SoundT > std::mutex \fBZeta::SynchronousResourceContext\fP< BitmapT, SoundT >::abilityClassMutex\fC [private]\fP"
+
+.SS "template<typename BitmapT , typename SoundT > std::unordered_map<std::string, \fBSharedResource\fP<\fBAnimationClass\fP> > \fBZeta::SynchronousResourceContext\fP< BitmapT, SoundT >::animationClasses\fC [private]\fP"
+
+.SS "template<typename BitmapT , typename SoundT > std::mutex \fBZeta::SynchronousResourceContext\fP< BitmapT, SoundT >::animationClassMutex\fC [private]\fP"
+
+.SS "template<typename BitmapT , typename SoundT > std::mutex \fBZeta::SynchronousResourceContext\fP< BitmapT, SoundT >::animationPackMutex\fC [private]\fP"
+
+.SS "template<typename BitmapT , typename SoundT > std::unordered_map<std::string, \fBSharedResource\fP<\fBAnimationPack\fP> > \fBZeta::SynchronousResourceContext\fP< BitmapT, SoundT >::animationPacks\fC [private]\fP"
+
+.SS "template<typename BitmapT , typename SoundT > std::mutex \fBZeta::SynchronousResourceContext\fP< BitmapT, SoundT >::bitmapMutex\fC [private]\fP"
+
+.SS "template<typename BitmapT , typename SoundT > std::unordered_map<std::string, \fBSharedResource\fP<BitmapT> > \fBZeta::SynchronousResourceContext\fP< BitmapT, SoundT >::bitmaps\fC [private]\fP"
+
+.SS "template<typename BitmapT , typename SoundT > std::mutex \fBZeta::SynchronousResourceContext\fP< BitmapT, SoundT >::fileMutex\fC [private]\fP"
+
+.SS "template<typename BitmapT , typename SoundT > std::unordered_map<std::string, \fBSharedResource\fP<\fBFile\fP> > \fBZeta::SynchronousResourceContext\fP< BitmapT, SoundT >::files\fC [private]\fP"
+
+.SS "template<typename BitmapT , typename SoundT > std::unordered_map<std::string, \fBSharedResource\fP<\fBLifeformClass\fP> > \fBZeta::SynchronousResourceContext\fP< BitmapT, SoundT >::lifeformClasses\fC [private]\fP"
+
+.SS "template<typename BitmapT , typename SoundT > std::mutex \fBZeta::SynchronousResourceContext\fP< BitmapT, SoundT >::lifeformClassMutex\fC [private]\fP"
+
+.SS "template<typename BitmapT , typename SoundT > std::mutex \fBZeta::SynchronousResourceContext\fP< BitmapT, SoundT >::soundMutex\fC [private]\fP"
+
+.SS "template<typename BitmapT , typename SoundT > std::unordered_map<std::string, \fBSharedResource\fP<SoundT> > \fBZeta::SynchronousResourceContext\fP< BitmapT, SoundT >::sounds\fC [private]\fP"
+
+.SS "template<typename BitmapT , typename SoundT > std::mutex \fBZeta::SynchronousResourceContext\fP< BitmapT, SoundT >::spriteSheetMutex\fC [private]\fP"
+
+.SS "template<typename BitmapT , typename SoundT > std::unordered_map<std::string, \fBSharedResource\fP<\fBSpriteSheet\fP> > \fBZeta::SynchronousResourceContext\fP< BitmapT, SoundT >::spriteSheets\fC [private]\fP"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Zeta from the source code\&.

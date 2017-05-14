@@ -1,0 +1,118 @@
+.TH "Zeta::Cell::Sprite" 3 "Wed Feb 10 2016" "Zeta" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Zeta::Cell::Sprite \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Cell\&.hpp>\fP
+.PP
+Inherits \fBZeta::Drawable\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "int \fBgetZ\fP () const "
+.br
+.ti -1c
+.RI "void \fBdraw\fP (\fBFloat\fP \fBx\fP, \fBFloat\fP \fBy\fP, \fBFloat\fP rotation=0\&.0f, Float scale=1\&.0f) const "
+.br
+.ti -1c
+.RI "\fBSprite\fP (\fBSprite\fP &&)=default"
+.br
+.ti -1c
+.RI "\fBSprite\fP & \fBoperator=\fP (\fBSprite\fP &&)=default"
+.br
+.ti -1c
+.RI "\fBSprite\fP (const \fBSprite\fP &)=default"
+.br
+.ti -1c
+.RI "\fBSprite\fP & \fBoperator=\fP (const \fBSprite\fP &)=default"
+.br
+.ti -1c
+.RI "\fBSprite\fP ()"
+.br
+.ti -1c
+.RI "\fBSprite\fP (xmlpp::Node *node, const \fBSpriteSheet\fP &spriteSheet)"
+.br
+.ti -1c
+.RI "\fB~Sprite\fP ()"
+.br
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "const \fBBitmap\fP * \fBimage\fP"
+.br
+.ti -1c
+.RI "int \fBx\fP"
+.br
+.ti -1c
+.RI "int \fBy\fP"
+.br
+.ti -1c
+.RI "int \fBz\fP"
+.br
+.ti -1c
+.RI "float \fBangle\fP"
+.br
+.ti -1c
+.RI "\fBBitmap::FlipFlag\fP \fBflip\fP"
+.br
+.in -1c
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Zeta::Cell::Sprite::Sprite (\fBSprite\fP &&)\fC [default]\fP"
+
+.SS "Zeta::Cell::Sprite::Sprite (const \fBSprite\fP &)\fC [default]\fP"
+
+.SS "Zeta::Cell::Sprite::Sprite ()"
+
+.SS "Zeta::Cell::Sprite::Sprite (xmlpp::Node *node, const \fBSpriteSheet\fP &spriteSheet)"
+
+.SS "Zeta::Cell::Sprite::~Sprite ()"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "void Zeta::Cell::Sprite::draw (\fBFloat\fPx, \fBFloat\fPy, \fBFloat\fProtation = \fC0\&.0f\fP, \fBFloat\fPscale = \fC1\&.0f\fP) const\fC [virtual]\fP"
+Draws the \fBObject\fP on screen\&. Be advised, the x,y, offsets might have different meaning on different implementations\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIx\fP X offset to be applied on the drawing 
+.br
+\fIy\fP Y offset to be applied on the drawing 
+.br
+\fIrotation\fP the rotation to be applied on the drawing 
+.RE
+.PP
+
+.PP
+Implements \fBZeta::Drawable\fP\&.
+.SS "int Zeta::Cell::Sprite::getZ () const\fC [inline]\fP"
+
+.SS "\fBSprite\fP& Zeta::Cell::Sprite::operator= (\fBSprite\fP &&)\fC [default]\fP"
+
+.SS "\fBSprite\fP& Zeta::Cell::Sprite::operator= (const \fBSprite\fP &)\fC [default]\fP"
+
+.SH "Member Data Documentation"
+.PP 
+.SS "float Zeta::Cell::Sprite::angle\fC [protected]\fP"
+
+.SS "\fBBitmap::FlipFlag\fP Zeta::Cell::Sprite::flip\fC [protected]\fP"
+
+.SS "const \fBBitmap\fP* Zeta::Cell::Sprite::image\fC [protected]\fP"
+
+.SS "int Zeta::Cell::Sprite::x\fC [protected]\fP"
+
+.SS "int Zeta::Cell::Sprite::y\fC [protected]\fP"
+
+.SS "int Zeta::Cell::Sprite::z\fC [protected]\fP"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Zeta from the source code\&.

@@ -1,0 +1,70 @@
+.TH "Zeta::LuaBoolean" 3 "Wed Feb 10 2016" "Zeta" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Zeta::LuaBoolean \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <LuaBoolean\&.hpp>\fP
+.PP
+Inherits \fBZeta::LuaPushable\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBpushToLua\fP (lua_State *lstate)"
+.br
+.ti -1c
+.RI "void \fBsetValue\fP (bool \fBvalue\fP)"
+.br
+.ti -1c
+.RI "bool \fBgetValue\fP () const "
+.br
+.ti -1c
+.RI "constexpr \fBLuaBoolean\fP ()"
+.br
+.ti -1c
+.RI "constexpr \fBLuaBoolean\fP (bool \fBvalue\fP)"
+.br
+.ti -1c
+.RI "\fB~LuaBoolean\fP ()"
+.br
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "bool \fBvalue\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+\fBLuaBoolean\fP wrapper Class Used to be used as a \fBLuaPushable\fP on Lua Modules 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "constexpr Zeta::LuaBoolean::LuaBoolean ()\fC [inline]\fP"
+
+.SS "constexpr Zeta::LuaBoolean::LuaBoolean (boolvalue)\fC [inline]\fP"
+
+.SS "Zeta::LuaBoolean::~LuaBoolean ()\fC [inline]\fP"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "bool Zeta::LuaBoolean::getValue () const\fC [inline]\fP"
+
+.SS "void Zeta::LuaBoolean::pushToLua (lua_State *lstate)\fC [virtual]\fP"
+
+.PP
+Implements \fBZeta::LuaPushable\fP\&.
+.SS "void Zeta::LuaBoolean::setValue (boolvalue)\fC [inline]\fP"
+
+.SH "Member Data Documentation"
+.PP 
+.SS "bool Zeta::LuaBoolean::value\fC [private]\fP"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Zeta from the source code\&.

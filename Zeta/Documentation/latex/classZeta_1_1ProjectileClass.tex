@@ -1,0 +1,315 @@
+\hypertarget{classZeta_1_1ProjectileClass}{\section{Zeta\+:\+:Projectile\+Class Class Reference}
+\label{classZeta_1_1ProjectileClass}\index{Zeta\+::\+Projectile\+Class@{Zeta\+::\+Projectile\+Class}}
+}
+
+
+{\ttfamily \#include $<$Projectile\+Class.\+hpp$>$}
+
+
+
+Collaboration diagram for Zeta\+:\+:Projectile\+Class\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classZeta_1_1ProjectileClass__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classZeta_1_1ProjectileClass_1_1ObjectHandler}{Object\+Handler}
+\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{classZeta_1_1ProjectileClass_a724c4a052d876f0b7ea61719cd020e46}{Spawn\+Offset} \{ \hyperlink{classZeta_1_1ProjectileClass_a724c4a052d876f0b7ea61719cd020e46a258f49887ef8d14ac268c92b02503aaa}{Spawn\+Offset\+::\+Up} = 0, 
+\hyperlink{classZeta_1_1ProjectileClass_a724c4a052d876f0b7ea61719cd020e46a92b09c7c48c520c3c55e497875da437c}{Spawn\+Offset\+::\+Right}, 
+\hyperlink{classZeta_1_1ProjectileClass_a724c4a052d876f0b7ea61719cd020e46a945d5e233cf7d6240f6b783b36a374ff}{Spawn\+Offset\+::\+Left}, 
+\hyperlink{classZeta_1_1ProjectileClass_a724c4a052d876f0b7ea61719cd020e46a08a38277b0309070706f6652eeae9a53}{Spawn\+Offset\+::\+Down}
+ \}
+\item 
+enum \hyperlink{classZeta_1_1ProjectileClass_ae4d46651595803ab0093180758ca94b0}{Projectile\+Type} \{ \hyperlink{classZeta_1_1ProjectileClass_ae4d46651595803ab0093180758ca94b0a960b44c579bc2f6818d2daaf9e4c16f0}{Projectile\+Type\+::\+Normal}, 
+\hyperlink{classZeta_1_1ProjectileClass_ae4d46651595803ab0093180758ca94b0ab04a8341537fac392bfd17776491d03c}{Projectile\+Type\+::\+Directional}, 
+\hyperlink{classZeta_1_1ProjectileClass_ae4d46651595803ab0093180758ca94b0adfa6bb51bca02efb16d45113cd76c1f4}{Projectile\+Type\+::\+Seeking}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+const \hyperlink{classZeta_1_1LuaFunctor}{Lua\+Functor} \& \hyperlink{classZeta_1_1ProjectileClass_a2ddf1d00628893348e6d91180232bc91}{get\+On\+Collision} () const 
+\item 
+void \hyperlink{classZeta_1_1ProjectileClass_a43c864ffb777d1636fbeb5324dd61fcc}{set\+On\+Collision} (const \hyperlink{classZeta_1_1LuaFunctor}{Lua\+Functor} \&\hyperlink{classZeta_1_1ProjectileClass_a08f1625c591d5cb199dd7cfd110bfe6c}{on\+Collision\+F})
+\item 
+const \hyperlink{classZeta_1_1LuaFunctor}{Lua\+Functor} \& \hyperlink{classZeta_1_1ProjectileClass_ad04c9fe40fe805df5098e4e1561df636}{get\+On\+Destination\+Reach} () const 
+\item 
+void \hyperlink{classZeta_1_1ProjectileClass_ad01e66330094ea4d0d47137a028e7764}{set\+On\+Destination\+Reach} (const \hyperlink{classZeta_1_1LuaFunctor}{Lua\+Functor} \&\hyperlink{classZeta_1_1ProjectileClass_ab237dd1036988cc3a6c4cdb00bf9317e}{on\+Destination\+Reach\+F})
+\item 
+const \hyperlink{classZeta_1_1LuaFunctor}{Lua\+Functor} \& \hyperlink{classZeta_1_1ProjectileClass_a08a22d5481dc19308f94bbbf7d8067e4}{get\+On\+Release} () const 
+\item 
+void \hyperlink{classZeta_1_1ProjectileClass_a9570f46faa11d6b683d24e22541a6882}{set\+On\+Release} (const \hyperlink{classZeta_1_1LuaFunctor}{Lua\+Functor} \&\hyperlink{classZeta_1_1ProjectileClass_a95bcce095c57f5186dfc8f7e774810f5}{on\+Release})
+\item 
+const \hyperlink{classZeta_1_1AnimationClass}{Animation\+Class} \& \hyperlink{classZeta_1_1ProjectileClass_a3a1ed1f4a4bc58bcc15c1c937a2aa3a9}{get\+Animation\+Class} () const 
+\item 
+\hyperlink{namespaceZeta_a1e0a1265f9b3bd3075fb0fabd39088ba}{Float} \hyperlink{classZeta_1_1ProjectileClass_a2b4c9be99b5a93482a3737bd723832c0}{get\+Speed} () const 
+\item 
+bool \hyperlink{classZeta_1_1ProjectileClass_a3345a4d39a77044417fd944a38f11e9d}{is\+Directional\+Rotate} () const 
+\item 
+void \hyperlink{classZeta_1_1ProjectileClass_a3626482a3dcbae4811a20045640e5869}{load} (const \hyperlink{classZeta_1_1LuaTable}{Lua\+Table} \&table)
+\item 
+const \hyperlink{classZeta_1_1Vector2}{Vector2} \& \hyperlink{classZeta_1_1ProjectileClass_a7d00a0113179c9cb57bbf18c85bf6768}{get\+Offset} (\hyperlink{classZeta_1_1ProjectileClass_a724c4a052d876f0b7ea61719cd020e46}{Spawn\+Offset} offset) const 
+\item 
+void \hyperlink{classZeta_1_1ProjectileClass_a7410837585e51ef07067f218802a914e}{on\+Collision} (\hyperlink{classZeta_1_1Projectile}{Projectile} $\ast$invoker, \hyperlink{classZeta_1_1Object}{Object} $\ast$obj) const 
+\item 
+void \hyperlink{classZeta_1_1ProjectileClass_a95bcce095c57f5186dfc8f7e774810f5}{on\+Release} (\hyperlink{classZeta_1_1Projectile}{Projectile} $\ast$invoker) const 
+\item 
+void \hyperlink{classZeta_1_1ProjectileClass_a56d6c2b029e7632bce7cef13f6507084}{on\+Destination\+Reach} (\hyperlink{classZeta_1_1Projectile}{Projectile} $\ast$invoker) const 
+\item 
+\hyperlink{classZeta_1_1ProjectileClass_a020e52aa99701f7537c550e3c073355e}{Projectile\+Class} (\hyperlink{classZeta_1_1ProjectileClass}{Projectile\+Class} \&\&)=default
+\item 
+\hyperlink{classZeta_1_1ProjectileClass}{Projectile\+Class} \& \hyperlink{classZeta_1_1ProjectileClass_a7fe1a7198f71c58d6b88700118bfde07}{operator=} (\hyperlink{classZeta_1_1ProjectileClass}{Projectile\+Class} \&\&)=default
+\item 
+\hyperlink{classZeta_1_1Projectile}{Projectile} $\ast$ \hyperlink{classZeta_1_1ProjectileClass_a295fcbeeea1b8b9c79e8b91646d6b7a0}{create} (\hyperlink{classZeta_1_1ActiveAbility}{Active\+Ability} $\ast$parent) const 
+\item 
+\hyperlink{classZeta_1_1ProjectileClass_af0970765a0af10075ee34a6a10e2bf21}{Projectile\+Class} ()
+\item 
+\hyperlink{classZeta_1_1ProjectileClass_abd64376c3f9259da43c7c7122196144f}{Projectile\+Class} (const \hyperlink{classZeta_1_1LuaTable}{Lua\+Table} \&table)
+\item 
+virtual \hyperlink{classZeta_1_1ProjectileClass_a43b7e22d15f394dd76041889f6a13b74}{$\sim$\+Projectile\+Class} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classZeta_1_1Vector2}{Vector2} \hyperlink{classZeta_1_1ProjectileClass_affd8ec969cb93a388e5e8542e3756f68}{spawn\+Offsets} \mbox{[}4\mbox{]}
+\item 
+std\+::string \hyperlink{classZeta_1_1ProjectileClass_a6eff7fe4769fa6286c2c763a97bd2da6}{name}
+\item 
+const \hyperlink{classZeta_1_1AnimationClass}{Animation\+Class} $\ast$ \hyperlink{classZeta_1_1ProjectileClass_a0c1826e924c0be03a17b8aeaf0f920e1}{anim\+Class}
+\item 
+\hyperlink{namespaceZeta_a1e0a1265f9b3bd3075fb0fabd39088ba}{Float} \hyperlink{classZeta_1_1ProjectileClass_ad93f9e1468a485598c1f0547bf7d9a70}{speed}
+\item 
+\hyperlink{classZeta_1_1LuaFunctor}{Lua\+Functor} \hyperlink{classZeta_1_1ProjectileClass_a61883efe5b8af3c8ac891a8e52c463ee}{on\+Release\+F}
+\item 
+\hyperlink{classZeta_1_1LuaFunctor}{Lua\+Functor} \hyperlink{classZeta_1_1ProjectileClass_a08f1625c591d5cb199dd7cfd110bfe6c}{on\+Collision\+F}
+\item 
+\hyperlink{classZeta_1_1LuaFunctor}{Lua\+Functor} \hyperlink{classZeta_1_1ProjectileClass_ab237dd1036988cc3a6c4cdb00bf9317e}{on\+Destination\+Reach\+F}
+\item 
+\hyperlink{classZeta_1_1ProjectileClass_ae4d46651595803ab0093180758ca94b0}{Projectile\+Type} \hyperlink{classZeta_1_1ProjectileClass_a381e3da4614d6af578994ab37f3c2019}{type}
+\item 
+bool \hyperlink{classZeta_1_1ProjectileClass_ac6336e57e6469d2fdf62960b00ac4ce7}{directional\+Rotate}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{classZeta_1_1ProjectileClass_ae4d46651595803ab0093180758ca94b0}{\index{Zeta\+::\+Projectile\+Class@{Zeta\+::\+Projectile\+Class}!Projectile\+Type@{Projectile\+Type}}
+\index{Projectile\+Type@{Projectile\+Type}!Zeta\+::\+Projectile\+Class@{Zeta\+::\+Projectile\+Class}}
+\subsubsection[{Projectile\+Type}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Zeta\+::\+Projectile\+Class\+::\+Projectile\+Type}\hspace{0.3cm}{\ttfamily [strong]}}}\label{classZeta_1_1ProjectileClass_ae4d46651595803ab0093180758ca94b0}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{Normal@{Normal}!Zeta\+::\+Projectile\+Class@{Zeta\+::\+Projectile\+Class}}\index{Zeta\+::\+Projectile\+Class@{Zeta\+::\+Projectile\+Class}!Normal@{Normal}}\item[{\em 
+\hypertarget{classZeta_1_1ProjectileClass_ae4d46651595803ab0093180758ca94b0a960b44c579bc2f6818d2daaf9e4c16f0}{Normal}\label{classZeta_1_1ProjectileClass_ae4d46651595803ab0093180758ca94b0a960b44c579bc2f6818d2daaf9e4c16f0}
+}]\index{Directional@{Directional}!Zeta\+::\+Projectile\+Class@{Zeta\+::\+Projectile\+Class}}\index{Zeta\+::\+Projectile\+Class@{Zeta\+::\+Projectile\+Class}!Directional@{Directional}}\item[{\em 
+\hypertarget{classZeta_1_1ProjectileClass_ae4d46651595803ab0093180758ca94b0ab04a8341537fac392bfd17776491d03c}{Directional}\label{classZeta_1_1ProjectileClass_ae4d46651595803ab0093180758ca94b0ab04a8341537fac392bfd17776491d03c}
+}]\index{Seeking@{Seeking}!Zeta\+::\+Projectile\+Class@{Zeta\+::\+Projectile\+Class}}\index{Zeta\+::\+Projectile\+Class@{Zeta\+::\+Projectile\+Class}!Seeking@{Seeking}}\item[{\em 
+\hypertarget{classZeta_1_1ProjectileClass_ae4d46651595803ab0093180758ca94b0adfa6bb51bca02efb16d45113cd76c1f4}{Seeking}\label{classZeta_1_1ProjectileClass_ae4d46651595803ab0093180758ca94b0adfa6bb51bca02efb16d45113cd76c1f4}
+}]\end{description}
+\end{Desc}
+\hypertarget{classZeta_1_1ProjectileClass_a724c4a052d876f0b7ea61719cd020e46}{\index{Zeta\+::\+Projectile\+Class@{Zeta\+::\+Projectile\+Class}!Spawn\+Offset@{Spawn\+Offset}}
+\index{Spawn\+Offset@{Spawn\+Offset}!Zeta\+::\+Projectile\+Class@{Zeta\+::\+Projectile\+Class}}
+\subsubsection[{Spawn\+Offset}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Zeta\+::\+Projectile\+Class\+::\+Spawn\+Offset}\hspace{0.3cm}{\ttfamily [strong]}}}\label{classZeta_1_1ProjectileClass_a724c4a052d876f0b7ea61719cd020e46}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{Up@{Up}!Zeta\+::\+Projectile\+Class@{Zeta\+::\+Projectile\+Class}}\index{Zeta\+::\+Projectile\+Class@{Zeta\+::\+Projectile\+Class}!Up@{Up}}\item[{\em 
+\hypertarget{classZeta_1_1ProjectileClass_a724c4a052d876f0b7ea61719cd020e46a258f49887ef8d14ac268c92b02503aaa}{Up}\label{classZeta_1_1ProjectileClass_a724c4a052d876f0b7ea61719cd020e46a258f49887ef8d14ac268c92b02503aaa}
+}]\index{Right@{Right}!Zeta\+::\+Projectile\+Class@{Zeta\+::\+Projectile\+Class}}\index{Zeta\+::\+Projectile\+Class@{Zeta\+::\+Projectile\+Class}!Right@{Right}}\item[{\em 
+\hypertarget{classZeta_1_1ProjectileClass_a724c4a052d876f0b7ea61719cd020e46a92b09c7c48c520c3c55e497875da437c}{Right}\label{classZeta_1_1ProjectileClass_a724c4a052d876f0b7ea61719cd020e46a92b09c7c48c520c3c55e497875da437c}
+}]\index{Left@{Left}!Zeta\+::\+Projectile\+Class@{Zeta\+::\+Projectile\+Class}}\index{Zeta\+::\+Projectile\+Class@{Zeta\+::\+Projectile\+Class}!Left@{Left}}\item[{\em 
+\hypertarget{classZeta_1_1ProjectileClass_a724c4a052d876f0b7ea61719cd020e46a945d5e233cf7d6240f6b783b36a374ff}{Left}\label{classZeta_1_1ProjectileClass_a724c4a052d876f0b7ea61719cd020e46a945d5e233cf7d6240f6b783b36a374ff}
+}]\index{Down@{Down}!Zeta\+::\+Projectile\+Class@{Zeta\+::\+Projectile\+Class}}\index{Zeta\+::\+Projectile\+Class@{Zeta\+::\+Projectile\+Class}!Down@{Down}}\item[{\em 
+\hypertarget{classZeta_1_1ProjectileClass_a724c4a052d876f0b7ea61719cd020e46a08a38277b0309070706f6652eeae9a53}{Down}\label{classZeta_1_1ProjectileClass_a724c4a052d876f0b7ea61719cd020e46a08a38277b0309070706f6652eeae9a53}
+}]\end{description}
+\end{Desc}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classZeta_1_1ProjectileClass_a020e52aa99701f7537c550e3c073355e}{\index{Zeta\+::\+Projectile\+Class@{Zeta\+::\+Projectile\+Class}!Projectile\+Class@{Projectile\+Class}}
+\index{Projectile\+Class@{Projectile\+Class}!Zeta\+::\+Projectile\+Class@{Zeta\+::\+Projectile\+Class}}
+\subsubsection[{Projectile\+Class}]{\setlength{\rightskip}{0pt plus 5cm}Zeta\+::\+Projectile\+Class\+::\+Projectile\+Class (
+\begin{DoxyParamCaption}
+\item[{{\bf Projectile\+Class} \&\&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [default]}}}\label{classZeta_1_1ProjectileClass_a020e52aa99701f7537c550e3c073355e}
+\hypertarget{classZeta_1_1ProjectileClass_af0970765a0af10075ee34a6a10e2bf21}{\index{Zeta\+::\+Projectile\+Class@{Zeta\+::\+Projectile\+Class}!Projectile\+Class@{Projectile\+Class}}
+\index{Projectile\+Class@{Projectile\+Class}!Zeta\+::\+Projectile\+Class@{Zeta\+::\+Projectile\+Class}}
+\subsubsection[{Projectile\+Class}]{\setlength{\rightskip}{0pt plus 5cm}Zeta\+::\+Projectile\+Class\+::\+Projectile\+Class (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classZeta_1_1ProjectileClass_af0970765a0af10075ee34a6a10e2bf21}
+\hypertarget{classZeta_1_1ProjectileClass_abd64376c3f9259da43c7c7122196144f}{\index{Zeta\+::\+Projectile\+Class@{Zeta\+::\+Projectile\+Class}!Projectile\+Class@{Projectile\+Class}}
+\index{Projectile\+Class@{Projectile\+Class}!Zeta\+::\+Projectile\+Class@{Zeta\+::\+Projectile\+Class}}
+\subsubsection[{Projectile\+Class}]{\setlength{\rightskip}{0pt plus 5cm}Zeta\+::\+Projectile\+Class\+::\+Projectile\+Class (
+\begin{DoxyParamCaption}
+\item[{const {\bf Lua\+Table} \&}]{table}
+\end{DoxyParamCaption}
+)}}\label{classZeta_1_1ProjectileClass_abd64376c3f9259da43c7c7122196144f}
+\hypertarget{classZeta_1_1ProjectileClass_a43b7e22d15f394dd76041889f6a13b74}{\index{Zeta\+::\+Projectile\+Class@{Zeta\+::\+Projectile\+Class}!````~Projectile\+Class@{$\sim$\+Projectile\+Class}}
+\index{````~Projectile\+Class@{$\sim$\+Projectile\+Class}!Zeta\+::\+Projectile\+Class@{Zeta\+::\+Projectile\+Class}}
+\subsubsection[{$\sim$\+Projectile\+Class}]{\setlength{\rightskip}{0pt plus 5cm}virtual Zeta\+::\+Projectile\+Class\+::$\sim$\+Projectile\+Class (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classZeta_1_1ProjectileClass_a43b7e22d15f394dd76041889f6a13b74}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classZeta_1_1ProjectileClass_a295fcbeeea1b8b9c79e8b91646d6b7a0}{\index{Zeta\+::\+Projectile\+Class@{Zeta\+::\+Projectile\+Class}!create@{create}}
+\index{create@{create}!Zeta\+::\+Projectile\+Class@{Zeta\+::\+Projectile\+Class}}
+\subsubsection[{create}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Projectile}$\ast$ Zeta\+::\+Projectile\+Class\+::create (
+\begin{DoxyParamCaption}
+\item[{{\bf Active\+Ability} $\ast$}]{parent}
+\end{DoxyParamCaption}
+) const}}\label{classZeta_1_1ProjectileClass_a295fcbeeea1b8b9c79e8b91646d6b7a0}
+\hypertarget{classZeta_1_1ProjectileClass_a3a1ed1f4a4bc58bcc15c1c937a2aa3a9}{\index{Zeta\+::\+Projectile\+Class@{Zeta\+::\+Projectile\+Class}!get\+Animation\+Class@{get\+Animation\+Class}}
+\index{get\+Animation\+Class@{get\+Animation\+Class}!Zeta\+::\+Projectile\+Class@{Zeta\+::\+Projectile\+Class}}
+\subsubsection[{get\+Animation\+Class}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Animation\+Class}\& Zeta\+::\+Projectile\+Class\+::get\+Animation\+Class (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1ProjectileClass_a3a1ed1f4a4bc58bcc15c1c937a2aa3a9}
+\hypertarget{classZeta_1_1ProjectileClass_a7d00a0113179c9cb57bbf18c85bf6768}{\index{Zeta\+::\+Projectile\+Class@{Zeta\+::\+Projectile\+Class}!get\+Offset@{get\+Offset}}
+\index{get\+Offset@{get\+Offset}!Zeta\+::\+Projectile\+Class@{Zeta\+::\+Projectile\+Class}}
+\subsubsection[{get\+Offset}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Vector2}\& Zeta\+::\+Projectile\+Class\+::get\+Offset (
+\begin{DoxyParamCaption}
+\item[{{\bf Spawn\+Offset}}]{offset}
+\end{DoxyParamCaption}
+) const}}\label{classZeta_1_1ProjectileClass_a7d00a0113179c9cb57bbf18c85bf6768}
+\hypertarget{classZeta_1_1ProjectileClass_a2ddf1d00628893348e6d91180232bc91}{\index{Zeta\+::\+Projectile\+Class@{Zeta\+::\+Projectile\+Class}!get\+On\+Collision@{get\+On\+Collision}}
+\index{get\+On\+Collision@{get\+On\+Collision}!Zeta\+::\+Projectile\+Class@{Zeta\+::\+Projectile\+Class}}
+\subsubsection[{get\+On\+Collision}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Lua\+Functor}\& Zeta\+::\+Projectile\+Class\+::get\+On\+Collision (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1ProjectileClass_a2ddf1d00628893348e6d91180232bc91}
+\hypertarget{classZeta_1_1ProjectileClass_ad04c9fe40fe805df5098e4e1561df636}{\index{Zeta\+::\+Projectile\+Class@{Zeta\+::\+Projectile\+Class}!get\+On\+Destination\+Reach@{get\+On\+Destination\+Reach}}
+\index{get\+On\+Destination\+Reach@{get\+On\+Destination\+Reach}!Zeta\+::\+Projectile\+Class@{Zeta\+::\+Projectile\+Class}}
+\subsubsection[{get\+On\+Destination\+Reach}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Lua\+Functor}\& Zeta\+::\+Projectile\+Class\+::get\+On\+Destination\+Reach (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1ProjectileClass_ad04c9fe40fe805df5098e4e1561df636}
+\hypertarget{classZeta_1_1ProjectileClass_a08a22d5481dc19308f94bbbf7d8067e4}{\index{Zeta\+::\+Projectile\+Class@{Zeta\+::\+Projectile\+Class}!get\+On\+Release@{get\+On\+Release}}
+\index{get\+On\+Release@{get\+On\+Release}!Zeta\+::\+Projectile\+Class@{Zeta\+::\+Projectile\+Class}}
+\subsubsection[{get\+On\+Release}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Lua\+Functor}\& Zeta\+::\+Projectile\+Class\+::get\+On\+Release (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1ProjectileClass_a08a22d5481dc19308f94bbbf7d8067e4}
+\hypertarget{classZeta_1_1ProjectileClass_a2b4c9be99b5a93482a3737bd723832c0}{\index{Zeta\+::\+Projectile\+Class@{Zeta\+::\+Projectile\+Class}!get\+Speed@{get\+Speed}}
+\index{get\+Speed@{get\+Speed}!Zeta\+::\+Projectile\+Class@{Zeta\+::\+Projectile\+Class}}
+\subsubsection[{get\+Speed}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Float} Zeta\+::\+Projectile\+Class\+::get\+Speed (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1ProjectileClass_a2b4c9be99b5a93482a3737bd723832c0}
+\hypertarget{classZeta_1_1ProjectileClass_a3345a4d39a77044417fd944a38f11e9d}{\index{Zeta\+::\+Projectile\+Class@{Zeta\+::\+Projectile\+Class}!is\+Directional\+Rotate@{is\+Directional\+Rotate}}
+\index{is\+Directional\+Rotate@{is\+Directional\+Rotate}!Zeta\+::\+Projectile\+Class@{Zeta\+::\+Projectile\+Class}}
+\subsubsection[{is\+Directional\+Rotate}]{\setlength{\rightskip}{0pt plus 5cm}bool Zeta\+::\+Projectile\+Class\+::is\+Directional\+Rotate (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1ProjectileClass_a3345a4d39a77044417fd944a38f11e9d}
+\hypertarget{classZeta_1_1ProjectileClass_a3626482a3dcbae4811a20045640e5869}{\index{Zeta\+::\+Projectile\+Class@{Zeta\+::\+Projectile\+Class}!load@{load}}
+\index{load@{load}!Zeta\+::\+Projectile\+Class@{Zeta\+::\+Projectile\+Class}}
+\subsubsection[{load}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+Projectile\+Class\+::load (
+\begin{DoxyParamCaption}
+\item[{const {\bf Lua\+Table} \&}]{table}
+\end{DoxyParamCaption}
+)}}\label{classZeta_1_1ProjectileClass_a3626482a3dcbae4811a20045640e5869}
+\hypertarget{classZeta_1_1ProjectileClass_a7410837585e51ef07067f218802a914e}{\index{Zeta\+::\+Projectile\+Class@{Zeta\+::\+Projectile\+Class}!on\+Collision@{on\+Collision}}
+\index{on\+Collision@{on\+Collision}!Zeta\+::\+Projectile\+Class@{Zeta\+::\+Projectile\+Class}}
+\subsubsection[{on\+Collision}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+Projectile\+Class\+::on\+Collision (
+\begin{DoxyParamCaption}
+\item[{{\bf Projectile} $\ast$}]{invoker, }
+\item[{{\bf Object} $\ast$}]{obj}
+\end{DoxyParamCaption}
+) const}}\label{classZeta_1_1ProjectileClass_a7410837585e51ef07067f218802a914e}
+\hypertarget{classZeta_1_1ProjectileClass_a56d6c2b029e7632bce7cef13f6507084}{\index{Zeta\+::\+Projectile\+Class@{Zeta\+::\+Projectile\+Class}!on\+Destination\+Reach@{on\+Destination\+Reach}}
+\index{on\+Destination\+Reach@{on\+Destination\+Reach}!Zeta\+::\+Projectile\+Class@{Zeta\+::\+Projectile\+Class}}
+\subsubsection[{on\+Destination\+Reach}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+Projectile\+Class\+::on\+Destination\+Reach (
+\begin{DoxyParamCaption}
+\item[{{\bf Projectile} $\ast$}]{invoker}
+\end{DoxyParamCaption}
+) const}}\label{classZeta_1_1ProjectileClass_a56d6c2b029e7632bce7cef13f6507084}
+\hypertarget{classZeta_1_1ProjectileClass_a95bcce095c57f5186dfc8f7e774810f5}{\index{Zeta\+::\+Projectile\+Class@{Zeta\+::\+Projectile\+Class}!on\+Release@{on\+Release}}
+\index{on\+Release@{on\+Release}!Zeta\+::\+Projectile\+Class@{Zeta\+::\+Projectile\+Class}}
+\subsubsection[{on\+Release}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+Projectile\+Class\+::on\+Release (
+\begin{DoxyParamCaption}
+\item[{{\bf Projectile} $\ast$}]{invoker}
+\end{DoxyParamCaption}
+) const}}\label{classZeta_1_1ProjectileClass_a95bcce095c57f5186dfc8f7e774810f5}
+\hypertarget{classZeta_1_1ProjectileClass_a7fe1a7198f71c58d6b88700118bfde07}{\index{Zeta\+::\+Projectile\+Class@{Zeta\+::\+Projectile\+Class}!operator=@{operator=}}
+\index{operator=@{operator=}!Zeta\+::\+Projectile\+Class@{Zeta\+::\+Projectile\+Class}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Projectile\+Class}\& Zeta\+::\+Projectile\+Class\+::operator= (
+\begin{DoxyParamCaption}
+\item[{{\bf Projectile\+Class} \&\&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [default]}}}\label{classZeta_1_1ProjectileClass_a7fe1a7198f71c58d6b88700118bfde07}
+\hypertarget{classZeta_1_1ProjectileClass_a43c864ffb777d1636fbeb5324dd61fcc}{\index{Zeta\+::\+Projectile\+Class@{Zeta\+::\+Projectile\+Class}!set\+On\+Collision@{set\+On\+Collision}}
+\index{set\+On\+Collision@{set\+On\+Collision}!Zeta\+::\+Projectile\+Class@{Zeta\+::\+Projectile\+Class}}
+\subsubsection[{set\+On\+Collision}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+Projectile\+Class\+::set\+On\+Collision (
+\begin{DoxyParamCaption}
+\item[{const {\bf Lua\+Functor} \&}]{on\+Collision\+F}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1ProjectileClass_a43c864ffb777d1636fbeb5324dd61fcc}
+\hypertarget{classZeta_1_1ProjectileClass_ad01e66330094ea4d0d47137a028e7764}{\index{Zeta\+::\+Projectile\+Class@{Zeta\+::\+Projectile\+Class}!set\+On\+Destination\+Reach@{set\+On\+Destination\+Reach}}
+\index{set\+On\+Destination\+Reach@{set\+On\+Destination\+Reach}!Zeta\+::\+Projectile\+Class@{Zeta\+::\+Projectile\+Class}}
+\subsubsection[{set\+On\+Destination\+Reach}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+Projectile\+Class\+::set\+On\+Destination\+Reach (
+\begin{DoxyParamCaption}
+\item[{const {\bf Lua\+Functor} \&}]{on\+Destination\+Reach\+F}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1ProjectileClass_ad01e66330094ea4d0d47137a028e7764}
+\hypertarget{classZeta_1_1ProjectileClass_a9570f46faa11d6b683d24e22541a6882}{\index{Zeta\+::\+Projectile\+Class@{Zeta\+::\+Projectile\+Class}!set\+On\+Release@{set\+On\+Release}}
+\index{set\+On\+Release@{set\+On\+Release}!Zeta\+::\+Projectile\+Class@{Zeta\+::\+Projectile\+Class}}
+\subsubsection[{set\+On\+Release}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+Projectile\+Class\+::set\+On\+Release (
+\begin{DoxyParamCaption}
+\item[{const {\bf Lua\+Functor} \&}]{on\+Release}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1ProjectileClass_a9570f46faa11d6b683d24e22541a6882}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classZeta_1_1ProjectileClass_a0c1826e924c0be03a17b8aeaf0f920e1}{\index{Zeta\+::\+Projectile\+Class@{Zeta\+::\+Projectile\+Class}!anim\+Class@{anim\+Class}}
+\index{anim\+Class@{anim\+Class}!Zeta\+::\+Projectile\+Class@{Zeta\+::\+Projectile\+Class}}
+\subsubsection[{anim\+Class}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Animation\+Class}$\ast$ Zeta\+::\+Projectile\+Class\+::anim\+Class\hspace{0.3cm}{\ttfamily [private]}}}\label{classZeta_1_1ProjectileClass_a0c1826e924c0be03a17b8aeaf0f920e1}
+\hypertarget{classZeta_1_1ProjectileClass_ac6336e57e6469d2fdf62960b00ac4ce7}{\index{Zeta\+::\+Projectile\+Class@{Zeta\+::\+Projectile\+Class}!directional\+Rotate@{directional\+Rotate}}
+\index{directional\+Rotate@{directional\+Rotate}!Zeta\+::\+Projectile\+Class@{Zeta\+::\+Projectile\+Class}}
+\subsubsection[{directional\+Rotate}]{\setlength{\rightskip}{0pt plus 5cm}bool Zeta\+::\+Projectile\+Class\+::directional\+Rotate\hspace{0.3cm}{\ttfamily [private]}}}\label{classZeta_1_1ProjectileClass_ac6336e57e6469d2fdf62960b00ac4ce7}
+\hypertarget{classZeta_1_1ProjectileClass_a6eff7fe4769fa6286c2c763a97bd2da6}{\index{Zeta\+::\+Projectile\+Class@{Zeta\+::\+Projectile\+Class}!name@{name}}
+\index{name@{name}!Zeta\+::\+Projectile\+Class@{Zeta\+::\+Projectile\+Class}}
+\subsubsection[{name}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string Zeta\+::\+Projectile\+Class\+::name\hspace{0.3cm}{\ttfamily [private]}}}\label{classZeta_1_1ProjectileClass_a6eff7fe4769fa6286c2c763a97bd2da6}
+\hypertarget{classZeta_1_1ProjectileClass_a08f1625c591d5cb199dd7cfd110bfe6c}{\index{Zeta\+::\+Projectile\+Class@{Zeta\+::\+Projectile\+Class}!on\+Collision\+F@{on\+Collision\+F}}
+\index{on\+Collision\+F@{on\+Collision\+F}!Zeta\+::\+Projectile\+Class@{Zeta\+::\+Projectile\+Class}}
+\subsubsection[{on\+Collision\+F}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Lua\+Functor} Zeta\+::\+Projectile\+Class\+::on\+Collision\+F\hspace{0.3cm}{\ttfamily [private]}}}\label{classZeta_1_1ProjectileClass_a08f1625c591d5cb199dd7cfd110bfe6c}
+\hypertarget{classZeta_1_1ProjectileClass_ab237dd1036988cc3a6c4cdb00bf9317e}{\index{Zeta\+::\+Projectile\+Class@{Zeta\+::\+Projectile\+Class}!on\+Destination\+Reach\+F@{on\+Destination\+Reach\+F}}
+\index{on\+Destination\+Reach\+F@{on\+Destination\+Reach\+F}!Zeta\+::\+Projectile\+Class@{Zeta\+::\+Projectile\+Class}}
+\subsubsection[{on\+Destination\+Reach\+F}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Lua\+Functor} Zeta\+::\+Projectile\+Class\+::on\+Destination\+Reach\+F\hspace{0.3cm}{\ttfamily [private]}}}\label{classZeta_1_1ProjectileClass_ab237dd1036988cc3a6c4cdb00bf9317e}
+\hypertarget{classZeta_1_1ProjectileClass_a61883efe5b8af3c8ac891a8e52c463ee}{\index{Zeta\+::\+Projectile\+Class@{Zeta\+::\+Projectile\+Class}!on\+Release\+F@{on\+Release\+F}}
+\index{on\+Release\+F@{on\+Release\+F}!Zeta\+::\+Projectile\+Class@{Zeta\+::\+Projectile\+Class}}
+\subsubsection[{on\+Release\+F}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Lua\+Functor} Zeta\+::\+Projectile\+Class\+::on\+Release\+F\hspace{0.3cm}{\ttfamily [private]}}}\label{classZeta_1_1ProjectileClass_a61883efe5b8af3c8ac891a8e52c463ee}
+\hypertarget{classZeta_1_1ProjectileClass_affd8ec969cb93a388e5e8542e3756f68}{\index{Zeta\+::\+Projectile\+Class@{Zeta\+::\+Projectile\+Class}!spawn\+Offsets@{spawn\+Offsets}}
+\index{spawn\+Offsets@{spawn\+Offsets}!Zeta\+::\+Projectile\+Class@{Zeta\+::\+Projectile\+Class}}
+\subsubsection[{spawn\+Offsets}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector2} Zeta\+::\+Projectile\+Class\+::spawn\+Offsets\mbox{[}4\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}}\label{classZeta_1_1ProjectileClass_affd8ec969cb93a388e5e8542e3756f68}
+\hypertarget{classZeta_1_1ProjectileClass_ad93f9e1468a485598c1f0547bf7d9a70}{\index{Zeta\+::\+Projectile\+Class@{Zeta\+::\+Projectile\+Class}!speed@{speed}}
+\index{speed@{speed}!Zeta\+::\+Projectile\+Class@{Zeta\+::\+Projectile\+Class}}
+\subsubsection[{speed}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Float} Zeta\+::\+Projectile\+Class\+::speed\hspace{0.3cm}{\ttfamily [private]}}}\label{classZeta_1_1ProjectileClass_ad93f9e1468a485598c1f0547bf7d9a70}
+\hypertarget{classZeta_1_1ProjectileClass_a381e3da4614d6af578994ab37f3c2019}{\index{Zeta\+::\+Projectile\+Class@{Zeta\+::\+Projectile\+Class}!type@{type}}
+\index{type@{type}!Zeta\+::\+Projectile\+Class@{Zeta\+::\+Projectile\+Class}}
+\subsubsection[{type}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Projectile\+Type} Zeta\+::\+Projectile\+Class\+::type\hspace{0.3cm}{\ttfamily [private]}}}\label{classZeta_1_1ProjectileClass_a381e3da4614d6af578994ab37f3c2019}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Zeta/\+Core/\+R\+P\+G\+Classes/\hyperlink{ProjectileClass_8hpp}{Projectile\+Class.\+hpp}\end{DoxyCompactItemize}

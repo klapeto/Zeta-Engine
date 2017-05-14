@@ -1,0 +1,145 @@
+\hypertarget{classZeta_1_1Logger}{\section{Zeta\+:\+:Logger Class Reference}
+\label{classZeta_1_1Logger}\index{Zeta\+::\+Logger@{Zeta\+::\+Logger}}
+}
+
+
+{\ttfamily \#include $<$Logger.\+hpp$>$}
+
+
+
+Inheritance diagram for Zeta\+:\+:Logger\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=308pt]{classZeta_1_1Logger__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Zeta\+:\+:Logger\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=308pt]{classZeta_1_1Logger__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{classZeta_1_1Logger_a8d3c7c723be28f87ac974c2dd07a1659}{Message\+Type} \{ \hyperlink{classZeta_1_1Logger_a8d3c7c723be28f87ac974c2dd07a1659a4059b0251f66a18cb56f544728796875}{Message\+Type\+::\+Info}, 
+\hyperlink{classZeta_1_1Logger_a8d3c7c723be28f87ac974c2dd07a1659a0eaadb4fcb48a0a0ed7bc9868be9fbaa}{Message\+Type\+::\+Warning}, 
+\hyperlink{classZeta_1_1Logger_a8d3c7c723be28f87ac974c2dd07a1659a902b0d55fddef6f8d651fe1035b7d4bd}{Message\+Type\+::\+Error}, 
+\hyperlink{classZeta_1_1Logger_a8d3c7c723be28f87ac974c2dd07a1659a798ccc83d545e9494c77e9d6b3590267}{Message\+Type\+::\+Lua\+Error}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classZeta_1_1Logger_a4b6d5de6bcd9a2924fceea1f56266115}{push\+To\+Lua} (lua\+\_\+\+State $\ast$lstate)
+\item 
+void \hyperlink{classZeta_1_1Logger_af7a67ad7ba12c200679d8108339d4ed2}{write} (const std\+::string \&message, \hyperlink{classZeta_1_1Logger_a8d3c7c723be28f87ac974c2dd07a1659}{Message\+Type} type=\hyperlink{classZeta_1_1Logger_a8d3c7c723be28f87ac974c2dd07a1659a4059b0251f66a18cb56f544728796875}{Message\+Type\+::\+Info})
+\item 
+\hyperlink{classZeta_1_1Logger_ac780772489bea354784ebb686801bca9}{Logger} ()
+\item 
+\hyperlink{classZeta_1_1Logger_aae06a81dbb47d9b08484d7da844c37e3}{$\sim$\+Logger} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ofstream \hyperlink{classZeta_1_1Logger_ac3dd593d966ebf8f8be09b8e0acb1665}{out\+\_\+\+File}
+\item 
+std\+::ostringstream \hyperlink{classZeta_1_1Logger_a23cc893d82b06f5e3196d34fe555ec46}{string\+Buffer}
+\item 
+std\+::string \hyperlink{classZeta_1_1Logger_ac458dd40dd985abdcdc0b23af80f3e6f}{types} \mbox{[}4\mbox{]} = \{ \char`\"{}Info\char`\"{}, \char`\"{}Warning\char`\"{}, \char`\"{}Core\+Error\char`\"{}, \char`\"{}Lua\+Error\char`\"{} \}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Singleton Class to provide with a \hyperlink{classZeta_1_1Logger}{Logger} Logs to a file with Time stamps 
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{classZeta_1_1Logger_a8d3c7c723be28f87ac974c2dd07a1659}{\index{Zeta\+::\+Logger@{Zeta\+::\+Logger}!Message\+Type@{Message\+Type}}
+\index{Message\+Type@{Message\+Type}!Zeta\+::\+Logger@{Zeta\+::\+Logger}}
+\subsubsection[{Message\+Type}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Zeta\+::\+Logger\+::\+Message\+Type}\hspace{0.3cm}{\ttfamily [strong]}}}\label{classZeta_1_1Logger_a8d3c7c723be28f87ac974c2dd07a1659}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{Info@{Info}!Zeta\+::\+Logger@{Zeta\+::\+Logger}}\index{Zeta\+::\+Logger@{Zeta\+::\+Logger}!Info@{Info}}\item[{\em 
+\hypertarget{classZeta_1_1Logger_a8d3c7c723be28f87ac974c2dd07a1659a4059b0251f66a18cb56f544728796875}{Info}\label{classZeta_1_1Logger_a8d3c7c723be28f87ac974c2dd07a1659a4059b0251f66a18cb56f544728796875}
+}]\index{Warning@{Warning}!Zeta\+::\+Logger@{Zeta\+::\+Logger}}\index{Zeta\+::\+Logger@{Zeta\+::\+Logger}!Warning@{Warning}}\item[{\em 
+\hypertarget{classZeta_1_1Logger_a8d3c7c723be28f87ac974c2dd07a1659a0eaadb4fcb48a0a0ed7bc9868be9fbaa}{Warning}\label{classZeta_1_1Logger_a8d3c7c723be28f87ac974c2dd07a1659a0eaadb4fcb48a0a0ed7bc9868be9fbaa}
+}]\index{Error@{Error}!Zeta\+::\+Logger@{Zeta\+::\+Logger}}\index{Zeta\+::\+Logger@{Zeta\+::\+Logger}!Error@{Error}}\item[{\em 
+\hypertarget{classZeta_1_1Logger_a8d3c7c723be28f87ac974c2dd07a1659a902b0d55fddef6f8d651fe1035b7d4bd}{Error}\label{classZeta_1_1Logger_a8d3c7c723be28f87ac974c2dd07a1659a902b0d55fddef6f8d651fe1035b7d4bd}
+}]\index{Lua\+Error@{Lua\+Error}!Zeta\+::\+Logger@{Zeta\+::\+Logger}}\index{Zeta\+::\+Logger@{Zeta\+::\+Logger}!Lua\+Error@{Lua\+Error}}\item[{\em 
+\hypertarget{classZeta_1_1Logger_a8d3c7c723be28f87ac974c2dd07a1659a798ccc83d545e9494c77e9d6b3590267}{Lua\+Error}\label{classZeta_1_1Logger_a8d3c7c723be28f87ac974c2dd07a1659a798ccc83d545e9494c77e9d6b3590267}
+}]\end{description}
+\end{Desc}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classZeta_1_1Logger_ac780772489bea354784ebb686801bca9}{\index{Zeta\+::\+Logger@{Zeta\+::\+Logger}!Logger@{Logger}}
+\index{Logger@{Logger}!Zeta\+::\+Logger@{Zeta\+::\+Logger}}
+\subsubsection[{Logger}]{\setlength{\rightskip}{0pt plus 5cm}Zeta\+::\+Logger\+::\+Logger (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classZeta_1_1Logger_ac780772489bea354784ebb686801bca9}
+\hypertarget{classZeta_1_1Logger_aae06a81dbb47d9b08484d7da844c37e3}{\index{Zeta\+::\+Logger@{Zeta\+::\+Logger}!````~Logger@{$\sim$\+Logger}}
+\index{````~Logger@{$\sim$\+Logger}!Zeta\+::\+Logger@{Zeta\+::\+Logger}}
+\subsubsection[{$\sim$\+Logger}]{\setlength{\rightskip}{0pt plus 5cm}Zeta\+::\+Logger\+::$\sim$\+Logger (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classZeta_1_1Logger_aae06a81dbb47d9b08484d7da844c37e3}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classZeta_1_1Logger_a4b6d5de6bcd9a2924fceea1f56266115}{\index{Zeta\+::\+Logger@{Zeta\+::\+Logger}!push\+To\+Lua@{push\+To\+Lua}}
+\index{push\+To\+Lua@{push\+To\+Lua}!Zeta\+::\+Logger@{Zeta\+::\+Logger}}
+\subsubsection[{push\+To\+Lua}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+Logger\+::push\+To\+Lua (
+\begin{DoxyParamCaption}
+\item[{lua\+\_\+\+State $\ast$}]{lstate}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classZeta_1_1Logger_a4b6d5de6bcd9a2924fceea1f56266115}
+Push\+To\+Lua Implementation. Pushes to Lua Stack the \hyperlink{classZeta_1_1Object}{Object} casted to the appropriate Type 
+\begin{DoxyParams}{Parameters}
+{\em lstate} & the Lua State to push it. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classZeta_1_1LuaPushable_a0380ec9cff11f749e8eb67b51b8f82fc}{Zeta\+::\+Lua\+Pushable}.
+
+\hypertarget{classZeta_1_1Logger_af7a67ad7ba12c200679d8108339d4ed2}{\index{Zeta\+::\+Logger@{Zeta\+::\+Logger}!write@{write}}
+\index{write@{write}!Zeta\+::\+Logger@{Zeta\+::\+Logger}}
+\subsubsection[{write}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+Logger\+::write (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{message, }
+\item[{{\bf Message\+Type}}]{type = {\ttfamily {\bf Message\+Type\+::\+Info}}}
+\end{DoxyParamCaption}
+)}}\label{classZeta_1_1Logger_af7a67ad7ba12c200679d8108339d4ed2}
+Writes to Log \hyperlink{classZeta_1_1File}{File} the Message with a time Stamp The message is assigned a type from the provided one 
+\begin{DoxyParams}{Parameters}
+{\em message} & The message to write \\
+\hline
+{\em type} & the Message type \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classZeta_1_1Logger_ac3dd593d966ebf8f8be09b8e0acb1665}{\index{Zeta\+::\+Logger@{Zeta\+::\+Logger}!out\+\_\+\+File@{out\+\_\+\+File}}
+\index{out\+\_\+\+File@{out\+\_\+\+File}!Zeta\+::\+Logger@{Zeta\+::\+Logger}}
+\subsubsection[{out\+\_\+\+File}]{\setlength{\rightskip}{0pt plus 5cm}std\+::ofstream Zeta\+::\+Logger\+::out\+\_\+\+File\hspace{0.3cm}{\ttfamily [private]}}}\label{classZeta_1_1Logger_ac3dd593d966ebf8f8be09b8e0acb1665}
+\hypertarget{classZeta_1_1Logger_a23cc893d82b06f5e3196d34fe555ec46}{\index{Zeta\+::\+Logger@{Zeta\+::\+Logger}!string\+Buffer@{string\+Buffer}}
+\index{string\+Buffer@{string\+Buffer}!Zeta\+::\+Logger@{Zeta\+::\+Logger}}
+\subsubsection[{string\+Buffer}]{\setlength{\rightskip}{0pt plus 5cm}std\+::ostringstream Zeta\+::\+Logger\+::string\+Buffer\hspace{0.3cm}{\ttfamily [private]}}}\label{classZeta_1_1Logger_a23cc893d82b06f5e3196d34fe555ec46}
+\hypertarget{classZeta_1_1Logger_ac458dd40dd985abdcdc0b23af80f3e6f}{\index{Zeta\+::\+Logger@{Zeta\+::\+Logger}!types@{types}}
+\index{types@{types}!Zeta\+::\+Logger@{Zeta\+::\+Logger}}
+\subsubsection[{types}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string Zeta\+::\+Logger\+::types\mbox{[}4\mbox{]} = \{ \char`\"{}Info\char`\"{}, \char`\"{}Warning\char`\"{}, \char`\"{}Core\+Error\char`\"{}, \char`\"{}Lua\+Error\char`\"{} \}\hspace{0.3cm}{\ttfamily [private]}}}\label{classZeta_1_1Logger_ac458dd40dd985abdcdc0b23af80f3e6f}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Zeta/\+Core/\hyperlink{Logger_8hpp}{Logger.\+hpp}\end{DoxyCompactItemize}

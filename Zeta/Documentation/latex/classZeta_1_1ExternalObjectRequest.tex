@@ -1,0 +1,131 @@
+\hypertarget{classZeta_1_1ExternalObjectRequest}{\section{Zeta\+:\+:External\+Object\+Request Class Reference}
+\label{classZeta_1_1ExternalObjectRequest}\index{Zeta\+::\+External\+Object\+Request@{Zeta\+::\+External\+Object\+Request}}
+}
+
+
+{\ttfamily \#include $<$External\+Object\+Request.\+hpp$>$}
+
+
+
+Inheritance diagram for Zeta\+:\+:External\+Object\+Request\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=222pt]{classZeta_1_1ExternalObjectRequest__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Zeta\+:\+:External\+Object\+Request\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=222pt]{classZeta_1_1ExternalObjectRequest__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structZeta_1_1ExternalObjectRequest_1_1ObjectSource}{Object\+Source}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \hyperlink{classZeta_1_1Object}{Object} $\ast$ $>$ \& \hyperlink{classZeta_1_1ExternalObjectRequest_a7ff291816739593ca735b27366476ec4}{get\+Objects} ()
+\item 
+void \hyperlink{classZeta_1_1ExternalObjectRequest_afb1f3ec439ec7b858fd5bd4762f28971}{handle} (\hyperlink{classZeta_1_1RenderingContext}{Rendering\+Context} \&context)
+\item 
+\hyperlink{classZeta_1_1ExternalObjectRequest_a621d66932f822fe2c39c8d634b0745ec}{External\+Object\+Request} (const std\+::vector$<$ \hyperlink{structZeta_1_1ExternalObjectRequest_1_1ObjectSource}{Object\+Source} $>$ \&\hyperlink{classZeta_1_1ExternalObjectRequest_ab2a5b87e64de0bed5732e2741abc6ba6}{object\+Classes})
+\item 
+\hyperlink{classZeta_1_1ExternalObjectRequest_af8e83f60dc6805d7f511ba680e818cfb}{$\sim$\+External\+Object\+Request} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classZeta_1_1ExternalObjectRequest_a49e26c991546d03ad57da57189dc837e}{get\+Enemy} (lua\+\_\+\+State $\ast$lstate, \hyperlink{namespaceZeta_a1e0a1265f9b3bd3075fb0fabd39088ba}{Float} x, \hyperlink{namespaceZeta_a1e0a1265f9b3bd3075fb0fabd39088ba}{Float} y)
+\item 
+void \hyperlink{classZeta_1_1ExternalObjectRequest_adb70d23f8eb716cc9e1d9333c417b5bf}{get\+Npc} (lua\+\_\+\+State $\ast$lstate, \hyperlink{namespaceZeta_a1e0a1265f9b3bd3075fb0fabd39088ba}{Float} x, \hyperlink{namespaceZeta_a1e0a1265f9b3bd3075fb0fabd39088ba}{Float} y)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const std\+::vector$<$ \hyperlink{structZeta_1_1ExternalObjectRequest_1_1ObjectSource}{Object\+Source} $>$ $\ast$ \hyperlink{classZeta_1_1ExternalObjectRequest_ab2a5b87e64de0bed5732e2741abc6ba6}{object\+Classes}
+\item 
+std\+::vector$<$ \hyperlink{classZeta_1_1Object}{Object} $\ast$ $>$ \hyperlink{classZeta_1_1ExternalObjectRequest_a983916469bdc42f289e71fda3c2dc506}{objects}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classZeta_1_1ExternalObjectRequest_a621d66932f822fe2c39c8d634b0745ec}{\index{Zeta\+::\+External\+Object\+Request@{Zeta\+::\+External\+Object\+Request}!External\+Object\+Request@{External\+Object\+Request}}
+\index{External\+Object\+Request@{External\+Object\+Request}!Zeta\+::\+External\+Object\+Request@{Zeta\+::\+External\+Object\+Request}}
+\subsubsection[{External\+Object\+Request}]{\setlength{\rightskip}{0pt plus 5cm}Zeta\+::\+External\+Object\+Request\+::\+External\+Object\+Request (
+\begin{DoxyParamCaption}
+\item[{const std\+::vector$<$ {\bf Object\+Source} $>$ \&}]{object\+Classes}
+\end{DoxyParamCaption}
+)}}\label{classZeta_1_1ExternalObjectRequest_a621d66932f822fe2c39c8d634b0745ec}
+\hypertarget{classZeta_1_1ExternalObjectRequest_af8e83f60dc6805d7f511ba680e818cfb}{\index{Zeta\+::\+External\+Object\+Request@{Zeta\+::\+External\+Object\+Request}!````~External\+Object\+Request@{$\sim$\+External\+Object\+Request}}
+\index{````~External\+Object\+Request@{$\sim$\+External\+Object\+Request}!Zeta\+::\+External\+Object\+Request@{Zeta\+::\+External\+Object\+Request}}
+\subsubsection[{$\sim$\+External\+Object\+Request}]{\setlength{\rightskip}{0pt plus 5cm}Zeta\+::\+External\+Object\+Request\+::$\sim$\+External\+Object\+Request (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classZeta_1_1ExternalObjectRequest_af8e83f60dc6805d7f511ba680e818cfb}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classZeta_1_1ExternalObjectRequest_a49e26c991546d03ad57da57189dc837e}{\index{Zeta\+::\+External\+Object\+Request@{Zeta\+::\+External\+Object\+Request}!get\+Enemy@{get\+Enemy}}
+\index{get\+Enemy@{get\+Enemy}!Zeta\+::\+External\+Object\+Request@{Zeta\+::\+External\+Object\+Request}}
+\subsubsection[{get\+Enemy}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+External\+Object\+Request\+::get\+Enemy (
+\begin{DoxyParamCaption}
+\item[{lua\+\_\+\+State $\ast$}]{lstate, }
+\item[{{\bf Float}}]{x, }
+\item[{{\bf Float}}]{y}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classZeta_1_1ExternalObjectRequest_a49e26c991546d03ad57da57189dc837e}
+\hypertarget{classZeta_1_1ExternalObjectRequest_adb70d23f8eb716cc9e1d9333c417b5bf}{\index{Zeta\+::\+External\+Object\+Request@{Zeta\+::\+External\+Object\+Request}!get\+Npc@{get\+Npc}}
+\index{get\+Npc@{get\+Npc}!Zeta\+::\+External\+Object\+Request@{Zeta\+::\+External\+Object\+Request}}
+\subsubsection[{get\+Npc}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+External\+Object\+Request\+::get\+Npc (
+\begin{DoxyParamCaption}
+\item[{lua\+\_\+\+State $\ast$}]{lstate, }
+\item[{{\bf Float}}]{x, }
+\item[{{\bf Float}}]{y}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classZeta_1_1ExternalObjectRequest_adb70d23f8eb716cc9e1d9333c417b5bf}
+\hypertarget{classZeta_1_1ExternalObjectRequest_a7ff291816739593ca735b27366476ec4}{\index{Zeta\+::\+External\+Object\+Request@{Zeta\+::\+External\+Object\+Request}!get\+Objects@{get\+Objects}}
+\index{get\+Objects@{get\+Objects}!Zeta\+::\+External\+Object\+Request@{Zeta\+::\+External\+Object\+Request}}
+\subsubsection[{get\+Objects}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<${\bf Object}$\ast$$>$\& Zeta\+::\+External\+Object\+Request\+::get\+Objects (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1ExternalObjectRequest_a7ff291816739593ca735b27366476ec4}
+\hypertarget{classZeta_1_1ExternalObjectRequest_afb1f3ec439ec7b858fd5bd4762f28971}{\index{Zeta\+::\+External\+Object\+Request@{Zeta\+::\+External\+Object\+Request}!handle@{handle}}
+\index{handle@{handle}!Zeta\+::\+External\+Object\+Request@{Zeta\+::\+External\+Object\+Request}}
+\subsubsection[{handle}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+External\+Object\+Request\+::handle (
+\begin{DoxyParamCaption}
+\item[{{\bf Rendering\+Context} \&}]{context}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classZeta_1_1ExternalObjectRequest_afb1f3ec439ec7b858fd5bd4762f28971}
+Pure virtual member Function to be called by the Context\+Type 
+\begin{DoxyParams}{Parameters}
+{\em context} & the \hyperlink{classZeta_1_1Context}{Context} that called it \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classZeta_1_1ContextOperation_a3e7286287026324335d352933fb62a78}{Zeta\+::\+Context\+Operation$<$ Rendering\+Context $>$}.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classZeta_1_1ExternalObjectRequest_ab2a5b87e64de0bed5732e2741abc6ba6}{\index{Zeta\+::\+External\+Object\+Request@{Zeta\+::\+External\+Object\+Request}!object\+Classes@{object\+Classes}}
+\index{object\+Classes@{object\+Classes}!Zeta\+::\+External\+Object\+Request@{Zeta\+::\+External\+Object\+Request}}
+\subsubsection[{object\+Classes}]{\setlength{\rightskip}{0pt plus 5cm}const std\+::vector$<${\bf Object\+Source}$>$$\ast$ Zeta\+::\+External\+Object\+Request\+::object\+Classes\hspace{0.3cm}{\ttfamily [private]}}}\label{classZeta_1_1ExternalObjectRequest_ab2a5b87e64de0bed5732e2741abc6ba6}
+\hypertarget{classZeta_1_1ExternalObjectRequest_a983916469bdc42f289e71fda3c2dc506}{\index{Zeta\+::\+External\+Object\+Request@{Zeta\+::\+External\+Object\+Request}!objects@{objects}}
+\index{objects@{objects}!Zeta\+::\+External\+Object\+Request@{Zeta\+::\+External\+Object\+Request}}
+\subsubsection[{objects}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<${\bf Object}$\ast$$>$ Zeta\+::\+External\+Object\+Request\+::objects\hspace{0.3cm}{\ttfamily [private]}}}\label{classZeta_1_1ExternalObjectRequest_a983916469bdc42f289e71fda3c2dc506}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Zeta/\+Core/\+Map\+Classes/\hyperlink{ExternalObjectRequest_8hpp}{External\+Object\+Request.\+hpp}\end{DoxyCompactItemize}

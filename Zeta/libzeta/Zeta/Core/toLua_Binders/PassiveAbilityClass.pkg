@@ -1,0 +1,6 @@
+$#include <Zeta/Core/RPGClasses/PassiveAbilityClass.hpp>
+
+class PassiveAbilityClass: public AbilityClass {
+public:
+
+};

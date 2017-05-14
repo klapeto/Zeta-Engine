@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<GUILayout version="4" >
+    <Window type="Eftihia/FrameWindow" name="Console" >
+        <Property name="Area" value="{{0,0},{0,0},{0,455},{0,400}}" />
+        <Property name="Font" value="DejaVuSans-10" />
+        <Property name="Text" value="Τερματικό" />
+        <Window type="Eftihia/Button" name="EnterButton" >
+            <Property name="Area" value="{{0.751708,0},{0.939227,0},{1.00228,0},{1.00829,0}}" />
+            <Property name="Font" value="DejaVuSans-10" />
+            <Property name="Text" value="Enter" />
+        </Window>
+        <Window type="Eftihia/EditBox" name="CommandBox" >
+            <Property name="Area" value="{{0,0},{0.939227,0},{0.740319,0},{1.00829,0}}" />
+            <Property name="Font" value="DejaVuSans-10" />
+        </Window>
+        <Window type="Eftihia/Listbox" name="CommandHistory" >
+            <Property name="Area" value="{{0,0},{0,0},{1.00228,0},{0.936464,0}}" />
+        </Window>
+    </Window>
+</GUILayout>

@@ -1,0 +1,100 @@
+.TH "Zeta::Enemy" 3 "Wed Feb 10 2016" "Zeta" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Zeta::Enemy \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Enemy\&.hpp>\fP
+.PP
+Inherits \fBZeta::Lifeform\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "virtual void \fBupdate\fP (\fBFloat\fP elapsedTime)"
+.br
+.ti -1c
+.RI "virtual void \fBdie\fP ()"
+.br
+.ti -1c
+.RI "virtual void \fBpushToLua\fP (lua_State *lstate)"
+.br
+.ti -1c
+.RI "\fBEnemy\fP (const std::string &lifeClass, \fBFloat\fP x, \fBFloat\fP y, \fBFloat\fP \fBrespawnTime\fP=30, \fBFloat\fP \fBvanishTime\fP=10)"
+.br
+.ti -1c
+.RI "\fBEnemy\fP (const \fBLifeformClass\fP &lifeClass, \fBFloat\fP x, \fBFloat\fP y, \fBFloat\fP \fBrespawnTime\fP=30, \fBFloat\fP \fBvanishTime\fP=10)"
+.br
+.ti -1c
+.RI "virtual \fB~Enemy\fP ()"
+.br
+.in -1c
+.SS "Protected Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBrespawn\fP ()"
+.br
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBVector2\fP \fBspawnPosition\fP"
+.br
+.ti -1c
+.RI "\fBFloat\fP \fBrespawnTime\fP"
+.br
+.ti -1c
+.RI "\fBFloat\fP \fBrespawnCounter\fP"
+.br
+.ti -1c
+.RI "\fBFloat\fP \fBvanishTime\fP"
+.br
+.ti -1c
+.RI "\fBFloat\fP \fBvanishCounter\fP"
+.br
+.in -1c
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Zeta::Enemy::Enemy (const std::string &lifeClass, \fBFloat\fPx, \fBFloat\fPy, \fBFloat\fPrespawnTime = \fC30\fP, \fBFloat\fPvanishTime = \fC10\fP)"
+
+.SS "Zeta::Enemy::Enemy (const \fBLifeformClass\fP &lifeClass, \fBFloat\fPx, \fBFloat\fPy, \fBFloat\fPrespawnTime = \fC30\fP, \fBFloat\fPvanishTime = \fC10\fP)"
+
+.SS "virtual Zeta::Enemy::~Enemy ()\fC [virtual]\fP"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "virtual void Zeta::Enemy::die ()\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBZeta::Lifeform\fP\&.
+.SS "virtual void Zeta::Enemy::pushToLua (lua_State *lstate)\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBZeta::Lifeform\fP\&.
+.SS "void Zeta::Enemy::respawn ()\fC [protected]\fP"
+
+.SS "virtual void Zeta::Enemy::update (\fBFloat\fPelapsedTime)\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBZeta::Lifeform\fP\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "\fBFloat\fP Zeta::Enemy::respawnCounter\fC [protected]\fP"
+
+.SS "\fBFloat\fP Zeta::Enemy::respawnTime\fC [protected]\fP"
+
+.SS "\fBVector2\fP Zeta::Enemy::spawnPosition\fC [protected]\fP"
+
+.SS "\fBFloat\fP Zeta::Enemy::vanishCounter\fC [protected]\fP"
+
+.SS "\fBFloat\fP Zeta::Enemy::vanishTime\fC [protected]\fP"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Zeta from the source code\&.

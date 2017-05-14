@@ -1,0 +1,98 @@
+.TH "Zeta::Ellipsis" 3 "Wed Feb 10 2016" "Zeta" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Zeta::Ellipsis \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Ellipsis\&.hpp>\fP
+.PP
+Inherits \fBZeta::Shape\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBFloat\fP \fBgetRadiusX\fP () const "
+.br
+.ti -1c
+.RI "void \fBsetRadiusX\fP (\fBFloat\fP \fBradiusX\fP)"
+.br
+.ti -1c
+.RI "\fBFloat\fP \fBgetRadiusY\fP () const "
+.br
+.ti -1c
+.RI "void \fBsetRadiusY\fP (\fBFloat\fP \fBradiusY\fP)"
+.br
+.ti -1c
+.RI "void \fBdraw\fP (\fBFloat\fP x, \fBFloat\fP y, \fBFloat\fP rotation=0\&.0f, Float scale=1\&.0f) const "
+.br
+.ti -1c
+.RI "\fBEllipsis\fP ()"
+.br
+.ti -1c
+.RI "\fBEllipsis\fP (\fBFloat\fP x, \fBFloat\fP y)"
+.br
+.ti -1c
+.RI "\fBEllipsis\fP (\fBFloat\fP x, \fBFloat\fP y, \fBFloat\fP \fBradiusX\fP, \fBFloat\fP \fBradiusY\fP)"
+.br
+.ti -1c
+.RI "\fB~Ellipsis\fP ()"
+.br
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBFloat\fP \fBradiusX\fP"
+.br
+.ti -1c
+.RI "\fBFloat\fP \fBradiusY\fP"
+.br
+.in -1c
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Zeta::Ellipsis::Ellipsis ()\fC [inline]\fP"
+
+.SS "Zeta::Ellipsis::Ellipsis (\fBFloat\fPx, \fBFloat\fPy)\fC [inline]\fP"
+
+.SS "Zeta::Ellipsis::Ellipsis (\fBFloat\fPx, \fBFloat\fPy, \fBFloat\fPradiusX, \fBFloat\fPradiusY)\fC [inline]\fP"
+
+.SS "Zeta::Ellipsis::~Ellipsis ()\fC [inline]\fP"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "void Zeta::Ellipsis::draw (\fBFloat\fPx, \fBFloat\fPy, \fBFloat\fProtation = \fC0\&.0f\fP, \fBFloat\fPscale = \fC1\&.0f\fP) const\fC [virtual]\fP"
+Draws the \fBObject\fP on screen\&. Be advised, the x,y, offsets might have different meaning on different implementations\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIx\fP X offset to be applied on the drawing 
+.br
+\fIy\fP Y offset to be applied on the drawing 
+.br
+\fIrotation\fP the rotation to be applied on the drawing 
+.RE
+.PP
+
+.PP
+Implements \fBZeta::Drawable\fP\&.
+.SS "\fBFloat\fP Zeta::Ellipsis::getRadiusX () const\fC [inline]\fP"
+
+.SS "\fBFloat\fP Zeta::Ellipsis::getRadiusY () const\fC [inline]\fP"
+
+.SS "void Zeta::Ellipsis::setRadiusX (\fBFloat\fPradiusX)\fC [inline]\fP"
+
+.SS "void Zeta::Ellipsis::setRadiusY (\fBFloat\fPradiusY)\fC [inline]\fP"
+
+.SH "Member Data Documentation"
+.PP 
+.SS "\fBFloat\fP Zeta::Ellipsis::radiusX\fC [protected]\fP"
+
+.SS "\fBFloat\fP Zeta::Ellipsis::radiusY\fC [protected]\fP"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Zeta from the source code\&.

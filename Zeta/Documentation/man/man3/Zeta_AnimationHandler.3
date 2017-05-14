@@ -1,0 +1,175 @@
+.TH "Zeta::AnimationHandler" 3 "Wed Feb 10 2016" "Zeta" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Zeta::AnimationHandler \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <AnimationHandler\&.hpp>\fP
+.PP
+Inherits \fBZeta::Drawable\fP, \fBZeta::Updateable\fP, and \fBZeta::LuaPushable\fP\&.
+.SS "Public Types"
+
+.in +1c
+.ti -1c
+.RI "enum \fBQueuePlace\fP { \fBQueuePlace::Front\fP, \fBQueuePlace::Back\fP }"
+.br
+.in -1c
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "const \fBAnimationClass\fP & \fBgetAnimationClass\fP () const "
+.br
+.ti -1c
+.RI "bool \fBisReleaseResources\fP () const "
+.br
+.ti -1c
+.RI "void \fBsetReleaseResources\fP (bool \fBreleaseResources\fP)"
+.br
+.ti -1c
+.RI "\fBAnimationPlayer\fP & \fBgetMainAnimationPlayer\fP () const "
+.br
+.ti -1c
+.RI "void \fBsetAnimation\fP (const std::string &name, \fBLifeformState::CombinedState\fP nonExist=LifeformState::Action::Idle|LifeformState::Direction::Down)"
+.br
+.ti -1c
+.RI "void \fBsetAnimation\fP (\fBLifeformState::CombinedState\fP name)"
+.br
+.ti -1c
+.RI "void \fBupdate\fP (\fBFloat\fP elapsedTime)"
+.br
+.ti -1c
+.RI "void \fBdraw\fP (\fBFloat\fP x, \fBFloat\fP y, \fBFloat\fP rotation=0\&.0f, Float scale=1\&.0f) const "
+.br
+.ti -1c
+.RI "void \fBsetAnimationClass\fP (const \fBAnimationClass\fP &\fBanimClass\fP)"
+.br
+.ti -1c
+.RI "void \fBsetAnimationClass\fP (const std::string &path)"
+.br
+.ti -1c
+.RI "void \fBaddOffAnimation\fP (const \fBAnimation\fP &animation, \fBFloat\fP dx=0\&.0f, Float dy=0\&.0f, QueuePlace queue=QueuePlace::Front)"
+.br
+.ti -1c
+.RI "\fBOffAnimation\fP & \fBgetOffAnimation\fP (const std::string &name, \fBQueuePlace\fP queue=\fBQueuePlace::Front\fP)"
+.br
+.ti -1c
+.RI "void \fBpushToLua\fP (lua_State *lstate)"
+.br
+.ti -1c
+.RI "\fBAnimationHandler\fP ()"
+.br
+.ti -1c
+.RI "\fBAnimationHandler\fP (const \fBAnimationClass\fP &\fBanimClass\fP)"
+.br
+.ti -1c
+.RI "\fBAnimationHandler\fP (const std::string &classPath, const std::string &animation='')"
+.br
+.ti -1c
+.RI "\fB~AnimationHandler\fP ()"
+.br
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBZMap\fP< std::string, \fBOffAnimation\fP > \fBfrontalAnimations\fP"
+.br
+.ti -1c
+.RI "\fBZMap\fP< std::string, \fBOffAnimation\fP > \fBbackAnimations\fP"
+.br
+.ti -1c
+.RI "\fBAnimationPlayer\fP \fBmainAnimation\fP"
+.br
+.ti -1c
+.RI "const \fBAnimationClass\fP * \fBanimClass\fP"
+.br
+.ti -1c
+.RI "bool \fBreleaseResources\fP"
+.br
+.in -1c
+.SH "Member Enumeration Documentation"
+.PP 
+.SS "enum \fBZeta::AnimationHandler::QueuePlace\fP\fC [strong]\fP"
+
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fIFront \fP\fP
+.TP
+\fB\fIBack \fP\fP
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Zeta::AnimationHandler::AnimationHandler ()"
+
+.SS "Zeta::AnimationHandler::AnimationHandler (const \fBAnimationClass\fP &animClass)"
+
+.SS "Zeta::AnimationHandler::AnimationHandler (const std::string &classPath, const std::string &animation = \fC''\fP)"
+
+.SS "Zeta::AnimationHandler::~AnimationHandler ()"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "void Zeta::AnimationHandler::addOffAnimation (const \fBAnimation\fP &animation, \fBFloat\fPdx = \fC0\&.0f\fP, \fBFloat\fPdy = \fC0\&.0f\fP, \fBQueuePlace\fPqueue = \fC\fBQueuePlace::Front\fP\fP)"
+
+.SS "void Zeta::AnimationHandler::draw (\fBFloat\fPx, \fBFloat\fPy, \fBFloat\fProtation = \fC0\&.0f\fP, \fBFloat\fPscale = \fC1\&.0f\fP) const\fC [virtual]\fP"
+Draws the \fBObject\fP on screen\&. Be advised, the x,y, offsets might have different meaning on different implementations\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIx\fP X offset to be applied on the drawing 
+.br
+\fIy\fP Y offset to be applied on the drawing 
+.br
+\fIrotation\fP the rotation to be applied on the drawing 
+.RE
+.PP
+
+.PP
+Implements \fBZeta::Drawable\fP\&.
+.SS "const \fBAnimationClass\fP& Zeta::AnimationHandler::getAnimationClass () const\fC [inline]\fP"
+
+.SS "\fBAnimationPlayer\fP& Zeta::AnimationHandler::getMainAnimationPlayer () const\fC [inline]\fP"
+
+.SS "\fBOffAnimation\fP& Zeta::AnimationHandler::getOffAnimation (const std::string &name, \fBQueuePlace\fPqueue = \fC\fBQueuePlace::Front\fP\fP)"
+
+.SS "bool Zeta::AnimationHandler::isReleaseResources () const\fC [inline]\fP"
+
+.SS "void Zeta::AnimationHandler::pushToLua (lua_State *lstate)\fC [virtual]\fP"
+
+.PP
+Implements \fBZeta::LuaPushable\fP\&.
+.SS "void Zeta::AnimationHandler::setAnimation (const std::string &name, \fBLifeformState::CombinedState\fPnonExist = \fCLifeformState::Action::Idle|LifeformState::Direction::Down\fP)"
+
+.SS "void Zeta::AnimationHandler::setAnimation (\fBLifeformState::CombinedState\fPname)"
+
+.SS "void Zeta::AnimationHandler::setAnimationClass (const \fBAnimationClass\fP &animClass)"
+
+.SS "void Zeta::AnimationHandler::setAnimationClass (const std::string &path)"
+
+.SS "void Zeta::AnimationHandler::setReleaseResources (boolreleaseResources)\fC [inline]\fP"
+
+.SS "void Zeta::AnimationHandler::update (\fBFloat\fPelapsedTime)\fC [virtual]\fP"
+
+.PP
+Implements \fBZeta::Updateable\fP\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "const \fBAnimationClass\fP* Zeta::AnimationHandler::animClass\fC [private]\fP"
+
+.SS "\fBZMap\fP<std::string, \fBOffAnimation\fP> Zeta::AnimationHandler::backAnimations\fC [private]\fP"
+
+.SS "\fBZMap\fP<std::string, \fBOffAnimation\fP> Zeta::AnimationHandler::frontalAnimations\fC [private]\fP"
+
+.SS "\fBAnimationPlayer\fP Zeta::AnimationHandler::mainAnimation\fC [mutable]\fP, \fC [private]\fP"
+
+.SS "bool Zeta::AnimationHandler::releaseResources\fC [private]\fP"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Zeta from the source code\&.

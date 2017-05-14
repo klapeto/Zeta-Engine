@@ -1,0 +1,132 @@
+\hypertarget{classZeta_1_1AnimationPack}{\section{Zeta\+:\+:Animation\+Pack Class Reference}
+\label{classZeta_1_1AnimationPack}\index{Zeta\+::\+Animation\+Pack@{Zeta\+::\+Animation\+Pack}}
+}
+
+
+{\ttfamily \#include $<$Animation\+Pack.\+hpp$>$}
+
+
+
+Inheritance diagram for Zeta\+:\+:Animation\+Pack\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=188pt]{classZeta_1_1AnimationPack__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Zeta\+:\+:Animation\+Pack\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=269pt]{classZeta_1_1AnimationPack__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+const \hyperlink{classZeta_1_1Animation}{Animation} \& \hyperlink{classZeta_1_1AnimationPack_adda733bd90a57d0307cb2731fd2a9ac3}{get\+Animation} (const std\+::string \&\hyperlink{classZeta_1_1Resource_a44c5721216f4beb31c0b3d2ef2aecf1d}{name}) const 
+\item 
+const \hyperlink{classZeta_1_1SpriteSheet}{Sprite\+Sheet} \& \hyperlink{classZeta_1_1AnimationPack_a08dbc3a645410b3a42e3831c85f5174e}{get\+Sprite\+Sheet} () const 
+\item 
+std\+::vector$<$ std\+::string $>$ \hyperlink{classZeta_1_1AnimationPack_a7f57cb4b8ec3f87a2ac982b12d669274}{list\+Animation\+Names} () const 
+\item 
+\hyperlink{classZeta_1_1AnimationPack_a22ce850bd316ed6925705110db62f600}{Animation\+Pack} ()
+\item 
+\hyperlink{classZeta_1_1AnimationPack_ac8e81972797da8e31bcabab51a9c2f64}{Animation\+Pack} (const std\+::string \&path)
+\item 
+\hyperlink{classZeta_1_1AnimationPack_a997cbde781439cd3d3add5f9337379f9}{$\sim$\+Animation\+Pack} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespaceZeta_a4c11e23ddc559dccdb5e85901d7dfb84}{Z\+Small\+Map}$<$ std\+::string, \hyperlink{classZeta_1_1Animation}{Animation} $>$ \hyperlink{classZeta_1_1AnimationPack_ad75ffd44330a99663b2d47247e51597b}{animations}
+\item 
+const \hyperlink{classZeta_1_1SpriteSheet}{Sprite\+Sheet} $\ast$ \hyperlink{classZeta_1_1AnimationPack_aaba44d7110313c7ce6e840a72d775dd9}{sprite\+Sheet}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A Class for loading animation Files ($\ast$.anim) 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classZeta_1_1AnimationPack_a22ce850bd316ed6925705110db62f600}{\index{Zeta\+::\+Animation\+Pack@{Zeta\+::\+Animation\+Pack}!Animation\+Pack@{Animation\+Pack}}
+\index{Animation\+Pack@{Animation\+Pack}!Zeta\+::\+Animation\+Pack@{Zeta\+::\+Animation\+Pack}}
+\subsubsection[{Animation\+Pack}]{\setlength{\rightskip}{0pt plus 5cm}Zeta\+::\+Animation\+Pack\+::\+Animation\+Pack (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classZeta_1_1AnimationPack_a22ce850bd316ed6925705110db62f600}
+Default Constructor Creates a Null \hyperlink{classZeta_1_1AnimationPack}{Animation\+Pack} with no animations and a Null Spritesheet \hypertarget{classZeta_1_1AnimationPack_ac8e81972797da8e31bcabab51a9c2f64}{\index{Zeta\+::\+Animation\+Pack@{Zeta\+::\+Animation\+Pack}!Animation\+Pack@{Animation\+Pack}}
+\index{Animation\+Pack@{Animation\+Pack}!Zeta\+::\+Animation\+Pack@{Zeta\+::\+Animation\+Pack}}
+\subsubsection[{Animation\+Pack}]{\setlength{\rightskip}{0pt plus 5cm}Zeta\+::\+Animation\+Pack\+::\+Animation\+Pack (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{path}
+\end{DoxyParamCaption}
+)}}\label{classZeta_1_1AnimationPack_ac8e81972797da8e31bcabab51a9c2f64}
+Loads the \hyperlink{classZeta_1_1Animation}{Animation} Pack \hyperlink{classZeta_1_1File}{File} and Parses it If anything goes wrong, then it throws a \hyperlink{classZeta_1_1Exception}{Zeta\+::\+Exception} 
+\begin{DoxyParams}{Parameters}
+{\em path} & The filename to load \\
+\hline
+\end{DoxyParams}
+\hypertarget{classZeta_1_1AnimationPack_a997cbde781439cd3d3add5f9337379f9}{\index{Zeta\+::\+Animation\+Pack@{Zeta\+::\+Animation\+Pack}!````~Animation\+Pack@{$\sim$\+Animation\+Pack}}
+\index{````~Animation\+Pack@{$\sim$\+Animation\+Pack}!Zeta\+::\+Animation\+Pack@{Zeta\+::\+Animation\+Pack}}
+\subsubsection[{$\sim$\+Animation\+Pack}]{\setlength{\rightskip}{0pt plus 5cm}Zeta\+::\+Animation\+Pack\+::$\sim$\+Animation\+Pack (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classZeta_1_1AnimationPack_a997cbde781439cd3d3add5f9337379f9}
+Deconstructor Deallocates all animations and releases the Reference to the Spritesheet 
+
+\subsection{Member Function Documentation}
+\hypertarget{classZeta_1_1AnimationPack_adda733bd90a57d0307cb2731fd2a9ac3}{\index{Zeta\+::\+Animation\+Pack@{Zeta\+::\+Animation\+Pack}!get\+Animation@{get\+Animation}}
+\index{get\+Animation@{get\+Animation}!Zeta\+::\+Animation\+Pack@{Zeta\+::\+Animation\+Pack}}
+\subsubsection[{get\+Animation}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Animation}\& Zeta\+::\+Animation\+Pack\+::get\+Animation (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{name}
+\end{DoxyParamCaption}
+) const}}\label{classZeta_1_1AnimationPack_adda733bd90a57d0307cb2731fd2a9ac3}
+Gets the animation by name If the requested animation is not availabe, then a Null\+Animation will be returned 
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the animation to retrieve \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The animation requested 
+\end{DoxyReturn}
+\hypertarget{classZeta_1_1AnimationPack_a08dbc3a645410b3a42e3831c85f5174e}{\index{Zeta\+::\+Animation\+Pack@{Zeta\+::\+Animation\+Pack}!get\+Sprite\+Sheet@{get\+Sprite\+Sheet}}
+\index{get\+Sprite\+Sheet@{get\+Sprite\+Sheet}!Zeta\+::\+Animation\+Pack@{Zeta\+::\+Animation\+Pack}}
+\subsubsection[{get\+Sprite\+Sheet}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Sprite\+Sheet}\& Zeta\+::\+Animation\+Pack\+::get\+Sprite\+Sheet (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1AnimationPack_a08dbc3a645410b3a42e3831c85f5174e}
+Gets the referenced Spritesheet of the Animations \begin{DoxyReturn}{Returns}
+The Spritesheet 
+\end{DoxyReturn}
+\hypertarget{classZeta_1_1AnimationPack_a7f57cb4b8ec3f87a2ac982b12d669274}{\index{Zeta\+::\+Animation\+Pack@{Zeta\+::\+Animation\+Pack}!list\+Animation\+Names@{list\+Animation\+Names}}
+\index{list\+Animation\+Names@{list\+Animation\+Names}!Zeta\+::\+Animation\+Pack@{Zeta\+::\+Animation\+Pack}}
+\subsubsection[{list\+Animation\+Names}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$std\+::string$>$ Zeta\+::\+Animation\+Pack\+::list\+Animation\+Names (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classZeta_1_1AnimationPack_a7f57cb4b8ec3f87a2ac982b12d669274}
+Gets a list of the Names of the Available animations \begin{DoxyReturn}{Returns}
+A vector of the names 
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classZeta_1_1AnimationPack_ad75ffd44330a99663b2d47247e51597b}{\index{Zeta\+::\+Animation\+Pack@{Zeta\+::\+Animation\+Pack}!animations@{animations}}
+\index{animations@{animations}!Zeta\+::\+Animation\+Pack@{Zeta\+::\+Animation\+Pack}}
+\subsubsection[{animations}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Z\+Small\+Map}$<$std\+::string, {\bf Animation}$>$ Zeta\+::\+Animation\+Pack\+::animations\hspace{0.3cm}{\ttfamily [protected]}}}\label{classZeta_1_1AnimationPack_ad75ffd44330a99663b2d47247e51597b}
+\hypertarget{classZeta_1_1AnimationPack_aaba44d7110313c7ce6e840a72d775dd9}{\index{Zeta\+::\+Animation\+Pack@{Zeta\+::\+Animation\+Pack}!sprite\+Sheet@{sprite\+Sheet}}
+\index{sprite\+Sheet@{sprite\+Sheet}!Zeta\+::\+Animation\+Pack@{Zeta\+::\+Animation\+Pack}}
+\subsubsection[{sprite\+Sheet}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Sprite\+Sheet}$\ast$ Zeta\+::\+Animation\+Pack\+::sprite\+Sheet\hspace{0.3cm}{\ttfamily [protected]}}}\label{classZeta_1_1AnimationPack_aaba44d7110313c7ce6e840a72d775dd9}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Zeta/\+Core/\+Resource\+Classes/\hyperlink{AnimationPack_8hpp}{Animation\+Pack.\+hpp}\end{DoxyCompactItemize}

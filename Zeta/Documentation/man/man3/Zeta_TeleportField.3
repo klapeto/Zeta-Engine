@@ -1,0 +1,102 @@
+.TH "Zeta::TeleportField" 3 "Wed Feb 10 2016" "Zeta" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Zeta::TeleportField \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <TeleportField\&.hpp>\fP
+.PP
+Inherits \fBZeta::Object\fP\&.
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "class \fBCollisionHandler\fP"
+.br
+.in -1c
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBupdate\fP (\fBFloat\fP elapsedTime)"
+.br
+.ti -1c
+.RI "void \fBdraw\fP (\fBFloat\fP x, \fBFloat\fP y, \fBFloat\fP rotation=0\&.0f, Float scale=1\&.0f) const "
+.br
+.ti -1c
+.RI "void \fBsetTargetLocation\fP (\fBFloat\fP x, \fBFloat\fP y)"
+.br
+.ti -1c
+.RI "void \fBonCollidedWith\fP (\fBObject\fP *other)"
+.br
+.ti -1c
+.RI "void \fBonClick\fP (\fBObject\fP *other)"
+.br
+.ti -1c
+.RI "\fBTeleportField\fP (const std::string &targetMap, \fBFloat\fP x, \fBFloat\fP y, int width=64, int height=64)"
+.br
+.ti -1c
+.RI "\fB~TeleportField\fP ()"
+.br
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBFloat\fP \fBtargetX\fP"
+.br
+.ti -1c
+.RI "\fBFloat\fP \fBtargetY\fP"
+.br
+.in -1c
+.SS "Additional Inherited Members"
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Zeta::TeleportField::TeleportField (const std::string &targetMap, \fBFloat\fPx, \fBFloat\fPy, intwidth = \fC64\fP, intheight = \fC64\fP)"
+
+.SS "Zeta::TeleportField::~TeleportField ()"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "void Zeta::TeleportField::draw (\fBFloat\fPx, \fBFloat\fPy, \fBFloat\fProtation = \fC0\&.0f\fP, \fBFloat\fPscale = \fC1\&.0f\fP) const\fC [inline]\fP, \fC [virtual]\fP"
+Draws the \fBObject\fP on screen\&. Be advised, the x,y, offsets might have different meaning on different implementations\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIx\fP X offset to be applied on the drawing 
+.br
+\fIy\fP Y offset to be applied on the drawing 
+.br
+\fIrotation\fP the rotation to be applied on the drawing 
+.RE
+.PP
+
+.PP
+Implements \fBZeta::Drawable\fP\&.
+.SS "void Zeta::TeleportField::onClick (\fBObject\fP *other)\fC [inline]\fP, \fC [virtual]\fP"
+
+.PP
+Implements \fBZeta::Object\fP\&.
+.SS "void Zeta::TeleportField::onCollidedWith (\fBObject\fP *other)\fC [virtual]\fP"
+
+.PP
+Implements \fBZeta::Object\fP\&.
+.SS "void Zeta::TeleportField::setTargetLocation (\fBFloat\fPx, \fBFloat\fPy)\fC [inline]\fP"
+
+.SS "void Zeta::TeleportField::update (\fBFloat\fPelapsedTime)\fC [inline]\fP, \fC [virtual]\fP"
+
+.PP
+Implements \fBZeta::Updateable\fP\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "\fBFloat\fP Zeta::TeleportField::targetX\fC [private]\fP"
+
+.SS "\fBFloat\fP Zeta::TeleportField::targetY\fC [private]\fP"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Zeta from the source code\&.

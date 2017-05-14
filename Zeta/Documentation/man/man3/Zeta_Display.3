@@ -1,0 +1,182 @@
+.TH "Zeta::Display" 3 "Wed Feb 10 2016" "Zeta" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Zeta::Display \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Display\&.hpp>\fP
+.PP
+Inherited by \fBZeta::AllegroDisplay\fP\&.
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "class \fBResolution\fP"
+.br
+.in -1c
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBresize\fP (const \fBResolution\fP &res)"
+.br
+.ti -1c
+.RI "virtual int \fBgetWidth\fP () const =0"
+.br
+.ti -1c
+.RI "virtual int \fBgetHeight\fP () const =0"
+.br
+.ti -1c
+.RI "virtual void \fBresize\fP (int width, int height)=0"
+.br
+.ti -1c
+.RI "virtual void \fBsetFullScreen\fP (bool value)=0"
+.br
+.ti -1c
+.RI "virtual std::vector< \fBResolution\fP > \fBgetAvailableResolutions\fP () const =0"
+.br
+.ti -1c
+.RI "virtual void \fBswitchFramebuffer\fP ()=0"
+.br
+.ti -1c
+.RI "\fBDisplay\fP (const \fBDisplay\fP &)=delete"
+.br
+.ti -1c
+.RI "\fBDisplay\fP & \fBoperator=\fP (const \fBDisplay\fP &)=delete"
+.br
+.ti -1c
+.RI "\fBDisplay\fP (\fBDisplay\fP &&)=default"
+.br
+.ti -1c
+.RI "\fBDisplay\fP & \fBoperator=\fP (\fBDisplay\fP &&)=default"
+.br
+.ti -1c
+.RI "\fBDisplay\fP ()"
+.br
+.ti -1c
+.RI "virtual \fB~Display\fP ()"
+.br
+.in -1c
+.SS "Static Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "static bool \fBisRenderingThread\fP ()"
+.br
+.in -1c
+.SS "Static Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "static thread_local bool \fBrenderingThread\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+\fBDisplay\fP Base class Used to create Library-Specific Wrappers to be used inside the Engine's Core 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Zeta::Display::Display (const \fBDisplay\fP &)\fC [delete]\fP"
+No Copy Constructor 
+.SS "Zeta::Display::Display (\fBDisplay\fP &&)\fC [default]\fP"
+Move Constructor 
+.SS "Zeta::Display::Display ()\fC [inline]\fP"
+Creates a \fBDisplay\fP\&. Created displays set the Thread-Specific flag renderingThread to true\&. 
+.SS "virtual Zeta::Display::~Display ()\fC [inline]\fP, \fC [virtual]\fP"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "virtual std::vector<\fBResolution\fP> Zeta::Display::getAvailableResolutions () const\fC [pure virtual]\fP"
+Gets the available Resolutions for this \fBDisplay\fP 
+.PP
+\fBReturns:\fP
+.RS 4
+A std::vector<Zeta::Display::Resoultion> contain all Resolutions 
+.RE
+.PP
+
+.PP
+Implemented in \fBZeta::AllegroDisplay\fP\&.
+.SS "virtual int Zeta::Display::getHeight () const\fC [pure virtual]\fP"
+Gets the Main Window Height 
+.PP
+\fBReturns:\fP
+.RS 4
+The main window height; 
+.RE
+.PP
+
+.PP
+Implemented in \fBZeta::AllegroDisplay\fP\&.
+.SS "virtual int Zeta::Display::getWidth () const\fC [pure virtual]\fP"
+Gets the Main Window Width 
+.PP
+\fBReturns:\fP
+.RS 4
+The main window Width; 
+.RE
+.PP
+
+.PP
+Implemented in \fBZeta::AllegroDisplay\fP\&.
+.SS "static bool Zeta::Display::isRenderingThread ()\fC [inline]\fP, \fC [static]\fP"
+Get's if the calling thread is the same with the Rendering\&. This is used by the \fBResourceContext\fP to distinguish if the caller thread can load VRAM Textures\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+true if the calling thread is the rendering Thread 
+.RE
+.PP
+
+.SS "\fBDisplay\fP& Zeta::Display::operator= (const \fBDisplay\fP &)\fC [delete]\fP"
+No Copy Assignment operator 
+.SS "\fBDisplay\fP& Zeta::Display::operator= (\fBDisplay\fP &&)\fC [default]\fP"
+Move assignment operator 
+.SS "void Zeta::Display::resize (const \fBResolution\fP &res)\fC [inline]\fP"
+Resize overload to accept \fBResolution\fP Objects 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIres\fP The resolution to resize the Main Window\&. 
+.RE
+.PP
+
+.SS "virtual void Zeta::Display::resize (intwidth, intheight)\fC [pure virtual]\fP"
+Resizes the Main Window to the specified Dimensions 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIwidth\fP the target width 
+.br
+\fIheight\fP the target Height 
+.RE
+.PP
+
+.PP
+Implemented in \fBZeta::AllegroDisplay\fP\&.
+.SS "virtual void Zeta::Display::setFullScreen (boolvalue)\fC [pure virtual]\fP"
+Toggles the Main Window Full-screen Mode 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIvalue\fP True for Fullscreen 
+.RE
+.PP
+
+.PP
+Implemented in \fBZeta::AllegroDisplay\fP\&.
+.SS "virtual void Zeta::Display::switchFramebuffer ()\fC [pure virtual]\fP"
+Switches the framebuffer\&. It should be used on Double or Triple Buffering implementations 
+.PP
+Implemented in \fBZeta::AllegroDisplay\fP\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "thread_local bool Zeta::Display::renderingThread\fC [static]\fP, \fC [private]\fP"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Zeta from the source code\&.

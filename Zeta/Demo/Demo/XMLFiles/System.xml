@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<System>
+	<CoreFiles>
+		<XMLFile targetModule="MapList" filename="Maps/Maps_Definitions.xml"
+			schema="" />
+	</CoreFiles>
+	<ResourceSchemas>
+		<Sprite filename="XMLFiles/Schemas/DarkFunctionSprites.xsd" />
+		<Animation filename="XMLFiles/Schemas/DarkFunctionAnim.xsd" />
+		<Map filename="XMLFiles/Schemas/TiledMap.xsd" />
+		<Tileset filename="XMLFiles/Schemas/TiledTileset.xsd" />
+		<AnimationClass filename="XMLFiles/Schemas/AnimationClasses.xsd" />
+		<LifeformClass filename="XMLFiles/Schemas/LifeformClasses.xsd" />
+		<Quest filename="XMLFiles/Schemas/Quests.xsd" />
+	</ResourceSchemas>
+	<CEGUI>
+
+		<Script group="misc" file="Boot.lua" />
+
+		<ResourceGroup name="fonts" path="Data/EftihiaGUI/fonts" />
+		<ResourceGroup name="imagesets" path="Data/EftihiaGUI/imagesets" />
+		<ResourceGroup name="layouts" path="Data/EftihiaGUI/layouts" />
+		<ResourceGroup name="looknfeel" path="Data/EftihiaGUI/looknfeel" />
+		<ResourceGroup name="schemes" path="Data/EftihiaGUI/schemes" />
+		<ResourceGroup name="lua_scripts" path="Data/EftihiaGUI/lua_scripts" />
+		<ResourceGroup name="misc" path="Data" />
+	</CEGUI>
+</System>

@@ -1,0 +1,193 @@
+\hypertarget{classZeta_1_1Ability}{\section{Zeta\+:\+:Ability Class Reference}
+\label{classZeta_1_1Ability}\index{Zeta\+::\+Ability@{Zeta\+::\+Ability}}
+}
+
+
+{\ttfamily \#include $<$Ability.\+hpp$>$}
+
+
+
+Inheritance diagram for Zeta\+:\+:Ability\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classZeta_1_1Ability__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Zeta\+:\+:Ability\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classZeta_1_1Ability__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{classZeta_1_1Ability_acbc80e4d82c9683d190ed8ca1c80f597}{Result} \{ \\*
+\hyperlink{classZeta_1_1Ability_acbc80e4d82c9683d190ed8ca1c80f597a505a83f220c02df2f85c3810cd9ceb38}{Result\+::\+Success}, 
+\hyperlink{classZeta_1_1Ability_acbc80e4d82c9683d190ed8ca1c80f597ae3c0ba3c83c17a047a9a5c4f53be2217}{Result\+::on\+Cooldown}, 
+\hyperlink{classZeta_1_1Ability_acbc80e4d82c9683d190ed8ca1c80f597aff4d8f7b051f09ecae01888dda54c15c}{Result\+::\+No\+Target}, 
+\hyperlink{classZeta_1_1Ability_acbc80e4d82c9683d190ed8ca1c80f597a78833d84bf23f43a08b9ad42eb11dd89}{Result\+::\+No\+Mana}, 
+\\*
+\hyperlink{classZeta_1_1Ability_acbc80e4d82c9683d190ed8ca1c80f597a365b2699d38b61ef4b4c8a1066c8468f}{Result\+::\+Out\+Of\+Range}, 
+\hyperlink{classZeta_1_1Ability_acbc80e4d82c9683d190ed8ca1c80f597ac926f8700f3a5b1ae6f9ef9675ca93fd}{Result\+::\+Target\+Is\+Dead}, 
+\hyperlink{classZeta_1_1Ability_acbc80e4d82c9683d190ed8ca1c80f597aff0026030492922584aab202394db49a}{Result\+::\+Target\+Is\+Not\+Hostile}, 
+\hyperlink{classZeta_1_1Ability_acbc80e4d82c9683d190ed8ca1c80f597a48c2128daef352af23cb92c859d06d5f}{Result\+::\+Invalid\+Ability}, 
+\\*
+\hyperlink{classZeta_1_1Ability_acbc80e4d82c9683d190ed8ca1c80f597a6311ae17c1ee52b36e68aaf4ad066387}{Result\+::\+Other}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classZeta_1_1Ability_a472b49c779602e2839a0afa4a504ebf0}{get\+Level} () const 
+\item 
+void \hyperlink{classZeta_1_1Ability_af8e3a64ad3b461ee91cc10b896a16684}{set\+Level} (int \hyperlink{classZeta_1_1Ability_a41d29a6fb79dd19a7eed5f6a4be5de9a}{level})
+\item 
+\hyperlink{classZeta_1_1Lifeform}{Lifeform} \& \hyperlink{classZeta_1_1Ability_a3bec1acb0d85225a0b067bc14b497100}{get\+Owner} ()
+\item 
+void \hyperlink{classZeta_1_1Ability_a14e4cb9c0e8b9d35bd46659291f73f76}{set\+Owner} (\hyperlink{classZeta_1_1Lifeform}{Lifeform} $\ast$\hyperlink{classZeta_1_1Ability_ad37bed67f04178297d6fe4c9a2ed619a}{owner})
+\item 
+\hyperlink{classZeta_1_1Ability_aeb18eb5f68dec2d1a7fc15cf35ba35e6}{Ability} (\hyperlink{classZeta_1_1Lifeform}{Lifeform} $\ast$\hyperlink{classZeta_1_1Ability_ad37bed67f04178297d6fe4c9a2ed619a}{owner}, int \hyperlink{classZeta_1_1Ability_a41d29a6fb79dd19a7eed5f6a4be5de9a}{level})
+\item 
+virtual \hyperlink{classZeta_1_1Ability_a234169c0dbb3ffe0086ca628901b705d}{$\sim$\+Ability} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classZeta_1_1Ability_a8400f68abcd13d41bfbb1d1cc03b38ff}{Ability} ()
+\item 
+virtual void \hyperlink{classZeta_1_1Ability_ac81e774451daa9476b02ba442a2ea047}{on\+Level\+Change} ()=0
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classZeta_1_1Lifeform}{Lifeform} $\ast$ \hyperlink{classZeta_1_1Ability_ad37bed67f04178297d6fe4c9a2ed619a}{owner}
+\item 
+int \hyperlink{classZeta_1_1Ability_a41d29a6fb79dd19a7eed5f6a4be5de9a}{level}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{classZeta_1_1Ability_acbc80e4d82c9683d190ed8ca1c80f597}{\index{Zeta\+::\+Ability@{Zeta\+::\+Ability}!Result@{Result}}
+\index{Result@{Result}!Zeta\+::\+Ability@{Zeta\+::\+Ability}}
+\subsubsection[{Result}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Zeta\+::\+Ability\+::\+Result}\hspace{0.3cm}{\ttfamily [strong]}}}\label{classZeta_1_1Ability_acbc80e4d82c9683d190ed8ca1c80f597}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{Success@{Success}!Zeta\+::\+Ability@{Zeta\+::\+Ability}}\index{Zeta\+::\+Ability@{Zeta\+::\+Ability}!Success@{Success}}\item[{\em 
+\hypertarget{classZeta_1_1Ability_acbc80e4d82c9683d190ed8ca1c80f597a505a83f220c02df2f85c3810cd9ceb38}{Success}\label{classZeta_1_1Ability_acbc80e4d82c9683d190ed8ca1c80f597a505a83f220c02df2f85c3810cd9ceb38}
+}]\index{on\+Cooldown@{on\+Cooldown}!Zeta\+::\+Ability@{Zeta\+::\+Ability}}\index{Zeta\+::\+Ability@{Zeta\+::\+Ability}!on\+Cooldown@{on\+Cooldown}}\item[{\em 
+\hypertarget{classZeta_1_1Ability_acbc80e4d82c9683d190ed8ca1c80f597ae3c0ba3c83c17a047a9a5c4f53be2217}{on\+Cooldown}\label{classZeta_1_1Ability_acbc80e4d82c9683d190ed8ca1c80f597ae3c0ba3c83c17a047a9a5c4f53be2217}
+}]\index{No\+Target@{No\+Target}!Zeta\+::\+Ability@{Zeta\+::\+Ability}}\index{Zeta\+::\+Ability@{Zeta\+::\+Ability}!No\+Target@{No\+Target}}\item[{\em 
+\hypertarget{classZeta_1_1Ability_acbc80e4d82c9683d190ed8ca1c80f597aff4d8f7b051f09ecae01888dda54c15c}{No\+Target}\label{classZeta_1_1Ability_acbc80e4d82c9683d190ed8ca1c80f597aff4d8f7b051f09ecae01888dda54c15c}
+}]\index{No\+Mana@{No\+Mana}!Zeta\+::\+Ability@{Zeta\+::\+Ability}}\index{Zeta\+::\+Ability@{Zeta\+::\+Ability}!No\+Mana@{No\+Mana}}\item[{\em 
+\hypertarget{classZeta_1_1Ability_acbc80e4d82c9683d190ed8ca1c80f597a78833d84bf23f43a08b9ad42eb11dd89}{No\+Mana}\label{classZeta_1_1Ability_acbc80e4d82c9683d190ed8ca1c80f597a78833d84bf23f43a08b9ad42eb11dd89}
+}]\index{Out\+Of\+Range@{Out\+Of\+Range}!Zeta\+::\+Ability@{Zeta\+::\+Ability}}\index{Zeta\+::\+Ability@{Zeta\+::\+Ability}!Out\+Of\+Range@{Out\+Of\+Range}}\item[{\em 
+\hypertarget{classZeta_1_1Ability_acbc80e4d82c9683d190ed8ca1c80f597a365b2699d38b61ef4b4c8a1066c8468f}{Out\+Of\+Range}\label{classZeta_1_1Ability_acbc80e4d82c9683d190ed8ca1c80f597a365b2699d38b61ef4b4c8a1066c8468f}
+}]\index{Target\+Is\+Dead@{Target\+Is\+Dead}!Zeta\+::\+Ability@{Zeta\+::\+Ability}}\index{Zeta\+::\+Ability@{Zeta\+::\+Ability}!Target\+Is\+Dead@{Target\+Is\+Dead}}\item[{\em 
+\hypertarget{classZeta_1_1Ability_acbc80e4d82c9683d190ed8ca1c80f597ac926f8700f3a5b1ae6f9ef9675ca93fd}{Target\+Is\+Dead}\label{classZeta_1_1Ability_acbc80e4d82c9683d190ed8ca1c80f597ac926f8700f3a5b1ae6f9ef9675ca93fd}
+}]\index{Target\+Is\+Not\+Hostile@{Target\+Is\+Not\+Hostile}!Zeta\+::\+Ability@{Zeta\+::\+Ability}}\index{Zeta\+::\+Ability@{Zeta\+::\+Ability}!Target\+Is\+Not\+Hostile@{Target\+Is\+Not\+Hostile}}\item[{\em 
+\hypertarget{classZeta_1_1Ability_acbc80e4d82c9683d190ed8ca1c80f597aff0026030492922584aab202394db49a}{Target\+Is\+Not\+Hostile}\label{classZeta_1_1Ability_acbc80e4d82c9683d190ed8ca1c80f597aff0026030492922584aab202394db49a}
+}]\index{Invalid\+Ability@{Invalid\+Ability}!Zeta\+::\+Ability@{Zeta\+::\+Ability}}\index{Zeta\+::\+Ability@{Zeta\+::\+Ability}!Invalid\+Ability@{Invalid\+Ability}}\item[{\em 
+\hypertarget{classZeta_1_1Ability_acbc80e4d82c9683d190ed8ca1c80f597a48c2128daef352af23cb92c859d06d5f}{Invalid\+Ability}\label{classZeta_1_1Ability_acbc80e4d82c9683d190ed8ca1c80f597a48c2128daef352af23cb92c859d06d5f}
+}]\index{Other@{Other}!Zeta\+::\+Ability@{Zeta\+::\+Ability}}\index{Zeta\+::\+Ability@{Zeta\+::\+Ability}!Other@{Other}}\item[{\em 
+\hypertarget{classZeta_1_1Ability_acbc80e4d82c9683d190ed8ca1c80f597a6311ae17c1ee52b36e68aaf4ad066387}{Other}\label{classZeta_1_1Ability_acbc80e4d82c9683d190ed8ca1c80f597a6311ae17c1ee52b36e68aaf4ad066387}
+}]\end{description}
+\end{Desc}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classZeta_1_1Ability_aeb18eb5f68dec2d1a7fc15cf35ba35e6}{\index{Zeta\+::\+Ability@{Zeta\+::\+Ability}!Ability@{Ability}}
+\index{Ability@{Ability}!Zeta\+::\+Ability@{Zeta\+::\+Ability}}
+\subsubsection[{Ability}]{\setlength{\rightskip}{0pt plus 5cm}Zeta\+::\+Ability\+::\+Ability (
+\begin{DoxyParamCaption}
+\item[{{\bf Lifeform} $\ast$}]{owner, }
+\item[{int}]{level}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1Ability_aeb18eb5f68dec2d1a7fc15cf35ba35e6}
+\hypertarget{classZeta_1_1Ability_a234169c0dbb3ffe0086ca628901b705d}{\index{Zeta\+::\+Ability@{Zeta\+::\+Ability}!````~Ability@{$\sim$\+Ability}}
+\index{````~Ability@{$\sim$\+Ability}!Zeta\+::\+Ability@{Zeta\+::\+Ability}}
+\subsubsection[{$\sim$\+Ability}]{\setlength{\rightskip}{0pt plus 5cm}virtual Zeta\+::\+Ability\+::$\sim$\+Ability (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classZeta_1_1Ability_a234169c0dbb3ffe0086ca628901b705d}
+\hypertarget{classZeta_1_1Ability_a8400f68abcd13d41bfbb1d1cc03b38ff}{\index{Zeta\+::\+Ability@{Zeta\+::\+Ability}!Ability@{Ability}}
+\index{Ability@{Ability}!Zeta\+::\+Ability@{Zeta\+::\+Ability}}
+\subsubsection[{Ability}]{\setlength{\rightskip}{0pt plus 5cm}Zeta\+::\+Ability\+::\+Ability (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}}\label{classZeta_1_1Ability_a8400f68abcd13d41bfbb1d1cc03b38ff}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classZeta_1_1Ability_a472b49c779602e2839a0afa4a504ebf0}{\index{Zeta\+::\+Ability@{Zeta\+::\+Ability}!get\+Level@{get\+Level}}
+\index{get\+Level@{get\+Level}!Zeta\+::\+Ability@{Zeta\+::\+Ability}}
+\subsubsection[{get\+Level}]{\setlength{\rightskip}{0pt plus 5cm}int Zeta\+::\+Ability\+::get\+Level (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1Ability_a472b49c779602e2839a0afa4a504ebf0}
+\hypertarget{classZeta_1_1Ability_a3bec1acb0d85225a0b067bc14b497100}{\index{Zeta\+::\+Ability@{Zeta\+::\+Ability}!get\+Owner@{get\+Owner}}
+\index{get\+Owner@{get\+Owner}!Zeta\+::\+Ability@{Zeta\+::\+Ability}}
+\subsubsection[{get\+Owner}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Lifeform}\& Zeta\+::\+Ability\+::get\+Owner (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1Ability_a3bec1acb0d85225a0b067bc14b497100}
+\hypertarget{classZeta_1_1Ability_ac81e774451daa9476b02ba442a2ea047}{\index{Zeta\+::\+Ability@{Zeta\+::\+Ability}!on\+Level\+Change@{on\+Level\+Change}}
+\index{on\+Level\+Change@{on\+Level\+Change}!Zeta\+::\+Ability@{Zeta\+::\+Ability}}
+\subsubsection[{on\+Level\+Change}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Zeta\+::\+Ability\+::on\+Level\+Change (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}}\label{classZeta_1_1Ability_ac81e774451daa9476b02ba442a2ea047}
+
+
+Implemented in \hyperlink{classZeta_1_1ActiveAbility_a6a2a131788a14830aba711262235cf26}{Zeta\+::\+Active\+Ability}, \hyperlink{classZeta_1_1Regeneration_a937aac46f00754b7d1e4e757b8c4a252}{Zeta\+::\+Regeneration}, and \hyperlink{classZeta_1_1PassiveAbility_aef651b48cfdd153aca93192cdc5f7ccd}{Zeta\+::\+Passive\+Ability}.
+
+\hypertarget{classZeta_1_1Ability_af8e3a64ad3b461ee91cc10b896a16684}{\index{Zeta\+::\+Ability@{Zeta\+::\+Ability}!set\+Level@{set\+Level}}
+\index{set\+Level@{set\+Level}!Zeta\+::\+Ability@{Zeta\+::\+Ability}}
+\subsubsection[{set\+Level}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+Ability\+::set\+Level (
+\begin{DoxyParamCaption}
+\item[{int}]{level}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1Ability_af8e3a64ad3b461ee91cc10b896a16684}
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classZeta_1_1Ability_af8e3a64ad3b461ee91cc10b896a16684_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classZeta_1_1Ability_a14e4cb9c0e8b9d35bd46659291f73f76}{\index{Zeta\+::\+Ability@{Zeta\+::\+Ability}!set\+Owner@{set\+Owner}}
+\index{set\+Owner@{set\+Owner}!Zeta\+::\+Ability@{Zeta\+::\+Ability}}
+\subsubsection[{set\+Owner}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+Ability\+::set\+Owner (
+\begin{DoxyParamCaption}
+\item[{{\bf Lifeform} $\ast$}]{owner}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1Ability_a14e4cb9c0e8b9d35bd46659291f73f76}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classZeta_1_1Ability_a41d29a6fb79dd19a7eed5f6a4be5de9a}{\index{Zeta\+::\+Ability@{Zeta\+::\+Ability}!level@{level}}
+\index{level@{level}!Zeta\+::\+Ability@{Zeta\+::\+Ability}}
+\subsubsection[{level}]{\setlength{\rightskip}{0pt plus 5cm}int Zeta\+::\+Ability\+::level\hspace{0.3cm}{\ttfamily [protected]}}}\label{classZeta_1_1Ability_a41d29a6fb79dd19a7eed5f6a4be5de9a}
+\hypertarget{classZeta_1_1Ability_ad37bed67f04178297d6fe4c9a2ed619a}{\index{Zeta\+::\+Ability@{Zeta\+::\+Ability}!owner@{owner}}
+\index{owner@{owner}!Zeta\+::\+Ability@{Zeta\+::\+Ability}}
+\subsubsection[{owner}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Lifeform}$\ast$ Zeta\+::\+Ability\+::owner\hspace{0.3cm}{\ttfamily [protected]}}}\label{classZeta_1_1Ability_ad37bed67f04178297d6fe4c9a2ed619a}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Zeta/\+Core/\+R\+P\+G\+Classes/\hyperlink{Ability_8hpp}{Ability.\+hpp}\end{DoxyCompactItemize}

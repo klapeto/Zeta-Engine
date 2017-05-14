@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LifeformClass name="Μαρία Μπρίλιου">
+	<AnimationClass filename="Demo/AnimationClasses/Female_NPC_2.xml" />
+	<Stats level="4">
+		<Levelize lowBound="-1" mul="10" upBound="1">
+			<Stat name="MaxHP" />
+			<Stat name="MaxMana" />
+			<Stat name="Pdef" />
+			<Stat name="Patk" />
+			<Stat name="Matk" />
+			<Stat name="Mdef" />
+		</Levelize>
+	</Stats>
+</LifeformClass>

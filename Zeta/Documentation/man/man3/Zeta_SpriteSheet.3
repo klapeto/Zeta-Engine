@@ -1,0 +1,103 @@
+.TH "Zeta::SpriteSheet" 3 "Wed Feb 10 2016" "Zeta" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Zeta::SpriteSheet \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <SpriteSheet\&.hpp>\fP
+.PP
+Inherits \fBZeta::Resource\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "const \fBBitmap\fP & \fBgetSprite\fP (const std::string &path) const "
+.br
+.ti -1c
+.RI "const \fBBitmap\fP & \fBgetImage\fP () const "
+.br
+.ti -1c
+.RI "\fBSpriteSheet\fP ()"
+.br
+.ti -1c
+.RI "\fBSpriteSheet\fP (const std::string &path)"
+.br
+.ti -1c
+.RI "\fB~SpriteSheet\fP ()"
+.br
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBZSmallMap\fP< std::string, \fBBitmap\fP * > \fBsprites\fP"
+.br
+.ti -1c
+.RI "const \fBBitmap\fP * \fBimage\fP"
+.br
+.in -1c
+.SS "Private Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBhandleNode\fP (const std::string &curName, xmlpp::Element *curNode)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+\fBSpriteSheet\fP Class It handles the loading of *\&.sprites XML Files 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Zeta::SpriteSheet::SpriteSheet ()"
+Default Constructor Creates an Empty Spritesheet 
+.SS "Zeta::SpriteSheet::SpriteSheet (const std::string &path)"
+Loads the XML Spritesheet 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIpath\fP The Filename to the XML \fBFile\fP 
+.RE
+.PP
+
+.SS "Zeta::SpriteSheet::~SpriteSheet ()"
+Destructor Destroys all Sprites and Unloads the Mother \fBBitmap\fP 
+.SH "Member Function Documentation"
+.PP 
+.SS "const \fBBitmap\fP& Zeta::SpriteSheet::getImage () const\fC [inline]\fP"
+Gets the Spritesheet's Mother \fBBitmap\fP 
+.PP
+\fBReturns:\fP
+.RS 4
+The Spritesheet \fBBitmap\fP 
+.RE
+.PP
+
+.SS "const \fBBitmap\fP& Zeta::SpriteSheet::getSprite (const std::string &path) const"
+Gets the Named Sprite The names are Path-like If the name does not exist in the spritesheet, it returns NullBitmap 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIpath\fP The name of the Sprite 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+The Sprite 
+.RE
+.PP
+
+.SS "void Zeta::SpriteSheet::handleNode (const std::string &curName, xmlpp::Element *curNode)\fC [private]\fP"
+
+.SH "Member Data Documentation"
+.PP 
+.SS "const \fBBitmap\fP* Zeta::SpriteSheet::image\fC [protected]\fP"
+
+.SS "\fBZSmallMap\fP<std::string, \fBBitmap\fP*> Zeta::SpriteSheet::sprites\fC [protected]\fP"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Zeta from the source code\&.

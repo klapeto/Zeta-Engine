@@ -1,0 +1,199 @@
+\hypertarget{classZeta_1_1InteractObject}{\section{Zeta\+:\+:Interact\+Object Class Reference}
+\label{classZeta_1_1InteractObject}\index{Zeta\+::\+Interact\+Object@{Zeta\+::\+Interact\+Object}}
+}
+
+
+{\ttfamily \#include $<$Interact\+Object.\+hpp$>$}
+
+
+
+Inheritance diagram for Zeta\+:\+:Interact\+Object\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classZeta_1_1InteractObject__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Zeta\+:\+:Interact\+Object\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classZeta_1_1InteractObject__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classZeta_1_1InteractObject_a1a9f0b7c74fb38466bf203896b994dba}{draw} (\hyperlink{namespaceZeta_a1e0a1265f9b3bd3075fb0fabd39088ba}{Float} x, \hyperlink{namespaceZeta_a1e0a1265f9b3bd3075fb0fabd39088ba}{Float} y, \hyperlink{namespaceZeta_a1e0a1265f9b3bd3075fb0fabd39088ba}{Float} rotation=0.\+0f, Float scale=1.\+0f) const 
+\item 
+void \hyperlink{classZeta_1_1InteractObject_ac5db80cfe9420736ddcbc84ab2733137}{update} (\hyperlink{namespaceZeta_a1e0a1265f9b3bd3075fb0fabd39088ba}{Float} elapsed\+Time)
+\item 
+void \hyperlink{classZeta_1_1InteractObject_a4284ede98266a3837f19dda5472e1c13}{on\+Collided\+With} (\hyperlink{classZeta_1_1Object}{Object} $\ast$other)
+\item 
+void \hyperlink{classZeta_1_1InteractObject_af8c542cd9c095794be5ea46a284a4125}{on\+Click} (\hyperlink{classZeta_1_1Object}{Object} $\ast$other)
+\item 
+void \hyperlink{classZeta_1_1InteractObject_ae9b7d8b2ace39b714917766a0bab4809}{set\+On\+Click} (\hyperlink{ZetaConfig_8hpp_ae7be32b73848041a60f2412f72bbb221}{lua\+\_\+\+Object} func)
+\item 
+void \hyperlink{classZeta_1_1InteractObject_a5d6bb28ba0fd9791e16b95b3449ee445}{set\+On\+Collide} (\hyperlink{ZetaConfig_8hpp_ae7be32b73848041a60f2412f72bbb221}{lua\+\_\+\+Object} func)
+\item 
+void \hyperlink{classZeta_1_1InteractObject_ae21efe5065e6bb8eb3e01a07cb9f007f}{set\+Animation} (const std\+::string \&\hyperlink{classZeta_1_1Object_ace4ef81b7c300e0a170292e9888cd66f}{name})
+\item 
+void \hyperlink{classZeta_1_1InteractObject_a4288d930f580cd6e4ddf6098e4b83898}{accept} (\hyperlink{classZeta_1_1Visitor}{Visitor} \&visitor)
+\item 
+void \hyperlink{classZeta_1_1InteractObject_ac422353b524575f4be794623631debaf}{push\+To\+Lua} (lua\+\_\+\+State $\ast$lstate)
+\item 
+\hyperlink{classZeta_1_1InteractObject_a7afbf3132da1a38e0d7bedb560eb1571}{Interact\+Object} (const std\+::string \&animation\+Class, \hyperlink{namespaceZeta_a1e0a1265f9b3bd3075fb0fabd39088ba}{Float} x, \hyperlink{namespaceZeta_a1e0a1265f9b3bd3075fb0fabd39088ba}{Float} y)
+\item 
+\hyperlink{classZeta_1_1InteractObject_a36a29713aa96c5a382d3cd7076e12199}{$\sim$\+Interact\+Object} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classZeta_1_1AnimationHandler}{Animation\+Handler} \hyperlink{classZeta_1_1InteractObject_ae11e1d3a934160243a3ef12a47355118}{anim\+Handler}
+\item 
+\hyperlink{classZeta_1_1LuaFunctor}{Lua\+Functor} \hyperlink{classZeta_1_1InteractObject_a370c5c376ef48153bf767e5cbfc73ec0}{on\+Click\+F}
+\item 
+\hyperlink{classZeta_1_1LuaFunctor}{Lua\+Functor} \hyperlink{classZeta_1_1InteractObject_a06c002c859383d13b6e8f3a0698c836d}{on\+Collide\+F}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classZeta_1_1InteractObject_a7afbf3132da1a38e0d7bedb560eb1571}{\index{Zeta\+::\+Interact\+Object@{Zeta\+::\+Interact\+Object}!Interact\+Object@{Interact\+Object}}
+\index{Interact\+Object@{Interact\+Object}!Zeta\+::\+Interact\+Object@{Zeta\+::\+Interact\+Object}}
+\subsubsection[{Interact\+Object}]{\setlength{\rightskip}{0pt plus 5cm}Zeta\+::\+Interact\+Object\+::\+Interact\+Object (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{animation\+Class, }
+\item[{{\bf Float}}]{x, }
+\item[{{\bf Float}}]{y}
+\end{DoxyParamCaption}
+)}}\label{classZeta_1_1InteractObject_a7afbf3132da1a38e0d7bedb560eb1571}
+\hypertarget{classZeta_1_1InteractObject_a36a29713aa96c5a382d3cd7076e12199}{\index{Zeta\+::\+Interact\+Object@{Zeta\+::\+Interact\+Object}!````~Interact\+Object@{$\sim$\+Interact\+Object}}
+\index{````~Interact\+Object@{$\sim$\+Interact\+Object}!Zeta\+::\+Interact\+Object@{Zeta\+::\+Interact\+Object}}
+\subsubsection[{$\sim$\+Interact\+Object}]{\setlength{\rightskip}{0pt plus 5cm}Zeta\+::\+Interact\+Object\+::$\sim$\+Interact\+Object (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classZeta_1_1InteractObject_a36a29713aa96c5a382d3cd7076e12199}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classZeta_1_1InteractObject_a4288d930f580cd6e4ddf6098e4b83898}{\index{Zeta\+::\+Interact\+Object@{Zeta\+::\+Interact\+Object}!accept@{accept}}
+\index{accept@{accept}!Zeta\+::\+Interact\+Object@{Zeta\+::\+Interact\+Object}}
+\subsubsection[{accept}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+Interact\+Object\+::accept (
+\begin{DoxyParamCaption}
+\item[{{\bf Visitor} \&}]{visitor}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classZeta_1_1InteractObject_a4288d930f580cd6e4ddf6098e4b83898}
+
+
+Implements \hyperlink{classZeta_1_1Object_ab89312e192868609f745c27748a2e669}{Zeta\+::\+Object}.
+
+\hypertarget{classZeta_1_1InteractObject_a1a9f0b7c74fb38466bf203896b994dba}{\index{Zeta\+::\+Interact\+Object@{Zeta\+::\+Interact\+Object}!draw@{draw}}
+\index{draw@{draw}!Zeta\+::\+Interact\+Object@{Zeta\+::\+Interact\+Object}}
+\subsubsection[{draw}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+Interact\+Object\+::draw (
+\begin{DoxyParamCaption}
+\item[{{\bf Float}}]{x, }
+\item[{{\bf Float}}]{y, }
+\item[{{\bf Float}}]{rotation = {\ttfamily 0.0f}, }
+\item[{{\bf Float}}]{scale = {\ttfamily 1.0f}}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classZeta_1_1InteractObject_a1a9f0b7c74fb38466bf203896b994dba}
+Draws the \hyperlink{classZeta_1_1Object}{Object} on screen. Be advised, the x,y, offsets might have different meaning on different implementations. 
+\begin{DoxyParams}{Parameters}
+{\em x} & X offset to be applied on the drawing \\
+\hline
+{\em y} & Y offset to be applied on the drawing \\
+\hline
+{\em rotation} & the rotation to be applied on the drawing \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classZeta_1_1Drawable_a3f453a7a971b7eeba1768be3eaedc192}{Zeta\+::\+Drawable}.
+
+\hypertarget{classZeta_1_1InteractObject_af8c542cd9c095794be5ea46a284a4125}{\index{Zeta\+::\+Interact\+Object@{Zeta\+::\+Interact\+Object}!on\+Click@{on\+Click}}
+\index{on\+Click@{on\+Click}!Zeta\+::\+Interact\+Object@{Zeta\+::\+Interact\+Object}}
+\subsubsection[{on\+Click}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+Interact\+Object\+::on\+Click (
+\begin{DoxyParamCaption}
+\item[{{\bf Object} $\ast$}]{other}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classZeta_1_1InteractObject_af8c542cd9c095794be5ea46a284a4125}
+
+
+Implements \hyperlink{classZeta_1_1Object_a334f107411268cefd5d88a1ec40bb639}{Zeta\+::\+Object}.
+
+\hypertarget{classZeta_1_1InteractObject_a4284ede98266a3837f19dda5472e1c13}{\index{Zeta\+::\+Interact\+Object@{Zeta\+::\+Interact\+Object}!on\+Collided\+With@{on\+Collided\+With}}
+\index{on\+Collided\+With@{on\+Collided\+With}!Zeta\+::\+Interact\+Object@{Zeta\+::\+Interact\+Object}}
+\subsubsection[{on\+Collided\+With}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+Interact\+Object\+::on\+Collided\+With (
+\begin{DoxyParamCaption}
+\item[{{\bf Object} $\ast$}]{other}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classZeta_1_1InteractObject_a4284ede98266a3837f19dda5472e1c13}
+
+
+Implements \hyperlink{classZeta_1_1Object_ae8d403a3bb343fb169347251b8eaa219}{Zeta\+::\+Object}.
+
+\hypertarget{classZeta_1_1InteractObject_ac422353b524575f4be794623631debaf}{\index{Zeta\+::\+Interact\+Object@{Zeta\+::\+Interact\+Object}!push\+To\+Lua@{push\+To\+Lua}}
+\index{push\+To\+Lua@{push\+To\+Lua}!Zeta\+::\+Interact\+Object@{Zeta\+::\+Interact\+Object}}
+\subsubsection[{push\+To\+Lua}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+Interact\+Object\+::push\+To\+Lua (
+\begin{DoxyParamCaption}
+\item[{lua\+\_\+\+State $\ast$}]{lstate}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classZeta_1_1InteractObject_ac422353b524575f4be794623631debaf}
+
+
+Implements \hyperlink{classZeta_1_1LuaPushable_a0380ec9cff11f749e8eb67b51b8f82fc}{Zeta\+::\+Lua\+Pushable}.
+
+\hypertarget{classZeta_1_1InteractObject_ae21efe5065e6bb8eb3e01a07cb9f007f}{\index{Zeta\+::\+Interact\+Object@{Zeta\+::\+Interact\+Object}!set\+Animation@{set\+Animation}}
+\index{set\+Animation@{set\+Animation}!Zeta\+::\+Interact\+Object@{Zeta\+::\+Interact\+Object}}
+\subsubsection[{set\+Animation}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+Interact\+Object\+::set\+Animation (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{name}
+\end{DoxyParamCaption}
+)}}\label{classZeta_1_1InteractObject_ae21efe5065e6bb8eb3e01a07cb9f007f}
+\hypertarget{classZeta_1_1InteractObject_ae9b7d8b2ace39b714917766a0bab4809}{\index{Zeta\+::\+Interact\+Object@{Zeta\+::\+Interact\+Object}!set\+On\+Click@{set\+On\+Click}}
+\index{set\+On\+Click@{set\+On\+Click}!Zeta\+::\+Interact\+Object@{Zeta\+::\+Interact\+Object}}
+\subsubsection[{set\+On\+Click}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+Interact\+Object\+::set\+On\+Click (
+\begin{DoxyParamCaption}
+\item[{{\bf lua\+\_\+\+Object}}]{func}
+\end{DoxyParamCaption}
+)}}\label{classZeta_1_1InteractObject_ae9b7d8b2ace39b714917766a0bab4809}
+\hypertarget{classZeta_1_1InteractObject_a5d6bb28ba0fd9791e16b95b3449ee445}{\index{Zeta\+::\+Interact\+Object@{Zeta\+::\+Interact\+Object}!set\+On\+Collide@{set\+On\+Collide}}
+\index{set\+On\+Collide@{set\+On\+Collide}!Zeta\+::\+Interact\+Object@{Zeta\+::\+Interact\+Object}}
+\subsubsection[{set\+On\+Collide}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+Interact\+Object\+::set\+On\+Collide (
+\begin{DoxyParamCaption}
+\item[{{\bf lua\+\_\+\+Object}}]{func}
+\end{DoxyParamCaption}
+)}}\label{classZeta_1_1InteractObject_a5d6bb28ba0fd9791e16b95b3449ee445}
+\hypertarget{classZeta_1_1InteractObject_ac5db80cfe9420736ddcbc84ab2733137}{\index{Zeta\+::\+Interact\+Object@{Zeta\+::\+Interact\+Object}!update@{update}}
+\index{update@{update}!Zeta\+::\+Interact\+Object@{Zeta\+::\+Interact\+Object}}
+\subsubsection[{update}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+Interact\+Object\+::update (
+\begin{DoxyParamCaption}
+\item[{{\bf Float}}]{elapsed\+Time}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classZeta_1_1InteractObject_ac5db80cfe9420736ddcbc84ab2733137}
+
+
+Implements \hyperlink{classZeta_1_1Updateable_af4006bfccb762454b4da08786ad93de0}{Zeta\+::\+Updateable}.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classZeta_1_1InteractObject_ae11e1d3a934160243a3ef12a47355118}{\index{Zeta\+::\+Interact\+Object@{Zeta\+::\+Interact\+Object}!anim\+Handler@{anim\+Handler}}
+\index{anim\+Handler@{anim\+Handler}!Zeta\+::\+Interact\+Object@{Zeta\+::\+Interact\+Object}}
+\subsubsection[{anim\+Handler}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Animation\+Handler} Zeta\+::\+Interact\+Object\+::anim\+Handler\hspace{0.3cm}{\ttfamily [private]}}}\label{classZeta_1_1InteractObject_ae11e1d3a934160243a3ef12a47355118}
+\hypertarget{classZeta_1_1InteractObject_a370c5c376ef48153bf767e5cbfc73ec0}{\index{Zeta\+::\+Interact\+Object@{Zeta\+::\+Interact\+Object}!on\+Click\+F@{on\+Click\+F}}
+\index{on\+Click\+F@{on\+Click\+F}!Zeta\+::\+Interact\+Object@{Zeta\+::\+Interact\+Object}}
+\subsubsection[{on\+Click\+F}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Lua\+Functor} Zeta\+::\+Interact\+Object\+::on\+Click\+F\hspace{0.3cm}{\ttfamily [private]}}}\label{classZeta_1_1InteractObject_a370c5c376ef48153bf767e5cbfc73ec0}
+\hypertarget{classZeta_1_1InteractObject_a06c002c859383d13b6e8f3a0698c836d}{\index{Zeta\+::\+Interact\+Object@{Zeta\+::\+Interact\+Object}!on\+Collide\+F@{on\+Collide\+F}}
+\index{on\+Collide\+F@{on\+Collide\+F}!Zeta\+::\+Interact\+Object@{Zeta\+::\+Interact\+Object}}
+\subsubsection[{on\+Collide\+F}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Lua\+Functor} Zeta\+::\+Interact\+Object\+::on\+Collide\+F\hspace{0.3cm}{\ttfamily [private]}}}\label{classZeta_1_1InteractObject_a06c002c859383d13b6e8f3a0698c836d}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Zeta/\+Core/\+R\+P\+G\+Classes/\hyperlink{InteractObject_8hpp}{Interact\+Object.\+hpp}\end{DoxyCompactItemize}

@@ -1,0 +1,152 @@
+.TH "Zeta::CEGUIChild" 3 "Wed Feb 10 2016" "Zeta" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Zeta::CEGUIChild \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <CEGUIChild\&.hpp>\fP
+.PP
+Inherits \fBZeta::ChildObject\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBsetOffesets\fP (\fBFloat\fP \fBoffX\fP, \fBFloat\fP \fBoffY\fP)"
+.br
+.ti -1c
+.RI "bool \fBisDestroy\fP () const "
+.br
+.ti -1c
+.RI "void \fBsetDestroy\fP (bool \fBdestroy\fP)"
+.br
+.ti -1c
+.RI "\fBFloat\fP \fBgetOffsetX\fP () const "
+.br
+.ti -1c
+.RI "void \fBsetOffsetX\fP (\fBFloat\fP \fBoffX\fP)"
+.br
+.ti -1c
+.RI "\fBFloat\fP \fBgetOffsetY\fP () const "
+.br
+.ti -1c
+.RI "void \fBsetOffsetY\fP (\fBFloat\fP \fBoffY\fP)"
+.br
+.ti -1c
+.RI "CEGUI::Window * \fBgetWindow\fP () const "
+.br
+.ti -1c
+.RI "void \fBsetWindow\fP (CEGUI::Window *\fBwindow\fP)"
+.br
+.ti -1c
+.RI "void \fBdraw\fP (\fBFloat\fP x, \fBFloat\fP y, \fBFloat\fP rotation=0\&.0f, Float scale=1\&.0f) const "
+.br
+.ti -1c
+.RI "void \fBonHide\fP ()"
+.br
+.ti -1c
+.RI "void \fBonShow\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetPosition\fP (\fBFloat\fP x, \fBFloat\fP y)"
+.br
+.ti -1c
+.RI "void \fBoffsetPosition\fP (\fBFloat\fP dx, \fBFloat\fP dy)"
+.br
+.ti -1c
+.RI "\fBCEGUIChild\fP (CEGUI::Window *\fBwindow\fP, bool \fBdestroy\fP=false)"
+.br
+.ti -1c
+.RI "\fB~CEGUIChild\fP ()"
+.br
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "CEGUI::Window * \fBwindow\fP"
+.br
+.ti -1c
+.RI "\fBFloat\fP \fBoffX\fP"
+.br
+.ti -1c
+.RI "\fBFloat\fP \fBoffY\fP"
+.br
+.ti -1c
+.RI "bool \fBdestroy\fP"
+.br
+.in -1c
+.SS "Additional Inherited Members"
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Zeta::CEGUIChild::CEGUIChild (CEGUI::Window *window, booldestroy = \fCfalse\fP)"
+
+.SS "Zeta::CEGUIChild::~CEGUIChild ()"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "void Zeta::CEGUIChild::draw (\fBFloat\fPx, \fBFloat\fPy, \fBFloat\fProtation = \fC0\&.0f\fP, \fBFloat\fPscale = \fC1\&.0f\fP) const\fC [virtual]\fP"
+Draws the \fBObject\fP on screen\&. Be advised, the x,y, offsets might have different meaning on different implementations\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIx\fP X offset to be applied on the drawing 
+.br
+\fIy\fP Y offset to be applied on the drawing 
+.br
+\fIrotation\fP the rotation to be applied on the drawing 
+.RE
+.PP
+
+.PP
+Reimplemented from \fBZeta::ChildObject\fP\&.
+.SS "\fBFloat\fP Zeta::CEGUIChild::getOffsetX () const\fC [inline]\fP"
+
+.SS "\fBFloat\fP Zeta::CEGUIChild::getOffsetY () const\fC [inline]\fP"
+
+.SS "CEGUI::Window* Zeta::CEGUIChild::getWindow () const\fC [inline]\fP"
+
+.SS "bool Zeta::CEGUIChild::isDestroy () const\fC [inline]\fP"
+
+.SS "void Zeta::CEGUIChild::offsetPosition (\fBFloat\fPdx, \fBFloat\fPdy)\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBZeta::Object\fP\&.
+.SS "void Zeta::CEGUIChild::onHide ()\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBZeta::Object\fP\&.
+.SS "void Zeta::CEGUIChild::onShow ()\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBZeta::Object\fP\&.
+.SS "void Zeta::CEGUIChild::setDestroy (booldestroy)\fC [inline]\fP"
+
+.SS "void Zeta::CEGUIChild::setOffesets (\fBFloat\fPoffX, \fBFloat\fPoffY)\fC [inline]\fP"
+
+.SS "void Zeta::CEGUIChild::setOffsetX (\fBFloat\fPoffX)\fC [inline]\fP"
+
+.SS "void Zeta::CEGUIChild::setOffsetY (\fBFloat\fPoffY)\fC [inline]\fP"
+
+.SS "void Zeta::CEGUIChild::setPosition (\fBFloat\fPx, \fBFloat\fPy)\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBZeta::Object\fP\&.
+.SS "void Zeta::CEGUIChild::setWindow (CEGUI::Window *window)\fC [inline]\fP"
+
+.SH "Member Data Documentation"
+.PP 
+.SS "bool Zeta::CEGUIChild::destroy\fC [private]\fP"
+
+.SS "\fBFloat\fP Zeta::CEGUIChild::offX\fC [private]\fP"
+
+.SS "\fBFloat\fP Zeta::CEGUIChild::offY\fC [private]\fP"
+
+.SS "CEGUI::Window* Zeta::CEGUIChild::window\fC [private]\fP"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Zeta from the source code\&.

@@ -1,0 +1,62 @@
+.TH "Zeta::AllegroAudioContext" 3 "Wed Feb 10 2016" "Zeta" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Zeta::AllegroAudioContext \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <AllegroAudioContext\&.hpp>\fP
+.PP
+Inherits \fBZeta::AudioContext\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "float \fBgetMainGain\fP () const "
+.br
+.ti -1c
+.RI "void \fBsetMainGain\fP (float mainGain)"
+.br
+.ti -1c
+.RI "\fBAllegroAudioContext\fP ()"
+.br
+.ti -1c
+.RI "\fB~AllegroAudioContext\fP ()"
+.br
+.in -1c
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Zeta::AllegroAudioContext::AllegroAudioContext ()"
+
+.SS "Zeta::AllegroAudioContext::~AllegroAudioContext ()"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "float Zeta::AllegroAudioContext::getMainGain () const\fC [virtual]\fP"
+Gets the main \fBSound\fP gain\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+Float 0\&.0f-1\&.0f representing the Main Mixer Gain 
+.RE
+.PP
+
+.PP
+Implements \fBZeta::AudioContext\fP\&.
+.SS "void Zeta::AllegroAudioContext::setMainGain (floatmainGain)\fC [virtual]\fP"
+Sets the main Soung Gain\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fImainGain\fP Float representing the mainGain 
+.RE
+.PP
+
+.PP
+Implements \fBZeta::AudioContext\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Zeta from the source code\&.

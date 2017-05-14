@@ -1,0 +1,6 @@
+<map id="Zeta::SynchronousResourceContext::releaseResource" name="Zeta::SynchronousResourceContext::releaseResource">
+<area shape="rect" id="node2" href="$classZeta_1_1SynchronousResourceContext.html#aaf68cc9769f4092aa55bca5acf344a45" title="Zeta::SynchronousResource\lContext::releaseMappedResource" alt="" coords="243,34,463,75"/>
+<area shape="rect" id="node5" href="$classZeta_1_1Resource.html#a04a886f7e400bad89a110fdedd9bd198" title="Zeta::Resource::getName" alt="" coords="267,100,440,127"/>
+<area shape="rect" id="node3" href="$classZeta_1_1SingleInstanced.html#af49c6efd918b81e5716e5523122b95f0" title="Zeta::SingleInstanced\l\&lt; Logger \&gt;::getInstance" alt="" coords="513,5,674,46"/>
+<area shape="rect" id="node4" href="$classZeta_1_1Logger.html#af7a67ad7ba12c200679d8108339d4ed2" title="Zeta::Logger::write" alt="" coords="528,71,659,97"/>
+</map>

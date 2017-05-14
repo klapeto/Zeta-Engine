@@ -1,0 +1,8 @@
+$#include <Zeta/Core/MapClasses/Map.hpp>
+
+class Map {
+public:
+	void addObject(Object *obj,bool toBeDeleted);
+	void insertObject(Object *obj, bool toBeDeleted);
+	void removeObject(Object *obj);
+};

@@ -1,0 +1,6 @@
+$#include <Zeta/Core/RPGClasses/DirectionalProjectile.hpp>
+
+class DirectionalProjectile: public Projectile {
+public:
+
+};

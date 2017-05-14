@@ -1,0 +1,885 @@
+.TH "Zeta" 3 "Wed Feb 10 2016" "Zeta" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Zeta \- 
+.SH SYNOPSIS
+.br
+.PP
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "class \fBAbility\fP"
+.br
+.ti -1c
+.RI "class \fBAbilityClass\fP"
+.br
+.ti -1c
+.RI "class \fBActiveAbility\fP"
+.br
+.ti -1c
+.RI "class \fBActiveAbilityClass\fP"
+.br
+.ti -1c
+.RI "class \fBAggressiveBehaviour\fP"
+.br
+.ti -1c
+.RI "class \fBAggressiveBehaviourClass\fP"
+.br
+.ti -1c
+.RI "class \fBAllegroAudioContext\fP"
+.br
+.ti -1c
+.RI "class \fBAllegroBitmap\fP"
+.br
+.ti -1c
+.RI "class \fBAllegroDisplay\fP"
+.br
+.ti -1c
+.RI "class \fBAllegroEvent\fP"
+.br
+.ti -1c
+.RI "class \fBAllegroLoop\fP"
+.br
+.ti -1c
+.RI "class \fBAllegroRenderer\fP"
+.br
+.ti -1c
+.RI "class \fBAllegroSDK\fP"
+.br
+.ti -1c
+.RI "class \fBAllegroSound\fP"
+.br
+.ti -1c
+.RI "class \fBAllegroSoundInstance\fP"
+.br
+.ti -1c
+.RI "class \fBAnimation\fP"
+.br
+.ti -1c
+.RI "class \fBAnimationClass\fP"
+.br
+.ti -1c
+.RI "class \fBAnimationEffectsManager\fP"
+.br
+.ti -1c
+.RI "class \fBAnimationHandler\fP"
+.br
+.ti -1c
+.RI "class \fBAnimationPack\fP"
+.br
+.ti -1c
+.RI "class \fBAnimationPlayer\fP"
+.br
+.ti -1c
+.RI "class \fBAsynchronousWorker\fP"
+.br
+.ti -1c
+.RI "class \fBAttribute\fP"
+.br
+.ti -1c
+.RI "class \fBAudioContext\fP"
+.br
+.ti -1c
+.RI "class \fBBehaviour\fP"
+.br
+.ti -1c
+.RI "class \fBBehaviourClass\fP"
+.br
+.ti -1c
+.RI "class \fBBitmap\fP"
+.br
+.ti -1c
+.RI "class \fBCEGUIChild\fP"
+.br
+.ti -1c
+.RI "class \fBCEGUIObject\fP"
+.br
+.ti -1c
+.RI "class \fBCell\fP"
+.br
+.ti -1c
+.RI "class \fBChance\fP"
+.br
+.ti -1c
+.RI "class \fBChildObject\fP"
+.br
+.ti -1c
+.RI "class \fBClassifiedAbility\fP"
+.br
+.ti -1c
+.RI "class \fBColor\fP"
+.br
+.ti -1c
+.RI "class \fBConsoleFunctions\fP"
+.br
+.ti -1c
+.RI "class \fBConsoleManager\fP"
+.br
+.ti -1c
+.RI "class \fBContext\fP"
+.br
+.ti -1c
+.RI "class \fBContextOperation\fP"
+.br
+.ti -1c
+.RI "class \fBCrosshair\fP"
+.br
+.ti -1c
+.RI "class \fBDirectionalProjectile\fP"
+.br
+.ti -1c
+.RI "class \fBDisplay\fP"
+.br
+.ti -1c
+.RI "class \fBDrawable\fP"
+.br
+.ti -1c
+.RI "class \fBDurableEffect\fP"
+.br
+.ti -1c
+.RI "class \fBEffect\fP"
+.br
+.ti -1c
+.RI "class \fBEffectClass\fP"
+.br
+.ti -1c
+.RI "class \fBEllipsis\fP"
+.br
+.ti -1c
+.RI "class \fBEnemy\fP"
+.br
+.ti -1c
+.RI "class \fBEvent\fP"
+.br
+.ti -1c
+.RI "class \fBException\fP"
+.br
+.ti -1c
+.RI "class \fBExternalObjectRequest\fP"
+.br
+.ti -1c
+.RI "class \fBFaction\fP"
+.br
+.ti -1c
+.RI "class \fBFactionManager\fP"
+.br
+.ti -1c
+.RI "class \fBFile\fP"
+.br
+.ti -1c
+.RI "class \fBFileLoader\fP"
+.br
+.ti -1c
+.RI "class \fBFlatModifier\fP"
+.br
+.ti -1c
+.RI "class \fBFunctorContextOperation\fP"
+.br
+.ti -1c
+.RI "class \fBGeneralLoop\fP"
+.br
+.ti -1c
+.RI "class \fBGUIManager\fP"
+.br
+.ti -1c
+.RI "class \fBIdleMovement\fP"
+.br
+.ti -1c
+.RI "class \fBIdleMovementClass\fP"
+.br
+.ti -1c
+.RI "class \fBInteractField\fP"
+.br
+.ti -1c
+.RI "class \fBInteractObject\fP"
+.br
+.ti -1c
+.RI "class \fBLayer\fP"
+.br
+.ti -1c
+.RI "class \fBLifeform\fP"
+.br
+.ti -1c
+.RI "class \fBLifeformClass\fP"
+.br
+.ti -1c
+.RI "class \fBLifeformClassContainer\fP"
+.br
+.ti -1c
+.RI "class \fBLifeformState\fP"
+.br
+.ti -1c
+.RI "class \fBLogger\fP"
+.br
+.ti -1c
+.RI "class \fBLoopRunner\fP"
+.br
+.ti -1c
+.RI "class \fBLuaBoolean\fP"
+.br
+.ti -1c
+.RI "class \fBLuaEngine\fP"
+.br
+.ti -1c
+.RI "class \fBLuaFunctor\fP"
+.br
+.ti -1c
+.RI "class \fBLuaListener\fP"
+.br
+.ti -1c
+.RI "class \fBLuaNumber\fP"
+.br
+.ti -1c
+.RI "class \fBLuaPushable\fP"
+.br
+.ti -1c
+.RI "class \fBLuaReferenced\fP"
+.br
+.ti -1c
+.RI "class \fBLuaString\fP"
+.br
+.ti -1c
+.RI "class \fBLuaTable\fP"
+.br
+.ti -1c
+.RI "class \fBMainLoop\fP"
+.br
+.ti -1c
+.RI "class \fBMap\fP"
+.br
+.ti -1c
+.RI "class \fBMapLoader\fP"
+.br
+.ti -1c
+.RI "class \fBModifier\fP"
+.br
+.ti -1c
+.RI "class \fBMulModifier\fP"
+.br
+.ti -1c
+.RI "class \fBMusicManager\fP"
+.br
+.ti -1c
+.RI "class \fBNonCopyable\fP"
+.br
+.ti -1c
+.RI "class \fBNpc\fP"
+.br
+.ti -1c
+.RI "class \fBNullReference\fP"
+.br
+.ti -1c
+.RI "class \fBObject\fP"
+.br
+.ti -1c
+.RI "class \fBOffAnimation\fP"
+.br
+.ti -1c
+.RI "class \fBOverTimeEffect\fP"
+.br
+.ti -1c
+.RI "class \fBPassiveAbility\fP"
+.br
+.ti -1c
+.RI "class \fBPassiveAbilityClass\fP"
+.br
+.ti -1c
+.RI "class \fBPassiveBehaviour\fP"
+.br
+.ti -1c
+.RI "class \fBPassiveBehaviourClass\fP"
+.br
+.ti -1c
+.RI "class \fBPlayer\fP"
+.br
+.ti -1c
+.RI "class \fBProjectile\fP"
+.br
+.ti -1c
+.RI "class \fBProjectileClass\fP"
+.br
+.ti -1c
+.RI "class \fBPropertyList\fP"
+.br
+.ti -1c
+.RI "class \fBQuadtree\fP"
+.br
+.ti -1c
+.RI "class \fBRectangle\fP"
+.br
+.ti -1c
+.RI "class \fBRegeneration\fP"
+.br
+.ti -1c
+.RI "class \fBRegenerationAbilityClass\fP"
+.br
+.ti -1c
+.RI "class \fBRenderingContext\fP"
+.br
+.ti -1c
+.RI "class \fBRenderRequest\fP"
+.br
+.ti -1c
+.RI "class \fBResource\fP"
+.br
+.ti -1c
+.RI "class \fBResourceCache\fP"
+.br
+.ti -1c
+.RI "class \fBResourceContext\fP"
+.br
+.ti -1c
+.RI "class \fBResourceReleaseRequest\fP"
+.br
+.ti -1c
+.RI "class \fBSaveManager\fP"
+.br
+.ti -1c
+.RI "class \fBSeekingProjectile\fP"
+.br
+.ti -1c
+.RI "class \fBSettings\fP"
+.br
+.ti -1c
+.RI "class \fBShape\fP"
+.br
+.ti -1c
+.RI "class \fBShapeRenderer\fP"
+.br
+.ti -1c
+.RI "class \fBSharedResource\fP"
+.br
+.ti -1c
+.RI "class \fBSingleInstanced\fP"
+.br
+.ti -1c
+.RI "class \fBSound\fP"
+.br
+.ti -1c
+.RI "class \fBSoundInstance\fP"
+.br
+.ti -1c
+.RI "class \fBSpriteSheet\fP"
+.br
+.ti -1c
+.RI "class \fBStaticObject\fP"
+.br
+.ti -1c
+.RI "class \fBStaticQuadtree\fP"
+.br
+.ti -1c
+.RI "struct \fBStats\fP"
+.br
+.ti -1c
+.RI "class \fBStickyObject\fP"
+.br
+.ti -1c
+.RI "class \fBStringOperations\fP"
+.br
+.ti -1c
+.RI "class \fBSynchronousRenderingContext\fP"
+.br
+.ti -1c
+.RI "class \fBSynchronousResourceContext\fP"
+.br
+.ti -1c
+.RI "class \fBSystem\fP"
+.br
+.ti -1c
+.RI "class \fBSystemEventListener\fP"
+.br
+.ti -1c
+.RI "class \fBTeleportField\fP"
+.br
+.ti -1c
+.RI "class \fBTile\fP"
+.br
+.ti -1c
+.RI "class \fBTileset\fP"
+.br
+.ti -1c
+.RI "class \fBTimer\fP"
+.br
+.ti -1c
+.RI "class \fBUpdateable\fP"
+.br
+.ti -1c
+.RI "class \fBVector2\fP"
+.br
+.ti -1c
+.RI "class \fBVector2D\fP"
+.br
+.ti -1c
+.RI "class \fBView\fP"
+.br
+.ti -1c
+.RI "class \fBVisitor\fP"
+.br
+.ti -1c
+.RI "class \fBWanderingMovement\fP"
+.br
+.ti -1c
+.RI "class \fBWanderingMovementClass\fP"
+.br
+.ti -1c
+.RI "class \fBWorldEvent\fP"
+.br
+.ti -1c
+.RI "class \fBWorldListener\fP"
+.br
+.ti -1c
+.RI "class \fBWorldManager\fP"
+.br
+.ti -1c
+.RI "class \fBXMLSchemaValidator\fP"
+.br
+.in -1c
+.SS "Typedefs"
+
+.in +1c
+.ti -1c
+.RI "typedef float \fBFloat\fP"
+.br
+.ti -1c
+.RI "typedef float \fBAttributeValue\fP"
+.br
+.ti -1c
+.RI "template<typename Key , typename Value > using \fBZMap\fP = std::unordered_map< Key, Value >"
+.br
+.ti -1c
+.RI "template<typename Key > using \fBZSet\fP = std::unordered_set< Key >"
+.br
+.ti -1c
+.RI "template<typename Key , typename Value > using \fBZSmallMap\fP = std::map< Key, Value >"
+.br
+.ti -1c
+.RI "template<typename Key > using \fBZSmallSet\fP = std::set< Key >"
+.br
+.in -1c
+.SS "Enumerations"
+
+.in +1c
+.ti -1c
+.RI "enum \fBEventType\fP { \fBEventType::Window_Close\fP, \fBEventType::Window_Resize\fP, \fBEventType::Window_Lost_Focus\fP, \fBEventType::Window_Got_Focus\fP, \fBEventType::Mouse_Button_Down\fP, \fBEventType::Mouse_Button_Up\fP, \fBEventType::Mouse_Move\fP, \fBEventType::Keyboard_Key_Down\fP, \fBEventType::Keyboard_Key_Up\fP, \fBEventType::Keyboard_Char_Pressed\fP, \fBEventType::Ignore\fP }"
+.br
+.ti -1c
+.RI "enum \fBKeyboardKey\fP { \fBKeyboardKey::Unknown\fP = 0x00, \fBKeyboardKey::Escape\fP = 0x01, \fBKeyboardKey::One\fP = 0x02, \fBKeyboardKey::Two\fP = 0x03, \fBKeyboardKey::Three\fP = 0x04, \fBKeyboardKey::Four\fP = 0x05, \fBKeyboardKey::Five\fP = 0x06, \fBKeyboardKey::Six\fP = 0x07, \fBKeyboardKey::Seven\fP = 0x08, \fBKeyboardKey::Eight\fP = 0x09, \fBKeyboardKey::Nine\fP = 0x0A, \fBKeyboardKey::Zero\fP = 0x0B, \fBKeyboardKey::Minus\fP = 0x0C, \fBKeyboardKey::Equals\fP = 0x0D, \fBKeyboardKey::Backspace\fP = 0x0E, \fBKeyboardKey::Tab\fP = 0x0F, \fBKeyboardKey::Q\fP = 0x10, \fBKeyboardKey::W\fP = 0x11, \fBKeyboardKey::E\fP = 0x12, \fBKeyboardKey::R\fP = 0x13, \fBKeyboardKey::T\fP = 0x14, \fBKeyboardKey::Y\fP = 0x15, \fBKeyboardKey::U\fP = 0x16, \fBKeyboardKey::I\fP = 0x17, \fBKeyboardKey::O\fP = 0x18, \fBKeyboardKey::P\fP = 0x19, \fBKeyboardKey::LeftBracket\fP = 0x1A, \fBKeyboardKey::RightBracket\fP = 0x1B, \fBKeyboardKey::Return\fP = 0x1C, \fBKeyboardKey::LeftControl\fP = 0x1D, \fBKeyboardKey::A\fP = 0x1E, \fBKeyboardKey::S\fP = 0x1F, \fBKeyboardKey::D\fP = 0x20, \fBKeyboardKey::F\fP = 0x21, \fBKeyboardKey::G\fP = 0x22, \fBKeyboardKey::H\fP = 0x23, \fBKeyboardKey::J\fP = 0x24, \fBKeyboardKey::K\fP = 0x25, \fBKeyboardKey::L\fP = 0x26, \fBKeyboardKey::Semicolon\fP = 0x27, \fBKeyboardKey::Apostrophe\fP = 0x28, \fBKeyboardKey::Grave\fP = 0x29, \fBKeyboardKey::LeftShift\fP = 0x2A, \fBKeyboardKey::Backslash\fP = 0x2B, \fBKeyboardKey::Z\fP = 0x2C, \fBKeyboardKey::X\fP = 0x2D, \fBKeyboardKey::C\fP = 0x2E, \fBKeyboardKey::V\fP = 0x2F, \fBKeyboardKey::B\fP = 0x30, \fBKeyboardKey::N\fP = 0x31, \fBKeyboardKey::M\fP = 0x32, \fBKeyboardKey::Comma\fP = 0x33, \fBKeyboardKey::Period\fP = 0x34, \fBKeyboardKey::Slash\fP = 0x35, \fBKeyboardKey::RightShift\fP = 0x36, \fBKeyboardKey::Multiply\fP = 0x37, \fBKeyboardKey::LeftAlt\fP = 0x38, \fBKeyboardKey::Space\fP = 0x39, \fBKeyboardKey::Capital\fP = 0x3A, \fBKeyboardKey::F1\fP = 0x3B, \fBKeyboardKey::F2\fP = 0x3C, \fBKeyboardKey::F3\fP = 0x3D, \fBKeyboardKey::F4\fP = 0x3E, \fBKeyboardKey::F5\fP = 0x3F, \fBKeyboardKey::F6\fP = 0x40, \fBKeyboardKey::F7\fP = 0x41, \fBKeyboardKey::F8\fP = 0x42, \fBKeyboardKey::F9\fP = 0x43, \fBKeyboardKey::F10\fP = 0x44, \fBKeyboardKey::NumLock\fP = 0x45, \fBKeyboardKey::ScrollLock\fP = 0x46, \fBKeyboardKey::Numpad7\fP = 0x47, \fBKeyboardKey::Numpad8\fP = 0x48, \fBKeyboardKey::Numpad9\fP = 0x49, \fBKeyboardKey::Subtract\fP = 0x4A, \fBKeyboardKey::Numpad4\fP = 0x4B, \fBKeyboardKey::Numpad5\fP = 0x4C, \fBKeyboardKey::Numpad6\fP = 0x4D, \fBKeyboardKey::Add\fP = 0x4E, \fBKeyboardKey::Numpad1\fP = 0x4F, \fBKeyboardKey::Numpad2\fP = 0x50, \fBKeyboardKey::Numpad3\fP = 0x51, \fBKeyboardKey::Numpad0\fP = 0x52, \fBKeyboardKey::Decimal\fP = 0x53, \fBKeyboardKey::OEM_102\fP = 0x56, \fBKeyboardKey::F11\fP = 0x57, \fBKeyboardKey::F12\fP = 0x58, \fBKeyboardKey::F13\fP = 0x64, \fBKeyboardKey::F14\fP = 0x65, \fBKeyboardKey::F15\fP = 0x66, \fBKeyboardKey::Kana\fP = 0x70, \fBKeyboardKey::ABNT_C1\fP = 0x73, \fBKeyboardKey::Convert\fP = 0x79, \fBKeyboardKey::NoConvert\fP = 0x7B, \fBKeyboardKey::Yen\fP = 0x7D, \fBKeyboardKey::ABNT_C2\fP = 0x7E, \fBKeyboardKey::NumpadEquals\fP = 0x8D, \fBKeyboardKey::PrevTrack\fP = 0x90, \fBKeyboardKey::At\fP = 0x91, \fBKeyboardKey::Colon\fP = 0x92, \fBKeyboardKey::Underline\fP = 0x93, \fBKeyboardKey::Kanji\fP = 0x94, \fBKeyboardKey::Stop\fP = 0x95, \fBKeyboardKey::AX\fP = 0x96, \fBKeyboardKey::Unlabeled\fP = 0x97, \fBKeyboardKey::NextTrack\fP = 0x99, \fBKeyboardKey::NumpadEnter\fP = 0x9C, \fBKeyboardKey::RightControl\fP = 0x9D, \fBKeyboardKey::Mute\fP = 0xA0, \fBKeyboardKey::Calculator\fP = 0xA1, \fBKeyboardKey::PlayPause\fP = 0xA2, \fBKeyboardKey::MediaStop\fP = 0xA4, \fBKeyboardKey::VolumeDown\fP = 0xAE, \fBKeyboardKey::VolumeUp\fP = 0xB0, \fBKeyboardKey::WebHome\fP = 0xB2, \fBKeyboardKey::NumpadComma\fP = 0xB3, \fBKeyboardKey::Divide\fP = 0xB5, \fBKeyboardKey::SysRq\fP = 0xB7, \fBKeyboardKey::RightAlt\fP = 0xB8, \fBKeyboardKey::Pause\fP = 0xC5, \fBKeyboardKey::Home\fP = 0xC7, \fBKeyboardKey::ArrowUp\fP = 0xC8, \fBKeyboardKey::PageUp\fP = 0xC9, \fBKeyboardKey::ArrowLeft\fP = 0xCB, \fBKeyboardKey::ArrowRight\fP = 0xCD, \fBKeyboardKey::End\fP = 0xCF, \fBKeyboardKey::ArrowDown\fP = 0xD0, \fBKeyboardKey::PageDown\fP = 0xD1, \fBKeyboardKey::Insert\fP = 0xD2, \fBKeyboardKey::Delete\fP = 0xD3, \fBKeyboardKey::LeftWindows\fP = 0xDB, \fBKeyboardKey::RightWindows\fP = 0xDC, \fBKeyboardKey::AppMenu\fP = 0xDD, \fBKeyboardKey::Power\fP = 0xDE, \fBKeyboardKey::Sleep\fP = 0xDF, \fBKeyboardKey::Wake\fP = 0xE3, \fBKeyboardKey::WebSearch\fP = 0xE5, \fBKeyboardKey::WebFavorites\fP = 0xE6, \fBKeyboardKey::WebRefresh\fP = 0xE7, \fBKeyboardKey::WebStop\fP = 0xE8, \fBKeyboardKey::WebForward\fP = 0xE9, \fBKeyboardKey::WebBack\fP = 0xEA, \fBKeyboardKey::MyComputer\fP = 0xEB, \fBKeyboardKey::Mail\fP = 0xEC, \fBKeyboardKey::MediaSelect\fP = 0xED }"
+.br
+.ti -1c
+.RI "enum \fBKeyModifiers\fP { \fBKeyModifiers::Shift\fP = 0x00001, \fBKeyModifiers::Ctrl\fP = 0x00002, \fBKeyModifiers::Alt\fP = 0x00004, \fBKeyModifiers::Lwin\fP = 0x00008, \fBKeyModifiers::Rwin\fP = 0x00010, \fBKeyModifiers::Menu\fP = 0x00020, \fBKeyModifiers::Alt_Gr\fP = 0x00040, \fBKeyModifiers::Command\fP = 0x00080, \fBKeyModifiers::Scroll_Lock\fP = 0x00100, \fBKeyModifiers::Num_Lock\fP = 0x00200, \fBKeyModifiers::Caps_Lock\fP = 0x00400, \fBKeyModifiers::In_Alt_Seq\fP = 0x00800, \fBKeyModifiers::Accent1\fP = 0x01000, \fBKeyModifiers::Accent2\fP = 0x02000, \fBKeyModifiers::Accent3\fP = 0x04000, \fBKeyModifiers::Accent4\fP = 0x08000 }"
+.br
+.ti -1c
+.RI "enum \fBMouseButton\fP { \fBMouseButton::LeftButton\fP, \fBMouseButton::RightButton\fP, \fBMouseButton::MiddleButton\fP, \fBMouseButton::X1Button\fP, \fBMouseButton::X2Button\fP }"
+.br
+.ti -1c
+.RI "enum \fBWindowFlag\fP { \fBWindowFlag::Normal\fP, \fBWindowFlag::No_Frame\fP, \fBWindowFlag::Full_Screen\fP, \fBWindowFlag::Full_Screen_Windowed\fP }"
+.br
+.in -1c
+.SH "Typedef Documentation"
+.PP 
+.SS "typedef float \fBZeta::AttributeValue\fP"
+
+.SS "typedef float \fBZeta::Float\fP"
+
+.SS "template<typename Key , typename Value > using \fBZeta::ZMap\fP = typedef std::unordered_map<Key, Value>"
+
+.SS "template<typename Key > using \fBZeta::ZSet\fP = typedef std::unordered_set<Key>"
+
+.SS "template<typename Key , typename Value > using \fBZeta::ZSmallMap\fP = typedef std::map<Key, Value>"
+
+.SS "template<typename Key > using \fBZeta::ZSmallSet\fP = typedef std::set<Key>"
+
+.SH "Enumeration Type Documentation"
+.PP 
+.SS "enum \fBZeta::EventType\fP\fC [strong]\fP"
+
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fIWindow_Close \fP\fP
+.TP
+\fB\fIWindow_Resize \fP\fP
+.TP
+\fB\fIWindow_Lost_Focus \fP\fP
+.TP
+\fB\fIWindow_Got_Focus \fP\fP
+.TP
+\fB\fIMouse_Button_Down \fP\fP
+.TP
+\fB\fIMouse_Button_Up \fP\fP
+.TP
+\fB\fIMouse_Move \fP\fP
+.TP
+\fB\fIKeyboard_Key_Down \fP\fP
+.TP
+\fB\fIKeyboard_Key_Up \fP\fP
+.TP
+\fB\fIKeyboard_Char_Pressed \fP\fP
+.TP
+\fB\fIIgnore \fP\fP
+.SS "enum \fBZeta::KeyboardKey\fP\fC [strong]\fP"
+
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fIUnknown \fP\fP
+.TP
+\fB\fIEscape \fP\fP
+.TP
+\fB\fIOne \fP\fP
+.TP
+\fB\fITwo \fP\fP
+.TP
+\fB\fIThree \fP\fP
+.TP
+\fB\fIFour \fP\fP
+.TP
+\fB\fIFive \fP\fP
+.TP
+\fB\fISix \fP\fP
+.TP
+\fB\fISeven \fP\fP
+.TP
+\fB\fIEight \fP\fP
+.TP
+\fB\fINine \fP\fP
+.TP
+\fB\fIZero \fP\fP
+.TP
+\fB\fIMinus \fP\fP
+.TP
+\fB\fIEquals \fP\fP
+.TP
+\fB\fIBackspace \fP\fP
+.TP
+\fB\fITab \fP\fP
+.TP
+\fB\fIQ \fP\fP
+.TP
+\fB\fIW \fP\fP
+.TP
+\fB\fIE \fP\fP
+.TP
+\fB\fIR \fP\fP
+.TP
+\fB\fIT \fP\fP
+.TP
+\fB\fIY \fP\fP
+.TP
+\fB\fIU \fP\fP
+.TP
+\fB\fII \fP\fP
+.TP
+\fB\fIO \fP\fP
+.TP
+\fB\fIP \fP\fP
+.TP
+\fB\fILeftBracket \fP\fP
+.TP
+\fB\fIRightBracket \fP\fP
+.TP
+\fB\fIReturn \fP\fP
+.TP
+\fB\fILeftControl \fP\fP
+.TP
+\fB\fIA \fP\fP
+.TP
+\fB\fIS \fP\fP
+.TP
+\fB\fID \fP\fP
+.TP
+\fB\fIF \fP\fP
+.TP
+\fB\fIG \fP\fP
+.TP
+\fB\fIH \fP\fP
+.TP
+\fB\fIJ \fP\fP
+.TP
+\fB\fIK \fP\fP
+.TP
+\fB\fIL \fP\fP
+.TP
+\fB\fISemicolon \fP\fP
+.TP
+\fB\fIApostrophe \fP\fP
+.TP
+\fB\fIGrave \fP\fP
+.TP
+\fB\fILeftShift \fP\fP
+.TP
+\fB\fIBackslash \fP\fP
+.TP
+\fB\fIZ \fP\fP
+.TP
+\fB\fIX \fP\fP
+.TP
+\fB\fIC \fP\fP
+.TP
+\fB\fIV \fP\fP
+.TP
+\fB\fIB \fP\fP
+.TP
+\fB\fIN \fP\fP
+.TP
+\fB\fIM \fP\fP
+.TP
+\fB\fIComma \fP\fP
+.TP
+\fB\fIPeriod \fP\fP
+.TP
+\fB\fISlash \fP\fP
+.TP
+\fB\fIRightShift \fP\fP
+.TP
+\fB\fIMultiply \fP\fP
+.TP
+\fB\fILeftAlt \fP\fP
+.TP
+\fB\fISpace \fP\fP
+.TP
+\fB\fICapital \fP\fP
+.TP
+\fB\fIF1 \fP\fP
+.TP
+\fB\fIF2 \fP\fP
+.TP
+\fB\fIF3 \fP\fP
+.TP
+\fB\fIF4 \fP\fP
+.TP
+\fB\fIF5 \fP\fP
+.TP
+\fB\fIF6 \fP\fP
+.TP
+\fB\fIF7 \fP\fP
+.TP
+\fB\fIF8 \fP\fP
+.TP
+\fB\fIF9 \fP\fP
+.TP
+\fB\fIF10 \fP\fP
+.TP
+\fB\fINumLock \fP\fP
+.TP
+\fB\fIScrollLock \fP\fP
+.TP
+\fB\fINumpad7 \fP\fP
+.TP
+\fB\fINumpad8 \fP\fP
+.TP
+\fB\fINumpad9 \fP\fP
+.TP
+\fB\fISubtract \fP\fP
+.TP
+\fB\fINumpad4 \fP\fP
+.TP
+\fB\fINumpad5 \fP\fP
+.TP
+\fB\fINumpad6 \fP\fP
+.TP
+\fB\fIAdd \fP\fP
+.TP
+\fB\fINumpad1 \fP\fP
+.TP
+\fB\fINumpad2 \fP\fP
+.TP
+\fB\fINumpad3 \fP\fP
+.TP
+\fB\fINumpad0 \fP\fP
+.TP
+\fB\fIDecimal \fP\fP
+.TP
+\fB\fIOEM_102 \fP\fP
+.TP
+\fB\fIF11 \fP\fP
+.TP
+\fB\fIF12 \fP\fP
+.TP
+\fB\fIF13 \fP\fP
+.TP
+\fB\fIF14 \fP\fP
+.TP
+\fB\fIF15 \fP\fP
+.TP
+\fB\fIKana \fP\fP
+.TP
+\fB\fIABNT_C1 \fP\fP
+.TP
+\fB\fIConvert \fP\fP
+.TP
+\fB\fINoConvert \fP\fP
+.TP
+\fB\fIYen \fP\fP
+.TP
+\fB\fIABNT_C2 \fP\fP
+.TP
+\fB\fINumpadEquals \fP\fP
+.TP
+\fB\fIPrevTrack \fP\fP
+.TP
+\fB\fIAt \fP\fP
+.TP
+\fB\fIColon \fP\fP
+.TP
+\fB\fIUnderline \fP\fP
+.TP
+\fB\fIKanji \fP\fP
+.TP
+\fB\fIStop \fP\fP
+.TP
+\fB\fIAX \fP\fP
+.TP
+\fB\fIUnlabeled \fP\fP
+.TP
+\fB\fINextTrack \fP\fP
+.TP
+\fB\fINumpadEnter \fP\fP
+.TP
+\fB\fIRightControl \fP\fP
+.TP
+\fB\fIMute \fP\fP
+.TP
+\fB\fICalculator \fP\fP
+.TP
+\fB\fIPlayPause \fP\fP
+.TP
+\fB\fIMediaStop \fP\fP
+.TP
+\fB\fIVolumeDown \fP\fP
+.TP
+\fB\fIVolumeUp \fP\fP
+.TP
+\fB\fIWebHome \fP\fP
+.TP
+\fB\fINumpadComma \fP\fP
+.TP
+\fB\fIDivide \fP\fP
+.TP
+\fB\fISysRq \fP\fP
+.TP
+\fB\fIRightAlt \fP\fP
+.TP
+\fB\fIPause \fP\fP
+.TP
+\fB\fIHome \fP\fP
+.TP
+\fB\fIArrowUp \fP\fP
+.TP
+\fB\fIPageUp \fP\fP
+.TP
+\fB\fIArrowLeft \fP\fP
+.TP
+\fB\fIArrowRight \fP\fP
+.TP
+\fB\fIEnd \fP\fP
+.TP
+\fB\fIArrowDown \fP\fP
+.TP
+\fB\fIPageDown \fP\fP
+.TP
+\fB\fIInsert \fP\fP
+.TP
+\fB\fIDelete \fP\fP
+.TP
+\fB\fILeftWindows \fP\fP
+.TP
+\fB\fIRightWindows \fP\fP
+.TP
+\fB\fIAppMenu \fP\fP
+.TP
+\fB\fIPower \fP\fP
+.TP
+\fB\fISleep \fP\fP
+.TP
+\fB\fIWake \fP\fP
+.TP
+\fB\fIWebSearch \fP\fP
+.TP
+\fB\fIWebFavorites \fP\fP
+.TP
+\fB\fIWebRefresh \fP\fP
+.TP
+\fB\fIWebStop \fP\fP
+.TP
+\fB\fIWebForward \fP\fP
+.TP
+\fB\fIWebBack \fP\fP
+.TP
+\fB\fIMyComputer \fP\fP
+.TP
+\fB\fIMail \fP\fP
+.TP
+\fB\fIMediaSelect \fP\fP
+.SS "enum \fBZeta::KeyModifiers\fP\fC [strong]\fP"
+
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fIShift \fP\fP
+.TP
+\fB\fICtrl \fP\fP
+.TP
+\fB\fIAlt \fP\fP
+.TP
+\fB\fILwin \fP\fP
+.TP
+\fB\fIRwin \fP\fP
+.TP
+\fB\fIMenu \fP\fP
+.TP
+\fB\fIAlt_Gr \fP\fP
+.TP
+\fB\fICommand \fP\fP
+.TP
+\fB\fIScroll_Lock \fP\fP
+.TP
+\fB\fINum_Lock \fP\fP
+.TP
+\fB\fICaps_Lock \fP\fP
+.TP
+\fB\fIIn_Alt_Seq \fP\fP
+.TP
+\fB\fIAccent1 \fP\fP
+.TP
+\fB\fIAccent2 \fP\fP
+.TP
+\fB\fIAccent3 \fP\fP
+.TP
+\fB\fIAccent4 \fP\fP
+.SS "enum \fBZeta::MouseButton\fP\fC [strong]\fP"
+
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fILeftButton \fP\fP
+.TP
+\fB\fIRightButton \fP\fP
+.TP
+\fB\fIMiddleButton \fP\fP
+.TP
+\fB\fIX1Button \fP\fP
+.TP
+\fB\fIX2Button \fP\fP
+.SS "enum \fBZeta::WindowFlag\fP\fC [strong]\fP"
+
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fINormal \fP\fP
+.TP
+\fB\fINo_Frame \fP\fP
+.TP
+\fB\fIFull_Screen \fP\fP
+.TP
+\fB\fIFull_Screen_Windowed \fP\fP
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Zeta from the source code\&.

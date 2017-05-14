@@ -1,0 +1,28 @@
+$#include <Zeta/Core/RPGClasses/WorldManager.hpp>
+
+class WorldManager {
+	enum class Callback {
+		ChangeMap,
+		LoadBegin,
+		LoadEnd,
+		FrameBegin,
+		FrameEnd,
+		LifeformDeath,
+		LifeformShow,
+		LifeformHide
+	};
+
+	static WorldManager& getInstance();
+	void changeMap(const std::string& path);
+	void changeMapWithCallback(const std::string& path);
+	void setCallback(Callback call, const std::string& name);
+	void setCallback(Callback call, lua_Object func);
+	void raiseEvent(const WorldEvent& event);
+	View& getView();
+	void show();
+	void hide();
+	void pause();
+	void resume();
+	Map& getCurrentMap();
+	Player& getPlayer();
+};

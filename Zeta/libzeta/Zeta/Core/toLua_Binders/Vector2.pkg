@@ -1,0 +1,20 @@
+$#include <Zeta/Core/UtilityClasses/Vector2.hpp>
+
+class Vector2 {
+public:
+	Float getX() const;
+	void setX(Float x);
+	Float getY() const;
+	void setY(Float y);
+	void set(Float x, Float y);
+	void offset(Float dx, Float dy);
+	Vector2 operator+(const Vector2& other) const;
+	Vector2 operator-(const Vector2& other) const;
+	Vector2 operator*(Float m) const;
+	Float getLength() const;
+	Float getDistance(const Vector2& other);
+	void normalize() ;
+	Vector2() ;
+	Vector2(Float x, Float y);
+	~Vector2();
+};

@@ -1,0 +1,133 @@
+\hypertarget{classZeta_1_1SpriteSheet}{\section{Zeta\+:\+:Sprite\+Sheet Class Reference}
+\label{classZeta_1_1SpriteSheet}\index{Zeta\+::\+Sprite\+Sheet@{Zeta\+::\+Sprite\+Sheet}}
+}
+
+
+{\ttfamily \#include $<$Sprite\+Sheet.\+hpp$>$}
+
+
+
+Inheritance diagram for Zeta\+:\+:Sprite\+Sheet\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=172pt]{classZeta_1_1SpriteSheet__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Zeta\+:\+:Sprite\+Sheet\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=265pt]{classZeta_1_1SpriteSheet__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+const \hyperlink{classZeta_1_1Bitmap}{Bitmap} \& \hyperlink{classZeta_1_1SpriteSheet_aa57c119e462b4ab2267a86e7efa3c2a8}{get\+Sprite} (const std\+::string \&path) const 
+\item 
+const \hyperlink{classZeta_1_1Bitmap}{Bitmap} \& \hyperlink{classZeta_1_1SpriteSheet_abfef12fc599bdd29ebbe9e03fbb78ab2}{get\+Image} () const 
+\item 
+\hyperlink{classZeta_1_1SpriteSheet_aa6c5c8d15d657a611b8a456769b1a627}{Sprite\+Sheet} ()
+\item 
+\hyperlink{classZeta_1_1SpriteSheet_aebfc743153a89951225edfd2c65ba525}{Sprite\+Sheet} (const std\+::string \&path)
+\item 
+\hyperlink{classZeta_1_1SpriteSheet_a1b27eccbe11e3056d284e4e531c2cc42}{$\sim$\+Sprite\+Sheet} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespaceZeta_a4c11e23ddc559dccdb5e85901d7dfb84}{Z\+Small\+Map}$<$ std\+::string, \hyperlink{classZeta_1_1Bitmap}{Bitmap} $\ast$ $>$ \hyperlink{classZeta_1_1SpriteSheet_a2420b47ed8881c5140278fa8687b4e22}{sprites}
+\item 
+const \hyperlink{classZeta_1_1Bitmap}{Bitmap} $\ast$ \hyperlink{classZeta_1_1SpriteSheet_aadb38736b2c4b9901102934a7fd2498e}{image}
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classZeta_1_1SpriteSheet_afdd3a14d8aab2b78eb47c112ac6281f9}{handle\+Node} (const std\+::string \&cur\+Name, xmlpp\+::\+Element $\ast$cur\+Node)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classZeta_1_1SpriteSheet}{Sprite\+Sheet} Class It handles the loading of $\ast$.sprites X\+M\+L Files 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classZeta_1_1SpriteSheet_aa6c5c8d15d657a611b8a456769b1a627}{\index{Zeta\+::\+Sprite\+Sheet@{Zeta\+::\+Sprite\+Sheet}!Sprite\+Sheet@{Sprite\+Sheet}}
+\index{Sprite\+Sheet@{Sprite\+Sheet}!Zeta\+::\+Sprite\+Sheet@{Zeta\+::\+Sprite\+Sheet}}
+\subsubsection[{Sprite\+Sheet}]{\setlength{\rightskip}{0pt plus 5cm}Zeta\+::\+Sprite\+Sheet\+::\+Sprite\+Sheet (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classZeta_1_1SpriteSheet_aa6c5c8d15d657a611b8a456769b1a627}
+Default Constructor Creates an Empty Spritesheet \hypertarget{classZeta_1_1SpriteSheet_aebfc743153a89951225edfd2c65ba525}{\index{Zeta\+::\+Sprite\+Sheet@{Zeta\+::\+Sprite\+Sheet}!Sprite\+Sheet@{Sprite\+Sheet}}
+\index{Sprite\+Sheet@{Sprite\+Sheet}!Zeta\+::\+Sprite\+Sheet@{Zeta\+::\+Sprite\+Sheet}}
+\subsubsection[{Sprite\+Sheet}]{\setlength{\rightskip}{0pt plus 5cm}Zeta\+::\+Sprite\+Sheet\+::\+Sprite\+Sheet (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{path}
+\end{DoxyParamCaption}
+)}}\label{classZeta_1_1SpriteSheet_aebfc743153a89951225edfd2c65ba525}
+Loads the X\+M\+L Spritesheet 
+\begin{DoxyParams}{Parameters}
+{\em path} & The Filename to the X\+M\+L \hyperlink{classZeta_1_1File}{File} \\
+\hline
+\end{DoxyParams}
+\hypertarget{classZeta_1_1SpriteSheet_a1b27eccbe11e3056d284e4e531c2cc42}{\index{Zeta\+::\+Sprite\+Sheet@{Zeta\+::\+Sprite\+Sheet}!````~Sprite\+Sheet@{$\sim$\+Sprite\+Sheet}}
+\index{````~Sprite\+Sheet@{$\sim$\+Sprite\+Sheet}!Zeta\+::\+Sprite\+Sheet@{Zeta\+::\+Sprite\+Sheet}}
+\subsubsection[{$\sim$\+Sprite\+Sheet}]{\setlength{\rightskip}{0pt plus 5cm}Zeta\+::\+Sprite\+Sheet\+::$\sim$\+Sprite\+Sheet (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classZeta_1_1SpriteSheet_a1b27eccbe11e3056d284e4e531c2cc42}
+Destructor Destroys all Sprites and Unloads the Mother \hyperlink{classZeta_1_1Bitmap}{Bitmap} 
+
+\subsection{Member Function Documentation}
+\hypertarget{classZeta_1_1SpriteSheet_abfef12fc599bdd29ebbe9e03fbb78ab2}{\index{Zeta\+::\+Sprite\+Sheet@{Zeta\+::\+Sprite\+Sheet}!get\+Image@{get\+Image}}
+\index{get\+Image@{get\+Image}!Zeta\+::\+Sprite\+Sheet@{Zeta\+::\+Sprite\+Sheet}}
+\subsubsection[{get\+Image}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Bitmap}\& Zeta\+::\+Sprite\+Sheet\+::get\+Image (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1SpriteSheet_abfef12fc599bdd29ebbe9e03fbb78ab2}
+Gets the Spritesheet's Mother \hyperlink{classZeta_1_1Bitmap}{Bitmap} \begin{DoxyReturn}{Returns}
+The Spritesheet \hyperlink{classZeta_1_1Bitmap}{Bitmap} 
+\end{DoxyReturn}
+\hypertarget{classZeta_1_1SpriteSheet_aa57c119e462b4ab2267a86e7efa3c2a8}{\index{Zeta\+::\+Sprite\+Sheet@{Zeta\+::\+Sprite\+Sheet}!get\+Sprite@{get\+Sprite}}
+\index{get\+Sprite@{get\+Sprite}!Zeta\+::\+Sprite\+Sheet@{Zeta\+::\+Sprite\+Sheet}}
+\subsubsection[{get\+Sprite}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Bitmap}\& Zeta\+::\+Sprite\+Sheet\+::get\+Sprite (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{path}
+\end{DoxyParamCaption}
+) const}}\label{classZeta_1_1SpriteSheet_aa57c119e462b4ab2267a86e7efa3c2a8}
+Gets the Named Sprite The names are Path-\/like If the name does not exist in the spritesheet, it returns Null\+Bitmap 
+\begin{DoxyParams}{Parameters}
+{\em path} & The name of the Sprite \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The Sprite 
+\end{DoxyReturn}
+\hypertarget{classZeta_1_1SpriteSheet_afdd3a14d8aab2b78eb47c112ac6281f9}{\index{Zeta\+::\+Sprite\+Sheet@{Zeta\+::\+Sprite\+Sheet}!handle\+Node@{handle\+Node}}
+\index{handle\+Node@{handle\+Node}!Zeta\+::\+Sprite\+Sheet@{Zeta\+::\+Sprite\+Sheet}}
+\subsubsection[{handle\+Node}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+Sprite\+Sheet\+::handle\+Node (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{cur\+Name, }
+\item[{xmlpp\+::\+Element $\ast$}]{cur\+Node}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classZeta_1_1SpriteSheet_afdd3a14d8aab2b78eb47c112ac6281f9}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classZeta_1_1SpriteSheet_aadb38736b2c4b9901102934a7fd2498e}{\index{Zeta\+::\+Sprite\+Sheet@{Zeta\+::\+Sprite\+Sheet}!image@{image}}
+\index{image@{image}!Zeta\+::\+Sprite\+Sheet@{Zeta\+::\+Sprite\+Sheet}}
+\subsubsection[{image}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Bitmap}$\ast$ Zeta\+::\+Sprite\+Sheet\+::image\hspace{0.3cm}{\ttfamily [protected]}}}\label{classZeta_1_1SpriteSheet_aadb38736b2c4b9901102934a7fd2498e}
+\hypertarget{classZeta_1_1SpriteSheet_a2420b47ed8881c5140278fa8687b4e22}{\index{Zeta\+::\+Sprite\+Sheet@{Zeta\+::\+Sprite\+Sheet}!sprites@{sprites}}
+\index{sprites@{sprites}!Zeta\+::\+Sprite\+Sheet@{Zeta\+::\+Sprite\+Sheet}}
+\subsubsection[{sprites}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Z\+Small\+Map}$<$std\+::string, {\bf Bitmap}$\ast$$>$ Zeta\+::\+Sprite\+Sheet\+::sprites\hspace{0.3cm}{\ttfamily [protected]}}}\label{classZeta_1_1SpriteSheet_a2420b47ed8881c5140278fa8687b4e22}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Zeta/\+Core/\+Resource\+Classes/\hyperlink{SpriteSheet_8hpp}{Sprite\+Sheet.\+hpp}\end{DoxyCompactItemize}

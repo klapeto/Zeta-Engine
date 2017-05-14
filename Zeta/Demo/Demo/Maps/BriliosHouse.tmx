@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="15" height="15" tilewidth="64" tileheight="64" nextobjectid="20">
+ <properties>
+  <property name="Layer Priority" value="Floor,Walls,WallPaper,Decoration1,Decoration2,_OBJ_,Decoration3"/>
+  <property name="Script" value="Scripts/Hera_Isle.lua"/>
+ </properties>
+ <tileset firstgid="1" source="Tilesets/LPC.tsx"/>
+ <layer name="Floor" width="15" height="15">
+  <data encoding="base64" compression="zlib">
+   eJxjYMAPGnFgfOqIBaSoJdZd+PCo3qGjFxegJM0MVgAAp7E59A==
+  </data>
+ </layer>
+ <layer name="Walls" width="15" height="15">
+  <data encoding="base64" compression="zlib">
+   eJxrZWBgYARiJhIwMxC3AXETECsCsRIJWBmIm6F6HYHYiQTsjKSXHDCqd2joPQTESVhwMlRNIg75w2TaOdAAAOKPFok=
+  </data>
+ </layer>
+ <layer name="WallPaper" width="15" height="15">
+  <data encoding="base64" compression="zlib">
+   eJxjYICAhSTSyOAgiTQyeEgiPQpGwXADALcSDZM=
+  </data>
+ </layer>
+ <layer name="Decoration1" width="15" height="15">
+  <data encoding="base64" compression="zlib">
+   eJxjYMANPKG0GyMqHxnkAzEfEHMDcTsjQjwTSqcxovKRQT8Q6wGxNpp4J5RuY0TlI4P1QOwHxN443L6MEYcECcALixkBjBCsT8D8LCrYT2+gysTA8Bjo7idkup0ZqJ+FibpuGgkAADnNCxY=
+  </data>
+ </layer>
+ <layer name="Decoration2" width="15" height="15">
+  <data encoding="base64" compression="zlib">
+   eJxjYKAucGKiTJ4WIJsJgmkJnjIyMDwD4ueMpOtlBbqNDYjZ0dzoTCU3U8ucUUAbAAAOkAS6
+  </data>
+ </layer>
+ <layer name="Decoration3" width="15" height="15">
+  <data encoding="base64" compression="zlib">
+   eJxjYBh5wB+I3RkH2hWjYBRAAACFYgCY
+  </data>
+ </layer>
+ <objectgroup name="NPCS">
+  <object id="1" name="Μαρία" type="Npc" x="349" y="352" width="52" height="28">
+   <properties>
+    <property name="Module" value="Demo.NPCS.Maria_Briliou"/>
+   </properties>
+  </object>
+  <object id="2" name="Κότα" type="Npc" x="259" y="513" width="44" height="20">
+   <properties>
+    <property name="Module" value="Demo.Enemies.Chicken"/>
+   </properties>
+  </object>
+  <object id="3" name="Κότα" type="Npc" x="642" y="513" width="44" height="20">
+   <properties>
+    <property name="Module" value="Demo.Enemies.Chicken"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="StaticObjects">
+  <object id="4" type="Static" gid="451" x="768" y="512" width="64" height="64"/>
+  <object id="5" type="Static" gid="452" x="832" y="512" width="64" height="64"/>
+  <object id="6" type="Static" gid="454" x="512" y="320" width="64" height="64"/>
+  <object id="7" type="Static" gid="453" x="448" y="320" width="64" height="64"/>
+  <object id="8" type="Static" gid="455" x="576" y="320" width="64" height="64"/>
+  <object id="9" type="Static" gid="547" x="832" y="384" width="64" height="64"/>
+  <object id="10" type="Static" gid="271" x="192" y="320" width="64" height="64"/>
+  <object id="11" type="Static" gid="268" x="128" y="320" width="64" height="64"/>
+  <object id="12" type="Static" gid="270" x="64" y="320" width="64" height="64"/>
+  <object id="13" type="Static" gid="547" x="64" y="512" width="64" height="64"/>
+ </objectgroup>
+ <objectgroup name="TouchFields">
+  <object id="14" name="Teleport" type="InteractField" x="448" y="704" width="64" height="64">
+   <properties>
+    <property name="onCollision" value="require(&quot;Demo.Operations&quot;).ChangeMap(require(&quot;Demo.Maps.FineForest&quot;))"/>
+   </properties>
+  </object>
+  <object id="15" name="Πιάτα" type="InteractField" x="134" y="281" width="46" height="23">
+   <properties>
+    <property name="Collidable" value="0"/>
+    <property name="onClick" value="require('Demo.Operations').InteractAction(function(Player,Object) require('Demo.Operations').Notify(&quot;Τα πιάτα είναι ίδη πλυμένα... Δεν χρειάζετε να κάνω κάτι.&quot;) Player:face(Object) end,80,...)"/>
+   </properties>
+  </object>
+  <object id="16" name="Σενούκια" type="InteractField" x="782" y="204" width="108" height="48">
+   <properties>
+    <property name="onClick" value="require('Demo.Operations').InteractAction(function(Player,Object) require('Demo.Operations').Notify(&quot;Καλύτερα να μην πειράξω τα πράγματα των ανθρώπων.&quot;) Player:face(Object)  end,200,...)"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>

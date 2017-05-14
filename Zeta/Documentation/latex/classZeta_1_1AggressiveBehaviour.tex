@@ -1,0 +1,186 @@
+\hypertarget{classZeta_1_1AggressiveBehaviour}{\section{Zeta\+:\+:Aggressive\+Behaviour Class Reference}
+\label{classZeta_1_1AggressiveBehaviour}\index{Zeta\+::\+Aggressive\+Behaviour@{Zeta\+::\+Aggressive\+Behaviour}}
+}
+
+
+{\ttfamily \#include $<$Aggressive\+Behaviour.\+hpp$>$}
+
+
+
+Inheritance diagram for Zeta\+:\+:Aggressive\+Behaviour\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=214pt]{classZeta_1_1AggressiveBehaviour__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Zeta\+:\+:Aggressive\+Behaviour\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classZeta_1_1AggressiveBehaviour__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classZeta_1_1AggressiveBehaviour_a8303e71d7a3e283685573fc9c13e1640}{update} (\hyperlink{namespaceZeta_a1e0a1265f9b3bd3075fb0fabd39088ba}{Float} elapsed\+Time)
+\item 
+void \hyperlink{classZeta_1_1AggressiveBehaviour_a7ebb4cd0f618f9dd9e1e723e77aac292}{on\+Death} ()
+\item 
+\hyperlink{classZeta_1_1AggressiveBehaviour_a89c1244634a7f268ec45c6a04a244e59}{Aggressive\+Behaviour} (\hyperlink{classZeta_1_1Lifeform}{Lifeform} \&\hyperlink{classZeta_1_1Behaviour_ad32d56994e4e09e01ef86bcbb5c85e0a}{owner}, \hyperlink{namespaceZeta_a1e0a1265f9b3bd3075fb0fabd39088ba}{Float} \hyperlink{classZeta_1_1AggressiveBehaviour_a46ae846d179081d36af1daaeb21c0a55}{agro\+Range}=300, \hyperlink{namespaceZeta_a1e0a1265f9b3bd3075fb0fabd39088ba}{Float} \hyperlink{classZeta_1_1AggressiveBehaviour_af3f8203e1075c28d5141810ac07f1f5e}{drift\+Range}=600)
+\item 
+virtual \hyperlink{classZeta_1_1AggressiveBehaviour_a13d12742f4cca79e654b7e5c72a9cb50}{$\sim$\+Aggressive\+Behaviour} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{classZeta_1_1AggressiveBehaviour_a768e2c9d0969879f4980d72220e11fbe}{State} \{ \\*
+\hyperlink{classZeta_1_1AggressiveBehaviour_a768e2c9d0969879f4980d72220e11fbea495c55c275d09a00aaeb7482365ab300}{State\+::\+Scanning}, 
+\hyperlink{classZeta_1_1AggressiveBehaviour_a768e2c9d0969879f4980d72220e11fbea8abd002ea36128383f3269de7e74039b}{State\+::\+Attacking}, 
+\hyperlink{classZeta_1_1AggressiveBehaviour_a768e2c9d0969879f4980d72220e11fbead4e119b080e498be2b4712005e81f842}{State\+::\+Fall\+Back}, 
+\hyperlink{classZeta_1_1AggressiveBehaviour_a768e2c9d0969879f4980d72220e11fbeadefe967ad0373b2274fc298f19125ca7}{State\+::\+Moving}, 
+\\*
+\hyperlink{classZeta_1_1AggressiveBehaviour_a768e2c9d0969879f4980d72220e11fbea86a59ad7ba2334ad7505f303d3f2ab6e}{State\+::\+Casting}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classZeta_1_1AggressiveBehaviour_a2e8b01db56c557cefdcd72d94610ffca}{scan} ()
+\item 
+void \hyperlink{classZeta_1_1AggressiveBehaviour_a54bc15050dd6470acd003d2d33b0b99f}{attack} ()
+\item 
+void \hyperlink{classZeta_1_1AggressiveBehaviour_a5db91c7bfcf560b936fce836ef02ca1d}{get\+Ability} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classZeta_1_1Vector2}{Vector2} \hyperlink{classZeta_1_1AggressiveBehaviour_a5301708e316129eb682436d7b8a09cac}{initial\+Position}
+\item 
+\hyperlink{classZeta_1_1Lifeform}{Lifeform} $\ast$ \hyperlink{classZeta_1_1AggressiveBehaviour_a7f1e06e7f51216cb7d9bb8ade9d79a47}{target}
+\item 
+\hyperlink{classZeta_1_1ActiveAbility}{Active\+Ability} $\ast$ \hyperlink{classZeta_1_1AggressiveBehaviour_affc1dc9f79144d64b9f627458442b7c5}{cur\+Ability}
+\item 
+\hyperlink{namespaceZeta_a1e0a1265f9b3bd3075fb0fabd39088ba}{Float} \hyperlink{classZeta_1_1AggressiveBehaviour_a46ae846d179081d36af1daaeb21c0a55}{agro\+Range}
+\item 
+\hyperlink{namespaceZeta_a1e0a1265f9b3bd3075fb0fabd39088ba}{Float} \hyperlink{classZeta_1_1AggressiveBehaviour_af3f8203e1075c28d5141810ac07f1f5e}{drift\+Range}
+\item 
+\hyperlink{classZeta_1_1AggressiveBehaviour_a768e2c9d0969879f4980d72220e11fbe}{State} \hyperlink{classZeta_1_1AggressiveBehaviour_ae0a924de0719f042bcb2f9def9a61e2b}{state}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{classZeta_1_1AggressiveBehaviour_a768e2c9d0969879f4980d72220e11fbe}{\index{Zeta\+::\+Aggressive\+Behaviour@{Zeta\+::\+Aggressive\+Behaviour}!State@{State}}
+\index{State@{State}!Zeta\+::\+Aggressive\+Behaviour@{Zeta\+::\+Aggressive\+Behaviour}}
+\subsubsection[{State}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Zeta\+::\+Aggressive\+Behaviour\+::\+State}\hspace{0.3cm}{\ttfamily [strong]}, {\ttfamily [private]}}}\label{classZeta_1_1AggressiveBehaviour_a768e2c9d0969879f4980d72220e11fbe}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{Scanning@{Scanning}!Zeta\+::\+Aggressive\+Behaviour@{Zeta\+::\+Aggressive\+Behaviour}}\index{Zeta\+::\+Aggressive\+Behaviour@{Zeta\+::\+Aggressive\+Behaviour}!Scanning@{Scanning}}\item[{\em 
+\hypertarget{classZeta_1_1AggressiveBehaviour_a768e2c9d0969879f4980d72220e11fbea495c55c275d09a00aaeb7482365ab300}{Scanning}\label{classZeta_1_1AggressiveBehaviour_a768e2c9d0969879f4980d72220e11fbea495c55c275d09a00aaeb7482365ab300}
+}]\index{Attacking@{Attacking}!Zeta\+::\+Aggressive\+Behaviour@{Zeta\+::\+Aggressive\+Behaviour}}\index{Zeta\+::\+Aggressive\+Behaviour@{Zeta\+::\+Aggressive\+Behaviour}!Attacking@{Attacking}}\item[{\em 
+\hypertarget{classZeta_1_1AggressiveBehaviour_a768e2c9d0969879f4980d72220e11fbea8abd002ea36128383f3269de7e74039b}{Attacking}\label{classZeta_1_1AggressiveBehaviour_a768e2c9d0969879f4980d72220e11fbea8abd002ea36128383f3269de7e74039b}
+}]\index{Fall\+Back@{Fall\+Back}!Zeta\+::\+Aggressive\+Behaviour@{Zeta\+::\+Aggressive\+Behaviour}}\index{Zeta\+::\+Aggressive\+Behaviour@{Zeta\+::\+Aggressive\+Behaviour}!Fall\+Back@{Fall\+Back}}\item[{\em 
+\hypertarget{classZeta_1_1AggressiveBehaviour_a768e2c9d0969879f4980d72220e11fbead4e119b080e498be2b4712005e81f842}{Fall\+Back}\label{classZeta_1_1AggressiveBehaviour_a768e2c9d0969879f4980d72220e11fbead4e119b080e498be2b4712005e81f842}
+}]\index{Moving@{Moving}!Zeta\+::\+Aggressive\+Behaviour@{Zeta\+::\+Aggressive\+Behaviour}}\index{Zeta\+::\+Aggressive\+Behaviour@{Zeta\+::\+Aggressive\+Behaviour}!Moving@{Moving}}\item[{\em 
+\hypertarget{classZeta_1_1AggressiveBehaviour_a768e2c9d0969879f4980d72220e11fbeadefe967ad0373b2274fc298f19125ca7}{Moving}\label{classZeta_1_1AggressiveBehaviour_a768e2c9d0969879f4980d72220e11fbeadefe967ad0373b2274fc298f19125ca7}
+}]\index{Casting@{Casting}!Zeta\+::\+Aggressive\+Behaviour@{Zeta\+::\+Aggressive\+Behaviour}}\index{Zeta\+::\+Aggressive\+Behaviour@{Zeta\+::\+Aggressive\+Behaviour}!Casting@{Casting}}\item[{\em 
+\hypertarget{classZeta_1_1AggressiveBehaviour_a768e2c9d0969879f4980d72220e11fbea86a59ad7ba2334ad7505f303d3f2ab6e}{Casting}\label{classZeta_1_1AggressiveBehaviour_a768e2c9d0969879f4980d72220e11fbea86a59ad7ba2334ad7505f303d3f2ab6e}
+}]\end{description}
+\end{Desc}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classZeta_1_1AggressiveBehaviour_a89c1244634a7f268ec45c6a04a244e59}{\index{Zeta\+::\+Aggressive\+Behaviour@{Zeta\+::\+Aggressive\+Behaviour}!Aggressive\+Behaviour@{Aggressive\+Behaviour}}
+\index{Aggressive\+Behaviour@{Aggressive\+Behaviour}!Zeta\+::\+Aggressive\+Behaviour@{Zeta\+::\+Aggressive\+Behaviour}}
+\subsubsection[{Aggressive\+Behaviour}]{\setlength{\rightskip}{0pt plus 5cm}Zeta\+::\+Aggressive\+Behaviour\+::\+Aggressive\+Behaviour (
+\begin{DoxyParamCaption}
+\item[{{\bf Lifeform} \&}]{owner, }
+\item[{{\bf Float}}]{agro\+Range = {\ttfamily 300}, }
+\item[{{\bf Float}}]{drift\+Range = {\ttfamily 600}}
+\end{DoxyParamCaption}
+)}}\label{classZeta_1_1AggressiveBehaviour_a89c1244634a7f268ec45c6a04a244e59}
+\hypertarget{classZeta_1_1AggressiveBehaviour_a13d12742f4cca79e654b7e5c72a9cb50}{\index{Zeta\+::\+Aggressive\+Behaviour@{Zeta\+::\+Aggressive\+Behaviour}!````~Aggressive\+Behaviour@{$\sim$\+Aggressive\+Behaviour}}
+\index{````~Aggressive\+Behaviour@{$\sim$\+Aggressive\+Behaviour}!Zeta\+::\+Aggressive\+Behaviour@{Zeta\+::\+Aggressive\+Behaviour}}
+\subsubsection[{$\sim$\+Aggressive\+Behaviour}]{\setlength{\rightskip}{0pt plus 5cm}virtual Zeta\+::\+Aggressive\+Behaviour\+::$\sim$\+Aggressive\+Behaviour (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classZeta_1_1AggressiveBehaviour_a13d12742f4cca79e654b7e5c72a9cb50}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classZeta_1_1AggressiveBehaviour_a54bc15050dd6470acd003d2d33b0b99f}{\index{Zeta\+::\+Aggressive\+Behaviour@{Zeta\+::\+Aggressive\+Behaviour}!attack@{attack}}
+\index{attack@{attack}!Zeta\+::\+Aggressive\+Behaviour@{Zeta\+::\+Aggressive\+Behaviour}}
+\subsubsection[{attack}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+Aggressive\+Behaviour\+::attack (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classZeta_1_1AggressiveBehaviour_a54bc15050dd6470acd003d2d33b0b99f}
+\hypertarget{classZeta_1_1AggressiveBehaviour_a5db91c7bfcf560b936fce836ef02ca1d}{\index{Zeta\+::\+Aggressive\+Behaviour@{Zeta\+::\+Aggressive\+Behaviour}!get\+Ability@{get\+Ability}}
+\index{get\+Ability@{get\+Ability}!Zeta\+::\+Aggressive\+Behaviour@{Zeta\+::\+Aggressive\+Behaviour}}
+\subsubsection[{get\+Ability}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+Aggressive\+Behaviour\+::get\+Ability (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classZeta_1_1AggressiveBehaviour_a5db91c7bfcf560b936fce836ef02ca1d}
+\hypertarget{classZeta_1_1AggressiveBehaviour_a7ebb4cd0f618f9dd9e1e723e77aac292}{\index{Zeta\+::\+Aggressive\+Behaviour@{Zeta\+::\+Aggressive\+Behaviour}!on\+Death@{on\+Death}}
+\index{on\+Death@{on\+Death}!Zeta\+::\+Aggressive\+Behaviour@{Zeta\+::\+Aggressive\+Behaviour}}
+\subsubsection[{on\+Death}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+Aggressive\+Behaviour\+::on\+Death (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classZeta_1_1AggressiveBehaviour_a7ebb4cd0f618f9dd9e1e723e77aac292}
+
+
+Implements \hyperlink{classZeta_1_1Behaviour_ac8c86b2e91f99441ee2e7de54e7d17d9}{Zeta\+::\+Behaviour}.
+
+\hypertarget{classZeta_1_1AggressiveBehaviour_a2e8b01db56c557cefdcd72d94610ffca}{\index{Zeta\+::\+Aggressive\+Behaviour@{Zeta\+::\+Aggressive\+Behaviour}!scan@{scan}}
+\index{scan@{scan}!Zeta\+::\+Aggressive\+Behaviour@{Zeta\+::\+Aggressive\+Behaviour}}
+\subsubsection[{scan}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+Aggressive\+Behaviour\+::scan (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classZeta_1_1AggressiveBehaviour_a2e8b01db56c557cefdcd72d94610ffca}
+\hypertarget{classZeta_1_1AggressiveBehaviour_a8303e71d7a3e283685573fc9c13e1640}{\index{Zeta\+::\+Aggressive\+Behaviour@{Zeta\+::\+Aggressive\+Behaviour}!update@{update}}
+\index{update@{update}!Zeta\+::\+Aggressive\+Behaviour@{Zeta\+::\+Aggressive\+Behaviour}}
+\subsubsection[{update}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+Aggressive\+Behaviour\+::update (
+\begin{DoxyParamCaption}
+\item[{{\bf Float}}]{elapsed\+Time}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classZeta_1_1AggressiveBehaviour_a8303e71d7a3e283685573fc9c13e1640}
+
+
+Implements \hyperlink{classZeta_1_1Updateable_af4006bfccb762454b4da08786ad93de0}{Zeta\+::\+Updateable}.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classZeta_1_1AggressiveBehaviour_a46ae846d179081d36af1daaeb21c0a55}{\index{Zeta\+::\+Aggressive\+Behaviour@{Zeta\+::\+Aggressive\+Behaviour}!agro\+Range@{agro\+Range}}
+\index{agro\+Range@{agro\+Range}!Zeta\+::\+Aggressive\+Behaviour@{Zeta\+::\+Aggressive\+Behaviour}}
+\subsubsection[{agro\+Range}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Float} Zeta\+::\+Aggressive\+Behaviour\+::agro\+Range\hspace{0.3cm}{\ttfamily [private]}}}\label{classZeta_1_1AggressiveBehaviour_a46ae846d179081d36af1daaeb21c0a55}
+\hypertarget{classZeta_1_1AggressiveBehaviour_affc1dc9f79144d64b9f627458442b7c5}{\index{Zeta\+::\+Aggressive\+Behaviour@{Zeta\+::\+Aggressive\+Behaviour}!cur\+Ability@{cur\+Ability}}
+\index{cur\+Ability@{cur\+Ability}!Zeta\+::\+Aggressive\+Behaviour@{Zeta\+::\+Aggressive\+Behaviour}}
+\subsubsection[{cur\+Ability}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Active\+Ability}$\ast$ Zeta\+::\+Aggressive\+Behaviour\+::cur\+Ability\hspace{0.3cm}{\ttfamily [private]}}}\label{classZeta_1_1AggressiveBehaviour_affc1dc9f79144d64b9f627458442b7c5}
+\hypertarget{classZeta_1_1AggressiveBehaviour_af3f8203e1075c28d5141810ac07f1f5e}{\index{Zeta\+::\+Aggressive\+Behaviour@{Zeta\+::\+Aggressive\+Behaviour}!drift\+Range@{drift\+Range}}
+\index{drift\+Range@{drift\+Range}!Zeta\+::\+Aggressive\+Behaviour@{Zeta\+::\+Aggressive\+Behaviour}}
+\subsubsection[{drift\+Range}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Float} Zeta\+::\+Aggressive\+Behaviour\+::drift\+Range\hspace{0.3cm}{\ttfamily [private]}}}\label{classZeta_1_1AggressiveBehaviour_af3f8203e1075c28d5141810ac07f1f5e}
+\hypertarget{classZeta_1_1AggressiveBehaviour_a5301708e316129eb682436d7b8a09cac}{\index{Zeta\+::\+Aggressive\+Behaviour@{Zeta\+::\+Aggressive\+Behaviour}!initial\+Position@{initial\+Position}}
+\index{initial\+Position@{initial\+Position}!Zeta\+::\+Aggressive\+Behaviour@{Zeta\+::\+Aggressive\+Behaviour}}
+\subsubsection[{initial\+Position}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector2} Zeta\+::\+Aggressive\+Behaviour\+::initial\+Position\hspace{0.3cm}{\ttfamily [private]}}}\label{classZeta_1_1AggressiveBehaviour_a5301708e316129eb682436d7b8a09cac}
+\hypertarget{classZeta_1_1AggressiveBehaviour_ae0a924de0719f042bcb2f9def9a61e2b}{\index{Zeta\+::\+Aggressive\+Behaviour@{Zeta\+::\+Aggressive\+Behaviour}!state@{state}}
+\index{state@{state}!Zeta\+::\+Aggressive\+Behaviour@{Zeta\+::\+Aggressive\+Behaviour}}
+\subsubsection[{state}]{\setlength{\rightskip}{0pt plus 5cm}{\bf State} Zeta\+::\+Aggressive\+Behaviour\+::state\hspace{0.3cm}{\ttfamily [private]}}}\label{classZeta_1_1AggressiveBehaviour_ae0a924de0719f042bcb2f9def9a61e2b}
+\hypertarget{classZeta_1_1AggressiveBehaviour_a7f1e06e7f51216cb7d9bb8ade9d79a47}{\index{Zeta\+::\+Aggressive\+Behaviour@{Zeta\+::\+Aggressive\+Behaviour}!target@{target}}
+\index{target@{target}!Zeta\+::\+Aggressive\+Behaviour@{Zeta\+::\+Aggressive\+Behaviour}}
+\subsubsection[{target}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Lifeform}$\ast$ Zeta\+::\+Aggressive\+Behaviour\+::target\hspace{0.3cm}{\ttfamily [private]}}}\label{classZeta_1_1AggressiveBehaviour_a7f1e06e7f51216cb7d9bb8ade9d79a47}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Zeta/\+Core/\+R\+P\+G\+Classes/\+A\+I/\hyperlink{AggressiveBehaviour_8hpp}{Aggressive\+Behaviour.\+hpp}\end{DoxyCompactItemize}

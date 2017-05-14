@@ -1,0 +1,105 @@
+.TH "Zeta::Tileset" 3 "Wed Feb 10 2016" "Zeta" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Zeta::Tileset \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Tileset\&.hpp>\fP
+.PP
+Inherits \fBZeta::Resource\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "const \fBTile\fP & \fBgetTile\fP (unsigned int id) const "
+.br
+.ti -1c
+.RI "const \fBTile\fP * \fBgetMapTile\fP (unsigned int id) const "
+.br
+.ti -1c
+.RI "void \fBload\fP (const std::string &path)"
+.br
+.ti -1c
+.RI "\fBTileset\fP (\fBTileset\fP &&)=default"
+.br
+.ti -1c
+.RI "\fBTileset\fP (const \fBTileset\fP &)=default"
+.br
+.ti -1c
+.RI "\fBTileset\fP & \fBoperator=\fP (const \fBTileset\fP &)=default"
+.br
+.ti -1c
+.RI "\fBTileset\fP & \fBoperator=\fP (\fBTileset\fP &&)=default"
+.br
+.ti -1c
+.RI "\fBTileset\fP ()"
+.br
+.ti -1c
+.RI "\fBTileset\fP (const std::string &path)"
+.br
+.ti -1c
+.RI "virtual \fB~Tileset\fP ()"
+.br
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "std::vector< \fBTile\fP > \fBtiles\fP"
+.br
+.ti -1c
+.RI "const \fBBitmap\fP * \fBimg\fP"
+.br
+.ti -1c
+.RI "int \fBtileWidth\fP"
+.br
+.ti -1c
+.RI "int \fBtileHeight\fP"
+.br
+.ti -1c
+.RI "unsigned int \fBnumTiles\fP"
+.br
+.in -1c
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Zeta::Tileset::Tileset (\fBTileset\fP &&)\fC [default]\fP"
+
+.SS "Zeta::Tileset::Tileset (const \fBTileset\fP &)\fC [default]\fP"
+
+.SS "Zeta::Tileset::Tileset ()"
+
+.SS "Zeta::Tileset::Tileset (const std::string &path)"
+
+.SS "virtual Zeta::Tileset::~Tileset ()\fC [virtual]\fP"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "const \fBTile\fP* Zeta::Tileset::getMapTile (unsigned intid) const"
+
+.SS "const \fBTile\fP& Zeta::Tileset::getTile (unsigned intid) const"
+
+.SS "void Zeta::Tileset::load (const std::string &path)"
+
+.SS "\fBTileset\fP& Zeta::Tileset::operator= (const \fBTileset\fP &)\fC [default]\fP"
+
+.SS "\fBTileset\fP& Zeta::Tileset::operator= (\fBTileset\fP &&)\fC [default]\fP"
+
+.SH "Member Data Documentation"
+.PP 
+.SS "const \fBBitmap\fP* Zeta::Tileset::img\fC [protected]\fP"
+
+.SS "unsigned int Zeta::Tileset::numTiles\fC [protected]\fP"
+
+.SS "int Zeta::Tileset::tileHeight\fC [protected]\fP"
+
+.SS "std::vector<\fBTile\fP> Zeta::Tileset::tiles\fC [protected]\fP"
+
+.SS "int Zeta::Tileset::tileWidth\fC [protected]\fP"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Zeta from the source code\&.

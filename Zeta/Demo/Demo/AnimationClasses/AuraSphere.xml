@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AnimationClass>
+	<Bounding>
+		<Rectangle height="55" width="53" x="-30" y="-22" />
+	</Bounding>
+	<TargetArea>
+		<Rectangle height="0" width="0" x="0" y="0" />
+	</TargetArea>
+	<Action name="__Movement__">
+		<Up animation="release_R" file="Demo/Sprites/AuraSphere.anim" />
+		<Down animation="release_R" file="Demo/Sprites/AuraSphere.anim" />
+		<Left animation="release_R" file="Demo/Sprites/AuraSphere.anim" />
+		<Right animation="release_R" file="Demo/Sprites/AuraSphere.anim" />
+	</Action>
+	<Action name="__Idle__">
+		<Up animation="waiting" file="Demo/Sprites/AuraSphere.anim" />
+		<Down animation="waiting" file="Demo/Sprites/AuraSphere.anim" />
+		<Left animation="waiting" file="Demo/Sprites/AuraSphere.anim" />
+		<Right animation="waiting" file="Demo/Sprites/AuraSphere.anim" />
+	</Action>
+	<Action name="__Dead__">
+		<Up animation="charge" file="Demo/Sprites/AuraSphere.anim" />
+		<Down animation="charge" file="Demo/Sprites/AuraSphere.anim" />
+		<Left animation="charge" file="Demo/Sprites/AuraSphere.anim" />
+		<Right animation="charge" file="Demo/Sprites/AuraSphere.anim" />
+	</Action>
+	<Action name="__Death__">
+		<Up animation="charge" file="Demo/Sprites/AuraSphere.anim" />
+		<Down animation="charge" file="Demo/Sprites/AuraSphere.anim" />
+		<Left animation="charge" file="Demo/Sprites/AuraSphere.anim" />
+		<Right animation="charge" file="Demo/Sprites/AuraSphere.anim" />
+	</Action>
+</AnimationClass>

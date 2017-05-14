@@ -1,0 +1,114 @@
+\hypertarget{classZeta_1_1File}{\section{Zeta\+:\+:File Class Reference}
+\label{classZeta_1_1File}\index{Zeta\+::\+File@{Zeta\+::\+File}}
+}
+
+
+{\ttfamily \#include $<$File.\+hpp$>$}
+
+
+
+Inheritance diagram for Zeta\+:\+:File\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=162pt]{classZeta_1_1File__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Zeta\+:\+:File\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=162pt]{classZeta_1_1File__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+char $\ast$ \hyperlink{classZeta_1_1File_aa8de0ecc1b2774ccdbbd7bf5b58d68b1}{get\+Data} () const 
+\item 
+size\+\_\+t \hyperlink{classZeta_1_1File_a7d8a666b770612808c011a4973e76f69}{get\+Size} () const 
+\item 
+\hyperlink{classZeta_1_1File_a3bf5c32b64ef1cf1faf8f16e8b92a5d6}{File} ()
+\item 
+\hyperlink{classZeta_1_1File_a2c8d93b819603f1ee2685275319bdd8a}{File} (const std\+::string \&path)
+\item 
+\hyperlink{classZeta_1_1File_ad606293e884ff632b6c42cc3114bddac}{$\sim$\+File} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+size\+\_\+t \hyperlink{classZeta_1_1File_a4693dd90932cd5d4c7303a101050a5ce}{size}
+\item 
+char $\ast$ \hyperlink{classZeta_1_1File_ada4a3a7dbe4e52d9176e84b99d33c19c}{data}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+General \hyperlink{classZeta_1_1File}{File} Class This class loads a file to memory 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classZeta_1_1File_a3bf5c32b64ef1cf1faf8f16e8b92a5d6}{\index{Zeta\+::\+File@{Zeta\+::\+File}!File@{File}}
+\index{File@{File}!Zeta\+::\+File@{Zeta\+::\+File}}
+\subsubsection[{File}]{\setlength{\rightskip}{0pt plus 5cm}Zeta\+::\+File\+::\+File (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classZeta_1_1File_a3bf5c32b64ef1cf1faf8f16e8b92a5d6}
+Default Constructor It creates a empty X\+M\+L \hyperlink{classZeta_1_1File}{File} in the memory \hypertarget{classZeta_1_1File_a2c8d93b819603f1ee2685275319bdd8a}{\index{Zeta\+::\+File@{Zeta\+::\+File}!File@{File}}
+\index{File@{File}!Zeta\+::\+File@{Zeta\+::\+File}}
+\subsubsection[{File}]{\setlength{\rightskip}{0pt plus 5cm}Zeta\+::\+File\+::\+File (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{path}
+\end{DoxyParamCaption}
+)}}\label{classZeta_1_1File_a2c8d93b819603f1ee2685275319bdd8a}
+Loads the file in memory from the path 
+\begin{DoxyParams}{Parameters}
+{\em path} & The filename path to load \\
+\hline
+\end{DoxyParams}
+\hypertarget{classZeta_1_1File_ad606293e884ff632b6c42cc3114bddac}{\index{Zeta\+::\+File@{Zeta\+::\+File}!````~File@{$\sim$\+File}}
+\index{````~File@{$\sim$\+File}!Zeta\+::\+File@{Zeta\+::\+File}}
+\subsubsection[{$\sim$\+File}]{\setlength{\rightskip}{0pt plus 5cm}Zeta\+::\+File\+::$\sim$\+File (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classZeta_1_1File_ad606293e884ff632b6c42cc3114bddac}
+Deallocates the memory that the file data used 
+
+\subsection{Member Function Documentation}
+\hypertarget{classZeta_1_1File_aa8de0ecc1b2774ccdbbd7bf5b58d68b1}{\index{Zeta\+::\+File@{Zeta\+::\+File}!get\+Data@{get\+Data}}
+\index{get\+Data@{get\+Data}!Zeta\+::\+File@{Zeta\+::\+File}}
+\subsubsection[{get\+Data}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ Zeta\+::\+File\+::get\+Data (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1File_aa8de0ecc1b2774ccdbbd7bf5b58d68b1}
+Gets the pointer to the data of the \hyperlink{classZeta_1_1File}{File} The Pointer is at the beginning of the file \begin{DoxyReturn}{Returns}
+The Pointer to the file data 
+\end{DoxyReturn}
+\hypertarget{classZeta_1_1File_a7d8a666b770612808c011a4973e76f69}{\index{Zeta\+::\+File@{Zeta\+::\+File}!get\+Size@{get\+Size}}
+\index{get\+Size@{get\+Size}!Zeta\+::\+File@{Zeta\+::\+File}}
+\subsubsection[{get\+Size}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t Zeta\+::\+File\+::get\+Size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1File_a7d8a666b770612808c011a4973e76f69}
+Gets the size of the file in bytes \begin{DoxyReturn}{Returns}
+The file Size 
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classZeta_1_1File_ada4a3a7dbe4e52d9176e84b99d33c19c}{\index{Zeta\+::\+File@{Zeta\+::\+File}!data@{data}}
+\index{data@{data}!Zeta\+::\+File@{Zeta\+::\+File}}
+\subsubsection[{data}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ Zeta\+::\+File\+::data\hspace{0.3cm}{\ttfamily [mutable]}, {\ttfamily [protected]}}}\label{classZeta_1_1File_ada4a3a7dbe4e52d9176e84b99d33c19c}
+\hypertarget{classZeta_1_1File_a4693dd90932cd5d4c7303a101050a5ce}{\index{Zeta\+::\+File@{Zeta\+::\+File}!size@{size}}
+\index{size@{size}!Zeta\+::\+File@{Zeta\+::\+File}}
+\subsubsection[{size}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t Zeta\+::\+File\+::size\hspace{0.3cm}{\ttfamily [protected]}}}\label{classZeta_1_1File_a4693dd90932cd5d4c7303a101050a5ce}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Zeta/\+Core/\+Resource\+Classes/\hyperlink{File_8hpp}{File.\+hpp}\end{DoxyCompactItemize}

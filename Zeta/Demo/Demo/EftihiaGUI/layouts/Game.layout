@@ -1,0 +1,810 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<GUILayout version="4" >
+    <Window type="DefaultWindow" name="GameInterface" >
+        <Property name="Area" value="{{0,0},{0,0},{1,0},{1,0}}" />
+        <Property name="MaxSize" value="{{1,0},{1,0}}" />
+        <Window type="Eftihia/StaticText" name="FPS" >
+            <Property name="Area" value="{{0,0},{0,0},{0,100},{0,30}}" />
+            <Property name="Font" value="Ubuntu-20" />
+            <Property name="Text" value="Ειδικότητα" />
+            <Property name="MaxSize" value="{{1,0},{1,0}}" />
+            <Property name="FrameEnabled" value="False" />
+            <Property name="BackgroundEnabled" value="False" />
+            <Property name="HorzScrollPageSize" value="100" />
+            <Property name="VertScrollPageSize" value="30" />
+            <Property name="HorzScrollDocumentSize" value="17" />
+            <Property name="VertScrollDocumentSize" value="3.15268" />
+        </Window>
+        <Window type="Eftihia/FrameWindow" name="GameMenu" >
+            <Property name="Area" value="{{0.423299,0},{0.405382,0},{0.423299,161.958},{0.405382,173.333}}" />
+            <Property name="Text" value="Μενού" />
+            <Property name="TitlebarFont" value="DejaVuSans-12" />
+            <Property name="SizingEnabled" value="False" />
+            <Property name="DragDropTarget" value="False" />
+            <AutoWindow namePath="__auto_titlebar__" >
+                <Property name="Font" value="DejaVuSans-12" />
+            </AutoWindow>
+            <Window type="Eftihia/Button" name="ResumeButton" >
+                <Property name="Area" value="{{0.194703,0},{0,0},{0.818079,0},{0.256,0}}" />
+                <Property name="Text" value="Συνέχεια" />
+            </Window>
+            <Window type="Eftihia/Button" name="SaveButton" >
+                <Property name="Area" value="{{0.194703,0},{0.32,0},{0.818079,0},{0.576,0}}" />
+                <Property name="Text" value="Σώσιμο" />
+            </Window>
+            <Window type="Eftihia/Button" name="ExitButton" >
+                <Property name="Area" value="{{0.194703,0},{0.64,0},{0.818079,0},{0.896,0}}" />
+                <Property name="Text" value="Έξοδος" />
+            </Window>
+        </Window>
+        <Window type="Eftihia/HealthBar" name="HealthBar" >
+            <Property name="Area" value="{{0,-52.5},{0,-105},{0,122.5},{0,-81}}" />
+            <Property name="StepSize" value="0.01" />
+            <Property name="CurrentProgress" value="0.6" />
+            <Property name="VerticalAlignment" value="Bottom" />
+            <Property name="HorizontalAlignment" value="Centre" />
+            <Window type="Eftihia/Label" name="Text" >
+                <Property name="Area" value="{{0,0},{0.208333,0},{0.688172,0},{0.833333,0}}" />
+                <Property name="Font" value="Ubuntu-10" />
+                <Property name="Text" value="1000/1000" />
+                <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                <Property name="NormalTextColour" value="FFFFFFFF" />
+                <Property name="HorizontalAlignment" value="Centre" />
+            </Window>
+        </Window>
+        <Window type="Eftihia/ManaBar" name="ManaBar" >
+            <Property name="Area" value="{{0,122.5},{0,-105},{0,297.5},{0,-81}}" />
+            <Property name="StepSize" value="0.01" />
+            <Property name="CurrentProgress" value="0.2" />
+            <Property name="VerticalAlignment" value="Bottom" />
+            <Property name="HorizontalAlignment" value="Centre" />
+            <Window type="Eftihia/Label" name="Text" >
+                <Property name="Area" value="{{0,0},{0.2,0},{0.688172,0},{0.8,0}}" />
+                <Property name="Text" value="500/500" />
+                <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                <Property name="NormalTextColour" value="FFFFFFFF" />
+                <Property name="HorizontalAlignment" value="Centre" />
+            </Window>
+        </Window>
+        <Window type="Eftihia/XPBar" name="XPBar" >
+            <Property name="Area" value="{{0,35.0001},{0,-79},{0,385},{0,-55}}" />
+            <Property name="StepSize" value="0.01" />
+            <Property name="CurrentProgress" value="0.2" />
+            <Property name="VerticalAlignment" value="Bottom" />
+            <Property name="HorizontalAlignment" value="Centre" />
+            <Window type="Eftihia/Label" name="Text" >
+                <Property name="Area" value="{{0,0},{0.2,0},{0.88,0},{0.8,0}}" />
+                <Property name="Font" value="Ubuntu-10" />
+                <Property name="Text" value="21000/50000" />
+                <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                <Property name="NormalTextColour" value="FF24209D" />
+                <Property name="HorizontalAlignment" value="Centre" />
+            </Window>
+        </Window>
+        <Window type="Eftihia/FrameWindow" name="CharStats" >
+            <Property name="Area" value="{{0.0219619,12.8332},{0.351563,-109.688},{0.0219619,292.833},{0.351563,144.312}}" />
+            <Property name="Text" value="Χαρακτήρας" />
+            <Property name="SizingEnabled" value="False" />
+            <Window type="Eftihia/Label" name="LName" >
+                <Property name="Area" value="{{0,104.889},{0,-0.000507474},{0,154.889},{0,17.9995}}" />
+                <Property name="Font" value="Ubuntu-10" />
+                <Property name="Text" value="Όνομα:" />
+                <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                <Property name="HorzFormatting" value="LeftAligned" />
+                <Property name="NormalTextColour" value="FF4E1F1F" />
+            </Window>
+            <Window type="Eftihia/Label" name="Name" >
+                <Property name="Area" value="{{0,154.889},{0,-0.000537992},{0,264.889},{0,17.9995}}" />
+                <Property name="Font" value="Ubuntu-10" />
+                <Property name="Text" value="Ευτυχία" />
+                <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                <Property name="HorzFormatting" value="LeftAligned" />
+            </Window>
+            <Window type="Eftihia/Label" name="LHP" >
+                <Property name="Area" value="{{0,-0.111231},{0,94.9995},{0,49.8888},{0,116}}" />
+                <Property name="Text" value="Ζωή:" />
+                <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                <Property name="HorzFormatting" value="LeftAligned" />
+                <Property name="NormalTextColour" value="FF4E1F1F" />
+            </Window>
+            <Window type="Eftihia/Label" name="LMana" >
+                <Property name="Area" value="{{0,-0.111233},{0,114.999},{0,49.8888},{0,135.999}}" />
+                <Property name="Text" value="Mana:" />
+                <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                <Property name="HorzFormatting" value="LeftAligned" />
+                <Property name="NormalTextColour" value="FF4E1F1F" />
+            </Window>
+            <Window type="Eftihia/Label" name="Hp" >
+                <Property name="Area" value="{{0,54.8888},{0,94.9995},{0,179.889},{0,115.999}}" />
+                <Property name="Text" value="1253/1253" />
+                <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                <Property name="HorzFormatting" value="LeftAligned" />
+            </Window>
+            <Window type="Eftihia/Label" name="Mana" >
+                <Property name="Area" value="{{0,54.8888},{0,114.999},{0,179.889},{0,135.999}}" />
+                <Property name="Text" value="563/630" />
+                <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                <Property name="HorzFormatting" value="LeftAligned" />
+            </Window>
+            <Window type="Eftihia/Label" name="LLevel" >
+                <Property name="Area" value="{{0,104.889},{0,19.9995},{0,154.889},{0,37.9995}}" />
+                <Property name="Text" value="Επίπεδο:" />
+                <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                <Property name="HorzFormatting" value="LeftAligned" />
+                <Property name="NormalTextColour" value="FF4E1F1F" />
+            </Window>
+            <Window type="Eftihia/Label" name="Level" >
+                <Property name="Area" value="{{0,154.889},{0,19.9995},{0,189.889},{0,37.9995}}" />
+                <Property name="Text" value="2" />
+                <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                <Property name="HorzFormatting" value="LeftAligned" />
+            </Window>
+            <Window type="Eftihia/AvatarBox" name="Avatar" >
+                <Property name="Area" value="{{0,-0.111233},{0,-0.000523887},{0,99.8888},{0,94.9995}}" />
+                <Property name="Image" value="MainMenuImages/Logo" />
+                <Property name="MaxSize" value="{{1,0},{1,0}}" />
+            </Window>
+            <Window type="Eftihia/Label" name="LPatk" >
+                <Property name="Area" value="{{0,-0.111233},{0,134.999},{0,49.8888},{0,155.999}}" />
+                <Property name="Text" value="Φ.Επίθ.:" />
+                <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                <Property name="HorzFormatting" value="LeftAligned" />
+                <Property name="NormalTextColour" value="FF4E1F1F" />
+            </Window>
+            <Window type="Eftihia/Label" name="Patk" >
+                <Property name="Area" value="{{0,54.8888},{0,134.999},{0,179.889},{0,155.999}}" />
+                <Property name="Text" value="1256" />
+                <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                <Property name="HorzFormatting" value="LeftAligned" />
+            </Window>
+            <Window type="Eftihia/Label" name="LMatk" >
+                <Property name="Area" value="{{0,-0.111233},{0,154.999},{0,49.8888},{0,175.999}}" />
+                <Property name="Text" value="Μ.Επίθ.:" />
+                <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                <Property name="HorzFormatting" value="LeftAligned" />
+                <Property name="NormalTextColour" value="FF4E1F1F" />
+            </Window>
+            <Window type="Eftihia/Label" name="Matk" >
+                <Property name="Area" value="{{0,54.8888},{0,154.999},{0,179.889},{0,175.999}}" />
+                <Property name="Text" value="156" />
+                <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                <Property name="HorzFormatting" value="LeftAligned" />
+            </Window>
+            <Window type="Eftihia/Label" name="LPdef" >
+                <Property name="Area" value="{{0,-0.111233},{0,174.999},{0,49.8888},{0,195.999}}" />
+                <Property name="Text" value="Φ.Άμυν.:" />
+                <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                <Property name="HorzFormatting" value="LeftAligned" />
+                <Property name="NormalTextColour" value="FF4E1F1F" />
+            </Window>
+            <Window type="Eftihia/Label" name="Pdef" >
+                <Property name="Area" value="{{0,54.8888},{0,174.999},{0,179.889},{0,195.999}}" />
+                <Property name="Text" value="563" />
+                <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                <Property name="HorzFormatting" value="LeftAligned" />
+            </Window>
+            <Window type="Eftihia/Label" name="LMdef" >
+                <Property name="Area" value="{{0,-0.111233},{0,194.999},{0,49.8888},{0,215.999}}" />
+                <Property name="Text" value="Μ.Άμυν.:" />
+                <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                <Property name="HorzFormatting" value="LeftAligned" />
+                <Property name="NormalTextColour" value="FF4E1F1F" />
+            </Window>
+            <Window type="Eftihia/Label" name="Mdef" >
+                <Property name="Area" value="{{0,54.8888},{0,194.999},{0,179.889},{0,215.999}}" />
+                <Property name="Text" value="416" />
+                <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                <Property name="HorzFormatting" value="LeftAligned" />
+            </Window>
+        </Window>
+        <Window type="Eftihia/AvatarBox" name="Avatar" >
+            <Property name="Area" value="{{0,-206.001},{0,0},{0,-78.0006},{0,130}}" />
+            <Property name="Image" value="MainMenuImages/Logo" />
+            <Property name="MaxSize" value="{{1,0},{1,0}}" />
+            <Property name="TooltipText" value="tfhfh" />
+            <Property name="VerticalAlignment" value="Bottom" />
+            <Property name="HorizontalAlignment" value="Centre" />
+        </Window>
+        <Window type="Eftihia/AvatarBox" name="LevelBox" >
+            <Property name="Area" value="{{0,235},{0,-79},{0,285},{0,-29}}" />
+            <Property name="MaxSize" value="{{1,0},{1,0}}" />
+            <Property name="VerticalAlignment" value="Bottom" />
+            <Property name="HorizontalAlignment" value="Centre" />
+            <Window type="Eftihia/Label" name="Level" >
+                <Property name="Area" value="{{0.166665,0},{0.181816,0},{0.833332,0},{0.81818,0}}" />
+                <Property name="Font" value="Ubuntu-18" />
+                <Property name="Text" value="4" />
+                <Property name="MaxSize" value="{{1,0},{1,0}}" />
+            </Window>
+        </Window>
+        <Window type="Eftihia/AvatarBox" name="SkillBox" >
+            <Property name="Area" value="{{0,35.0001},{0,0},{0,385},{0,80}}" />
+            <Property name="MaxSize" value="{{1,0},{1,0}}" />
+            <Property name="VerticalAlignment" value="Bottom" />
+            <Property name="HorizontalAlignment" value="Centre" />
+            <Window type="DefaultWindow" name="SkillSlot1" >
+                <Property name="Area" value="{{0,10},{0,10},{0,74},{0,74}}" />
+                <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                <Window type="Eftihia/Label" name="Triggerer" >
+                    <Property name="Area" value="{{0,-0.00012207},{0,0},{0,24.9996},{0,30}}" />
+                    <Property name="Font" value="TradeWinds-20" />
+                    <Property name="Text" value="Q" />
+                    <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                    <Property name="AlwaysOnTop" value="True" />
+                    <Property name="HorzFormatting" value="LeftAligned" />
+                    <Property name="MousePassThroughEnabled" value="True" />
+                </Window>
+                <Window type="Eftihia/Label" name="CoolDown" >
+                    <Property name="Area" value="{{0,-0.00012207},{0,40},{0,64.9999},{0,60}}" />
+                    <Property name="Font" value="Ubuntu-16" />
+                    <Property name="Text" value="0:00" />
+                    <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                    <Property name="Visible" value="False" />
+                    <Property name="AlwaysOnTop" value="True" />
+                    <Property name="NormalTextColour" value="FFFFFFFF" />
+                    <Property name="MousePassThroughEnabled" value="True" />
+                </Window>
+            </Window>
+            <Window type="DefaultWindow" name="SkillSlot2" >
+                <Property name="Area" value="{{0,74.6829},{0,10},{0,138.683},{0,74}}" />
+                <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                <Window type="Eftihia/Label" name="CoolDown" >
+                    <Property name="Area" value="{{0,-0.00012207},{0,40},{0,64.9999},{0,60}}" />
+                    <Property name="Font" value="Ubuntu-16" />
+                    <Property name="Text" value="0:00" />
+                    <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                    <Property name="Visible" value="False" />
+                    <Property name="AlwaysOnTop" value="True" />
+                    <Property name="NormalTextColour" value="FFFFFFFF" />
+                    <Property name="MousePassThroughEnabled" value="True" />
+                </Window>
+                <Window type="Eftihia/Label" name="Triggerer" >
+                    <Property name="Area" value="{{0,-0.00012207},{0,0},{0,35.3167},{0,30}}" />
+                    <Property name="Font" value="TradeWinds-20" />
+                    <Property name="Text" value="W" />
+                    <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                    <Property name="AlwaysOnTop" value="True" />
+                    <Property name="HorzFormatting" value="LeftAligned" />
+                    <Property name="MousePassThroughEnabled" value="True" />
+                </Window>
+            </Window>
+            <Window type="DefaultWindow" name="SkillSlot3" >
+                <Property name="Area" value="{{0,139.683},{0,10},{0,203.683},{0,74}}" />
+                <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                <Window type="Eftihia/Label" name="CoolDown" >
+                    <Property name="Area" value="{{0,-0.00012207},{0,40},{0,64.9999},{0,60}}" />
+                    <Property name="Font" value="Ubuntu-16" />
+                    <Property name="Text" value="0:00" />
+                    <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                    <Property name="Visible" value="False" />
+                    <Property name="AlwaysOnTop" value="True" />
+                    <Property name="NormalTextColour" value="FFFFFFFF" />
+                    <Property name="MousePassThroughEnabled" value="True" />
+                </Window>
+                <Window type="Eftihia/Label" name="Triggerer" >
+                    <Property name="Area" value="{{0,-0.00012207},{0,0},{0,35.3167},{0,30}}" />
+                    <Property name="Font" value="TradeWinds-20" />
+                    <Property name="Text" value="E" />
+                    <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                    <Property name="AlwaysOnTop" value="True" />
+                    <Property name="HorzFormatting" value="LeftAligned" />
+                    <Property name="MousePassThroughEnabled" value="True" />
+                </Window>
+            </Window>
+            <Window type="DefaultWindow" name="SkillSlot4" >
+                <Property name="Area" value="{{0,205},{0,10},{0,269},{0,74}}" />
+                <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                <Window type="Eftihia/Label" name="Triggerer" >
+                    <Property name="Area" value="{{0,-0.00012207},{0,0},{0,35.3167},{0,30}}" />
+                    <Property name="Font" value="TradeWinds-20" />
+                    <Property name="Text" value="R" />
+                    <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                    <Property name="AlwaysOnTop" value="True" />
+                    <Property name="HorzFormatting" value="LeftAligned" />
+                    <Property name="MousePassThroughEnabled" value="True" />
+                </Window>
+                <Window type="Eftihia/Label" name="CoolDown" >
+                    <Property name="Area" value="{{0,-0.00012207},{0,40},{0,64.9999},{0,60}}" />
+                    <Property name="Font" value="Ubuntu-16" />
+                    <Property name="Text" value="0:00" />
+                    <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                    <Property name="Visible" value="False" />
+                    <Property name="AlwaysOnTop" value="True" />
+                    <Property name="NormalTextColour" value="FFFFFFFF" />
+                    <Property name="MousePassThroughEnabled" value="True" />
+                </Window>
+            </Window>
+            <Window type="DefaultWindow" name="SkillSlot5" >
+                <Property name="Area" value="{{0,270},{0,10},{0,334},{0,74}}" />
+                <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                <Window type="Eftihia/Label" name="CoolDown" >
+                    <Property name="Area" value="{{0,-0.00012207},{0,40},{0,64.9999},{0,60}}" />
+                    <Property name="Font" value="Ubuntu-16" />
+                    <Property name="Text" value="0:00" />
+                    <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                    <Property name="Visible" value="False" />
+                    <Property name="AlwaysOnTop" value="True" />
+                    <Property name="NormalTextColour" value="FFFFFFFF" />
+                    <Property name="MousePassThroughEnabled" value="True" />
+                </Window>
+                <Window type="Eftihia/Label" name="Triggerer" >
+                    <Property name="Area" value="{{0,-0.00012207},{0,0},{0,35.3167},{0,30}}" />
+                    <Property name="Font" value="TradeWinds-20" />
+                    <Property name="Text" value="T" />
+                    <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                    <Property name="AlwaysOnTop" value="True" />
+                    <Property name="HorzFormatting" value="LeftAligned" />
+                    <Property name="MousePassThroughEnabled" value="True" />
+                </Window>
+            </Window>
+        </Window>
+        <Window type="Eftihia/Button" name="CharButton" >
+            <Property name="Area" value="{{0,-73.0001},{0,0},{0,-41.0001},{0,32}}" />
+            <Property name="Font" value="Ubuntu-14" />
+            <Property name="Text" value="X" />
+            <Property name="HoverImage" value="Gameplay/Button_Normal" />
+            <Property name="NormalImage" value="Gameplay/Button_Over" />
+            <Property name="PushedImage" value="Gameplay/Button_Over" />
+            <Property name="VerticalAlignment" value="Bottom" />
+            <Property name="UseStandardImagery" value="False" />
+            <Property name="HorizontalAlignment" value="Right" />
+        </Window>
+        <Window type="Eftihia/Button" name="MenuButton" >
+            <Property name="Area" value="{{-0.00234375,0},{0,0},{-0.00234375,32},{0,32}}" />
+            <Property name="Font" value="Ubuntu-14" />
+            <Property name="Text" value="M" />
+            <Property name="HoverImage" value="Gameplay/Button_Normal" />
+            <Property name="NormalImage" value="Gameplay/Button_Over" />
+            <Property name="PushedImage" value="Gameplay/Button_Over" />
+            <Property name="VerticalAlignment" value="Bottom" />
+            <Property name="UseStandardImagery" value="False" />
+            <Property name="HorizontalAlignment" value="Right" />
+        </Window>
+        <Window type="Eftihia/AvatarBox" name="TargetBox" >
+            <Property name="Area" value="{{0,0},{0,0},{0,266},{0,55}}" />
+            <Property name="MaxSize" value="{{1,0},{1,0}}" />
+            <Property name="HorizontalAlignment" value="Centre" />
+            <Window type="Eftihia/Label" name="Name" >
+                <Property name="Area" value="{{0.0285714,-7.59998},{0.111111,-1.1111},{0.821429,-7.59998},{0.555555,-1.1111}}" />
+                <Property name="Font" value="Ubuntu-12" />
+                <Property name="Text" value="Target" />
+                <Property name="MaxSize" value="{{1,0},{1,0}}" />
+            </Window>
+            <Window type="Eftihia/AltHealthBar" name="Health" >
+                <Property name="Area" value="{{0.0285714,0},{0.555556,0},{0.821429,-8.59998},{0.888889,0}}" />
+                <Property name="StepSize" value="0.01" />
+                <Property name="CurrentProgress" value="0.5" />
+                <Window type="Eftihia/Label" name="Text" >
+                    <Property name="Area" value="{{0,0},{0,0},{0.504505,0},{1,0}}" />
+                    <Property name="Font" value="Ubuntu-10" />
+                    <Property name="Text" value="30/100" />
+                    <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                    <Property name="NormalTextColour" value="9F000000" />
+                    <Property name="HorizontalAlignment" value="Centre" />
+                </Window>
+            </Window>
+            <Window type="Eftihia/AvatarBox" name="Level" >
+                <Property name="Area" value="{{0.821429,-8.50012},{0,0},{1,0},{1,0}}" />
+                <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                <Window type="Eftihia/Label" name="Text" >
+                    <Property name="Area" value="{{0.1825,0},{0.169444,0},{0.8625,0},{0.858333,0}}" />
+                    <Property name="Font" value="Ubuntu-16" />
+                    <Property name="Text" value="99" />
+                    <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                </Window>
+            </Window>
+        </Window>
+        <Window type="Eftihia/ListboxTranspBG" name="CombatLog" >
+            <Property name="Area" value="{{0,5},{0,-4.00001},{0,370},{0,121}}" />
+            <Property name="VerticalAlignment" value="Bottom" />
+        </Window>
+        <Window type="Eftihia/FrameWindow" name="Quests" >
+            <Property name="Area" value="{{0,370},{0,205},{0,800},{0,550}}" />
+            <Property name="Text" value="Αποστολές" />
+            <Property name="SizingEnabled" value="False" />
+            <Window type="Eftihia/Listbox" name="QuestList" >
+                <Property name="Area" value="{{0,0},{0,0},{0.416667,0},{1.00324,0}}" />
+            </Window>
+            <Window type="Eftihia/MultiLineEditbox" name="QuestText" >
+                <Property name="Area" value="{{0.427928,0},{0,0},{1.00225,0},{0.533981,0}}" />
+                <Property name="Font" value="Ubuntu-10" />
+                <Property name="Text" >Οδηγίες Επιλεγμένης Αποστολής
+</Property>
+                <Property name="ReadOnly" value="True" />
+            </Window>
+            <Window type="Eftihia/Listbox" name="RewardList" >
+                <Property name="Area" value="{{0.427928,0},{0.809061,-59.1908},{1.00225,0},{1.00324,0}}" />
+            </Window>
+            <Window type="Eftihia/Label" name="Label2" >
+                <Property name="Area" value="{{0.427928,2.83783},{0.760518,-64.2396},{0.765766,2.83783},{0.809061,-64.2396}}" />
+                <Property name="Text" value="Ανταμοιβές:" />
+                <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                <Property name="HorzFormatting" value="LeftAligned" />
+            </Window>
+        </Window>
+        <Window type="Eftihia/Button" name="QuestsButton" >
+            <Property name="Area" value="{{0,-38},{0,0},{0,-6},{0,32}}" />
+            <Property name="Font" value="Ubuntu-14" />
+            <Property name="Text" value="A" />
+            <Property name="HoverImage" value="Gameplay/Button_Normal" />
+            <Property name="NormalImage" value="Gameplay/Button_Over" />
+            <Property name="PushedImage" value="Gameplay/Button_Normal" />
+            <Property name="VerticalAlignment" value="Bottom" />
+            <Property name="UseStandardImagery" value="False" />
+            <Property name="HorizontalAlignment" value="Right" />
+        </Window>
+        <Window type="Eftihia/AvatarBox" name="TargetStats" >
+            <Property name="Area" value="{{0,350},{0,0},{0,630},{0,80}}" />
+            <Property name="MaxSize" value="{{1,0},{1,0}}" />
+            <Property name="VerticalAlignment" value="Bottom" />
+            <Property name="HorizontalAlignment" value="Centre" />
+            <Window type="Eftihia/Label" name="Mana" >
+                <Property name="Area" value="{{0.714286,0},{0.411765,0},{0.964286,0},{0.588235,0}}" />
+                <Property name="Text" value="563/630" />
+                <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                <Property name="HorzFormatting" value="LeftAligned" />
+            </Window>
+            <Window type="Eftihia/Label" name="LName" >
+                <Property name="Area" value="{{0.0357143,0},{0.117647,0},{0.214286,0},{0.294117,0}}" />
+                <Property name="Font" value="Ubuntu-10" />
+                <Property name="Text" value="Στόχος:" />
+                <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                <Property name="HorzFormatting" value="LeftAligned" />
+                <Property name="NormalTextColour" value="FF4E1F1F" />
+            </Window>
+            <Window type="Eftihia/Label" name="Hp" >
+                <Property name="Area" value="{{0.214286,0},{0.411765,0},{0.535714,0},{0.588236,0}}" />
+                <Property name="Text" value="1253/1253" />
+                <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                <Property name="HorzFormatting" value="LeftAligned" />
+            </Window>
+            <Window type="Eftihia/Label" name="LMana" >
+                <Property name="Area" value="{{0.535714,0},{0.411765,0},{0.667857,0},{0.588235,0}}" />
+                <Property name="Text" value="Mana:" />
+                <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                <Property name="HorzFormatting" value="LeftAligned" />
+                <Property name="NormalTextColour" value="FF4E1F1F" />
+            </Window>
+            <Window type="Eftihia/Label" name="Level" >
+                <Property name="Area" value="{{0.875,0},{0.117647,0},{0.964286,0},{0.294117,0}}" />
+                <Property name="Text" value="2" />
+                <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                <Property name="HorzFormatting" value="LeftAligned" />
+            </Window>
+            <Window type="Eftihia/Label" name="Matk" >
+                <Property name="Area" value="{{0.714286,0},{0.588235,0},{0.964286,0},{0.764706,0}}" />
+                <Property name="Text" value="156" />
+                <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                <Property name="HorzFormatting" value="LeftAligned" />
+            </Window>
+            <Window type="Eftihia/Label" name="LMdef" >
+                <Property name="Area" value="{{0.535714,0},{0.764706,0},{0.714286,0},{0.941177,0}}" />
+                <Property name="Text" value="Μ.Άμυν.:" />
+                <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                <Property name="HorzFormatting" value="LeftAligned" />
+                <Property name="NormalTextColour" value="FF4E1F1F" />
+            </Window>
+            <Window type="Eftihia/Label" name="Patk" >
+                <Property name="Area" value="{{0.214286,0},{0.588235,0},{0.535714,0},{0.764706,0}}" />
+                <Property name="Text" value="1256" />
+                <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                <Property name="HorzFormatting" value="LeftAligned" />
+            </Window>
+            <Window type="Eftihia/Label" name="Pdef" >
+                <Property name="Area" value="{{0.214286,0},{0.764706,0},{0.535714,0},{0.941177,0}}" />
+                <Property name="Text" value="563" />
+                <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                <Property name="HorzFormatting" value="LeftAligned" />
+            </Window>
+            <Window type="Eftihia/Label" name="Mdef" >
+                <Property name="Area" value="{{0.714286,0},{0.764706,0},{0.964286,0},{0.941176,0}}" />
+                <Property name="Text" value="416" />
+                <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                <Property name="HorzFormatting" value="LeftAligned" />
+            </Window>
+            <Window type="Eftihia/Label" name="Name" >
+                <Property name="Area" value="{{0.214286,0},{0.117647,0},{0.678571,0},{0.294117,0}}" />
+                <Property name="Font" value="Ubuntu-10" />
+                <Property name="Text" value="Ευτυχία" />
+                <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                <Property name="HorzFormatting" value="LeftAligned" />
+            </Window>
+            <Window type="Eftihia/Label" name="LHP" >
+                <Property name="Area" value="{{0.0357143,0},{0.411765,0},{0.167857,0},{0.588235,0}}" />
+                <Property name="Text" value="Ζωή:" />
+                <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                <Property name="HorzFormatting" value="LeftAligned" />
+                <Property name="NormalTextColour" value="FF4E1F1F" />
+            </Window>
+            <Window type="Eftihia/Label" name="LLevel" >
+                <Property name="Area" value="{{0.678571,0},{0.117647,0},{0.857143,0},{0.294117,0}}" />
+                <Property name="Text" value="Επίπεδο:" />
+                <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                <Property name="HorzFormatting" value="LeftAligned" />
+                <Property name="NormalTextColour" value="FF4E1F1F" />
+            </Window>
+            <Window type="Eftihia/Label" name="LMatk" >
+                <Property name="Area" value="{{0.535714,0},{0.588235,0},{0.696429,0},{0.764706,0}}" />
+                <Property name="Text" value="Μ.Επίθ.:" />
+                <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                <Property name="HorzFormatting" value="LeftAligned" />
+                <Property name="NormalTextColour" value="FF4E1F1F" />
+            </Window>
+            <Window type="Eftihia/Label" name="LPatk" >
+                <Property name="Area" value="{{0.0357143,0},{0.588235,0},{0.196429,0},{0.764706,0}}" />
+                <Property name="Text" value="Φ.Επίθ.:" />
+                <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                <Property name="HorzFormatting" value="LeftAligned" />
+                <Property name="NormalTextColour" value="FF4E1F1F" />
+            </Window>
+            <Window type="Eftihia/Label" name="LPdef" >
+                <Property name="Area" value="{{0.0357143,0},{0.764706,0},{0.214286,0},{0.941177,0}}" />
+                <Property name="Text" value="Φ.Άμυν.:" />
+                <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                <Property name="HorzFormatting" value="LeftAligned" />
+                <Property name="NormalTextColour" value="FF4E1F1F" />
+            </Window>
+        </Window>
+        <Window type="VerticalLayoutContainer" name="QuestObjs" >
+            <Property name="Area" value="{{0,0},{0,-1.5},{0,225},{0,305.5}}" />
+            <Property name="VerticalAlignment" value="Centre" />
+            <Property name="HorizontalAlignment" value="Right" />
+        </Window>
+        <Window type="Eftihia/FrameWindow" name="Dialog" >
+            <Property name="Area" value="{{0,297.5},{0,-303},{0,652.5},{0,91}}" />
+            <Property name="Text" value="Διάλογος" />
+            <Property name="AlwaysOnTop" value="True" />
+            <Property name="SizingEnabled" value="False" />
+            <Property name="VerticalAlignment" value="Bottom" />
+            <Property name="HorizontalAlignment" value="Centre" />
+            <Window type="Eftihia/Listbox" name="Replies" >
+                <Property name="Area" value="{{0,0},{0,0},{0.28481,243},{0.691057,-165}}" />
+                <Property name="VerticalAlignment" value="Bottom" />
+            </Window>
+            <Window type="Eftihia/MultiLineEditbox" name="Text" >
+                <Property name="Area" value="{{0,0},{0,0},{0.712025,97},{1.00813,-110}}" />
+                <Property name="Text" >Καλησπέρα, και καλως ήρθατε στο Πανδοχείο μας! Πώς μπορώ να σας εξηπηρετίσω;
+</Property>
+                <Property name="ReadOnly" value="True" />
+            </Window>
+            <Window type="Eftihia/Label" name="Apantiseis" >
+                <Property name="Area" value="{{0,-244},{0.121951,211.463},{0,-149},{0.121951,233.463}}" />
+                <Property name="Font" value="Ubuntu-12" />
+                <Property name="Text" value="Απαντήσεις:" />
+                <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                <Property name="HorizontalAlignment" value="Right" />
+            </Window>
+        </Window>
+        <Window type="Eftihia/FrameWindow" name="Equipment" >
+            <Property name="Area" value="{{-0.164323,330.5},{-0.00231481,602.5},{-0.164323,670.5},{-0.00231481,904.5}}" />
+            <Property name="Text" value="Εξοπλοισμός" />
+            <Property name="SizingEnabled" value="False" />
+            <Window type="Eftihia/StaticImage" name="Head" >
+                <Property name="Area" value="{{0.0154321,125.5},{0,0.5},{0.0154321,189.5},{0,64.5}}" />
+                <Property name="Image" value="InventoryIcons/HeadSlot" />
+                <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                <Property name="FrameEnabled" value="False" />
+                <Property name="BackgroundEnabled" value="False" />
+            </Window>
+            <Window type="Eftihia/StaticImage" name="Hands" >
+                <Property name="Area" value="{{0.603395,0},{0.24717,0},{0.603395,64},{0.24717,64}}" />
+                <Property name="Image" value="InventoryIcons/HandsSlot" />
+                <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                <Property name="FrameEnabled" value="False" />
+                <Property name="BackgroundEnabled" value="False" />
+            </Window>
+            <Window type="Eftihia/StaticImage" name="Chest" >
+                <Property name="Area" value="{{0.402778,0},{0.24717,0},{0.402778,64},{0.24717,64}}" />
+                <Property name="Image" value="InventoryIcons/ChestSlot" />
+                <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                <Property name="FrameEnabled" value="False" />
+                <Property name="BackgroundEnabled" value="False" />
+            </Window>
+            <Window type="Eftihia/StaticImage" name="Legs" >
+                <Property name="Area" value="{{0.402778,0},{0.492453,0},{0.402778,64},{0.492453,64}}" />
+                <Property name="Image" value="InventoryIcons/LegsSlot" />
+                <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                <Property name="FrameEnabled" value="False" />
+                <Property name="BackgroundEnabled" value="False" />
+            </Window>
+            <Window type="Eftihia/StaticImage" name="Feet" >
+                <Property name="Area" value="{{0.402778,0},{0.737736,0},{0.402778,64},{0.737736,64}}" />
+                <Property name="Image" value="InventoryIcons/FeetSlot" />
+                <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                <Property name="FrameEnabled" value="False" />
+                <Property name="BackgroundEnabled" value="False" />
+            </Window>
+            <Window type="Eftihia/StaticImage" name="Back" >
+                <Property name="Area" value="{{0.20216,0},{0.24717,0},{0.20216,64},{0.24717,64}}" />
+                <Property name="Image" value="InventoryIcons/BackSlot" />
+                <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                <Property name="FrameEnabled" value="False" />
+                <Property name="BackgroundEnabled" value="False" />
+            </Window>
+            <Window type="Eftihia/StaticImage" name="OffHand" >
+                <Property name="Area" value="{{0.00154319,0},{0.492453,0},{0.00154319,64},{0.492453,64}}" />
+                <Property name="Image" value="InventoryIcons/ShieldSlot" />
+                <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                <Property name="FrameEnabled" value="False" />
+                <Property name="BackgroundEnabled" value="False" />
+            </Window>
+            <Window type="Eftihia/StaticImage" name="Weapon" >
+                <Property name="Area" value="{{0.804012,0},{0.492453,0},{0.804012,64},{0.492453,64}}" />
+                <Property name="Image" value="InventoryIcons/WeaponSlot" />
+                <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                <Property name="FrameEnabled" value="False" />
+                <Property name="BackgroundEnabled" value="False" />
+            </Window>
+            <Window type="Eftihia/StaticImage" name="Ring" >
+                <Property name="Area" value="{{0.804012,0},{0.00188676,0},{0.804012,64},{0.00188676,64}}" />
+                <Property name="Image" value="InventoryIcons/RingSlot" />
+                <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                <Property name="FrameEnabled" value="False" />
+                <Property name="BackgroundEnabled" value="False" />
+            </Window>
+            <Window type="Eftihia/StaticImage" name="Neck" >
+                <Property name="Area" value="{{0.00154319,0},{0.00188676,0},{0.00154319,64},{0.00188676,64}}" />
+                <Property name="Image" value="InventoryIcons/NeckSlot" />
+                <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                <Property name="FrameEnabled" value="False" />
+                <Property name="BackgroundEnabled" value="False" />
+            </Window>
+        </Window>
+        <Window type="Eftihia/FrameWindow" name="Items" >
+            <Property name="Area" value="{{0.192708,0},{0.555556,0},{0.179688,300},{0.555556,300}}" />
+            <Property name="Text" value="Αντικείμενα" />
+            <Window type="Eftihia/StaticImage" name="Slot1" >
+                <Property name="Area" value="{{0,8.46386e-06},{0,7.83801e-06},{0,64},{0,64}}" />
+                <Property name="Image" value="InventoryIcons/EmptySlot" />
+                <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                <Property name="FrameEnabled" value="False" />
+                <Property name="BackgroundEnabled" value="False" />
+            </Window>
+            <Window type="Eftihia/StaticImage" name="Slot2" >
+                <Property name="Area" value="{{0,65},{0,7.838e-06},{0,129},{0,64}}" />
+                <Property name="Image" value="InventoryIcons/EmptySlot" />
+                <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                <Property name="FrameEnabled" value="False" />
+                <Property name="BackgroundEnabled" value="False" />
+            </Window>
+            <Window type="Eftihia/StaticImage" name="Slot3" >
+                <Property name="Area" value="{{0,130},{0,7.838e-06},{0,194},{0,64}}" />
+                <Property name="Image" value="InventoryIcons/EmptySlot" />
+                <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                <Property name="FrameEnabled" value="False" />
+                <Property name="BackgroundEnabled" value="False" />
+            </Window>
+            <Window type="Eftihia/StaticImage" name="Slot4" >
+                <Property name="Area" value="{{0,195},{0,7.838e-06},{0,259},{0,64}}" />
+                <Property name="Image" value="InventoryIcons/EmptySlot" />
+                <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                <Property name="FrameEnabled" value="False" />
+                <Property name="BackgroundEnabled" value="False" />
+            </Window>
+            <Window type="Eftihia/StaticImage" name="Slot6" >
+                <Property name="Area" value="{{0,65},{0.247148,7.838e-06},{0,129},{0.247148,64}}" />
+                <Property name="Image" value="InventoryIcons/EmptySlot" />
+                <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                <Property name="FrameEnabled" value="False" />
+                <Property name="BackgroundEnabled" value="False" />
+            </Window>
+            <Window type="Eftihia/StaticImage" name="Slot8" >
+                <Property name="Area" value="{{0,195},{0.247148,7.838e-06},{0,259},{0.247148,64}}" />
+                <Property name="Image" value="InventoryIcons/EmptySlot" />
+                <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                <Property name="FrameEnabled" value="False" />
+                <Property name="BackgroundEnabled" value="False" />
+            </Window>
+            <Window type="Eftihia/StaticImage" name="Slot7" >
+                <Property name="Area" value="{{0,130},{0.247148,7.838e-06},{0,194},{0.247148,64}}" />
+                <Property name="Image" value="InventoryIcons/EmptySlot" />
+                <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                <Property name="FrameEnabled" value="False" />
+                <Property name="BackgroundEnabled" value="False" />
+            </Window>
+            <Window type="Eftihia/StaticImage" name="Slot5" >
+                <Property name="Area" value="{{0,8.46386e-06},{0.247148,7.83801e-06},{0,64},{0.247148,64}}" />
+                <Property name="Image" value="InventoryIcons/EmptySlot" />
+                <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                <Property name="FrameEnabled" value="False" />
+                <Property name="BackgroundEnabled" value="False" />
+            </Window>
+            <Window type="Eftihia/StaticImage" name="Slot11" >
+                <Property name="Area" value="{{0,130},{0.494297,7.838e-06},{0,194},{0.494297,64}}" />
+                <Property name="Image" value="InventoryIcons/EmptySlot" />
+                <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                <Property name="FrameEnabled" value="False" />
+                <Property name="BackgroundEnabled" value="False" />
+            </Window>
+            <Window type="Eftihia/StaticImage" name="Slot9" >
+                <Property name="Area" value="{{0,8.46386e-06},{0.494297,7.83801e-06},{0,64},{0.494297,64}}" />
+                <Property name="Image" value="InventoryIcons/EmptySlot" />
+                <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                <Property name="FrameEnabled" value="False" />
+                <Property name="BackgroundEnabled" value="False" />
+            </Window>
+            <Window type="Eftihia/StaticImage" name="Slot12" >
+                <Property name="Area" value="{{0,195},{0.494297,7.838e-06},{0,259},{0.494297,64}}" />
+                <Property name="Image" value="InventoryIcons/EmptySlot" />
+                <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                <Property name="FrameEnabled" value="False" />
+                <Property name="BackgroundEnabled" value="False" />
+            </Window>
+            <Window type="Eftihia/StaticImage" name="Slot10" >
+                <Property name="Area" value="{{0,65},{0.494297,7.838e-06},{0,129},{0.494297,64}}" />
+                <Property name="Image" value="InventoryIcons/EmptySlot" />
+                <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                <Property name="FrameEnabled" value="False" />
+                <Property name="BackgroundEnabled" value="False" />
+            </Window>
+            <Window type="Eftihia/StaticImage" name="Slot13" >
+                <Property name="Area" value="{{0,8.46386e-06},{0.741445,7.83801e-06},{0,64},{0.741445,64}}" />
+                <Property name="Image" value="InventoryIcons/EmptySlot" />
+                <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                <Property name="FrameEnabled" value="False" />
+                <Property name="BackgroundEnabled" value="False" />
+            </Window>
+            <Window type="Eftihia/StaticImage" name="Slot15" >
+                <Property name="Area" value="{{0,130},{0.741445,7.838e-06},{0,194},{0.741445,64}}" />
+                <Property name="Image" value="InventoryIcons/EmptySlot" />
+                <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                <Property name="FrameEnabled" value="False" />
+                <Property name="BackgroundEnabled" value="False" />
+            </Window>
+            <Window type="Eftihia/StaticImage" name="Slot16" >
+                <Property name="Area" value="{{0,195},{0.741445,7.838e-06},{0,259},{0.741445,64}}" />
+                <Property name="Image" value="InventoryIcons/EmptySlot" />
+                <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                <Property name="FrameEnabled" value="False" />
+                <Property name="BackgroundEnabled" value="False" />
+            </Window>
+            <Window type="Eftihia/StaticImage" name="Slot14" >
+                <Property name="Area" value="{{0,65},{0.741445,7.838e-06},{0,129},{0.741445,64}}" />
+                <Property name="Image" value="InventoryIcons/EmptySlot" />
+                <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                <Property name="FrameEnabled" value="False" />
+                <Property name="BackgroundEnabled" value="False" />
+            </Window>
+        </Window>
+        <Window type="Eftihia/FrameWindow" name="Abilities" >
+            <Property name="Area" value="{{0.352604,-21.9997},{0.574074,-74.9999},{0.352604,253},{0.574074,310}}" />
+            <Property name="Text" value="Τεχνικές" />
+            <Window type="Eftihia/Label" name="Label" >
+                <Property name="Area" value="{{0,80},{0,0},{0,130},{0,20}}" />
+                <Property name="Text" value="Πόντοι:" />
+                <Property name="MaxSize" value="{{1,0},{1,0}}" />
+            </Window>
+            <Window type="Eftihia/Label" name="Points" >
+                <Property name="Area" value="{{0,135},{0,0},{0,180},{0,20}}" />
+                <Property name="Text" value="0" />
+                <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                <Property name="HorzFormatting" value="LeftAligned" />
+            </Window>
+            <Window type="Eftihia/StaticImage" name="AbilitiesList" >
+                <Property name="Area" value="{{0,4},{0,24},{0,254},{0,344}}" />
+                <Property name="Image" value="Gameplay/Talents_BG" />
+                <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                <Property name="FrameEnabled" value="False" />
+            </Window>
+        </Window>
+        <Window type="Eftihia/StaticImage" name="SpeechBuble" >
+            <Property name="Area" value="{{0,-355.5},{0,386},{0,-134.5},{0,500}}" />
+            <Property name="Image" value="Gameplay/SpeechBubble" />
+            <Property name="MaxSize" value="{{1,0},{1,0}}" />
+            <Property name="FrameEnabled" value="False" />
+            <Property name="BackgroundEnabled" value="False" />
+            <Property name="VerticalAlignment" value="Centre" />
+            <Property name="HorizontalAlignment" value="Centre" />
+            <Property name="MousePassThroughEnabled" value="True" />
+            <Window type="Eftihia/MultiLineEditboxTransp" name="Text" >
+                <Property name="Area" value="{{0,5},{0,5},{0,185},{0,75}}" />
+                <Property name="Font" value="Ubuntu-10" />
+                <Property name="Text" >
+</Property>
+                <Property name="ReadOnly" value="True" />
+                <Property name="MousePassThroughEnabled" value="True" />
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

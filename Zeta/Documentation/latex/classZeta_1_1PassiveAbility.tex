@@ -1,0 +1,128 @@
+\hypertarget{classZeta_1_1PassiveAbility}{\section{Zeta\+:\+:Passive\+Ability Class Reference}
+\label{classZeta_1_1PassiveAbility}\index{Zeta\+::\+Passive\+Ability@{Zeta\+::\+Passive\+Ability}}
+}
+
+
+{\ttfamily \#include $<$Passive\+Ability.\+hpp$>$}
+
+
+
+Inheritance diagram for Zeta\+:\+:Passive\+Ability\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=202pt]{classZeta_1_1PassiveAbility__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Zeta\+:\+:Passive\+Ability\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classZeta_1_1PassiveAbility__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classZeta_1_1Ability_acbc80e4d82c9683d190ed8ca1c80f597}{Result} \hyperlink{classZeta_1_1PassiveAbility_a614c5620ca721be42857860d6b08b297}{invoke} ()
+\item 
+virtual void \hyperlink{classZeta_1_1PassiveAbility_a45d40753e324bfc4752304607b8e8427}{update} (\hyperlink{namespaceZeta_a1e0a1265f9b3bd3075fb0fabd39088ba}{Float} elapsed\+Time)
+\item 
+void \hyperlink{classZeta_1_1PassiveAbility_a9bc4ddcb3bdfef6f55ff478c3fbe4dd2}{accept} (\hyperlink{classZeta_1_1Visitor}{Visitor} \&visitor)
+\item 
+void \hyperlink{classZeta_1_1PassiveAbility_af182d11a5f157d108a39f0e323ed7ea4}{push\+To\+Lua} (lua\+\_\+\+State $\ast$lstate)
+\item 
+\hyperlink{classZeta_1_1PassiveAbility_aed871699023859d3a5327d7c531a0435}{Passive\+Ability} (const \hyperlink{classZeta_1_1PassiveAbilityClass}{Passive\+Ability\+Class} \&\hyperlink{classZeta_1_1ClassifiedAbility_abd6f78106602f84787cac967c2308abe}{ability\+Class}, \hyperlink{classZeta_1_1Lifeform}{Lifeform} $\ast$\hyperlink{classZeta_1_1Ability_ad37bed67f04178297d6fe4c9a2ed619a}{owner}, int \hyperlink{classZeta_1_1Ability_a41d29a6fb79dd19a7eed5f6a4be5de9a}{level})
+\item 
+\hyperlink{classZeta_1_1PassiveAbility_aa2664407054a65ea243f595e3158344c}{$\sim$\+Passive\+Ability} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classZeta_1_1PassiveAbility_aef651b48cfdd153aca93192cdc5f7ccd}{on\+Level\+Change} ()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classZeta_1_1PassiveAbility_aed871699023859d3a5327d7c531a0435}{\index{Zeta\+::\+Passive\+Ability@{Zeta\+::\+Passive\+Ability}!Passive\+Ability@{Passive\+Ability}}
+\index{Passive\+Ability@{Passive\+Ability}!Zeta\+::\+Passive\+Ability@{Zeta\+::\+Passive\+Ability}}
+\subsubsection[{Passive\+Ability}]{\setlength{\rightskip}{0pt plus 5cm}Zeta\+::\+Passive\+Ability\+::\+Passive\+Ability (
+\begin{DoxyParamCaption}
+\item[{const {\bf Passive\+Ability\+Class} \&}]{ability\+Class, }
+\item[{{\bf Lifeform} $\ast$}]{owner, }
+\item[{int}]{level}
+\end{DoxyParamCaption}
+)}}\label{classZeta_1_1PassiveAbility_aed871699023859d3a5327d7c531a0435}
+\hypertarget{classZeta_1_1PassiveAbility_aa2664407054a65ea243f595e3158344c}{\index{Zeta\+::\+Passive\+Ability@{Zeta\+::\+Passive\+Ability}!````~Passive\+Ability@{$\sim$\+Passive\+Ability}}
+\index{````~Passive\+Ability@{$\sim$\+Passive\+Ability}!Zeta\+::\+Passive\+Ability@{Zeta\+::\+Passive\+Ability}}
+\subsubsection[{$\sim$\+Passive\+Ability}]{\setlength{\rightskip}{0pt plus 5cm}Zeta\+::\+Passive\+Ability\+::$\sim$\+Passive\+Ability (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classZeta_1_1PassiveAbility_aa2664407054a65ea243f595e3158344c}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classZeta_1_1PassiveAbility_a9bc4ddcb3bdfef6f55ff478c3fbe4dd2}{\index{Zeta\+::\+Passive\+Ability@{Zeta\+::\+Passive\+Ability}!accept@{accept}}
+\index{accept@{accept}!Zeta\+::\+Passive\+Ability@{Zeta\+::\+Passive\+Ability}}
+\subsubsection[{accept}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+Passive\+Ability\+::accept (
+\begin{DoxyParamCaption}
+\item[{{\bf Visitor} \&}]{visitor}
+\end{DoxyParamCaption}
+)}}\label{classZeta_1_1PassiveAbility_a9bc4ddcb3bdfef6f55ff478c3fbe4dd2}
+\hypertarget{classZeta_1_1PassiveAbility_a614c5620ca721be42857860d6b08b297}{\index{Zeta\+::\+Passive\+Ability@{Zeta\+::\+Passive\+Ability}!invoke@{invoke}}
+\index{invoke@{invoke}!Zeta\+::\+Passive\+Ability@{Zeta\+::\+Passive\+Ability}}
+\subsubsection[{invoke}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Result} Zeta\+::\+Passive\+Ability\+::invoke (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classZeta_1_1PassiveAbility_a614c5620ca721be42857860d6b08b297}
+\hypertarget{classZeta_1_1PassiveAbility_aef651b48cfdd153aca93192cdc5f7ccd}{\index{Zeta\+::\+Passive\+Ability@{Zeta\+::\+Passive\+Ability}!on\+Level\+Change@{on\+Level\+Change}}
+\index{on\+Level\+Change@{on\+Level\+Change}!Zeta\+::\+Passive\+Ability@{Zeta\+::\+Passive\+Ability}}
+\subsubsection[{on\+Level\+Change}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+Passive\+Ability\+::on\+Level\+Change (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{classZeta_1_1PassiveAbility_aef651b48cfdd153aca93192cdc5f7ccd}
+
+
+Implements \hyperlink{classZeta_1_1Ability_ac81e774451daa9476b02ba442a2ea047}{Zeta\+::\+Ability}.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=316pt]{classZeta_1_1PassiveAbility_aef651b48cfdd153aca93192cdc5f7ccd_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classZeta_1_1PassiveAbility_af182d11a5f157d108a39f0e323ed7ea4}{\index{Zeta\+::\+Passive\+Ability@{Zeta\+::\+Passive\+Ability}!push\+To\+Lua@{push\+To\+Lua}}
+\index{push\+To\+Lua@{push\+To\+Lua}!Zeta\+::\+Passive\+Ability@{Zeta\+::\+Passive\+Ability}}
+\subsubsection[{push\+To\+Lua}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+Passive\+Ability\+::push\+To\+Lua (
+\begin{DoxyParamCaption}
+\item[{lua\+\_\+\+State $\ast$}]{lstate}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classZeta_1_1PassiveAbility_af182d11a5f157d108a39f0e323ed7ea4}
+
+
+Implements \hyperlink{classZeta_1_1LuaPushable_a0380ec9cff11f749e8eb67b51b8f82fc}{Zeta\+::\+Lua\+Pushable}.
+
+\hypertarget{classZeta_1_1PassiveAbility_a45d40753e324bfc4752304607b8e8427}{\index{Zeta\+::\+Passive\+Ability@{Zeta\+::\+Passive\+Ability}!update@{update}}
+\index{update@{update}!Zeta\+::\+Passive\+Ability@{Zeta\+::\+Passive\+Ability}}
+\subsubsection[{update}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Zeta\+::\+Passive\+Ability\+::update (
+\begin{DoxyParamCaption}
+\item[{{\bf Float}}]{elapsed\+Time}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classZeta_1_1PassiveAbility_a45d40753e324bfc4752304607b8e8427}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Zeta/\+Core/\+R\+P\+G\+Classes/\hyperlink{PassiveAbility_8hpp}{Passive\+Ability.\+hpp}\end{DoxyCompactItemize}

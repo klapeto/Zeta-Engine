@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified"
+	elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="AnimationClass" type="AnimationClassType" />
+	<xs:complexType name="RectangleType">
+		<xs:attribute type="xs:int" name="x" use="required"></xs:attribute>
+		<xs:attribute type="xs:int" name="y" use="required"></xs:attribute>
+		<xs:attribute type="xs:int" name="width" use="required"></xs:attribute>
+		<xs:attribute type="xs:int" name="height" use="required"></xs:attribute>
+	</xs:complexType>
+	<xs:complexType name="BoundingType">
+		<xs:sequence>
+			<xs:element type="RectangleType" name="Rectangle"
+				maxOccurs="1" minOccurs="1" />
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="UpType">
+		<xs:attribute type="xs:string" name="file" use="required"></xs:attribute>
+		<xs:attribute type="xs:string" name="animation" use="required"></xs:attribute>
+	</xs:complexType>
+	<xs:complexType name="DownType">
+		<xs:attribute type="xs:string" name="file" use="required"></xs:attribute>
+		<xs:attribute type="xs:string" name="animation" use="required"></xs:attribute>
+	</xs:complexType>
+	<xs:complexType name="LeftType">
+		<xs:attribute type="xs:string" name="file" use="required"></xs:attribute>
+		<xs:attribute type="xs:string" name="animation" use="required"></xs:attribute>
+	</xs:complexType>
+	<xs:complexType name="RightType">
+		<xs:attribute type="xs:string" name="file" use="required"></xs:attribute>
+		<xs:attribute type="xs:string" name="animation" use="required"></xs:attribute>
+	</xs:complexType>
+	<xs:complexType name="ActionType">
+		<xs:sequence>
+			<xs:element type="UpType" name="Up" maxOccurs="1"
+				minOccurs="1" />
+			<xs:element type="DownType" name="Down" maxOccurs="1"
+				minOccurs="1" />
+			<xs:element type="LeftType" name="Left" maxOccurs="1"
+				minOccurs="1" />
+			<xs:element type="RightType" name="Right" maxOccurs="1"
+				minOccurs="1" />
+		</xs:sequence>
+		<xs:attribute type="xs:string" name="name" use="required" />
+	</xs:complexType>
+	<xs:complexType name="AnimationClassType">
+		<xs:sequence>
+			<xs:element type="BoundingType" name="Bounding" maxOccurs="1"
+				minOccurs="1" />
+			<xs:element name="TargetArea" maxOccurs="1" minOccurs="1">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="Rectangle" type="RectangleType"
+							maxOccurs="1" minOccurs="1">
+						</xs:element>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="Shadow" maxOccurs="1" minOccurs="0">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="Ellipsis" maxOccurs="1" minOccurs="1">
+							<xs:complexType>
+								<xs:attribute name="centreX" type="xs:int">
+								</xs:attribute>
+								<xs:attribute name="centreY" type="xs:int">
+								</xs:attribute>
+								<xs:attribute name="radiusX" type="xs:int">
+								</xs:attribute>
+								<xs:attribute name="radiusY" type="xs:int">
+								</xs:attribute>
+							</xs:complexType>
+						</xs:element>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element type="ActionType" name="Action" maxOccurs="unbounded"
+				minOccurs="0" />
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>

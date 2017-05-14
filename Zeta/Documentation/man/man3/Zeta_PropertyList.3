@@ -1,0 +1,69 @@
+.TH "Zeta::PropertyList" 3 "Wed Feb 10 2016" "Zeta" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Zeta::PropertyList \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <PropertyList\&.hpp>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBlua_Object\fP \fBgetLuaTable\fP () const "
+.br
+.ti -1c
+.RI "const std::string & \fBgetProperty\fP (const std::string &name) const "
+.br
+.ti -1c
+.RI "void \fBsetProperty\fP (const std::string &name, const std::string &value)"
+.br
+.ti -1c
+.RI "\fBPropertyList\fP ()"
+.br
+.ti -1c
+.RI "\fB~PropertyList\fP ()"
+.br
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBZSmallMap\fP< std::string, 
+.br
+std::string > \fBproperties\fP"
+.br
+.in -1c
+.SS "Static Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "static std::string \fBnullProperty\fP"
+.br
+.in -1c
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Zeta::PropertyList::PropertyList ()"
+
+.SS "Zeta::PropertyList::~PropertyList ()"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "\fBlua_Object\fP Zeta::PropertyList::getLuaTable () const"
+
+.SS "const std::string& Zeta::PropertyList::getProperty (const std::string &name) const"
+
+.SS "void Zeta::PropertyList::setProperty (const std::string &name, const std::string &value)"
+
+.SH "Member Data Documentation"
+.PP 
+.SS "std::string Zeta::PropertyList::nullProperty\fC [static]\fP, \fC [private]\fP"
+
+.SS "\fBZSmallMap\fP<std::string, std::string> Zeta::PropertyList::properties\fC [private]\fP"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Zeta from the source code\&.

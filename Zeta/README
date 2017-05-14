@@ -1,0 +1,73 @@
+
+        \\_______   _____   _______
+       / /____  /  | ____| |__   __|  /\ 
+      ' |/\\ / /   | |__      | |    /  \ 
+           \/ /    |  __|     | |   / /\ \ 
+           / /__/| | |___     | |  / ____ \ 
+          /_____/  |_____|    |_| / /    \ \ 
+             `'
+           Simple 2-Dimensional ARPG Engine	
+
+
+===================================================
+Introduction
+===================================================
+Zeta is a simple 2-Dimensional ARPG Engine aiming to provide developers an 
+easier way to produce small to medium scale ARPG games. This is achieved by 
+taking away some complex operations, like movement and collision, from the 
+game developer and letting him/her work on content and GUI instead.
+
+-------> I wouldn't recommend to anyone begin working on games right now, as the 
+Documentation is not released yet. It is just a demo. The Users Manual will be 
+released in the near future and then everything will be ready for development.
+
+===================================================
+How it works?
+===================================================
+There is the binary core where it handles the 
+"difficult" stuff, and the Content where it is user defined. The developer 
+creates the XML and Lua scripts and the Core "handles" them accordingly. 
+The Engine's Lua Api provides some Low Level functioning too for more advanced 
+programming. However if someone wants to move it even beyond, they will have 
+to get to the Core sources and edit them to their needs.
+
+===================================================
+Platforms supported
+===================================================
+Tested on Ubuntu 14.04, Linux Mint 17.1 and Fedora 21
+Other ABI compatible distros should run it.
+
+===================================================
+How to build Zeta
+===================================================
+
+First of all you need to have a C++ compiler that has most c++11 features available.
+  -GCC > 4.8.2 is a good one.
+
+Make sure you have the gnu build system installed (make)
+
+Also the following libraries installed on your system:
+  -allegro5
+  -lua5.1
+  -zlib
+  -libxml++ >2.6
+  -CEGUI >8.0
+  -tolua++-5.1
+
+Most Libraries are provided by the package managers of your linux distro.
+In debian-based ones, CEGUI might not be present. You need to download, build
+and install it manually,
+
+Once you have all of them, open a terminal and do the most common build process:
+	
+	./configure
+	make -j(how many processor cores you have)   "Eg. make -j2"
+	sudo make install
+
+===================================================
+Suggestions? Bug? Something you want to say?
+===================================================
+http://sourceforge.net/p/eftihia/
+There (for now) there is a Disscusion tab. Anything you want, post there.
+
+

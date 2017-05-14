@@ -1,0 +1,682 @@
+.TH "Zeta::Lifeform" 3 "Wed Feb 10 2016" "Zeta" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Zeta::Lifeform \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Lifeform\&.hpp>\fP
+.PP
+Inherits \fBZeta::Object\fP\&.
+.PP
+Inherited by \fBZeta::Enemy\fP, \fBZeta::Npc\fP, and \fBZeta::Player\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "virtual void \fBupdate\fP (\fBFloat\fP elapsedTime)"
+.br
+.ti -1c
+.RI "virtual void \fBdraw\fP (\fBFloat\fP x, \fBFloat\fP y, \fBFloat\fP rotation=0\&.0f, Float scale=1\&.0f) const "
+.br
+.ti -1c
+.RI "virtual void \fBonCollidedWith\fP (\fBObject\fP *other)"
+.br
+.ti -1c
+.RI "virtual void \fBonClick\fP (\fBObject\fP *other)"
+.br
+.ti -1c
+.RI "virtual void \fBonShow\fP ()"
+.br
+.ti -1c
+.RI "virtual void \fBonHide\fP ()"
+.br
+.ti -1c
+.RI "void \fBmoveToPosition\fP (\fBFloat\fP x, \fBFloat\fP y)"
+.br
+.ti -1c
+.RI "void \fBmoveToPosition\fP (const \fBVector2\fP &pos)"
+.br
+.ti -1c
+.RI "void \fBstartMovingToDirection\fP (const \fBVector2\fP &pos)"
+.br
+.ti -1c
+.RI "const \fBLifeformState\fP & \fBgetState\fP () const "
+.br
+.ti -1c
+.RI "void \fBstopMoving\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetClass\fP (const std::string &path)"
+.br
+.ti -1c
+.RI "void \fBsetClass\fP (const \fBLifeformClass\fP &lifeClass)"
+.br
+.ti -1c
+.RI "const \fBLifeformClass\fP & \fBgetClass\fP () const "
+.br
+.ti -1c
+.RI "void \fBsetAnimationClass\fP (const std::string &path)"
+.br
+.ti -1c
+.RI "void \fBsetActionAnimation\fP (const std::string &\fBname\fP)"
+.br
+.ti -1c
+.RI "bool \fBisAnimationFinished\fP () const "
+.br
+.ti -1c
+.RI "void \fBaddOffAnimation\fP (const \fBAnimation\fP &animation, \fBFloat\fP dx=0\&.0f, Float dy=0\&.0f, AnimationHandler::QueuePlace queue=AnimationHandler::QueuePlace::Front)"
+.br
+.ti -1c
+.RI "\fBAnimationHandler\fP & \fBgetAnimationHandler\fP ()"
+.br
+.ti -1c
+.RI "const \fBAnimationHandler\fP & \fBgetAnimationHandler\fP () const "
+.br
+.ti -1c
+.RI "void \fBresetState\fP ()"
+.br
+.ti -1c
+.RI "bool \fBcanMove\fP () const "
+.br
+.ti -1c
+.RI "void \fBfullResetState\fP ()"
+.br
+.ti -1c
+.RI "bool \fBisAlive\fP () const "
+.br
+.ti -1c
+.RI "\fBAttributeValue\fP \fBgetAttributeValue\fP (const std::string &\fBname\fP) const "
+.br
+.ti -1c
+.RI "\fBAttribute\fP & \fBgetAttribute\fP (const std::string &\fBname\fP)"
+.br
+.ti -1c
+.RI "const \fBAttribute\fP & \fBgetAttribute\fP (const std::string &\fBname\fP) const "
+.br
+.ti -1c
+.RI "void \fBsetAttributeBaseValue\fP (const std::string &\fBname\fP, \fBAttributeValue\fP value)"
+.br
+.ti -1c
+.RI "void \fBgetAttributesLuaTable\fP () const "
+.br
+.ti -1c
+.RI "void \fBaddAttributeModifier\fP (const std::string &attributeName, \fBModifier\fP *mod)"
+.br
+.ti -1c
+.RI "void \fBaddAttributeModifier\fP (const std::string &attributeName, const std::string &modifierName, \fBFloat\fP value, enum \fBModifier::Type\fP type)"
+.br
+.ti -1c
+.RI "void \fBremoveAttributeModifier\fP (const std::string &attributeName, const std::string &modifierName)"
+.br
+.ti -1c
+.RI "void \fBoffsetMana\fP (\fBAttributeValue\fP value)"
+.br
+.ti -1c
+.RI "void \fBoffsetHP\fP (\fBAttributeValue\fP value)"
+.br
+.ti -1c
+.RI "void \fBsetHP\fP (\fBAttributeValue\fP value)"
+.br
+.ti -1c
+.RI "void \fBsetMana\fP (\fBAttributeValue\fP value)"
+.br
+.ti -1c
+.RI "void \fBaddEffect\fP (\fBEffect\fP *eff)"
+.br
+.ti -1c
+.RI "bool \fBcanReceiveEffect\fP (const \fBEffectClass\fP &effClass) const "
+.br
+.ti -1c
+.RI "const std::list< \fBEffect\fP * > & \fBgetEffects\fP () const "
+.br
+.ti -1c
+.RI "const \fBZMap\fP< std::string, 
+.br
+\fBActiveAbility\fP * > & \fBgetActiveAbilities\fP () const "
+.br
+.ti -1c
+.RI "bool \fBhasTarget\fP () const "
+.br
+.ti -1c
+.RI "bool \fBisDirty\fP () const "
+.br
+.ti -1c
+.RI "void \fBsetDirty\fP (bool val=true)"
+.br
+.ti -1c
+.RI "void \fBsetTarget\fP (\fBLifeform\fP *trg)"
+.br
+.ti -1c
+.RI "\fBLifeform\fP * \fBgetTarget\fP ()"
+.br
+.ti -1c
+.RI "bool \fBisInMeleeRange\fP (const \fBLifeform\fP *lf) const "
+.br
+.ti -1c
+.RI "int \fBgetLevel\fP () const "
+.br
+.ti -1c
+.RI "bool \fBisMoving\fP () const "
+.br
+.ti -1c
+.RI "bool \fBisDying\fP () const "
+.br
+.ti -1c
+.RI "bool \fBisInCombat\fP () const "
+.br
+.ti -1c
+.RI "void \fBsetInCombat\fP (bool combat)"
+.br
+.ti -1c
+.RI "bool \fBisActionLocked\fP () const "
+.br
+.ti -1c
+.RI "void \fBsetActionLocked\fP (bool lock)"
+.br
+.ti -1c
+.RI "const \fBFaction\fP & \fBgetFaction\fP () const "
+.br
+.ti -1c
+.RI "bool \fBisHostileWith\fP (\fBLifeform\fP *other) const "
+.br
+.ti -1c
+.RI "const \fBLuaTable\fP & \fBgetTable\fP () const "
+.br
+.ti -1c
+.RI "\fBlua_Object\fP \fBgetLuaTable\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetLuaTable\fP (\fBlua_Object\fP \fBtable\fP)"
+.br
+.ti -1c
+.RI "\fBAbility::Result\fP \fBinvokeAbility\fP (const std::string &\fBname\fP) const "
+.br
+.ti -1c
+.RI "void \fBaddAbility\fP (const std::string &abilityClass, int \fBlevel\fP)"
+.br
+.ti -1c
+.RI "void \fBaddAbility\fP (const \fBAbilityClass\fP &abilityClass, int \fBlevel\fP)"
+.br
+.ti -1c
+.RI "\fBActiveAbility\fP * \fBgetActiveAbility\fP (const std::string &abilityName)"
+.br
+.ti -1c
+.RI "\fBPassiveAbility\fP * \fBgetPassiveAbility\fP (const std::string &abilityName)"
+.br
+.ti -1c
+.RI "\fBRegeneration\fP * \fBgetRegeneration\fP (const std::string &regenerationName)"
+.br
+.ti -1c
+.RI "\fBAbility\fP * \fBgetAbility\fP (const std::string &abilityName)"
+.br
+.ti -1c
+.RI "virtual void \fBteleportToCordinates\fP (\fBFloat\fP x, \fBFloat\fP y)"
+.br
+.ti -1c
+.RI "virtual void \fBdie\fP ()"
+.br
+.ti -1c
+.RI "virtual void \fBresurect\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetCastingState\fP ()"
+.br
+.ti -1c
+.RI "void \fBhardReset\fP ()"
+.br
+.ti -1c
+.RI "void \fBresetShapes\fP ()"
+.br
+.ti -1c
+.RI "void \fBface\fP (const \fBVector2\fP &\fBposition\fP)"
+.br
+.ti -1c
+.RI "void \fBface\fP (\fBFloat\fP x, \fBFloat\fP y)"
+.br
+.ti -1c
+.RI "void \fBface\fP (\fBObject\fP *other)"
+.br
+.ti -1c
+.RI "bool \fBisFacing\fP (\fBObject\fP *other) const "
+.br
+.ti -1c
+.RI "virtual void \fBpushToLua\fP (lua_State *lstate)"
+.br
+.ti -1c
+.RI "virtual void \fBaccept\fP (\fBVisitor\fP &visitor)"
+.br
+.ti -1c
+.RI "\fBLifeform\fP ()"
+.br
+.ti -1c
+.RI "\fBLifeform\fP (const std::string &lifeClass, \fBFloat\fP x, \fBFloat\fP y)"
+.br
+.ti -1c
+.RI "\fBLifeform\fP (const \fBLifeformClass\fP &lifeClass, \fBFloat\fP x, \fBFloat\fP y)"
+.br
+.ti -1c
+.RI "virtual \fB~Lifeform\fP ()"
+.br
+.in -1c
+.SS "Protected Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBsetIdleState\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetDeadState\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetMovingState\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetState\fP (const \fBLifeformState\fP &st)"
+.br
+.ti -1c
+.RI "void \fBsetState\fP (\fBLifeformState::CombinedState\fP newState)"
+.br
+.ti -1c
+.RI "virtual void \fBupdateMovement\fP (\fBFloat\fP elapsedTime)"
+.br
+.ti -1c
+.RI "void \fBupdateEffects\fP (\fBFloat\fP elapsedTime)"
+.br
+.ti -1c
+.RI "void \fBupdateAbilities\fP (\fBFloat\fP elapsedTime)"
+.br
+.ti -1c
+.RI "virtual void \fBaddShapesToBeOffseted\fP ()"
+.br
+.ti -1c
+.RI "void \fBcalculateDirection\fP ()"
+.br
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBZMap\fP< std::string, \fBAttribute\fP > \fBattributes\fP"
+.br
+.ti -1c
+.RI "\fBZMap\fP< std::string, \fBModifier\fP * > \fBmodifiers\fP"
+.br
+.ti -1c
+.RI "\fBZMap\fP< std::string, 
+.br
+\fBActiveAbility\fP * > \fBactiveAbilities\fP"
+.br
+.ti -1c
+.RI "\fBZMap\fP< std::string, 
+.br
+\fBPassiveAbility\fP * > \fBpassiveAbilities\fP"
+.br
+.ti -1c
+.RI "\fBZMap\fP< std::string, \fBRegeneration\fP * > \fBregenerations\fP"
+.br
+.ti -1c
+.RI "std::list< \fBEffect\fP * > \fBeffects\fP"
+.br
+.ti -1c
+.RI "\fBZSet\fP< std::string > \fBnonStackableEffects\fP"
+.br
+.ti -1c
+.RI "\fBAnimationHandler\fP \fBanimHandler\fP"
+.br
+.ti -1c
+.RI "const \fBLifeformClass\fP * \fBlifeformClass\fP"
+.br
+.ti -1c
+.RI "\fBEllipsis\fP \fBshadow\fP"
+.br
+.ti -1c
+.RI "\fBVector2\fP \fBtargetPosition\fP"
+.br
+.ti -1c
+.RI "\fBVector2\fP \fBdirection\fP"
+.br
+.ti -1c
+.RI "\fBLuaTable\fP \fBtable\fP"
+.br
+.ti -1c
+.RI "\fBLuaFunctor\fP \fBonCollisionF\fP"
+.br
+.ti -1c
+.RI "\fBLuaFunctor\fP \fBonClickF\fP"
+.br
+.ti -1c
+.RI "\fBLifeform\fP * \fBtarget\fP"
+.br
+.ti -1c
+.RI "\fBBehaviour\fP * \fBgeneralAI\fP"
+.br
+.ti -1c
+.RI "\fBBehaviour\fP * \fBmovementAI\fP"
+.br
+.ti -1c
+.RI "const \fBFaction\fP * \fBfaction\fP"
+.br
+.ti -1c
+.RI "int \fBlevel\fP"
+.br
+.ti -1c
+.RI "\fBLifeformState\fP \fBstate\fP"
+.br
+.ti -1c
+.RI "\fBLifeformState\fP \fBprevState\fP"
+.br
+.ti -1c
+.RI "bool \fBinCombat\fP"
+.br
+.ti -1c
+.RI "bool \fBdirty\fP"
+.br
+.ti -1c
+.RI "bool \fBactionLocked\fP"
+.br
+.in -1c
+.SS "Friends"
+
+.in +1c
+.ti -1c
+.RI "class \fBLifeformClass\fP"
+.br
+.in -1c
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Zeta::Lifeform::Lifeform ()"
+
+.SS "Zeta::Lifeform::Lifeform (const std::string &lifeClass, \fBFloat\fPx, \fBFloat\fPy)"
+
+.SS "Zeta::Lifeform::Lifeform (const \fBLifeformClass\fP &lifeClass, \fBFloat\fPx, \fBFloat\fPy)"
+
+.SS "virtual Zeta::Lifeform::~Lifeform ()\fC [virtual]\fP"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "virtual void Zeta::Lifeform::accept (\fBVisitor\fP &visitor)\fC [virtual]\fP"
+
+.PP
+Implements \fBZeta::Object\fP\&.
+.PP
+Reimplemented in \fBZeta::Player\fP\&.
+.SS "void Zeta::Lifeform::addAbility (const std::string &abilityClass, intlevel)"
+
+.SS "void Zeta::Lifeform::addAbility (const \fBAbilityClass\fP &abilityClass, intlevel)"
+
+.SS "void Zeta::Lifeform::addAttributeModifier (const std::string &attributeName, \fBModifier\fP *mod)"
+
+.SS "void Zeta::Lifeform::addAttributeModifier (const std::string &attributeName, const std::string &modifierName, \fBFloat\fPvalue, enum \fBModifier::Type\fPtype)"
+
+.SS "void Zeta::Lifeform::addEffect (\fBEffect\fP *eff)"
+
+.SS "void Zeta::Lifeform::addOffAnimation (const \fBAnimation\fP &animation, \fBFloat\fPdx = \fC0\&.0f\fP, \fBFloat\fPdy = \fC0\&.0f\fP, \fBAnimationHandler::QueuePlace\fPqueue = \fC\fBAnimationHandler::QueuePlace::Front\fP\fP)\fC [inline]\fP"
+
+.SS "virtual void Zeta::Lifeform::addShapesToBeOffseted ()\fC [protected]\fP, \fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBZeta::Object\fP\&.
+.SS "void Zeta::Lifeform::calculateDirection ()\fC [protected]\fP"
+
+.SS "bool Zeta::Lifeform::canMove () const\fC [inline]\fP"
+
+.SS "bool Zeta::Lifeform::canReceiveEffect (const \fBEffectClass\fP &effClass) const"
+
+.SS "virtual void Zeta::Lifeform::die ()\fC [virtual]\fP"
+
+.PP
+Reimplemented in \fBZeta::Enemy\fP\&.
+.SS "virtual void Zeta::Lifeform::draw (\fBFloat\fPx, \fBFloat\fPy, \fBFloat\fProtation = \fC0\&.0f\fP, \fBFloat\fPscale = \fC1\&.0f\fP) const\fC [virtual]\fP"
+Draws the \fBObject\fP on screen\&. Be advised, the x,y, offsets might have different meaning on different implementations\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIx\fP X offset to be applied on the drawing 
+.br
+\fIy\fP Y offset to be applied on the drawing 
+.br
+\fIrotation\fP the rotation to be applied on the drawing 
+.RE
+.PP
+
+.PP
+Implements \fBZeta::Drawable\fP\&.
+.SS "void Zeta::Lifeform::face (const \fBVector2\fP &position)"
+
+.SS "void Zeta::Lifeform::face (\fBFloat\fPx, \fBFloat\fPy)\fC [inline]\fP"
+
+.SS "void Zeta::Lifeform::face (\fBObject\fP *other)\fC [inline]\fP"
+
+.SS "void Zeta::Lifeform::fullResetState ()"
+
+.SS "\fBAbility\fP* Zeta::Lifeform::getAbility (const std::string &abilityName)"
+
+.SS "const \fBZMap\fP<std::string, \fBActiveAbility\fP*>& Zeta::Lifeform::getActiveAbilities () const\fC [inline]\fP"
+
+.SS "\fBActiveAbility\fP* Zeta::Lifeform::getActiveAbility (const std::string &abilityName)"
+
+.SS "\fBAnimationHandler\fP& Zeta::Lifeform::getAnimationHandler ()\fC [inline]\fP"
+
+.SS "const \fBAnimationHandler\fP& Zeta::Lifeform::getAnimationHandler () const\fC [inline]\fP"
+
+.SS "\fBAttribute\fP& Zeta::Lifeform::getAttribute (const std::string &name)\fC [inline]\fP"
+
+.SS "const \fBAttribute\fP& Zeta::Lifeform::getAttribute (const std::string &name) const\fC [inline]\fP"
+
+.SS "void Zeta::Lifeform::getAttributesLuaTable () const"
+
+.SS "\fBAttributeValue\fP Zeta::Lifeform::getAttributeValue (const std::string &name) const\fC [inline]\fP"
+
+.SS "const \fBLifeformClass\fP& Zeta::Lifeform::getClass () const\fC [inline]\fP"
+
+.SS "const std::list<\fBEffect\fP*>& Zeta::Lifeform::getEffects () const\fC [inline]\fP"
+
+.SS "const \fBFaction\fP& Zeta::Lifeform::getFaction () const\fC [inline]\fP"
+
+.SS "int Zeta::Lifeform::getLevel () const\fC [inline]\fP"
+
+.SS "\fBlua_Object\fP Zeta::Lifeform::getLuaTable ()"
+
+.SS "\fBPassiveAbility\fP* Zeta::Lifeform::getPassiveAbility (const std::string &abilityName)"
+
+.SS "\fBRegeneration\fP* Zeta::Lifeform::getRegeneration (const std::string &regenerationName)"
+
+.SS "const \fBLifeformState\fP& Zeta::Lifeform::getState () const\fC [inline]\fP"
+
+.SS "const \fBLuaTable\fP& Zeta::Lifeform::getTable () const\fC [inline]\fP"
+
+.SS "\fBLifeform\fP* Zeta::Lifeform::getTarget ()\fC [inline]\fP"
+
+.SS "void Zeta::Lifeform::hardReset ()"
+
+.SS "bool Zeta::Lifeform::hasTarget () const\fC [inline]\fP"
+
+.SS "\fBAbility::Result\fP Zeta::Lifeform::invokeAbility (const std::string &name) const"
+
+.SS "bool Zeta::Lifeform::isActionLocked () const\fC [inline]\fP"
+
+.SS "bool Zeta::Lifeform::isAlive () const\fC [inline]\fP"
+
+.SS "bool Zeta::Lifeform::isAnimationFinished () const"
+
+.SS "bool Zeta::Lifeform::isDirty () const\fC [inline]\fP"
+
+.SS "bool Zeta::Lifeform::isDying () const\fC [inline]\fP"
+
+.SS "bool Zeta::Lifeform::isFacing (\fBObject\fP *other) const"
+
+.SS "bool Zeta::Lifeform::isHostileWith (\fBLifeform\fP *other) const"
+
+.SS "bool Zeta::Lifeform::isInCombat () const\fC [inline]\fP"
+
+.SS "bool Zeta::Lifeform::isInMeleeRange (const \fBLifeform\fP *lf) const\fC [inline]\fP"
+
+.SS "bool Zeta::Lifeform::isMoving () const\fC [inline]\fP"
+
+.SS "void Zeta::Lifeform::moveToPosition (\fBFloat\fPx, \fBFloat\fPy)"
+
+.SS "void Zeta::Lifeform::moveToPosition (const \fBVector2\fP &pos)\fC [inline]\fP"
+
+.SS "void Zeta::Lifeform::offsetHP (\fBAttributeValue\fPvalue)"
+
+.SS "void Zeta::Lifeform::offsetMana (\fBAttributeValue\fPvalue)"
+
+.SS "virtual void Zeta::Lifeform::onClick (\fBObject\fP *other)\fC [virtual]\fP"
+
+.PP
+Implements \fBZeta::Object\fP\&.
+.PP
+Reimplemented in \fBZeta::Npc\fP\&.
+.SS "virtual void Zeta::Lifeform::onCollidedWith (\fBObject\fP *other)\fC [virtual]\fP"
+
+.PP
+Implements \fBZeta::Object\fP\&.
+.PP
+Reimplemented in \fBZeta::Npc\fP\&.
+.SS "virtual void Zeta::Lifeform::onHide ()\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBZeta::Object\fP\&.
+.PP
+Reimplemented in \fBZeta::Player\fP\&.
+.SS "virtual void Zeta::Lifeform::onShow ()\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBZeta::Object\fP\&.
+.PP
+Reimplemented in \fBZeta::Player\fP\&.
+.SS "virtual void Zeta::Lifeform::pushToLua (lua_State *lstate)\fC [virtual]\fP"
+
+.PP
+Implements \fBZeta::LuaPushable\fP\&.
+.PP
+Reimplemented in \fBZeta::Player\fP, \fBZeta::Enemy\fP, and \fBZeta::Npc\fP\&.
+.SS "void Zeta::Lifeform::removeAttributeModifier (const std::string &attributeName, const std::string &modifierName)"
+
+.SS "void Zeta::Lifeform::resetShapes ()"
+
+.SS "void Zeta::Lifeform::resetState ()\fC [inline]\fP"
+
+.SS "virtual void Zeta::Lifeform::resurect ()\fC [virtual]\fP"
+
+.SS "void Zeta::Lifeform::setActionAnimation (const std::string &name)"
+
+.SS "void Zeta::Lifeform::setActionLocked (boollock)\fC [inline]\fP"
+
+.SS "void Zeta::Lifeform::setAnimationClass (const std::string &path)"
+
+.SS "void Zeta::Lifeform::setAttributeBaseValue (const std::string &name, \fBAttributeValue\fPvalue)"
+
+.SS "void Zeta::Lifeform::setCastingState ()"
+
+.SS "void Zeta::Lifeform::setClass (const std::string &path)"
+
+.SS "void Zeta::Lifeform::setClass (const \fBLifeformClass\fP &lifeClass)"
+
+.SS "void Zeta::Lifeform::setDeadState ()\fC [protected]\fP"
+
+.SS "void Zeta::Lifeform::setDirty (boolval = \fCtrue\fP)\fC [inline]\fP"
+
+.SS "void Zeta::Lifeform::setHP (\fBAttributeValue\fPvalue)"
+
+.SS "void Zeta::Lifeform::setIdleState ()\fC [protected]\fP"
+
+.SS "void Zeta::Lifeform::setInCombat (boolcombat)\fC [inline]\fP"
+
+.SS "void Zeta::Lifeform::setLuaTable (\fBlua_Object\fPtable)"
+
+.SS "void Zeta::Lifeform::setMana (\fBAttributeValue\fPvalue)"
+
+.SS "void Zeta::Lifeform::setMovingState ()\fC [protected]\fP"
+
+.SS "void Zeta::Lifeform::setState (const \fBLifeformState\fP &st)\fC [protected]\fP"
+
+.SS "void Zeta::Lifeform::setState (\fBLifeformState::CombinedState\fPnewState)\fC [protected]\fP"
+
+.SS "void Zeta::Lifeform::setTarget (\fBLifeform\fP *trg)\fC [inline]\fP"
+
+.SS "void Zeta::Lifeform::startMovingToDirection (const \fBVector2\fP &pos)"
+
+.SS "void Zeta::Lifeform::stopMoving ()"
+
+.SS "virtual void Zeta::Lifeform::teleportToCordinates (\fBFloat\fPx, \fBFloat\fPy)\fC [virtual]\fP"
+
+.PP
+Reimplemented in \fBZeta::Player\fP\&.
+.SS "virtual void Zeta::Lifeform::update (\fBFloat\fPelapsedTime)\fC [virtual]\fP"
+
+.PP
+Implements \fBZeta::Updateable\fP\&.
+.PP
+Reimplemented in \fBZeta::Player\fP, and \fBZeta::Enemy\fP\&.
+.SS "void Zeta::Lifeform::updateAbilities (\fBFloat\fPelapsedTime)\fC [protected]\fP"
+
+.SS "void Zeta::Lifeform::updateEffects (\fBFloat\fPelapsedTime)\fC [protected]\fP"
+
+.SS "virtual void Zeta::Lifeform::updateMovement (\fBFloat\fPelapsedTime)\fC [protected]\fP, \fC [virtual]\fP"
+
+.PP
+Reimplemented in \fBZeta::Player\fP\&.
+.SH "Friends And Related Function Documentation"
+.PP 
+.SS "friend class \fBLifeformClass\fP\fC [friend]\fP"
+
+.SH "Member Data Documentation"
+.PP 
+.SS "bool Zeta::Lifeform::actionLocked\fC [protected]\fP"
+
+.SS "\fBZMap\fP<std::string, \fBActiveAbility\fP*> Zeta::Lifeform::activeAbilities\fC [protected]\fP"
+
+.SS "\fBAnimationHandler\fP Zeta::Lifeform::animHandler\fC [protected]\fP"
+
+.SS "\fBZMap\fP<std::string, \fBAttribute\fP> Zeta::Lifeform::attributes\fC [mutable]\fP, \fC [protected]\fP"
+
+.SS "\fBVector2\fP Zeta::Lifeform::direction\fC [protected]\fP"
+
+.SS "bool Zeta::Lifeform::dirty\fC [protected]\fP"
+
+.SS "std::list<\fBEffect\fP*> Zeta::Lifeform::effects\fC [protected]\fP"
+
+.SS "const \fBFaction\fP* Zeta::Lifeform::faction\fC [protected]\fP"
+
+.SS "\fBBehaviour\fP* Zeta::Lifeform::generalAI\fC [protected]\fP"
+
+.SS "bool Zeta::Lifeform::inCombat\fC [protected]\fP"
+
+.SS "int Zeta::Lifeform::level\fC [protected]\fP"
+
+.SS "const \fBLifeformClass\fP* Zeta::Lifeform::lifeformClass\fC [protected]\fP"
+
+.SS "\fBZMap\fP<std::string, \fBModifier\fP*> Zeta::Lifeform::modifiers\fC [protected]\fP"
+
+.SS "\fBBehaviour\fP* Zeta::Lifeform::movementAI\fC [protected]\fP"
+
+.SS "\fBZSet\fP<std::string> Zeta::Lifeform::nonStackableEffects\fC [protected]\fP"
+
+.SS "\fBLuaFunctor\fP Zeta::Lifeform::onClickF\fC [protected]\fP"
+
+.SS "\fBLuaFunctor\fP Zeta::Lifeform::onCollisionF\fC [protected]\fP"
+
+.SS "\fBZMap\fP<std::string, \fBPassiveAbility\fP*> Zeta::Lifeform::passiveAbilities\fC [protected]\fP"
+
+.SS "\fBLifeformState\fP Zeta::Lifeform::prevState\fC [protected]\fP"
+
+.SS "\fBZMap\fP<std::string, \fBRegeneration\fP*> Zeta::Lifeform::regenerations\fC [protected]\fP"
+
+.SS "\fBEllipsis\fP Zeta::Lifeform::shadow\fC [protected]\fP"
+
+.SS "\fBLifeformState\fP Zeta::Lifeform::state\fC [protected]\fP"
+
+.SS "\fBLuaTable\fP Zeta::Lifeform::table\fC [protected]\fP"
+
+.SS "\fBLifeform\fP* Zeta::Lifeform::target\fC [protected]\fP"
+
+.SS "\fBVector2\fP Zeta::Lifeform::targetPosition\fC [protected]\fP"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Zeta from the source code\&.

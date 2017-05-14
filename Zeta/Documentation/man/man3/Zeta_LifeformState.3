@@ -1,0 +1,164 @@
+.TH "Zeta::LifeformState" 3 "Wed Feb 10 2016" "Zeta" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Zeta::LifeformState \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <LifeformState\&.hpp>\fP
+.SS "Public Types"
+
+.in +1c
+.ti -1c
+.RI "enum \fBDirection\fP { \fBDown\fP = 1, \fBUp\fP, \fBLeft\fP, \fBRight\fP }"
+.br
+.ti -1c
+.RI "enum \fBAction\fP { \fBIdle\fP = (1 << 4), \fBMoving\fP = (2 << 4), \fBDying\fP = (3 << 4), \fBDead\fP = (4 << 4), \fBCasting\fP = (5 << 4) }"
+.br
+.ti -1c
+.RI "typedef int \fBCombinedState\fP"
+.br
+.in -1c
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBset\fP (int combinedState)"
+.br
+.ti -1c
+.RI "\fBCombinedState\fP \fBgetCombinedState\fP () const "
+.br
+.ti -1c
+.RI "void \fBsetAction\fP (\fBAction\fP action)"
+.br
+.ti -1c
+.RI "void \fBsetDirection\fP (\fBDirection\fP direction)"
+.br
+.ti -1c
+.RI "\fBAction\fP \fBgetAction\fP () const "
+.br
+.ti -1c
+.RI "\fBDirection\fP \fBgetDirection\fP () const "
+.br
+.ti -1c
+.RI "void \fBoperator=\fP (int combinedState)"
+.br
+.ti -1c
+.RI "\fBLifeformState\fP ()"
+.br
+.ti -1c
+.RI "\fBLifeformState\fP (int combinedState)"
+.br
+.ti -1c
+.RI "\fBLifeformState\fP (const \fBLifeformState\fP &)=default"
+.br
+.ti -1c
+.RI "\fBLifeformState\fP (\fBLifeformState\fP &&)=default"
+.br
+.ti -1c
+.RI "\fBLifeformState\fP & \fBoperator=\fP (const \fBLifeformState\fP &)=default"
+.br
+.ti -1c
+.RI "\fB~LifeformState\fP ()"
+.br
+.in -1c
+.SS "Static Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "static const int \fBmaxDirectionValue\fP = \fBRight\fP"
+.br
+.ti -1c
+.RI "static const int \fBmaxActionValue\fP = \fBCasting\fP >> 4"
+.br
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBDirection\fP \fBm_direction\fP"
+.br
+.ti -1c
+.RI "\fBAction\fP \fBm_action\fP"
+.br
+.in -1c
+.SH "Member Typedef Documentation"
+.PP 
+.SS "typedef int \fBZeta::LifeformState::CombinedState\fP"
+
+.SH "Member Enumeration Documentation"
+.PP 
+.SS "enum \fBZeta::LifeformState::Action\fP"
+
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fIIdle \fP\fP
+.TP
+\fB\fIMoving \fP\fP
+.TP
+\fB\fIDying \fP\fP
+.TP
+\fB\fIDead \fP\fP
+.TP
+\fB\fICasting \fP\fP
+.SS "enum \fBZeta::LifeformState::Direction\fP"
+
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fIDown \fP\fP
+.TP
+\fB\fIUp \fP\fP
+.TP
+\fB\fILeft \fP\fP
+.TP
+\fB\fIRight \fP\fP
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Zeta::LifeformState::LifeformState ()\fC [inline]\fP"
+
+.SS "Zeta::LifeformState::LifeformState (intcombinedState)\fC [inline]\fP"
+
+.SS "Zeta::LifeformState::LifeformState (const \fBLifeformState\fP &)\fC [default]\fP"
+
+.SS "Zeta::LifeformState::LifeformState (\fBLifeformState\fP &&)\fC [default]\fP"
+
+.SS "Zeta::LifeformState::~LifeformState ()\fC [inline]\fP"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "\fBAction\fP Zeta::LifeformState::getAction () const\fC [inline]\fP"
+
+.SS "\fBCombinedState\fP Zeta::LifeformState::getCombinedState () const\fC [inline]\fP"
+
+.SS "\fBDirection\fP Zeta::LifeformState::getDirection () const\fC [inline]\fP"
+
+.SS "void Zeta::LifeformState::operator= (intcombinedState)\fC [inline]\fP"
+
+.SS "\fBLifeformState\fP& Zeta::LifeformState::operator= (const \fBLifeformState\fP &)\fC [default]\fP"
+
+.SS "void Zeta::LifeformState::set (intcombinedState)\fC [inline]\fP"
+
+.SS "void Zeta::LifeformState::setAction (\fBAction\fPaction)\fC [inline]\fP"
+
+.SS "void Zeta::LifeformState::setDirection (\fBDirection\fPdirection)\fC [inline]\fP"
+
+.SH "Member Data Documentation"
+.PP 
+.SS "\fBAction\fP Zeta::LifeformState::m_action\fC [private]\fP"
+
+.SS "\fBDirection\fP Zeta::LifeformState::m_direction\fC [private]\fP"
+
+.SS "const int Zeta::LifeformState::maxActionValue = \fBCasting\fP >> 4\fC [static]\fP"
+
+.SS "const int Zeta::LifeformState::maxDirectionValue = \fBRight\fP\fC [static]\fP"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Zeta from the source code\&.

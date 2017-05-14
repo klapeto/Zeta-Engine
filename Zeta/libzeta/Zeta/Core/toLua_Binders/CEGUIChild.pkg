@@ -1,0 +1,16 @@
+
+$#include <Zeta/Core/RPGClasses/CEGUIChild.hpp>
+
+class CEGUIChild: public ChildObject {
+public:
+	void setOffesets(Float offX, Float offY);
+	bool isDestroy() const;
+	void setDestroy(bool destroy);
+	Float getOffsetX() const;
+	void setOffsetX(Float offX);
+	Float getOffsetY() const;
+	void setOffsetY(Float offY);
+	CEGUI::Window* getWindow() const;
+	void setWindow(CEGUI::Window* window);
+	CEGUIChild(CEGUI::Window* window, bool destroy = false);
+};

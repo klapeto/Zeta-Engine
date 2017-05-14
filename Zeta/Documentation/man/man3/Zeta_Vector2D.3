@@ -1,0 +1,103 @@
+.TH "Zeta::Vector2D< type >" 3 "Wed Feb 10 2016" "Zeta" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Zeta::Vector2D< type > \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Vector2D\&.hpp>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "type & \fBat\fP (size_t x, size_t y)"
+.br
+.ti -1c
+.RI "const type & \fBat\fP (size_t x, size_t y) const "
+.br
+.ti -1c
+.RI "type & \fBoperator()\fP (size_t x, size_t y)"
+.br
+.ti -1c
+.RI "const type & \fBoperator()\fP (size_t x, size_t y) const "
+.br
+.ti -1c
+.RI "void \fBresize\fP (size_t \fBrows\fP, size_t \fBcolumns\fP)"
+.br
+.ti -1c
+.RI "size_t \fBgetRowsN\fP () const "
+.br
+.ti -1c
+.RI "size_t \fBgetColumnsN\fP () const "
+.br
+.ti -1c
+.RI "void \fBclear\fP ()"
+.br
+.ti -1c
+.RI "std::vector< type > & \fBgetInternal\fP ()"
+.br
+.ti -1c
+.RI "\fBVector2D\fP ()"
+.br
+.ti -1c
+.RI "\fBVector2D\fP (size_t \fBrows\fP, size_t \fBcolumns\fP)"
+.br
+.ti -1c
+.RI "\fB~Vector2D\fP ()"
+.br
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "std::vector< type > \fBvec\fP"
+.br
+.ti -1c
+.RI "size_t \fBcolumns\fP"
+.br
+.ti -1c
+.RI "size_t \fBrows\fP"
+.br
+.in -1c
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "template<typename type> \fBZeta::Vector2D\fP< type >::\fBVector2D\fP ()\fC [inline]\fP"
+
+.SS "template<typename type> \fBZeta::Vector2D\fP< type >::\fBVector2D\fP (size_trows, size_tcolumns)\fC [inline]\fP"
+
+.SS "template<typename type> \fBZeta::Vector2D\fP< type >::~\fBVector2D\fP ()\fC [inline]\fP"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "template<typename type> type& \fBZeta::Vector2D\fP< type >::at (size_tx, size_ty)\fC [inline]\fP"
+
+.SS "template<typename type> const type& \fBZeta::Vector2D\fP< type >::at (size_tx, size_ty) const\fC [inline]\fP"
+
+.SS "template<typename type> void \fBZeta::Vector2D\fP< type >::clear ()\fC [inline]\fP"
+
+.SS "template<typename type> size_t \fBZeta::Vector2D\fP< type >::getColumnsN () const\fC [inline]\fP"
+
+.SS "template<typename type> std::vector<type>& \fBZeta::Vector2D\fP< type >::getInternal ()\fC [inline]\fP"
+
+.SS "template<typename type> size_t \fBZeta::Vector2D\fP< type >::getRowsN () const\fC [inline]\fP"
+
+.SS "template<typename type> type& \fBZeta::Vector2D\fP< type >::operator() (size_tx, size_ty)\fC [inline]\fP"
+
+.SS "template<typename type> const type& \fBZeta::Vector2D\fP< type >::operator() (size_tx, size_ty) const\fC [inline]\fP"
+
+.SS "template<typename type> void \fBZeta::Vector2D\fP< type >::resize (size_trows, size_tcolumns)\fC [inline]\fP"
+
+.SH "Member Data Documentation"
+.PP 
+.SS "template<typename type> size_t \fBZeta::Vector2D\fP< type >::columns\fC [private]\fP"
+
+.SS "template<typename type> size_t \fBZeta::Vector2D\fP< type >::rows\fC [private]\fP"
+
+.SS "template<typename type> std::vector<type> \fBZeta::Vector2D\fP< type >::vec\fC [private]\fP"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Zeta from the source code\&.

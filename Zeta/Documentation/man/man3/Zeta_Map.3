@@ -1,0 +1,334 @@
+.TH "Zeta::Map" 3 "Wed Feb 10 2016" "Zeta" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Zeta::Map \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Map\&.hpp>\fP
+.PP
+Inherits \fBZeta::Resource\fP, \fBZeta::Updateable\fP, and \fBZeta::LuaPushable\fP\&.
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "struct \fBMapTileset\fP"
+.br
+.ti -1c
+.RI "class \fBObjectPair\fP"
+.br
+.in -1c
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "unsigned int \fBgetHeight\fP () const "
+.br
+.ti -1c
+.RI "const \fBPropertyList\fP & \fBgetProperties\fP () const "
+.br
+.ti -1c
+.RI "unsigned int \fBgetTileHeight\fP () const "
+.br
+.ti -1c
+.RI "unsigned int \fBgetTileWidth\fP () const "
+.br
+.ti -1c
+.RI "unsigned int \fBgetWidth\fP () const "
+.br
+.ti -1c
+.RI "void \fBsetView\fP (\fBView\fP &\fBcamera\fP)"
+.br
+.ti -1c
+.RI "const std::string & \fBgetScriptFilename\fP () const "
+.br
+.ti -1c
+.RI "const \fBTile\fP & \fBgetTileByGID\fP (unsigned int gid) const "
+.br
+.ti -1c
+.RI "bool \fBisCordinateColliding\fP (\fBFloat\fP x, \fBFloat\fP y) const "
+.br
+.ti -1c
+.RI "bool \fBisCordinateColliding\fP (\fBFloat\fP x, \fBFloat\fP y, \fBObject\fP *other) const "
+.br
+.ti -1c
+.RI "bool \fBisRectangleColliding\fP (const \fBRectangle\fP &rect, \fBObject\fP *owner, \fBRectangle::Surface\fP surface=\fBRectangle::Surface::Every\fP) const "
+.br
+.ti -1c
+.RI "void \fBsetCordinateColliding\fP (\fBFloat\fP x, \fBFloat\fP y, bool val)"
+.br
+.ti -1c
+.RI "\fBObject\fP * \fBgetObjectAtPosition\fP (\fBFloat\fP x, \fBFloat\fP y, \fBObject\fP *ignoreThis=nullptr)"
+.br
+.ti -1c
+.RI "std::vector< \fBObject\fP * > \fBgetAllObjectsAtPosition\fP (\fBFloat\fP x, \fBFloat\fP y, \fBObject\fP *ignoreThis=nullptr)"
+.br
+.ti -1c
+.RI "const std::unordered_set
+.br
+< \fBObject\fP * > & \fBgetVisibleObjects\fP () const "
+.br
+.ti -1c
+.RI "void \fBaddTileToUpdate\fP (\fBTile\fP *tile) const "
+.br
+.ti -1c
+.RI "void \fBload\fP (const std::string &path)"
+.br
+.ti -1c
+.RI "void \fBnullise\fP ()"
+.br
+.ti -1c
+.RI "void \fBclearCachedTilesets\fP ()"
+.br
+.ti -1c
+.RI "void \fBaddObject\fP (\fBObject\fP *obj, bool \fBtoBeDeleted\fP)"
+.br
+.ti -1c
+.RI "void \fBinsertObject\fP (\fBObject\fP *obj, bool \fBtoBeDeleted\fP)"
+.br
+.ti -1c
+.RI "void \fBremoveObject\fP (\fBObject\fP *obj)"
+.br
+.ti -1c
+.RI "void \fBdraw\fP (const \fBView\fP &\fBcamera\fP) const "
+.br
+.ti -1c
+.RI "void \fBupdate\fP (\fBFloat\fP elapsedTime)"
+.br
+.ti -1c
+.RI "void \fBpushToLua\fP (lua_State *lstate)"
+.br
+.ti -1c
+.RI "\fBMap\fP ()"
+.br
+.ti -1c
+.RI "\fBMap\fP (const std::string &path)"
+.br
+.ti -1c
+.RI "\fB~Map\fP ()"
+.br
+.in -1c
+.SS "Protected Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBparsePriorities\fP (const std::string &value)"
+.br
+.ti -1c
+.RI "void \fBloadCollisions\fP ()"
+.br
+.ti -1c
+.RI "void \fBclear\fP ()"
+.br
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBZMap\fP< std::string, \fBTileset\fP > \fBcachedTilesets\fP"
+.br
+.ti -1c
+.RI "std::vector< \fBMapTileset\fP > \fBtilesets\fP"
+.br
+.ti -1c
+.RI "\fBZMap\fP< std::string, \fBLayer\fP * > \fBlayers\fP"
+.br
+.ti -1c
+.RI "std::vector< \fBLayer\fP * > \fBupperLayers\fP"
+.br
+.ti -1c
+.RI "std::vector< \fBLayer\fP * > \fBlowerLayers\fP"
+.br
+.ti -1c
+.RI "std::list< \fBObjectPair\fP > \fBobjects\fP"
+.br
+.ti -1c
+.RI "std::list< \fBObject\fP * > \fBvisibles\fP"
+.br
+.ti -1c
+.RI "\fBZSet\fP< \fBObject\fP * > \fBinView\fP"
+.br
+.ti -1c
+.RI "\fBZSet\fP< \fBTile\fP * > \fBtilesToBeUpdated\fP"
+.br
+.ti -1c
+.RI "\fBZMap\fP< \fBObject\fP *, std::list
+.br
+< \fBObjectPair\fP >::iterator > \fBinsertedObjects\fP"
+.br
+.ti -1c
+.RI "std::vector< std::list
+.br
+< \fBObjectPair\fP >::iterator > \fBtoBeDeleted\fP"
+.br
+.ti -1c
+.RI "\fBVector2D\fP< int > \fBcollisions\fP"
+.br
+.ti -1c
+.RI "\fBPropertyList\fP \fBproperties\fP"
+.br
+.ti -1c
+.RI "\fBStaticQuadtree\fP \fBquadtree\fP"
+.br
+.ti -1c
+.RI "std::string \fBscriptFilename\fP"
+.br
+.ti -1c
+.RI "\fBView\fP * \fBcamera\fP"
+.br
+.ti -1c
+.RI "unsigned int \fBwidth\fP"
+.br
+.ti -1c
+.RI "unsigned int \fBheight\fP"
+.br
+.ti -1c
+.RI "unsigned int \fBtileWidth\fP"
+.br
+.ti -1c
+.RI "unsigned int \fBtileHeight\fP"
+.br
+.ti -1c
+.RI "unsigned int \fBsubWidth\fP"
+.br
+.ti -1c
+.RI "unsigned int \fBsubHeight\fP"
+.br
+.ti -1c
+.RI "unsigned int \fBsubTileWidth\fP"
+.br
+.ti -1c
+.RI "unsigned int \fBsubTileHeight\fP"
+.br
+.ti -1c
+.RI "bool \fBrendering\fP"
+.br
+.in -1c
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Zeta::Map::Map ()"
+
+.SS "Zeta::Map::Map (const std::string &path)"
+
+.SS "Zeta::Map::~Map ()"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "void Zeta::Map::addObject (\fBObject\fP *obj, booltoBeDeleted)"
+
+.SS "void Zeta::Map::addTileToUpdate (\fBTile\fP *tile) const"
+
+.SS "void Zeta::Map::clear ()\fC [protected]\fP"
+
+.SS "void Zeta::Map::clearCachedTilesets ()"
+
+.SS "void Zeta::Map::draw (const \fBView\fP &camera) const"
+
+.SS "std::vector<\fBObject\fP*> Zeta::Map::getAllObjectsAtPosition (\fBFloat\fPx, \fBFloat\fPy, \fBObject\fP *ignoreThis = \fCnullptr\fP)"
+
+.SS "unsigned int Zeta::Map::getHeight () const\fC [inline]\fP"
+
+.SS "\fBObject\fP* Zeta::Map::getObjectAtPosition (\fBFloat\fPx, \fBFloat\fPy, \fBObject\fP *ignoreThis = \fCnullptr\fP)"
+
+.SS "const \fBPropertyList\fP& Zeta::Map::getProperties () const\fC [inline]\fP"
+
+.SS "const std::string& Zeta::Map::getScriptFilename () const\fC [inline]\fP"
+
+.SS "const \fBTile\fP& Zeta::Map::getTileByGID (unsigned intgid) const"
+
+.SS "unsigned int Zeta::Map::getTileHeight () const\fC [inline]\fP"
+
+.SS "unsigned int Zeta::Map::getTileWidth () const\fC [inline]\fP"
+
+.SS "const std::unordered_set<\fBObject\fP*>& Zeta::Map::getVisibleObjects () const\fC [inline]\fP"
+
+.SS "unsigned int Zeta::Map::getWidth () const\fC [inline]\fP"
+
+.SS "void Zeta::Map::insertObject (\fBObject\fP *obj, booltoBeDeleted)"
+
+.SS "bool Zeta::Map::isCordinateColliding (\fBFloat\fPx, \fBFloat\fPy) const"
+
+.SS "bool Zeta::Map::isCordinateColliding (\fBFloat\fPx, \fBFloat\fPy, \fBObject\fP *other) const"
+
+.SS "bool Zeta::Map::isRectangleColliding (const \fBRectangle\fP &rect, \fBObject\fP *owner, \fBRectangle::Surface\fPsurface = \fC\fBRectangle::Surface::Every\fP\fP) const"
+
+.SS "void Zeta::Map::load (const std::string &path)"
+
+.SS "void Zeta::Map::loadCollisions ()\fC [protected]\fP"
+
+.SS "void Zeta::Map::nullise ()"
+
+.SS "void Zeta::Map::parsePriorities (const std::string &value)\fC [protected]\fP"
+
+.SS "void Zeta::Map::pushToLua (lua_State *lstate)\fC [virtual]\fP"
+
+.PP
+Implements \fBZeta::LuaPushable\fP\&.
+.SS "void Zeta::Map::removeObject (\fBObject\fP *obj)"
+
+.SS "void Zeta::Map::setCordinateColliding (\fBFloat\fPx, \fBFloat\fPy, boolval)"
+
+.SS "void Zeta::Map::setView (\fBView\fP &camera)\fC [inline]\fP"
+
+.SS "void Zeta::Map::update (\fBFloat\fPelapsedTime)\fC [virtual]\fP"
+
+.PP
+Implements \fBZeta::Updateable\fP\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "\fBZMap\fP<std::string, \fBTileset\fP> Zeta::Map::cachedTilesets\fC [protected]\fP"
+
+.SS "\fBView\fP* Zeta::Map::camera\fC [protected]\fP"
+
+.SS "\fBVector2D\fP<int> Zeta::Map::collisions\fC [protected]\fP"
+
+.SS "unsigned int Zeta::Map::height\fC [protected]\fP"
+
+.SS "\fBZMap\fP<\fBObject\fP*, std::list<\fBObjectPair\fP>::iterator> Zeta::Map::insertedObjects\fC [protected]\fP"
+
+.SS "\fBZSet\fP<\fBObject\fP*> Zeta::Map::inView\fC [protected]\fP"
+
+.SS "\fBZMap\fP<std::string, \fBLayer\fP*> Zeta::Map::layers\fC [protected]\fP"
+
+.SS "std::vector<\fBLayer\fP*> Zeta::Map::lowerLayers\fC [protected]\fP"
+
+.SS "std::list<\fBObjectPair\fP> Zeta::Map::objects\fC [protected]\fP"
+
+.SS "\fBPropertyList\fP Zeta::Map::properties\fC [protected]\fP"
+
+.SS "\fBStaticQuadtree\fP Zeta::Map::quadtree\fC [protected]\fP"
+
+.SS "bool Zeta::Map::rendering\fC [protected]\fP"
+
+.SS "std::string Zeta::Map::scriptFilename\fC [protected]\fP"
+
+.SS "unsigned int Zeta::Map::subHeight\fC [protected]\fP"
+
+.SS "unsigned int Zeta::Map::subTileHeight\fC [protected]\fP"
+
+.SS "unsigned int Zeta::Map::subTileWidth\fC [protected]\fP"
+
+.SS "unsigned int Zeta::Map::subWidth\fC [protected]\fP"
+
+.SS "unsigned int Zeta::Map::tileHeight\fC [protected]\fP"
+
+.SS "std::vector<\fBMapTileset\fP> Zeta::Map::tilesets\fC [protected]\fP"
+
+.SS "\fBZSet\fP<\fBTile\fP*> Zeta::Map::tilesToBeUpdated\fC [mutable]\fP, \fC [protected]\fP"
+
+.SS "unsigned int Zeta::Map::tileWidth\fC [protected]\fP"
+
+.SS "std::vector<std::list<\fBObjectPair\fP>::iterator> Zeta::Map::toBeDeleted\fC [protected]\fP"
+
+.SS "std::vector<\fBLayer\fP*> Zeta::Map::upperLayers\fC [protected]\fP"
+
+.SS "std::list<\fBObject\fP*> Zeta::Map::visibles\fC [protected]\fP"
+
+.SS "unsigned int Zeta::Map::width\fC [protected]\fP"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Zeta from the source code\&.

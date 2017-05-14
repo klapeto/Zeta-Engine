@@ -1,0 +1,212 @@
+\hypertarget{classZeta_1_1ResourceCache}{\section{Zeta\+:\+:Resource\+Cache Class Reference}
+\label{classZeta_1_1ResourceCache}\index{Zeta\+::\+Resource\+Cache@{Zeta\+::\+Resource\+Cache}}
+}
+
+
+{\ttfamily \#include $<$Resource\+Cache.\+hpp$>$}
+
+
+
+Inheritance diagram for Zeta\+:\+:Resource\+Cache\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=192pt]{classZeta_1_1ResourceCache__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Zeta\+:\+:Resource\+Cache\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=192pt]{classZeta_1_1ResourceCache__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+const \hyperlink{classZeta_1_1AbilityClass}{Ability\+Class} \& \hyperlink{classZeta_1_1ResourceCache_a8e54f7bee7fc228735130fef21f7c160}{get\+Ability\+Class} (const std\+::string \&path)
+\item 
+const \hyperlink{classZeta_1_1LifeformClass}{Lifeform\+Class} \& \hyperlink{classZeta_1_1ResourceCache_a06d59ea554c45515e3f571698d6e32f3}{get\+Lifeform\+Class} (const std\+::string \&path)
+\item 
+void \hyperlink{classZeta_1_1ResourceCache_af2e2b3b906f55a2312f6a53d8b096a5c}{release\+Resource} (const \hyperlink{classZeta_1_1AbilityClass}{Ability\+Class} \&value)
+\item 
+void \hyperlink{classZeta_1_1ResourceCache_a85381642c92fd8f4c624709893f72ce0}{release\+Resource} (const \hyperlink{classZeta_1_1LifeformClass}{Lifeform\+Class} \&value)
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classZeta_1_1ResourceCache_a2441f22f60cf12b6683c43bda3a60401}{Resource\+Cache} ()
+\item 
+\hyperlink{classZeta_1_1ResourceCache_a0d1dffd1e8862f0a0c9fb28d45b30955}{$\sim$\+Resource\+Cache} ()
+\item 
+{\footnotesize template$<$typename R\+Type $>$ }\\const R\+Type \& \hyperlink{classZeta_1_1ResourceCache_ae1bfc8155fa59c6315dced944253a3e9}{get\+Resource} (const std\+::string \&path, \hyperlink{namespaceZeta_a9af2e12c4e432d2a1725f19e5a648a04}{Z\+Map}$<$ std\+::string, \hyperlink{classZeta_1_1SharedResource}{Shared\+Resource}$<$ R\+Type $>$$>$ \&map)
+\item 
+{\footnotesize template$<$typename R\+Type $>$ }\\void \hyperlink{classZeta_1_1ResourceCache_ae23468ce4f59a689353542ec52bae9d5}{release\+Mapped\+Resource} (const std\+::string \&path, \hyperlink{namespaceZeta_a9af2e12c4e432d2a1725f19e5a648a04}{Z\+Map}$<$ std\+::string, \hyperlink{classZeta_1_1SharedResource}{Shared\+Resource}$<$ R\+Type $>$$>$ \&map)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespaceZeta_a9af2e12c4e432d2a1725f19e5a648a04}{Z\+Map}$<$ std\+::string, \\*
+\hyperlink{classZeta_1_1SharedResource}{Shared\+Resource}$<$ \hyperlink{classZeta_1_1AbilityClass}{Ability\+Class} $>$ $>$ \hyperlink{classZeta_1_1ResourceCache_abc312f77d6f49e402cbdf9681610c578}{ability\+Classes}
+\item 
+\hyperlink{namespaceZeta_a9af2e12c4e432d2a1725f19e5a648a04}{Z\+Map}$<$ std\+::string, \\*
+\hyperlink{classZeta_1_1SharedResource}{Shared\+Resource}$<$ \hyperlink{classZeta_1_1LifeformClass}{Lifeform\+Class} $>$ $>$ \hyperlink{classZeta_1_1ResourceCache_a9b038082ffed4386c9515bfc82e0c4c7}{lifeform\+Classes}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classZeta_1_1ResourceCache_a2fa95d69b32a77fffa4b730679a8b08c}{Single\+Instanced}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classZeta_1_1ResourceCache_a2441f22f60cf12b6683c43bda3a60401}{\index{Zeta\+::\+Resource\+Cache@{Zeta\+::\+Resource\+Cache}!Resource\+Cache@{Resource\+Cache}}
+\index{Resource\+Cache@{Resource\+Cache}!Zeta\+::\+Resource\+Cache@{Zeta\+::\+Resource\+Cache}}
+\subsubsection[{Resource\+Cache}]{\setlength{\rightskip}{0pt plus 5cm}Zeta\+::\+Resource\+Cache\+::\+Resource\+Cache (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}}\label{classZeta_1_1ResourceCache_a2441f22f60cf12b6683c43bda3a60401}
+\hypertarget{classZeta_1_1ResourceCache_a0d1dffd1e8862f0a0c9fb28d45b30955}{\index{Zeta\+::\+Resource\+Cache@{Zeta\+::\+Resource\+Cache}!````~Resource\+Cache@{$\sim$\+Resource\+Cache}}
+\index{````~Resource\+Cache@{$\sim$\+Resource\+Cache}!Zeta\+::\+Resource\+Cache@{Zeta\+::\+Resource\+Cache}}
+\subsubsection[{$\sim$\+Resource\+Cache}]{\setlength{\rightskip}{0pt plus 5cm}Zeta\+::\+Resource\+Cache\+::$\sim$\+Resource\+Cache (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}}\label{classZeta_1_1ResourceCache_a0d1dffd1e8862f0a0c9fb28d45b30955}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classZeta_1_1ResourceCache_a8e54f7bee7fc228735130fef21f7c160}{\index{Zeta\+::\+Resource\+Cache@{Zeta\+::\+Resource\+Cache}!get\+Ability\+Class@{get\+Ability\+Class}}
+\index{get\+Ability\+Class@{get\+Ability\+Class}!Zeta\+::\+Resource\+Cache@{Zeta\+::\+Resource\+Cache}}
+\subsubsection[{get\+Ability\+Class}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Ability\+Class}\& Zeta\+::\+Resource\+Cache\+::get\+Ability\+Class (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{path}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1ResourceCache_a8e54f7bee7fc228735130fef21f7c160}
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classZeta_1_1ResourceCache_a8e54f7bee7fc228735130fef21f7c160_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classZeta_1_1ResourceCache_a06d59ea554c45515e3f571698d6e32f3}{\index{Zeta\+::\+Resource\+Cache@{Zeta\+::\+Resource\+Cache}!get\+Lifeform\+Class@{get\+Lifeform\+Class}}
+\index{get\+Lifeform\+Class@{get\+Lifeform\+Class}!Zeta\+::\+Resource\+Cache@{Zeta\+::\+Resource\+Cache}}
+\subsubsection[{get\+Lifeform\+Class}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Lifeform\+Class}\& Zeta\+::\+Resource\+Cache\+::get\+Lifeform\+Class (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{path}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1ResourceCache_a06d59ea554c45515e3f571698d6e32f3}
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classZeta_1_1ResourceCache_a06d59ea554c45515e3f571698d6e32f3_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classZeta_1_1ResourceCache_ae1bfc8155fa59c6315dced944253a3e9}{\index{Zeta\+::\+Resource\+Cache@{Zeta\+::\+Resource\+Cache}!get\+Resource@{get\+Resource}}
+\index{get\+Resource@{get\+Resource}!Zeta\+::\+Resource\+Cache@{Zeta\+::\+Resource\+Cache}}
+\subsubsection[{get\+Resource}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename R\+Type $>$ const R\+Type\& Zeta\+::\+Resource\+Cache\+::get\+Resource (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{path, }
+\item[{{\bf Z\+Map}$<$ std\+::string, {\bf Shared\+Resource}$<$ R\+Type $>$$>$ \&}]{map}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}}\label{classZeta_1_1ResourceCache_ae1bfc8155fa59c6315dced944253a3e9}
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classZeta_1_1ResourceCache_ae1bfc8155fa59c6315dced944253a3e9_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classZeta_1_1ResourceCache_ae23468ce4f59a689353542ec52bae9d5}{\index{Zeta\+::\+Resource\+Cache@{Zeta\+::\+Resource\+Cache}!release\+Mapped\+Resource@{release\+Mapped\+Resource}}
+\index{release\+Mapped\+Resource@{release\+Mapped\+Resource}!Zeta\+::\+Resource\+Cache@{Zeta\+::\+Resource\+Cache}}
+\subsubsection[{release\+Mapped\+Resource}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename R\+Type $>$ void Zeta\+::\+Resource\+Cache\+::release\+Mapped\+Resource (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{path, }
+\item[{{\bf Z\+Map}$<$ std\+::string, {\bf Shared\+Resource}$<$ R\+Type $>$$>$ \&}]{map}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}}\label{classZeta_1_1ResourceCache_ae23468ce4f59a689353542ec52bae9d5}
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classZeta_1_1ResourceCache_ae23468ce4f59a689353542ec52bae9d5_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classZeta_1_1ResourceCache_af2e2b3b906f55a2312f6a53d8b096a5c}{\index{Zeta\+::\+Resource\+Cache@{Zeta\+::\+Resource\+Cache}!release\+Resource@{release\+Resource}}
+\index{release\+Resource@{release\+Resource}!Zeta\+::\+Resource\+Cache@{Zeta\+::\+Resource\+Cache}}
+\subsubsection[{release\+Resource}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+Resource\+Cache\+::release\+Resource (
+\begin{DoxyParamCaption}
+\item[{const {\bf Ability\+Class} \&}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1ResourceCache_af2e2b3b906f55a2312f6a53d8b096a5c}
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classZeta_1_1ResourceCache_af2e2b3b906f55a2312f6a53d8b096a5c_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classZeta_1_1ResourceCache_a85381642c92fd8f4c624709893f72ce0}{\index{Zeta\+::\+Resource\+Cache@{Zeta\+::\+Resource\+Cache}!release\+Resource@{release\+Resource}}
+\index{release\+Resource@{release\+Resource}!Zeta\+::\+Resource\+Cache@{Zeta\+::\+Resource\+Cache}}
+\subsubsection[{release\+Resource}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+Resource\+Cache\+::release\+Resource (
+\begin{DoxyParamCaption}
+\item[{const {\bf Lifeform\+Class} \&}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1ResourceCache_a85381642c92fd8f4c624709893f72ce0}
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classZeta_1_1ResourceCache_a85381642c92fd8f4c624709893f72ce0_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{classZeta_1_1ResourceCache_a2fa95d69b32a77fffa4b730679a8b08c}{\index{Zeta\+::\+Resource\+Cache@{Zeta\+::\+Resource\+Cache}!Single\+Instanced@{Single\+Instanced}}
+\index{Single\+Instanced@{Single\+Instanced}!Zeta\+::\+Resource\+Cache@{Zeta\+::\+Resource\+Cache}}
+\subsubsection[{Single\+Instanced}]{\setlength{\rightskip}{0pt plus 5cm}friend class {\bf Single\+Instanced}\hspace{0.3cm}{\ttfamily [friend]}}}\label{classZeta_1_1ResourceCache_a2fa95d69b32a77fffa4b730679a8b08c}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classZeta_1_1ResourceCache_abc312f77d6f49e402cbdf9681610c578}{\index{Zeta\+::\+Resource\+Cache@{Zeta\+::\+Resource\+Cache}!ability\+Classes@{ability\+Classes}}
+\index{ability\+Classes@{ability\+Classes}!Zeta\+::\+Resource\+Cache@{Zeta\+::\+Resource\+Cache}}
+\subsubsection[{ability\+Classes}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Z\+Map}$<$std\+::string, {\bf Shared\+Resource}$<${\bf Ability\+Class}$>$ $>$ Zeta\+::\+Resource\+Cache\+::ability\+Classes\hspace{0.3cm}{\ttfamily [private]}}}\label{classZeta_1_1ResourceCache_abc312f77d6f49e402cbdf9681610c578}
+\hypertarget{classZeta_1_1ResourceCache_a9b038082ffed4386c9515bfc82e0c4c7}{\index{Zeta\+::\+Resource\+Cache@{Zeta\+::\+Resource\+Cache}!lifeform\+Classes@{lifeform\+Classes}}
+\index{lifeform\+Classes@{lifeform\+Classes}!Zeta\+::\+Resource\+Cache@{Zeta\+::\+Resource\+Cache}}
+\subsubsection[{lifeform\+Classes}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Z\+Map}$<$std\+::string, {\bf Shared\+Resource}$<${\bf Lifeform\+Class}$>$ $>$ Zeta\+::\+Resource\+Cache\+::lifeform\+Classes\hspace{0.3cm}{\ttfamily [private]}}}\label{classZeta_1_1ResourceCache_a9b038082ffed4386c9515bfc82e0c4c7}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Zeta/\+Core/\hyperlink{ResourceCache_8hpp}{Resource\+Cache.\+hpp}\end{DoxyCompactItemize}

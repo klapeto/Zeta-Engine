@@ -1,0 +1,21 @@
+$#include <Zeta/Core/UtilityClasses/Rectangle.hpp>
+
+class Rectangle {
+public:
+	Float getX() const;
+	Float getY() const ;
+	void setPosition(Float x, Float y);
+	void offsetPosition(Float dx, Float dy);
+	int getWidth() const;
+	int getHeight() const;
+	void setHeight(int height);
+	void setWidth(int width);
+	void setSize(int width, int height);
+	bool overlapsPoint(Float x, Float y);
+	bool overlapsPoint(const Vector2& point);
+	bool overlapsRectangle(const Rectangle& other) const;
+	Rectangle();
+	Rectangle(const Vector2& location, int width, int height);
+	Rectangle(Float x, Float y, int width, int height);
+	~Rectangle();
+};

@@ -1,0 +1,30 @@
+<map id="include/Zeta/Core/RPGClasses/DirectionalProjectile.hpp" name="include/Zeta/Core/RPGClasses/DirectionalProjectile.hpp">
+<area shape="rect" id="node2" href="$Projectile_8hpp.html" title="Zeta/Core/RPGClasses\l/Projectile.hpp" alt="" coords="2489,97,2649,138"/>
+<area shape="rect" id="node7" href="$ZetaConfig_8hpp.html" title="Zeta/Core/ZetaConfig.hpp" alt="" coords="1331,640,1504,667"/>
+<area shape="rect" id="node3" href="$AnimationHandler_8hpp.html" title="Zeta/Core/AnimationClasses\l/AnimationHandler.hpp" alt="" coords="1089,187,1279,229"/>
+<area shape="rect" id="node15" href="$Vector2_8hpp.html" title="Zeta/Core/UtilityClasses\l/Vector2.hpp" alt="" coords="294,550,460,591"/>
+<area shape="rect" id="node23" href="$LifeformState_8hpp.html" title="Zeta/Core/RPGClasses\l/LifeformState.hpp" alt="" coords="2711,369,2872,410"/>
+<area shape="rect" id="node31" href="$Map_8hpp.html" title="Zeta/Core/MapClasses\l/Map.hpp" alt="" coords="1999,187,2156,229"/>
+<area shape="rect" id="node33" href="$ZSet_8hpp.html" title="Zeta/Core/ZSet.hpp" alt="" coords="2665,285,2801,312"/>
+<area shape="rect" id="node39" href="$Object_8hpp.html" title="Zeta/Core/RPGClasses\l/Object.hpp" alt="" coords="542,278,703,319"/>
+<area shape="rect" id="node4" href="$OffAnimation_8hpp.html" title="Zeta/Core/AnimationClasses\l/OffAnimation.hpp" alt="" coords="1405,278,1595,319"/>
+<area shape="rect" id="node9" href="$LuaPushable_8hpp.html" title="Zeta/Core/LuaPushable.hpp" alt="" coords="52,640,236,667"/>
+<area shape="rect" id="node10" href="$AnimationClass_8hpp.html" title="Zeta/Core/ResourceClasses\l/AnimationClass.hpp" alt="" coords="1090,278,1277,319"/>
+<area shape="rect" id="node29" href="$ZMap_8hpp.html" title="Zeta/Core/ZMap.hpp" alt="" coords="145,376,287,403"/>
+<area shape="rect" id="node5" href="$AnimationPlayer_8hpp.html" title="Zeta/Core/AnimationClasses\l/AnimationPlayer.hpp" alt="" coords="1506,369,1696,410"/>
+<area shape="rect" id="node6" href="$Drawable_8hpp.html" title="Zeta/Core/Drawable.hpp" alt="" coords="1519,557,1683,584"/>
+<area shape="rect" id="node8" href="$Updateable_8hpp.html" title="Zeta/Core/Updateable.hpp" alt="" coords="2157,467,2331,493"/>
+<area shape="rect" id="node12" href="$Ellipsis_8hpp.html" title="Zeta/Core/UtilityClasses\l/Ellipsis.hpp" alt="" coords="909,369,1075,410"/>
+<area shape="rect" id="node17" href="$Resource_8hpp.html" title="Zeta/Core/ResourceClasses\l/Resource.hpp" alt="" coords="2499,369,2687,410"/>
+<area shape="rect" id="node22" href="$Rectangle_8hpp.html" title="Zeta/Core/UtilityClasses\l/Rectangle.hpp" alt="" coords="718,369,884,410"/>
+<area shape="rect" id="node24" href="$Vector2D_8hpp.html" title="Zeta/Core/UtilityClasses\l/Vector2D.hpp" alt="" coords="1721,369,1887,410"/>
+<area shape="rect" id="node27" href="$ZSmallMap_8hpp.html" title="Zeta/Core/ZSmallMap.hpp" alt="" coords="590,467,764,493"/>
+<area shape="rect" id="node13" href="$Shape_8hpp.html" title="Zeta/Core/UtilityClasses\l/Shape.hpp" alt="" coords="891,459,1057,501"/>
+<area shape="rect" id="node14" href="$Color_8hpp.html" title="Zeta/Core/Color.hpp" alt="" coords="886,557,1025,584"/>
+<area shape="rect" id="node20" href="$NonCopyable_8hpp.html" title="Zeta/Core/NonCopyable.hpp" alt="" coords="2741,557,2928,584"/>
+<area shape="rect" id="node21" href="$SingleInstanced_8hpp.html" title="Zeta/Core/SingleInstanced.hpp" alt="" coords="2664,467,2867,493"/>
+<area shape="rect" id="node35" href="$PropertyList_8hpp.html" title="Zeta/Core/PropertyList.hpp" alt="" coords="464,376,643,403"/>
+<area shape="rect" id="node36" href="$Tileset_8hpp.html" title="Zeta/Core/MapClasses\l/Tileset.hpp" alt="" coords="2115,278,2272,319"/>
+<area shape="rect" id="node38" href="$StaticQuadtree_8hpp.html" title="Zeta/Core/MapClasses\l/StaticQuadtree.hpp" alt="" coords="1883,278,2040,319"/>
+<area shape="rect" id="node37" href="$Tile_8hpp.html" title="Zeta/Core/MapClasses\l/Tile.hpp" alt="" coords="2165,369,2323,410"/>
+</map>

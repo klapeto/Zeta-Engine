@@ -1,0 +1,7 @@
+2015-03-03  klapeto  <klapeto@core>
+
+	* include/Zeta/Core/ResourceCache.hpp: 
+	Added Resource cache Singleton for simple Resources
+	for the Lua Environment
+	* configure.ac: Added project URL
+	* tolua_Binders: Added tolua++ Packages

@@ -1,0 +1,199 @@
+\hypertarget{classZeta_1_1ContextOperation}{\section{Zeta\+:\+:Context\+Operation$<$ Context\+Type $>$ Class Template Reference}
+\label{classZeta_1_1ContextOperation}\index{Zeta\+::\+Context\+Operation$<$ Context\+Type $>$@{Zeta\+::\+Context\+Operation$<$ Context\+Type $>$}}
+}
+
+
+{\ttfamily \#include $<$Context\+Operation.\+hpp$>$}
+
+
+
+Inheritance diagram for Zeta\+:\+:Context\+Operation$<$ Context\+Type $>$\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=232pt]{classZeta_1_1ContextOperation__inherit__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{classZeta_1_1ContextOperation_a3e7286287026324335d352933fb62a78}{handle} (Context\+Type \&context)=0
+\item 
+bool \hyperlink{classZeta_1_1ContextOperation_a309a672c56b746f00896e5980579593f}{is\+Handled} () const 
+\item 
+void \hyperlink{classZeta_1_1ContextOperation_a5b9c9a0244dfd3ea5583a8b1e29b66a0}{set\+Handled} (bool \hyperlink{classZeta_1_1ContextOperation_a015a74ff36e2bc7d9b949ad8d12d7ca1}{handled})
+\item 
+bool \hyperlink{classZeta_1_1ContextOperation_a016f4784e825b6f33d6a49a51f6c0232}{is\+To\+Be\+Deleted} () const 
+\item 
+void \hyperlink{classZeta_1_1ContextOperation_a5fbd2d0daba4c6c475faedcb8a4b6bec}{set\+To\+Be\+Deleted} (bool \hyperlink{classZeta_1_1ContextOperation_a74d249e9f1614a29999b811772a41c1b}{to\+Be\+Deleted})
+\item 
+void \hyperlink{classZeta_1_1ContextOperation_ac552818f408c4d7c75a954f4b92348bd}{wait\+To\+Be\+Completed} ()
+\item 
+void \hyperlink{classZeta_1_1ContextOperation_ad67e1e1af4b3ef3017df33f9a8dcc3c0}{notify\+Waiters} ()
+\item 
+\hyperlink{classZeta_1_1ContextOperation_acce7568104c7be4ba10442d91d215556}{Context\+Operation} ()
+\item 
+\hyperlink{classZeta_1_1ContextOperation_a241337497a8f43e1e4bff37b72a7daf5}{Context\+Operation} (bool \hyperlink{classZeta_1_1ContextOperation_a74d249e9f1614a29999b811772a41c1b}{to\+Be\+Deleted})
+\item 
+\hyperlink{classZeta_1_1ContextOperation_af5e7953f74575c780d9e731c557f57e1}{Context\+Operation} (\hyperlink{classZeta_1_1ContextOperation}{Context\+Operation} \&\&)=default
+\item 
+\hyperlink{classZeta_1_1ContextOperation}{Context\+Operation} \& \hyperlink{classZeta_1_1ContextOperation_a0d8e7b29d53c91c5bdc4a946f92e884e}{operator=} (\hyperlink{classZeta_1_1ContextOperation}{Context\+Operation} \&\&)=default
+\item 
+virtual \hyperlink{classZeta_1_1ContextOperation_a11dbe052f6287ac9bea5cf2e813d6616}{$\sim$\+Context\+Operation} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::mutex \hyperlink{classZeta_1_1ContextOperation_a38829d81157a6de9612f541d86215a68}{mutex}
+\item 
+std\+::condition\+\_\+variable \hyperlink{classZeta_1_1ContextOperation_a19abe2b5eb5218526a7e8823aec107a4}{done}
+\item 
+bool \hyperlink{classZeta_1_1ContextOperation_a015a74ff36e2bc7d9b949ad8d12d7ca1}{handled}
+\item 
+bool \hyperlink{classZeta_1_1ContextOperation_a74d249e9f1614a29999b811772a41c1b}{to\+Be\+Deleted}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename Context\+Type$>$class Zeta\+::\+Context\+Operation$<$ Context\+Type $>$}
+
+Template to create Context\+Operations to be handled by \char`\"{}\+Context\+Type\char`\"{} contexts 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classZeta_1_1ContextOperation_acce7568104c7be4ba10442d91d215556}{\index{Zeta\+::\+Context\+Operation@{Zeta\+::\+Context\+Operation}!Context\+Operation@{Context\+Operation}}
+\index{Context\+Operation@{Context\+Operation}!Zeta\+::\+Context\+Operation@{Zeta\+::\+Context\+Operation}}
+\subsubsection[{Context\+Operation}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Context\+Type$>$ {\bf Zeta\+::\+Context\+Operation}$<$ Context\+Type $>$\+::{\bf Context\+Operation} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1ContextOperation_acce7568104c7be4ba10442d91d215556}
+Default constructor sets the to\+Be\+Deleted flag to false. Best used for Stack objects that will wait for completion. \hypertarget{classZeta_1_1ContextOperation_a241337497a8f43e1e4bff37b72a7daf5}{\index{Zeta\+::\+Context\+Operation@{Zeta\+::\+Context\+Operation}!Context\+Operation@{Context\+Operation}}
+\index{Context\+Operation@{Context\+Operation}!Zeta\+::\+Context\+Operation@{Zeta\+::\+Context\+Operation}}
+\subsubsection[{Context\+Operation}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Context\+Type$>$ {\bf Zeta\+::\+Context\+Operation}$<$ Context\+Type $>$\+::{\bf Context\+Operation} (
+\begin{DoxyParamCaption}
+\item[{bool}]{to\+Be\+Deleted}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1ContextOperation_a241337497a8f43e1e4bff37b72a7daf5}
+Constructs an Operation with a specified to\+Be\+Deleted flag The to\+Be\+Deleted flag specifies if the Operation should be deallocated by the \hyperlink{classZeta_1_1Context}{Context} once handled. 
+\begin{DoxyParams}{Parameters}
+{\em to\+Be\+Deleted} & The to\+Be\+Deleted Flag to set \\
+\hline
+\end{DoxyParams}
+\hypertarget{classZeta_1_1ContextOperation_af5e7953f74575c780d9e731c557f57e1}{\index{Zeta\+::\+Context\+Operation@{Zeta\+::\+Context\+Operation}!Context\+Operation@{Context\+Operation}}
+\index{Context\+Operation@{Context\+Operation}!Zeta\+::\+Context\+Operation@{Zeta\+::\+Context\+Operation}}
+\subsubsection[{Context\+Operation}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Context\+Type$>$ {\bf Zeta\+::\+Context\+Operation}$<$ Context\+Type $>$\+::{\bf Context\+Operation} (
+\begin{DoxyParamCaption}
+\item[{{\bf Context\+Operation}$<$ Context\+Type $>$ \&\&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [default]}}}\label{classZeta_1_1ContextOperation_af5e7953f74575c780d9e731c557f57e1}
+Move Constructor \hypertarget{classZeta_1_1ContextOperation_a11dbe052f6287ac9bea5cf2e813d6616}{\index{Zeta\+::\+Context\+Operation@{Zeta\+::\+Context\+Operation}!````~Context\+Operation@{$\sim$\+Context\+Operation}}
+\index{````~Context\+Operation@{$\sim$\+Context\+Operation}!Zeta\+::\+Context\+Operation@{Zeta\+::\+Context\+Operation}}
+\subsubsection[{$\sim$\+Context\+Operation}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Context\+Type$>$ virtual {\bf Zeta\+::\+Context\+Operation}$<$ Context\+Type $>$\+::$\sim${\bf Context\+Operation} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classZeta_1_1ContextOperation_a11dbe052f6287ac9bea5cf2e813d6616}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classZeta_1_1ContextOperation_a3e7286287026324335d352933fb62a78}{\index{Zeta\+::\+Context\+Operation@{Zeta\+::\+Context\+Operation}!handle@{handle}}
+\index{handle@{handle}!Zeta\+::\+Context\+Operation@{Zeta\+::\+Context\+Operation}}
+\subsubsection[{handle}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Context\+Type$>$ virtual void {\bf Zeta\+::\+Context\+Operation}$<$ Context\+Type $>$\+::handle (
+\begin{DoxyParamCaption}
+\item[{Context\+Type \&}]{context}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classZeta_1_1ContextOperation_a3e7286287026324335d352933fb62a78}
+Pure virtual member Function to be called by the Context\+Type 
+\begin{DoxyParams}{Parameters}
+{\em context} & the \hyperlink{classZeta_1_1Context}{Context} that called it \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{classZeta_1_1SynchronousResourceContext_1_1BitmapLoadRequest_a1f89da097222c4dad665bdd6010919c8}{Zeta\+::\+Synchronous\+Resource\+Context$<$ Bitmap\+T, Sound\+T $>$\+::\+Bitmap\+Load\+Request}, \hyperlink{classZeta_1_1MapLoader_1_1LoadEndCall_a332c82fb3a3285762b3619492ace2f07}{Zeta\+::\+Map\+Loader\+::\+Load\+End\+Call}, \hyperlink{classZeta_1_1MapLoader_1_1LoadBeginCall_a32cf42f4232fae17fd3123b6511b056f}{Zeta\+::\+Map\+Loader\+::\+Load\+Begin\+Call}, \hyperlink{classZeta_1_1ExternalObjectRequest_afb1f3ec439ec7b858fd5bd4762f28971}{Zeta\+::\+External\+Object\+Request}, \hyperlink{classZeta_1_1FunctorContextOperation_aaddb1910026a9c905afb14b5cfc2000e}{Zeta\+::\+Functor\+Context\+Operation$<$ Context\+Type $>$}, and \hyperlink{classZeta_1_1RenderRequest_ac290a8dbdd74ca0d20016490fb9410bd}{Zeta\+::\+Render\+Request}.
+
+\hypertarget{classZeta_1_1ContextOperation_a309a672c56b746f00896e5980579593f}{\index{Zeta\+::\+Context\+Operation@{Zeta\+::\+Context\+Operation}!is\+Handled@{is\+Handled}}
+\index{is\+Handled@{is\+Handled}!Zeta\+::\+Context\+Operation@{Zeta\+::\+Context\+Operation}}
+\subsubsection[{is\+Handled}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Context\+Type$>$ bool {\bf Zeta\+::\+Context\+Operation}$<$ Context\+Type $>$\+::is\+Handled (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1ContextOperation_a309a672c56b746f00896e5980579593f}
+Get's if the Operation has been Handled. \begin{DoxyReturn}{Returns}
+True if it has been Handled 
+\end{DoxyReturn}
+\hypertarget{classZeta_1_1ContextOperation_a016f4784e825b6f33d6a49a51f6c0232}{\index{Zeta\+::\+Context\+Operation@{Zeta\+::\+Context\+Operation}!is\+To\+Be\+Deleted@{is\+To\+Be\+Deleted}}
+\index{is\+To\+Be\+Deleted@{is\+To\+Be\+Deleted}!Zeta\+::\+Context\+Operation@{Zeta\+::\+Context\+Operation}}
+\subsubsection[{is\+To\+Be\+Deleted}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Context\+Type$>$ bool {\bf Zeta\+::\+Context\+Operation}$<$ Context\+Type $>$\+::is\+To\+Be\+Deleted (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1ContextOperation_a016f4784e825b6f33d6a49a51f6c0232}
+Get's if the Operation should be deallocated once it has been Handled. \begin{DoxyReturn}{Returns}
+true if it should be deallocated 
+\end{DoxyReturn}
+\hypertarget{classZeta_1_1ContextOperation_ad67e1e1af4b3ef3017df33f9a8dcc3c0}{\index{Zeta\+::\+Context\+Operation@{Zeta\+::\+Context\+Operation}!notify\+Waiters@{notify\+Waiters}}
+\index{notify\+Waiters@{notify\+Waiters}!Zeta\+::\+Context\+Operation@{Zeta\+::\+Context\+Operation}}
+\subsubsection[{notify\+Waiters}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Context\+Type$>$ void {\bf Zeta\+::\+Context\+Operation}$<$ Context\+Type $>$\+::notify\+Waiters (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1ContextOperation_ad67e1e1af4b3ef3017df33f9a8dcc3c0}
+Notifies all waiters that called \hyperlink{classZeta_1_1ContextOperation_ac552818f408c4d7c75a954f4b92348bd}{wait\+To\+Be\+Completed()} to continue. This in most cases is called by a context. Calling it with the Handled flag=false will literally do nothing, except consume system resources. So don't call it from anywhere else than a context. \hypertarget{classZeta_1_1ContextOperation_a0d8e7b29d53c91c5bdc4a946f92e884e}{\index{Zeta\+::\+Context\+Operation@{Zeta\+::\+Context\+Operation}!operator=@{operator=}}
+\index{operator=@{operator=}!Zeta\+::\+Context\+Operation@{Zeta\+::\+Context\+Operation}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Context\+Type$>$ {\bf Context\+Operation}\& {\bf Zeta\+::\+Context\+Operation}$<$ Context\+Type $>$\+::operator= (
+\begin{DoxyParamCaption}
+\item[{{\bf Context\+Operation}$<$ Context\+Type $>$ \&\&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [default]}}}\label{classZeta_1_1ContextOperation_a0d8e7b29d53c91c5bdc4a946f92e884e}
+Move assignment operator \hypertarget{classZeta_1_1ContextOperation_a5b9c9a0244dfd3ea5583a8b1e29b66a0}{\index{Zeta\+::\+Context\+Operation@{Zeta\+::\+Context\+Operation}!set\+Handled@{set\+Handled}}
+\index{set\+Handled@{set\+Handled}!Zeta\+::\+Context\+Operation@{Zeta\+::\+Context\+Operation}}
+\subsubsection[{set\+Handled}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Context\+Type$>$ void {\bf Zeta\+::\+Context\+Operation}$<$ Context\+Type $>$\+::set\+Handled (
+\begin{DoxyParamCaption}
+\item[{bool}]{handled}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1ContextOperation_a5b9c9a0244dfd3ea5583a8b1e29b66a0}
+Sets the Handled Flag. This call is Thread-\/\+Safe. In most cases only a \hyperlink{classZeta_1_1Context}{Context} should call it. 
+\begin{DoxyParams}{Parameters}
+{\em handled} & the value to be give to the Handled flag \\
+\hline
+\end{DoxyParams}
+\hypertarget{classZeta_1_1ContextOperation_a5fbd2d0daba4c6c475faedcb8a4b6bec}{\index{Zeta\+::\+Context\+Operation@{Zeta\+::\+Context\+Operation}!set\+To\+Be\+Deleted@{set\+To\+Be\+Deleted}}
+\index{set\+To\+Be\+Deleted@{set\+To\+Be\+Deleted}!Zeta\+::\+Context\+Operation@{Zeta\+::\+Context\+Operation}}
+\subsubsection[{set\+To\+Be\+Deleted}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Context\+Type$>$ void {\bf Zeta\+::\+Context\+Operation}$<$ Context\+Type $>$\+::set\+To\+Be\+Deleted (
+\begin{DoxyParamCaption}
+\item[{bool}]{to\+Be\+Deleted}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1ContextOperation_a5fbd2d0daba4c6c475faedcb8a4b6bec}
+Sets if the Operation should be deallocated by the \hyperlink{classZeta_1_1Context}{Context} once it is handled. 
+\begin{DoxyParams}{Parameters}
+{\em to\+Be\+Deleted} & true or false \\
+\hline
+\end{DoxyParams}
+\hypertarget{classZeta_1_1ContextOperation_ac552818f408c4d7c75a954f4b92348bd}{\index{Zeta\+::\+Context\+Operation@{Zeta\+::\+Context\+Operation}!wait\+To\+Be\+Completed@{wait\+To\+Be\+Completed}}
+\index{wait\+To\+Be\+Completed@{wait\+To\+Be\+Completed}!Zeta\+::\+Context\+Operation@{Zeta\+::\+Context\+Operation}}
+\subsubsection[{wait\+To\+Be\+Completed}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Context\+Type$>$ void {\bf Zeta\+::\+Context\+Operation}$<$ Context\+Type $>$\+::wait\+To\+Be\+Completed (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1ContextOperation_ac552818f408c4d7c75a954f4b92348bd}
+Makes the calling thread to wait until the assigned context handles the Operation. Warning! This can cause deadlock if both \hyperlink{classZeta_1_1Context}{Context} and Caller are in the same Thread. Use only if you know what you are doing. 
+
+\subsection{Member Data Documentation}
+\hypertarget{classZeta_1_1ContextOperation_a19abe2b5eb5218526a7e8823aec107a4}{\index{Zeta\+::\+Context\+Operation@{Zeta\+::\+Context\+Operation}!done@{done}}
+\index{done@{done}!Zeta\+::\+Context\+Operation@{Zeta\+::\+Context\+Operation}}
+\subsubsection[{done}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Context\+Type$>$ std\+::condition\+\_\+variable {\bf Zeta\+::\+Context\+Operation}$<$ Context\+Type $>$\+::done\hspace{0.3cm}{\ttfamily [protected]}}}\label{classZeta_1_1ContextOperation_a19abe2b5eb5218526a7e8823aec107a4}
+\hypertarget{classZeta_1_1ContextOperation_a015a74ff36e2bc7d9b949ad8d12d7ca1}{\index{Zeta\+::\+Context\+Operation@{Zeta\+::\+Context\+Operation}!handled@{handled}}
+\index{handled@{handled}!Zeta\+::\+Context\+Operation@{Zeta\+::\+Context\+Operation}}
+\subsubsection[{handled}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Context\+Type$>$ bool {\bf Zeta\+::\+Context\+Operation}$<$ Context\+Type $>$\+::handled\hspace{0.3cm}{\ttfamily [protected]}}}\label{classZeta_1_1ContextOperation_a015a74ff36e2bc7d9b949ad8d12d7ca1}
+\hypertarget{classZeta_1_1ContextOperation_a38829d81157a6de9612f541d86215a68}{\index{Zeta\+::\+Context\+Operation@{Zeta\+::\+Context\+Operation}!mutex@{mutex}}
+\index{mutex@{mutex}!Zeta\+::\+Context\+Operation@{Zeta\+::\+Context\+Operation}}
+\subsubsection[{mutex}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Context\+Type$>$ std\+::mutex {\bf Zeta\+::\+Context\+Operation}$<$ Context\+Type $>$\+::mutex\hspace{0.3cm}{\ttfamily [protected]}}}\label{classZeta_1_1ContextOperation_a38829d81157a6de9612f541d86215a68}
+\hypertarget{classZeta_1_1ContextOperation_a74d249e9f1614a29999b811772a41c1b}{\index{Zeta\+::\+Context\+Operation@{Zeta\+::\+Context\+Operation}!to\+Be\+Deleted@{to\+Be\+Deleted}}
+\index{to\+Be\+Deleted@{to\+Be\+Deleted}!Zeta\+::\+Context\+Operation@{Zeta\+::\+Context\+Operation}}
+\subsubsection[{to\+Be\+Deleted}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Context\+Type$>$ bool {\bf Zeta\+::\+Context\+Operation}$<$ Context\+Type $>$\+::to\+Be\+Deleted\hspace{0.3cm}{\ttfamily [protected]}}}\label{classZeta_1_1ContextOperation_a74d249e9f1614a29999b811772a41c1b}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Zeta/\+Core/\hyperlink{ContextOperation_8hpp}{Context\+Operation.\+hpp}\end{DoxyCompactItemize}

@@ -1,0 +1,483 @@
+\hypertarget{classZeta_1_1Map}{\section{Zeta\+:\+:Map Class Reference}
+\label{classZeta_1_1Map}\index{Zeta\+::\+Map@{Zeta\+::\+Map}}
+}
+
+
+{\ttfamily \#include $<$Map.\+hpp$>$}
+
+
+
+Inheritance diagram for Zeta\+:\+:Map\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classZeta_1_1Map__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Zeta\+:\+:Map\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classZeta_1_1Map__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structZeta_1_1Map_1_1MapTileset}{Map\+Tileset}
+\item 
+class \hyperlink{classZeta_1_1Map_1_1ObjectPair}{Object\+Pair}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+unsigned int \hyperlink{classZeta_1_1Map_abac53fd3dac48523eae38f958246e7a2}{get\+Height} () const 
+\item 
+const \hyperlink{classZeta_1_1PropertyList}{Property\+List} \& \hyperlink{classZeta_1_1Map_afa58aa638021348a4949a99c86c0bf65}{get\+Properties} () const 
+\item 
+unsigned int \hyperlink{classZeta_1_1Map_af71bdf85fe3e634ac50db6b978142db4}{get\+Tile\+Height} () const 
+\item 
+unsigned int \hyperlink{classZeta_1_1Map_a17d30173db304ee800268b25d0a8dece}{get\+Tile\+Width} () const 
+\item 
+unsigned int \hyperlink{classZeta_1_1Map_a24cb5a26f6e74d10c5f3bbedcb2fdf6f}{get\+Width} () const 
+\item 
+void \hyperlink{classZeta_1_1Map_a60d8d526121ede30bf298e5bc37ea513}{set\+View} (\hyperlink{classZeta_1_1View}{View} \&\hyperlink{classZeta_1_1Map_a9b9106c7c9476767a019f2a0a6a6e29b}{camera})
+\item 
+const std\+::string \& \hyperlink{classZeta_1_1Map_a3644cf87a279008dd7c9756e61720453}{get\+Script\+Filename} () const 
+\item 
+const \hyperlink{classZeta_1_1Tile}{Tile} \& \hyperlink{classZeta_1_1Map_a89a394411081092638efa88f89058f55}{get\+Tile\+By\+G\+I\+D} (unsigned int gid) const 
+\item 
+bool \hyperlink{classZeta_1_1Map_a5e0e65bb558ba450a0b15d8619e596b1}{is\+Cordinate\+Colliding} (\hyperlink{namespaceZeta_a1e0a1265f9b3bd3075fb0fabd39088ba}{Float} x, \hyperlink{namespaceZeta_a1e0a1265f9b3bd3075fb0fabd39088ba}{Float} y) const 
+\item 
+bool \hyperlink{classZeta_1_1Map_a337efdfa761e96d37f4b50c9c717e623}{is\+Cordinate\+Colliding} (\hyperlink{namespaceZeta_a1e0a1265f9b3bd3075fb0fabd39088ba}{Float} x, \hyperlink{namespaceZeta_a1e0a1265f9b3bd3075fb0fabd39088ba}{Float} y, \hyperlink{classZeta_1_1Object}{Object} $\ast$other) const 
+\item 
+bool \hyperlink{classZeta_1_1Map_aa891631eb5263b1a7fdf8474d042ce07}{is\+Rectangle\+Colliding} (const \hyperlink{classZeta_1_1Rectangle}{Rectangle} \&rect, \hyperlink{classZeta_1_1Object}{Object} $\ast$owner, \hyperlink{classZeta_1_1Rectangle_a04ae0d4d037f13e313b042bff55c5f62}{Rectangle\+::\+Surface} surface=\hyperlink{classZeta_1_1Rectangle_a04ae0d4d037f13e313b042bff55c5f62affcf70e892b8ac3facbac0f88602396b}{Rectangle\+::\+Surface\+::\+Every}) const 
+\item 
+void \hyperlink{classZeta_1_1Map_a696046ca9c8e32e74c830473358fab17}{set\+Cordinate\+Colliding} (\hyperlink{namespaceZeta_a1e0a1265f9b3bd3075fb0fabd39088ba}{Float} x, \hyperlink{namespaceZeta_a1e0a1265f9b3bd3075fb0fabd39088ba}{Float} y, bool val)
+\item 
+\hyperlink{classZeta_1_1Object}{Object} $\ast$ \hyperlink{classZeta_1_1Map_a65be7fa78fde99a6899858b6a378f0ff}{get\+Object\+At\+Position} (\hyperlink{namespaceZeta_a1e0a1265f9b3bd3075fb0fabd39088ba}{Float} x, \hyperlink{namespaceZeta_a1e0a1265f9b3bd3075fb0fabd39088ba}{Float} y, \hyperlink{classZeta_1_1Object}{Object} $\ast$ignore\+This=nullptr)
+\item 
+std\+::vector$<$ \hyperlink{classZeta_1_1Object}{Object} $\ast$ $>$ \hyperlink{classZeta_1_1Map_ab0a72c0184d3623f4c5ec5a97f2fbf5d}{get\+All\+Objects\+At\+Position} (\hyperlink{namespaceZeta_a1e0a1265f9b3bd3075fb0fabd39088ba}{Float} x, \hyperlink{namespaceZeta_a1e0a1265f9b3bd3075fb0fabd39088ba}{Float} y, \hyperlink{classZeta_1_1Object}{Object} $\ast$ignore\+This=nullptr)
+\item 
+const std\+::unordered\+\_\+set\\*
+$<$ \hyperlink{classZeta_1_1Object}{Object} $\ast$ $>$ \& \hyperlink{classZeta_1_1Map_ab6eea0b928a00906163751cd8c3c3ffe}{get\+Visible\+Objects} () const 
+\item 
+void \hyperlink{classZeta_1_1Map_add631106527f8d2d596698242a4052cd}{add\+Tile\+To\+Update} (\hyperlink{classZeta_1_1Tile}{Tile} $\ast$tile) const 
+\item 
+void \hyperlink{classZeta_1_1Map_a9e76ebd42c7c4c0d9d19769dabe5ae4c}{load} (const std\+::string \&path)
+\item 
+void \hyperlink{classZeta_1_1Map_a89c43b931650ea3a821f552ebc502268}{nullise} ()
+\item 
+void \hyperlink{classZeta_1_1Map_adc7b5ab14aabe2fbbe7348a86dec51cf}{clear\+Cached\+Tilesets} ()
+\item 
+void \hyperlink{classZeta_1_1Map_a2b64eee9d40bae1881b9a791197bf009}{add\+Object} (\hyperlink{classZeta_1_1Object}{Object} $\ast$obj, bool \hyperlink{classZeta_1_1Map_a5de1db4936f619768db7ee633eb0c696}{to\+Be\+Deleted})
+\item 
+void \hyperlink{classZeta_1_1Map_ae508c20f9331cd5d6f4ff353cd13e5c1}{insert\+Object} (\hyperlink{classZeta_1_1Object}{Object} $\ast$obj, bool \hyperlink{classZeta_1_1Map_a5de1db4936f619768db7ee633eb0c696}{to\+Be\+Deleted})
+\item 
+void \hyperlink{classZeta_1_1Map_adee694d959e68748624dd76ea7553689}{remove\+Object} (\hyperlink{classZeta_1_1Object}{Object} $\ast$obj)
+\item 
+void \hyperlink{classZeta_1_1Map_a6c37c6a69fd3749b894f28ed8fdbb2d8}{draw} (const \hyperlink{classZeta_1_1View}{View} \&\hyperlink{classZeta_1_1Map_a9b9106c7c9476767a019f2a0a6a6e29b}{camera}) const 
+\item 
+void \hyperlink{classZeta_1_1Map_a7b3aa19b060050a5657c169cc7aa996e}{update} (\hyperlink{namespaceZeta_a1e0a1265f9b3bd3075fb0fabd39088ba}{Float} elapsed\+Time)
+\item 
+void \hyperlink{classZeta_1_1Map_a68b88003b8c3bcae76bdd4c4246002e6}{push\+To\+Lua} (lua\+\_\+\+State $\ast$lstate)
+\item 
+\hyperlink{classZeta_1_1Map_a68f3f5be0dd1a6fce4d2a6d0002bd5eb}{Map} ()
+\item 
+\hyperlink{classZeta_1_1Map_a0445d64bdcedf4f5f3340ef647ad4fa7}{Map} (const std\+::string \&path)
+\item 
+\hyperlink{classZeta_1_1Map_ac89422bb05ffd8b5f90752061c24ec76}{$\sim$\+Map} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classZeta_1_1Map_ad50855a750ca319974e3cbecf906f816}{parse\+Priorities} (const std\+::string \&value)
+\item 
+void \hyperlink{classZeta_1_1Map_a83fcba0d3acc11658c8ac474312b6211}{load\+Collisions} ()
+\item 
+void \hyperlink{classZeta_1_1Map_a4aabbc3524b483d07aae5416d96e3c17}{clear} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespaceZeta_a9af2e12c4e432d2a1725f19e5a648a04}{Z\+Map}$<$ std\+::string, \hyperlink{classZeta_1_1Tileset}{Tileset} $>$ \hyperlink{classZeta_1_1Map_aa4510662d56f1daac52bf382de75ad99}{cached\+Tilesets}
+\item 
+std\+::vector$<$ \hyperlink{structZeta_1_1Map_1_1MapTileset}{Map\+Tileset} $>$ \hyperlink{classZeta_1_1Map_a76a42ab4191ef49db6f59cc02a8a73b8}{tilesets}
+\item 
+\hyperlink{namespaceZeta_a9af2e12c4e432d2a1725f19e5a648a04}{Z\+Map}$<$ std\+::string, \hyperlink{classZeta_1_1Layer}{Layer} $\ast$ $>$ \hyperlink{classZeta_1_1Map_a0ad84eeb92c6849acf15de9c44adc9df}{layers}
+\item 
+std\+::vector$<$ \hyperlink{classZeta_1_1Layer}{Layer} $\ast$ $>$ \hyperlink{classZeta_1_1Map_ac88a82b8df86430865af9ad1a35f728c}{upper\+Layers}
+\item 
+std\+::vector$<$ \hyperlink{classZeta_1_1Layer}{Layer} $\ast$ $>$ \hyperlink{classZeta_1_1Map_ae6d4f933c620e45cd0c3d847b2ae336d}{lower\+Layers}
+\item 
+std\+::list$<$ \hyperlink{classZeta_1_1Map_1_1ObjectPair}{Object\+Pair} $>$ \hyperlink{classZeta_1_1Map_ad962606f526bd307b2949b2e40e4b7ab}{objects}
+\item 
+std\+::list$<$ \hyperlink{classZeta_1_1Object}{Object} $\ast$ $>$ \hyperlink{classZeta_1_1Map_a3b792a8851f4e9805ed5cc3afaec5399}{visibles}
+\item 
+\hyperlink{namespaceZeta_a92c229b4db6ab7275c2b7f32bdfabc87}{Z\+Set}$<$ \hyperlink{classZeta_1_1Object}{Object} $\ast$ $>$ \hyperlink{classZeta_1_1Map_af7ed558b80874484fa96cf3547852449}{in\+View}
+\item 
+\hyperlink{namespaceZeta_a92c229b4db6ab7275c2b7f32bdfabc87}{Z\+Set}$<$ \hyperlink{classZeta_1_1Tile}{Tile} $\ast$ $>$ \hyperlink{classZeta_1_1Map_a86f6145f0e835f7edcc000fc62b8d018}{tiles\+To\+Be\+Updated}
+\item 
+\hyperlink{namespaceZeta_a9af2e12c4e432d2a1725f19e5a648a04}{Z\+Map}$<$ \hyperlink{classZeta_1_1Object}{Object} $\ast$, std\+::list\\*
+$<$ \hyperlink{classZeta_1_1Map_1_1ObjectPair}{Object\+Pair} $>$\+::iterator $>$ \hyperlink{classZeta_1_1Map_a7e96e8b33c42888db24f27559743970c}{inserted\+Objects}
+\item 
+std\+::vector$<$ std\+::list\\*
+$<$ \hyperlink{classZeta_1_1Map_1_1ObjectPair}{Object\+Pair} $>$\+::iterator $>$ \hyperlink{classZeta_1_1Map_a5de1db4936f619768db7ee633eb0c696}{to\+Be\+Deleted}
+\item 
+\hyperlink{classZeta_1_1Vector2D}{Vector2\+D}$<$ int $>$ \hyperlink{classZeta_1_1Map_af6cc05c67e067a4b85bd54087875589d}{collisions}
+\item 
+\hyperlink{classZeta_1_1PropertyList}{Property\+List} \hyperlink{classZeta_1_1Map_a0ac3e5a50a5d64ab1f86fcf8b19dbd06}{properties}
+\item 
+\hyperlink{classZeta_1_1StaticQuadtree}{Static\+Quadtree} \hyperlink{classZeta_1_1Map_a7a9cabc93228166f370f5efaf80208fe}{quadtree}
+\item 
+std\+::string \hyperlink{classZeta_1_1Map_aa0e65da68b4d45da8c9c64104b85ef9d}{script\+Filename}
+\item 
+\hyperlink{classZeta_1_1View}{View} $\ast$ \hyperlink{classZeta_1_1Map_a9b9106c7c9476767a019f2a0a6a6e29b}{camera}
+\item 
+unsigned int \hyperlink{classZeta_1_1Map_abcd90abc2faf333eeedd81aa4c45853b}{width}
+\item 
+unsigned int \hyperlink{classZeta_1_1Map_aa28d08e860a10888d104dd06e662d2d9}{height}
+\item 
+unsigned int \hyperlink{classZeta_1_1Map_a7e857a9f55fc8afc4af291f55f5da0e0}{tile\+Width}
+\item 
+unsigned int \hyperlink{classZeta_1_1Map_a8199c841d1fee09ee6b334c4f2007eb0}{tile\+Height}
+\item 
+unsigned int \hyperlink{classZeta_1_1Map_ac3743d9eb646f17f80283a0a7d8a2ff7}{sub\+Width}
+\item 
+unsigned int \hyperlink{classZeta_1_1Map_a3c433d3e6f2b32b929d9bc83f6052ca0}{sub\+Height}
+\item 
+unsigned int \hyperlink{classZeta_1_1Map_a158ad62af3a54acc1d0ee072cc522462}{sub\+Tile\+Width}
+\item 
+unsigned int \hyperlink{classZeta_1_1Map_a729a5c62168e4e49d6096f54ee348ec8}{sub\+Tile\+Height}
+\item 
+bool \hyperlink{classZeta_1_1Map_a3a1da1a33ac12ed9d36fa0529705a1ba}{rendering}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classZeta_1_1Map_a68f3f5be0dd1a6fce4d2a6d0002bd5eb}{\index{Zeta\+::\+Map@{Zeta\+::\+Map}!Map@{Map}}
+\index{Map@{Map}!Zeta\+::\+Map@{Zeta\+::\+Map}}
+\subsubsection[{Map}]{\setlength{\rightskip}{0pt plus 5cm}Zeta\+::\+Map\+::\+Map (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classZeta_1_1Map_a68f3f5be0dd1a6fce4d2a6d0002bd5eb}
+\hypertarget{classZeta_1_1Map_a0445d64bdcedf4f5f3340ef647ad4fa7}{\index{Zeta\+::\+Map@{Zeta\+::\+Map}!Map@{Map}}
+\index{Map@{Map}!Zeta\+::\+Map@{Zeta\+::\+Map}}
+\subsubsection[{Map}]{\setlength{\rightskip}{0pt plus 5cm}Zeta\+::\+Map\+::\+Map (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{path}
+\end{DoxyParamCaption}
+)}}\label{classZeta_1_1Map_a0445d64bdcedf4f5f3340ef647ad4fa7}
+\hypertarget{classZeta_1_1Map_ac89422bb05ffd8b5f90752061c24ec76}{\index{Zeta\+::\+Map@{Zeta\+::\+Map}!````~Map@{$\sim$\+Map}}
+\index{````~Map@{$\sim$\+Map}!Zeta\+::\+Map@{Zeta\+::\+Map}}
+\subsubsection[{$\sim$\+Map}]{\setlength{\rightskip}{0pt plus 5cm}Zeta\+::\+Map\+::$\sim$\+Map (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classZeta_1_1Map_ac89422bb05ffd8b5f90752061c24ec76}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classZeta_1_1Map_a2b64eee9d40bae1881b9a791197bf009}{\index{Zeta\+::\+Map@{Zeta\+::\+Map}!add\+Object@{add\+Object}}
+\index{add\+Object@{add\+Object}!Zeta\+::\+Map@{Zeta\+::\+Map}}
+\subsubsection[{add\+Object}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+Map\+::add\+Object (
+\begin{DoxyParamCaption}
+\item[{{\bf Object} $\ast$}]{obj, }
+\item[{bool}]{to\+Be\+Deleted}
+\end{DoxyParamCaption}
+)}}\label{classZeta_1_1Map_a2b64eee9d40bae1881b9a791197bf009}
+\hypertarget{classZeta_1_1Map_add631106527f8d2d596698242a4052cd}{\index{Zeta\+::\+Map@{Zeta\+::\+Map}!add\+Tile\+To\+Update@{add\+Tile\+To\+Update}}
+\index{add\+Tile\+To\+Update@{add\+Tile\+To\+Update}!Zeta\+::\+Map@{Zeta\+::\+Map}}
+\subsubsection[{add\+Tile\+To\+Update}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+Map\+::add\+Tile\+To\+Update (
+\begin{DoxyParamCaption}
+\item[{{\bf Tile} $\ast$}]{tile}
+\end{DoxyParamCaption}
+) const}}\label{classZeta_1_1Map_add631106527f8d2d596698242a4052cd}
+\hypertarget{classZeta_1_1Map_a4aabbc3524b483d07aae5416d96e3c17}{\index{Zeta\+::\+Map@{Zeta\+::\+Map}!clear@{clear}}
+\index{clear@{clear}!Zeta\+::\+Map@{Zeta\+::\+Map}}
+\subsubsection[{clear}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+Map\+::clear (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classZeta_1_1Map_a4aabbc3524b483d07aae5416d96e3c17}
+\hypertarget{classZeta_1_1Map_adc7b5ab14aabe2fbbe7348a86dec51cf}{\index{Zeta\+::\+Map@{Zeta\+::\+Map}!clear\+Cached\+Tilesets@{clear\+Cached\+Tilesets}}
+\index{clear\+Cached\+Tilesets@{clear\+Cached\+Tilesets}!Zeta\+::\+Map@{Zeta\+::\+Map}}
+\subsubsection[{clear\+Cached\+Tilesets}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+Map\+::clear\+Cached\+Tilesets (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classZeta_1_1Map_adc7b5ab14aabe2fbbe7348a86dec51cf}
+\hypertarget{classZeta_1_1Map_a6c37c6a69fd3749b894f28ed8fdbb2d8}{\index{Zeta\+::\+Map@{Zeta\+::\+Map}!draw@{draw}}
+\index{draw@{draw}!Zeta\+::\+Map@{Zeta\+::\+Map}}
+\subsubsection[{draw}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+Map\+::draw (
+\begin{DoxyParamCaption}
+\item[{const {\bf View} \&}]{camera}
+\end{DoxyParamCaption}
+) const}}\label{classZeta_1_1Map_a6c37c6a69fd3749b894f28ed8fdbb2d8}
+\hypertarget{classZeta_1_1Map_ab0a72c0184d3623f4c5ec5a97f2fbf5d}{\index{Zeta\+::\+Map@{Zeta\+::\+Map}!get\+All\+Objects\+At\+Position@{get\+All\+Objects\+At\+Position}}
+\index{get\+All\+Objects\+At\+Position@{get\+All\+Objects\+At\+Position}!Zeta\+::\+Map@{Zeta\+::\+Map}}
+\subsubsection[{get\+All\+Objects\+At\+Position}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<${\bf Object}$\ast$$>$ Zeta\+::\+Map\+::get\+All\+Objects\+At\+Position (
+\begin{DoxyParamCaption}
+\item[{{\bf Float}}]{x, }
+\item[{{\bf Float}}]{y, }
+\item[{{\bf Object} $\ast$}]{ignore\+This = {\ttfamily nullptr}}
+\end{DoxyParamCaption}
+)}}\label{classZeta_1_1Map_ab0a72c0184d3623f4c5ec5a97f2fbf5d}
+\hypertarget{classZeta_1_1Map_abac53fd3dac48523eae38f958246e7a2}{\index{Zeta\+::\+Map@{Zeta\+::\+Map}!get\+Height@{get\+Height}}
+\index{get\+Height@{get\+Height}!Zeta\+::\+Map@{Zeta\+::\+Map}}
+\subsubsection[{get\+Height}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int Zeta\+::\+Map\+::get\+Height (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1Map_abac53fd3dac48523eae38f958246e7a2}
+\hypertarget{classZeta_1_1Map_a65be7fa78fde99a6899858b6a378f0ff}{\index{Zeta\+::\+Map@{Zeta\+::\+Map}!get\+Object\+At\+Position@{get\+Object\+At\+Position}}
+\index{get\+Object\+At\+Position@{get\+Object\+At\+Position}!Zeta\+::\+Map@{Zeta\+::\+Map}}
+\subsubsection[{get\+Object\+At\+Position}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Object}$\ast$ Zeta\+::\+Map\+::get\+Object\+At\+Position (
+\begin{DoxyParamCaption}
+\item[{{\bf Float}}]{x, }
+\item[{{\bf Float}}]{y, }
+\item[{{\bf Object} $\ast$}]{ignore\+This = {\ttfamily nullptr}}
+\end{DoxyParamCaption}
+)}}\label{classZeta_1_1Map_a65be7fa78fde99a6899858b6a378f0ff}
+\hypertarget{classZeta_1_1Map_afa58aa638021348a4949a99c86c0bf65}{\index{Zeta\+::\+Map@{Zeta\+::\+Map}!get\+Properties@{get\+Properties}}
+\index{get\+Properties@{get\+Properties}!Zeta\+::\+Map@{Zeta\+::\+Map}}
+\subsubsection[{get\+Properties}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Property\+List}\& Zeta\+::\+Map\+::get\+Properties (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1Map_afa58aa638021348a4949a99c86c0bf65}
+\hypertarget{classZeta_1_1Map_a3644cf87a279008dd7c9756e61720453}{\index{Zeta\+::\+Map@{Zeta\+::\+Map}!get\+Script\+Filename@{get\+Script\+Filename}}
+\index{get\+Script\+Filename@{get\+Script\+Filename}!Zeta\+::\+Map@{Zeta\+::\+Map}}
+\subsubsection[{get\+Script\+Filename}]{\setlength{\rightskip}{0pt plus 5cm}const std\+::string\& Zeta\+::\+Map\+::get\+Script\+Filename (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1Map_a3644cf87a279008dd7c9756e61720453}
+\hypertarget{classZeta_1_1Map_a89a394411081092638efa88f89058f55}{\index{Zeta\+::\+Map@{Zeta\+::\+Map}!get\+Tile\+By\+G\+I\+D@{get\+Tile\+By\+G\+I\+D}}
+\index{get\+Tile\+By\+G\+I\+D@{get\+Tile\+By\+G\+I\+D}!Zeta\+::\+Map@{Zeta\+::\+Map}}
+\subsubsection[{get\+Tile\+By\+G\+I\+D}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Tile}\& Zeta\+::\+Map\+::get\+Tile\+By\+G\+I\+D (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{gid}
+\end{DoxyParamCaption}
+) const}}\label{classZeta_1_1Map_a89a394411081092638efa88f89058f55}
+\hypertarget{classZeta_1_1Map_af71bdf85fe3e634ac50db6b978142db4}{\index{Zeta\+::\+Map@{Zeta\+::\+Map}!get\+Tile\+Height@{get\+Tile\+Height}}
+\index{get\+Tile\+Height@{get\+Tile\+Height}!Zeta\+::\+Map@{Zeta\+::\+Map}}
+\subsubsection[{get\+Tile\+Height}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int Zeta\+::\+Map\+::get\+Tile\+Height (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1Map_af71bdf85fe3e634ac50db6b978142db4}
+\hypertarget{classZeta_1_1Map_a17d30173db304ee800268b25d0a8dece}{\index{Zeta\+::\+Map@{Zeta\+::\+Map}!get\+Tile\+Width@{get\+Tile\+Width}}
+\index{get\+Tile\+Width@{get\+Tile\+Width}!Zeta\+::\+Map@{Zeta\+::\+Map}}
+\subsubsection[{get\+Tile\+Width}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int Zeta\+::\+Map\+::get\+Tile\+Width (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1Map_a17d30173db304ee800268b25d0a8dece}
+\hypertarget{classZeta_1_1Map_ab6eea0b928a00906163751cd8c3c3ffe}{\index{Zeta\+::\+Map@{Zeta\+::\+Map}!get\+Visible\+Objects@{get\+Visible\+Objects}}
+\index{get\+Visible\+Objects@{get\+Visible\+Objects}!Zeta\+::\+Map@{Zeta\+::\+Map}}
+\subsubsection[{get\+Visible\+Objects}]{\setlength{\rightskip}{0pt plus 5cm}const std\+::unordered\+\_\+set$<${\bf Object}$\ast$$>$\& Zeta\+::\+Map\+::get\+Visible\+Objects (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1Map_ab6eea0b928a00906163751cd8c3c3ffe}
+\hypertarget{classZeta_1_1Map_a24cb5a26f6e74d10c5f3bbedcb2fdf6f}{\index{Zeta\+::\+Map@{Zeta\+::\+Map}!get\+Width@{get\+Width}}
+\index{get\+Width@{get\+Width}!Zeta\+::\+Map@{Zeta\+::\+Map}}
+\subsubsection[{get\+Width}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int Zeta\+::\+Map\+::get\+Width (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1Map_a24cb5a26f6e74d10c5f3bbedcb2fdf6f}
+\hypertarget{classZeta_1_1Map_ae508c20f9331cd5d6f4ff353cd13e5c1}{\index{Zeta\+::\+Map@{Zeta\+::\+Map}!insert\+Object@{insert\+Object}}
+\index{insert\+Object@{insert\+Object}!Zeta\+::\+Map@{Zeta\+::\+Map}}
+\subsubsection[{insert\+Object}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+Map\+::insert\+Object (
+\begin{DoxyParamCaption}
+\item[{{\bf Object} $\ast$}]{obj, }
+\item[{bool}]{to\+Be\+Deleted}
+\end{DoxyParamCaption}
+)}}\label{classZeta_1_1Map_ae508c20f9331cd5d6f4ff353cd13e5c1}
+\hypertarget{classZeta_1_1Map_a5e0e65bb558ba450a0b15d8619e596b1}{\index{Zeta\+::\+Map@{Zeta\+::\+Map}!is\+Cordinate\+Colliding@{is\+Cordinate\+Colliding}}
+\index{is\+Cordinate\+Colliding@{is\+Cordinate\+Colliding}!Zeta\+::\+Map@{Zeta\+::\+Map}}
+\subsubsection[{is\+Cordinate\+Colliding}]{\setlength{\rightskip}{0pt plus 5cm}bool Zeta\+::\+Map\+::is\+Cordinate\+Colliding (
+\begin{DoxyParamCaption}
+\item[{{\bf Float}}]{x, }
+\item[{{\bf Float}}]{y}
+\end{DoxyParamCaption}
+) const}}\label{classZeta_1_1Map_a5e0e65bb558ba450a0b15d8619e596b1}
+\hypertarget{classZeta_1_1Map_a337efdfa761e96d37f4b50c9c717e623}{\index{Zeta\+::\+Map@{Zeta\+::\+Map}!is\+Cordinate\+Colliding@{is\+Cordinate\+Colliding}}
+\index{is\+Cordinate\+Colliding@{is\+Cordinate\+Colliding}!Zeta\+::\+Map@{Zeta\+::\+Map}}
+\subsubsection[{is\+Cordinate\+Colliding}]{\setlength{\rightskip}{0pt plus 5cm}bool Zeta\+::\+Map\+::is\+Cordinate\+Colliding (
+\begin{DoxyParamCaption}
+\item[{{\bf Float}}]{x, }
+\item[{{\bf Float}}]{y, }
+\item[{{\bf Object} $\ast$}]{other}
+\end{DoxyParamCaption}
+) const}}\label{classZeta_1_1Map_a337efdfa761e96d37f4b50c9c717e623}
+\hypertarget{classZeta_1_1Map_aa891631eb5263b1a7fdf8474d042ce07}{\index{Zeta\+::\+Map@{Zeta\+::\+Map}!is\+Rectangle\+Colliding@{is\+Rectangle\+Colliding}}
+\index{is\+Rectangle\+Colliding@{is\+Rectangle\+Colliding}!Zeta\+::\+Map@{Zeta\+::\+Map}}
+\subsubsection[{is\+Rectangle\+Colliding}]{\setlength{\rightskip}{0pt plus 5cm}bool Zeta\+::\+Map\+::is\+Rectangle\+Colliding (
+\begin{DoxyParamCaption}
+\item[{const {\bf Rectangle} \&}]{rect, }
+\item[{{\bf Object} $\ast$}]{owner, }
+\item[{{\bf Rectangle\+::\+Surface}}]{surface = {\ttfamily {\bf Rectangle\+::\+Surface\+::\+Every}}}
+\end{DoxyParamCaption}
+) const}}\label{classZeta_1_1Map_aa891631eb5263b1a7fdf8474d042ce07}
+\hypertarget{classZeta_1_1Map_a9e76ebd42c7c4c0d9d19769dabe5ae4c}{\index{Zeta\+::\+Map@{Zeta\+::\+Map}!load@{load}}
+\index{load@{load}!Zeta\+::\+Map@{Zeta\+::\+Map}}
+\subsubsection[{load}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+Map\+::load (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{path}
+\end{DoxyParamCaption}
+)}}\label{classZeta_1_1Map_a9e76ebd42c7c4c0d9d19769dabe5ae4c}
+\hypertarget{classZeta_1_1Map_a83fcba0d3acc11658c8ac474312b6211}{\index{Zeta\+::\+Map@{Zeta\+::\+Map}!load\+Collisions@{load\+Collisions}}
+\index{load\+Collisions@{load\+Collisions}!Zeta\+::\+Map@{Zeta\+::\+Map}}
+\subsubsection[{load\+Collisions}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+Map\+::load\+Collisions (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classZeta_1_1Map_a83fcba0d3acc11658c8ac474312b6211}
+\hypertarget{classZeta_1_1Map_a89c43b931650ea3a821f552ebc502268}{\index{Zeta\+::\+Map@{Zeta\+::\+Map}!nullise@{nullise}}
+\index{nullise@{nullise}!Zeta\+::\+Map@{Zeta\+::\+Map}}
+\subsubsection[{nullise}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+Map\+::nullise (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classZeta_1_1Map_a89c43b931650ea3a821f552ebc502268}
+\hypertarget{classZeta_1_1Map_ad50855a750ca319974e3cbecf906f816}{\index{Zeta\+::\+Map@{Zeta\+::\+Map}!parse\+Priorities@{parse\+Priorities}}
+\index{parse\+Priorities@{parse\+Priorities}!Zeta\+::\+Map@{Zeta\+::\+Map}}
+\subsubsection[{parse\+Priorities}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+Map\+::parse\+Priorities (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classZeta_1_1Map_ad50855a750ca319974e3cbecf906f816}
+\hypertarget{classZeta_1_1Map_a68b88003b8c3bcae76bdd4c4246002e6}{\index{Zeta\+::\+Map@{Zeta\+::\+Map}!push\+To\+Lua@{push\+To\+Lua}}
+\index{push\+To\+Lua@{push\+To\+Lua}!Zeta\+::\+Map@{Zeta\+::\+Map}}
+\subsubsection[{push\+To\+Lua}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+Map\+::push\+To\+Lua (
+\begin{DoxyParamCaption}
+\item[{lua\+\_\+\+State $\ast$}]{lstate}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classZeta_1_1Map_a68b88003b8c3bcae76bdd4c4246002e6}
+
+
+Implements \hyperlink{classZeta_1_1LuaPushable_a0380ec9cff11f749e8eb67b51b8f82fc}{Zeta\+::\+Lua\+Pushable}.
+
+\hypertarget{classZeta_1_1Map_adee694d959e68748624dd76ea7553689}{\index{Zeta\+::\+Map@{Zeta\+::\+Map}!remove\+Object@{remove\+Object}}
+\index{remove\+Object@{remove\+Object}!Zeta\+::\+Map@{Zeta\+::\+Map}}
+\subsubsection[{remove\+Object}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+Map\+::remove\+Object (
+\begin{DoxyParamCaption}
+\item[{{\bf Object} $\ast$}]{obj}
+\end{DoxyParamCaption}
+)}}\label{classZeta_1_1Map_adee694d959e68748624dd76ea7553689}
+\hypertarget{classZeta_1_1Map_a696046ca9c8e32e74c830473358fab17}{\index{Zeta\+::\+Map@{Zeta\+::\+Map}!set\+Cordinate\+Colliding@{set\+Cordinate\+Colliding}}
+\index{set\+Cordinate\+Colliding@{set\+Cordinate\+Colliding}!Zeta\+::\+Map@{Zeta\+::\+Map}}
+\subsubsection[{set\+Cordinate\+Colliding}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+Map\+::set\+Cordinate\+Colliding (
+\begin{DoxyParamCaption}
+\item[{{\bf Float}}]{x, }
+\item[{{\bf Float}}]{y, }
+\item[{bool}]{val}
+\end{DoxyParamCaption}
+)}}\label{classZeta_1_1Map_a696046ca9c8e32e74c830473358fab17}
+\hypertarget{classZeta_1_1Map_a60d8d526121ede30bf298e5bc37ea513}{\index{Zeta\+::\+Map@{Zeta\+::\+Map}!set\+View@{set\+View}}
+\index{set\+View@{set\+View}!Zeta\+::\+Map@{Zeta\+::\+Map}}
+\subsubsection[{set\+View}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+Map\+::set\+View (
+\begin{DoxyParamCaption}
+\item[{{\bf View} \&}]{camera}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1Map_a60d8d526121ede30bf298e5bc37ea513}
+\hypertarget{classZeta_1_1Map_a7b3aa19b060050a5657c169cc7aa996e}{\index{Zeta\+::\+Map@{Zeta\+::\+Map}!update@{update}}
+\index{update@{update}!Zeta\+::\+Map@{Zeta\+::\+Map}}
+\subsubsection[{update}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+Map\+::update (
+\begin{DoxyParamCaption}
+\item[{{\bf Float}}]{elapsed\+Time}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classZeta_1_1Map_a7b3aa19b060050a5657c169cc7aa996e}
+
+
+Implements \hyperlink{classZeta_1_1Updateable_af4006bfccb762454b4da08786ad93de0}{Zeta\+::\+Updateable}.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classZeta_1_1Map_aa4510662d56f1daac52bf382de75ad99}{\index{Zeta\+::\+Map@{Zeta\+::\+Map}!cached\+Tilesets@{cached\+Tilesets}}
+\index{cached\+Tilesets@{cached\+Tilesets}!Zeta\+::\+Map@{Zeta\+::\+Map}}
+\subsubsection[{cached\+Tilesets}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Z\+Map}$<$std\+::string, {\bf Tileset}$>$ Zeta\+::\+Map\+::cached\+Tilesets\hspace{0.3cm}{\ttfamily [protected]}}}\label{classZeta_1_1Map_aa4510662d56f1daac52bf382de75ad99}
+\hypertarget{classZeta_1_1Map_a9b9106c7c9476767a019f2a0a6a6e29b}{\index{Zeta\+::\+Map@{Zeta\+::\+Map}!camera@{camera}}
+\index{camera@{camera}!Zeta\+::\+Map@{Zeta\+::\+Map}}
+\subsubsection[{camera}]{\setlength{\rightskip}{0pt plus 5cm}{\bf View}$\ast$ Zeta\+::\+Map\+::camera\hspace{0.3cm}{\ttfamily [protected]}}}\label{classZeta_1_1Map_a9b9106c7c9476767a019f2a0a6a6e29b}
+\hypertarget{classZeta_1_1Map_af6cc05c67e067a4b85bd54087875589d}{\index{Zeta\+::\+Map@{Zeta\+::\+Map}!collisions@{collisions}}
+\index{collisions@{collisions}!Zeta\+::\+Map@{Zeta\+::\+Map}}
+\subsubsection[{collisions}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector2\+D}$<$int$>$ Zeta\+::\+Map\+::collisions\hspace{0.3cm}{\ttfamily [protected]}}}\label{classZeta_1_1Map_af6cc05c67e067a4b85bd54087875589d}
+\hypertarget{classZeta_1_1Map_aa28d08e860a10888d104dd06e662d2d9}{\index{Zeta\+::\+Map@{Zeta\+::\+Map}!height@{height}}
+\index{height@{height}!Zeta\+::\+Map@{Zeta\+::\+Map}}
+\subsubsection[{height}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int Zeta\+::\+Map\+::height\hspace{0.3cm}{\ttfamily [protected]}}}\label{classZeta_1_1Map_aa28d08e860a10888d104dd06e662d2d9}
+\hypertarget{classZeta_1_1Map_a7e96e8b33c42888db24f27559743970c}{\index{Zeta\+::\+Map@{Zeta\+::\+Map}!inserted\+Objects@{inserted\+Objects}}
+\index{inserted\+Objects@{inserted\+Objects}!Zeta\+::\+Map@{Zeta\+::\+Map}}
+\subsubsection[{inserted\+Objects}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Z\+Map}$<${\bf Object}$\ast$, std\+::list$<${\bf Object\+Pair}$>$\+::iterator$>$ Zeta\+::\+Map\+::inserted\+Objects\hspace{0.3cm}{\ttfamily [protected]}}}\label{classZeta_1_1Map_a7e96e8b33c42888db24f27559743970c}
+\hypertarget{classZeta_1_1Map_af7ed558b80874484fa96cf3547852449}{\index{Zeta\+::\+Map@{Zeta\+::\+Map}!in\+View@{in\+View}}
+\index{in\+View@{in\+View}!Zeta\+::\+Map@{Zeta\+::\+Map}}
+\subsubsection[{in\+View}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Z\+Set}$<${\bf Object}$\ast$$>$ Zeta\+::\+Map\+::in\+View\hspace{0.3cm}{\ttfamily [protected]}}}\label{classZeta_1_1Map_af7ed558b80874484fa96cf3547852449}
+\hypertarget{classZeta_1_1Map_a0ad84eeb92c6849acf15de9c44adc9df}{\index{Zeta\+::\+Map@{Zeta\+::\+Map}!layers@{layers}}
+\index{layers@{layers}!Zeta\+::\+Map@{Zeta\+::\+Map}}
+\subsubsection[{layers}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Z\+Map}$<$std\+::string, {\bf Layer}$\ast$$>$ Zeta\+::\+Map\+::layers\hspace{0.3cm}{\ttfamily [protected]}}}\label{classZeta_1_1Map_a0ad84eeb92c6849acf15de9c44adc9df}
+\hypertarget{classZeta_1_1Map_ae6d4f933c620e45cd0c3d847b2ae336d}{\index{Zeta\+::\+Map@{Zeta\+::\+Map}!lower\+Layers@{lower\+Layers}}
+\index{lower\+Layers@{lower\+Layers}!Zeta\+::\+Map@{Zeta\+::\+Map}}
+\subsubsection[{lower\+Layers}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<${\bf Layer}$\ast$$>$ Zeta\+::\+Map\+::lower\+Layers\hspace{0.3cm}{\ttfamily [protected]}}}\label{classZeta_1_1Map_ae6d4f933c620e45cd0c3d847b2ae336d}
+\hypertarget{classZeta_1_1Map_ad962606f526bd307b2949b2e40e4b7ab}{\index{Zeta\+::\+Map@{Zeta\+::\+Map}!objects@{objects}}
+\index{objects@{objects}!Zeta\+::\+Map@{Zeta\+::\+Map}}
+\subsubsection[{objects}]{\setlength{\rightskip}{0pt plus 5cm}std\+::list$<${\bf Object\+Pair}$>$ Zeta\+::\+Map\+::objects\hspace{0.3cm}{\ttfamily [protected]}}}\label{classZeta_1_1Map_ad962606f526bd307b2949b2e40e4b7ab}
+\hypertarget{classZeta_1_1Map_a0ac3e5a50a5d64ab1f86fcf8b19dbd06}{\index{Zeta\+::\+Map@{Zeta\+::\+Map}!properties@{properties}}
+\index{properties@{properties}!Zeta\+::\+Map@{Zeta\+::\+Map}}
+\subsubsection[{properties}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+List} Zeta\+::\+Map\+::properties\hspace{0.3cm}{\ttfamily [protected]}}}\label{classZeta_1_1Map_a0ac3e5a50a5d64ab1f86fcf8b19dbd06}
+\hypertarget{classZeta_1_1Map_a7a9cabc93228166f370f5efaf80208fe}{\index{Zeta\+::\+Map@{Zeta\+::\+Map}!quadtree@{quadtree}}
+\index{quadtree@{quadtree}!Zeta\+::\+Map@{Zeta\+::\+Map}}
+\subsubsection[{quadtree}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Static\+Quadtree} Zeta\+::\+Map\+::quadtree\hspace{0.3cm}{\ttfamily [protected]}}}\label{classZeta_1_1Map_a7a9cabc93228166f370f5efaf80208fe}
+\hypertarget{classZeta_1_1Map_a3a1da1a33ac12ed9d36fa0529705a1ba}{\index{Zeta\+::\+Map@{Zeta\+::\+Map}!rendering@{rendering}}
+\index{rendering@{rendering}!Zeta\+::\+Map@{Zeta\+::\+Map}}
+\subsubsection[{rendering}]{\setlength{\rightskip}{0pt plus 5cm}bool Zeta\+::\+Map\+::rendering\hspace{0.3cm}{\ttfamily [protected]}}}\label{classZeta_1_1Map_a3a1da1a33ac12ed9d36fa0529705a1ba}
+\hypertarget{classZeta_1_1Map_aa0e65da68b4d45da8c9c64104b85ef9d}{\index{Zeta\+::\+Map@{Zeta\+::\+Map}!script\+Filename@{script\+Filename}}
+\index{script\+Filename@{script\+Filename}!Zeta\+::\+Map@{Zeta\+::\+Map}}
+\subsubsection[{script\+Filename}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string Zeta\+::\+Map\+::script\+Filename\hspace{0.3cm}{\ttfamily [protected]}}}\label{classZeta_1_1Map_aa0e65da68b4d45da8c9c64104b85ef9d}
+\hypertarget{classZeta_1_1Map_a3c433d3e6f2b32b929d9bc83f6052ca0}{\index{Zeta\+::\+Map@{Zeta\+::\+Map}!sub\+Height@{sub\+Height}}
+\index{sub\+Height@{sub\+Height}!Zeta\+::\+Map@{Zeta\+::\+Map}}
+\subsubsection[{sub\+Height}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int Zeta\+::\+Map\+::sub\+Height\hspace{0.3cm}{\ttfamily [protected]}}}\label{classZeta_1_1Map_a3c433d3e6f2b32b929d9bc83f6052ca0}
+\hypertarget{classZeta_1_1Map_a729a5c62168e4e49d6096f54ee348ec8}{\index{Zeta\+::\+Map@{Zeta\+::\+Map}!sub\+Tile\+Height@{sub\+Tile\+Height}}
+\index{sub\+Tile\+Height@{sub\+Tile\+Height}!Zeta\+::\+Map@{Zeta\+::\+Map}}
+\subsubsection[{sub\+Tile\+Height}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int Zeta\+::\+Map\+::sub\+Tile\+Height\hspace{0.3cm}{\ttfamily [protected]}}}\label{classZeta_1_1Map_a729a5c62168e4e49d6096f54ee348ec8}
+\hypertarget{classZeta_1_1Map_a158ad62af3a54acc1d0ee072cc522462}{\index{Zeta\+::\+Map@{Zeta\+::\+Map}!sub\+Tile\+Width@{sub\+Tile\+Width}}
+\index{sub\+Tile\+Width@{sub\+Tile\+Width}!Zeta\+::\+Map@{Zeta\+::\+Map}}
+\subsubsection[{sub\+Tile\+Width}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int Zeta\+::\+Map\+::sub\+Tile\+Width\hspace{0.3cm}{\ttfamily [protected]}}}\label{classZeta_1_1Map_a158ad62af3a54acc1d0ee072cc522462}
+\hypertarget{classZeta_1_1Map_ac3743d9eb646f17f80283a0a7d8a2ff7}{\index{Zeta\+::\+Map@{Zeta\+::\+Map}!sub\+Width@{sub\+Width}}
+\index{sub\+Width@{sub\+Width}!Zeta\+::\+Map@{Zeta\+::\+Map}}
+\subsubsection[{sub\+Width}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int Zeta\+::\+Map\+::sub\+Width\hspace{0.3cm}{\ttfamily [protected]}}}\label{classZeta_1_1Map_ac3743d9eb646f17f80283a0a7d8a2ff7}
+\hypertarget{classZeta_1_1Map_a8199c841d1fee09ee6b334c4f2007eb0}{\index{Zeta\+::\+Map@{Zeta\+::\+Map}!tile\+Height@{tile\+Height}}
+\index{tile\+Height@{tile\+Height}!Zeta\+::\+Map@{Zeta\+::\+Map}}
+\subsubsection[{tile\+Height}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int Zeta\+::\+Map\+::tile\+Height\hspace{0.3cm}{\ttfamily [protected]}}}\label{classZeta_1_1Map_a8199c841d1fee09ee6b334c4f2007eb0}
+\hypertarget{classZeta_1_1Map_a76a42ab4191ef49db6f59cc02a8a73b8}{\index{Zeta\+::\+Map@{Zeta\+::\+Map}!tilesets@{tilesets}}
+\index{tilesets@{tilesets}!Zeta\+::\+Map@{Zeta\+::\+Map}}
+\subsubsection[{tilesets}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<${\bf Map\+Tileset}$>$ Zeta\+::\+Map\+::tilesets\hspace{0.3cm}{\ttfamily [protected]}}}\label{classZeta_1_1Map_a76a42ab4191ef49db6f59cc02a8a73b8}
+\hypertarget{classZeta_1_1Map_a86f6145f0e835f7edcc000fc62b8d018}{\index{Zeta\+::\+Map@{Zeta\+::\+Map}!tiles\+To\+Be\+Updated@{tiles\+To\+Be\+Updated}}
+\index{tiles\+To\+Be\+Updated@{tiles\+To\+Be\+Updated}!Zeta\+::\+Map@{Zeta\+::\+Map}}
+\subsubsection[{tiles\+To\+Be\+Updated}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Z\+Set}$<${\bf Tile}$\ast$$>$ Zeta\+::\+Map\+::tiles\+To\+Be\+Updated\hspace{0.3cm}{\ttfamily [mutable]}, {\ttfamily [protected]}}}\label{classZeta_1_1Map_a86f6145f0e835f7edcc000fc62b8d018}
+\hypertarget{classZeta_1_1Map_a7e857a9f55fc8afc4af291f55f5da0e0}{\index{Zeta\+::\+Map@{Zeta\+::\+Map}!tile\+Width@{tile\+Width}}
+\index{tile\+Width@{tile\+Width}!Zeta\+::\+Map@{Zeta\+::\+Map}}
+\subsubsection[{tile\+Width}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int Zeta\+::\+Map\+::tile\+Width\hspace{0.3cm}{\ttfamily [protected]}}}\label{classZeta_1_1Map_a7e857a9f55fc8afc4af291f55f5da0e0}
+\hypertarget{classZeta_1_1Map_a5de1db4936f619768db7ee633eb0c696}{\index{Zeta\+::\+Map@{Zeta\+::\+Map}!to\+Be\+Deleted@{to\+Be\+Deleted}}
+\index{to\+Be\+Deleted@{to\+Be\+Deleted}!Zeta\+::\+Map@{Zeta\+::\+Map}}
+\subsubsection[{to\+Be\+Deleted}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$std\+::list$<${\bf Object\+Pair}$>$\+::iterator$>$ Zeta\+::\+Map\+::to\+Be\+Deleted\hspace{0.3cm}{\ttfamily [protected]}}}\label{classZeta_1_1Map_a5de1db4936f619768db7ee633eb0c696}
+\hypertarget{classZeta_1_1Map_ac88a82b8df86430865af9ad1a35f728c}{\index{Zeta\+::\+Map@{Zeta\+::\+Map}!upper\+Layers@{upper\+Layers}}
+\index{upper\+Layers@{upper\+Layers}!Zeta\+::\+Map@{Zeta\+::\+Map}}
+\subsubsection[{upper\+Layers}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<${\bf Layer}$\ast$$>$ Zeta\+::\+Map\+::upper\+Layers\hspace{0.3cm}{\ttfamily [protected]}}}\label{classZeta_1_1Map_ac88a82b8df86430865af9ad1a35f728c}
+\hypertarget{classZeta_1_1Map_a3b792a8851f4e9805ed5cc3afaec5399}{\index{Zeta\+::\+Map@{Zeta\+::\+Map}!visibles@{visibles}}
+\index{visibles@{visibles}!Zeta\+::\+Map@{Zeta\+::\+Map}}
+\subsubsection[{visibles}]{\setlength{\rightskip}{0pt plus 5cm}std\+::list$<${\bf Object}$\ast$$>$ Zeta\+::\+Map\+::visibles\hspace{0.3cm}{\ttfamily [protected]}}}\label{classZeta_1_1Map_a3b792a8851f4e9805ed5cc3afaec5399}
+\hypertarget{classZeta_1_1Map_abcd90abc2faf333eeedd81aa4c45853b}{\index{Zeta\+::\+Map@{Zeta\+::\+Map}!width@{width}}
+\index{width@{width}!Zeta\+::\+Map@{Zeta\+::\+Map}}
+\subsubsection[{width}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int Zeta\+::\+Map\+::width\hspace{0.3cm}{\ttfamily [protected]}}}\label{classZeta_1_1Map_abcd90abc2faf333eeedd81aa4c45853b}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Zeta/\+Core/\+Map\+Classes/\hyperlink{Map_8hpp}{Map.\+hpp}\end{DoxyCompactItemize}

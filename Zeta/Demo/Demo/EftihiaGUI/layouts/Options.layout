@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<GUILayout version="4" >
+    <Window type="Eftihia/FrameWindow" name="Options" >
+        <Property name="Area" value="{{0,5.5},{0,7.5},{0,384.5},{0,242.5}}" />
+        <Property name="Text" value="Επιλογές" />
+        <Property name="SizingEnabled" value="False" />
+        <Property name="VerticalAlignment" value="Centre" />
+        <Property name="HorizontalAlignment" value="Centre" />
+        <Window type="Eftihia/Combobox" name="ResolutionsCombo" >
+            <Property name="Area" value="{{0,0},{0,15},{0,176},{0,148}}" />
+            <Property name="ReadOnly" value="True" />
+            <Property name="DragDropTarget" value="False" />
+            <AutoWindow namePath="__auto_editbox__" >
+                <Property name="ReadOnly" value="True" />
+                <Property name="NormalTextColour" value="tl:FF173E8E tr:FF173E8E bl:FF173E8E br:FF173E8E" />
+            </AutoWindow>
+            <AutoWindow namePath="__auto_droplist__" >
+                <AutoWindow namePath="__auto_hscrollbar__" >
+                    <AutoWindow namePath="__auto_incbtn__" >
+                        <Property name="RestoreOldCapture" value="True" />
+                    </AutoWindow>
+                    <AutoWindow namePath="__auto_decbtn__" >
+                        <Property name="RestoreOldCapture" value="True" />
+                    </AutoWindow>
+                    <AutoWindow namePath="__auto_thumb__" >
+                        <Property name="RestoreOldCapture" value="True" />
+                    </AutoWindow>
+                </AutoWindow>
+                <AutoWindow namePath="__auto_vscrollbar__" >
+                    <AutoWindow namePath="__auto_incbtn__" >
+                        <Property name="RestoreOldCapture" value="True" />
+                    </AutoWindow>
+                    <AutoWindow namePath="__auto_decbtn__" >
+                        <Property name="RestoreOldCapture" value="True" />
+                    </AutoWindow>
+                    <AutoWindow namePath="__auto_thumb__" >
+                        <Property name="RestoreOldCapture" value="True" />
+                    </AutoWindow>
+                </AutoWindow>
+            </AutoWindow>
+            <AutoWindow namePath="__auto_button__" >
+                <Property name="HoverImage" value="Eftihia/ComboButtonHover" />
+                <Property name="NormalImage" value="Eftihia/ComboButtonNormal" />
+                <Property name="PushedImage" value="Eftihia/ComboButtonClicked" />
+            </AutoWindow>
+        </Window>
+        <Window type="Eftihia/Button" name="CancelButton" >
+            <Property name="Area" value="{{0.483029,-0.339539},{0.863454,-0.963867},{0.733681,-0.339539},{0.991968,-0.963867}}" />
+            <Property name="Text" value="Άκυρο" />
+        </Window>
+        <Window type="Eftihia/Button" name="OkButton" >
+            <Property name="Area" value="{{0.744125,-0.117371},{0.863454,-0.963867},{0.994778,-0.117371},{0.991968,-0.963867}}" />
+            <Property name="Text" value="Οκ" />
+        </Window>
+        <Window type="Eftihia/StaticText" name="StaticText" >
+            <Property name="Area" value="{{0,0},{0,-5},{0,100},{0,15}}" />
+            <Property name="Text" value="Ανάλυση:" />
+            <Property name="MaxSize" value="{{1,0},{1,0}}" />
+            <Property name="TextColours" value="tl:FF173E7E tr:FF173E7E bl:FF173E7E br:FF173E7E" />
+            <Property name="FrameEnabled" value="False" />
+            <Property name="BackgroundEnabled" value="False" />
+            <Property name="HorzScrollPageSize" value="100" />
+            <Property name="VertScrollPageSize" value="20" />
+            <Property name="HorzScrollDocumentSize" value="57" />
+            <Property name="VertScrollDocumentSize" value="14.9408" />
+        </Window>
+        <Window type="Eftihia/Checkbox" name="Music" >
+            <Property name="Area" value="{{0,200},{0,15},{0,344.75},{0,33.5}}" />
+            <Property name="Text" value="Ενεργοποίηση ήχων" />
+        </Window>
+        <Window type="Eftihia/Checkbox" name="FullScreen" >
+            <Property name="Area" value="{{0,200},{0,35},{0,345},{0,55}}" />
+            <Property name="Text" value="Πλήρης Οθόνη" />
+        </Window>
+    </Window>
+</GUILayout>

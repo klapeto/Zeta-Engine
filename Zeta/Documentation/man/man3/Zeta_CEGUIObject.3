@@ -1,0 +1,217 @@
+.TH "Zeta::CEGUIObject" 3 "Wed Feb 10 2016" "Zeta" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Zeta::CEGUIObject \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <CEGUIObject\&.hpp>\fP
+.PP
+Inherits \fBZeta::Object\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBsetOffesets\fP (\fBFloat\fP \fBoffX\fP, \fBFloat\fP \fBoffY\fP)"
+.br
+.ti -1c
+.RI "bool \fBisDestroy\fP () const "
+.br
+.ti -1c
+.RI "void \fBsetDestroy\fP (bool \fBdestroy\fP)"
+.br
+.ti -1c
+.RI "\fBFloat\fP \fBgetOffsetX\fP () const "
+.br
+.ti -1c
+.RI "void \fBsetOffsetX\fP (\fBFloat\fP \fBoffX\fP)"
+.br
+.ti -1c
+.RI "\fBFloat\fP \fBgetOffsetY\fP () const "
+.br
+.ti -1c
+.RI "void \fBsetOffsetY\fP (\fBFloat\fP \fBoffY\fP)"
+.br
+.ti -1c
+.RI "CEGUI::Window * \fBgetWindow\fP () const "
+.br
+.ti -1c
+.RI "void \fBsetWindow\fP (CEGUI::Window *\fBwindow\fP)"
+.br
+.ti -1c
+.RI "void \fBupdate\fP (\fBFloat\fP elapsedTime)"
+.br
+.ti -1c
+.RI "void \fBsetLuaTable\fP (\fBlua_Object\fP \fBtable\fP)"
+.br
+.ti -1c
+.RI "void \fBsetOnClick\fP (\fBlua_Object\fP func)"
+.br
+.ti -1c
+.RI "\fBAnimationHandler\fP & \fBgetAnimationHandler\fP ()"
+.br
+.ti -1c
+.RI "void \fBdraw\fP (\fBFloat\fP x, \fBFloat\fP y, \fBFloat\fP rotation=0\&.0f, Float scale=1\&.0f) const "
+.br
+.ti -1c
+.RI "void \fBonHide\fP ()"
+.br
+.ti -1c
+.RI "void \fBonShow\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetPosition\fP (\fBFloat\fP x, \fBFloat\fP y)"
+.br
+.ti -1c
+.RI "void \fBoffsetPosition\fP (\fBFloat\fP dx, \fBFloat\fP dy)"
+.br
+.ti -1c
+.RI "void \fBonCollidedWith\fP (\fBObject\fP *other)"
+.br
+.ti -1c
+.RI "void \fBonClick\fP (\fBObject\fP *other)"
+.br
+.ti -1c
+.RI "void \fBaccept\fP (\fBVisitor\fP &visitor)"
+.br
+.ti -1c
+.RI "void \fBpushToLua\fP (lua_State *lstate)"
+.br
+.ti -1c
+.RI "\fBCEGUIObject\fP (CEGUI::Window *\fBwindow\fP, \fBFloat\fP x, \fBFloat\fP y, const std::string &animationClass='')"
+.br
+.ti -1c
+.RI "\fB~CEGUIObject\fP ()"
+.br
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBAnimationHandler\fP \fBanimHandler\fP"
+.br
+.ti -1c
+.RI "\fBLuaTable\fP \fBtable\fP"
+.br
+.ti -1c
+.RI "\fBLuaFunctor\fP \fBonClickF\fP"
+.br
+.ti -1c
+.RI "CEGUI::Window * \fBwindow\fP"
+.br
+.ti -1c
+.RI "\fBFloat\fP \fBoffX\fP"
+.br
+.ti -1c
+.RI "\fBFloat\fP \fBoffY\fP"
+.br
+.ti -1c
+.RI "bool \fBdestroy\fP"
+.br
+.in -1c
+.SS "Additional Inherited Members"
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Zeta::CEGUIObject::CEGUIObject (CEGUI::Window *window, \fBFloat\fPx, \fBFloat\fPy, const std::string &animationClass = \fC''\fP)"
+
+.SS "Zeta::CEGUIObject::~CEGUIObject ()"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "void Zeta::CEGUIObject::accept (\fBVisitor\fP &visitor)\fC [virtual]\fP"
+
+.PP
+Implements \fBZeta::Object\fP\&.
+.SS "void Zeta::CEGUIObject::draw (\fBFloat\fPx, \fBFloat\fPy, \fBFloat\fProtation = \fC0\&.0f\fP, \fBFloat\fPscale = \fC1\&.0f\fP) const\fC [virtual]\fP"
+Draws the \fBObject\fP on screen\&. Be advised, the x,y, offsets might have different meaning on different implementations\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIx\fP X offset to be applied on the drawing 
+.br
+\fIy\fP Y offset to be applied on the drawing 
+.br
+\fIrotation\fP the rotation to be applied on the drawing 
+.RE
+.PP
+
+.PP
+Implements \fBZeta::Drawable\fP\&.
+.SS "\fBAnimationHandler\fP& Zeta::CEGUIObject::getAnimationHandler ()\fC [inline]\fP"
+
+.SS "\fBFloat\fP Zeta::CEGUIObject::getOffsetX () const\fC [inline]\fP"
+
+.SS "\fBFloat\fP Zeta::CEGUIObject::getOffsetY () const\fC [inline]\fP"
+
+.SS "CEGUI::Window* Zeta::CEGUIObject::getWindow () const\fC [inline]\fP"
+
+.SS "bool Zeta::CEGUIObject::isDestroy () const\fC [inline]\fP"
+
+.SS "void Zeta::CEGUIObject::offsetPosition (\fBFloat\fPdx, \fBFloat\fPdy)\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBZeta::Object\fP\&.
+.SS "void Zeta::CEGUIObject::onClick (\fBObject\fP *other)\fC [virtual]\fP"
+
+.PP
+Implements \fBZeta::Object\fP\&.
+.SS "void Zeta::CEGUIObject::onCollidedWith (\fBObject\fP *other)\fC [virtual]\fP"
+
+.PP
+Implements \fBZeta::Object\fP\&.
+.SS "void Zeta::CEGUIObject::onHide ()\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBZeta::Object\fP\&.
+.SS "void Zeta::CEGUIObject::onShow ()\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBZeta::Object\fP\&.
+.SS "void Zeta::CEGUIObject::pushToLua (lua_State *lstate)\fC [virtual]\fP"
+
+.PP
+Implements \fBZeta::LuaPushable\fP\&.
+.SS "void Zeta::CEGUIObject::setDestroy (booldestroy)\fC [inline]\fP"
+
+.SS "void Zeta::CEGUIObject::setLuaTable (\fBlua_Object\fPtable)"
+
+.SS "void Zeta::CEGUIObject::setOffesets (\fBFloat\fPoffX, \fBFloat\fPoffY)\fC [inline]\fP"
+
+.SS "void Zeta::CEGUIObject::setOffsetX (\fBFloat\fPoffX)\fC [inline]\fP"
+
+.SS "void Zeta::CEGUIObject::setOffsetY (\fBFloat\fPoffY)\fC [inline]\fP"
+
+.SS "void Zeta::CEGUIObject::setOnClick (\fBlua_Object\fPfunc)"
+
+.SS "void Zeta::CEGUIObject::setPosition (\fBFloat\fPx, \fBFloat\fPy)\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBZeta::Object\fP\&.
+.SS "void Zeta::CEGUIObject::setWindow (CEGUI::Window *window)\fC [inline]\fP"
+
+.SS "void Zeta::CEGUIObject::update (\fBFloat\fPelapsedTime)\fC [inline]\fP, \fC [virtual]\fP"
+
+.PP
+Implements \fBZeta::Updateable\fP\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "\fBAnimationHandler\fP Zeta::CEGUIObject::animHandler\fC [private]\fP"
+
+.SS "bool Zeta::CEGUIObject::destroy\fC [private]\fP"
+
+.SS "\fBFloat\fP Zeta::CEGUIObject::offX\fC [private]\fP"
+
+.SS "\fBFloat\fP Zeta::CEGUIObject::offY\fC [private]\fP"
+
+.SS "\fBLuaFunctor\fP Zeta::CEGUIObject::onClickF\fC [private]\fP"
+
+.SS "\fBLuaTable\fP Zeta::CEGUIObject::table\fC [private]\fP"
+
+.SS "CEGUI::Window* Zeta::CEGUIObject::window\fC [private]\fP"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Zeta from the source code\&.

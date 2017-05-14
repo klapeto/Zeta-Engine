@@ -1,0 +1,73 @@
+.TH "Zeta::Faction" 3 "Wed Feb 10 2016" "Zeta" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Zeta::Faction \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Faction\&.hpp>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "bool \fBisHostile\fP (const std::string &faction) const "
+.br
+.ti -1c
+.RI "void \fBsetHostile\fP (const std::string &faction)"
+.br
+.ti -1c
+.RI "bool \fBisHostile\fP (const \fBFaction\fP &other) const "
+.br
+.ti -1c
+.RI "const std::string & \fBgetName\fP () const "
+.br
+.ti -1c
+.RI "void \fBsetName\fP (const std::string &\fBname\fP)"
+.br
+.ti -1c
+.RI "\fBFaction\fP ()"
+.br
+.ti -1c
+.RI "\fB~Faction\fP ()"
+.br
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "std::string \fBname\fP"
+.br
+.ti -1c
+.RI "\fBZSet\fP< std::string > \fBhostile\fP"
+.br
+.in -1c
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Zeta::Faction::Faction ()\fC [inline]\fP"
+
+.SS "Zeta::Faction::~Faction ()\fC [inline]\fP"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "const std::string& Zeta::Faction::getName () const\fC [inline]\fP"
+
+.SS "bool Zeta::Faction::isHostile (const std::string &faction) const\fC [inline]\fP"
+
+.SS "bool Zeta::Faction::isHostile (const \fBFaction\fP &other) const\fC [inline]\fP"
+
+.SS "void Zeta::Faction::setHostile (const std::string &faction)\fC [inline]\fP"
+
+.SS "void Zeta::Faction::setName (const std::string &name)\fC [inline]\fP"
+
+.SH "Member Data Documentation"
+.PP 
+.SS "\fBZSet\fP<std::string> Zeta::Faction::hostile\fC [private]\fP"
+
+.SS "std::string Zeta::Faction::name\fC [private]\fP"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Zeta from the source code\&.

@@ -1,0 +1,178 @@
+.TH "Zeta::AnimationClass" 3 "Wed Feb 10 2016" "Zeta" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Zeta::AnimationClass \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <AnimationClass\&.hpp>\fP
+.PP
+Inherits \fBZeta::Resource\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "const \fBAnimation\fP & \fBgetAnimation\fP (const std::string &\fBname\fP, \fBLifeformState::CombinedState\fP fallbackAnimation=LifeformState::Action::Idle|LifeformState::Direction::Down) const "
+.br
+.ti -1c
+.RI "const \fBAnimation\fP & \fBgetAnimation\fP (\fBLifeformState::CombinedState\fP state) const "
+.br
+.ti -1c
+.RI "const \fBRectangle\fP & \fBgetBoundBox\fP () const "
+.br
+.ti -1c
+.RI "const \fBRectangle\fP & \fBgetTargetBox\fP () const "
+.br
+.ti -1c
+.RI "const \fBEllipsis\fP & \fBgetShadow\fP () const "
+.br
+.ti -1c
+.RI "bool \fBhasShadow\fP () const "
+.br
+.ti -1c
+.RI "\fBAnimationClass\fP ()"
+.br
+.ti -1c
+.RI "\fBAnimationClass\fP (const std::string &path)"
+.br
+.ti -1c
+.RI "virtual \fB~AnimationClass\fP ()"
+.br
+.in -1c
+.SS "Protected Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBretrivePrimitives\fP ()"
+.br
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBZSmallMap\fP< std::string, const 
+.br
+\fBAnimation\fP * > \fBanimations\fP"
+.br
+.ti -1c
+.RI "\fBVector2D\fP< const \fBAnimation\fP * > \fBprimAnimations\fP"
+.br
+.ti -1c
+.RI "\fBRectangle\fP \fBboundBox\fP"
+.br
+.ti -1c
+.RI "\fBRectangle\fP \fBtargetBox\fP"
+.br
+.ti -1c
+.RI "\fBEllipsis\fP \fBshadow\fP"
+.br
+.ti -1c
+.RI "const \fBAnimation\fP * \fBnullAnimation\fP"
+.br
+.ti -1c
+.RI "bool \fBhas_Shadow\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Class for \fBAnimation\fP Classes \fBAnimation\fP Classes are a group of Animations that can be assigned to a \fBLifeform\fP\&. Usually the animations are related 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Zeta::AnimationClass::AnimationClass ()"
+Default Constructor Constructs a Null \fBAnimationClass\fP that contains no Animations and all State Animations are NullAnimations 
+.SS "Zeta::AnimationClass::AnimationClass (const std::string &path)"
+Loads the \fBAnimation\fP Class \fBFile\fP 
+.SS "virtual Zeta::AnimationClass::~AnimationClass ()\fC [virtual]\fP"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "const \fBAnimation\fP& Zeta::AnimationClass::getAnimation (const std::string &name, \fBLifeformState::CombinedState\fPfallbackAnimation = \fCLifeformState::Action::Idle|LifeformState::Direction::Down\fP) const"
+Gets the named animation If the animation does not exist, then the fallback animation will be returned\&. If not defined, the fallback is IDLE+DOWN\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIname\fP The name of the animation to return 
+.br
+\fIfallbackAnimation\fP The animation State to return if the animation does not exist 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+the \fBAnimation\fP to be returned 
+.RE
+.PP
+
+.SS "const \fBAnimation\fP& Zeta::AnimationClass::getAnimation (\fBLifeformState::CombinedState\fPstate) const"
+Gets the \fBAnimation\fP defined by the State 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIstate\fP The state that has the animation 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+the \fBAnimation\fP to be returned 
+.RE
+.PP
+
+.SS "const \fBRectangle\fP& Zeta::AnimationClass::getBoundBox () const\fC [inline]\fP"
+Gets the Boundary \fBRectangle\fP of this Class This rectangle is used for Collision Detection 
+.PP
+\fBReturns:\fP
+.RS 4
+The Boundary \fBRectangle\fP 
+.RE
+.PP
+
+.SS "const \fBEllipsis\fP& Zeta::AnimationClass::getShadow () const\fC [inline]\fP"
+Gets the Shadow \fBEllipsis\fP of this Class 
+.PP
+\fBReturns:\fP
+.RS 4
+The Shadow \fBEllipsis\fP 
+.RE
+.PP
+
+.SS "const \fBRectangle\fP& Zeta::AnimationClass::getTargetBox () const\fC [inline]\fP"
+Gets the Target \fBRectangle\fP of this Class This rectangle is used for Targeting 
+.PP
+\fBReturns:\fP
+.RS 4
+The Target \fBRectangle\fP 
+.RE
+.PP
+
+.SS "bool Zeta::AnimationClass::hasShadow () const\fC [inline]\fP"
+Get whether this Class has a Shadow 
+.PP
+\fBReturns:\fP
+.RS 4
+true if it has Shadow 
+.RE
+.PP
+
+.SS "void Zeta::AnimationClass::retrivePrimitives ()\fC [protected]\fP"
+
+.SH "Member Data Documentation"
+.PP 
+.SS "\fBZSmallMap\fP<std::string, const \fBAnimation\fP*> Zeta::AnimationClass::animations\fC [protected]\fP"
+
+.SS "\fBRectangle\fP Zeta::AnimationClass::boundBox\fC [protected]\fP"
+
+.SS "bool Zeta::AnimationClass::has_Shadow\fC [protected]\fP"
+
+.SS "const \fBAnimation\fP* Zeta::AnimationClass::nullAnimation\fC [protected]\fP"
+
+.SS "\fBVector2D\fP<const \fBAnimation\fP*> Zeta::AnimationClass::primAnimations\fC [protected]\fP"
+
+.SS "\fBEllipsis\fP Zeta::AnimationClass::shadow\fC [protected]\fP"
+
+.SS "\fBRectangle\fP Zeta::AnimationClass::targetBox\fC [protected]\fP"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Zeta from the source code\&.

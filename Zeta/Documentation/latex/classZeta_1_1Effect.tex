@@ -1,0 +1,178 @@
+\hypertarget{classZeta_1_1Effect}{\section{Zeta\+:\+:Effect Class Reference}
+\label{classZeta_1_1Effect}\index{Zeta\+::\+Effect@{Zeta\+::\+Effect}}
+}
+
+
+{\ttfamily \#include $<$Effect.\+hpp$>$}
+
+
+
+Inheritance diagram for Zeta\+:\+:Effect\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=288pt]{classZeta_1_1Effect__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Zeta\+:\+:Effect\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classZeta_1_1Effect__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classZeta_1_1Effect_a29712372704f9e84d54a0c8cb93fb3c6}{is\+Finished} () const 
+\item 
+const \hyperlink{classZeta_1_1EffectClass}{Effect\+Class} \& \hyperlink{classZeta_1_1Effect_aaf7157b61cedb98ae6d470d34377ef87}{get\+Class} () const 
+\item 
+\hyperlink{classZeta_1_1Ability}{Ability} $\ast$ \hyperlink{classZeta_1_1Effect_a8cc64ed1b22c063af761c1fcdd08ee9a}{get\+Source} ()
+\item 
+void \hyperlink{classZeta_1_1Effect_a4488ac8d539165fb7c3f16dd828b8962}{set\+Source} (\hyperlink{classZeta_1_1Ability}{Ability} $\ast$\hyperlink{classZeta_1_1Effect_aa4bffc23c071f21e72c577c2e16e40ee}{source})
+\item 
+void \hyperlink{classZeta_1_1Effect_a80384289982d02d6fe7c4764ebd9ac63}{end} ()
+\item 
+virtual void \hyperlink{classZeta_1_1Effect_a85a3bc561d4280c6dc042f898e2f620e}{update} (\hyperlink{namespaceZeta_a1e0a1265f9b3bd3075fb0fabd39088ba}{Float} elapsed\+Time)
+\item 
+virtual void \hyperlink{classZeta_1_1Effect_a48281d13dac1e240278ac7588762b8c7}{push\+To\+Lua} (lua\+\_\+\+State $\ast$lstate)
+\item 
+\hyperlink{classZeta_1_1Effect_a56974695a36fc3026a8cc2e2148f8736}{Effect} (const \hyperlink{classZeta_1_1EffectClass}{Effect\+Class} \&eff\+Cls, \hyperlink{classZeta_1_1Lifeform}{Lifeform} $\ast$target, int \hyperlink{classZeta_1_1Effect_aec101c1a7eda022328a0b0ebb1b10c77}{level})
+\item 
+virtual \hyperlink{classZeta_1_1Effect_a2322a5386a06c8354acac70d5f7ffb2c}{$\sim$\+Effect} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classZeta_1_1Lifeform}{Lifeform} $\ast$ \hyperlink{classZeta_1_1Effect_a6c8500520ef68281241fd7276ea2e214}{owner}
+\item 
+const \hyperlink{classZeta_1_1EffectClass}{Effect\+Class} $\ast$ \hyperlink{classZeta_1_1Effect_aef82ce8a35dd7cb89ded50aa2e7dbebc}{eff\+Class}
+\item 
+\hyperlink{classZeta_1_1Ability}{Ability} $\ast$ \hyperlink{classZeta_1_1Effect_aa4bffc23c071f21e72c577c2e16e40ee}{source}
+\item 
+int \hyperlink{classZeta_1_1Effect_aec101c1a7eda022328a0b0ebb1b10c77}{level}
+\item 
+bool \hyperlink{classZeta_1_1Effect_ad278320e1e1434a248f9ca14347c1d32}{finished}
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classZeta_1_1Effect_a3457ad78b5b7d1c75b5d6116350a89b8}{was\+Applied}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classZeta_1_1Effect_a56974695a36fc3026a8cc2e2148f8736}{\index{Zeta\+::\+Effect@{Zeta\+::\+Effect}!Effect@{Effect}}
+\index{Effect@{Effect}!Zeta\+::\+Effect@{Zeta\+::\+Effect}}
+\subsubsection[{Effect}]{\setlength{\rightskip}{0pt plus 5cm}Zeta\+::\+Effect\+::\+Effect (
+\begin{DoxyParamCaption}
+\item[{const {\bf Effect\+Class} \&}]{eff\+Cls, }
+\item[{{\bf Lifeform} $\ast$}]{target, }
+\item[{int}]{level}
+\end{DoxyParamCaption}
+)}}\label{classZeta_1_1Effect_a56974695a36fc3026a8cc2e2148f8736}
+\hypertarget{classZeta_1_1Effect_a2322a5386a06c8354acac70d5f7ffb2c}{\index{Zeta\+::\+Effect@{Zeta\+::\+Effect}!````~Effect@{$\sim$\+Effect}}
+\index{````~Effect@{$\sim$\+Effect}!Zeta\+::\+Effect@{Zeta\+::\+Effect}}
+\subsubsection[{$\sim$\+Effect}]{\setlength{\rightskip}{0pt plus 5cm}virtual Zeta\+::\+Effect\+::$\sim$\+Effect (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classZeta_1_1Effect_a2322a5386a06c8354acac70d5f7ffb2c}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classZeta_1_1Effect_a80384289982d02d6fe7c4764ebd9ac63}{\index{Zeta\+::\+Effect@{Zeta\+::\+Effect}!end@{end}}
+\index{end@{end}!Zeta\+::\+Effect@{Zeta\+::\+Effect}}
+\subsubsection[{end}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+Effect\+::end (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1Effect_a80384289982d02d6fe7c4764ebd9ac63}
+\hypertarget{classZeta_1_1Effect_aaf7157b61cedb98ae6d470d34377ef87}{\index{Zeta\+::\+Effect@{Zeta\+::\+Effect}!get\+Class@{get\+Class}}
+\index{get\+Class@{get\+Class}!Zeta\+::\+Effect@{Zeta\+::\+Effect}}
+\subsubsection[{get\+Class}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Effect\+Class}\& Zeta\+::\+Effect\+::get\+Class (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1Effect_aaf7157b61cedb98ae6d470d34377ef87}
+\hypertarget{classZeta_1_1Effect_a8cc64ed1b22c063af761c1fcdd08ee9a}{\index{Zeta\+::\+Effect@{Zeta\+::\+Effect}!get\+Source@{get\+Source}}
+\index{get\+Source@{get\+Source}!Zeta\+::\+Effect@{Zeta\+::\+Effect}}
+\subsubsection[{get\+Source}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Ability}$\ast$ Zeta\+::\+Effect\+::get\+Source (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1Effect_a8cc64ed1b22c063af761c1fcdd08ee9a}
+\hypertarget{classZeta_1_1Effect_a29712372704f9e84d54a0c8cb93fb3c6}{\index{Zeta\+::\+Effect@{Zeta\+::\+Effect}!is\+Finished@{is\+Finished}}
+\index{is\+Finished@{is\+Finished}!Zeta\+::\+Effect@{Zeta\+::\+Effect}}
+\subsubsection[{is\+Finished}]{\setlength{\rightskip}{0pt plus 5cm}bool Zeta\+::\+Effect\+::is\+Finished (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1Effect_a29712372704f9e84d54a0c8cb93fb3c6}
+\hypertarget{classZeta_1_1Effect_a48281d13dac1e240278ac7588762b8c7}{\index{Zeta\+::\+Effect@{Zeta\+::\+Effect}!push\+To\+Lua@{push\+To\+Lua}}
+\index{push\+To\+Lua@{push\+To\+Lua}!Zeta\+::\+Effect@{Zeta\+::\+Effect}}
+\subsubsection[{push\+To\+Lua}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Zeta\+::\+Effect\+::push\+To\+Lua (
+\begin{DoxyParamCaption}
+\item[{lua\+\_\+\+State $\ast$}]{lstate}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classZeta_1_1Effect_a48281d13dac1e240278ac7588762b8c7}
+
+
+Implements \hyperlink{classZeta_1_1LuaPushable_a0380ec9cff11f749e8eb67b51b8f82fc}{Zeta\+::\+Lua\+Pushable}.
+
+
+
+Reimplemented in \hyperlink{classZeta_1_1DurableEffect_a307aa900d5ab1f188cd4bc0c706bd910}{Zeta\+::\+Durable\+Effect}, and \hyperlink{classZeta_1_1OverTimeEffect_aa8dbf53cae3c9a1b92591d209bc37320}{Zeta\+::\+Over\+Time\+Effect}.
+
+\hypertarget{classZeta_1_1Effect_a4488ac8d539165fb7c3f16dd828b8962}{\index{Zeta\+::\+Effect@{Zeta\+::\+Effect}!set\+Source@{set\+Source}}
+\index{set\+Source@{set\+Source}!Zeta\+::\+Effect@{Zeta\+::\+Effect}}
+\subsubsection[{set\+Source}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+Effect\+::set\+Source (
+\begin{DoxyParamCaption}
+\item[{{\bf Ability} $\ast$}]{source}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1Effect_a4488ac8d539165fb7c3f16dd828b8962}
+\hypertarget{classZeta_1_1Effect_a85a3bc561d4280c6dc042f898e2f620e}{\index{Zeta\+::\+Effect@{Zeta\+::\+Effect}!update@{update}}
+\index{update@{update}!Zeta\+::\+Effect@{Zeta\+::\+Effect}}
+\subsubsection[{update}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Zeta\+::\+Effect\+::update (
+\begin{DoxyParamCaption}
+\item[{{\bf Float}}]{elapsed\+Time}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classZeta_1_1Effect_a85a3bc561d4280c6dc042f898e2f620e}
+
+
+Implements \hyperlink{classZeta_1_1Updateable_af4006bfccb762454b4da08786ad93de0}{Zeta\+::\+Updateable}.
+
+
+
+Reimplemented in \hyperlink{classZeta_1_1DurableEffect_aa9ebe74ba0c6c7b724473f3ab81b08f0}{Zeta\+::\+Durable\+Effect}, and \hyperlink{classZeta_1_1OverTimeEffect_aedb8e15db2f8320f951fed874cdb0c4c}{Zeta\+::\+Over\+Time\+Effect}.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classZeta_1_1Effect_aef82ce8a35dd7cb89ded50aa2e7dbebc}{\index{Zeta\+::\+Effect@{Zeta\+::\+Effect}!eff\+Class@{eff\+Class}}
+\index{eff\+Class@{eff\+Class}!Zeta\+::\+Effect@{Zeta\+::\+Effect}}
+\subsubsection[{eff\+Class}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Effect\+Class}$\ast$ Zeta\+::\+Effect\+::eff\+Class\hspace{0.3cm}{\ttfamily [protected]}}}\label{classZeta_1_1Effect_aef82ce8a35dd7cb89ded50aa2e7dbebc}
+\hypertarget{classZeta_1_1Effect_ad278320e1e1434a248f9ca14347c1d32}{\index{Zeta\+::\+Effect@{Zeta\+::\+Effect}!finished@{finished}}
+\index{finished@{finished}!Zeta\+::\+Effect@{Zeta\+::\+Effect}}
+\subsubsection[{finished}]{\setlength{\rightskip}{0pt plus 5cm}bool Zeta\+::\+Effect\+::finished\hspace{0.3cm}{\ttfamily [protected]}}}\label{classZeta_1_1Effect_ad278320e1e1434a248f9ca14347c1d32}
+\hypertarget{classZeta_1_1Effect_aec101c1a7eda022328a0b0ebb1b10c77}{\index{Zeta\+::\+Effect@{Zeta\+::\+Effect}!level@{level}}
+\index{level@{level}!Zeta\+::\+Effect@{Zeta\+::\+Effect}}
+\subsubsection[{level}]{\setlength{\rightskip}{0pt plus 5cm}int Zeta\+::\+Effect\+::level\hspace{0.3cm}{\ttfamily [protected]}}}\label{classZeta_1_1Effect_aec101c1a7eda022328a0b0ebb1b10c77}
+\hypertarget{classZeta_1_1Effect_a6c8500520ef68281241fd7276ea2e214}{\index{Zeta\+::\+Effect@{Zeta\+::\+Effect}!owner@{owner}}
+\index{owner@{owner}!Zeta\+::\+Effect@{Zeta\+::\+Effect}}
+\subsubsection[{owner}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Lifeform}$\ast$ Zeta\+::\+Effect\+::owner\hspace{0.3cm}{\ttfamily [protected]}}}\label{classZeta_1_1Effect_a6c8500520ef68281241fd7276ea2e214}
+\hypertarget{classZeta_1_1Effect_aa4bffc23c071f21e72c577c2e16e40ee}{\index{Zeta\+::\+Effect@{Zeta\+::\+Effect}!source@{source}}
+\index{source@{source}!Zeta\+::\+Effect@{Zeta\+::\+Effect}}
+\subsubsection[{source}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Ability}$\ast$ Zeta\+::\+Effect\+::source\hspace{0.3cm}{\ttfamily [protected]}}}\label{classZeta_1_1Effect_aa4bffc23c071f21e72c577c2e16e40ee}
+\hypertarget{classZeta_1_1Effect_a3457ad78b5b7d1c75b5d6116350a89b8}{\index{Zeta\+::\+Effect@{Zeta\+::\+Effect}!was\+Applied@{was\+Applied}}
+\index{was\+Applied@{was\+Applied}!Zeta\+::\+Effect@{Zeta\+::\+Effect}}
+\subsubsection[{was\+Applied}]{\setlength{\rightskip}{0pt plus 5cm}bool Zeta\+::\+Effect\+::was\+Applied\hspace{0.3cm}{\ttfamily [private]}}}\label{classZeta_1_1Effect_a3457ad78b5b7d1c75b5d6116350a89b8}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Zeta/\+Core/\+R\+P\+G\+Classes/\hyperlink{Effect_8hpp}{Effect.\+hpp}\end{DoxyCompactItemize}

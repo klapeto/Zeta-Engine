@@ -1,0 +1,44 @@
+.TH "Zeta::LuaPushable" 3 "Wed Feb 10 2016" "Zeta" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Zeta::LuaPushable \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <LuaPushable\&.hpp>\fP
+.PP
+Inherited by \fBZeta::Ability\fP, \fBZeta::AbilityClass\fP, \fBZeta::AnimationHandler\fP, \fBZeta::ConsoleManager\fP, \fBZeta::Display::Resolution\fP, \fBZeta::Effect\fP, \fBZeta::Logger\fP\fC [private]\fP, \fBZeta::LuaBoolean\fP, \fBZeta::LuaListener\fP, \fBZeta::LuaNumber\fP, \fBZeta::LuaReferenced\fP, \fBZeta::LuaString\fP, \fBZeta::MainLoop\fP, \fBZeta::Map\fP, \fBZeta::Object\fP, \fBZeta::Rectangle\fP, \fBZeta::SaveManager\fP, \fBZeta::Settings\fP, \fBZeta::SoundInstance\fP, \fBZeta::System\fP, \fBZeta::Timer\fP, \fBZeta::Vector2\fP, \fBZeta::View\fP, \fBZeta::WorldEvent\fP, and \fBZeta::WorldManager\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "virtual void \fBpushToLua\fP (lua_State *lstate)=0"
+.br
+.ti -1c
+.RI "constexpr \fBLuaPushable\fP ()"
+.br
+.ti -1c
+.RI "virtual \fB~LuaPushable\fP ()"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+\fBLuaPushable\fP Interface to ensure some classes to be able to be passed in Lua Environment 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "constexpr Zeta::LuaPushable::LuaPushable ()\fC [inline]\fP"
+
+.SS "virtual Zeta::LuaPushable::~LuaPushable ()\fC [inline]\fP, \fC [virtual]\fP"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "virtual void Zeta::LuaPushable::pushToLua (lua_State *lstate)\fC [pure virtual]\fP"
+
+.PP
+Implemented in \fBZeta::Lifeform\fP, \fBZeta::Map\fP, \fBZeta::System\fP, \fBZeta::WorldManager\fP, \fBZeta::ActiveAbility\fP, \fBZeta::SoundInstance\fP, \fBZeta::Vector2\fP, \fBZeta::CEGUIObject\fP, \fBZeta::WorldEvent\fP, \fBZeta::Rectangle\fP, \fBZeta::LuaReferenced\fP, \fBZeta::View\fP, \fBZeta::ActiveAbilityClass\fP, \fBZeta::Timer\fP, \fBZeta::Projectile\fP, \fBZeta::AbilityClass\fP, \fBZeta::ChildObject\fP, \fBZeta::AnimationHandler\fP, \fBZeta::Settings\fP, \fBZeta::Player\fP, \fBZeta::Effect\fP, \fBZeta::ConsoleManager\fP, \fBZeta::Logger\fP, \fBZeta::DurableEffect\fP, \fBZeta::InteractObject\fP, \fBZeta::Display::Resolution\fP, \fBZeta::StaticObject\fP, \fBZeta::SaveManager\fP, \fBZeta::InteractField\fP, \fBZeta::PassiveAbility\fP, \fBZeta::OverTimeEffect\fP, \fBZeta::Regeneration\fP, \fBZeta::MainLoop\fP, \fBZeta::RegenerationAbilityClass\fP, \fBZeta::SeekingProjectile\fP, \fBZeta::LuaNumber\fP, \fBZeta::Enemy\fP, \fBZeta::LuaListener\fP, \fBZeta::Npc\fP, \fBZeta::LuaBoolean\fP, \fBZeta::LuaString\fP, \fBZeta::PassiveAbilityClass\fP, and \fBZeta::MusicManager\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Zeta from the source code\&.

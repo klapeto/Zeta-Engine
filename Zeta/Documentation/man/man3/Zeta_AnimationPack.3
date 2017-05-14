@@ -1,0 +1,106 @@
+.TH "Zeta::AnimationPack" 3 "Wed Feb 10 2016" "Zeta" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Zeta::AnimationPack \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <AnimationPack\&.hpp>\fP
+.PP
+Inherits \fBZeta::Resource\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "const \fBAnimation\fP & \fBgetAnimation\fP (const std::string &\fBname\fP) const "
+.br
+.ti -1c
+.RI "const \fBSpriteSheet\fP & \fBgetSpriteSheet\fP () const "
+.br
+.ti -1c
+.RI "std::vector< std::string > \fBlistAnimationNames\fP () const "
+.br
+.ti -1c
+.RI "\fBAnimationPack\fP ()"
+.br
+.ti -1c
+.RI "\fBAnimationPack\fP (const std::string &path)"
+.br
+.ti -1c
+.RI "\fB~AnimationPack\fP ()"
+.br
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBZSmallMap\fP< std::string, \fBAnimation\fP > \fBanimations\fP"
+.br
+.ti -1c
+.RI "const \fBSpriteSheet\fP * \fBspriteSheet\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+A Class for loading animation Files (*\&.anim) 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Zeta::AnimationPack::AnimationPack ()"
+Default Constructor Creates a Null \fBAnimationPack\fP with no animations and a Null Spritesheet 
+.SS "Zeta::AnimationPack::AnimationPack (const std::string &path)"
+Loads the \fBAnimation\fP Pack \fBFile\fP and Parses it If anything goes wrong, then it throws a \fBZeta::Exception\fP 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIpath\fP The filename to load 
+.RE
+.PP
+
+.SS "Zeta::AnimationPack::~AnimationPack ()"
+Deconstructor Deallocates all animations and releases the Reference to the Spritesheet 
+.SH "Member Function Documentation"
+.PP 
+.SS "const \fBAnimation\fP& Zeta::AnimationPack::getAnimation (const std::string &name) const"
+Gets the animation by name If the requested animation is not availabe, then a NullAnimation will be returned 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIname\fP The name of the animation to retrieve 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+The animation requested 
+.RE
+.PP
+
+.SS "const \fBSpriteSheet\fP& Zeta::AnimationPack::getSpriteSheet () const\fC [inline]\fP"
+Gets the referenced Spritesheet of the Animations 
+.PP
+\fBReturns:\fP
+.RS 4
+The Spritesheet 
+.RE
+.PP
+
+.SS "std::vector<std::string> Zeta::AnimationPack::listAnimationNames () const"
+Gets a list of the Names of the Available animations 
+.PP
+\fBReturns:\fP
+.RS 4
+A vector of the names 
+.RE
+.PP
+
+.SH "Member Data Documentation"
+.PP 
+.SS "\fBZSmallMap\fP<std::string, \fBAnimation\fP> Zeta::AnimationPack::animations\fC [protected]\fP"
+
+.SS "const \fBSpriteSheet\fP* Zeta::AnimationPack::spriteSheet\fC [protected]\fP"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Zeta from the source code\&.

@@ -1,0 +1,91 @@
+.TH "Zeta::SynchronousRenderingContext< DisplayT >" 3 "Wed Feb 10 2016" "Zeta" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Zeta::SynchronousRenderingContext< DisplayT > \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <SynchronousRenderingContext\&.hpp>\fP
+.PP
+Inherits \fBZeta::RenderingContext\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBDisplay\fP & \fBgetDisplay\fP ()"
+.br
+.ti -1c
+.RI "void \fBaddOperationToQueue\fP (\fBContextOperation\fP< \fBRenderingContext\fP > &operation)"
+.br
+.ti -1c
+.RI "void \fBexecuteOperations\fP ()"
+.br
+.ti -1c
+.RI "\fBSynchronousRenderingContext\fP ()"
+.br
+.ti -1c
+.RI "\fB~SynchronousRenderingContext\fP ()"
+.br
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "std::mutex \fBmutex\fP"
+.br
+.ti -1c
+.RI "DisplayT \fBdisplay\fP"
+.br
+.in -1c
+.SS "Additional Inherited Members"
+.SH "Detailed Description"
+.PP 
+
+.SS "template<typename DisplayT>class Zeta::SynchronousRenderingContext< DisplayT >"
+Template for creating Synchronous Rendering Contexts The Synchronous Contexts are the ones that run on the same thread they are created The template parameter is the Class that will create the \fBDisplay\fP \fBObject\fP 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "template<typename DisplayT > \fBZeta::SynchronousRenderingContext\fP< DisplayT >::\fBSynchronousRenderingContext\fP ()\fC [inline]\fP"
+Default Constructor Upon Creation, the Class will create a \fBObject\fP defined by the Template Argument 
+.SS "template<typename DisplayT > \fBZeta::SynchronousRenderingContext\fP< DisplayT >::~\fBSynchronousRenderingContext\fP ()\fC [inline]\fP"
+Destructor Upon destruction, the \fBDisplay\fP \fBObject\fP is destroyed too 
+.SH "Member Function Documentation"
+.PP 
+.SS "template<typename DisplayT > void \fBZeta::SynchronousRenderingContext\fP< DisplayT >::addOperationToQueue (\fBContextOperation\fP< \fBRenderingContext\fP > &operation)\fC [inline]\fP, \fC [virtual]\fP"
+Adds the Operation to the Queue for execution 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIoperation\fP The operation to add 
+.RE
+.PP
+
+.PP
+Reimplemented from \fBZeta::Context< RenderingContext >\fP\&.
+.SS "template<typename DisplayT > void \fBZeta::SynchronousRenderingContext\fP< DisplayT >::executeOperations ()\fC [inline]\fP, \fC [virtual]\fP"
+Executes all the operations that are on the Queue 
+.PP
+Reimplemented from \fBZeta::Context< RenderingContext >\fP\&.
+.SS "template<typename DisplayT > \fBDisplay\fP& \fBZeta::SynchronousRenderingContext\fP< DisplayT >::getDisplay ()\fC [inline]\fP, \fC [virtual]\fP"
+Returns the Contexts \fBDisplay\fP object 
+.PP
+\fBReturns:\fP
+.RS 4
+The display \fBObject\fP 
+.RE
+.PP
+
+.PP
+Implements \fBZeta::RenderingContext\fP\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "template<typename DisplayT > DisplayT \fBZeta::SynchronousRenderingContext\fP< DisplayT >::display\fC [private]\fP"
+
+.SS "template<typename DisplayT > std::mutex \fBZeta::SynchronousRenderingContext\fP< DisplayT >::mutex\fC [private]\fP"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Zeta from the source code\&.

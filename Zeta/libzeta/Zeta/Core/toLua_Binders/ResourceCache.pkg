@@ -1,0 +1,12 @@
+$#include <Zeta/Core/ResourceCache.hpp>
+
+class ResourceCache {
+public:
+	const AbilityClass& getAbilityClass(const std::string& path);
+	const LifeformClass& getLifeformClass(const std::string& path);
+	void releaseResource(const AbilityClass& value);
+	void releaseResource(const LifeformClass& value);
+	
+	static ResourceCache& getInstance();
+	
+};

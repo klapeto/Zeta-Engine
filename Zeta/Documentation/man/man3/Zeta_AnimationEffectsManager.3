@@ -1,0 +1,73 @@
+.TH "Zeta::AnimationEffectsManager" 3 "Wed Feb 10 2016" "Zeta" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Zeta::AnimationEffectsManager \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <AnimationEffectsManager\&.hpp>\fP
+.PP
+Inherits \fBZeta::SingleInstanced< AnimationEffectsManager >\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "const \fBAnimation\fP & \fBgetAnimationFX\fP (const std::string &name, const std::string &animationPack) const "
+.br
+.ti -1c
+.RI "void \fBaddAnimationPack\fP (const std::string &path, const std::string &name='')"
+.br
+.in -1c
+.SS "Private Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBAnimationEffectsManager\fP ()"
+.br
+.ti -1c
+.RI "\fB~AnimationEffectsManager\fP ()"
+.br
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBZMap\fP< std::string, const 
+.br
+\fBAnimationPack\fP * > \fBanimationPacks\fP"
+.br
+.in -1c
+.SS "Friends"
+
+.in +1c
+.ti -1c
+.RI "class \fBSingleInstanced\fP"
+.br
+.in -1c
+.SS "Additional Inherited Members"
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Zeta::AnimationEffectsManager::AnimationEffectsManager ()\fC [private]\fP"
+
+.SS "Zeta::AnimationEffectsManager::~AnimationEffectsManager ()\fC [private]\fP"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "void Zeta::AnimationEffectsManager::addAnimationPack (const std::string &path, const std::string &name = \fC''\fP)"
+
+.SS "const \fBAnimation\fP& Zeta::AnimationEffectsManager::getAnimationFX (const std::string &name, const std::string &animationPack) const"
+
+.SH "Friends And Related Function Documentation"
+.PP 
+.SS "friend class \fBSingleInstanced\fP\fC [friend]\fP"
+
+.SH "Member Data Documentation"
+.PP 
+.SS "\fBZMap\fP<std::string, const \fBAnimationPack\fP*> Zeta::AnimationEffectsManager::animationPacks\fC [private]\fP"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Zeta from the source code\&.

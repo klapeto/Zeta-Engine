@@ -1,0 +1,128 @@
+.TH "Zeta::AggressiveBehaviour" 3 "Wed Feb 10 2016" "Zeta" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Zeta::AggressiveBehaviour \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <AggressiveBehaviour\&.hpp>\fP
+.PP
+Inherits \fBZeta::Behaviour\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBupdate\fP (\fBFloat\fP elapsedTime)"
+.br
+.ti -1c
+.RI "void \fBonDeath\fP ()"
+.br
+.ti -1c
+.RI "\fBAggressiveBehaviour\fP (\fBLifeform\fP &\fBowner\fP, \fBFloat\fP \fBagroRange\fP=300, \fBFloat\fP \fBdriftRange\fP=600)"
+.br
+.ti -1c
+.RI "virtual \fB~AggressiveBehaviour\fP ()"
+.br
+.in -1c
+.SS "Private Types"
+
+.in +1c
+.ti -1c
+.RI "enum \fBState\fP { \fBState::Scanning\fP, \fBState::Attacking\fP, \fBState::FallBack\fP, \fBState::Moving\fP, \fBState::Casting\fP }"
+.br
+.in -1c
+.SS "Private Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBscan\fP ()"
+.br
+.ti -1c
+.RI "void \fBattack\fP ()"
+.br
+.ti -1c
+.RI "void \fBgetAbility\fP ()"
+.br
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBVector2\fP \fBinitialPosition\fP"
+.br
+.ti -1c
+.RI "\fBLifeform\fP * \fBtarget\fP"
+.br
+.ti -1c
+.RI "\fBActiveAbility\fP * \fBcurAbility\fP"
+.br
+.ti -1c
+.RI "\fBFloat\fP \fBagroRange\fP"
+.br
+.ti -1c
+.RI "\fBFloat\fP \fBdriftRange\fP"
+.br
+.ti -1c
+.RI "\fBState\fP \fBstate\fP"
+.br
+.in -1c
+.SS "Additional Inherited Members"
+.SH "Member Enumeration Documentation"
+.PP 
+.SS "enum \fBZeta::AggressiveBehaviour::State\fP\fC [strong]\fP, \fC [private]\fP"
+
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fIScanning \fP\fP
+.TP
+\fB\fIAttacking \fP\fP
+.TP
+\fB\fIFallBack \fP\fP
+.TP
+\fB\fIMoving \fP\fP
+.TP
+\fB\fICasting \fP\fP
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Zeta::AggressiveBehaviour::AggressiveBehaviour (\fBLifeform\fP &owner, \fBFloat\fPagroRange = \fC300\fP, \fBFloat\fPdriftRange = \fC600\fP)"
+
+.SS "virtual Zeta::AggressiveBehaviour::~AggressiveBehaviour ()\fC [virtual]\fP"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "void Zeta::AggressiveBehaviour::attack ()\fC [private]\fP"
+
+.SS "void Zeta::AggressiveBehaviour::getAbility ()\fC [private]\fP"
+
+.SS "void Zeta::AggressiveBehaviour::onDeath ()\fC [virtual]\fP"
+
+.PP
+Implements \fBZeta::Behaviour\fP\&.
+.SS "void Zeta::AggressiveBehaviour::scan ()\fC [private]\fP"
+
+.SS "void Zeta::AggressiveBehaviour::update (\fBFloat\fPelapsedTime)\fC [virtual]\fP"
+
+.PP
+Implements \fBZeta::Updateable\fP\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "\fBFloat\fP Zeta::AggressiveBehaviour::agroRange\fC [private]\fP"
+
+.SS "\fBActiveAbility\fP* Zeta::AggressiveBehaviour::curAbility\fC [private]\fP"
+
+.SS "\fBFloat\fP Zeta::AggressiveBehaviour::driftRange\fC [private]\fP"
+
+.SS "\fBVector2\fP Zeta::AggressiveBehaviour::initialPosition\fC [private]\fP"
+
+.SS "\fBState\fP Zeta::AggressiveBehaviour::state\fC [private]\fP"
+
+.SS "\fBLifeform\fP* Zeta::AggressiveBehaviour::target\fC [private]\fP"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Zeta from the source code\&.

@@ -1,0 +1,7 @@
+$#include <Zeta/Core/RPGClasses/Effect.hpp>
+class Effect {
+public:
+	ActiveAbility* getSource();
+	bool isFinished() const;
+	void end();
+};

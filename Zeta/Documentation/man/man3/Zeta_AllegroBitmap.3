@@ -1,0 +1,143 @@
+.TH "Zeta::AllegroBitmap" 3 "Wed Feb 10 2016" "Zeta" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Zeta::AllegroBitmap \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <AllegroBitmap\&.hpp>\fP
+.PP
+Inherits \fBZeta::Bitmap\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBdraw\fP (\fBFloat\fP x, \fBFloat\fP y, \fBFloat\fP rotation=0\&.0f, Float scale=1\&.0f) const "
+.br
+.ti -1c
+.RI "void \fBdraw\fP (\fBFloat\fP x, \fBFloat\fP y, \fBFloat\fP rotation, \fBFloat\fP scale, \fBFlipFlag\fP flip) const "
+.br
+.ti -1c
+.RI "void \fBdrawAtCentre\fP (\fBFloat\fP x, \fBFloat\fP y, \fBFloat\fP rotation, \fBFloat\fP scale, \fBFlipFlag\fP flip=\fBNormal\fP) const "
+.br
+.ti -1c
+.RI "\fBBitmap\fP & \fBcreateSubBitmap\fP (int x, int y, int \fBwidth\fP, int \fBheight\fP) const "
+.br
+.ti -1c
+.RI "void \fBeraseSubBitmap\fP (\fBBitmap\fP &\fBbitmap\fP) const "
+.br
+.ti -1c
+.RI "void \fBreserveSubBitmaps\fP (size_t number) const "
+.br
+.ti -1c
+.RI "\fBAllegroBitmap\fP (\fBAllegroBitmap\fP &&)=default"
+.br
+.ti -1c
+.RI "\fBAllegroBitmap\fP & \fBoperator=\fP (\fBAllegroBitmap\fP &&)=default"
+.br
+.ti -1c
+.RI "\fBAllegroBitmap\fP ()"
+.br
+.ti -1c
+.RI "\fBAllegroBitmap\fP (int \fBwidth\fP, int \fBheight\fP)"
+.br
+.ti -1c
+.RI "\fBAllegroBitmap\fP (const std::string &path)"
+.br
+.ti -1c
+.RI "\fB~AllegroBitmap\fP ()"
+.br
+.in -1c
+.SS "Private Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBAllegroBitmap\fP (const \fBAllegroBitmap\fP &parent, int x, int y, int \fBwidth\fP, int \fBheight\fP)"
+.br
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBZSet\fP< \fBAllegroBitmap\fP * > \fBsubBitmaps\fP"
+.br
+.ti -1c
+.RI "ALLEGRO_BITMAP * \fBbitmap\fP"
+.br
+.ti -1c
+.RI "int \fBh_width\fP"
+.br
+.ti -1c
+.RI "int \fBh_height\fP"
+.br
+.in -1c
+.SS "Additional Inherited Members"
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Zeta::AllegroBitmap::AllegroBitmap (\fBAllegroBitmap\fP &&)\fC [default]\fP"
+
+.SS "Zeta::AllegroBitmap::AllegroBitmap ()"
+
+.SS "Zeta::AllegroBitmap::AllegroBitmap (intwidth, intheight)"
+
+.SS "Zeta::AllegroBitmap::AllegroBitmap (const std::string &path)"
+
+.SS "Zeta::AllegroBitmap::~AllegroBitmap ()"
+
+.SS "Zeta::AllegroBitmap::AllegroBitmap (const \fBAllegroBitmap\fP &parent, intx, inty, intwidth, intheight)\fC [private]\fP"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "\fBBitmap\fP& Zeta::AllegroBitmap::createSubBitmap (intx, inty, intwidth, intheight) const\fC [virtual]\fP"
+
+.PP
+Implements \fBZeta::Bitmap\fP\&.
+.SS "void Zeta::AllegroBitmap::draw (\fBFloat\fPx, \fBFloat\fPy, \fBFloat\fProtation = \fC0\&.0f\fP, \fBFloat\fPscale = \fC1\&.0f\fP) const\fC [virtual]\fP"
+Draws the \fBObject\fP on screen\&. Be advised, the x,y, offsets might have different meaning on different implementations\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIx\fP X offset to be applied on the drawing 
+.br
+\fIy\fP Y offset to be applied on the drawing 
+.br
+\fIrotation\fP the rotation to be applied on the drawing 
+.RE
+.PP
+
+.PP
+Implements \fBZeta::Drawable\fP\&.
+.SS "void Zeta::AllegroBitmap::draw (\fBFloat\fPx, \fBFloat\fPy, \fBFloat\fProtation, \fBFloat\fPscale, \fBFlipFlag\fPflip) const\fC [virtual]\fP"
+
+.PP
+Implements \fBZeta::Bitmap\fP\&.
+.SS "void Zeta::AllegroBitmap::drawAtCentre (\fBFloat\fPx, \fBFloat\fPy, \fBFloat\fProtation, \fBFloat\fPscale, \fBFlipFlag\fPflip = \fC\fBNormal\fP\fP) const\fC [virtual]\fP"
+
+.PP
+Implements \fBZeta::Bitmap\fP\&.
+.SS "void Zeta::AllegroBitmap::eraseSubBitmap (\fBBitmap\fP &bitmap) const\fC [virtual]\fP"
+
+.PP
+Implements \fBZeta::Bitmap\fP\&.
+.SS "\fBAllegroBitmap\fP& Zeta::AllegroBitmap::operator= (\fBAllegroBitmap\fP &&)\fC [default]\fP"
+
+.SS "void Zeta::AllegroBitmap::reserveSubBitmaps (size_tnumber) const\fC [virtual]\fP"
+
+.PP
+Implements \fBZeta::Bitmap\fP\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "ALLEGRO_BITMAP* Zeta::AllegroBitmap::bitmap\fC [mutable]\fP, \fC [private]\fP"
+
+.SS "int Zeta::AllegroBitmap::h_height\fC [private]\fP"
+
+.SS "int Zeta::AllegroBitmap::h_width\fC [private]\fP"
+
+.SS "\fBZSet\fP<\fBAllegroBitmap\fP*> Zeta::AllegroBitmap::subBitmaps\fC [mutable]\fP, \fC [private]\fP"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Zeta from the source code\&.

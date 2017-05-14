@@ -1,0 +1,9 @@
+<map id="Zeta::LifeformClass" name="Zeta::LifeformClass">
+<area shape="rect" id="node2" href="$classZeta_1_1Resource.html" title="Zeta::Resource" alt="" coords="5,160,116,187"/>
+<area shape="rect" id="node3" href="$classZeta_1_1LuaTable.html" title="Zeta::LuaTable" alt="" coords="141,160,251,187"/>
+<area shape="rect" id="node4" href="$classZeta_1_1LuaReferenced.html" title="Zeta::LuaReferenced" alt="" coords="207,83,351,109"/>
+<area shape="rect" id="node8" href="$classZeta_1_1LuaFunctor.html" title="Zeta::LuaFunctor" alt="" coords="275,160,396,187"/>
+<area shape="rect" id="node5" href="$classZeta_1_1LuaPushable.html" title="Zeta::LuaPushable" alt="" coords="213,5,343,32"/>
+<area shape="rect" id="node6" href="$classZeta_1_1Faction.html" title="Zeta::Faction" alt="" coords="421,160,520,187"/>
+<area shape="rect" id="node7" href="$classZeta_1_1BehaviourClass.html" title="Zeta::BehaviourClass" alt="" coords="545,160,692,187"/>
+</map>

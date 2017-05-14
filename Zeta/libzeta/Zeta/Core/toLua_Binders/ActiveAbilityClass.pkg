@@ -1,0 +1,8 @@
+$#include <Zeta/Core/RPGClasses/ActiveAbilityClass.hpp>
+
+class ActiveAbilityClass: public AbilityClass {
+public:
+
+	void applyEffect(const std::string& name, Lifeform *target, int level,
+			ActiveAbility* ability) const;
+};

@@ -1,0 +1,12 @@
+$#include <Zeta/Core/RPGClasses/Projectile.hpp>
+
+class Projectile: public Object {
+public:
+	void clearCollidedObjects();
+	void show();
+	void hide();
+	void destroy();
+	void setTargetLocation(Float x, Float y);
+	ActiveAbility* getParentAbility();
+};
+

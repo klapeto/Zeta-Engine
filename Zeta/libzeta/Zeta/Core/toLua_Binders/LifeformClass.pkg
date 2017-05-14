@@ -1,0 +1,25 @@
+$#include <Zeta/Core/RPGClasses/LifeformClass.hpp>
+
+
+class LifeformClass {
+public:
+
+	const std::string& getLifeformName() const;
+	
+	const std::string& getAnimationClassName() const;
+	
+	int getLevel() const;
+	
+	void setTable(lua_Object table);
+	void setOnClick(lua_Object func);
+	void setOnCollision(lua_Object func);
+
+	void levelizeStats(float levelMultiplier = 1.0f);
+	void levelizeStats(float multiplier, int lowerBound, int upperBound);
+	
+	void addAbility(const AbilityClass& abClass, int level);
+
+	LifeformClass();
+	LifeformClass(const std::string& path);
+	~LifeformClass();
+};

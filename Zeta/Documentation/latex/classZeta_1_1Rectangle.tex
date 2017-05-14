@@ -1,0 +1,277 @@
+\hypertarget{classZeta_1_1Rectangle}{\section{Zeta\+:\+:Rectangle Class Reference}
+\label{classZeta_1_1Rectangle}\index{Zeta\+::\+Rectangle@{Zeta\+::\+Rectangle}}
+}
+
+
+{\ttfamily \#include $<$Rectangle.\+hpp$>$}
+
+
+
+Inheritance diagram for Zeta\+:\+:Rectangle\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=272pt]{classZeta_1_1Rectangle__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Zeta\+:\+:Rectangle\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classZeta_1_1Rectangle__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{classZeta_1_1Rectangle_a04ae0d4d037f13e313b042bff55c5f62}{Surface} \{ \\*
+\hyperlink{classZeta_1_1Rectangle_a04ae0d4d037f13e313b042bff55c5f62aa4ffdcf0dc1f31b9acaf295d75b51d00}{Surface\+::\+Top}, 
+\hyperlink{classZeta_1_1Rectangle_a04ae0d4d037f13e313b042bff55c5f62a945d5e233cf7d6240f6b783b36a374ff}{Surface\+::\+Left}, 
+\hyperlink{classZeta_1_1Rectangle_a04ae0d4d037f13e313b042bff55c5f62a92b09c7c48c520c3c55e497875da437c}{Surface\+::\+Right}, 
+\hyperlink{classZeta_1_1Rectangle_a04ae0d4d037f13e313b042bff55c5f62a2ad9d63b69c4a10a5cc9cad923133bc4}{Surface\+::\+Bottom}, 
+\\*
+\hyperlink{classZeta_1_1Rectangle_a04ae0d4d037f13e313b042bff55c5f62affcf70e892b8ac3facbac0f88602396b}{Surface\+::\+Every}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespaceZeta_a1e0a1265f9b3bd3075fb0fabd39088ba}{Float} \hyperlink{classZeta_1_1Rectangle_a45c5fe8a824e41de4c5f9268e34c298c}{get\+Width} () const 
+\item 
+\hyperlink{namespaceZeta_a1e0a1265f9b3bd3075fb0fabd39088ba}{Float} \hyperlink{classZeta_1_1Rectangle_abe3bf5a637e5fb73078e3c3a28a04699}{get\+Height} () const 
+\item 
+void \hyperlink{classZeta_1_1Rectangle_ae93bd8646b6bd28b1fcc6a2ce6fe3a84}{set\+Height} (\hyperlink{namespaceZeta_a1e0a1265f9b3bd3075fb0fabd39088ba}{Float} \hyperlink{classZeta_1_1Rectangle_a640f13febc3856b9c4a0729a3aeec1a8}{height})
+\item 
+void \hyperlink{classZeta_1_1Rectangle_af602ae20ae9d10466a5d6c4028ff180d}{set\+Width} (\hyperlink{namespaceZeta_a1e0a1265f9b3bd3075fb0fabd39088ba}{Float} \hyperlink{classZeta_1_1Rectangle_a1d564c934b684c156de3fe425ac42e74}{width})
+\item 
+void \hyperlink{classZeta_1_1Rectangle_a60f5840446193641ebceb4440c97bcc5}{set\+Size} (\hyperlink{namespaceZeta_a1e0a1265f9b3bd3075fb0fabd39088ba}{Float} \hyperlink{classZeta_1_1Rectangle_a1d564c934b684c156de3fe425ac42e74}{width}, \hyperlink{namespaceZeta_a1e0a1265f9b3bd3075fb0fabd39088ba}{Float} \hyperlink{classZeta_1_1Rectangle_a640f13febc3856b9c4a0729a3aeec1a8}{height})
+\item 
+bool \hyperlink{classZeta_1_1Rectangle_a35e931b62b3b071ec1ce821ab0e84dbb}{overlaps\+Point} (\hyperlink{namespaceZeta_a1e0a1265f9b3bd3075fb0fabd39088ba}{Float} x, \hyperlink{namespaceZeta_a1e0a1265f9b3bd3075fb0fabd39088ba}{Float} y) const 
+\item 
+bool \hyperlink{classZeta_1_1Rectangle_afbc6bf03a13a7958532740cf9ff53131}{overlaps\+Point} (const \hyperlink{classZeta_1_1Vector2}{Vector2} \&point) const 
+\item 
+bool \hyperlink{classZeta_1_1Rectangle_af705894435b5bc4dacf3bc5a108f47af}{overlaps\+Rectangle} (const \hyperlink{classZeta_1_1Rectangle}{Rectangle} \&other) const 
+\item 
+bool \hyperlink{classZeta_1_1Rectangle_ad30eac6fe579eb693e169009be2a02d8}{overlaps\+Whole\+Rectangle} (const \hyperlink{classZeta_1_1Rectangle}{Rectangle} \&other) const 
+\item 
+\hyperlink{classZeta_1_1Rectangle}{Rectangle} \& \hyperlink{classZeta_1_1Rectangle_a8f621ef5572f32caaaf564f5557e6085}{operator=} (const \hyperlink{classZeta_1_1Rectangle}{Rectangle} \&other)=default
+\item 
+\hyperlink{classZeta_1_1Rectangle_a6534ea87af2bfb9a8200baeae4701e25}{Rectangle} (const \hyperlink{classZeta_1_1Rectangle}{Rectangle} \&other)=default
+\item 
+\hyperlink{classZeta_1_1Rectangle_a3da14f013b2eb447d9edfeb259d597bb}{Rectangle} (\hyperlink{classZeta_1_1Rectangle}{Rectangle} \&\&other)=default
+\item 
+virtual void \hyperlink{classZeta_1_1Rectangle_a2ed6e665e3fd875143cf6bdad95277bb}{draw} (\hyperlink{namespaceZeta_a1e0a1265f9b3bd3075fb0fabd39088ba}{Float} x, \hyperlink{namespaceZeta_a1e0a1265f9b3bd3075fb0fabd39088ba}{Float} y, \hyperlink{namespaceZeta_a1e0a1265f9b3bd3075fb0fabd39088ba}{Float} rotation=0.\+0f, Float scale=1.\+0f) const 
+\item 
+void \hyperlink{classZeta_1_1Rectangle_ac890285bf9b61bd9a55486743c7f8474}{push\+To\+Lua} (lua\+\_\+\+State $\ast$lstate)
+\item 
+\hyperlink{classZeta_1_1Rectangle_a809e8853350dd461924d8128b527418e}{Rectangle} ()
+\item 
+\hyperlink{classZeta_1_1Rectangle_ad44726d525575ad1af0dac91222f6317}{Rectangle} (const \hyperlink{classZeta_1_1Vector2}{Vector2} \&location, \hyperlink{namespaceZeta_a1e0a1265f9b3bd3075fb0fabd39088ba}{Float} \hyperlink{classZeta_1_1Rectangle_a1d564c934b684c156de3fe425ac42e74}{width}, \hyperlink{namespaceZeta_a1e0a1265f9b3bd3075fb0fabd39088ba}{Float} \hyperlink{classZeta_1_1Rectangle_a640f13febc3856b9c4a0729a3aeec1a8}{height})
+\item 
+\hyperlink{classZeta_1_1Rectangle_a4a0abfaed61c28d07dbf20dcda9c3346}{Rectangle} (\hyperlink{namespaceZeta_a1e0a1265f9b3bd3075fb0fabd39088ba}{Float} x, \hyperlink{namespaceZeta_a1e0a1265f9b3bd3075fb0fabd39088ba}{Float} y, \hyperlink{namespaceZeta_a1e0a1265f9b3bd3075fb0fabd39088ba}{Float} \hyperlink{classZeta_1_1Rectangle_a1d564c934b684c156de3fe425ac42e74}{width}, \hyperlink{namespaceZeta_a1e0a1265f9b3bd3075fb0fabd39088ba}{Float} \hyperlink{classZeta_1_1Rectangle_a640f13febc3856b9c4a0729a3aeec1a8}{height})
+\item 
+\hyperlink{classZeta_1_1Rectangle_a88af684a512b1b4a6e5b1b2815f160a3}{$\sim$\+Rectangle} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespaceZeta_a1e0a1265f9b3bd3075fb0fabd39088ba}{Float} \hyperlink{classZeta_1_1Rectangle_a1d564c934b684c156de3fe425ac42e74}{width}
+\item 
+\hyperlink{namespaceZeta_a1e0a1265f9b3bd3075fb0fabd39088ba}{Float} \hyperlink{classZeta_1_1Rectangle_a640f13febc3856b9c4a0729a3aeec1a8}{height}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{classZeta_1_1Rectangle_a04ae0d4d037f13e313b042bff55c5f62}{\index{Zeta\+::\+Rectangle@{Zeta\+::\+Rectangle}!Surface@{Surface}}
+\index{Surface@{Surface}!Zeta\+::\+Rectangle@{Zeta\+::\+Rectangle}}
+\subsubsection[{Surface}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Zeta\+::\+Rectangle\+::\+Surface}\hspace{0.3cm}{\ttfamily [strong]}}}\label{classZeta_1_1Rectangle_a04ae0d4d037f13e313b042bff55c5f62}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{Top@{Top}!Zeta\+::\+Rectangle@{Zeta\+::\+Rectangle}}\index{Zeta\+::\+Rectangle@{Zeta\+::\+Rectangle}!Top@{Top}}\item[{\em 
+\hypertarget{classZeta_1_1Rectangle_a04ae0d4d037f13e313b042bff55c5f62aa4ffdcf0dc1f31b9acaf295d75b51d00}{Top}\label{classZeta_1_1Rectangle_a04ae0d4d037f13e313b042bff55c5f62aa4ffdcf0dc1f31b9acaf295d75b51d00}
+}]\index{Left@{Left}!Zeta\+::\+Rectangle@{Zeta\+::\+Rectangle}}\index{Zeta\+::\+Rectangle@{Zeta\+::\+Rectangle}!Left@{Left}}\item[{\em 
+\hypertarget{classZeta_1_1Rectangle_a04ae0d4d037f13e313b042bff55c5f62a945d5e233cf7d6240f6b783b36a374ff}{Left}\label{classZeta_1_1Rectangle_a04ae0d4d037f13e313b042bff55c5f62a945d5e233cf7d6240f6b783b36a374ff}
+}]\index{Right@{Right}!Zeta\+::\+Rectangle@{Zeta\+::\+Rectangle}}\index{Zeta\+::\+Rectangle@{Zeta\+::\+Rectangle}!Right@{Right}}\item[{\em 
+\hypertarget{classZeta_1_1Rectangle_a04ae0d4d037f13e313b042bff55c5f62a92b09c7c48c520c3c55e497875da437c}{Right}\label{classZeta_1_1Rectangle_a04ae0d4d037f13e313b042bff55c5f62a92b09c7c48c520c3c55e497875da437c}
+}]\index{Bottom@{Bottom}!Zeta\+::\+Rectangle@{Zeta\+::\+Rectangle}}\index{Zeta\+::\+Rectangle@{Zeta\+::\+Rectangle}!Bottom@{Bottom}}\item[{\em 
+\hypertarget{classZeta_1_1Rectangle_a04ae0d4d037f13e313b042bff55c5f62a2ad9d63b69c4a10a5cc9cad923133bc4}{Bottom}\label{classZeta_1_1Rectangle_a04ae0d4d037f13e313b042bff55c5f62a2ad9d63b69c4a10a5cc9cad923133bc4}
+}]\index{Every@{Every}!Zeta\+::\+Rectangle@{Zeta\+::\+Rectangle}}\index{Zeta\+::\+Rectangle@{Zeta\+::\+Rectangle}!Every@{Every}}\item[{\em 
+\hypertarget{classZeta_1_1Rectangle_a04ae0d4d037f13e313b042bff55c5f62affcf70e892b8ac3facbac0f88602396b}{Every}\label{classZeta_1_1Rectangle_a04ae0d4d037f13e313b042bff55c5f62affcf70e892b8ac3facbac0f88602396b}
+}]\end{description}
+\end{Desc}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classZeta_1_1Rectangle_a6534ea87af2bfb9a8200baeae4701e25}{\index{Zeta\+::\+Rectangle@{Zeta\+::\+Rectangle}!Rectangle@{Rectangle}}
+\index{Rectangle@{Rectangle}!Zeta\+::\+Rectangle@{Zeta\+::\+Rectangle}}
+\subsubsection[{Rectangle}]{\setlength{\rightskip}{0pt plus 5cm}Zeta\+::\+Rectangle\+::\+Rectangle (
+\begin{DoxyParamCaption}
+\item[{const {\bf Rectangle} \&}]{other}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [default]}}}\label{classZeta_1_1Rectangle_a6534ea87af2bfb9a8200baeae4701e25}
+\hypertarget{classZeta_1_1Rectangle_a3da14f013b2eb447d9edfeb259d597bb}{\index{Zeta\+::\+Rectangle@{Zeta\+::\+Rectangle}!Rectangle@{Rectangle}}
+\index{Rectangle@{Rectangle}!Zeta\+::\+Rectangle@{Zeta\+::\+Rectangle}}
+\subsubsection[{Rectangle}]{\setlength{\rightskip}{0pt plus 5cm}Zeta\+::\+Rectangle\+::\+Rectangle (
+\begin{DoxyParamCaption}
+\item[{{\bf Rectangle} \&\&}]{other}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [default]}}}\label{classZeta_1_1Rectangle_a3da14f013b2eb447d9edfeb259d597bb}
+\hypertarget{classZeta_1_1Rectangle_a809e8853350dd461924d8128b527418e}{\index{Zeta\+::\+Rectangle@{Zeta\+::\+Rectangle}!Rectangle@{Rectangle}}
+\index{Rectangle@{Rectangle}!Zeta\+::\+Rectangle@{Zeta\+::\+Rectangle}}
+\subsubsection[{Rectangle}]{\setlength{\rightskip}{0pt plus 5cm}Zeta\+::\+Rectangle\+::\+Rectangle (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1Rectangle_a809e8853350dd461924d8128b527418e}
+\hypertarget{classZeta_1_1Rectangle_ad44726d525575ad1af0dac91222f6317}{\index{Zeta\+::\+Rectangle@{Zeta\+::\+Rectangle}!Rectangle@{Rectangle}}
+\index{Rectangle@{Rectangle}!Zeta\+::\+Rectangle@{Zeta\+::\+Rectangle}}
+\subsubsection[{Rectangle}]{\setlength{\rightskip}{0pt plus 5cm}Zeta\+::\+Rectangle\+::\+Rectangle (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vector2} \&}]{location, }
+\item[{{\bf Float}}]{width, }
+\item[{{\bf Float}}]{height}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1Rectangle_ad44726d525575ad1af0dac91222f6317}
+\hypertarget{classZeta_1_1Rectangle_a4a0abfaed61c28d07dbf20dcda9c3346}{\index{Zeta\+::\+Rectangle@{Zeta\+::\+Rectangle}!Rectangle@{Rectangle}}
+\index{Rectangle@{Rectangle}!Zeta\+::\+Rectangle@{Zeta\+::\+Rectangle}}
+\subsubsection[{Rectangle}]{\setlength{\rightskip}{0pt plus 5cm}Zeta\+::\+Rectangle\+::\+Rectangle (
+\begin{DoxyParamCaption}
+\item[{{\bf Float}}]{x, }
+\item[{{\bf Float}}]{y, }
+\item[{{\bf Float}}]{width, }
+\item[{{\bf Float}}]{height}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1Rectangle_a4a0abfaed61c28d07dbf20dcda9c3346}
+\hypertarget{classZeta_1_1Rectangle_a88af684a512b1b4a6e5b1b2815f160a3}{\index{Zeta\+::\+Rectangle@{Zeta\+::\+Rectangle}!````~Rectangle@{$\sim$\+Rectangle}}
+\index{````~Rectangle@{$\sim$\+Rectangle}!Zeta\+::\+Rectangle@{Zeta\+::\+Rectangle}}
+\subsubsection[{$\sim$\+Rectangle}]{\setlength{\rightskip}{0pt plus 5cm}Zeta\+::\+Rectangle\+::$\sim$\+Rectangle (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1Rectangle_a88af684a512b1b4a6e5b1b2815f160a3}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classZeta_1_1Rectangle_a2ed6e665e3fd875143cf6bdad95277bb}{\index{Zeta\+::\+Rectangle@{Zeta\+::\+Rectangle}!draw@{draw}}
+\index{draw@{draw}!Zeta\+::\+Rectangle@{Zeta\+::\+Rectangle}}
+\subsubsection[{draw}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Zeta\+::\+Rectangle\+::draw (
+\begin{DoxyParamCaption}
+\item[{{\bf Float}}]{x, }
+\item[{{\bf Float}}]{y, }
+\item[{{\bf Float}}]{rotation = {\ttfamily 0.0f}, }
+\item[{{\bf Float}}]{scale = {\ttfamily 1.0f}}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classZeta_1_1Rectangle_a2ed6e665e3fd875143cf6bdad95277bb}
+Draws the \hyperlink{classZeta_1_1Object}{Object} on screen. Be advised, the x,y, offsets might have different meaning on different implementations. 
+\begin{DoxyParams}{Parameters}
+{\em x} & X offset to be applied on the drawing \\
+\hline
+{\em y} & Y offset to be applied on the drawing \\
+\hline
+{\em rotation} & the rotation to be applied on the drawing \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classZeta_1_1Drawable_a3f453a7a971b7eeba1768be3eaedc192}{Zeta\+::\+Drawable}.
+
+\hypertarget{classZeta_1_1Rectangle_abe3bf5a637e5fb73078e3c3a28a04699}{\index{Zeta\+::\+Rectangle@{Zeta\+::\+Rectangle}!get\+Height@{get\+Height}}
+\index{get\+Height@{get\+Height}!Zeta\+::\+Rectangle@{Zeta\+::\+Rectangle}}
+\subsubsection[{get\+Height}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Float} Zeta\+::\+Rectangle\+::get\+Height (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1Rectangle_abe3bf5a637e5fb73078e3c3a28a04699}
+\hypertarget{classZeta_1_1Rectangle_a45c5fe8a824e41de4c5f9268e34c298c}{\index{Zeta\+::\+Rectangle@{Zeta\+::\+Rectangle}!get\+Width@{get\+Width}}
+\index{get\+Width@{get\+Width}!Zeta\+::\+Rectangle@{Zeta\+::\+Rectangle}}
+\subsubsection[{get\+Width}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Float} Zeta\+::\+Rectangle\+::get\+Width (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1Rectangle_a45c5fe8a824e41de4c5f9268e34c298c}
+\hypertarget{classZeta_1_1Rectangle_a8f621ef5572f32caaaf564f5557e6085}{\index{Zeta\+::\+Rectangle@{Zeta\+::\+Rectangle}!operator=@{operator=}}
+\index{operator=@{operator=}!Zeta\+::\+Rectangle@{Zeta\+::\+Rectangle}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Rectangle}\& Zeta\+::\+Rectangle\+::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Rectangle} \&}]{other}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [default]}}}\label{classZeta_1_1Rectangle_a8f621ef5572f32caaaf564f5557e6085}
+\hypertarget{classZeta_1_1Rectangle_a35e931b62b3b071ec1ce821ab0e84dbb}{\index{Zeta\+::\+Rectangle@{Zeta\+::\+Rectangle}!overlaps\+Point@{overlaps\+Point}}
+\index{overlaps\+Point@{overlaps\+Point}!Zeta\+::\+Rectangle@{Zeta\+::\+Rectangle}}
+\subsubsection[{overlaps\+Point}]{\setlength{\rightskip}{0pt plus 5cm}bool Zeta\+::\+Rectangle\+::overlaps\+Point (
+\begin{DoxyParamCaption}
+\item[{{\bf Float}}]{x, }
+\item[{{\bf Float}}]{y}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1Rectangle_a35e931b62b3b071ec1ce821ab0e84dbb}
+\hypertarget{classZeta_1_1Rectangle_afbc6bf03a13a7958532740cf9ff53131}{\index{Zeta\+::\+Rectangle@{Zeta\+::\+Rectangle}!overlaps\+Point@{overlaps\+Point}}
+\index{overlaps\+Point@{overlaps\+Point}!Zeta\+::\+Rectangle@{Zeta\+::\+Rectangle}}
+\subsubsection[{overlaps\+Point}]{\setlength{\rightskip}{0pt plus 5cm}bool Zeta\+::\+Rectangle\+::overlaps\+Point (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vector2} \&}]{point}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1Rectangle_afbc6bf03a13a7958532740cf9ff53131}
+\hypertarget{classZeta_1_1Rectangle_af705894435b5bc4dacf3bc5a108f47af}{\index{Zeta\+::\+Rectangle@{Zeta\+::\+Rectangle}!overlaps\+Rectangle@{overlaps\+Rectangle}}
+\index{overlaps\+Rectangle@{overlaps\+Rectangle}!Zeta\+::\+Rectangle@{Zeta\+::\+Rectangle}}
+\subsubsection[{overlaps\+Rectangle}]{\setlength{\rightskip}{0pt plus 5cm}bool Zeta\+::\+Rectangle\+::overlaps\+Rectangle (
+\begin{DoxyParamCaption}
+\item[{const {\bf Rectangle} \&}]{other}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1Rectangle_af705894435b5bc4dacf3bc5a108f47af}
+\hypertarget{classZeta_1_1Rectangle_ad30eac6fe579eb693e169009be2a02d8}{\index{Zeta\+::\+Rectangle@{Zeta\+::\+Rectangle}!overlaps\+Whole\+Rectangle@{overlaps\+Whole\+Rectangle}}
+\index{overlaps\+Whole\+Rectangle@{overlaps\+Whole\+Rectangle}!Zeta\+::\+Rectangle@{Zeta\+::\+Rectangle}}
+\subsubsection[{overlaps\+Whole\+Rectangle}]{\setlength{\rightskip}{0pt plus 5cm}bool Zeta\+::\+Rectangle\+::overlaps\+Whole\+Rectangle (
+\begin{DoxyParamCaption}
+\item[{const {\bf Rectangle} \&}]{other}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1Rectangle_ad30eac6fe579eb693e169009be2a02d8}
+\hypertarget{classZeta_1_1Rectangle_ac890285bf9b61bd9a55486743c7f8474}{\index{Zeta\+::\+Rectangle@{Zeta\+::\+Rectangle}!push\+To\+Lua@{push\+To\+Lua}}
+\index{push\+To\+Lua@{push\+To\+Lua}!Zeta\+::\+Rectangle@{Zeta\+::\+Rectangle}}
+\subsubsection[{push\+To\+Lua}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+Rectangle\+::push\+To\+Lua (
+\begin{DoxyParamCaption}
+\item[{lua\+\_\+\+State $\ast$}]{lstate}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classZeta_1_1Rectangle_ac890285bf9b61bd9a55486743c7f8474}
+
+
+Implements \hyperlink{classZeta_1_1LuaPushable_a0380ec9cff11f749e8eb67b51b8f82fc}{Zeta\+::\+Lua\+Pushable}.
+
+\hypertarget{classZeta_1_1Rectangle_ae93bd8646b6bd28b1fcc6a2ce6fe3a84}{\index{Zeta\+::\+Rectangle@{Zeta\+::\+Rectangle}!set\+Height@{set\+Height}}
+\index{set\+Height@{set\+Height}!Zeta\+::\+Rectangle@{Zeta\+::\+Rectangle}}
+\subsubsection[{set\+Height}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+Rectangle\+::set\+Height (
+\begin{DoxyParamCaption}
+\item[{{\bf Float}}]{height}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1Rectangle_ae93bd8646b6bd28b1fcc6a2ce6fe3a84}
+\hypertarget{classZeta_1_1Rectangle_a60f5840446193641ebceb4440c97bcc5}{\index{Zeta\+::\+Rectangle@{Zeta\+::\+Rectangle}!set\+Size@{set\+Size}}
+\index{set\+Size@{set\+Size}!Zeta\+::\+Rectangle@{Zeta\+::\+Rectangle}}
+\subsubsection[{set\+Size}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+Rectangle\+::set\+Size (
+\begin{DoxyParamCaption}
+\item[{{\bf Float}}]{width, }
+\item[{{\bf Float}}]{height}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1Rectangle_a60f5840446193641ebceb4440c97bcc5}
+\hypertarget{classZeta_1_1Rectangle_af602ae20ae9d10466a5d6c4028ff180d}{\index{Zeta\+::\+Rectangle@{Zeta\+::\+Rectangle}!set\+Width@{set\+Width}}
+\index{set\+Width@{set\+Width}!Zeta\+::\+Rectangle@{Zeta\+::\+Rectangle}}
+\subsubsection[{set\+Width}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+Rectangle\+::set\+Width (
+\begin{DoxyParamCaption}
+\item[{{\bf Float}}]{width}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1Rectangle_af602ae20ae9d10466a5d6c4028ff180d}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classZeta_1_1Rectangle_a640f13febc3856b9c4a0729a3aeec1a8}{\index{Zeta\+::\+Rectangle@{Zeta\+::\+Rectangle}!height@{height}}
+\index{height@{height}!Zeta\+::\+Rectangle@{Zeta\+::\+Rectangle}}
+\subsubsection[{height}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Float} Zeta\+::\+Rectangle\+::height\hspace{0.3cm}{\ttfamily [protected]}}}\label{classZeta_1_1Rectangle_a640f13febc3856b9c4a0729a3aeec1a8}
+\hypertarget{classZeta_1_1Rectangle_a1d564c934b684c156de3fe425ac42e74}{\index{Zeta\+::\+Rectangle@{Zeta\+::\+Rectangle}!width@{width}}
+\index{width@{width}!Zeta\+::\+Rectangle@{Zeta\+::\+Rectangle}}
+\subsubsection[{width}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Float} Zeta\+::\+Rectangle\+::width\hspace{0.3cm}{\ttfamily [protected]}}}\label{classZeta_1_1Rectangle_a1d564c934b684c156de3fe425ac42e74}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Zeta/\+Core/\+Utility\+Classes/\hyperlink{Rectangle_8hpp}{Rectangle.\+hpp}\end{DoxyCompactItemize}

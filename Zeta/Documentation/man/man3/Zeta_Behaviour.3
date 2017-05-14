@@ -1,0 +1,54 @@
+.TH "Zeta::Behaviour" 3 "Wed Feb 10 2016" "Zeta" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Zeta::Behaviour \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Behaviour\&.hpp>\fP
+.PP
+Inherits \fBZeta::Updateable\fP\&.
+.PP
+Inherited by \fBZeta::AggressiveBehaviour\fP, \fBZeta::IdleMovement\fP, \fBZeta::PassiveBehaviour\fP, and \fBZeta::WanderingMovement\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "virtual void \fBonDeath\fP ()=0"
+.br
+.ti -1c
+.RI "\fBBehaviour\fP (\fBLifeform\fP &\fBowner\fP)"
+.br
+.ti -1c
+.RI "virtual \fB~Behaviour\fP ()"
+.br
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBLifeform\fP * \fBowner\fP"
+.br
+.in -1c
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Zeta::Behaviour::Behaviour (\fBLifeform\fP &owner)\fC [inline]\fP"
+
+.SS "virtual Zeta::Behaviour::~Behaviour ()\fC [inline]\fP, \fC [virtual]\fP"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "virtual void Zeta::Behaviour::onDeath ()\fC [pure virtual]\fP"
+
+.PP
+Implemented in \fBZeta::WanderingMovement\fP, \fBZeta::IdleMovement\fP, \fBZeta::PassiveBehaviour\fP, and \fBZeta::AggressiveBehaviour\fP\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "\fBLifeform\fP* Zeta::Behaviour::owner\fC [protected]\fP"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Zeta from the source code\&.

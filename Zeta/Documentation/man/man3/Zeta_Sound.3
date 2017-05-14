@@ -1,0 +1,59 @@
+.TH "Zeta::Sound" 3 "Wed Feb 10 2016" "Zeta" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Zeta::Sound \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Sound\&.hpp>\fP
+.PP
+Inherits \fBZeta::Resource\fP\&.
+.PP
+Inherited by \fBZeta::AllegroSound\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "virtual \fBSoundInstance\fP & \fBcreateNewInstance\fP () const =0"
+.br
+.ti -1c
+.RI "\fBSound\fP ()"
+.br
+.ti -1c
+.RI "\fBSound\fP (const std::string &\fBname\fP)"
+.br
+.ti -1c
+.RI "virtual \fB~Sound\fP ()"
+.br
+.in -1c
+.SS "Additional Inherited Members"
+.SH "Detailed Description"
+.PP 
+\fBSound\fP Class This Abstract Class provides the Interface for creating SoundInstances from one \fBSound\fP \fBFile\fP 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Zeta::Sound::Sound ()\fC [inline]\fP"
+The Default Constructor should create a Blank \fBSound\fP 
+.SS "Zeta::Sound::Sound (const std::string &name)\fC [inline]\fP"
+
+.SS "virtual Zeta::Sound::~Sound ()\fC [inline]\fP, \fC [virtual]\fP"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "virtual \fBSoundInstance\fP& Zeta::Sound::createNewInstance () const\fC [pure virtual]\fP"
+Creates and returns a new \fBSoundInstance\fP 
+.PP
+\fBReturns:\fP
+.RS 4
+The new \fBSoundInstance\fP 
+.RE
+.PP
+
+.PP
+Implemented in \fBZeta::AllegroSound\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Zeta from the source code\&.

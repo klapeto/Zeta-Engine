@@ -1,0 +1,6 @@
+$#include <Zeta/Core/RPGClasses/RegenerationAbilityClass.hpp>
+
+class RegenerationAbilityClass: public AbilityClass {
+public:
+
+};

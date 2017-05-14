@@ -1,0 +1,361 @@
+\hypertarget{classZeta_1_1StaticQuadtree}{\section{Zeta\+:\+:Static\+Quadtree Class Reference}
+\label{classZeta_1_1StaticQuadtree}\index{Zeta\+::\+Static\+Quadtree@{Zeta\+::\+Static\+Quadtree}}
+}
+
+
+{\ttfamily \#include $<$Static\+Quadtree.\+hpp$>$}
+
+
+
+Inheritance diagram for Zeta\+:\+:Static\+Quadtree\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=186pt]{classZeta_1_1StaticQuadtree__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Zeta\+:\+:Static\+Quadtree\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classZeta_1_1StaticQuadtree__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classZeta_1_1StaticQuadtree_a2f9ecc36ae022da28b05c3df8d4bdfed}{is\+Leaf} () const 
+\item 
+void \hyperlink{classZeta_1_1StaticQuadtree_a2fa63262d64ac6a8544ce91cd0726344}{set\+Leaf} (bool \hyperlink{classZeta_1_1StaticQuadtree_a9a02ad0fad2aa38f649769dd371467d4}{leaf})
+\item 
+int \hyperlink{classZeta_1_1StaticQuadtree_a9e9baf436deb842b6f13140e6639bfdc}{insert} (\hyperlink{classZeta_1_1Object}{Object} $\ast$obj)
+\item 
+std\+::vector$<$ \hyperlink{classZeta_1_1Object}{Object} $\ast$ $>$ \hyperlink{classZeta_1_1StaticQuadtree_aff8dbd7a1c218eb78cd1b91fbd1626ca}{get\+Objects\+At} (\hyperlink{namespaceZeta_a1e0a1265f9b3bd3075fb0fabd39088ba}{Float} x, \hyperlink{namespaceZeta_a1e0a1265f9b3bd3075fb0fabd39088ba}{Float} y) const 
+\item 
+std\+::vector$<$ \hyperlink{classZeta_1_1Object}{Object} $\ast$ $>$ \hyperlink{classZeta_1_1StaticQuadtree_a2c3252569dd151af15204cca8dae523f}{get\+Objects\+At} (const \hyperlink{classZeta_1_1Rectangle}{Rectangle} \&rect) const 
+\item 
+void \hyperlink{classZeta_1_1StaticQuadtree_a24b8d0e8b3ccbfcffc65300e9ff1d860}{draw} (\hyperlink{namespaceZeta_a1e0a1265f9b3bd3075fb0fabd39088ba}{Float} x, \hyperlink{namespaceZeta_a1e0a1265f9b3bd3075fb0fabd39088ba}{Float} y, \hyperlink{namespaceZeta_a1e0a1265f9b3bd3075fb0fabd39088ba}{Float} rotation=0.\+0f, Float scale=1.\+0f) const 
+\item 
+void \hyperlink{classZeta_1_1StaticQuadtree_a7575ffa13b3f6fe929b781bdf328ae68}{clear} ()
+\item 
+void \hyperlink{classZeta_1_1StaticQuadtree_a6243625ecb8a71826f71a3b0652f694e}{set\+Bounds} (\hyperlink{namespaceZeta_a1e0a1265f9b3bd3075fb0fabd39088ba}{Float} x, \hyperlink{namespaceZeta_a1e0a1265f9b3bd3075fb0fabd39088ba}{Float} y, \hyperlink{namespaceZeta_a1e0a1265f9b3bd3075fb0fabd39088ba}{Float} width, \hyperlink{namespaceZeta_a1e0a1265f9b3bd3075fb0fabd39088ba}{Float} height)
+\item 
+void \hyperlink{classZeta_1_1StaticQuadtree_aa5f3fec20f813edd9586d7173bebbbcc}{offset} (\hyperlink{namespaceZeta_a1e0a1265f9b3bd3075fb0fabd39088ba}{Float} dx, \hyperlink{namespaceZeta_a1e0a1265f9b3bd3075fb0fabd39088ba}{Float} dy)
+\item 
+void \hyperlink{classZeta_1_1StaticQuadtree_aee2421ed826dcab6969e2c0c08528a5b}{reset\+Position} ()
+\item 
+void \hyperlink{classZeta_1_1StaticQuadtree_a47eba70e9caf15afa4fee715f1e16edb}{set\+Size} (\hyperlink{namespaceZeta_a1e0a1265f9b3bd3075fb0fabd39088ba}{Float} width, \hyperlink{namespaceZeta_a1e0a1265f9b3bd3075fb0fabd39088ba}{Float} height)
+\item 
+void \hyperlink{classZeta_1_1StaticQuadtree_a6f715aaabbcb78bfc73c6a67f9c61ccf}{set\+Position} (\hyperlink{namespaceZeta_a1e0a1265f9b3bd3075fb0fabd39088ba}{Float} x, \hyperlink{namespaceZeta_a1e0a1265f9b3bd3075fb0fabd39088ba}{Float} y)
+\item 
+\hyperlink{namespaceZeta_a1e0a1265f9b3bd3075fb0fabd39088ba}{Float} \hyperlink{classZeta_1_1StaticQuadtree_ac89feec85c2e85c4ce5891e5466a2c41}{get\+Width} () const 
+\item 
+\hyperlink{namespaceZeta_a1e0a1265f9b3bd3075fb0fabd39088ba}{Float} \hyperlink{classZeta_1_1StaticQuadtree_aa838f7e2fb7bd0acbee25511cbcbf345}{get\+Height} () const 
+\item 
+\hyperlink{classZeta_1_1StaticQuadtree_a480626fb343b0dd5c1f534e09eb942a0}{Static\+Quadtree} ()
+\item 
+\hyperlink{classZeta_1_1StaticQuadtree_aedb71b4a1d2c7e8ff91b8e9269f05726}{Static\+Quadtree} (\hyperlink{classZeta_1_1StaticQuadtree}{Static\+Quadtree} $\ast$\hyperlink{classZeta_1_1StaticQuadtree_adc1adf63b09a4d7d322602a72b89803d}{parent}, int \hyperlink{classZeta_1_1StaticQuadtree_a53059e324eaf43b4e55b55fa67cf9931}{level})
+\item 
+\hyperlink{classZeta_1_1StaticQuadtree_aad72a66594b975133d08d23572c044f8}{$\sim$\+Static\+Quadtree} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{classZeta_1_1StaticQuadtree_a5447a115ca91e5d463f0646e12fbdda8}{Node} \{ \hyperlink{classZeta_1_1StaticQuadtree_a5447a115ca91e5d463f0646e12fbdda8a730c120f5cefb489a66f7a3847be6f5c}{N\+W}, 
+\hyperlink{classZeta_1_1StaticQuadtree_a5447a115ca91e5d463f0646e12fbdda8a9368e3cecc435a66480efb0fb4d9e086}{N\+E}, 
+\hyperlink{classZeta_1_1StaticQuadtree_a5447a115ca91e5d463f0646e12fbdda8a8f3c83bc8c396a5e38056efa871963f1}{S\+W}, 
+\hyperlink{classZeta_1_1StaticQuadtree_a5447a115ca91e5d463f0646e12fbdda8ad5fa116f6606e9ca89086207acbb8bea}{S\+E}
+ \}
+\item 
+enum \hyperlink{classZeta_1_1StaticQuadtree_a9613abd8f8d7db2a870f49ddc956e261}{Insert\+\_\+\+Out} \{ \hyperlink{classZeta_1_1StaticQuadtree_a9613abd8f8d7db2a870f49ddc956e261ae964d92b0d82384f7ca60b33e08a5f5a}{No\+\_\+\+Contact} = -\/2, 
+\hyperlink{classZeta_1_1StaticQuadtree_a9613abd8f8d7db2a870f49ddc956e261a4a8e080f1857db031566e60efebf378c}{Child\+\_\+\+Handles} = -\/1, 
+\hyperlink{classZeta_1_1StaticQuadtree_a9613abd8f8d7db2a870f49ddc956e261ac0bf14a140ae4833e4571c75cc682dd7}{Parent\+\_\+\+Handles} = 0
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classZeta_1_1StaticQuadtree_aff2484ac4c3a89d6ac3f3a883e03b258}{sub\+Divide} ()
+\item 
+bool \hyperlink{classZeta_1_1StaticQuadtree_af930b82ce76d93375a5ab67151d4fa71}{is\+Inside} (\hyperlink{classZeta_1_1Object}{Object} $\ast$obj)
+\item 
+bool \hyperlink{classZeta_1_1StaticQuadtree_a198d4941d1a591e541ccc319d38ea27a}{touches} (\hyperlink{classZeta_1_1Object}{Object} $\ast$obj)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \hyperlink{classZeta_1_1Object}{Object} $\ast$ $>$ \hyperlink{classZeta_1_1StaticQuadtree_a96f2f99c2fb37d79ae230ce0fd547f0d}{objects}
+\item 
+\hyperlink{classZeta_1_1StaticQuadtree}{Static\+Quadtree} $\ast$ \hyperlink{classZeta_1_1StaticQuadtree_a5525d75fb8f121ddc3c162a971146506}{childs} \mbox{[}4\mbox{]}
+\item 
+\hyperlink{classZeta_1_1StaticQuadtree}{Static\+Quadtree} $\ast$ \hyperlink{classZeta_1_1StaticQuadtree_adc1adf63b09a4d7d322602a72b89803d}{parent}
+\item 
+\hyperlink{classZeta_1_1Rectangle}{Rectangle} \hyperlink{classZeta_1_1StaticQuadtree_a753ee640c2596a4f83ec6d0f8e574e21}{bounds}
+\item 
+int \hyperlink{classZeta_1_1StaticQuadtree_a53059e324eaf43b4e55b55fa67cf9931}{level}
+\item 
+const int \hyperlink{classZeta_1_1StaticQuadtree_a048cc44a90aab6c8971d18c294da8648}{max\+Level} = 5
+\item 
+const unsigned int \hyperlink{classZeta_1_1StaticQuadtree_a18f3e883d1a83290f6290ae30fda27af}{max\+Objects} = 10
+\item 
+bool \hyperlink{classZeta_1_1StaticQuadtree_a9a02ad0fad2aa38f649769dd371467d4}{leaf}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{classZeta_1_1StaticQuadtree_a9613abd8f8d7db2a870f49ddc956e261}{\index{Zeta\+::\+Static\+Quadtree@{Zeta\+::\+Static\+Quadtree}!Insert\+\_\+\+Out@{Insert\+\_\+\+Out}}
+\index{Insert\+\_\+\+Out@{Insert\+\_\+\+Out}!Zeta\+::\+Static\+Quadtree@{Zeta\+::\+Static\+Quadtree}}
+\subsubsection[{Insert\+\_\+\+Out}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Zeta\+::\+Static\+Quadtree\+::\+Insert\+\_\+\+Out}\hspace{0.3cm}{\ttfamily [private]}}}\label{classZeta_1_1StaticQuadtree_a9613abd8f8d7db2a870f49ddc956e261}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{No\+\_\+\+Contact@{No\+\_\+\+Contact}!Zeta\+::\+Static\+Quadtree@{Zeta\+::\+Static\+Quadtree}}\index{Zeta\+::\+Static\+Quadtree@{Zeta\+::\+Static\+Quadtree}!No\+\_\+\+Contact@{No\+\_\+\+Contact}}\item[{\em 
+\hypertarget{classZeta_1_1StaticQuadtree_a9613abd8f8d7db2a870f49ddc956e261ae964d92b0d82384f7ca60b33e08a5f5a}{No\+\_\+\+Contact}\label{classZeta_1_1StaticQuadtree_a9613abd8f8d7db2a870f49ddc956e261ae964d92b0d82384f7ca60b33e08a5f5a}
+}]\index{Child\+\_\+\+Handles@{Child\+\_\+\+Handles}!Zeta\+::\+Static\+Quadtree@{Zeta\+::\+Static\+Quadtree}}\index{Zeta\+::\+Static\+Quadtree@{Zeta\+::\+Static\+Quadtree}!Child\+\_\+\+Handles@{Child\+\_\+\+Handles}}\item[{\em 
+\hypertarget{classZeta_1_1StaticQuadtree_a9613abd8f8d7db2a870f49ddc956e261a4a8e080f1857db031566e60efebf378c}{Child\+\_\+\+Handles}\label{classZeta_1_1StaticQuadtree_a9613abd8f8d7db2a870f49ddc956e261a4a8e080f1857db031566e60efebf378c}
+}]\index{Parent\+\_\+\+Handles@{Parent\+\_\+\+Handles}!Zeta\+::\+Static\+Quadtree@{Zeta\+::\+Static\+Quadtree}}\index{Zeta\+::\+Static\+Quadtree@{Zeta\+::\+Static\+Quadtree}!Parent\+\_\+\+Handles@{Parent\+\_\+\+Handles}}\item[{\em 
+\hypertarget{classZeta_1_1StaticQuadtree_a9613abd8f8d7db2a870f49ddc956e261ac0bf14a140ae4833e4571c75cc682dd7}{Parent\+\_\+\+Handles}\label{classZeta_1_1StaticQuadtree_a9613abd8f8d7db2a870f49ddc956e261ac0bf14a140ae4833e4571c75cc682dd7}
+}]\end{description}
+\end{Desc}
+\hypertarget{classZeta_1_1StaticQuadtree_a5447a115ca91e5d463f0646e12fbdda8}{\index{Zeta\+::\+Static\+Quadtree@{Zeta\+::\+Static\+Quadtree}!Node@{Node}}
+\index{Node@{Node}!Zeta\+::\+Static\+Quadtree@{Zeta\+::\+Static\+Quadtree}}
+\subsubsection[{Node}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Zeta\+::\+Static\+Quadtree\+::\+Node}\hspace{0.3cm}{\ttfamily [private]}}}\label{classZeta_1_1StaticQuadtree_a5447a115ca91e5d463f0646e12fbdda8}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{N\+W@{N\+W}!Zeta\+::\+Static\+Quadtree@{Zeta\+::\+Static\+Quadtree}}\index{Zeta\+::\+Static\+Quadtree@{Zeta\+::\+Static\+Quadtree}!N\+W@{N\+W}}\item[{\em 
+\hypertarget{classZeta_1_1StaticQuadtree_a5447a115ca91e5d463f0646e12fbdda8a730c120f5cefb489a66f7a3847be6f5c}{N\+W}\label{classZeta_1_1StaticQuadtree_a5447a115ca91e5d463f0646e12fbdda8a730c120f5cefb489a66f7a3847be6f5c}
+}]\index{N\+E@{N\+E}!Zeta\+::\+Static\+Quadtree@{Zeta\+::\+Static\+Quadtree}}\index{Zeta\+::\+Static\+Quadtree@{Zeta\+::\+Static\+Quadtree}!N\+E@{N\+E}}\item[{\em 
+\hypertarget{classZeta_1_1StaticQuadtree_a5447a115ca91e5d463f0646e12fbdda8a9368e3cecc435a66480efb0fb4d9e086}{N\+E}\label{classZeta_1_1StaticQuadtree_a5447a115ca91e5d463f0646e12fbdda8a9368e3cecc435a66480efb0fb4d9e086}
+}]\index{S\+W@{S\+W}!Zeta\+::\+Static\+Quadtree@{Zeta\+::\+Static\+Quadtree}}\index{Zeta\+::\+Static\+Quadtree@{Zeta\+::\+Static\+Quadtree}!S\+W@{S\+W}}\item[{\em 
+\hypertarget{classZeta_1_1StaticQuadtree_a5447a115ca91e5d463f0646e12fbdda8a8f3c83bc8c396a5e38056efa871963f1}{S\+W}\label{classZeta_1_1StaticQuadtree_a5447a115ca91e5d463f0646e12fbdda8a8f3c83bc8c396a5e38056efa871963f1}
+}]\index{S\+E@{S\+E}!Zeta\+::\+Static\+Quadtree@{Zeta\+::\+Static\+Quadtree}}\index{Zeta\+::\+Static\+Quadtree@{Zeta\+::\+Static\+Quadtree}!S\+E@{S\+E}}\item[{\em 
+\hypertarget{classZeta_1_1StaticQuadtree_a5447a115ca91e5d463f0646e12fbdda8ad5fa116f6606e9ca89086207acbb8bea}{S\+E}\label{classZeta_1_1StaticQuadtree_a5447a115ca91e5d463f0646e12fbdda8ad5fa116f6606e9ca89086207acbb8bea}
+}]\end{description}
+\end{Desc}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classZeta_1_1StaticQuadtree_a480626fb343b0dd5c1f534e09eb942a0}{\index{Zeta\+::\+Static\+Quadtree@{Zeta\+::\+Static\+Quadtree}!Static\+Quadtree@{Static\+Quadtree}}
+\index{Static\+Quadtree@{Static\+Quadtree}!Zeta\+::\+Static\+Quadtree@{Zeta\+::\+Static\+Quadtree}}
+\subsubsection[{Static\+Quadtree}]{\setlength{\rightskip}{0pt plus 5cm}Zeta\+::\+Static\+Quadtree\+::\+Static\+Quadtree (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classZeta_1_1StaticQuadtree_a480626fb343b0dd5c1f534e09eb942a0}
+\hypertarget{classZeta_1_1StaticQuadtree_aedb71b4a1d2c7e8ff91b8e9269f05726}{\index{Zeta\+::\+Static\+Quadtree@{Zeta\+::\+Static\+Quadtree}!Static\+Quadtree@{Static\+Quadtree}}
+\index{Static\+Quadtree@{Static\+Quadtree}!Zeta\+::\+Static\+Quadtree@{Zeta\+::\+Static\+Quadtree}}
+\subsubsection[{Static\+Quadtree}]{\setlength{\rightskip}{0pt plus 5cm}Zeta\+::\+Static\+Quadtree\+::\+Static\+Quadtree (
+\begin{DoxyParamCaption}
+\item[{{\bf Static\+Quadtree} $\ast$}]{parent, }
+\item[{int}]{level}
+\end{DoxyParamCaption}
+)}}\label{classZeta_1_1StaticQuadtree_aedb71b4a1d2c7e8ff91b8e9269f05726}
+\hypertarget{classZeta_1_1StaticQuadtree_aad72a66594b975133d08d23572c044f8}{\index{Zeta\+::\+Static\+Quadtree@{Zeta\+::\+Static\+Quadtree}!````~Static\+Quadtree@{$\sim$\+Static\+Quadtree}}
+\index{````~Static\+Quadtree@{$\sim$\+Static\+Quadtree}!Zeta\+::\+Static\+Quadtree@{Zeta\+::\+Static\+Quadtree}}
+\subsubsection[{$\sim$\+Static\+Quadtree}]{\setlength{\rightskip}{0pt plus 5cm}Zeta\+::\+Static\+Quadtree\+::$\sim$\+Static\+Quadtree (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classZeta_1_1StaticQuadtree_aad72a66594b975133d08d23572c044f8}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classZeta_1_1StaticQuadtree_a7575ffa13b3f6fe929b781bdf328ae68}{\index{Zeta\+::\+Static\+Quadtree@{Zeta\+::\+Static\+Quadtree}!clear@{clear}}
+\index{clear@{clear}!Zeta\+::\+Static\+Quadtree@{Zeta\+::\+Static\+Quadtree}}
+\subsubsection[{clear}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+Static\+Quadtree\+::clear (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classZeta_1_1StaticQuadtree_a7575ffa13b3f6fe929b781bdf328ae68}
+\hypertarget{classZeta_1_1StaticQuadtree_a24b8d0e8b3ccbfcffc65300e9ff1d860}{\index{Zeta\+::\+Static\+Quadtree@{Zeta\+::\+Static\+Quadtree}!draw@{draw}}
+\index{draw@{draw}!Zeta\+::\+Static\+Quadtree@{Zeta\+::\+Static\+Quadtree}}
+\subsubsection[{draw}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+Static\+Quadtree\+::draw (
+\begin{DoxyParamCaption}
+\item[{{\bf Float}}]{x, }
+\item[{{\bf Float}}]{y, }
+\item[{{\bf Float}}]{rotation = {\ttfamily 0.0f}, }
+\item[{{\bf Float}}]{scale = {\ttfamily 1.0f}}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classZeta_1_1StaticQuadtree_a24b8d0e8b3ccbfcffc65300e9ff1d860}
+Draws the \hyperlink{classZeta_1_1Object}{Object} on screen. Be advised, the x,y, offsets might have different meaning on different implementations. 
+\begin{DoxyParams}{Parameters}
+{\em x} & X offset to be applied on the drawing \\
+\hline
+{\em y} & Y offset to be applied on the drawing \\
+\hline
+{\em rotation} & the rotation to be applied on the drawing \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classZeta_1_1Drawable_a3f453a7a971b7eeba1768be3eaedc192}{Zeta\+::\+Drawable}.
+
+\hypertarget{classZeta_1_1StaticQuadtree_aa838f7e2fb7bd0acbee25511cbcbf345}{\index{Zeta\+::\+Static\+Quadtree@{Zeta\+::\+Static\+Quadtree}!get\+Height@{get\+Height}}
+\index{get\+Height@{get\+Height}!Zeta\+::\+Static\+Quadtree@{Zeta\+::\+Static\+Quadtree}}
+\subsubsection[{get\+Height}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Float} Zeta\+::\+Static\+Quadtree\+::get\+Height (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1StaticQuadtree_aa838f7e2fb7bd0acbee25511cbcbf345}
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classZeta_1_1StaticQuadtree_aa838f7e2fb7bd0acbee25511cbcbf345_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classZeta_1_1StaticQuadtree_aff8dbd7a1c218eb78cd1b91fbd1626ca}{\index{Zeta\+::\+Static\+Quadtree@{Zeta\+::\+Static\+Quadtree}!get\+Objects\+At@{get\+Objects\+At}}
+\index{get\+Objects\+At@{get\+Objects\+At}!Zeta\+::\+Static\+Quadtree@{Zeta\+::\+Static\+Quadtree}}
+\subsubsection[{get\+Objects\+At}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<${\bf Object}$\ast$$>$ Zeta\+::\+Static\+Quadtree\+::get\+Objects\+At (
+\begin{DoxyParamCaption}
+\item[{{\bf Float}}]{x, }
+\item[{{\bf Float}}]{y}
+\end{DoxyParamCaption}
+) const}}\label{classZeta_1_1StaticQuadtree_aff8dbd7a1c218eb78cd1b91fbd1626ca}
+\hypertarget{classZeta_1_1StaticQuadtree_a2c3252569dd151af15204cca8dae523f}{\index{Zeta\+::\+Static\+Quadtree@{Zeta\+::\+Static\+Quadtree}!get\+Objects\+At@{get\+Objects\+At}}
+\index{get\+Objects\+At@{get\+Objects\+At}!Zeta\+::\+Static\+Quadtree@{Zeta\+::\+Static\+Quadtree}}
+\subsubsection[{get\+Objects\+At}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<${\bf Object}$\ast$$>$ Zeta\+::\+Static\+Quadtree\+::get\+Objects\+At (
+\begin{DoxyParamCaption}
+\item[{const {\bf Rectangle} \&}]{rect}
+\end{DoxyParamCaption}
+) const}}\label{classZeta_1_1StaticQuadtree_a2c3252569dd151af15204cca8dae523f}
+\hypertarget{classZeta_1_1StaticQuadtree_ac89feec85c2e85c4ce5891e5466a2c41}{\index{Zeta\+::\+Static\+Quadtree@{Zeta\+::\+Static\+Quadtree}!get\+Width@{get\+Width}}
+\index{get\+Width@{get\+Width}!Zeta\+::\+Static\+Quadtree@{Zeta\+::\+Static\+Quadtree}}
+\subsubsection[{get\+Width}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Float} Zeta\+::\+Static\+Quadtree\+::get\+Width (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1StaticQuadtree_ac89feec85c2e85c4ce5891e5466a2c41}
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classZeta_1_1StaticQuadtree_ac89feec85c2e85c4ce5891e5466a2c41_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classZeta_1_1StaticQuadtree_a9e9baf436deb842b6f13140e6639bfdc}{\index{Zeta\+::\+Static\+Quadtree@{Zeta\+::\+Static\+Quadtree}!insert@{insert}}
+\index{insert@{insert}!Zeta\+::\+Static\+Quadtree@{Zeta\+::\+Static\+Quadtree}}
+\subsubsection[{insert}]{\setlength{\rightskip}{0pt plus 5cm}int Zeta\+::\+Static\+Quadtree\+::insert (
+\begin{DoxyParamCaption}
+\item[{{\bf Object} $\ast$}]{obj}
+\end{DoxyParamCaption}
+)}}\label{classZeta_1_1StaticQuadtree_a9e9baf436deb842b6f13140e6639bfdc}
+\hypertarget{classZeta_1_1StaticQuadtree_af930b82ce76d93375a5ab67151d4fa71}{\index{Zeta\+::\+Static\+Quadtree@{Zeta\+::\+Static\+Quadtree}!is\+Inside@{is\+Inside}}
+\index{is\+Inside@{is\+Inside}!Zeta\+::\+Static\+Quadtree@{Zeta\+::\+Static\+Quadtree}}
+\subsubsection[{is\+Inside}]{\setlength{\rightskip}{0pt plus 5cm}bool Zeta\+::\+Static\+Quadtree\+::is\+Inside (
+\begin{DoxyParamCaption}
+\item[{{\bf Object} $\ast$}]{obj}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classZeta_1_1StaticQuadtree_af930b82ce76d93375a5ab67151d4fa71}
+\hypertarget{classZeta_1_1StaticQuadtree_a2f9ecc36ae022da28b05c3df8d4bdfed}{\index{Zeta\+::\+Static\+Quadtree@{Zeta\+::\+Static\+Quadtree}!is\+Leaf@{is\+Leaf}}
+\index{is\+Leaf@{is\+Leaf}!Zeta\+::\+Static\+Quadtree@{Zeta\+::\+Static\+Quadtree}}
+\subsubsection[{is\+Leaf}]{\setlength{\rightskip}{0pt plus 5cm}bool Zeta\+::\+Static\+Quadtree\+::is\+Leaf (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1StaticQuadtree_a2f9ecc36ae022da28b05c3df8d4bdfed}
+\hypertarget{classZeta_1_1StaticQuadtree_aa5f3fec20f813edd9586d7173bebbbcc}{\index{Zeta\+::\+Static\+Quadtree@{Zeta\+::\+Static\+Quadtree}!offset@{offset}}
+\index{offset@{offset}!Zeta\+::\+Static\+Quadtree@{Zeta\+::\+Static\+Quadtree}}
+\subsubsection[{offset}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+Static\+Quadtree\+::offset (
+\begin{DoxyParamCaption}
+\item[{{\bf Float}}]{dx, }
+\item[{{\bf Float}}]{dy}
+\end{DoxyParamCaption}
+)}}\label{classZeta_1_1StaticQuadtree_aa5f3fec20f813edd9586d7173bebbbcc}
+\hypertarget{classZeta_1_1StaticQuadtree_aee2421ed826dcab6969e2c0c08528a5b}{\index{Zeta\+::\+Static\+Quadtree@{Zeta\+::\+Static\+Quadtree}!reset\+Position@{reset\+Position}}
+\index{reset\+Position@{reset\+Position}!Zeta\+::\+Static\+Quadtree@{Zeta\+::\+Static\+Quadtree}}
+\subsubsection[{reset\+Position}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+Static\+Quadtree\+::reset\+Position (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classZeta_1_1StaticQuadtree_aee2421ed826dcab6969e2c0c08528a5b}
+\hypertarget{classZeta_1_1StaticQuadtree_a6243625ecb8a71826f71a3b0652f694e}{\index{Zeta\+::\+Static\+Quadtree@{Zeta\+::\+Static\+Quadtree}!set\+Bounds@{set\+Bounds}}
+\index{set\+Bounds@{set\+Bounds}!Zeta\+::\+Static\+Quadtree@{Zeta\+::\+Static\+Quadtree}}
+\subsubsection[{set\+Bounds}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+Static\+Quadtree\+::set\+Bounds (
+\begin{DoxyParamCaption}
+\item[{{\bf Float}}]{x, }
+\item[{{\bf Float}}]{y, }
+\item[{{\bf Float}}]{width, }
+\item[{{\bf Float}}]{height}
+\end{DoxyParamCaption}
+)}}\label{classZeta_1_1StaticQuadtree_a6243625ecb8a71826f71a3b0652f694e}
+\hypertarget{classZeta_1_1StaticQuadtree_a2fa63262d64ac6a8544ce91cd0726344}{\index{Zeta\+::\+Static\+Quadtree@{Zeta\+::\+Static\+Quadtree}!set\+Leaf@{set\+Leaf}}
+\index{set\+Leaf@{set\+Leaf}!Zeta\+::\+Static\+Quadtree@{Zeta\+::\+Static\+Quadtree}}
+\subsubsection[{set\+Leaf}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+Static\+Quadtree\+::set\+Leaf (
+\begin{DoxyParamCaption}
+\item[{bool}]{leaf}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classZeta_1_1StaticQuadtree_a2fa63262d64ac6a8544ce91cd0726344}
+\hypertarget{classZeta_1_1StaticQuadtree_a6f715aaabbcb78bfc73c6a67f9c61ccf}{\index{Zeta\+::\+Static\+Quadtree@{Zeta\+::\+Static\+Quadtree}!set\+Position@{set\+Position}}
+\index{set\+Position@{set\+Position}!Zeta\+::\+Static\+Quadtree@{Zeta\+::\+Static\+Quadtree}}
+\subsubsection[{set\+Position}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+Static\+Quadtree\+::set\+Position (
+\begin{DoxyParamCaption}
+\item[{{\bf Float}}]{x, }
+\item[{{\bf Float}}]{y}
+\end{DoxyParamCaption}
+)}}\label{classZeta_1_1StaticQuadtree_a6f715aaabbcb78bfc73c6a67f9c61ccf}
+\hypertarget{classZeta_1_1StaticQuadtree_a47eba70e9caf15afa4fee715f1e16edb}{\index{Zeta\+::\+Static\+Quadtree@{Zeta\+::\+Static\+Quadtree}!set\+Size@{set\+Size}}
+\index{set\+Size@{set\+Size}!Zeta\+::\+Static\+Quadtree@{Zeta\+::\+Static\+Quadtree}}
+\subsubsection[{set\+Size}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+Static\+Quadtree\+::set\+Size (
+\begin{DoxyParamCaption}
+\item[{{\bf Float}}]{width, }
+\item[{{\bf Float}}]{height}
+\end{DoxyParamCaption}
+)}}\label{classZeta_1_1StaticQuadtree_a47eba70e9caf15afa4fee715f1e16edb}
+\hypertarget{classZeta_1_1StaticQuadtree_aff2484ac4c3a89d6ac3f3a883e03b258}{\index{Zeta\+::\+Static\+Quadtree@{Zeta\+::\+Static\+Quadtree}!sub\+Divide@{sub\+Divide}}
+\index{sub\+Divide@{sub\+Divide}!Zeta\+::\+Static\+Quadtree@{Zeta\+::\+Static\+Quadtree}}
+\subsubsection[{sub\+Divide}]{\setlength{\rightskip}{0pt plus 5cm}void Zeta\+::\+Static\+Quadtree\+::sub\+Divide (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classZeta_1_1StaticQuadtree_aff2484ac4c3a89d6ac3f3a883e03b258}
+\hypertarget{classZeta_1_1StaticQuadtree_a198d4941d1a591e541ccc319d38ea27a}{\index{Zeta\+::\+Static\+Quadtree@{Zeta\+::\+Static\+Quadtree}!touches@{touches}}
+\index{touches@{touches}!Zeta\+::\+Static\+Quadtree@{Zeta\+::\+Static\+Quadtree}}
+\subsubsection[{touches}]{\setlength{\rightskip}{0pt plus 5cm}bool Zeta\+::\+Static\+Quadtree\+::touches (
+\begin{DoxyParamCaption}
+\item[{{\bf Object} $\ast$}]{obj}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classZeta_1_1StaticQuadtree_a198d4941d1a591e541ccc319d38ea27a}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classZeta_1_1StaticQuadtree_a753ee640c2596a4f83ec6d0f8e574e21}{\index{Zeta\+::\+Static\+Quadtree@{Zeta\+::\+Static\+Quadtree}!bounds@{bounds}}
+\index{bounds@{bounds}!Zeta\+::\+Static\+Quadtree@{Zeta\+::\+Static\+Quadtree}}
+\subsubsection[{bounds}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Rectangle} Zeta\+::\+Static\+Quadtree\+::bounds\hspace{0.3cm}{\ttfamily [private]}}}\label{classZeta_1_1StaticQuadtree_a753ee640c2596a4f83ec6d0f8e574e21}
+\hypertarget{classZeta_1_1StaticQuadtree_a5525d75fb8f121ddc3c162a971146506}{\index{Zeta\+::\+Static\+Quadtree@{Zeta\+::\+Static\+Quadtree}!childs@{childs}}
+\index{childs@{childs}!Zeta\+::\+Static\+Quadtree@{Zeta\+::\+Static\+Quadtree}}
+\subsubsection[{childs}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Static\+Quadtree}$\ast$ Zeta\+::\+Static\+Quadtree\+::childs\mbox{[}4\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}}\label{classZeta_1_1StaticQuadtree_a5525d75fb8f121ddc3c162a971146506}
+\hypertarget{classZeta_1_1StaticQuadtree_a9a02ad0fad2aa38f649769dd371467d4}{\index{Zeta\+::\+Static\+Quadtree@{Zeta\+::\+Static\+Quadtree}!leaf@{leaf}}
+\index{leaf@{leaf}!Zeta\+::\+Static\+Quadtree@{Zeta\+::\+Static\+Quadtree}}
+\subsubsection[{leaf}]{\setlength{\rightskip}{0pt plus 5cm}bool Zeta\+::\+Static\+Quadtree\+::leaf\hspace{0.3cm}{\ttfamily [private]}}}\label{classZeta_1_1StaticQuadtree_a9a02ad0fad2aa38f649769dd371467d4}
+\hypertarget{classZeta_1_1StaticQuadtree_a53059e324eaf43b4e55b55fa67cf9931}{\index{Zeta\+::\+Static\+Quadtree@{Zeta\+::\+Static\+Quadtree}!level@{level}}
+\index{level@{level}!Zeta\+::\+Static\+Quadtree@{Zeta\+::\+Static\+Quadtree}}
+\subsubsection[{level}]{\setlength{\rightskip}{0pt plus 5cm}int Zeta\+::\+Static\+Quadtree\+::level\hspace{0.3cm}{\ttfamily [private]}}}\label{classZeta_1_1StaticQuadtree_a53059e324eaf43b4e55b55fa67cf9931}
+\hypertarget{classZeta_1_1StaticQuadtree_a048cc44a90aab6c8971d18c294da8648}{\index{Zeta\+::\+Static\+Quadtree@{Zeta\+::\+Static\+Quadtree}!max\+Level@{max\+Level}}
+\index{max\+Level@{max\+Level}!Zeta\+::\+Static\+Quadtree@{Zeta\+::\+Static\+Quadtree}}
+\subsubsection[{max\+Level}]{\setlength{\rightskip}{0pt plus 5cm}const int Zeta\+::\+Static\+Quadtree\+::max\+Level = 5\hspace{0.3cm}{\ttfamily [private]}}}\label{classZeta_1_1StaticQuadtree_a048cc44a90aab6c8971d18c294da8648}
+\hypertarget{classZeta_1_1StaticQuadtree_a18f3e883d1a83290f6290ae30fda27af}{\index{Zeta\+::\+Static\+Quadtree@{Zeta\+::\+Static\+Quadtree}!max\+Objects@{max\+Objects}}
+\index{max\+Objects@{max\+Objects}!Zeta\+::\+Static\+Quadtree@{Zeta\+::\+Static\+Quadtree}}
+\subsubsection[{max\+Objects}]{\setlength{\rightskip}{0pt plus 5cm}const unsigned int Zeta\+::\+Static\+Quadtree\+::max\+Objects = 10\hspace{0.3cm}{\ttfamily [private]}}}\label{classZeta_1_1StaticQuadtree_a18f3e883d1a83290f6290ae30fda27af}
+\hypertarget{classZeta_1_1StaticQuadtree_a96f2f99c2fb37d79ae230ce0fd547f0d}{\index{Zeta\+::\+Static\+Quadtree@{Zeta\+::\+Static\+Quadtree}!objects@{objects}}
+\index{objects@{objects}!Zeta\+::\+Static\+Quadtree@{Zeta\+::\+Static\+Quadtree}}
+\subsubsection[{objects}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<${\bf Object}$\ast$$>$ Zeta\+::\+Static\+Quadtree\+::objects\hspace{0.3cm}{\ttfamily [private]}}}\label{classZeta_1_1StaticQuadtree_a96f2f99c2fb37d79ae230ce0fd547f0d}
+\hypertarget{classZeta_1_1StaticQuadtree_adc1adf63b09a4d7d322602a72b89803d}{\index{Zeta\+::\+Static\+Quadtree@{Zeta\+::\+Static\+Quadtree}!parent@{parent}}
+\index{parent@{parent}!Zeta\+::\+Static\+Quadtree@{Zeta\+::\+Static\+Quadtree}}
+\subsubsection[{parent}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Static\+Quadtree}$\ast$ Zeta\+::\+Static\+Quadtree\+::parent\hspace{0.3cm}{\ttfamily [private]}}}\label{classZeta_1_1StaticQuadtree_adc1adf63b09a4d7d322602a72b89803d}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Zeta/\+Core/\+Map\+Classes/\hyperlink{StaticQuadtree_8hpp}{Static\+Quadtree.\+hpp}\end{DoxyCompactItemize}

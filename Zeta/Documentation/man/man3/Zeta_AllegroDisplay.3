@@ -1,0 +1,130 @@
+.TH "Zeta::AllegroDisplay" 3 "Wed Feb 10 2016" "Zeta" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Zeta::AllegroDisplay \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <AllegroDisplay\&.hpp>\fP
+.PP
+Inherits \fBZeta::Display\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBresize\fP (int width, int height)"
+.br
+.ti -1c
+.RI "void \fBsetFullScreen\fP (bool value)"
+.br
+.ti -1c
+.RI "std::vector< \fBResolution\fP > \fBgetAvailableResolutions\fP () const "
+.br
+.ti -1c
+.RI "int \fBgetWidth\fP () const "
+.br
+.ti -1c
+.RI "int \fBgetHeight\fP () const "
+.br
+.ti -1c
+.RI "void \fBswitchFramebuffer\fP ()"
+.br
+.ti -1c
+.RI "\fBAllegroDisplay\fP ()"
+.br
+.ti -1c
+.RI "\fBAllegroDisplay\fP (int width, int height)"
+.br
+.ti -1c
+.RI "\fB~AllegroDisplay\fP ()"
+.br
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "ALLEGRO_DISPLAY * \fBdisp\fP"
+.br
+.in -1c
+.SS "Additional Inherited Members"
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Zeta::AllegroDisplay::AllegroDisplay ()"
+
+.SS "Zeta::AllegroDisplay::AllegroDisplay (intwidth, intheight)"
+
+.SS "Zeta::AllegroDisplay::~AllegroDisplay ()"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "std::vector<\fBResolution\fP> Zeta::AllegroDisplay::getAvailableResolutions () const\fC [virtual]\fP"
+Gets the available Resolutions for this \fBDisplay\fP 
+.PP
+\fBReturns:\fP
+.RS 4
+A std::vector<Zeta::Display::Resoultion> contain all Resolutions 
+.RE
+.PP
+
+.PP
+Implements \fBZeta::Display\fP\&.
+.SS "int Zeta::AllegroDisplay::getHeight () const\fC [virtual]\fP"
+Gets the Main Window Height 
+.PP
+\fBReturns:\fP
+.RS 4
+The main window height; 
+.RE
+.PP
+
+.PP
+Implements \fBZeta::Display\fP\&.
+.SS "int Zeta::AllegroDisplay::getWidth () const\fC [virtual]\fP"
+Gets the Main Window Width 
+.PP
+\fBReturns:\fP
+.RS 4
+The main window Width; 
+.RE
+.PP
+
+.PP
+Implements \fBZeta::Display\fP\&.
+.SS "void Zeta::AllegroDisplay::resize (intwidth, intheight)\fC [virtual]\fP"
+Resizes the Main Window to the specified Dimensions 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIwidth\fP the target width 
+.br
+\fIheight\fP the target Height 
+.RE
+.PP
+
+.PP
+Implements \fBZeta::Display\fP\&.
+.SS "void Zeta::AllegroDisplay::setFullScreen (boolvalue)\fC [virtual]\fP"
+Toggles the Main Window Full-screen Mode 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIvalue\fP True for Fullscreen 
+.RE
+.PP
+
+.PP
+Implements \fBZeta::Display\fP\&.
+.SS "void Zeta::AllegroDisplay::switchFramebuffer ()\fC [virtual]\fP"
+Switches the framebuffer\&. It should be used on Double or Triple Buffering implementations 
+.PP
+Implements \fBZeta::Display\fP\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "ALLEGRO_DISPLAY* Zeta::AllegroDisplay::disp\fC [private]\fP"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Zeta from the source code\&.

@@ -1,0 +1,22 @@
+$#include <Zeta/Core/RPGClasses/CEGUIObject.hpp>
+
+class CEGUIObject: public Object {
+public:
+	void setOffesets(Float offX, Float offY);
+	bool isDestroy() const;
+	void setDestroy(bool destroy);
+	Float getOffsetX() const;
+	void setOffsetX(Float offX);
+	Float getOffsetY() const;
+	void setOffsetY(Float offY);
+	CEGUI::Window* getWindow() const;
+	void setWindow(CEGUI::Window* window);
+	void setLuaTable(lua_Object table);
+	void setOnClick(lua_Object func);
+	AnimationHandler& getAnimationHandler();
+	void setPosition(Float x, Float y);
+	void offsetPosition(Float dx, Float dy);
+	CEGUIObject(CEGUI::Window* window, Float x, Float y,
+			const std::string& animationClass = "");
+	~CEGUIObject();
+};

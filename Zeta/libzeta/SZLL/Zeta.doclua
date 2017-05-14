@@ -1,0 +1,3253 @@
+-----------------------------------------------
+-- LuaDoc generated with tolua++
+
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+-- @module Zeta
+
+---
+-- @field [parent=#global] #Zeta Zeta
+
+---------------------------------------------------------------------------------
+-- Zeta
+-- @type Zeta
+
+---------------------------------------------------------------------------------
+-- Ability
+-- @type Zeta.Ability
+
+---
+-- @field [parent=#Zeta] #Zeta.Ability Ability
+
+---
+-- Result
+-- @type Zeta.Ability.Result
+
+---
+-- @field [parent=#Zeta.Ability] #Zeta.Ability.Result Result
+
+---
+-- Success
+-- @field [parent=#Zeta.Ability.Result] #number Success
+
+---
+-- onCooldown
+-- @field [parent=#Zeta.Ability.Result] #number onCooldown
+
+---
+-- NoTarget
+-- @field [parent=#Zeta.Ability.Result] #number NoTarget
+
+---
+-- NoMana
+-- @field [parent=#Zeta.Ability.Result] #number NoMana
+
+---
+-- OutOfRange
+-- @field [parent=#Zeta.Ability.Result] #number OutOfRange
+
+---
+-- TargetIsDead
+-- @field [parent=#Zeta.Ability.Result] #number TargetIsDead
+
+---
+-- TargetIsNotHostile
+-- @field [parent=#Zeta.Ability.Result] #number TargetIsNotHostile
+
+---
+-- InvalidAbility
+-- @field [parent=#Zeta.Ability.Result] #number InvalidAbility
+
+---
+-- Other
+-- @field [parent=#Zeta.Ability.Result] #number Other
+
+---
+-- getLevel
+-- @function [parent=#Zeta.Ability] getLevel
+-- @param self
+-- @return #number
+
+---
+-- setLevel
+-- @function [parent=#Zeta.Ability] setLevel
+-- @param self
+-- @param #number level
+
+---
+-- getOwner
+-- @function [parent=#Zeta.Ability] getOwner
+-- @param self
+-- @return #Zeta.Lifeform
+
+
+---------------------------------------------------------------------------------
+-- AbilityClass
+-- @type Zeta.AbilityClass
+
+---
+-- @field [parent=#Zeta] #Zeta.AbilityClass AbilityClass
+
+---
+-- Type
+-- @type Zeta.AbilityClass.Type
+
+---
+-- @field [parent=#Zeta.AbilityClass] #Zeta.AbilityClass.Type Type
+
+---
+-- Active
+-- @field [parent=#Zeta.AbilityClass.Type] #number Active
+
+---
+-- Passive
+-- @field [parent=#Zeta.AbilityClass.Type] #number Passive
+
+---
+-- Regeneration
+-- @field [parent=#Zeta.AbilityClass.Type] #number Regeneration
+
+---
+-- getLevels
+-- @function [parent=#Zeta.AbilityClass] getLevels
+-- @param self
+-- @return #number
+
+---
+-- getAbilityName
+-- @function [parent=#Zeta.AbilityClass] getAbilityName
+-- @param self
+-- @return #std.string
+
+---
+-- isPassive
+-- @function [parent=#Zeta.AbilityClass] isPassive
+-- @param self
+-- @return #boolean
+
+---
+-- getType
+-- @function [parent=#Zeta.AbilityClass] getType
+-- @param self
+-- @return #Zeta.AbilityClass.Type
+
+---
+-- getLuaTable
+-- @function [parent=#Zeta.AbilityClass] getLuaTable
+-- @param self
+-- @return #lua_Object
+
+---
+-- onApply
+-- @function [parent=#Zeta.AbilityClass] onApply
+-- @param self
+-- @param #Zeta.Ability invoker
+-- @param #Zeta.Lifeform caster
+-- @param #Zeta.Lifeform target
+
+---
+-- onRemove
+-- @function [parent=#Zeta.AbilityClass] onRemove
+-- @param self
+-- @param #Zeta.Ability invoker
+-- @param #Zeta.Lifeform caster
+-- @param #Zeta.Lifeform target
+
+---
+-- new
+-- @function [parent=#Zeta.AbilityClass] new
+-- @param self
+-- @param #lua_Object table
+-- @return #Zeta.AbilityClass
+
+---
+-- new_local 
+-- @function [parent=#Zeta.AbilityClass] new_local
+-- @param self
+-- @param #lua_Object table
+-- @return #Zeta.AbilityClass
+
+---
+-- .call
+-- Construct on the Lua Memory.
+-- @callof #Zeta.AbilityClass
+-- @param self
+-- @return #Zeta.AbilityClass
+
+---
+-- delete
+-- @function [parent=#Zeta.AbilityClass] delete
+-- @param self
+-- @return #
+
+
+---------------------------------------------------------------------------------
+-- AnimationHandler
+-- @type Zeta.AnimationHandler
+
+---
+-- @field [parent=#Zeta] #Zeta.AnimationHandler AnimationHandler
+
+---
+-- QueuePlace
+-- @type Zeta.AnimationHandler.QueuePlace
+
+---
+-- @field [parent=#Zeta.AnimationHandler] #Zeta.AnimationHandler.QueuePlace QueuePlace
+
+---
+-- Front
+-- @field [parent=#Zeta.AnimationHandler.QueuePlace] #number Front
+
+---
+-- Back
+-- @field [parent=#Zeta.AnimationHandler.QueuePlace] #number Back
+
+---
+-- setAnimation
+-- @function [parent=#Zeta.AnimationHandler] setAnimation
+-- @param self
+-- @param #std.string name
+
+---
+-- setAnimationClass
+-- @function [parent=#Zeta.AnimationHandler] setAnimationClass
+-- @param self
+-- @param #std.string path
+
+---
+-- getMainAnimationPlayer
+-- @function [parent=#Zeta.AnimationHandler] getMainAnimationPlayer
+-- @param self
+-- @return #Zeta.AnimationPlayer
+
+---
+-- addOffAnimation
+-- @function [parent=#Zeta.AnimationHandler] addOffAnimation
+-- @param self
+-- @param #Zeta.Animation animation
+-- @param #number dx
+-- @param #number dy
+-- @param #Zeta.AnimationHandler.QueuePlace queue
+
+---
+-- getOffAnimation
+-- @function [parent=#Zeta.AnimationHandler] getOffAnimation
+-- @param self
+-- @param #std.string name
+-- @param #Zeta.AnimationHandler.QueuePlace queue
+-- @return #Zeta.OffAnimation
+
+
+---------------------------------------------------------------------------------
+-- ChildObject
+-- @type Zeta.ChildObject
+-- @extends #Zeta.Object
+
+---
+-- @field [parent=#Zeta] #Zeta.ChildObject ChildObject
+
+---
+-- getAnimationHandler
+-- @function [parent=#Zeta.ChildObject] getAnimationHandler
+-- @param self
+-- @return #Zeta.AnimationHandler
+
+---
+-- getParent
+-- @function [parent=#Zeta.ChildObject] getParent
+-- @param self
+-- @return #Zeta.Object
+
+---
+-- hasParent
+-- @function [parent=#Zeta.ChildObject] hasParent
+-- @param self
+-- @return #boolean
+
+---
+-- setParent
+-- @function [parent=#Zeta.ChildObject] setParent
+-- @param self
+-- @param #Zeta.Object parent
+
+
+---------------------------------------------------------------------------------
+-- ConsoleManager
+-- @type Zeta.ConsoleManager
+
+---
+-- @field [parent=#Zeta] #Zeta.ConsoleManager ConsoleManager
+
+---
+-- excecuteLine
+-- @function [parent=#Zeta.ConsoleManager] excecuteLine
+-- @param self
+-- @param #std.string line
+-- @return #std.string
+
+---
+-- getInstance
+-- @function [parent=#Zeta.ConsoleManager] getInstance
+-- @param self
+-- @return #Zeta.ConsoleManager
+
+
+---------------------------------------------------------------------------------
+-- DirectionalProjectile
+-- @type Zeta.DirectionalProjectile
+-- @extends #Zeta.Projectile
+
+---
+-- @field [parent=#Zeta] #Zeta.DirectionalProjectile DirectionalProjectile
+
+
+---------------------------------------------------------------------------------
+-- Object
+-- @type Zeta.Object
+
+---
+-- @field [parent=#Zeta] #Zeta.Object Object
+
+---
+-- getBounding
+-- @function [parent=#Zeta.Object] getBounding
+-- @param self
+-- @return #Zeta.Rectangle
+
+---
+-- getBounding
+-- @function [parent=#Zeta.Object] getBounding
+-- @param self
+-- @return #Zeta.Rectangle
+
+---
+-- setBounding
+-- @function [parent=#Zeta.Object] setBounding
+-- @param self
+-- @param #Zeta.Rectangle bounding
+
+---
+-- getTargetArea
+-- @function [parent=#Zeta.Object] getTargetArea
+-- @param self
+-- @return #Zeta.Rectangle
+
+---
+-- getTargetArea
+-- @function [parent=#Zeta.Object] getTargetArea
+-- @param self
+-- @return #Zeta.Rectangle
+
+---
+-- getPosition
+-- @function [parent=#Zeta.Object] getPosition
+-- @param self
+-- @return #Zeta.Vector2
+
+---
+-- setPosition
+-- @function [parent=#Zeta.Object] setPosition
+-- @param self
+-- @param #Zeta.Vector2 position
+
+---
+-- setPosition
+-- @function [parent=#Zeta.Object] setPosition
+-- @param self
+-- @param #number x
+-- @param #number y
+
+---
+-- getName
+-- @function [parent=#Zeta.Object] getName
+-- @param self
+-- @return #std.string
+
+---
+-- setName
+-- @function [parent=#Zeta.Object] setName
+-- @param self
+-- @param #std.string name
+
+---
+-- getDistance
+-- @function [parent=#Zeta.Object] getDistance
+-- @param self
+-- @param #Zeta.Object other
+-- @return #number
+
+---
+-- addChildObject
+-- @function [parent=#Zeta.Object] addChildObject
+-- @param self
+-- @param #std.string name
+-- @param #Zeta.ChildObject child
+
+---
+-- addChildObject
+-- @function [parent=#Zeta.Object] addChildObject
+-- @param self
+-- @param #number x
+-- @param #number y
+-- @param #std.string name
+-- @param #std.string classPath
+-- @param #std.string animName
+
+---
+-- removeChildObject
+-- @function [parent=#Zeta.Object] removeChildObject
+-- @param self
+-- @param #std.string name
+
+---
+-- getRenderPosition
+-- @function [parent=#Zeta.Object] getRenderPosition
+-- @param self
+-- @return #Zeta.Vector2
+
+---
+-- isCollideAble
+-- @function [parent=#Zeta.Object] isCollideAble
+-- @param self
+-- @return #boolean
+
+---
+-- setCoolideAble
+-- @function [parent=#Zeta.Object] setCoolideAble
+-- @param self
+-- @param #boolean value
+
+---
+-- isTriggeringCollisionEvents
+-- @function [parent=#Zeta.Object] isTriggeringCollisionEvents
+-- @param self
+-- @return #boolean
+
+---
+-- setTriggeringCollisionEvents
+-- @function [parent=#Zeta.Object] setTriggeringCollisionEvents
+-- @param self
+-- @param #boolean value
+
+---
+-- isVisible
+-- @function [parent=#Zeta.Object] isVisible
+-- @param self
+-- @return #boolean
+
+---
+-- setVisible
+-- @function [parent=#Zeta.Object] setVisible
+-- @param self
+-- @param #boolean visible
+
+---
+-- show
+-- @function [parent=#Zeta.Object] show
+-- @param self
+
+---
+-- hide
+-- @function [parent=#Zeta.Object] hide
+-- @param self
+
+---
+-- getChildObject
+-- @function [parent=#Zeta.Object] getChildObject
+-- @param self
+-- @param #std.string name
+-- @return #Zeta.ChildObject
+
+---
+-- delete
+-- @function [parent=#Zeta.Object] delete
+-- @param self
+-- @return #
+
+
+---------------------------------------------------------------------------------
+-- Lifeform
+-- @type Zeta.Lifeform
+-- @extends #Zeta.Object
+
+---
+-- @field [parent=#Zeta] #Zeta.Lifeform Lifeform
+
+---
+-- moveToPosition
+-- @function [parent=#Zeta.Lifeform] moveToPosition
+-- @param self
+-- @param #number x
+-- @param #number y
+
+---
+-- moveToPosition
+-- @function [parent=#Zeta.Lifeform] moveToPosition
+-- @param self
+-- @param #Zeta.Vector2 pos
+
+---
+-- getState
+-- @function [parent=#Zeta.Lifeform] getState
+-- @param self
+-- @return #Zeta.LifeformState
+
+---
+-- stopMoving
+-- @function [parent=#Zeta.Lifeform] stopMoving
+-- @param self
+
+---
+-- setClass
+-- @function [parent=#Zeta.Lifeform] setClass
+-- @param self
+-- @param #std.string path
+
+---
+-- setAnimationClass
+-- @function [parent=#Zeta.Lifeform] setAnimationClass
+-- @param self
+-- @param #std.string path
+
+---
+-- setActionAnimation
+-- @function [parent=#Zeta.Lifeform] setActionAnimation
+-- @param self
+-- @param #std.string name
+
+---
+-- addOffAnimation
+-- @function [parent=#Zeta.Lifeform] addOffAnimation
+-- @param self
+-- @param #Zeta.Animation animation
+-- @param #number dx
+-- @param #number dy
+-- @param #Zeta.AnimationHandler.QueuePlace queue
+
+---
+-- getAttributeValue
+-- @function [parent=#Zeta.Lifeform] getAttributeValue
+-- @param self
+-- @param #std.string name
+-- @return #number
+
+---
+-- setAttributeBaseValue
+-- @function [parent=#Zeta.Lifeform] setAttributeBaseValue
+-- @param self
+-- @param #std.string name
+-- @param #number value
+
+---
+-- getAttributesLuaTable
+-- @function [parent=#Zeta.Lifeform] getAttributesLuaTable
+-- @param self
+
+---
+-- addAttributeModifier
+-- @function [parent=#Zeta.Lifeform] addAttributeModifier
+-- @param self
+-- @param #std.string attributeName
+-- @param #std.string modifierName
+-- @param #number value
+-- @param #Zeta.Modifier.Type type
+
+---
+-- getAnimationHandler
+-- @function [parent=#Zeta.Lifeform] getAnimationHandler
+-- @param self
+-- @return #Zeta.AnimationHandler
+
+---
+-- removeAttributeModifier
+-- @function [parent=#Zeta.Lifeform] removeAttributeModifier
+-- @param self
+-- @param #std.string attributeName
+-- @param #std.string modifierName
+
+---
+-- offsetMana
+-- @function [parent=#Zeta.Lifeform] offsetMana
+-- @param self
+-- @param #number value
+
+---
+-- offsetHP
+-- @function [parent=#Zeta.Lifeform] offsetHP
+-- @param self
+-- @param #number value
+
+---
+-- setHP
+-- @function [parent=#Zeta.Lifeform] setHP
+-- @param self
+-- @param #number value
+
+---
+-- setMana
+-- @function [parent=#Zeta.Lifeform] setMana
+-- @param self
+-- @param #number value
+
+---
+-- isHostileWith
+-- @function [parent=#Zeta.Lifeform] isHostileWith
+-- @param self
+-- @param #Zeta.Lifeform other
+-- @return #boolean
+
+---
+-- addEffect
+-- @function [parent=#Zeta.Lifeform] addEffect
+-- @param self
+-- @param #Zeta.Effect eff
+
+---
+-- canReceiveEffect
+-- @function [parent=#Zeta.Lifeform] canReceiveEffect
+-- @param self
+-- @param #Zeta.EffectClass effClass
+-- @return #boolean
+
+---
+-- isInCombat
+-- @function [parent=#Zeta.Lifeform] isInCombat
+-- @param self
+-- @return #boolean
+
+---
+-- setInCombat
+-- @function [parent=#Zeta.Lifeform] setInCombat
+-- @param self
+-- @param #boolean combat
+
+---
+-- resetState
+-- @function [parent=#Zeta.Lifeform] resetState
+-- @param self
+
+---
+-- isDirty
+-- @function [parent=#Zeta.Lifeform] isDirty
+-- @param self
+-- @return #boolean
+
+---
+-- isAlive
+-- @function [parent=#Zeta.Lifeform] isAlive
+-- @param self
+-- @return #boolean
+
+---
+-- getLevel
+-- @function [parent=#Zeta.Lifeform] getLevel
+-- @param self
+-- @return #number
+
+---
+-- hasTarget
+-- @function [parent=#Zeta.Lifeform] hasTarget
+-- @param self
+-- @return #boolean
+
+---
+-- getLuaTable
+-- @function [parent=#Zeta.Lifeform] getLuaTable
+-- @param self
+-- @return #lua_Object
+
+---
+-- setLuaTable
+-- @function [parent=#Zeta.Lifeform] setLuaTable
+-- @param self
+-- @param #lua_Object table
+
+---
+-- addAbility
+-- @function [parent=#Zeta.Lifeform] addAbility
+-- @param self
+-- @param #Zeta.AbilityClass abilityClass
+-- @param #number level
+
+---
+-- setTarget
+-- @function [parent=#Zeta.Lifeform] setTarget
+-- @param self
+-- @param #Zeta.Lifeform trg
+
+---
+-- getActiveAbility
+-- @function [parent=#Zeta.Lifeform] getActiveAbility
+-- @param self
+-- @param #std.string abilityName
+-- @return #Zeta.ActiveAbility
+
+---
+-- getPassiveAbility
+-- @function [parent=#Zeta.Lifeform] getPassiveAbility
+-- @param self
+-- @param #std.string abilityName
+-- @return #Zeta.PassiveAbility
+
+---
+-- getRegeneration
+-- @function [parent=#Zeta.Lifeform] getRegeneration
+-- @param self
+-- @param #std.string regenerationName
+-- @return #Zeta.Regeneration
+
+---
+-- getAbility
+-- @function [parent=#Zeta.Lifeform] getAbility
+-- @param self
+-- @param #std.string abilityName
+-- @return #Zeta.Ability
+
+---
+-- getTarget
+-- @function [parent=#Zeta.Lifeform] getTarget
+-- @param self
+-- @return #Zeta.Lifeform
+
+---
+-- isInMeleeRange
+-- @function [parent=#Zeta.Lifeform] isInMeleeRange
+-- @param self
+-- @param #Zeta.Lifeform lf
+-- @return #boolean
+
+---
+-- teleportToCordinates
+-- @function [parent=#Zeta.Lifeform] teleportToCordinates
+-- @param self
+-- @param #number x
+-- @param #number y
+
+---
+-- die
+-- @function [parent=#Zeta.Lifeform] die
+-- @param self
+
+---
+-- face
+-- @function [parent=#Zeta.Lifeform] face
+-- @param self
+-- @param #Zeta.Vector2 postion
+
+---
+-- face
+-- @function [parent=#Zeta.Lifeform] face
+-- @param self
+-- @param #number x
+-- @param #number y
+
+---
+-- face
+-- @function [parent=#Zeta.Lifeform] face
+-- @param self
+-- @param #Zeta.Object other
+
+---
+-- new
+-- @function [parent=#Zeta.Lifeform] new
+-- @param self
+-- @return #Zeta.Lifeform
+
+---
+-- new_local 
+-- @function [parent=#Zeta.Lifeform] new_local
+-- @param self
+-- @return #Zeta.Lifeform
+
+---
+-- .call
+-- Construct on the Lua Memory.
+-- @callof #Zeta.Lifeform
+-- @param self
+-- @return #Zeta.Lifeform
+
+---
+-- new
+-- @function [parent=#Zeta.Lifeform] new
+-- @param self
+-- @param #std.string lifeClass
+-- @param #number x
+-- @param #number y
+-- @return #Zeta.Lifeform
+
+---
+-- new_local 
+-- @function [parent=#Zeta.Lifeform] new_local
+-- @param self
+-- @param #std.string lifeClass
+-- @param #number x
+-- @param #number y
+-- @return #Zeta.Lifeform
+
+---
+-- .call
+-- Construct on the Lua Memory.
+-- @callof #Zeta.Lifeform
+-- @param self
+-- @return #Zeta.Lifeform
+
+---
+-- new
+-- @function [parent=#Zeta.Lifeform] new
+-- @param self
+-- @param #Zeta.LifeformClass lifeClass
+-- @param #number x
+-- @param #number y
+-- @return #Zeta.Lifeform
+
+---
+-- new_local 
+-- @function [parent=#Zeta.Lifeform] new_local
+-- @param self
+-- @param #Zeta.LifeformClass lifeClass
+-- @param #number x
+-- @param #number y
+-- @return #Zeta.Lifeform
+
+---
+-- .call
+-- Construct on the Lua Memory.
+-- @callof #Zeta.Lifeform
+-- @param self
+-- @return #Zeta.Lifeform
+
+---
+-- delete
+-- @function [parent=#Zeta.Lifeform] delete
+-- @param self
+-- @return #
+
+
+---------------------------------------------------------------------------------
+-- Enemy
+-- @type Zeta.Enemy
+-- @extends #Zeta.Lifeform
+
+---
+-- @field [parent=#Zeta] #Zeta.Enemy Enemy
+
+---
+-- new
+-- @function [parent=#Zeta.Enemy] new
+-- @param self
+-- @param #std.string lifeClass
+-- @param #number x
+-- @param #number y
+-- @return #Zeta.Enemy
+
+---
+-- new_local 
+-- @function [parent=#Zeta.Enemy] new_local
+-- @param self
+-- @param #std.string lifeClass
+-- @param #number x
+-- @param #number y
+-- @return #Zeta.Enemy
+
+---
+-- .call
+-- Construct on the Lua Memory.
+-- @callof #Zeta.Enemy
+-- @param self
+-- @return #Zeta.Enemy
+
+---
+-- new
+-- @function [parent=#Zeta.Enemy] new
+-- @param self
+-- @param #Zeta.LifeformClass lifeClass
+-- @param #number x
+-- @param #number y
+-- @param #number respawnTime
+-- @param #number vanishTime
+-- @return #Zeta.Enemy
+
+---
+-- new_local 
+-- @function [parent=#Zeta.Enemy] new_local
+-- @param self
+-- @param #Zeta.LifeformClass lifeClass
+-- @param #number x
+-- @param #number y
+-- @param #number respawnTime
+-- @param #number vanishTime
+-- @return #Zeta.Enemy
+
+---
+-- .call
+-- Construct on the Lua Memory.
+-- @callof #Zeta.Enemy
+-- @param self
+-- @return #Zeta.Enemy
+
+---
+-- delete
+-- @function [parent=#Zeta.Enemy] delete
+-- @param self
+-- @return #
+
+
+---------------------------------------------------------------------------------
+-- Logger
+-- @type Zeta.Logger
+
+---
+-- @field [parent=#Zeta] #Zeta.Logger Logger
+
+---
+-- getInstance
+-- @function [parent=#Zeta.Logger] getInstance
+-- @param self
+-- @return #Zeta.Logger
+
+---
+-- write
+-- @function [parent=#Zeta.Logger] write
+-- @param self
+-- @param #std.string message
+
+
+---------------------------------------------------------------------------------
+-- MainLoop
+-- @type Zeta.MainLoop
+
+---
+-- @field [parent=#Zeta] #Zeta.MainLoop MainLoop
+
+---
+-- getCurrentFPS
+-- @function [parent=#Zeta.MainLoop] getCurrentFPS
+-- @param self
+-- @return #number
+
+---
+-- getInstance
+-- @function [parent=#Zeta.MainLoop] getInstance
+-- @param self
+-- @return #Zeta.MainLoop
+
+
+---------------------------------------------------------------------------------
+-- Map
+-- @type Zeta.Map
+
+---
+-- @field [parent=#Zeta] #Zeta.Map Map
+
+---
+-- addObject
+-- @function [parent=#Zeta.Map] addObject
+-- @param self
+-- @param #Zeta.Object obj
+-- @param #boolean toBeDeleted
+
+---
+-- insertObject
+-- @function [parent=#Zeta.Map] insertObject
+-- @param self
+-- @param #Zeta.Object obj
+-- @param #boolean toBeDeleted
+
+---
+-- removeObject
+-- @function [parent=#Zeta.Map] removeObject
+-- @param self
+-- @param #Zeta.Object obj
+
+
+---------------------------------------------------------------------------------
+-- Modifier
+-- @type Zeta.Modifier
+
+---
+-- @field [parent=#Zeta] #Zeta.Modifier Modifier
+
+---
+-- Type
+-- @type Zeta.Modifier.Type
+
+---
+-- @field [parent=#Zeta.Modifier] #Zeta.Modifier.Type Type
+
+---
+-- Flat
+-- @field [parent=#Zeta.Modifier.Type] #number Flat
+
+---
+-- Scalar
+-- @field [parent=#Zeta.Modifier.Type] #number Scalar
+
+
+---------------------------------------------------------------------------------
+-- Npc
+-- @type Zeta.Npc
+-- @extends #Zeta.Lifeform
+
+---
+-- @field [parent=#Zeta] #Zeta.Npc Npc
+
+---
+-- new
+-- @function [parent=#Zeta.Npc] new
+-- @param self
+-- @param #std.string classPath
+-- @param #number x
+-- @param #number y
+-- @param #lua_Object table
+-- @return #Zeta.Npc
+
+---
+-- new_local 
+-- @function [parent=#Zeta.Npc] new_local
+-- @param self
+-- @param #std.string classPath
+-- @param #number x
+-- @param #number y
+-- @param #lua_Object table
+-- @return #Zeta.Npc
+
+---
+-- .call
+-- Construct on the Lua Memory.
+-- @callof #Zeta.Npc
+-- @param self
+-- @return #Zeta.Npc
+
+---
+-- delete
+-- @function [parent=#Zeta.Npc] delete
+-- @param self
+-- @return #
+
+
+---------------------------------------------------------------------------------
+-- PassiveAbility
+-- @type Zeta.PassiveAbility
+-- @extends #Zeta.Ability
+
+---
+-- @field [parent=#Zeta] #Zeta.PassiveAbility PassiveAbility
+
+---
+-- getClass
+-- @function [parent=#Zeta.PassiveAbility] getClass
+-- @param self
+-- @return #Zeta.PassiveAbilityClass
+
+
+---------------------------------------------------------------------------------
+-- Player
+-- @type Zeta.Player
+-- @extends #Zeta.Lifeform
+
+---
+-- @field [parent=#Zeta] #Zeta.Player Player
+
+---
+-- setView
+-- @function [parent=#Zeta.Player] setView
+-- @param self
+-- @param #Zeta.View camera
+
+---
+-- moveToWorldPosition
+-- @function [parent=#Zeta.Player] moveToWorldPosition
+-- @param self
+-- @param #number x
+-- @param #number y
+
+---
+-- targetLifeformPosition
+-- @function [parent=#Zeta.Player] targetLifeformPosition
+-- @param self
+-- @param #number x
+-- @param #number y
+
+---
+-- setLevelUpCallback
+-- @function [parent=#Zeta.Player] setLevelUpCallback
+-- @param self
+-- @param #lua_Object func
+
+---
+-- invokeAbility
+-- @function [parent=#Zeta.Player] invokeAbility
+-- @param self
+-- @param #std.string name
+-- @return #Zeta.Ability.Result
+
+---
+-- setTargetIndicator
+-- @function [parent=#Zeta.Player] setTargetIndicator
+-- @param self
+-- @param #std.string childName
+
+---
+-- getXp
+-- @function [parent=#Zeta.Player] getXp
+-- @param self
+-- @return #number
+
+---
+-- setXp
+-- @function [parent=#Zeta.Player] setXp
+-- @param self
+-- @param #number value
+
+---
+-- offsetXp
+-- @function [parent=#Zeta.Player] offsetXp
+-- @param self
+-- @param #number value
+
+---
+-- setXpToNextLevel
+-- @function [parent=#Zeta.Player] setXpToNextLevel
+-- @param self
+-- @param #number value
+
+---
+-- getXpToNextLevel
+-- @function [parent=#Zeta.Player] getXpToNextLevel
+-- @param self
+-- @return #number
+
+
+---------------------------------------------------------------------------------
+-- Projectile
+-- @type Zeta.Projectile
+-- @extends #Zeta.Object
+
+---
+-- @field [parent=#Zeta] #Zeta.Projectile Projectile
+
+---
+-- clearCollidedObjects
+-- @function [parent=#Zeta.Projectile] clearCollidedObjects
+-- @param self
+
+---
+-- show
+-- @function [parent=#Zeta.Projectile] show
+-- @param self
+
+---
+-- hide
+-- @function [parent=#Zeta.Projectile] hide
+-- @param self
+
+---
+-- destroy
+-- @function [parent=#Zeta.Projectile] destroy
+-- @param self
+
+---
+-- setTargetLocation
+-- @function [parent=#Zeta.Projectile] setTargetLocation
+-- @param self
+-- @param #number x
+-- @param #number y
+
+---
+-- getParentAbility
+-- @function [parent=#Zeta.Projectile] getParentAbility
+-- @param self
+-- @return #Zeta.ActiveAbility
+
+
+---------------------------------------------------------------------------------
+-- Rectangle
+-- @type Zeta.Rectangle
+
+---
+-- @field [parent=#Zeta] #Zeta.Rectangle Rectangle
+
+---
+-- getX
+-- @function [parent=#Zeta.Rectangle] getX
+-- @param self
+-- @return #number
+
+---
+-- getY
+-- @function [parent=#Zeta.Rectangle] getY
+-- @param self
+-- @return #number
+
+---
+-- setPosition
+-- @function [parent=#Zeta.Rectangle] setPosition
+-- @param self
+-- @param #number x
+-- @param #number y
+
+---
+-- offsetPosition
+-- @function [parent=#Zeta.Rectangle] offsetPosition
+-- @param self
+-- @param #number dx
+-- @param #number dy
+
+---
+-- getWidth
+-- @function [parent=#Zeta.Rectangle] getWidth
+-- @param self
+-- @return #number
+
+---
+-- getHeight
+-- @function [parent=#Zeta.Rectangle] getHeight
+-- @param self
+-- @return #number
+
+---
+-- setHeight
+-- @function [parent=#Zeta.Rectangle] setHeight
+-- @param self
+-- @param #number height
+
+---
+-- setWidth
+-- @function [parent=#Zeta.Rectangle] setWidth
+-- @param self
+-- @param #number width
+
+---
+-- setSize
+-- @function [parent=#Zeta.Rectangle] setSize
+-- @param self
+-- @param #number width
+-- @param #number height
+
+---
+-- overlapsPoint
+-- @function [parent=#Zeta.Rectangle] overlapsPoint
+-- @param self
+-- @param #number x
+-- @param #number y
+-- @return #boolean
+
+---
+-- overlapsPoint
+-- @function [parent=#Zeta.Rectangle] overlapsPoint
+-- @param self
+-- @param #Zeta.Vector2 point
+-- @return #boolean
+
+---
+-- overlapsRectangle
+-- @function [parent=#Zeta.Rectangle] overlapsRectangle
+-- @param self
+-- @param #Zeta.Rectangle other
+-- @return #boolean
+
+---
+-- new
+-- @function [parent=#Zeta.Rectangle] new
+-- @param self
+-- @return #Zeta.Rectangle
+
+---
+-- new_local 
+-- @function [parent=#Zeta.Rectangle] new_local
+-- @param self
+-- @return #Zeta.Rectangle
+
+---
+-- .call
+-- Construct on the Lua Memory.
+-- @callof #Zeta.Rectangle
+-- @param self
+-- @return #Zeta.Rectangle
+
+---
+-- new
+-- @function [parent=#Zeta.Rectangle] new
+-- @param self
+-- @param #Zeta.Vector2 location
+-- @param #number width
+-- @param #number height
+-- @return #Zeta.Rectangle
+
+---
+-- new_local 
+-- @function [parent=#Zeta.Rectangle] new_local
+-- @param self
+-- @param #Zeta.Vector2 location
+-- @param #number width
+-- @param #number height
+-- @return #Zeta.Rectangle
+
+---
+-- .call
+-- Construct on the Lua Memory.
+-- @callof #Zeta.Rectangle
+-- @param self
+-- @return #Zeta.Rectangle
+
+---
+-- new
+-- @function [parent=#Zeta.Rectangle] new
+-- @param self
+-- @param #number x
+-- @param #number y
+-- @param #number width
+-- @param #number height
+-- @return #Zeta.Rectangle
+
+---
+-- new_local 
+-- @function [parent=#Zeta.Rectangle] new_local
+-- @param self
+-- @param #number x
+-- @param #number y
+-- @param #number width
+-- @param #number height
+-- @return #Zeta.Rectangle
+
+---
+-- .call
+-- Construct on the Lua Memory.
+-- @callof #Zeta.Rectangle
+-- @param self
+-- @return #Zeta.Rectangle
+
+---
+-- delete
+-- @function [parent=#Zeta.Rectangle] delete
+-- @param self
+-- @return #
+
+
+---------------------------------------------------------------------------------
+-- SaveManager
+-- @type Zeta.SaveManager
+
+---
+-- @field [parent=#Zeta] #Zeta.SaveManager SaveManager
+
+---
+-- setFile
+-- @function [parent=#Zeta.SaveManager] setFile
+-- @param self
+-- @param #std.string path
+
+---
+-- save
+-- @function [parent=#Zeta.SaveManager] save
+-- @param self
+
+---
+-- load
+-- @function [parent=#Zeta.SaveManager] load
+-- @param self
+
+---
+-- getInstance
+-- @function [parent=#Zeta.SaveManager] getInstance
+-- @param self
+-- @return #Zeta.SaveManager
+
+
+---------------------------------------------------------------------------------
+-- SeekingProjectile
+-- @type Zeta.SeekingProjectile
+-- @extends #Zeta.Projectile
+
+---
+-- @field [parent=#Zeta] #Zeta.SeekingProjectile SeekingProjectile
+
+---
+-- setTarget
+-- @function [parent=#Zeta.SeekingProjectile] setTarget
+-- @param self
+-- @param #Zeta.Lifeform target
+
+
+---------------------------------------------------------------------------------
+-- Display
+-- @type Zeta.Display
+
+---
+-- @field [parent=#Zeta] #Zeta.Display Display
+
+---------------------------------------------------------------------------------
+-- Resolution
+-- @type Zeta.Display.Resolution
+
+---
+-- @field [parent=#Zeta.Display] #Zeta.Display.Resolution Resolution
+
+---
+-- @field [parent=#Resolution] #number height
+
+---
+-- @field [parent=#Resolution] #number width
+
+
+
+---------------------------------------------------------------------------------
+-- Settings
+-- @type Zeta.Settings
+
+---
+-- @field [parent=#Zeta] #Zeta.Settings Settings
+
+---
+-- getInstance
+-- @function [parent=#Zeta.Settings] getInstance
+-- @param self
+-- @return #Zeta.Settings
+
+---
+-- getCurrentResolution
+-- @function [parent=#Zeta.Settings] getCurrentResolution
+-- @param self
+-- @return #Zeta.Display.Resolution
+
+---
+-- getFullscreen
+-- @function [parent=#Zeta.Settings] getFullscreen
+-- @param self
+-- @return #boolean
+
+---
+-- setFullscreen
+-- @function [parent=#Zeta.Settings] setFullscreen
+-- @param self
+-- @param #boolean val
+
+---
+-- setResolution
+-- @function [parent=#Zeta.Settings] setResolution
+-- @param self
+-- @param #Zeta.Display.Resolution res
+
+---
+-- getResolutionsTable
+-- @function [parent=#Zeta.Settings] getResolutionsTable
+-- @param self
+-- @return #lua_Object
+
+---
+-- loadFile
+-- @function [parent=#Zeta.Settings] loadFile
+-- @param self
+
+---
+-- loadFile
+-- @function [parent=#Zeta.Settings] loadFile
+-- @param self
+-- @param #std.string path
+
+---
+-- saveSettings
+-- @function [parent=#Zeta.Settings] saveSettings
+-- @param self
+
+---
+-- saveSettings
+-- @function [parent=#Zeta.Settings] saveSettings
+-- @param self
+-- @param #std.string path
+
+
+---------------------------------------------------------------------------------
+-- Vector2
+-- @type Zeta.Vector2
+
+---
+-- @field [parent=#Zeta] #Zeta.Vector2 Vector2
+
+---
+-- getX
+-- @function [parent=#Zeta.Vector2] getX
+-- @param self
+-- @return #number
+
+---
+-- setX
+-- @function [parent=#Zeta.Vector2] setX
+-- @param self
+-- @param #number x
+
+---
+-- getY
+-- @function [parent=#Zeta.Vector2] getY
+-- @param self
+-- @return #number
+
+---
+-- setY
+-- @function [parent=#Zeta.Vector2] setY
+-- @param self
+-- @param #number y
+
+---
+-- set
+-- @function [parent=#Zeta.Vector2] set
+-- @param self
+-- @param #number x
+-- @param #number y
+
+---
+-- offset
+-- @function [parent=#Zeta.Vector2] offset
+-- @param self
+-- @param #number dx
+-- @param #number dy
+
+---
+-- .add
+-- @function [parent=#Zeta.Vector2] .add
+-- @param self
+-- @param #Zeta.Vector2 other
+-- @return #Zeta.Vector2
+
+---
+-- .sub
+-- @function [parent=#Zeta.Vector2] .sub
+-- @param self
+-- @param #Zeta.Vector2 other
+-- @return #Zeta.Vector2
+
+---
+-- .mul
+-- @function [parent=#Zeta.Vector2] .mul
+-- @param self
+-- @param #number m
+-- @return #Zeta.Vector2
+
+---
+-- getLength
+-- @function [parent=#Zeta.Vector2] getLength
+-- @param self
+-- @return #number
+
+---
+-- getDistance
+-- @function [parent=#Zeta.Vector2] getDistance
+-- @param self
+-- @param #Zeta.Vector2 other
+-- @return #number
+
+---
+-- normalize
+-- @function [parent=#Zeta.Vector2] normalize
+-- @param self
+
+---
+-- new
+-- @function [parent=#Zeta.Vector2] new
+-- @param self
+-- @return #Zeta.Vector2
+
+---
+-- new_local 
+-- @function [parent=#Zeta.Vector2] new_local
+-- @param self
+-- @return #Zeta.Vector2
+
+---
+-- .call
+-- Construct on the Lua Memory.
+-- @callof #Zeta.Vector2
+-- @param self
+-- @return #Zeta.Vector2
+
+---
+-- new
+-- @function [parent=#Zeta.Vector2] new
+-- @param self
+-- @param #number x
+-- @param #number y
+-- @return #Zeta.Vector2
+
+---
+-- new_local 
+-- @function [parent=#Zeta.Vector2] new_local
+-- @param self
+-- @param #number x
+-- @param #number y
+-- @return #Zeta.Vector2
+
+---
+-- .call
+-- Construct on the Lua Memory.
+-- @callof #Zeta.Vector2
+-- @param self
+-- @return #Zeta.Vector2
+
+---
+-- delete
+-- @function [parent=#Zeta.Vector2] delete
+-- @param self
+-- @return #
+
+
+---------------------------------------------------------------------------------
+-- View
+-- @type Zeta.View
+
+---
+-- @field [parent=#Zeta] #Zeta.View View
+
+---
+-- setPosition
+-- @function [parent=#Zeta.View] setPosition
+-- @param self
+-- @param #number x
+-- @param #number y
+
+---
+-- offsetPosition
+-- @function [parent=#Zeta.View] offsetPosition
+-- @param self
+-- @param #number dx
+-- @param #number dy
+
+---
+-- resize
+-- @function [parent=#Zeta.View] resize
+-- @param self
+-- @param #number width
+-- @param #number height
+
+---
+-- getX
+-- @function [parent=#Zeta.View] getX
+-- @param self
+-- @return #number
+
+---
+-- getY
+-- @function [parent=#Zeta.View] getY
+-- @param self
+-- @return #number
+
+---
+-- getWidth
+-- @function [parent=#Zeta.View] getWidth
+-- @param self
+-- @return #number
+
+---
+-- getHeight
+-- @function [parent=#Zeta.View] getHeight
+-- @param self
+-- @return #number
+
+---
+-- isInView
+-- @function [parent=#Zeta.View] isInView
+-- @param self
+-- @param #Zeta.Object obj
+-- @return #boolean
+
+---
+-- new
+-- @function [parent=#Zeta.View] new
+-- @param self
+-- @return #Zeta.View
+
+---
+-- new_local 
+-- @function [parent=#Zeta.View] new_local
+-- @param self
+-- @return #Zeta.View
+
+---
+-- .call
+-- Construct on the Lua Memory.
+-- @callof #Zeta.View
+-- @param self
+-- @return #Zeta.View
+
+---
+-- delete
+-- @function [parent=#Zeta.View] delete
+-- @param self
+-- @return #
+
+
+---------------------------------------------------------------------------------
+-- WorldEvent
+-- @type Zeta.WorldEvent
+
+---
+-- @field [parent=#Zeta] #Zeta.WorldEvent WorldEvent
+
+---
+-- Type
+-- @type Zeta.WorldEvent.Type
+
+---
+-- @field [parent=#Zeta.WorldEvent] #Zeta.WorldEvent.Type Type
+
+---
+-- Damage
+-- @field [parent=#Zeta.WorldEvent.Type] #number Damage
+
+---
+-- Death
+-- @field [parent=#Zeta.WorldEvent.Type] #number Death
+
+---
+-- Interact
+-- @field [parent=#Zeta.WorldEvent.Type] #number Interact
+
+---
+-- AbilityUse
+-- @field [parent=#Zeta.WorldEvent.Type] #number AbilityUse
+
+---
+-- WorldExit
+-- @field [parent=#Zeta.WorldEvent.Type] #number WorldExit
+
+---
+-- Collision
+-- @field [parent=#Zeta.WorldEvent.Type] #number Collision
+
+---
+-- Custom
+-- @field [parent=#Zeta.WorldEvent.Type] #number Custom
+
+---
+-- Nothing
+-- @field [parent=#Zeta.WorldEvent.Type] #number Nothing
+
+---
+-- setAsDamageEvent
+-- @function [parent=#Zeta.WorldEvent] setAsDamageEvent
+-- @param self
+-- @param #Zeta.Lifeform victim
+-- @param #Zeta.Lifeform dealer
+-- @param #number amount
+
+---
+-- setAsDeathEvent
+-- @function [parent=#Zeta.WorldEvent] setAsDeathEvent
+-- @param self
+-- @param #Zeta.Lifeform victim
+
+---
+-- setAsInteractEvent
+-- @function [parent=#Zeta.WorldEvent] setAsInteractEvent
+-- @param self
+-- @param #Zeta.Lifeform user1
+-- @param #Zeta.Lifeform user2
+
+---
+-- setAsAbilityUseEvent
+-- @function [parent=#Zeta.WorldEvent] setAsAbilityUseEvent
+-- @param self
+-- @param #Zeta.Lifeform user
+-- @param #Zeta.Ability ability
+
+---
+-- setAsWorldExitEvent
+-- @function [parent=#Zeta.WorldEvent] setAsWorldExitEvent
+-- @param self
+-- @param #Zeta.Lifeform invoker
+
+---
+-- setAsCustomEvent
+-- @function [parent=#Zeta.WorldEvent] setAsCustomEvent
+-- @param self
+-- @param #std.string channel
+-- @param #lua_Object table
+
+---
+-- broadcast
+-- @function [parent=#Zeta.WorldEvent] broadcast
+-- @param self
+
+---
+-- toEventType
+-- @function [parent=#Zeta.WorldEvent] toEventType
+-- @param self
+-- @param #number num
+-- @return #Zeta.WorldEvent.Type
+
+---
+-- getType
+-- @function [parent=#Zeta.WorldEvent] getType
+-- @param self
+-- @return #Zeta.WorldEvent.Type
+
+---
+-- new
+-- @function [parent=#Zeta.WorldEvent] new
+-- @param self
+-- @return #Zeta.WorldEvent
+
+---
+-- new_local 
+-- @function [parent=#Zeta.WorldEvent] new_local
+-- @param self
+-- @return #Zeta.WorldEvent
+
+---
+-- .call
+-- Construct on the Lua Memory.
+-- @callof #Zeta.WorldEvent
+-- @param self
+-- @return #Zeta.WorldEvent
+
+---
+-- delete
+-- @function [parent=#Zeta.WorldEvent] delete
+-- @param self
+-- @return #
+
+
+---------------------------------------------------------------------------------
+-- WorldManager
+-- @type Zeta.WorldManager
+
+---
+-- @field [parent=#Zeta] #Zeta.WorldManager WorldManager
+
+---
+-- Callback
+-- @type Zeta.WorldManager.Callback
+
+---
+-- @field [parent=#Zeta.WorldManager] #Zeta.WorldManager.Callback Callback
+
+---
+-- ChangeMap
+-- @field [parent=#Zeta.WorldManager.Callback] #number ChangeMap
+
+---
+-- LoadBegin
+-- @field [parent=#Zeta.WorldManager.Callback] #number LoadBegin
+
+---
+-- LoadEnd
+-- @field [parent=#Zeta.WorldManager.Callback] #number LoadEnd
+
+---
+-- FrameBegin
+-- @field [parent=#Zeta.WorldManager.Callback] #number FrameBegin
+
+---
+-- FrameEnd
+-- @field [parent=#Zeta.WorldManager.Callback] #number FrameEnd
+
+---
+-- LifeformDeath
+-- @field [parent=#Zeta.WorldManager.Callback] #number LifeformDeath
+
+---
+-- LifeformShow
+-- @field [parent=#Zeta.WorldManager.Callback] #number LifeformShow
+
+---
+-- LifeformHide
+-- @field [parent=#Zeta.WorldManager.Callback] #number LifeformHide
+
+---
+-- getInstance
+-- @function [parent=#Zeta.WorldManager] getInstance
+-- @param self
+-- @return #Zeta.WorldManager
+
+---
+-- changeMap
+-- @function [parent=#Zeta.WorldManager] changeMap
+-- @param self
+-- @param #std.string path
+
+---
+-- changeMapWithCallback
+-- @function [parent=#Zeta.WorldManager] changeMapWithCallback
+-- @param self
+-- @param #std.string path
+
+---
+-- setCallback
+-- @function [parent=#Zeta.WorldManager] setCallback
+-- @param self
+-- @param #Zeta.WorldManager.Callback call
+-- @param #std.string name
+
+---
+-- setCallback
+-- @function [parent=#Zeta.WorldManager] setCallback
+-- @param self
+-- @param #Zeta.WorldManager.Callback call
+-- @param #lua_Object func
+
+---
+-- raiseEvent
+-- @function [parent=#Zeta.WorldManager] raiseEvent
+-- @param self
+-- @param #Zeta.WorldEvent event
+
+---
+-- getView
+-- @function [parent=#Zeta.WorldManager] getView
+-- @param self
+-- @return #Zeta.View
+
+---
+-- show
+-- @function [parent=#Zeta.WorldManager] show
+-- @param self
+
+---
+-- hide
+-- @function [parent=#Zeta.WorldManager] hide
+-- @param self
+
+---
+-- pause
+-- @function [parent=#Zeta.WorldManager] pause
+-- @param self
+
+---
+-- resume
+-- @function [parent=#Zeta.WorldManager] resume
+-- @param self
+
+---
+-- getCurrentMap
+-- @function [parent=#Zeta.WorldManager] getCurrentMap
+-- @param self
+-- @return #Zeta.Map
+
+---
+-- getPlayer
+-- @function [parent=#Zeta.WorldManager] getPlayer
+-- @param self
+-- @return #Zeta.Player
+
+---
+-- getInstance
+-- @function [parent=#Zeta.WorldManager] getInstance
+-- @param self
+-- @return #Zeta.WorldManager
+
+
+---------------------------------------------------------------------------------
+-- System
+-- @type Zeta.System
+
+---
+-- @field [parent=#Zeta] #Zeta.System System
+
+---
+-- getInstance
+-- @function [parent=#Zeta.System] getInstance
+-- @param self
+-- @return #Zeta.System
+
+---
+-- getAudioContext
+-- @function [parent=#Zeta.System] getAudioContext
+-- @param self
+-- @return #Zeta.AudioContext
+
+---
+-- shutdown
+-- @function [parent=#Zeta.System] shutdown
+-- @param self
+
+---
+-- abort
+-- @function [parent=#Zeta.System] abort
+-- @param self
+-- @param #std.string error
+
+
+---------------------------------------------------------------------------------
+-- ActiveAbility
+-- @type Zeta.ActiveAbility
+-- @extends #Zeta.Ability
+
+---
+-- @field [parent=#Zeta] #Zeta.ActiveAbility ActiveAbility
+
+---
+-- getClass
+-- @function [parent=#Zeta.ActiveAbility] getClass
+-- @param self
+-- @return #Zeta.ActiveAbilityClass
+
+---
+-- invokeProjectile
+-- @function [parent=#Zeta.ActiveAbility] invokeProjectile
+-- @param self
+-- @param #std.string name
+-- @param #number x
+-- @param #number y
+
+---
+-- getRemainingCooldown
+-- @function [parent=#Zeta.ActiveAbility] getRemainingCooldown
+-- @param self
+-- @return #number
+
+---
+-- getCastTime
+-- @function [parent=#Zeta.ActiveAbility] getCastTime
+-- @param self
+-- @return #number
+
+---
+-- setCastTime
+-- @function [parent=#Zeta.ActiveAbility] setCastTime
+-- @param self
+-- @param #number castTime
+
+---
+-- getCoolDown
+-- @function [parent=#Zeta.ActiveAbility] getCoolDown
+-- @param self
+-- @return #number
+
+---
+-- setCoolDown
+-- @function [parent=#Zeta.ActiveAbility] setCoolDown
+-- @param self
+-- @param #number coolDown
+
+---
+-- getManaCost
+-- @function [parent=#Zeta.ActiveAbility] getManaCost
+-- @param self
+-- @return #number
+
+---
+-- setManaCost
+-- @function [parent=#Zeta.ActiveAbility] setManaCost
+-- @param self
+-- @param #number manaCost
+
+---
+-- getRange
+-- @function [parent=#Zeta.ActiveAbility] getRange
+-- @param self
+-- @return #number
+
+---
+-- setRange
+-- @function [parent=#Zeta.ActiveAbility] setRange
+-- @param self
+-- @param #number range
+
+---
+-- applyEffect
+-- @function [parent=#Zeta.ActiveAbility] applyEffect
+-- @param self
+-- @param #std.string name
+-- @param #Zeta.Lifeform target
+-- @param #number level
+
+
+---------------------------------------------------------------------------------
+-- AudioContext
+-- @type Zeta.AudioContext
+
+---
+-- @field [parent=#Zeta] #Zeta.AudioContext AudioContext
+
+---
+-- getMainGain
+-- @function [parent=#Zeta.AudioContext] getMainGain
+-- @param self
+-- @return #number
+
+---
+-- setMainGain
+-- @function [parent=#Zeta.AudioContext] setMainGain
+-- @param self
+-- @param #number mainGain
+
+---
+-- setMusic
+-- @function [parent=#Zeta.AudioContext] setMusic
+-- @param self
+-- @param #std.string path
+
+---
+-- start
+-- @function [parent=#Zeta.AudioContext] start
+-- @param self
+
+---
+-- stop
+-- @function [parent=#Zeta.AudioContext] stop
+-- @param self
+
+
+---------------------------------------------------------------------------------
+-- ActiveAbilityClass
+-- @type Zeta.ActiveAbilityClass
+-- @extends #Zeta.AbilityClass
+
+---
+-- @field [parent=#Zeta] #Zeta.ActiveAbilityClass ActiveAbilityClass
+
+---
+-- applyEffect
+-- @function [parent=#Zeta.ActiveAbilityClass] applyEffect
+-- @param self
+-- @param #std.string name
+-- @param #Zeta.Lifeform target
+-- @param #number level
+-- @param #Zeta.ActiveAbility ability
+
+
+---------------------------------------------------------------------------------
+-- PassiveAbilityClass
+-- @type Zeta.PassiveAbilityClass
+-- @extends #Zeta.AbilityClass
+
+---
+-- @field [parent=#Zeta] #Zeta.PassiveAbilityClass PassiveAbilityClass
+
+
+---------------------------------------------------------------------------------
+-- RegenerationAbilityClass
+-- @type Zeta.RegenerationAbilityClass
+-- @extends #Zeta.AbilityClass
+
+---
+-- @field [parent=#Zeta] #Zeta.RegenerationAbilityClass RegenerationAbilityClass
+
+
+---------------------------------------------------------------------------------
+-- Regeneration
+-- @type Zeta.Regeneration
+-- @extends #Zeta.Ability
+
+---
+-- @field [parent=#Zeta] #Zeta.Regeneration Regeneration
+
+---
+-- getClass
+-- @function [parent=#Zeta.Regeneration] getClass
+-- @param self
+-- @return #Zeta.RegenerationAbilityClass
+
+
+---------------------------------------------------------------------------------
+-- InteractObject
+-- @type Zeta.InteractObject
+-- @extends #Zeta.Object
+
+---
+-- @field [parent=#Zeta] #Zeta.InteractObject InteractObject
+
+---
+-- setOnClick
+-- @function [parent=#Zeta.InteractObject] setOnClick
+-- @param self
+-- @param #lua_Object func
+
+---
+-- setOnCollide
+-- @function [parent=#Zeta.InteractObject] setOnCollide
+-- @param self
+-- @param #lua_Object func
+
+---
+-- setAnimation
+-- @function [parent=#Zeta.InteractObject] setAnimation
+-- @param self
+-- @param #std.string name
+
+---
+-- new
+-- @function [parent=#Zeta.InteractObject] new
+-- @param self
+-- @param #std.string animationClass
+-- @param #number x
+-- @param #number y
+-- @return #Zeta.InteractObject
+
+---
+-- new_local 
+-- @function [parent=#Zeta.InteractObject] new_local
+-- @param self
+-- @param #std.string animationClass
+-- @param #number x
+-- @param #number y
+-- @return #Zeta.InteractObject
+
+---
+-- .call
+-- Construct on the Lua Memory.
+-- @callof #Zeta.InteractObject
+-- @param self
+-- @return #Zeta.InteractObject
+
+
+---------------------------------------------------------------------------------
+-- CEGUIChild
+-- @type Zeta.CEGUIChild
+-- @extends #Zeta.ChildObject
+
+---
+-- @field [parent=#Zeta] #Zeta.CEGUIChild CEGUIChild
+
+---
+-- setOffesets
+-- @function [parent=#Zeta.CEGUIChild] setOffesets
+-- @param self
+-- @param #number offX
+-- @param #number offY
+
+---
+-- isDestroy
+-- @function [parent=#Zeta.CEGUIChild] isDestroy
+-- @param self
+-- @return #boolean
+
+---
+-- setDestroy
+-- @function [parent=#Zeta.CEGUIChild] setDestroy
+-- @param self
+-- @param #boolean destroy
+
+---
+-- getOffsetX
+-- @function [parent=#Zeta.CEGUIChild] getOffsetX
+-- @param self
+-- @return #number
+
+---
+-- setOffsetX
+-- @function [parent=#Zeta.CEGUIChild] setOffsetX
+-- @param self
+-- @param #number offX
+
+---
+-- getOffsetY
+-- @function [parent=#Zeta.CEGUIChild] getOffsetY
+-- @param self
+-- @return #number
+
+---
+-- setOffsetY
+-- @function [parent=#Zeta.CEGUIChild] setOffsetY
+-- @param self
+-- @param #number offY
+
+---
+-- getWindow
+-- @function [parent=#Zeta.CEGUIChild] getWindow
+-- @param self
+-- @return #CEGUI.Window
+
+---
+-- setWindow
+-- @function [parent=#Zeta.CEGUIChild] setWindow
+-- @param self
+-- @param #CEGUI.Window window
+
+---
+-- new
+-- @function [parent=#Zeta.CEGUIChild] new
+-- @param self
+-- @param #CEGUI.Window window
+-- @param #boolean destroy
+-- @return #Zeta.CEGUIChild
+
+---
+-- new_local 
+-- @function [parent=#Zeta.CEGUIChild] new_local
+-- @param self
+-- @param #CEGUI.Window window
+-- @param #boolean destroy
+-- @return #Zeta.CEGUIChild
+
+---
+-- .call
+-- Construct on the Lua Memory.
+-- @callof #Zeta.CEGUIChild
+-- @param self
+-- @return #Zeta.CEGUIChild
+
+
+---------------------------------------------------------------------------------
+-- Animation
+-- @type Zeta.Animation
+
+---
+-- @field [parent=#Zeta] #Zeta.Animation Animation
+
+---
+-- getName
+-- @function [parent=#Zeta.Animation] getName
+-- @param self
+-- @return #std.string
+
+---
+-- isLooping
+-- @function [parent=#Zeta.Animation] isLooping
+-- @param self
+-- @return #boolean
+
+---
+-- getNumFrames
+-- @function [parent=#Zeta.Animation] getNumFrames
+-- @param self
+-- @return #number
+
+
+---------------------------------------------------------------------------------
+-- AnimationPlayer
+-- @type Zeta.AnimationPlayer
+
+---
+-- @field [parent=#Zeta] #Zeta.AnimationPlayer AnimationPlayer
+
+---
+-- isPlaying
+-- @function [parent=#Zeta.AnimationPlayer] isPlaying
+-- @param self
+-- @return #boolean
+
+---
+-- isVisible
+-- @function [parent=#Zeta.AnimationPlayer] isVisible
+-- @param self
+-- @return #boolean
+
+---
+-- setVisible
+-- @function [parent=#Zeta.AnimationPlayer] setVisible
+-- @param self
+-- @param #boolean visible
+
+---
+-- hide
+-- @function [parent=#Zeta.AnimationPlayer] hide
+-- @param self
+
+---
+-- show
+-- @function [parent=#Zeta.AnimationPlayer] show
+-- @param self
+
+---
+-- play
+-- @function [parent=#Zeta.AnimationPlayer] play
+-- @param self
+
+---
+-- stop
+-- @function [parent=#Zeta.AnimationPlayer] stop
+-- @param self
+
+---
+-- pause
+-- @function [parent=#Zeta.AnimationPlayer] pause
+-- @param self
+
+---
+-- reset
+-- @function [parent=#Zeta.AnimationPlayer] reset
+-- @param self
+
+
+---------------------------------------------------------------------------------
+-- AnimationEffectsManager
+-- @type Zeta.AnimationEffectsManager
+
+---
+-- @field [parent=#Zeta] #Zeta.AnimationEffectsManager AnimationEffectsManager
+
+---
+-- getAnimationFX
+-- @function [parent=#Zeta.AnimationEffectsManager] getAnimationFX
+-- @param self
+-- @param #std.string name
+-- @param #std.string animationPack
+-- @return #Zeta.Animation
+
+---
+-- addAnimationPack
+-- @function [parent=#Zeta.AnimationEffectsManager] addAnimationPack
+-- @param self
+-- @param #std.string path
+
+---
+-- addAnimationPack
+-- @function [parent=#Zeta.AnimationEffectsManager] addAnimationPack
+-- @param self
+-- @param #std.string path
+-- @param #std.string name
+
+---
+-- getInstance
+-- @function [parent=#Zeta.AnimationEffectsManager] getInstance
+-- @param self
+-- @return #Zeta.AnimationEffectsManager
+
+
+---------------------------------------------------------------------------------
+-- OffAnimation
+-- @type Zeta.OffAnimation
+-- @extends #Zeta.AnimationPlayer
+
+---
+-- @field [parent=#Zeta] #Zeta.OffAnimation OffAnimation
+
+---
+-- getDx
+-- @function [parent=#Zeta.OffAnimation] getDx
+-- @param self
+-- @return #number
+
+---
+-- setDx
+-- @function [parent=#Zeta.OffAnimation] setDx
+-- @param self
+-- @param #number dx
+
+---
+-- getDy
+-- @function [parent=#Zeta.OffAnimation] getDy
+-- @param self
+-- @return #number
+
+---
+-- setDy
+-- @function [parent=#Zeta.OffAnimation] setDy
+-- @param self
+-- @param #number dy
+
+---
+-- setOffsets
+-- @function [parent=#Zeta.OffAnimation] setOffsets
+-- @param self
+-- @param #number dx
+-- @param #number dy
+
+
+---------------------------------------------------------------------------------
+-- LifeformClass
+-- @type Zeta.LifeformClass
+
+---
+-- @field [parent=#Zeta] #Zeta.LifeformClass LifeformClass
+
+---
+-- getLifeformName
+-- @function [parent=#Zeta.LifeformClass] getLifeformName
+-- @param self
+-- @return #std.string
+
+---
+-- getAnimationClassName
+-- @function [parent=#Zeta.LifeformClass] getAnimationClassName
+-- @param self
+-- @return #std.string
+
+---
+-- getLevel
+-- @function [parent=#Zeta.LifeformClass] getLevel
+-- @param self
+-- @return #number
+
+---
+-- setTable
+-- @function [parent=#Zeta.LifeformClass] setTable
+-- @param self
+-- @param #lua_Object table
+
+---
+-- setOnClick
+-- @function [parent=#Zeta.LifeformClass] setOnClick
+-- @param self
+-- @param #lua_Object func
+
+---
+-- setOnCollision
+-- @function [parent=#Zeta.LifeformClass] setOnCollision
+-- @param self
+-- @param #lua_Object func
+
+---
+-- levelizeStats
+-- @function [parent=#Zeta.LifeformClass] levelizeStats
+-- @param self
+-- @param #number levelMultiplier
+
+---
+-- levelizeStats
+-- @function [parent=#Zeta.LifeformClass] levelizeStats
+-- @param self
+-- @param #number multiplier
+-- @param #number lowerBound
+-- @param #number upperBound
+
+---
+-- addAbility
+-- @function [parent=#Zeta.LifeformClass] addAbility
+-- @param self
+-- @param #Zeta.AbilityClass abClass
+-- @param #number level
+
+---
+-- new
+-- @function [parent=#Zeta.LifeformClass] new
+-- @param self
+-- @return #Zeta.LifeformClass
+
+---
+-- new_local 
+-- @function [parent=#Zeta.LifeformClass] new_local
+-- @param self
+-- @return #Zeta.LifeformClass
+
+---
+-- .call
+-- Construct on the Lua Memory.
+-- @callof #Zeta.LifeformClass
+-- @param self
+-- @return #Zeta.LifeformClass
+
+---
+-- new
+-- @function [parent=#Zeta.LifeformClass] new
+-- @param self
+-- @param #std.string path
+-- @return #Zeta.LifeformClass
+
+---
+-- new_local 
+-- @function [parent=#Zeta.LifeformClass] new_local
+-- @param self
+-- @param #std.string path
+-- @return #Zeta.LifeformClass
+
+---
+-- .call
+-- Construct on the Lua Memory.
+-- @callof #Zeta.LifeformClass
+-- @param self
+-- @return #Zeta.LifeformClass
+
+---
+-- delete
+-- @function [parent=#Zeta.LifeformClass] delete
+-- @param self
+-- @return #
+
+
+---------------------------------------------------------------------------------
+-- LifeformClassContainer
+-- @type Zeta.LifeformClassContainer
+
+---
+-- @field [parent=#Zeta] #Zeta.LifeformClassContainer LifeformClassContainer
+
+---
+-- get
+-- @function [parent=#Zeta.LifeformClassContainer] get
+-- @param self
+-- @return #Zeta.LifeformClass
+
+---
+-- new
+-- @function [parent=#Zeta.LifeformClassContainer] new
+-- @param self
+-- @param #std.string path
+-- @return #Zeta.LifeformClassContainer
+
+---
+-- new_local 
+-- @function [parent=#Zeta.LifeformClassContainer] new_local
+-- @param self
+-- @param #std.string path
+-- @return #Zeta.LifeformClassContainer
+
+---
+-- .call
+-- Construct on the Lua Memory.
+-- @callof #Zeta.LifeformClassContainer
+-- @param self
+-- @return #Zeta.LifeformClassContainer
+
+---
+-- delete
+-- @function [parent=#Zeta.LifeformClassContainer] delete
+-- @param self
+-- @return #
+
+
+---------------------------------------------------------------------------------
+-- CEGUIObject
+-- @type Zeta.CEGUIObject
+-- @extends #Zeta.Object
+
+---
+-- @field [parent=#Zeta] #Zeta.CEGUIObject CEGUIObject
+
+---
+-- setOffesets
+-- @function [parent=#Zeta.CEGUIObject] setOffesets
+-- @param self
+-- @param #number offX
+-- @param #number offY
+
+---
+-- isDestroy
+-- @function [parent=#Zeta.CEGUIObject] isDestroy
+-- @param self
+-- @return #boolean
+
+---
+-- setDestroy
+-- @function [parent=#Zeta.CEGUIObject] setDestroy
+-- @param self
+-- @param #boolean destroy
+
+---
+-- getOffsetX
+-- @function [parent=#Zeta.CEGUIObject] getOffsetX
+-- @param self
+-- @return #number
+
+---
+-- setOffsetX
+-- @function [parent=#Zeta.CEGUIObject] setOffsetX
+-- @param self
+-- @param #number offX
+
+---
+-- getOffsetY
+-- @function [parent=#Zeta.CEGUIObject] getOffsetY
+-- @param self
+-- @return #number
+
+---
+-- setOffsetY
+-- @function [parent=#Zeta.CEGUIObject] setOffsetY
+-- @param self
+-- @param #number offY
+
+---
+-- getWindow
+-- @function [parent=#Zeta.CEGUIObject] getWindow
+-- @param self
+-- @return #CEGUI.Window
+
+---
+-- setWindow
+-- @function [parent=#Zeta.CEGUIObject] setWindow
+-- @param self
+-- @param #CEGUI.Window window
+
+---
+-- setLuaTable
+-- @function [parent=#Zeta.CEGUIObject] setLuaTable
+-- @param self
+-- @param #lua_Object table
+
+---
+-- setOnClick
+-- @function [parent=#Zeta.CEGUIObject] setOnClick
+-- @param self
+-- @param #lua_Object func
+
+---
+-- getAnimationHandler
+-- @function [parent=#Zeta.CEGUIObject] getAnimationHandler
+-- @param self
+-- @return #Zeta.AnimationHandler
+
+---
+-- setPosition
+-- @function [parent=#Zeta.CEGUIObject] setPosition
+-- @param self
+-- @param #number x
+-- @param #number y
+
+---
+-- offsetPosition
+-- @function [parent=#Zeta.CEGUIObject] offsetPosition
+-- @param self
+-- @param #number dx
+-- @param #number dy
+
+---
+-- new
+-- @function [parent=#Zeta.CEGUIObject] new
+-- @param self
+-- @param #CEGUI.Window window
+-- @param #number x
+-- @param #number y
+-- @return #Zeta.CEGUIObject
+
+---
+-- new_local 
+-- @function [parent=#Zeta.CEGUIObject] new_local
+-- @param self
+-- @param #CEGUI.Window window
+-- @param #number x
+-- @param #number y
+-- @return #Zeta.CEGUIObject
+
+---
+-- .call
+-- Construct on the Lua Memory.
+-- @callof #Zeta.CEGUIObject
+-- @param self
+-- @return #Zeta.CEGUIObject
+
+---
+-- new
+-- @function [parent=#Zeta.CEGUIObject] new
+-- @param self
+-- @param #CEGUI.Window window
+-- @param #number x
+-- @param #number y
+-- @param #std.string animationClass
+-- @return #Zeta.CEGUIObject
+
+---
+-- new_local 
+-- @function [parent=#Zeta.CEGUIObject] new_local
+-- @param self
+-- @param #CEGUI.Window window
+-- @param #number x
+-- @param #number y
+-- @param #std.string animationClass
+-- @return #Zeta.CEGUIObject
+
+---
+-- .call
+-- Construct on the Lua Memory.
+-- @callof #Zeta.CEGUIObject
+-- @param self
+-- @return #Zeta.CEGUIObject
+
+---
+-- delete
+-- @function [parent=#Zeta.CEGUIObject] delete
+-- @param self
+-- @return #
+
+
+---------------------------------------------------------------------------------
+-- InteractField
+-- @type Zeta.InteractField
+-- @extends #Zeta.Object
+
+---
+-- @field [parent=#Zeta] #Zeta.InteractField InteractField
+
+
+---------------------------------------------------------------------------------
+-- LuaListener
+-- @type Zeta.LuaListener
+
+---
+-- @field [parent=#Zeta] #Zeta.LuaListener LuaListener
+
+---
+-- deactivate
+-- @function [parent=#Zeta.LuaListener] deactivate
+-- @param self
+
+---
+-- activate
+-- @function [parent=#Zeta.LuaListener] activate
+-- @param self
+
+---
+-- new
+-- @function [parent=#Zeta.LuaListener] new
+-- @param self
+-- @param #lua_Object func
+-- @param #Zeta.WorldEvent.Type type
+-- @return #Zeta.LuaListener
+
+---
+-- new_local 
+-- @function [parent=#Zeta.LuaListener] new_local
+-- @param self
+-- @param #lua_Object func
+-- @param #Zeta.WorldEvent.Type type
+-- @return #Zeta.LuaListener
+
+---
+-- .call
+-- Construct on the Lua Memory.
+-- @callof #Zeta.LuaListener
+-- @param self
+-- @return #Zeta.LuaListener
+
+---
+-- new
+-- @function [parent=#Zeta.LuaListener] new
+-- @param self
+-- @param #std.string channel
+-- @param #lua_Object func
+-- @return #Zeta.LuaListener
+
+---
+-- new_local 
+-- @function [parent=#Zeta.LuaListener] new_local
+-- @param self
+-- @param #std.string channel
+-- @param #lua_Object func
+-- @return #Zeta.LuaListener
+
+---
+-- .call
+-- Construct on the Lua Memory.
+-- @callof #Zeta.LuaListener
+-- @param self
+-- @return #Zeta.LuaListener
+
+---
+-- delete
+-- @function [parent=#Zeta.LuaListener] delete
+-- @param self
+-- @return #
+
+
+---------------------------------------------------------------------------------
+-- EffectClass
+-- @type Zeta.EffectClass
+
+---
+-- @field [parent=#Zeta] #Zeta.EffectClass EffectClass
+
+---
+-- getUpTime
+-- @function [parent=#Zeta.EffectClass] getUpTime
+-- @param self
+-- @return #number
+
+---
+-- getTickEvery
+-- @function [parent=#Zeta.EffectClass] getTickEvery
+-- @param self
+-- @return #number
+
+---
+-- getNewEffect
+-- @function [parent=#Zeta.EffectClass] getNewEffect
+-- @param self
+-- @param #Zeta.Lifeform target
+-- @param #number level
+-- @return #Zeta.Effect
+
+---
+-- new
+-- @function [parent=#Zeta.EffectClass] new
+-- @param self
+-- @return #Zeta.EffectClass
+
+---
+-- new_local 
+-- @function [parent=#Zeta.EffectClass] new_local
+-- @param self
+-- @return #Zeta.EffectClass
+
+---
+-- .call
+-- Construct on the Lua Memory.
+-- @callof #Zeta.EffectClass
+-- @param self
+-- @return #Zeta.EffectClass
+
+---
+-- new
+-- @function [parent=#Zeta.EffectClass] new
+-- @param self
+-- @param #lua_Object table
+-- @return #Zeta.EffectClass
+
+---
+-- new_local 
+-- @function [parent=#Zeta.EffectClass] new_local
+-- @param self
+-- @param #lua_Object table
+-- @return #Zeta.EffectClass
+
+---
+-- .call
+-- Construct on the Lua Memory.
+-- @callof #Zeta.EffectClass
+-- @param self
+-- @return #Zeta.EffectClass
+
+---
+-- delete
+-- @function [parent=#Zeta.EffectClass] delete
+-- @param self
+-- @return #
+
+
+---------------------------------------------------------------------------------
+-- Effect
+-- @type Zeta.Effect
+
+---
+-- @field [parent=#Zeta] #Zeta.Effect Effect
+
+---
+-- getSource
+-- @function [parent=#Zeta.Effect] getSource
+-- @param self
+-- @return #Zeta.ActiveAbility
+
+---
+-- isFinished
+-- @function [parent=#Zeta.Effect] isFinished
+-- @param self
+-- @return #boolean
+
+---
+-- end
+-- @function [parent=#Zeta.Effect] end
+-- @param self
+
+
+---------------------------------------------------------------------------------
+-- Timer
+-- @type Zeta.Timer
+
+---
+-- @field [parent=#Zeta] #Zeta.Timer Timer
+
+---
+-- getMaxTime
+-- @function [parent=#Zeta.Timer] getMaxTime
+-- @param self
+-- @return #number
+
+---
+-- setMaxTime
+-- @function [parent=#Zeta.Timer] setMaxTime
+-- @param self
+-- @param #number maxTime
+
+---
+-- getRemainingTime
+-- @function [parent=#Zeta.Timer] getRemainingTime
+-- @param self
+-- @return #number
+
+---
+-- setRemainingTime
+-- @function [parent=#Zeta.Timer] setRemainingTime
+-- @param self
+-- @param #number remainingTime
+
+---
+-- isOver
+-- @function [parent=#Zeta.Timer] isOver
+-- @param self
+-- @return #boolean
+
+---
+-- isRunning
+-- @function [parent=#Zeta.Timer] isRunning
+-- @param self
+-- @return #boolean
+
+---
+-- start
+-- @function [parent=#Zeta.Timer] start
+-- @param self
+
+---
+-- pause
+-- @function [parent=#Zeta.Timer] pause
+-- @param self
+
+---
+-- reset
+-- @function [parent=#Zeta.Timer] reset
+-- @param self
+
+---
+-- setCallback
+-- @function [parent=#Zeta.Timer] setCallback
+-- @param self
+-- @param #lua_Object func
+
+---
+-- new
+-- @function [parent=#Zeta.Timer] new
+-- @param self
+-- @param #number maxTime
+-- @return #Zeta.Timer
+
+---
+-- new_local 
+-- @function [parent=#Zeta.Timer] new_local
+-- @param self
+-- @param #number maxTime
+-- @return #Zeta.Timer
+
+---
+-- .call
+-- Construct on the Lua Memory.
+-- @callof #Zeta.Timer
+-- @param self
+-- @return #Zeta.Timer
+
+---
+-- delete
+-- @function [parent=#Zeta.Timer] delete
+-- @param self
+-- @return #
+
+
+---------------------------------------------------------------------------------
+-- ResourceCache
+-- @type Zeta.ResourceCache
+
+---
+-- @field [parent=#Zeta] #Zeta.ResourceCache ResourceCache
+
+---
+-- getAbilityClass
+-- @function [parent=#Zeta.ResourceCache] getAbilityClass
+-- @param self
+-- @param #std.string path
+-- @return #Zeta.AbilityClass
+
+---
+-- getLifeformClass
+-- @function [parent=#Zeta.ResourceCache] getLifeformClass
+-- @param self
+-- @param #std.string path
+-- @return #Zeta.LifeformClass
+
+---
+-- releaseResource
+-- @function [parent=#Zeta.ResourceCache] releaseResource
+-- @param self
+-- @param #Zeta.AbilityClass value
+
+---
+-- releaseResource
+-- @function [parent=#Zeta.ResourceCache] releaseResource
+-- @param self
+-- @param #Zeta.LifeformClass value
+
+---
+-- getInstance
+-- @function [parent=#Zeta.ResourceCache] getInstance
+-- @param self
+-- @return #Zeta.ResourceCache
+
+
+---------------------------------------------------------------------------------
+-- LifeformState
+-- @type Zeta.LifeformState
+
+---
+-- @field [parent=#Zeta] #Zeta.LifeformState LifeformState
+
+---
+-- Direction
+-- @type Zeta.LifeformState.Direction
+
+---
+-- @field [parent=#Zeta.LifeformState] #Zeta.LifeformState.Direction Direction
+
+---
+-- Down
+-- @field [parent=#Zeta.LifeformState.Direction] #number Down
+
+---
+-- Up
+-- @field [parent=#Zeta.LifeformState.Direction] #number Up
+
+---
+-- Left
+-- @field [parent=#Zeta.LifeformState.Direction] #number Left
+
+---
+-- Right
+-- @field [parent=#Zeta.LifeformState.Direction] #number Right
+
+---
+-- Action
+-- @type Zeta.LifeformState.Action
+
+---
+-- @field [parent=#Zeta.LifeformState] #Zeta.LifeformState.Action Action
+
+---
+-- Idle
+-- @field [parent=#Zeta.LifeformState.Action] #number Idle
+
+---
+-- Moving
+-- @field [parent=#Zeta.LifeformState.Action] #number Moving
+
+---
+-- Dying
+-- @field [parent=#Zeta.LifeformState.Action] #number Dying
+
+---
+-- Dead
+-- @field [parent=#Zeta.LifeformState.Action] #number Dead
+
+---
+-- Casting
+-- @field [parent=#Zeta.LifeformState.Action] #number Casting
+
+---
+-- set
+-- @function [parent=#Zeta.LifeformState] set
+-- @param self
+-- @param #number combinedState
+
+---
+-- getCombinedState
+-- @function [parent=#Zeta.LifeformState] getCombinedState
+-- @param self
+-- @return #number
+
+---
+-- setAction
+-- @function [parent=#Zeta.LifeformState] setAction
+-- @param self
+-- @param #Zeta.LifeformState.Action action
+
+---
+-- setDirection
+-- @function [parent=#Zeta.LifeformState] setDirection
+-- @param self
+-- @param #Zeta.LifeformState.Direction direction
+
+---
+-- getAction
+-- @function [parent=#Zeta.LifeformState] getAction
+-- @param self
+-- @return #Zeta.LifeformState.Action
+
+---
+-- getDirection
+-- @function [parent=#Zeta.LifeformState] getDirection
+-- @param self
+-- @return #Zeta.LifeformState.Direction
+
+---
+-- new
+-- @function [parent=#Zeta.LifeformState] new
+-- @param self
+-- @return #Zeta.LifeformState
+
+---
+-- new_local 
+-- @function [parent=#Zeta.LifeformState] new_local
+-- @param self
+-- @return #Zeta.LifeformState
+
+---
+-- .call
+-- Construct on the Lua Memory.
+-- @callof #Zeta.LifeformState
+-- @param self
+-- @return #Zeta.LifeformState
+
+---
+-- delete
+-- @function [parent=#Zeta.LifeformState] delete
+-- @param self
+-- @return #
+
+
+---------------------------------------------------------------------------------
+-- ProjectileClass
+-- @type Zeta.ProjectileClass
+
+---
+-- @field [parent=#Zeta] #Zeta.ProjectileClass ProjectileClass
+
+---
+-- ProjectileType
+-- @type Zeta.ProjectileClass.ProjectileType
+
+---
+-- @field [parent=#Zeta.ProjectileClass] #Zeta.ProjectileClass.ProjectileType ProjectileType
+
+---
+-- Normal
+-- @field [parent=#Zeta.ProjectileClass.ProjectileType] #number Normal
+
+---
+-- Directional
+-- @field [parent=#Zeta.ProjectileClass.ProjectileType] #number Directional
+
+---
+-- Seeking
+-- @field [parent=#Zeta.ProjectileClass.ProjectileType] #number Seeking
+
+
+---------------------------------------------------------------------------------
+-- DurableEffect
+-- @type Zeta.DurableEffect
+-- @extends #Zeta.Effect
+
+---
+-- @field [parent=#Zeta] #Zeta.DurableEffect DurableEffect
+
+---
+-- getRemainingTime
+-- @function [parent=#Zeta.DurableEffect] getRemainingTime
+-- @param self
+-- @return #number
+
+---
+-- getUpTime
+-- @function [parent=#Zeta.DurableEffect] getUpTime
+-- @param self
+-- @return #number
+
+---
+-- setUpTime
+-- @function [parent=#Zeta.DurableEffect] setUpTime
+-- @param self
+-- @param #number upTime
+
+---
+-- reset
+-- @function [parent=#Zeta.DurableEffect] reset
+-- @param self
+
+
+---------------------------------------------------------------------------------
+-- OverTimeEffect
+-- @type Zeta.OverTimeEffect
+-- @extends #Zeta.DurableEffect
+
+---
+-- @field [parent=#Zeta] #Zeta.OverTimeEffect OverTimeEffect
+
+---
+-- getTickEvery
+-- @function [parent=#Zeta.OverTimeEffect] getTickEvery
+-- @param self
+-- @return #number
+
+---
+-- setTickEvery
+-- @function [parent=#Zeta.OverTimeEffect] setTickEvery
+-- @param self
+-- @param #number tickEvery
+
+
+ return nil

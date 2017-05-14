@@ -1,0 +1,32 @@
+$#include <Zeta/Core/RPGClasses/WorldEvent.hpp>
+
+class WorldEvent {
+public:
+
+	enum class Type {
+		Damage,
+		Death,
+		Interact,
+		AbilityUse,
+		WorldExit,
+		Collision,
+		Custom,
+		Nothing
+	};
+
+	void setAsDamageEvent(Lifeform *victim, Lifeform *dealer, unsigned amount);
+	void setAsDeathEvent(Lifeform *victim);
+	void setAsInteractEvent(Lifeform *user1, Lifeform *user2);
+	void setAsAbilityUseEvent(Lifeform *user, Ability *ability);
+	void setAsWorldExitEvent(Lifeform *invoker);
+	void setAsCustomEvent(const std::string& channel, lua_Object table);
+
+	void broadcast();
+	
+	static WorldEvent::Type toEventType(int num);
+	
+	Type getType() const;
+
+	WorldEvent();
+	~WorldEvent();
+};

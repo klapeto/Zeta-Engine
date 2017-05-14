@@ -1,0 +1,11 @@
+$#include <Zeta/Core/RPGClasses/EffectClass.hpp>
+
+class EffectClass {
+public:
+	Float getUpTime() const;
+	Float getTickEvery() const;
+	Effect* getNewEffect(Lifeform *target, int level) const;
+	EffectClass();
+	EffectClass(lua_Object table);
+	~EffectClass();
+};

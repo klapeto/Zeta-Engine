@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AnimationClass>
+	<Bounding>
+		<Rectangle x="-19" y="-15" width="38" height="30" />
+	</Bounding>
+	<TargetArea>
+		<Rectangle x="-24" y="-85" width="48" height="98" />
+	</TargetArea>
+	<Shadow>
+		<Ellipsis centreX="0" centreY="10" radiusX="28" radiusY="15" />
+	</Shadow>
+	<Action name="__Movement__">
+		<Up file="Data/Sprites/Female_NPC_1/Female_NPC_1.anim" animation="Walk_Up" />
+		<Down file="Data/Sprites/Female_NPC_1/Female_NPC_1.anim" animation="Walk_Down" />
+		<Left file="Data/Sprites/Female_NPC_1/Female_NPC_1.anim" animation="Walk_Left" />
+		<Right file="Data/Sprites/Female_NPC_1/Female_NPC_1.anim" animation="Walk_Right" />
+	</Action>
+	<Action name="__Idle__">
+		<Up file="Data/Sprites/Female_NPC_1/Female_NPC_1.anim" animation="Stand_Up" />
+		<Down file="Data/Sprites/Female_NPC_1/Female_NPC_1.anim" animation="Stand_Down" />
+		<Left file="Data/Sprites/Female_NPC_1/Female_NPC_1.anim" animation="Stand_Left" />
+		<Right file="Data/Sprites/Female_NPC_1/Female_NPC_1.anim" animation="Stand_Right" />
+	</Action>
+	<Action name="__Death__">
+		<Up file="Data/Sprites/Female_NPC_1/Female_NPC_1.anim" animation="Death" />
+		<Down file="Data/Sprites/Female_NPC_1/Female_NPC_1.anim" animation="Death" />
+		<Left file="Data/Sprites/Female_NPC_1/Female_NPC_1.anim" animation="Death" />
+		<Right file="Data/Sprites/Female_NPC_1/Female_NPC_1.anim" animation="Death" />
+	</Action>
+	<Action name="__Dead__">
+		<Up file="Data/Sprites/Female_NPC_1/Female_NPC_1.anim" animation="Dead" />
+		<Down file="Data/Sprites/Female_NPC_1/Female_NPC_1.anim" animation="Dead" />
+		<Left file="Data/Sprites/Female_NPC_1/Female_NPC_1.anim" animation="Dead" />
+		<Right file="Data/Sprites/Female_NPC_1/Female_NPC_1.anim" animation="Dead" />
+	</Action>
+	<Action name="Melee">
+		<Up file="Data/Sprites/Female_NPC_1/Female_NPC_1.anim" animation="Slash_Up" />
+		<Down file="Data/Sprites/Female_NPC_1/Female_NPC_1.anim" animation="Slash_Down" />
+		<Left file="Data/Sprites/Female_NPC_1/Female_NPC_1.anim" animation="Slash_Left" />
+		<Right file="Data/Sprites/Female_NPC_1/Female_NPC_1.anim" animation="Slash_Right" />
+	</Action>
+	<Action name="Slash">
+		<Up file="Data/Sprites/Female_NPC_1/Female_NPC_1.anim" animation="Slash_Up" />
+		<Down file="Data/Sprites/Female_NPC_1/Female_NPC_1.anim" animation="Slash_Down" />
+		<Left file="Data/Sprites/Female_NPC_1/Female_NPC_1.anim" animation="Slash_Left" />
+		<Right file="Data/Sprites/Female_NPC_1/Female_NPC_1.anim" animation="Slash_Right" />
+	</Action>
+	<Action name="Thurst">
+		<Up file="Data/Sprites/Female_NPC_1/Female_NPC_1.anim" animation="Thurst_Up" />
+		<Down file="Data/Sprites/Female_NPC_1/Female_NPC_1.anim" animation="Thurst_Down" />
+		<Left file="Data/Sprites/Female_NPC_1/Female_NPC_1.anim" animation="Thurst_Left" />
+		<Right file="Data/Sprites/Female_NPC_1/Female_NPC_1.anim" animation="Thurst_Right" />
+	</Action>
+	<Action name="Shoot">
+		<Up file="Data/Sprites/Female_NPC_1/Female_NPC_1.anim" animation="Shoot_Up" />
+		<Down file="Data/Sprites/Female_NPC_1/Female_NPC_1.anim" animation="Shoot_Down" />
+		<Left file="Data/Sprites/Female_NPC_1/Female_NPC_1.anim" animation="Shoot_Left" />
+		<Right file="Data/Sprites/Female_NPC_1/Female_NPC_1.anim" animation="Shoot_Right" />
+	</Action>
+</AnimationClass>

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:element name="LifeformClass">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="AnimationClass" maxOccurs="1"
+					minOccurs="1">
+					<xsd:complexType>
+						<xsd:attribute name="filename" type="xsd:string"
+							use="required">
+						</xsd:attribute>
+					</xsd:complexType>
+				</xsd:element>
+				<xsd:element name="ChildObjects" maxOccurs="1"
+					minOccurs="0">
+					<xsd:complexType>
+						<xsd:sequence>
+							<xsd:element name="Sticky"
+								maxOccurs="unbounded" minOccurs="0" type="StickyComplexType">
+							</xsd:element>
+							<xsd:element name="Static"
+								type="StickyComplexType" maxOccurs="unbounded" minOccurs="0">
+							</xsd:element>
+						</xsd:sequence>
+					</xsd:complexType>
+				</xsd:element>
+				<xsd:element name="Stats" maxOccurs="1" minOccurs="1">
+					<xsd:complexType>
+						<xsd:sequence>
+							<xsd:element name="Stat"
+								maxOccurs="unbounded" minOccurs="0">
+								<xsd:complexType>
+									<xsd:sequence></xsd:sequence>
+									<xsd:attribute name="name"
+										type="xsd:string" use="required">
+									</xsd:attribute>
+									<xsd:attribute name="value"
+										type="xsd:string" use="required">
+									</xsd:attribute>
+								</xsd:complexType>
+							</xsd:element>
+							<xsd:element name="Levelize"
+								maxOccurs="unbounded" minOccurs="0">
+								<xsd:complexType>
+									<xsd:sequence>
+										<xsd:element name="Stat"
+											maxOccurs="unbounded" minOccurs="0">
+											<xsd:complexType>
+												<xsd:attribute
+													name="name" type="xsd:string" use="required">
+												</xsd:attribute>
+											</xsd:complexType>
+										</xsd:element>
+									</xsd:sequence>
+									<xsd:attribute name="mul"
+										type="xsd:string" use="optional" default="1">
+									</xsd:attribute>
+									<xsd:attribute name="lowBound"
+										type="xsd:string" use="optional" default="-1">
+									</xsd:attribute>
+									<xsd:attribute name="upBound"
+										type="xsd:string" use="optional" default="1">
+									</xsd:attribute>
+								</xsd:complexType>
+							</xsd:element>
+						</xsd:sequence>
+						<xsd:attribute name="level" type="xsd:int">
+						</xsd:attribute>
+					</xsd:complexType>
+				</xsd:element>
+                <xsd:element name="AI" maxOccurs="1" minOccurs="0">
+                	<xsd:complexType>
+                		<xsd:sequence>
+                			<xsd:element name="General" maxOccurs="1" minOccurs="0">
+                				<xsd:complexType>
+                					<xsd:sequence>
+                						<xsd:element name="Setting" maxOccurs="unbounded" minOccurs="0" type="SettingComplexType">
+                						</xsd:element>
+                					</xsd:sequence>
+                					<xsd:attribute name="type"
+                						type="xsd:string" use="required">
+                					</xsd:attribute>
+                				</xsd:complexType>
+                			</xsd:element>
+                			<xsd:element name="Movement" maxOccurs="1" minOccurs="0">
+                                <xsd:complexType>
+                                	<xsd:sequence>
+                                		<xsd:element name="Setting"
+                                			type="SettingComplexType" maxOccurs="unbounded" minOccurs="0">
+                                		</xsd:element>
+                                	</xsd:sequence>
+                                	<xsd:attribute name="type"
+                                		type="xsd:string" use="required">
+                                	</xsd:attribute>
+                                </xsd:complexType>
+                			</xsd:element>
+                		</xsd:sequence>
+                	</xsd:complexType></xsd:element>
+                <xsd:element name="Abilities" maxOccurs="1"
+					minOccurs="0">
+					<xsd:complexType>
+						<xsd:sequence>
+							<xsd:element name="Ability"
+								maxOccurs="unbounded" minOccurs="0">
+								<xsd:complexType>
+									<xsd:attribute name="file"
+										type="xsd:string" use="required">
+									</xsd:attribute>
+									<xsd:attribute name="level"
+										type="xsd:int" use="required">
+									</xsd:attribute>
+								</xsd:complexType>
+							</xsd:element>
+						</xsd:sequence>
+					</xsd:complexType>
+				</xsd:element>
+				<xsd:element name="Script" maxOccurs="1"
+					minOccurs="0">
+					<xsd:complexType>
+						<xsd:attribute name="file" type="xsd:string"
+							use="required">
+						</xsd:attribute>
+						<xsd:attribute name="table" type="xsd:string"
+							use="required">
+						</xsd:attribute>
+					</xsd:complexType>
+				</xsd:element>
+			</xsd:sequence>
+			<xsd:attribute name="name" type="xsd:string"
+				use="required">
+			</xsd:attribute>
+			<xsd:attribute name="faction" type="xsd:string" use="optional"></xsd:attribute>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:complexType name="StickyComplexType">
+		<xsd:attribute use="required" name="name" type="xsd:string"></xsd:attribute>
+		<xsd:attribute use="required" name="classPath"
+			type="xsd:string">
+		</xsd:attribute>
+		<xsd:attribute use="required" name="animName"
+			type="xsd:string">
+		</xsd:attribute>
+		<xsd:attribute use="required" name="x" type="xsd:int"></xsd:attribute>
+		<xsd:attribute use="required" name="y" type="xsd:int"></xsd:attribute>
+	</xsd:complexType>
+	<xsd:complexType name="SettingComplexType">
+		<xsd:attribute use="required" name="name" type="xsd:string"></xsd:attribute>
+		<xsd:attribute use="required" name="value" type="xsd:string" form="unqualified"></xsd:attribute>
+	</xsd:complexType>
+</xsd:schema>

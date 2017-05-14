@@ -1,0 +1,74 @@
+.TH "Zeta::FunctorContextOperation< ContextType >" 3 "Wed Feb 10 2016" "Zeta" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Zeta::FunctorContextOperation< ContextType > \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <FunctorContextOperation\&.hpp>\fP
+.PP
+Inherits \fBZeta::ContextOperation< ContextType >\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBhandle\fP (ContextType &context)"
+.br
+.ti -1c
+.RI "\fBFunctorContextOperation\fP (std::function< void(ContextType &)> \fBfunc\fP, bool \fBtoBeDeleted\fP=true)"
+.br
+.ti -1c
+.RI "\fB~FunctorContextOperation\fP ()"
+.br
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "std::function< void(ContextType &)> \fBfunc\fP"
+.br
+.in -1c
+.SS "Additional Inherited Members"
+.SH "Detailed Description"
+.PP 
+
+.SS "template<typename ContextType>class Zeta::FunctorContextOperation< ContextType >"
+Captures a Lambda function and the \fBContext\fP Executes it\&. The most fast (in terms of code writing) \fBContextOperation\fP Type 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "template<typename ContextType > \fBZeta::FunctorContextOperation\fP< ContextType >::\fBFunctorContextOperation\fP (std::function< void(ContextType &)>func, booltoBeDeleted = \fCtrue\fP)\fC [inline]\fP"
+Creates a \fBContextOperation\fP with the lambda function provided Warning! This is by default deallocated by the \fBContext\fP\&. Set the toBeDeleted flag if you want otherwise\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIfunc\fP The lambda Function to be executed by the \fBContext\fP 
+.br
+\fItoBeDeleted\fP if the \fBContext\fP should deallocate the Operation (Default = true) 
+.RE
+.PP
+
+.SS "template<typename ContextType > \fBZeta::FunctorContextOperation\fP< ContextType >::~\fBFunctorContextOperation\fP ()\fC [inline]\fP"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "template<typename ContextType > void \fBZeta::FunctorContextOperation\fP< ContextType >::handle (ContextType &context)\fC [inline]\fP, \fC [virtual]\fP"
+Calls the lambda function provided 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIcontext\fP the context that called it\&. 
+.RE
+.PP
+
+.PP
+Implements \fBZeta::ContextOperation< ContextType >\fP\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "template<typename ContextType > std::function<void(ContextType&)> \fBZeta::FunctorContextOperation\fP< ContextType >::func\fC [private]\fP"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Zeta from the source code\&.
